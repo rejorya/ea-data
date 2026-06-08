@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-08T09:48:02.240Z",
+  "exportedAt": "2026-06-08T09:48:35.666Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20523,11 +20523,15 @@
       "responsible": "خلود المحرمي\r\n(مكتب نائب الرئيس)",
       "date": "2026-06-02",
       "type": "ext",
-      "kpi": "",
-      "note": "",
-      "status": "open",
+      "kpi": "other",
+      "note": "لا يحتاج متابعة",
+      "status": "closed",
       "followups": [],
-      "sheet": "Sheet1"
+      "sheet": "Sheet1",
+      "closedAt": "2026-06-08",
+      "manualCount": 0,
+      "followEntity": "",
+      "responseMethod": ""
     },
     {
       "id": 1780826442628.747,
