@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-08T10:00:35.131Z",
+  "exportedAt": "2026-06-08T10:01:35.548Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20433,9 +20433,9 @@
       "responsible": "لجنة الفعاليات\r\nد.بشرى",
       "date": "2026-05-21",
       "type": "ext",
-      "kpi": "",
-      "note": "1",
-      "status": "open",
+      "kpi": "other",
+      "note": "لجنة الفعاليات\nللدراسة والافادة",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-05-25",
@@ -20443,7 +20443,11 @@
           "note": "1"
         }
       ],
-      "sheet": "Sheet1"
+      "sheet": "Sheet1",
+      "closedAt": "2026-06-08",
+      "manualCount": 1,
+      "followEntity": "other",
+      "responseMethod": "direct_manager"
     },
     {
       "id": 1780826442623.3794,
