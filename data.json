@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-08T09:40:35.134Z",
+  "exportedAt": "2026-06-08T09:41:36.868Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20587,6 +20587,30 @@
       "status": "open",
       "followups": [],
       "sheet": "مُضاف يدوياً"
+    },
+    {
+      "id": 1780911645072.8655,
+      "title": "طلب نقل بالتبادل بين الفاضل سعيد المقيمي والفاضل راشد المشرفي",
+      "from": "محافظة جنوب الشرقية",
+      "date": "2026-06-01",
+      "type": "ext",
+      "kpi": "naib3",
+      "note": "",
+      "status": "open",
+      "followups": [
+        {
+          "date": "2026-06-08",
+          "replied": true,
+          "note": "متابعة",
+          "entity": "other",
+          "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+          "daysSince": 7
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "followEntity": "other",
+      "responseMethod": "via_follow",
+      "taqseemName": "المديرية العامة للشؤون الادارية والمالية"
     }
   ],
   "directives": [
