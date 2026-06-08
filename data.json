@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-08T09:55:35.133Z",
+  "exportedAt": "2026-06-08T09:56:35.136Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20452,8 +20452,8 @@
       "responsible": "خلود المحرمي\r\n(مكتب نائب الرئيس) \r\nمدير ادارة جنوب الباطنة",
       "date": "2026-05-21",
       "type": "ext",
-      "kpi": "",
-      "note": "1\r\n1",
+      "kpi": "other",
+      "note": "نائب الرئيس\nادارة شمال الباطنة\nللافادة بالخلفيات",
       "status": "open",
       "followups": [
         {
@@ -20462,7 +20462,10 @@
           "note": "1\r\n1"
         }
       ],
-      "sheet": "Sheet1"
+      "sheet": "Sheet1",
+      "manualCount": 2,
+      "followEntity": "naib_office",
+      "responseMethod": "via_follow"
     },
     {
       "id": 1780826442624.5847,
