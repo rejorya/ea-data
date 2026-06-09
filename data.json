@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T06:35:52.045Z",
+  "exportedAt": "2026-06-09T06:36:52.036Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18470,8 +18470,8 @@
       "responsible": "د.مريم",
       "date": "2026-05-05",
       "type": "int",
-      "kpi": "",
-      "note": "1",
+      "kpi": "other",
+      "note": "د. مريم\nلتقديم نطاق مشروع لدراسة الفرص الاستثمارية في القطاع البيئي",
       "status": "open",
       "followups": [
         {
@@ -18480,7 +18480,10 @@
           "note": "1"
         }
       ],
-      "sheet": "Sheet1"
+      "sheet": "Sheet1",
+      "manualCount": 1,
+      "followEntity": "other",
+      "responseMethod": ""
     },
     {
       "id": 1780826442486.387,
