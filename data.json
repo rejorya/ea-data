@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T05:29:56.103Z",
+  "exportedAt": "2026-06-09T05:30:51.967Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -15498,8 +15498,8 @@
       "responsible": "خلود المحرمي (مكتب نائب الرئيس)",
       "date": "2026-02-08",
       "type": "int",
-      "kpi": "",
-      "note": "1",
+      "kpi": "other",
+      "note": "نائب الرئيس\nالتنوع الاحيائي\nلعمل اللازم حيال حضور عدد من المختصين والافادة بتقرير\n\nتنمية الموارد البشرية \nللمتابعة\n",
       "status": "open",
       "followups": [
         {
@@ -15517,7 +15517,9 @@
         }
       ],
       "sheet": "Sheet1",
-      "followEntity": "naib_office"
+      "followEntity": "naib_office",
+      "manualCount": 4,
+      "responseMethod": ""
     },
     {
       "id": 1780826442333.1404,
