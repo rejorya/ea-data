@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T05:01:51.963Z",
+  "exportedAt": "2026-06-09T05:02:51.584Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -17618,8 +17618,8 @@
       "responsible": "التخطيط الاستراتيجي",
       "date": "2026-04-22",
       "type": "ext",
-      "kpi": "",
-      "note": "2",
+      "kpi": "other",
+      "note": "حاليا في طور الجلوس مع المالية لمناقشة النقاط المتعلقة بالنظام المالي.",
       "status": "open",
       "followups": [
         {
@@ -17628,7 +17628,10 @@
           "note": "2"
         }
       ],
-      "sheet": "Sheet1"
+      "sheet": "Sheet1",
+      "manualCount": 4,
+      "followEntity": "",
+      "responseMethod": "via_follow"
     },
     {
       "id": 1780826442446.6943,
