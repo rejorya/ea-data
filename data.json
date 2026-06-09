@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T05:24:03.090Z",
+  "exportedAt": "2026-06-09T05:24:51.574Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -17267,9 +17267,20 @@
           "date": "2026-04-22",
           "replied": false,
           "note": "2"
+        },
+        {
+          "date": "2026-06-25",
+          "replied": false,
+          "note": "متابعة",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "daysSince": 127
         }
       ],
-      "sheet": "Sheet1"
+      "sheet": "Sheet1",
+      "followEntity": "taqseem",
+      "responseMethod": "direct_manager",
+      "taqseemName": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية"
     },
     {
       "id": 1780826442426.74,
