@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T05:16:51.583Z",
+  "exportedAt": "2026-06-09T05:17:52.685Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -17560,17 +17560,30 @@
       "responsible": "د.بشرى خبيرة بيئية",
       "date": "2026-04-13",
       "type": "int",
-      "kpi": "",
-      "note": "1",
-      "status": "open",
+      "kpi": "other",
+      "note": "",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-05-19",
           "replied": true,
           "note": "1"
+        },
+        {
+          "date": "2026-05-19",
+          "replied": true,
+          "note": "متابعة",
+          "entity": "other",
+          "taqseem": "لجنة الفعاليات",
+          "daysSince": 36
         }
       ],
-      "sheet": "Sheet1"
+      "sheet": "Sheet1",
+      "manualCount": 5,
+      "followEntity": "other",
+      "responseMethod": "",
+      "closedAt": "2026-05-19",
+      "taqseemName": "لجنة الفعاليات"
     },
     {
       "id": 1780826442443.1614,
