@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T06:31:52.046Z",
+  "exportedAt": "2026-06-09T06:33:51.657Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18489,8 +18489,8 @@
       "responsible": "خدمة المراجعين",
       "date": "2026-05-06",
       "type": "ext",
-      "kpi": "",
-      "note": "1",
+      "kpi": "rpt14",
+      "note": "خدمة المراجعين\nللتنسيق مع القانونية والنظر في ضرورة الرد من عدمها وصحة ذلك قانونا والافادة",
       "status": "open",
       "followups": [
         {
@@ -18499,7 +18499,10 @@
           "note": "1"
         }
       ],
-      "sheet": "Sheet1"
+      "sheet": "Sheet1",
+      "manualCount": 7,
+      "followEntity": "rais_depts",
+      "responseMethod": "via_follow"
     },
     {
       "id": 1780826442487.012,
