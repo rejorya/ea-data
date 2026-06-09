@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T05:44:51.616Z",
+  "exportedAt": "2026-06-09T05:45:51.620Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20433,8 +20433,8 @@
       "responsible": "مركز الطوارئ البيئية الدائرة القانونية",
       "date": "2026-05-18",
       "type": "int",
-      "kpi": "",
-      "note": "1",
+      "kpi": "std14",
+      "note": "مركز الطوارئ\nالقانونية\nلاعداد تصور للمطالبة بتعويض بيئي",
       "status": "open",
       "followups": [
         {
@@ -20443,7 +20443,10 @@
           "note": "1"
         }
       ],
-      "sheet": "Sheet1"
+      "sheet": "Sheet1",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "responseMethod": ""
     },
     {
       "id": 1780826442616.9082,
