@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T08:59:51.758Z",
+  "exportedAt": "2026-06-09T09:00:51.754Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21127,6 +21127,21 @@
       ],
       "sheet": "مُضاف يدوياً",
       "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
+    },
+    {
+      "id": 1780995609456.9958,
+      "title": "المشروع الاقليمي تعزيز صون البيئة البحرية في بحر المنظمة من خلال المحميات البحرية.pdf",
+      "from": "المنظمة البيئية لحماية البيئة البحرية",
+      "date": "2026-06-09",
+      "type": "ext",
+      "kpi": "other",
+      "note": "نائب الرئيس\nللمراجعة والمناقشة خلال ٥ ايام عمل",
+      "status": "disc",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 0,
       "followEntity": "naib_office",
       "responseMethod": ""
     }
