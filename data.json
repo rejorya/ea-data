@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T06:10:51.809Z",
+  "exportedAt": "2026-06-09T06:11:51.646Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18825,16 +18825,19 @@
     },
     {
       "id": 1780826442505.2424,
-      "title": "موقع مشروع زراعة أشجار الزيتون بمحافظة ظفار",
+      "title": "موقع مشروع زراعة أشجار الزيتون بمحافظة ظفار (سري وعاجل)",
       "from": "مكتب الرئيس",
       "responsible": "",
       "date": "2026-05-10",
-      "type": "int",
-      "kpi": "",
-      "note": "1",
+      "type": "ext",
+      "kpi": "std14",
+      "note": "نائب الرئيس\nالالتزام البيئي\nظفار\nللدراسة والافادة",
       "status": "open",
       "followups": [],
-      "sheet": "Sheet1"
+      "sheet": "Sheet1",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": "via_follow"
     },
     {
       "id": 1780826442506.835,
