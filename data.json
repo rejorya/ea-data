@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T06:20:52.033Z",
+  "exportedAt": "2026-06-09T06:21:52.044Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18753,8 +18753,8 @@
       "responsible": "د.مريم",
       "date": "2026-05-07",
       "type": "ext",
-      "kpi": "",
-      "note": "1",
+      "kpi": "rev3",
+      "note": "الدكتورة مريم البوسعيدي\nلعمل اللازم والاجابة على الاسئلة بما يعكس جهد الهيئة خلال 3 ايام عمل",
       "status": "open",
       "followups": [
         {
@@ -18763,7 +18763,10 @@
           "note": "1"
         }
       ],
-      "sheet": "Sheet1"
+      "sheet": "Sheet1",
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": "direct_manager"
     },
     {
       "id": 1780826442502.3367,
