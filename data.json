@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T05:49:51.618Z",
+  "exportedAt": "2026-06-09T05:50:52.014Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20396,18 +20396,28 @@
       "type": "int",
       "kpi": "other",
       "note": "الجودة للمراجعة وابداء الملاحظات خلال 5 ايام عمل\n\nكما يرجى وضع المسميات الصحيحة للجهات فمثلا ما هي القوات البحرية؟",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-05-19",
           "replied": false,
           "note": "1"
+        },
+        {
+          "date": "2026-05-24",
+          "replied": true,
+          "note": "متابعة",
+          "entity": "rais_depts",
+          "taqseem": "دائرة ضبط الجودة",
+          "daysSince": 6
         }
       ],
       "sheet": "Sheet1",
       "manualCount": 2,
       "followEntity": "rais_depts",
-      "responseMethod": "via_follow"
+      "responseMethod": "via_follow",
+      "closedAt": "2026-05-24",
+      "taqseemName": "دائرة ضبط الجودة"
     },
     {
       "id": 1780826442614.7305,
