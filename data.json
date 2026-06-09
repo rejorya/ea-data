@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T05:56:51.621Z",
+  "exportedAt": "2026-06-09T05:57:51.626Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20356,8 +20356,8 @@
       "responsible": "مركز الاعمال البيئية",
       "date": "2026-05-17",
       "type": "ext",
-      "kpi": "",
-      "note": "1",
+      "kpi": "gov5",
+      "note": "مركز التقييم\nلعمل اللازم خلال اسبوع عمل بالتنسيق مع الادارة ما لم تكون هناك محاذير او موانع جوهرية",
       "status": "open",
       "followups": [
         {
@@ -20366,7 +20366,10 @@
           "note": "1"
         }
       ],
-      "sheet": "Sheet1"
+      "sheet": "Sheet1",
+      "manualCount": 3,
+      "followEntity": "rais_depts",
+      "responseMethod": "via_follow"
     },
     {
       "id": 1780826442612.2332,
