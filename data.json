@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T06:50:52.068Z",
+  "exportedAt": "2026-06-09T06:51:52.058Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20992,6 +20992,21 @@
       "sheet": "مُضاف يدوياً",
       "manualCount": 0,
       "followEntity": "rais_depts",
+      "responseMethod": ""
+    },
+    {
+      "id": 1780987865442.4202,
+      "title": "تقديم خبرة اعلامية",
+      "from": "مكتب نائب رئيس الهيئة",
+      "date": "2026-06-04",
+      "type": "int",
+      "kpi": "other",
+      "note": "نائب الرئيس\nلمقابلة المذكور والافادة.",
+      "status": "open",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 0,
+      "followEntity": "naib_office",
       "responseMethod": ""
     }
   ],
