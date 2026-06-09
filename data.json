@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T03:33:51.895Z",
+  "exportedAt": "2026-06-09T03:34:51.898Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20670,6 +20670,21 @@
       "followEntity": "other",
       "responseMethod": "via_follow",
       "taqseemName": "المديرية العامة للشؤون الادارية والمالية"
+    },
+    {
+      "id": 1780976052838.187,
+      "title": "الرأي القانوني في موضوع تحصيل رسوم تصاريح الإحتطاب بواسطة وكيل بولاية الرستاق .",
+      "from": "الدائرة القانونية",
+      "date": "2026-05-24",
+      "type": "int",
+      "kpi": "",
+      "note": "",
+      "status": "disc",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 0,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "directives": [
