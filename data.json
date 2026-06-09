@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T06:39:51.656Z",
+  "exportedAt": "2026-06-09T06:40:51.652Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18329,17 +18329,29 @@
       "responsible": "خلود المحرمي (مكتب نائب الرئيس)",
       "date": "2026-04-28",
       "type": "ext",
-      "kpi": "",
-      "note": "2",
+      "kpi": "other",
+      "note": "رد الجهة:في انتظار مراجعة محضر الاجتماع من قبل الجهات وسوف يتم افادتكم فور الانتهاء منه .\n",
       "status": "open",
       "followups": [
         {
           "date": "2026-06-07",
           "replied": false,
           "note": "2"
+        },
+        {
+          "date": "2026-06-08",
+          "replied": false,
+          "note": "متابعة",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة لالتزام البيئي",
+          "daysSince": 41
         }
       ],
-      "sheet": "Sheet1"
+      "sheet": "Sheet1",
+      "manualCount": 6,
+      "followEntity": "taqseem",
+      "responseMethod": "via_follow",
+      "taqseemName": "المديرية العامة لالتزام البيئي"
     },
     {
       "id": 1780826442478.3245,
