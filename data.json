@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T08:02:58.659Z",
+  "exportedAt": "2026-06-09T08:03:51.296Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21054,8 +21054,18 @@
       "kpi": "naib3",
       "note": "المهندس مدير المكتب\nلنقل ما تمت الاشارة اليه في سياق الخطاب الى نائب الرئيس لأعداد المخاطبات المشار اليها والافادة.",
       "status": "open",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-06-09",
+          "replied": false,
+          "note": "تم التوجيه بتاريخ 7 يونيو 2026م",
+          "entity": "naib_office",
+          "taqseem": "",
+          "daysSince": 2
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "followEntity": "naib_office"
     }
   ],
   "directives": [
