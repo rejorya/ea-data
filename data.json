@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T05:42:51.996Z",
+  "exportedAt": "2026-06-09T05:43:51.620Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -6922,17 +6922,28 @@
       "responsible": "خلود المحرمي (مكتب نائب الرئيس)",
       "date": "2025-07-20",
       "type": "int",
-      "kpi": "",
-      "note": "1",
+      "kpi": "other",
+      "note": "بناء على توجيه سعادته ، يتم تسليم نتائج تحليل مشروع المسح الوطني للتنوع الاحيائي في نهاية شهر يونيو 2026م .",
       "status": "open",
       "followups": [
         {
           "date": "2026-05-14",
           "replied": false,
           "note": "1"
+        },
+        {
+          "date": "2026-06-08",
+          "replied": false,
+          "note": "متابعة",
+          "entity": "naib_office",
+          "taqseem": "",
+          "daysSince": 323
         }
       ],
-      "sheet": "Sheet1"
+      "sheet": "Sheet1",
+      "manualCount": 3,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     },
     {
       "id": 1780826441881.4622,
