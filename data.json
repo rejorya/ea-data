@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T06:11:51.646Z",
+  "exportedAt": "2026-06-09T06:12:51.635Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18832,12 +18832,22 @@
       "type": "ext",
       "kpi": "std14",
       "note": "نائب الرئيس\nالالتزام البيئي\nظفار\nللدراسة والافادة",
-      "status": "open",
-      "followups": [],
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-05-03",
+          "replied": true,
+          "note": "متابعة",
+          "entity": "naib_office",
+          "taqseem": "",
+          "daysSince": -7
+        }
+      ],
       "sheet": "Sheet1",
       "manualCount": 1,
       "followEntity": "naib_office",
-      "responseMethod": "via_follow"
+      "responseMethod": "via_follow",
+      "closedAt": "2026-05-03"
     },
     {
       "id": 1780826442506.835,
