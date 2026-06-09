@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T05:50:52.014Z",
+  "exportedAt": "2026-06-09T05:51:52.008Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20375,8 +20375,8 @@
       "responsible": "د.مريم",
       "date": "2026-05-18",
       "type": "ext",
-      "kpi": "",
-      "note": "1",
+      "kpi": "other",
+      "note": "المدير المختص بالاستدامة\nللمراجعة وابداء الملاحظات والافادة خلال 5 ايام عمل",
       "status": "open",
       "followups": [
         {
@@ -20385,7 +20385,10 @@
           "note": "1"
         }
       ],
-      "sheet": "Sheet1"
+      "sheet": "Sheet1",
+      "manualCount": 1,
+      "followEntity": "other",
+      "responseMethod": ""
     },
     {
       "id": 1780826442613.4426,
