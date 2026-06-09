@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T06:24:52.046Z",
+  "exportedAt": "2026-06-09T06:25:52.042Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18685,7 +18685,7 @@
         }
       ],
       "sheet": "Sheet1",
-      "manualCount": 1,
+      "manualCount": 3,
       "followEntity": "naib_office",
       "responseMethod": ""
     },
