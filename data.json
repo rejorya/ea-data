@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T06:03:51.623Z",
+  "exportedAt": "2026-06-09T06:04:52.025Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20345,12 +20345,21 @@
           "date": "2026-05-21",
           "replied": false,
           "note": "1"
+        },
+        {
+          "date": "2026-05-25",
+          "replied": false,
+          "note": "تم متابعة مكتب النائب وعند تجاوز مدة الرد تم متابع المديرية وتم تجاوز المد وتم التصعيد",
+          "entity": "other",
+          "taqseem": "الدكتورة رحمة النظيري- الدكتورة مريم البوسعيدي",
+          "daysSince": 8
         }
       ],
       "sheet": "Sheet1",
       "manualCount": 4,
       "followEntity": "other",
-      "responseMethod": ""
+      "responseMethod": "",
+      "taqseemName": "الدكتورة رحمة النظيري- الدكتورة مريم البوسعيدي"
     },
     {
       "id": 1780826442611.3997,
