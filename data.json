@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T04:29:51.956Z",
+  "exportedAt": "2026-06-09T04:30:51.559Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20341,8 +20341,8 @@
       "responsible": "خلود المحرمي (مكتب نائب الرئيس)",
       "date": "2026-05-18",
       "type": "ext",
-      "kpi": "",
-      "note": "1",
+      "kpi": "naib3",
+      "note": "نائب الرئيس\nالالتزام البيئي\nلعمل اللازم والافادة خلال 3 ايام عمل",
       "status": "open",
       "followups": [
         {
@@ -20351,7 +20351,10 @@
           "note": "1"
         }
       ],
-      "sheet": "Sheet1"
+      "sheet": "Sheet1",
+      "manualCount": 3,
+      "followEntity": "naib_office",
+      "responseMethod": "direct_manager"
     },
     {
       "id": 1780826442617.3389,
