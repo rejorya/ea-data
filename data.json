@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T04:35:51.561Z",
+  "exportedAt": "2026-06-09T04:36:51.945Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18147,12 +18147,21 @@
           "date": "2026-05-04",
           "replied": false,
           "note": "1"
+        },
+        {
+          "date": "2026-06-09",
+          "replied": false,
+          "note": "تم ارد من قبل مكتب النائب",
+          "entity": "other",
+          "taqseem": "دائرة ضبط الجودة",
+          "daysSince": 46
         }
       ],
       "sheet": "Sheet1",
       "manualCount": 4,
       "followEntity": "other",
-      "responseMethod": ""
+      "responseMethod": "",
+      "taqseemName": "دائرة ضبط الجودة"
     },
     {
       "id": 1780826442474.1848,
