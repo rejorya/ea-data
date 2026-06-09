@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T05:26:51.576Z",
+  "exportedAt": "2026-06-09T05:27:51.966Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -17259,9 +17259,9 @@
       "responsible": "خلود المحرمي (مكتب نائب الرئيس)",
       "date": "2026-02-18",
       "type": "int",
-      "kpi": "",
-      "note": "2",
-      "status": "open",
+      "kpi": "other",
+      "note": "",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-04-22",
@@ -17278,9 +17278,11 @@
         }
       ],
       "sheet": "Sheet1",
-      "followEntity": "taqseem",
+      "followEntity": "naib_office",
       "responseMethod": "direct_manager",
-      "taqseemName": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية"
+      "taqseemName": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+      "closedAt": "2026-06-09",
+      "manualCount": 13
     },
     {
       "id": 1780826442426.74,
