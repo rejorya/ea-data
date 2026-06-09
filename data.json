@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T06:27:51.641Z",
+  "exportedAt": "2026-06-09T06:28:52.039Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18536,8 +18536,8 @@
       "responsible": "خلود المحرمي (مكتب نائب الرئيس)",
       "date": "2026-05-06",
       "type": "ext",
-      "kpi": "",
-      "note": "1",
+      "kpi": "naib3",
+      "note": "نائب الرئيس\nللافادة بالراي",
       "status": "open",
       "followups": [
         {
@@ -18546,7 +18546,10 @@
           "note": "1"
         }
       ],
-      "sheet": "Sheet1"
+      "sheet": "Sheet1",
+      "manualCount": 4,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     },
     {
       "id": 1780826442490.3064,
