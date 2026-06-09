@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T06:45:51.665Z",
+  "exportedAt": "2026-06-09T06:46:52.057Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20848,6 +20848,14 @@
           "entity": "taqseem",
           "taqseem": "المديرية العامة للشؤون الادارية والمالية",
           "daysSince": 7
+        },
+        {
+          "date": "2026-06-09",
+          "replied": false,
+          "note": "متابعة",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+          "daysSince": 8
         }
       ],
       "sheet": "Sheet1",
