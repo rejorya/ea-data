@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T04:30:51.559Z",
+  "exportedAt": "2026-06-09T04:31:51.946Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20343,18 +20343,28 @@
       "type": "ext",
       "kpi": "naib3",
       "note": "نائب الرئيس\nالالتزام البيئي\nلعمل اللازم والافادة خلال 3 ايام عمل",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-05-21",
           "replied": false,
           "note": "1"
+        },
+        {
+          "date": "2026-05-24",
+          "replied": false,
+          "note": "متابعة",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للالتزام البيئي",
+          "daysSince": 6
         }
       ],
       "sheet": "Sheet1",
       "manualCount": 3,
-      "followEntity": "naib_office",
-      "responseMethod": "direct_manager"
+      "followEntity": "taqseem",
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-05-24",
+      "taqseemName": "المديرية العامة للالتزام البيئي"
     },
     {
       "id": 1780826442617.3389,
