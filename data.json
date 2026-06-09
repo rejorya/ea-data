@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T08:55:51.365Z",
+  "exportedAt": "2026-06-09T08:56:51.358Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21115,8 +21115,20 @@
       "kpi": "other",
       "note": "نائب الرئيس\nلدراسة التظلم بحضور لجنة الاستثمار والدائرة القانونية\nوفق الاجراءات القانونية المتبعة والافادة خلال عشرة ايام عمل",
       "status": "open",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-06-09",
+          "replied": false,
+          "note": "متابعة",
+          "entity": "naib_office",
+          "taqseem": "",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "directives": [
