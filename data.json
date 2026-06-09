@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T06:28:52.039Z",
+  "exportedAt": "2026-06-09T06:29:52.043Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18538,18 +18538,27 @@
       "type": "ext",
       "kpi": "naib3",
       "note": "نائب الرئيس\nللافادة بالراي",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-05-19",
           "replied": false,
           "note": "1"
+        },
+        {
+          "date": "2026-05-19",
+          "replied": true,
+          "note": "متابعة",
+          "entity": "naib_office",
+          "taqseem": "",
+          "daysSince": 13
         }
       ],
       "sheet": "Sheet1",
       "manualCount": 4,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-05-19"
     },
     {
       "id": 1780826442490.3064,
