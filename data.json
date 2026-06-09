@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-09T08:39:51.339Z",
+  "exportedAt": "2026-06-09T08:40:51.740Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21097,11 +21097,14 @@
       "from": "اهالي وساكني منطقة حيل ينكت بولاية مسقط",
       "date": "2026-06-07",
       "type": "ext",
-      "kpi": "naib3",
-      "note": "",
+      "kpi": "other",
+      "note": "نائب الرئيس\nلتقييم موضوع الشكوى والافادة.",
       "status": "open",
       "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "directives": [
