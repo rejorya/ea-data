@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-10T04:46:28.764Z",
+  "exportedAt": "2026-06-10T04:47:29.643Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20725,7 +20725,8 @@
       "followEntity": "naib_office",
       "closedAt": "2026-06-09",
       "manualCount": 1,
-      "responseMethod": ""
+      "responseMethod": "",
+      "followStart": "2026-05-24"
     },
     {
       "id": 1780826442622.333,
