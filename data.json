@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-10T04:39:29.636Z",
+  "exportedAt": "2026-06-10T04:40:29.642Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18380,8 +18380,8 @@
       "responsible": "خلود المحرمي (مكتب نائب الرئيس)",
       "date": "2026-05-06",
       "type": "ext",
-      "kpi": "",
-      "note": "1",
+      "kpi": "other",
+      "note": "نائب الرئيس\nفسم الاستثمار\nللتنسيق مع سلطان الخضوري لاستيفاء المتطلبات والافادة خلال اسبوعين",
       "status": "open",
       "followups": [
         {
@@ -18392,9 +18392,9 @@
       ],
       "sheet": "Sheet1",
       "closedAt": "2026-05-12",
-      "followStart": "",
+      "followStart": "2026-06-10",
       "manualCount": 1,
-      "followEntity": "",
+      "followEntity": "naib_office",
       "responseMethod": ""
     },
     {
