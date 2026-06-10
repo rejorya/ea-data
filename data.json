@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-10T06:18:29.701Z",
+  "exportedAt": "2026-06-10T06:23:42.716Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20812,7 +20812,7 @@
       "date": "2026-06-01",
       "type": "ext",
       "kpi": "naib3",
-      "note": "نائب الرئيس\nالتخطيط الاستراتيجي\nللافادة خلال يومين عمل.",
+      "note": "تم رفع الافادة الى مدير المكتب للعرض على رئيس الهيئة وترشيح نقطة التواصل",
       "status": "open",
       "followups": [
         {
@@ -20822,12 +20822,22 @@
           "entity": "naib_office",
           "taqseem": "",
           "daysSince": 7
+        },
+        {
+          "date": "2026-06-08",
+          "replied": false,
+          "note": "متابعة",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-06-02",
+          "daysSince": 4
         }
       ],
       "sheet": "Sheet1",
       "manualCount": 1,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "",
+      "followStart": "2026-06-02"
     },
     {
       "id": 1780826442626.797,
