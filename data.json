@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-10T03:53:28.726Z",
+  "exportedAt": "2026-06-10T03:54:28.714Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18880,28 +18880,6 @@
       "responseMethod": "via_follow",
       "closedAt": "2026-05-21",
       "taqseemName": "لجنة الفعاليات"
-    },
-    {
-      "id": 1780826442504.1245,
-      "title": "Dhofar Biodiversity Monitoring Program Proposal fo_260106_202601.pdf",
-      "from": "مكتب نائب الرئيس",
-      "responsible": "خلود المحرمي (مكتب نائب الرئيس)",
-      "date": "2026-05-10",
-      "type": "ext",
-      "kpi": "other",
-      "note": "نائب الرئيس\nلدعوة المركز لتقديم عرض مرئي بحضور مدراء عموم التنوع الاحيائي ومدراء الدوائر ومدير عام ظفار ومدراء الدوائر والمدير المختص بالاستدامة\nومناقشة مقدمي المقترح والتاكد نطاق العمل وملكية البيانات وقبول الاشراف من الهيئة والافادة بتوصيات واضحة",
-      "status": "disc",
-      "followups": [
-        {
-          "date": "2026-05-17",
-          "replied": false,
-          "note": "1"
-        }
-      ],
-      "sheet": "Sheet1",
-      "manualCount": 2,
-      "followEntity": "naib_office",
-      "responseMethod": ""
     },
     {
       "id": 1780826442505.2424,
