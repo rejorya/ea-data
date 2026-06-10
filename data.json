@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-10T06:05:28.838Z",
+  "exportedAt": "2026-06-10T06:09:42.699Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20760,7 +20760,7 @@
       "date": "2026-05-21",
       "type": "ext",
       "kpi": "other",
-      "note": "نائب الرئيس\nادارة شمال الباطنة\nللافادة بالخلفيات",
+      "note": "تم رفع الافادات الى مدير المكتب 10/6",
       "status": "open",
       "followups": [
         {
@@ -20781,7 +20781,8 @@
       "manualCount": 2,
       "followEntity": "taqseem",
       "responseMethod": "via_follow",
-      "taqseemName": "ادراة البيئة شمال الباطنة"
+      "taqseemName": "ادراة البيئة شمال الباطنة",
+      "followStart": "2026-05-24"
     },
     {
       "id": 1780826442624.5847,
