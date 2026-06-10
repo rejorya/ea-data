@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-10T03:56:28.732Z",
+  "exportedAt": "2026-06-10T03:57:28.732Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20495,13 +20495,23 @@
           "entity": "other",
           "taqseem": "مدير مختص بالاستدامة",
           "daysSince": 1
+        },
+        {
+          "date": "2026-06-10",
+          "replied": false,
+          "note": "متابعة",
+          "entity": "other",
+          "taqseem": "مدير مختص بالاستدامة",
+          "startDate": "2026-05-18",
+          "daysSince": 17
         }
       ],
       "sheet": "Sheet1",
       "manualCount": 1,
       "followEntity": "other",
       "responseMethod": "",
-      "taqseemName": "مدير مختص بالاستدامة"
+      "taqseemName": "مدير مختص بالاستدامة",
+      "followStart": "2026-05-18"
     },
     {
       "id": 1780826442613.4426,
