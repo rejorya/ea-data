@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-11T07:18:22.363Z",
+  "exportedAt": "2026-06-11T07:19:22.656Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20863,7 +20863,7 @@
       "responsible": "خلود المحرمي\r\n(مكتب نائب الرئيس) \r\nدائرة التخطيط الاستراتيجي",
       "date": "2026-06-01",
       "type": "ext",
-      "kpi": "naib3",
+      "kpi": "gov5",
       "note": "تم رفع الافادة الى مدير المكتب للعرض على رئيس الهيئة وترشيح نقطة التواصل",
       "status": "open",
       "followups": [
@@ -20887,7 +20887,7 @@
       ],
       "sheet": "Sheet1",
       "manualCount": 1,
-      "followEntity": "naib_office",
+      "followEntity": "rais_depts",
       "responseMethod": "",
       "followStart": "2026-06-02"
     },
