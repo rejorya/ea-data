@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-11T06:26:22.320Z",
+  "exportedAt": "2026-06-11T06:27:22.605Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -17875,7 +17875,7 @@
       "type": "ext",
       "kpi": "",
       "note": "1",
-      "status": "open",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-05-20",
@@ -17889,11 +17889,21 @@
           "entity": "naib_office",
           "taqseem": "دائرة ضبط الجودة- مكتب الرقابة البيئية",
           "daysSince": 31
+        },
+        {
+          "date": "2026-06-11",
+          "replied": false,
+          "note": "متابعة",
+          "entity": "naib_office",
+          "taqseem": "دائرة ضبط الجودة- مكتب الرقابة البيئية-مكتب النائب",
+          "startDate": "2026-05-20",
+          "daysSince": 16
         }
       ],
       "sheet": "Sheet1",
       "followEntity": "naib_office",
-      "taqseemName": "دائرة ضبط الجودة- مكتب الرقابة البيئية"
+      "taqseemName": "دائرة ضبط الجودة- مكتب الرقابة البيئية-مكتب النائب",
+      "followStart": "2026-05-20"
     },
     {
       "id": 1780826442456.8745,
