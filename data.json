@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-11T04:52:27.303Z",
+  "exportedAt": "2026-06-11T04:53:23.112Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21078,12 +21078,23 @@
       "kpi": "other",
       "note": "نائب الرئيس\nمكتب الرقابة\nللافادة عن الشكوي المقدمة ومدي التزام المنشئة بالاشتراطات البيئية وفي حال عدم الالتزام يتم اتخاذ الاجراء المناسب بشانها.",
       "status": "open",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-06-11",
+          "replied": false,
+          "note": "متابعة",
+          "entity": "rais_depts",
+          "taqseem": "مركز الاعمال البيئية- مكتب الرقابة",
+          "startDate": "2026-06-07",
+          "daysSince": 4
+        }
+      ],
       "sheet": "مُضاف يدوياً",
       "followStart": "2026-06-07",
-      "manualCount": 0,
+      "manualCount": 1,
       "followEntity": "rais_depts",
-      "responseMethod": ""
+      "responseMethod": "",
+      "taqseemName": "مركز الاعمال البيئية- مكتب الرقابة"
     },
     {
       "id": 1780991713416.4797,
