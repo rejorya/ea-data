@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-11T08:26:22.410Z",
+  "exportedAt": "2026-06-11T08:27:22.698Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21225,6 +21225,31 @@
       "manualCount": 0,
       "followEntity": "rais_depts",
       "responseMethod": ""
+    },
+    {
+      "id": 1781166399999.954,
+      "title": "طرح المختبر البيئي للاستثمار",
+      "from": "مكتب نائب رئيس الهيئة",
+      "date": "2026-05-25",
+      "followStart": "2026-05-25",
+      "type": "int",
+      "kpi": "other",
+      "note": "",
+      "status": "esc",
+      "followups": [
+        {
+          "date": "2026-05-25",
+          "replied": false,
+          "note": "متابعة",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+          "startDate": "2026-05-25",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "followEntity": "taqseem",
+      "taqseemName": "المديرية العامة للشؤون الادارية والمالية"
     }
   ],
   "directives": [
