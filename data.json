@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-11T04:42:38.310Z",
+  "exportedAt": "2026-06-11T04:43:23.094Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18258,13 +18258,23 @@
           "entity": "other",
           "taqseem": "دائرة ضبط الجودة",
           "daysSince": 46
+        },
+        {
+          "date": "2026-06-11",
+          "replied": true,
+          "note": "متابعة",
+          "entity": "other",
+          "taqseem": "دائرة ضبط الجودة",
+          "startDate": "2026-05-04",
+          "daysSince": 28
         }
       ],
       "sheet": "Sheet1",
       "manualCount": 4,
       "followEntity": "other",
-      "responseMethod": "",
-      "taqseemName": "دائرة ضبط الجودة"
+      "responseMethod": "via_follow",
+      "taqseemName": "دائرة ضبط الجودة",
+      "followStart": "2026-05-04"
     },
     {
       "id": 1780826442474.1848,
