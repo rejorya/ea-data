@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-11T10:02:22.496Z",
+  "exportedAt": "2026-06-11T10:03:22.508Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20804,7 +20804,7 @@
       "type": "ext",
       "kpi": "other",
       "note": "تم رفع الافادات الى مدير المكتب 10/6",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-05-25",
@@ -20834,7 +20834,8 @@
       "followEntity": "taqseem",
       "responseMethod": "via_follow",
       "taqseemName": "ادارة البيئة شمال الباطنة",
-      "followStart": "2026-05-24"
+      "followStart": "2026-05-24",
+      "closedAt": "2026-06-11"
     },
     {
       "id": 1780826442624.5847,
