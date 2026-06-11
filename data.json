@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-11T06:17:22.308Z",
+  "exportedAt": "2026-06-11T06:18:22.596Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20808,13 +20808,22 @@
           "entity": "taqseem",
           "taqseem": "ادراة البيئة شمال الباطنة",
           "daysSince": 17
+        },
+        {
+          "date": "2026-06-07",
+          "replied": false,
+          "note": "متابعة",
+          "entity": "taqseem",
+          "taqseem": "ادارة البيئة شمال الباطنة",
+          "startDate": "2026-05-24",
+          "daysSince": 10
         }
       ],
       "sheet": "Sheet1",
       "manualCount": 2,
       "followEntity": "taqseem",
       "responseMethod": "via_follow",
-      "taqseemName": "ادراة البيئة شمال الباطنة",
+      "taqseemName": "ادارة البيئة شمال الباطنة",
       "followStart": "2026-05-24"
     },
     {
