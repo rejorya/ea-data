@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-14T07:49:24.331Z",
+  "exportedAt": "2026-06-14T07:50:25.284Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21145,18 +21145,36 @@
       "type": "int",
       "kpi": "other",
       "note": "نائب الرئيس\nلايجاد حلول للتحديات في بعض التقسيمات والافادة خلال اسبوع من تاريخ 4 يونيو 2026.\nالرد 10/6\nالتواصل والاعلام\nللمتابعة والافادة ",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-06-07",
           "replied": false,
           "note": "1"
+        },
+        {
+          "date": "2026-06-14",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-06-07",
+          "daysSince": 5
         }
       ],
       "sheet": "Sheet1",
       "manualCount": 1,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "",
+      "followStart": "2026-06-07",
+      "docNo": "1314/1/2022-32",
+      "toEntity": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "closedAt": "2026-06-14"
     },
     {
       "id": 1780911500918.6326,
@@ -22838,18 +22856,36 @@
           "type": "int",
           "kpi": "other",
           "note": "نائب الرئيس\nلايجاد حلول للتحديات في بعض التقسيمات والافادة خلال اسبوع من تاريخ 4 يونيو 2026.\nالرد 10/6\nالتواصل والاعلام\nللمتابعة والافادة ",
-          "status": "open",
+          "status": "closed",
           "followups": [
             {
               "date": "2026-06-07",
               "replied": false,
               "note": "1"
+            },
+            {
+              "date": "2026-06-14",
+              "replied": false,
+              "note": "متابعة",
+              "actionType": "visit",
+              "by": "",
+              "result": "",
+              "entity": "naib_office",
+              "taqseem": "",
+              "startDate": "2026-06-07",
+              "daysSince": 5
             }
           ],
           "sheet": "Sheet1",
           "manualCount": 1,
           "followEntity": "naib_office",
-          "responseMethod": ""
+          "responseMethod": "",
+          "followStart": "2026-06-07",
+          "docNo": "1314/1/2022-32",
+          "toEntity": "",
+          "priority": "normal",
+          "confidentiality": "normal",
+          "closedAt": "2026-06-14"
         },
         {
           "id": 1780911500918.6326,
