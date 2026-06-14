@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-14T04:31:25.586Z",
+  "exportedAt": "2026-06-14T04:32:25.989Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20457,7 +20457,7 @@
       "type": "ext",
       "kpi": "gov5",
       "note": "الدكتورة رحمة النظيري\nالدكتورة مريم البوسعيدي\nللمراجعة بالتنسيق مع تقنية المعلومات والتقسيمات المختصة في الغطاء النباتي ومركز الطوارئ في ضوء مشروعاتهم المرتبطة بها التطبيقات للاقمار الصناعية والافادة بالملاحظات خلال اسبوع عمل",
-      "status": "open",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-05-21",
@@ -20488,6 +20488,18 @@
           "taqseem": "المديرية العامة لتنمية الغطاء النباتي",
           "startDate": "2026-05-18",
           "daysSince": 18
+        },
+        {
+          "date": "2026-06-14",
+          "replied": true,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة لتنمية الغطاء النباتي",
+          "startDate": "2026-05-18",
+          "daysSince": 19
         }
       ],
       "sheet": "Sheet1",
@@ -20501,7 +20513,8 @@
       "docNo": "",
       "toEntity": "مكتب النائب",
       "priority": "important",
-      "confidentiality": "secret"
+      "confidentiality": "secret",
+      "divFollowDate": "2026-06-14"
     },
     {
       "id": 1780826442611.3997,
@@ -22313,7 +22326,7 @@
           "type": "ext",
           "kpi": "gov5",
           "note": "الدكتورة رحمة النظيري\nالدكتورة مريم البوسعيدي\nللمراجعة بالتنسيق مع تقنية المعلومات والتقسيمات المختصة في الغطاء النباتي ومركز الطوارئ في ضوء مشروعاتهم المرتبطة بها التطبيقات للاقمار الصناعية والافادة بالملاحظات خلال اسبوع عمل",
-          "status": "open",
+          "status": "awaiting_div",
           "followups": [
             {
               "date": "2026-05-21",
@@ -22344,6 +22357,18 @@
               "taqseem": "المديرية العامة لتنمية الغطاء النباتي",
               "startDate": "2026-05-18",
               "daysSince": 18
+            },
+            {
+              "date": "2026-06-14",
+              "replied": true,
+              "note": "متابعة",
+              "actionType": "visit",
+              "by": "",
+              "result": "",
+              "entity": "taqseem",
+              "taqseem": "المديرية العامة لتنمية الغطاء النباتي",
+              "startDate": "2026-05-18",
+              "daysSince": 19
             }
           ],
           "sheet": "Sheet1",
@@ -22357,7 +22382,8 @@
           "docNo": "",
           "toEntity": "مكتب النائب",
           "priority": "important",
-          "confidentiality": "secret"
+          "confidentiality": "secret",
+          "divFollowDate": "2026-06-14"
         },
         {
           "id": 1780826442612.2332,
