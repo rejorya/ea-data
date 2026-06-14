@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-14T07:32:25.277Z",
+  "exportedAt": "2026-06-14T07:33:24.326Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18336,11 +18336,15 @@
         }
       ],
       "sheet": "Sheet1",
-      "manualCount": 4,
+      "manualCount": 5,
       "followEntity": "other",
       "responseMethod": "via_follow",
       "taqseemName": "دائرة ضبط الجودة",
-      "followStart": "2026-05-04"
+      "followStart": "2026-05-04",
+      "docNo": "5511/32/2022v8-91",
+      "toEntity": "",
+      "priority": "normal",
+      "confidentiality": "normal"
     },
     {
       "id": 1780826442474.1848,
@@ -22382,11 +22386,15 @@
             }
           ],
           "sheet": "Sheet1",
-          "manualCount": 4,
+          "manualCount": 5,
           "followEntity": "other",
           "responseMethod": "via_follow",
           "taqseemName": "دائرة ضبط الجودة",
-          "followStart": "2026-05-04"
+          "followStart": "2026-05-04",
+          "docNo": "5511/32/2022v8-91",
+          "toEntity": "",
+          "priority": "normal",
+          "confidentiality": "normal"
         },
         {
           "id": 1780826442477.3865,
