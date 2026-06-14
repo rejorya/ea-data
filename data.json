@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-14T07:44:24.331Z",
+  "exportedAt": "2026-06-14T07:45:24.338Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20673,7 +20673,7 @@
       "type": "ext",
       "kpi": "gov5",
       "note": "المدير المختص بالاستدامة\nللمراجعة وابداء الملاحظات والافادة خلال 5 ايام عمل",
-      "status": "awaiting_div",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-05-19",
@@ -20716,7 +20716,11 @@
       "responseMethod": "",
       "taqseemName": "مدير مختص بالاستدامة",
       "followStart": "2026-05-18",
-      "divFollowDate": "2026-06-14"
+      "divFollowDate": "2026-06-14",
+      "docNo": "1170/3/2022v401-95",
+      "toEntity": "",
+      "priority": "normal",
+      "confidentiality": "normal"
     },
     {
       "id": 1780826442613.4426,
@@ -22115,7 +22119,7 @@
           "type": "ext",
           "kpi": "gov5",
           "note": "المدير المختص بالاستدامة\nللمراجعة وابداء الملاحظات والافادة خلال 5 ايام عمل",
-          "status": "awaiting_div",
+          "status": "awaiting",
           "followups": [
             {
               "date": "2026-05-19",
@@ -22158,7 +22162,11 @@
           "responseMethod": "",
           "taqseemName": "مدير مختص بالاستدامة",
           "followStart": "2026-05-18",
-          "divFollowDate": "2026-06-14"
+          "divFollowDate": "2026-06-14",
+          "docNo": "1170/3/2022v401-95",
+          "toEntity": "",
+          "priority": "normal",
+          "confidentiality": "normal"
         },
         {
           "id": 1781166399999.954,
@@ -22690,7 +22698,7 @@
           "type": "ext",
           "kpi": "gov5",
           "note": "المدير المختص بالاستدامة\nللمراجعة وابداء الملاحظات والافادة خلال 5 ايام عمل",
-          "status": "awaiting_div",
+          "status": "awaiting",
           "followups": [
             {
               "date": "2026-05-19",
@@ -22733,7 +22741,11 @@
           "responseMethod": "",
           "taqseemName": "مدير مختص بالاستدامة",
           "followStart": "2026-05-18",
-          "divFollowDate": "2026-06-14"
+          "divFollowDate": "2026-06-14",
+          "docNo": "1170/3/2022v401-95",
+          "toEntity": "",
+          "priority": "normal",
+          "confidentiality": "normal"
         },
         {
           "id": 1780826442625.1667,
