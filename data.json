@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-14T07:39:24.330Z",
+  "exportedAt": "2026-06-14T07:40:25.272Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18495,7 +18495,7 @@
       "type": "ext",
       "kpi": "other",
       "note": "نائب الرئيس\nفسم الاستثمار\nللتنسيق مع سلطان الخضوري لاستيفاء المتطلبات والافادة خلال اسبوعين",
-      "status": "open",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-05-12",
@@ -18510,6 +18510,18 @@
           "taqseem": "",
           "startDate": "2026-06-10",
           "daysSince": 0
+        },
+        {
+          "date": "2026-06-14",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-06-10",
+          "daysSince": 2
         }
       ],
       "sheet": "Sheet1",
@@ -18517,7 +18529,11 @@
       "followStart": "2026-06-10",
       "manualCount": 1,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "",
+      "docNo": "6220/1/2022v11-83",
+      "toEntity": "",
+      "priority": "normal",
+      "confidentiality": "normal"
     },
     {
       "id": 1780826442480.698,
@@ -22478,7 +22494,7 @@
           "type": "ext",
           "kpi": "other",
           "note": "نائب الرئيس\nفسم الاستثمار\nللتنسيق مع سلطان الخضوري لاستيفاء المتطلبات والافادة خلال اسبوعين",
-          "status": "open",
+          "status": "esc",
           "followups": [
             {
               "date": "2026-05-12",
@@ -22493,6 +22509,18 @@
               "taqseem": "",
               "startDate": "2026-06-10",
               "daysSince": 0
+            },
+            {
+              "date": "2026-06-14",
+              "replied": false,
+              "note": "متابعة",
+              "actionType": "",
+              "by": "",
+              "result": "",
+              "entity": "naib_office",
+              "taqseem": "",
+              "startDate": "2026-06-10",
+              "daysSince": 2
             }
           ],
           "sheet": "Sheet1",
@@ -22500,7 +22528,11 @@
           "followStart": "2026-06-10",
           "manualCount": 1,
           "followEntity": "naib_office",
-          "responseMethod": ""
+          "responseMethod": "",
+          "docNo": "6220/1/2022v11-83",
+          "toEntity": "",
+          "priority": "normal",
+          "confidentiality": "normal"
         },
         {
           "id": 1780826442485.9822,
