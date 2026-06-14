@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-14T07:52:38.287Z",
+  "exportedAt": "2026-06-14T07:53:24.345Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21254,11 +21254,29 @@
       "kpi": "other",
       "note": "نائب الرئيس\nلمقابلة المذكور والافادة.",
       "status": "open",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-06-14",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-06-07",
+          "daysSince": 5
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 0,
+      "manualCount": 2,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "",
+      "followStart": "2026-06-07",
+      "docNo": "",
+      "toEntity": "",
+      "priority": "normal",
+      "confidentiality": "normal"
     },
     {
       "id": 1780988012338.838,
@@ -22920,11 +22938,29 @@
           "kpi": "other",
           "note": "نائب الرئيس\nلمقابلة المذكور والافادة.",
           "status": "open",
-          "followups": [],
+          "followups": [
+            {
+              "date": "2026-06-14",
+              "replied": false,
+              "note": "متابعة",
+              "actionType": "visit",
+              "by": "",
+              "result": "",
+              "entity": "naib_office",
+              "taqseem": "",
+              "startDate": "2026-06-07",
+              "daysSince": 5
+            }
+          ],
           "sheet": "مُضاف يدوياً",
-          "manualCount": 0,
+          "manualCount": 2,
           "followEntity": "naib_office",
-          "responseMethod": ""
+          "responseMethod": "",
+          "followStart": "2026-06-07",
+          "docNo": "",
+          "toEntity": "",
+          "priority": "normal",
+          "confidentiality": "normal"
         },
         {
           "id": 1780988012338.838,
