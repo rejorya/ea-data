@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-14T06:50:25.213Z",
+  "exportedAt": "2026-06-14T06:51:24.274Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21264,9 +21264,13 @@
       "status": "open",
       "followups": [],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 0,
+      "manualCount": 1,
       "followEntity": "rais_depts",
-      "responseMethod": ""
+      "responseMethod": "",
+      "docNo": "1170/3/2022v404-97",
+      "toEntity": "دائرة التخطيط الاستراتيجي",
+      "priority": "normal",
+      "confidentiality": "normal"
     },
     {
       "id": 1781166399999.954,
@@ -21626,9 +21630,13 @@
           "status": "open",
           "followups": [],
           "sheet": "مُضاف يدوياً",
-          "manualCount": 0,
+          "manualCount": 1,
           "followEntity": "rais_depts",
-          "responseMethod": ""
+          "responseMethod": "",
+          "docNo": "1170/3/2022v404-97",
+          "toEntity": "دائرة التخطيط الاستراتيجي",
+          "priority": "normal",
+          "confidentiality": "normal"
         }
       ],
       "closedTopics": [
@@ -22745,9 +22753,13 @@
           "status": "open",
           "followups": [],
           "sheet": "مُضاف يدوياً",
-          "manualCount": 0,
+          "manualCount": 1,
           "followEntity": "rais_depts",
-          "responseMethod": ""
+          "responseMethod": "",
+          "docNo": "1170/3/2022v404-97",
+          "toEntity": "دائرة التخطيط الاستراتيجي",
+          "priority": "normal",
+          "confidentiality": "normal"
         },
         {
           "id": 1781166399999.954,
