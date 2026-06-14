@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-14T07:43:25.274Z",
+  "exportedAt": "2026-06-14T07:44:24.331Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18872,7 +18872,7 @@
       "type": "ext",
       "kpi": "other",
       "note": "نائب الرئيس\nالالتزام البيئي\nالتنوع الاحيائي\n\nلاهمية الموضوع يجب تقديم المتطلبات الواردة في خطاب مدير عام التخطيط بوزارة الاسكان واي وثائق اخرى كادلة الاجراءات والحوكمة وغيرها وترسل الى الوزارة خلال اسبوعين عمل من تاريخه ويجب متابعة الموضوع مع الوزارة والتاكد من اتمامه بنجاح\n",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-05-17",
@@ -18891,7 +18891,13 @@
       "sheet": "Sheet1",
       "manualCount": 3,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "",
+      "followStart": "",
+      "docNo": "",
+      "toEntity": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "closedAt": "2026-06-14"
     },
     {
       "id": 1780826442497.3965,
@@ -22579,7 +22585,7 @@
           "type": "ext",
           "kpi": "other",
           "note": "نائب الرئيس\nالالتزام البيئي\nالتنوع الاحيائي\n\nلاهمية الموضوع يجب تقديم المتطلبات الواردة في خطاب مدير عام التخطيط بوزارة الاسكان واي وثائق اخرى كادلة الاجراءات والحوكمة وغيرها وترسل الى الوزارة خلال اسبوعين عمل من تاريخه ويجب متابعة الموضوع مع الوزارة والتاكد من اتمامه بنجاح\n",
-          "status": "open",
+          "status": "closed",
           "followups": [
             {
               "date": "2026-05-17",
@@ -22598,7 +22604,13 @@
           "sheet": "Sheet1",
           "manualCount": 3,
           "followEntity": "naib_office",
-          "responseMethod": ""
+          "responseMethod": "",
+          "followStart": "",
+          "docNo": "",
+          "toEntity": "",
+          "priority": "normal",
+          "confidentiality": "normal",
+          "closedAt": "2026-06-14"
         },
         {
           "id": 1780826442610.4395,
