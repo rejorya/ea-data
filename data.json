@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-14T07:33:24.326Z",
+  "exportedAt": "2026-06-14T07:34:25.283Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18310,7 +18310,7 @@
       "type": "int",
       "kpi": "other",
       "note": "لتقديم برنامج زمني من مركز الاعتماد للوصول الاعتراف الدولي بشهادات روزنة خلال 6 اشهر بما في ذلك استيفاء كامل المتطلبات",
-      "status": "open",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-05-04",
@@ -18333,6 +18333,18 @@
           "taqseem": "دائرة ضبط الجودة",
           "startDate": "2026-05-04",
           "daysSince": 28
+        },
+        {
+          "date": "2026-06-14",
+          "replied": false,
+          "note": "تسليم مسودة الخطة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "taqseem": "دائرة ضبط الجودة",
+          "startDate": "2026-05-04",
+          "daysSince": 29
         }
       ],
       "sheet": "Sheet1",
@@ -18344,7 +18356,8 @@
       "docNo": "5511/32/2022v8-91",
       "toEntity": "",
       "priority": "normal",
-      "confidentiality": "normal"
+      "confidentiality": "normal",
+      "divFollowDate": "2026-06-14"
     },
     {
       "id": 1780826442474.1848,
@@ -22360,7 +22373,7 @@
           "type": "int",
           "kpi": "other",
           "note": "لتقديم برنامج زمني من مركز الاعتماد للوصول الاعتراف الدولي بشهادات روزنة خلال 6 اشهر بما في ذلك استيفاء كامل المتطلبات",
-          "status": "open",
+          "status": "awaiting_div",
           "followups": [
             {
               "date": "2026-05-04",
@@ -22383,6 +22396,18 @@
               "taqseem": "دائرة ضبط الجودة",
               "startDate": "2026-05-04",
               "daysSince": 28
+            },
+            {
+              "date": "2026-06-14",
+              "replied": false,
+              "note": "تسليم مسودة الخطة",
+              "actionType": "visit",
+              "by": "",
+              "result": "",
+              "entity": "other",
+              "taqseem": "دائرة ضبط الجودة",
+              "startDate": "2026-05-04",
+              "daysSince": 29
             }
           ],
           "sheet": "Sheet1",
@@ -22394,7 +22419,8 @@
           "docNo": "5511/32/2022v8-91",
           "toEntity": "",
           "priority": "normal",
-          "confidentiality": "normal"
+          "confidentiality": "normal",
+          "divFollowDate": "2026-06-14"
         },
         {
           "id": 1780826442477.3865,
