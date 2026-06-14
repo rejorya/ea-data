@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-14T04:49:25.051Z",
+  "exportedAt": "2026-06-14T04:50:26.004Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18531,18 +18531,32 @@
       "type": "int",
       "kpi": "other",
       "note": "د. مريم\nلتقديم نطاق مشروع لدراسة الفرص الاستثمارية في القطاع البيئي",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-05-19",
           "replied": false,
           "note": "1"
+        },
+        {
+          "date": "2026-06-14",
+          "replied": true,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "taqseem": "مديرة الاستدامة",
+          "startDate": "",
+          "daysSince": 28
         }
       ],
       "sheet": "Sheet1",
       "manualCount": 1,
       "followEntity": "other",
-      "responseMethod": ""
+      "responseMethod": "via_follow",
+      "closedAt": "2026-06-14",
+      "taqseemName": "مديرة الاستدامة"
     },
     {
       "id": 1780826442486.387,
@@ -22275,18 +22289,32 @@
           "type": "int",
           "kpi": "other",
           "note": "د. مريم\nلتقديم نطاق مشروع لدراسة الفرص الاستثمارية في القطاع البيئي",
-          "status": "open",
+          "status": "closed",
           "followups": [
             {
               "date": "2026-05-19",
               "replied": false,
               "note": "1"
+            },
+            {
+              "date": "2026-06-14",
+              "replied": true,
+              "note": "متابعة",
+              "actionType": "visit",
+              "by": "",
+              "result": "",
+              "entity": "other",
+              "taqseem": "مديرة الاستدامة",
+              "startDate": "",
+              "daysSince": 28
             }
           ],
           "sheet": "Sheet1",
           "manualCount": 1,
           "followEntity": "other",
-          "responseMethod": ""
+          "responseMethod": "via_follow",
+          "closedAt": "2026-06-14",
+          "taqseemName": "مديرة الاستدامة"
         },
         {
           "id": 1780826442496.1135,
