@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-14T03:31:27.719Z",
+  "exportedAt": "2026-06-14T03:32:24.984Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21472,7 +21472,1234 @@
       "note": ""
     }
   ],
-  "weekly": [],
+  "weekly": [
+    {
+      "num": "الأسبوع المنتهي في 2026-06-11",
+      "from": "2026-06-07",
+      "to": "2026-06-11",
+      "nw": 5,
+      "cl": 9,
+      "esc": 3,
+      "lateNow": 1,
+      "escNow": 0,
+      "avgComplete": 24.3,
+      "op": 24,
+      "disc": 4,
+      "tot": 1103,
+      "pct": 98,
+      "newTopics": [
+        {
+          "id": 1780911500918.6326,
+          "title": "مقترح مشروع تطبيق إمكانية الوضصول الشاملة لذوي الإعاقة بمرافق الهيئة.pdf",
+          "from": "مشاريع نشايل للتجارة",
+          "date": "2026-06-07",
+          "type": "ext",
+          "kpi": "other",
+          "note": "نائب الرئيس\nللالتقاء بممثل الشركة والافادة.",
+          "status": "open",
+          "followups": [
+            {
+              "date": "2026-06-08",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "naib_office",
+              "taqseem": "",
+              "daysSince": 1
+            }
+          ],
+          "sheet": "مُضاف يدوياً",
+          "manualCount": 1,
+          "followEntity": "naib_office",
+          "responseMethod": ""
+        },
+        {
+          "id": 1780991974965.631,
+          "title": "التقرير المتكامل حول مشروع إنشاء نظام الإنذار المبكر لرصد جودة مياه البحر في سلطنة عُمان.pdf (سري)",
+          "from": "الامانة العامة لمجلس الوزراء",
+          "date": "2026-06-07",
+          "type": "ext",
+          "kpi": "naib3",
+          "note": "المهندس مدير المكتب\nلنقل ما تمت الاشارة اليه في سياق الخطاب الى نائب الرئيس لأعداد المخاطبات المشار اليها والافادة.",
+          "status": "open",
+          "followups": [
+            {
+              "date": "2026-06-09",
+              "replied": false,
+              "note": "تم التوجيه بتاريخ 7 يونيو 2026م",
+              "entity": "naib_office",
+              "taqseem": "",
+              "daysSince": 2
+            }
+          ],
+          "sheet": "مُضاف يدوياً",
+          "followEntity": "naib_office"
+        },
+        {
+          "id": 1780994330762.7246,
+          "title": "مخطط منطقة حيل ينكت.pdf",
+          "from": "اهالي وساكني منطقة حيل ينكت بولاية مسقط",
+          "date": "2026-06-07",
+          "type": "ext",
+          "kpi": "other",
+          "note": "نائب الرئيس\nلتقييم موضوع الشكوى والافادة.",
+          "status": "open",
+          "followups": [],
+          "sheet": "مُضاف يدوياً",
+          "manualCount": 1,
+          "followEntity": "naib_office",
+          "responseMethod": ""
+        },
+        {
+          "id": 1780995331728.04,
+          "title": "تظلم بشأن طلب مشروع الانتفاع بمنطقة حور طاقة.pdf",
+          "from": "ريفيرا ظفار للاستثمار",
+          "date": "2026-06-08",
+          "type": "ext",
+          "kpi": "w2week",
+          "note": "نائب الرئيس\nلدراسة التظلم بحضور لجنة الاستثمار والدائرة القانونية\nوفق الاجراءات القانونية المتبعة والافادة خلال عشرة ايام عمل",
+          "status": "open",
+          "followups": [
+            {
+              "date": "2026-06-09",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "naib_office",
+              "taqseem": "",
+              "daysSince": 1
+            }
+          ],
+          "sheet": "مُضاف يدوياً",
+          "manualCount": 1,
+          "followEntity": "naib_office",
+          "responseMethod": "",
+          "followStart": "2026-06-09"
+        },
+        {
+          "id": 1781065929572.999,
+          "title": "مصفوفة المشاريع الخضراء 783.pdf (عاجل جدا)",
+          "from": "وزارة الإقتصاد",
+          "date": "2026-06-09",
+          "followStart": "2026-06-10",
+          "type": "ext",
+          "kpi": "gov5",
+          "note": "التخطيط لعمل اللازم بادراج مشروع الادارة المستدامة للموارد الطبيعية بظفار ومشروعات استزراع المنجروف والاشجار البرية واي مشروعات في التغير المناخي او القطاعات الاخرى تندرج تحت هذا الاطار\n",
+          "status": "open",
+          "followups": [],
+          "sheet": "مُضاف يدوياً",
+          "manualCount": 0,
+          "followEntity": "rais_depts",
+          "responseMethod": ""
+        }
+      ],
+      "closedTopics": [
+        {
+          "id": 1780826442425.3643,
+          "title": "اعداد إحصائيات لنفوق السلاحف والحيتان والدلافين من عام 2020م إلى عام 2025م",
+          "from": "مكتب الرئيس",
+          "responsible": "خلود المحرمي (مكتب نائب الرئيس)",
+          "date": "2026-02-18",
+          "type": "int",
+          "kpi": "other",
+          "note": "",
+          "status": "closed",
+          "followups": [
+            {
+              "date": "2026-04-22",
+              "replied": false,
+              "note": "2"
+            },
+            {
+              "date": "2026-06-25",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "taqseem",
+              "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+              "daysSince": 127
+            }
+          ],
+          "sheet": "Sheet1",
+          "followEntity": "naib_office",
+          "responseMethod": "direct_manager",
+          "taqseemName": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "closedAt": "2026-06-09",
+          "manualCount": 13
+        },
+        {
+          "id": 1780826442444.8167,
+          "title": "طلب ضم قطعة الارض المحاذية لمحمية الخوير.pdf",
+          "from": "وزارة الاسكان والتخطيط العمراني",
+          "responsible": "خلود المحرمي (مكتب نائب الرئيس)",
+          "date": "2026-04-22",
+          "type": "ext",
+          "kpi": "other",
+          "note": "يعد خطاب رد الى سعادة وكيل الاسكان ويذكر فيه بان الارض تبقى للوزارة ونقترح بانها تطرح مع مشروع تطوير المحمية لكي نحقق التكامل بين الموقعين ويمكن ان يكون فيها مركز الزوار ومرافقه ويرفق مع الخطاب دراسة الشروط المرجعية ويطلب اجتماع لتقديم المبررات",
+          "status": "closed",
+          "followups": [
+            {
+              "date": "2026-05-14",
+              "replied": false,
+              "note": "1"
+            },
+            {
+              "date": "2026-05-14",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "naib_office",
+              "taqseem": "",
+              "daysSince": 22
+            }
+          ],
+          "sheet": "Sheet1",
+          "manualCount": 11,
+          "followEntity": "naib_office",
+          "responseMethod": "",
+          "followStart": "2026-04-23",
+          "closedAt": "2026-06-10"
+        },
+        {
+          "id": 1780826442457.4849,
+          "title": "طلب مقابلة بشأن الشكوى المرتبطة بمشروع محمية المها العربية.pdf",
+          "from": "شركة مجن العالمية",
+          "responsible": "خلود المحرمي (مكتب نائب الرئيس)",
+          "date": "2026-04-29",
+          "type": "ext",
+          "kpi": "other",
+          "note": "نائب الرئيس\nللجلوس مع الشركة بحضور المختصين من الادارية والمالية وحضور القانونية والنظر في الموضوع بكل حيادية ورفع ما تخلصون اليه الينا على شكل توصيات\nتنفذ الزيارة قبل اجازة الاضحى",
+          "status": "closed",
+          "followups": [
+            {
+              "date": "2026-05-12",
+              "replied": false,
+              "note": "1"
+            },
+            {
+              "date": "2026-05-12",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "naib_office",
+              "taqseem": "",
+              "daysSince": 13
+            }
+          ],
+          "sheet": "Sheet1",
+          "manualCount": 4,
+          "followEntity": "naib_office",
+          "responseMethod": "",
+          "followStart": "2026-04-30",
+          "closedAt": "2026-06-10"
+        },
+        {
+          "id": 1780826442500.0857,
+          "title": "حوار صحفي.pdf",
+          "from": "مجلة الدقم",
+          "responsible": "د.مريم",
+          "date": "2026-05-07",
+          "type": "ext",
+          "kpi": "rev3",
+          "note": "الدكتورة مريم البوسعيدي\nلعمل اللازم والاجابة على الاسئلة بما يعكس جهد الهيئة خلال 3 ايام عمل",
+          "status": "closed",
+          "followups": [
+            {
+              "date": "2026-05-20",
+              "replied": false,
+              "note": "1"
+            },
+            {
+              "date": "2026-05-20",
+              "replied": true,
+              "note": "متابعة",
+              "entity": "other",
+              "taqseem": "مدير الاستدامة",
+              "daysSince": 13
+            }
+          ],
+          "sheet": "Sheet1",
+          "manualCount": 1,
+          "followEntity": "other",
+          "responseMethod": "direct_manager",
+          "taqseemName": "مدير الاستدامة",
+          "closedAt": "2026-06-09"
+        },
+        {
+          "id": 1780826442621.16,
+          "title": "مصادقة على اعلان محميات طبيعية في بعض المحافظات (عاجل)",
+          "from": "وزارة الاسكان والتخطيط العمراني",
+          "responsible": "خلود المحرمي\r\n(مكتب نائب الرئيس)",
+          "date": "2026-05-21",
+          "type": "ext",
+          "kpi": "gov5",
+          "note": "1",
+          "status": "closed",
+          "followups": [
+            {
+              "date": "2026-05-24",
+              "replied": false,
+              "note": "1"
+            },
+            {
+              "date": "2026-05-24",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "naib_office",
+              "taqseem": "",
+              "daysSince": 3
+            }
+          ],
+          "sheet": "Sheet1",
+          "followEntity": "naib_office",
+          "closedAt": "2026-06-09",
+          "manualCount": 1,
+          "responseMethod": "",
+          "followStart": "2026-05-24"
+        },
+        {
+          "id": 1780826442622.333,
+          "title": "المشاركة في ملتقى الطفل والأسرة الثاني.pdf",
+          "from": "مركز العاصمة للمعارض الدولية",
+          "responsible": "لجنة الفعاليات\r\nد.بشرى",
+          "date": "2026-05-21",
+          "type": "ext",
+          "kpi": "other",
+          "note": "لجنة الفعاليات\nللدراسة والافادة",
+          "status": "closed",
+          "followups": [
+            {
+              "date": "2026-05-25",
+              "replied": false,
+              "note": "1"
+            }
+          ],
+          "sheet": "Sheet1",
+          "closedAt": "2026-06-08",
+          "manualCount": 1,
+          "followEntity": "other",
+          "responseMethod": "direct_manager"
+        },
+        {
+          "id": 1780826442623.3794,
+          "title": "قطعة الارض المخصصة للورشة البحرية بمنطقة المريصي بولاية بركاء",
+          "from": "وزارة الاسكان والتخطيط العمراني",
+          "responsible": "خلود المحرمي\r\n(مكتب نائب الرئيس) \r\nمدير ادارة جنوب الباطنة",
+          "date": "2026-05-21",
+          "type": "ext",
+          "kpi": "other",
+          "note": "تم رفع الافادات الى مدير المكتب 10/6",
+          "status": "closed",
+          "followups": [
+            {
+              "date": "2026-05-25",
+              "replied": false,
+              "note": "1\r\n1"
+            },
+            {
+              "date": "2026-06-07",
+              "replied": true,
+              "note": "متابعة",
+              "entity": "taqseem",
+              "taqseem": "ادراة البيئة شمال الباطنة",
+              "daysSince": 17
+            },
+            {
+              "date": "2026-06-07",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "taqseem",
+              "taqseem": "ادارة البيئة شمال الباطنة",
+              "startDate": "2026-05-24",
+              "daysSince": 10
+            }
+          ],
+          "sheet": "Sheet1",
+          "manualCount": 2,
+          "followEntity": "taqseem",
+          "responseMethod": "via_follow",
+          "taqseemName": "ادارة البيئة شمال الباطنة",
+          "followStart": "2026-05-24",
+          "closedAt": "2026-06-11"
+        },
+        {
+          "id": 1780826442627.5752,
+          "title": "ظاهرة تدفق المياه بالحي الشرقي بولاية المضيبي.pdf (سري)",
+          "from": "وزارة الاسكان والتخطيط العمراني",
+          "responsible": "خلود المحرمي\r\n(مكتب نائب الرئيس)",
+          "date": "2026-06-02",
+          "type": "ext",
+          "kpi": "other",
+          "note": "لا يحتاج متابعة",
+          "status": "closed",
+          "followups": [],
+          "sheet": "Sheet1",
+          "closedAt": "2026-06-08",
+          "manualCount": 0,
+          "followEntity": "",
+          "responseMethod": ""
+        },
+        {
+          "id": 1780911645072.8655,
+          "title": "طلب نقل بالتبادل بين الفاضل سعيد المقيمي والفاضل راشد المشرفي",
+          "from": "محافظة جنوب الشرقية",
+          "date": "2026-06-01",
+          "type": "ext",
+          "kpi": "naib3",
+          "note": "",
+          "status": "closed",
+          "followups": [
+            {
+              "date": "2026-06-08",
+              "replied": true,
+              "note": "متابعة",
+              "entity": "other",
+              "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+              "daysSince": 7
+            },
+            {
+              "date": "2026-06-10",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "other",
+              "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+              "startDate": "2026-06-08",
+              "daysSince": 2
+            },
+            {
+              "date": "2026-06-10",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "other",
+              "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+              "startDate": "2026-06-08",
+              "daysSince": 2
+            }
+          ],
+          "sheet": "مُضاف يدوياً",
+          "followEntity": "other",
+          "responseMethod": "direct_manager",
+          "taqseemName": "المديرية العامة للشؤون الادارية والمالية",
+          "followStart": "2026-06-08",
+          "manualCount": 3,
+          "closedAt": "2026-06-11"
+        }
+      ],
+      "escTopics": [
+        {
+          "id": 1780826442455.5054,
+          "title": "توفير ملابس التفتيش لموظفي المديرية العامة للإلتزام البيئي",
+          "from": "نائب الرئيس",
+          "responsible": "خلود المحرمي (مكتب نائب الرئيس) دائرة ضبط الجودة مكتب الرقابة البيئية",
+          "date": "2026-04-23",
+          "type": "ext",
+          "kpi": "",
+          "note": "1",
+          "status": "esc",
+          "followups": [
+            {
+              "date": "2026-05-20",
+              "replied": false,
+              "note": "1"
+            },
+            {
+              "date": "2026-05-24",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "naib_office",
+              "taqseem": "دائرة ضبط الجودة- مكتب الرقابة البيئية",
+              "daysSince": 31
+            },
+            {
+              "date": "2026-06-11",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "naib_office",
+              "taqseem": "دائرة ضبط الجودة- مكتب الرقابة البيئية-مكتب النائب",
+              "startDate": "2026-05-20",
+              "daysSince": 16
+            }
+          ],
+          "sheet": "Sheet1",
+          "followEntity": "naib_office",
+          "taqseemName": "دائرة ضبط الجودة- مكتب الرقابة البيئية-مكتب النائب",
+          "followStart": "2026-05-20"
+        },
+        {
+          "id": 1780826442612.2332,
+          "title": "مقترح إنشاء وحدة دعم البحث العلمي في المؤسسات البحثية في سلطنة عمان.pdf",
+          "from": "هيئة البحث العلمي والابتكار",
+          "responsible": "د.مريم",
+          "date": "2026-05-18",
+          "type": "ext",
+          "kpi": "gov5",
+          "note": "المدير المختص بالاستدامة\nللمراجعة وابداء الملاحظات والافادة خلال 5 ايام عمل",
+          "status": "esc",
+          "followups": [
+            {
+              "date": "2026-05-19",
+              "replied": false,
+              "note": "1"
+            },
+            {
+              "date": "2026-05-19",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "other",
+              "taqseem": "مدير مختص بالاستدامة",
+              "daysSince": 1
+            },
+            {
+              "date": "2026-06-10",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "other",
+              "taqseem": "مدير مختص بالاستدامة",
+              "startDate": "2026-05-18",
+              "daysSince": 17
+            }
+          ],
+          "sheet": "Sheet1",
+          "manualCount": 2,
+          "followEntity": "other",
+          "responseMethod": "",
+          "taqseemName": "مدير مختص بالاستدامة",
+          "followStart": "2026-05-18"
+        },
+        {
+          "id": 1781166399999.954,
+          "title": "طرح المختبر البيئي للاستثمار",
+          "from": "مكتب نائب رئيس الهيئة",
+          "date": "2026-05-25",
+          "followStart": "2026-05-25",
+          "type": "int",
+          "kpi": "other",
+          "note": "",
+          "status": "esc",
+          "followups": [
+            {
+              "date": "2026-05-25",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "taqseem",
+              "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+              "startDate": "2026-05-25",
+              "daysSince": 0
+            }
+          ],
+          "sheet": "مُضاف يدوياً",
+          "followEntity": "taqseem",
+          "taqseemName": "المديرية العامة للشؤون الادارية والمالية"
+        }
+      ],
+      "openTopics": [
+        {
+          "id": 1780826441880.0312,
+          "title": "ملخص ورشة عمل مشروع المسح الوطني للتنوع الأحيائي",
+          "from": "المديرية العامة لصون الطبيعة",
+          "responsible": "خلود المحرمي (مكتب نائب الرئيس)",
+          "date": "2025-07-20",
+          "type": "int",
+          "kpi": "other",
+          "note": "بناء على توجيه سعادته ، يتم تسليم نتائج تحليل مشروع المسح الوطني للتنوع الاحيائي في نهاية شهر يونيو 2026م .",
+          "status": "open",
+          "followups": [
+            {
+              "date": "2026-05-14",
+              "replied": false,
+              "note": "1"
+            },
+            {
+              "date": "2026-06-08",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "naib_office",
+              "taqseem": "",
+              "daysSince": 323
+            }
+          ],
+          "sheet": "Sheet1",
+          "manualCount": 3,
+          "followEntity": "naib_office",
+          "responseMethod": ""
+        },
+        {
+          "id": 1780826442237.0232,
+          "title": "اجتماع تنسيقى لبحث مجالات التعاون في البيئة البحرية مع المنظمة الإقليمية لحماية البيئة البحرية (روبمي) للعام 2026",
+          "from": "دائرة التعاون الدولي",
+          "responsible": "دائرة التعاون الدولي",
+          "date": "2025-12-25",
+          "type": "int",
+          "kpi": "other",
+          "note": "تم التواصل اليوم مع المنظمة حول الموضوع\nوتم الافادة بأن الموضوع قيد الدراسة في المنظمة. \nوسوف نوافيكم بالمستجدات فور الحصول عليها.",
+          "status": "open",
+          "followups": [
+            {
+              "date": "2026-05-17",
+              "replied": true,
+              "note": "1"
+            }
+          ],
+          "sheet": "Sheet1",
+          "manualCount": 11,
+          "followEntity": "rais_depts",
+          "responseMethod": ""
+        },
+        {
+          "id": 1780826442332.9966,
+          "title": "نشر بيانات التنوع الاحيائي في مؤسسة GBif",
+          "from": "مكتب متابعة تنفيذ رؤية عمان 2040",
+          "responsible": "خلود المحرمي (مكتب نائب الرئيس)",
+          "date": "2026-02-08",
+          "type": "int",
+          "kpi": "other",
+          "note": "نائب الرئيس\nالتنوع الاحيائي\nلعمل اللازم حيال حضور عدد من المختصين والافادة بتقرير\n\nتنمية الموارد البشرية \nللمتابعة\n",
+          "status": "open",
+          "followups": [
+            {
+              "date": "2026-02-23",
+              "replied": false,
+              "note": "1"
+            },
+            {
+              "date": "2026-06-08",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "naib_office",
+              "taqseem": "",
+              "daysSince": 120
+            }
+          ],
+          "sheet": "Sheet1",
+          "followEntity": "naib_office",
+          "manualCount": 4,
+          "responseMethod": ""
+        },
+        {
+          "id": 1780826442445.005,
+          "title": "منشور رقم 1-2026م بشأن قواعد إعداد تقديرات الميزانية العامة للدولة لعام 2027م (1).pdf",
+          "from": "وزارة المالية وزارة الاقتصاد",
+          "responsible": "التخطيط الاستراتيجي",
+          "date": "2026-04-22",
+          "type": "ext",
+          "kpi": "other",
+          "note": "حاليا في طور الجلوس مع المالية لمناقشة النقاط المتعلقة بالنظام المالي.\nاخر موعد للرد 20/6",
+          "status": "open",
+          "followups": [
+            {
+              "date": "2026-06-07",
+              "replied": true,
+              "note": "2"
+            }
+          ],
+          "sheet": "Sheet1",
+          "manualCount": 4,
+          "followEntity": "rais_depts",
+          "responseMethod": "via_follow"
+        },
+        {
+          "id": 1780826442455.5054,
+          "title": "توفير ملابس التفتيش لموظفي المديرية العامة للإلتزام البيئي",
+          "from": "نائب الرئيس",
+          "responsible": "خلود المحرمي (مكتب نائب الرئيس) دائرة ضبط الجودة مكتب الرقابة البيئية",
+          "date": "2026-04-23",
+          "type": "ext",
+          "kpi": "",
+          "note": "1",
+          "status": "esc",
+          "followups": [
+            {
+              "date": "2026-05-20",
+              "replied": false,
+              "note": "1"
+            },
+            {
+              "date": "2026-05-24",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "naib_office",
+              "taqseem": "دائرة ضبط الجودة- مكتب الرقابة البيئية",
+              "daysSince": 31
+            },
+            {
+              "date": "2026-06-11",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "naib_office",
+              "taqseem": "دائرة ضبط الجودة- مكتب الرقابة البيئية-مكتب النائب",
+              "startDate": "2026-05-20",
+              "daysSince": 16
+            }
+          ],
+          "sheet": "Sheet1",
+          "followEntity": "naib_office",
+          "taqseemName": "دائرة ضبط الجودة- مكتب الرقابة البيئية-مكتب النائب",
+          "followStart": "2026-05-20"
+        },
+        {
+          "id": 1780826442473.178,
+          "title": "مشروع إصدار الشهادات الخضراء ( روزنة )",
+          "from": "نائب الرئيس",
+          "responsible": "خلود المحرمي (مكتب نائب الرئيس)",
+          "date": "2026-04-24",
+          "type": "int",
+          "kpi": "other",
+          "note": "لتقديم برنامج زمني من مركز الاعتماد للوصول الاعتراف الدولي بشهادات روزنة خلال 6 اشهر بما في ذلك استيفاء كامل المتطلبات",
+          "status": "open",
+          "followups": [
+            {
+              "date": "2026-05-04",
+              "replied": false,
+              "note": "1"
+            },
+            {
+              "date": "2026-06-09",
+              "replied": false,
+              "note": "تم ارد من قبل مكتب النائب",
+              "entity": "other",
+              "taqseem": "دائرة ضبط الجودة",
+              "daysSince": 46
+            },
+            {
+              "date": "2026-06-11",
+              "replied": true,
+              "note": "متابعة",
+              "entity": "other",
+              "taqseem": "دائرة ضبط الجودة",
+              "startDate": "2026-05-04",
+              "daysSince": 28
+            }
+          ],
+          "sheet": "Sheet1",
+          "manualCount": 4,
+          "followEntity": "other",
+          "responseMethod": "via_follow",
+          "taqseemName": "دائرة ضبط الجودة",
+          "followStart": "2026-05-04"
+        },
+        {
+          "id": 1780826442477.3865,
+          "title": "ربط محطات معالجة مياه الصرف الصحي الصغيرة بمحافظة مسقط بشبكة الصرف الصحي .pdf",
+          "from": "نماء لخدمات المياه",
+          "responsible": "خلود المحرمي (مكتب نائب الرئيس)",
+          "date": "2026-04-28",
+          "type": "ext",
+          "kpi": "other",
+          "note": "رد الجهة:في انتظار مراجعة محضر الاجتماع من قبل الجهات وسوف يتم افادتكم فور الانتهاء منه .\n",
+          "status": "open",
+          "followups": [
+            {
+              "date": "2026-06-07",
+              "replied": false,
+              "note": "2"
+            },
+            {
+              "date": "2026-06-08",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "taqseem",
+              "taqseem": "المديرية العامة لالتزام البيئي",
+              "daysSince": 41
+            },
+            {
+              "date": "2026-06-11",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "taqseem",
+              "taqseem": "المديرية العامة لالتزام البيئي",
+              "startDate": "",
+              "daysSince": 32
+            }
+          ],
+          "sheet": "Sheet1",
+          "manualCount": 7,
+          "followEntity": "taqseem",
+          "responseMethod": "via_follow",
+          "taqseemName": "المديرية العامة لالتزام البيئي",
+          "followStart": ""
+        },
+        {
+          "id": 1780826442479.3147,
+          "title": "تقرير تفصيلي حول مستجدات تنفيذ اتفاقيات إدارة وتشغيل وتطوير ورقابة المحميات الطبيعية مع الشركة العمانية للتنمية السياحية (عُمران)",
+          "from": "مكتب النائب",
+          "responsible": "خلود المحرمي (مكتب نائب الرئيس)",
+          "date": "2026-05-06",
+          "type": "ext",
+          "kpi": "other",
+          "note": "نائب الرئيس\nفسم الاستثمار\nللتنسيق مع سلطان الخضوري لاستيفاء المتطلبات والافادة خلال اسبوعين",
+          "status": "open",
+          "followups": [
+            {
+              "date": "2026-05-12",
+              "replied": false,
+              "note": "1"
+            },
+            {
+              "date": "2026-06-10",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "naib_office",
+              "taqseem": "",
+              "startDate": "2026-06-10",
+              "daysSince": 0
+            }
+          ],
+          "sheet": "Sheet1",
+          "closedAt": "2026-05-12",
+          "followStart": "2026-06-10",
+          "manualCount": 1,
+          "followEntity": "naib_office",
+          "responseMethod": ""
+        },
+        {
+          "id": 1780826442485.9822,
+          "title": "ألتقييم الاقتصادي لمشاريع خطة الاستثمار البيئي",
+          "from": "مدير مختص في الاستدامة البيئية",
+          "responsible": "د.مريم",
+          "date": "2026-05-05",
+          "type": "int",
+          "kpi": "other",
+          "note": "د. مريم\nلتقديم نطاق مشروع لدراسة الفرص الاستثمارية في القطاع البيئي",
+          "status": "open",
+          "followups": [
+            {
+              "date": "2026-05-19",
+              "replied": false,
+              "note": "1"
+            }
+          ],
+          "sheet": "Sheet1",
+          "manualCount": 1,
+          "followEntity": "other",
+          "responseMethod": ""
+        },
+        {
+          "id": 1780826442496.1135,
+          "title": "تحديد مخططات للأراضي الواقعة ضمن نطاق المحميات الطبيعية.pdf",
+          "from": "وزارة الاسكان والتخطيط العمراني",
+          "responsible": "خلود المحرمي (مكتب نائب الرئيس)",
+          "date": "2026-05-07",
+          "type": "ext",
+          "kpi": "other",
+          "note": "نائب الرئيس\nالالتزام البيئي\nالتنوع الاحيائي\n\nلاهمية الموضوع يجب تقديم المتطلبات الواردة في خطاب مدير عام التخطيط بوزارة الاسكان واي وثائق اخرى كادلة الاجراءات والحوكمة وغيرها وترسل الى الوزارة خلال اسبوعين عمل من تاريخه ويجب متابعة الموضوع مع الوزارة والتاكد من اتمامه بنجاح\n",
+          "status": "open",
+          "followups": [
+            {
+              "date": "2026-05-17",
+              "replied": false,
+              "note": "1"
+            },
+            {
+              "date": "2026-05-25",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "naib_office",
+              "taqseem": "",
+              "daysSince": 18
+            }
+          ],
+          "sheet": "Sheet1",
+          "manualCount": 3,
+          "followEntity": "naib_office",
+          "responseMethod": ""
+        },
+        {
+          "id": 1780826442610.4395,
+          "title": "إنتاج خرائط الاساس الرقمية التفصيلية.pdf (سري)",
+          "from": "الامانة العامة لمجلس الوزراء",
+          "responsible": "خلود المحرمي (مكتب نائب الرئيس) د.مريم",
+          "date": "2026-05-17",
+          "type": "ext",
+          "kpi": "gov5",
+          "note": "الدكتورة رحمة النظيري\nالدكتورة مريم البوسعيدي\nللمراجعة بالتنسيق مع تقنية المعلومات والتقسيمات المختصة في الغطاء النباتي ومركز الطوارئ في ضوء مشروعاتهم المرتبطة بها التطبيقات للاقمار الصناعية والافادة بالملاحظات خلال اسبوع عمل",
+          "status": "open",
+          "followups": [
+            {
+              "date": "2026-05-21",
+              "replied": false,
+              "note": "1"
+            },
+            {
+              "date": "2026-05-25",
+              "replied": false,
+              "note": "تم متابعة مكتب النائب وعند تجاوز مدة الرد تم متابع المديرية وتم تجاوز المد وتم التصعيد",
+              "entity": "other",
+              "taqseem": "الدكتورة رحمة النظيري- الدكتورة مريم البوسعيدي",
+              "daysSince": 8
+            },
+            {
+              "date": "2026-06-09",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "other",
+              "taqseem": "الدكتورة رحمة النظيري- الدكتورة مريم البوسعيدي",
+              "daysSince": 23
+            },
+            {
+              "date": "2026-06-11",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "taqseem",
+              "taqseem": "المديرية العامة لتنمية الغطاء النباتي",
+              "startDate": "2026-05-18",
+              "daysSince": 18
+            }
+          ],
+          "sheet": "Sheet1",
+          "manualCount": 5,
+          "followEntity": "taqseem",
+          "responseMethod": "",
+          "taqseemName": "المديرية العامة لتنمية الغطاء النباتي",
+          "followStart": "2026-05-18"
+        },
+        {
+          "id": 1780826442612.2332,
+          "title": "مقترح إنشاء وحدة دعم البحث العلمي في المؤسسات البحثية في سلطنة عمان.pdf",
+          "from": "هيئة البحث العلمي والابتكار",
+          "responsible": "د.مريم",
+          "date": "2026-05-18",
+          "type": "ext",
+          "kpi": "gov5",
+          "note": "المدير المختص بالاستدامة\nللمراجعة وابداء الملاحظات والافادة خلال 5 ايام عمل",
+          "status": "esc",
+          "followups": [
+            {
+              "date": "2026-05-19",
+              "replied": false,
+              "note": "1"
+            },
+            {
+              "date": "2026-05-19",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "other",
+              "taqseem": "مدير مختص بالاستدامة",
+              "daysSince": 1
+            },
+            {
+              "date": "2026-06-10",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "other",
+              "taqseem": "مدير مختص بالاستدامة",
+              "startDate": "2026-05-18",
+              "daysSince": 17
+            }
+          ],
+          "sheet": "Sheet1",
+          "manualCount": 2,
+          "followEntity": "other",
+          "responseMethod": "",
+          "taqseemName": "مدير مختص بالاستدامة",
+          "followStart": "2026-05-18"
+        },
+        {
+          "id": 1780826442625.1667,
+          "title": "مشروع تحديث الاستراتيجية الوطنية للتنمية العمرانية (عاجل جدا)",
+          "from": "وزارة الاسكان والتخطيط العمراني",
+          "responsible": "خلود المحرمي\r\n(مكتب نائب الرئيس) \r\nدائرة التخطيط الاستراتيجي",
+          "date": "2026-06-01",
+          "type": "ext",
+          "kpi": "gov5",
+          "note": "تم رفع الافادة الى مدير المكتب للعرض على رئيس الهيئة وترشيح نقطة التواصل",
+          "status": "open",
+          "followups": [
+            {
+              "date": "2026-06-08",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "naib_office",
+              "taqseem": "",
+              "daysSince": 7
+            },
+            {
+              "date": "2026-06-08",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "naib_office",
+              "taqseem": "",
+              "startDate": "2026-06-02",
+              "daysSince": 4
+            }
+          ],
+          "sheet": "Sheet1",
+          "manualCount": 1,
+          "followEntity": "rais_depts",
+          "responseMethod": "",
+          "followStart": "2026-06-02"
+        },
+        {
+          "id": 1780826442626.797,
+          "title": "طلب استحداث وتعديل تقسيمات تنظيمية ضمن الهيكل التنظيمي المعتمد.pdf(سري للغاية)",
+          "from": "وزارة العمل",
+          "responsible": "المديرية العامة للشؤون الادارية والمالية",
+          "date": "2026-06-01",
+          "type": "ext",
+          "kpi": "naib3",
+          "note": "رد الجهة :بناءً على توجيهات المدير العام، جارٍ انتظار رد وزارة المالية بشأن الموضوع ذاته، وذلك تمهيدًا لصياغة الرد النهائي بعد استكمال جميع الموافقات اللازمة.",
+          "status": "open",
+          "followups": [
+            {
+              "date": "2026-06-07",
+              "replied": false,
+              "note": "1"
+            },
+            {
+              "date": "2026-06-08",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "taqseem",
+              "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+              "daysSince": 7
+            },
+            {
+              "date": "2026-06-09",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "taqseem",
+              "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+              "daysSince": 8
+            },
+            {
+              "date": "2026-06-09",
+              "replied": true,
+              "note": "رد الجهه:بناءً على توجيهات المدير العام، جارٍ انتظار رد وزارة المالية بشأن الموضوع ذاته، وذلك تمهيدًا لصياغة الرد النهائي بعد استكمال جميع الموافقات اللازمة.",
+              "entity": "taqseem",
+              "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+              "daysSince": 8
+            }
+          ],
+          "sheet": "Sheet1",
+          "manualCount": 1,
+          "followEntity": "taqseem",
+          "responseMethod": "via_follow",
+          "taqseemName": "المديرية العامة للشؤون الادارية والمالية"
+        },
+        {
+          "id": 1780826442630.2268,
+          "title": "تصوير الغطاء الشجري في عدد من محافظات السلطنة",
+          "from": "دائرة اتواصل والاعلام",
+          "responsible": "خلود المحرمي\r\n(مكتب نائب الرئيس)",
+          "date": "2026-06-03",
+          "type": "int",
+          "kpi": "other",
+          "note": "نائب الرئيس\nلايجاد حلول للتحديات في بعض التقسيمات والافادة خلال اسبوع من تاريخ 4 يونيو 2026.\nالرد 10/6\nالتواصل والاعلام\nللمتابعة والافادة ",
+          "status": "open",
+          "followups": [
+            {
+              "date": "2026-06-07",
+              "replied": false,
+              "note": "1"
+            }
+          ],
+          "sheet": "Sheet1",
+          "manualCount": 1,
+          "followEntity": "naib_office",
+          "responseMethod": ""
+        },
+        {
+          "id": 1780911500918.6326,
+          "title": "مقترح مشروع تطبيق إمكانية الوضصول الشاملة لذوي الإعاقة بمرافق الهيئة.pdf",
+          "from": "مشاريع نشايل للتجارة",
+          "date": "2026-06-07",
+          "type": "ext",
+          "kpi": "other",
+          "note": "نائب الرئيس\nللالتقاء بممثل الشركة والافادة.",
+          "status": "open",
+          "followups": [
+            {
+              "date": "2026-06-08",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "naib_office",
+              "taqseem": "",
+              "daysSince": 1
+            }
+          ],
+          "sheet": "مُضاف يدوياً",
+          "manualCount": 1,
+          "followEntity": "naib_office",
+          "responseMethod": ""
+        },
+        {
+          "id": 1780987865442.4202,
+          "title": "تقديم خبرة اعلامية",
+          "from": "مكتب نائب رئيس الهيئة",
+          "date": "2026-06-04",
+          "type": "int",
+          "kpi": "other",
+          "note": "نائب الرئيس\nلمقابلة المذكور والافادة.",
+          "status": "open",
+          "followups": [],
+          "sheet": "مُضاف يدوياً",
+          "manualCount": 0,
+          "followEntity": "naib_office",
+          "responseMethod": ""
+        },
+        {
+          "id": 1780988012338.838,
+          "title": "متابعة عاجلة بشأن شكوانا المتعلقة بالأضرار البيئية والصحية الناجمة عن نشاط مصنع الحبسي للمنتجات الأسمنتية ش.م.م.pdf",
+          "from": "شركة المطوع للتجارة ش.م.م",
+          "date": "2026-06-04",
+          "type": "ext",
+          "kpi": "other",
+          "note": "نائب الرئيس\nمكتب الرقابة\nللافادة عن الشكوي المقدمة ومدي التزام المنشئة بالاشتراطات البيئية وفي حال عدم الالتزام يتم اتخاذ الاجراء المناسب بشانها.\nرد مركز الاعمال :الاخت الفاضلة رحاب الفرج المحترمه\n ونود الافاده بان الشركة قامت بعمل دراسة التدقيق  البيئي(ولم يتم مراجعتها) ، ولكن يوجد اختلاف بين المركز والمديرية العامه للالتزام البيئي في مسؤليات متابعه ومراجعة دراسات التدقيق على ان يعقد اليوم اجتماع بمكتب  المهندس نائب رئيس الهيئة بحضور مدير عام الالتزام البيئي والمختصين لديهم لحلحلة المسؤليات في هذا الجانب.",
+          "status": "open",
+          "followups": [
+            {
+              "date": "2026-06-11",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "rais_depts",
+              "taqseem": "مركز الاعمال البيئية- مكتب الرقابة",
+              "startDate": "2026-06-07",
+              "daysSince": 4
+            },
+            {
+              "date": "2026-06-11",
+              "replied": true,
+              "note": "رد مركز الاعمال البيئية:\nالاخت الفاضلة رحاب الفرج المحترمه\n ونود الافاده بان الشركة قامت بعمل دراسة التدقيق  البيئي(ولم يتم مراجعتها) ، ولكن يوجد اختلاف بين المركز والمديرية العامه للالتزام البيئي في مسؤليات متابعه ومراجعة دراسات التدقيق على ان يعقد اليوم اجتماع بمكتب  المهندس نائب رئيس الهيئة بحضور مدير عام الالتزام البيئي والمختصين لديهم لحلحلة المسؤليات في هذا الجانب.",
+              "entity": "rais_depts",
+              "taqseem": "مركز الاعمال البيئية- مكتب الرقابة",
+              "startDate": "2026-06-07",
+              "daysSince": 4
+            }
+          ],
+          "sheet": "مُضاف يدوياً",
+          "followStart": "2026-06-07",
+          "manualCount": 1,
+          "followEntity": "rais_depts",
+          "responseMethod": "via_follow",
+          "taqseemName": "مركز الاعمال البيئية- مكتب الرقابة"
+        },
+        {
+          "id": 1780991713416.4797,
+          "title": "مناقشة المتطلبات والاجراءات التنظيمية المتعلقة بمصادر المواد (Borrow Pits) وأعمال استخراج المواد ضمن منطقة الامتاز الخاصة بمشروع مزون للنحاس والذهب",
+          "from": "شركة مزون للتعدين",
+          "date": "2026-06-04",
+          "type": "ext",
+          "kpi": "std14",
+          "note": "",
+          "status": "open",
+          "followups": [
+            {
+              "date": "2026-06-09",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "naib_office",
+              "taqseem": "",
+              "daysSince": 5
+            }
+          ],
+          "sheet": "مُضاف يدوياً",
+          "followEntity": "naib_office",
+          "manualCount": 1,
+          "responseMethod": ""
+        },
+        {
+          "id": 1780991974965.631,
+          "title": "التقرير المتكامل حول مشروع إنشاء نظام الإنذار المبكر لرصد جودة مياه البحر في سلطنة عُمان.pdf (سري)",
+          "from": "الامانة العامة لمجلس الوزراء",
+          "date": "2026-06-07",
+          "type": "ext",
+          "kpi": "naib3",
+          "note": "المهندس مدير المكتب\nلنقل ما تمت الاشارة اليه في سياق الخطاب الى نائب الرئيس لأعداد المخاطبات المشار اليها والافادة.",
+          "status": "open",
+          "followups": [
+            {
+              "date": "2026-06-09",
+              "replied": false,
+              "note": "تم التوجيه بتاريخ 7 يونيو 2026م",
+              "entity": "naib_office",
+              "taqseem": "",
+              "daysSince": 2
+            }
+          ],
+          "sheet": "مُضاف يدوياً",
+          "followEntity": "naib_office"
+        },
+        {
+          "id": 1780994330762.7246,
+          "title": "مخطط منطقة حيل ينكت.pdf",
+          "from": "اهالي وساكني منطقة حيل ينكت بولاية مسقط",
+          "date": "2026-06-07",
+          "type": "ext",
+          "kpi": "other",
+          "note": "نائب الرئيس\nلتقييم موضوع الشكوى والافادة.",
+          "status": "open",
+          "followups": [],
+          "sheet": "مُضاف يدوياً",
+          "manualCount": 1,
+          "followEntity": "naib_office",
+          "responseMethod": ""
+        },
+        {
+          "id": 1780995331728.04,
+          "title": "تظلم بشأن طلب مشروع الانتفاع بمنطقة حور طاقة.pdf",
+          "from": "ريفيرا ظفار للاستثمار",
+          "date": "2026-06-08",
+          "type": "ext",
+          "kpi": "w2week",
+          "note": "نائب الرئيس\nلدراسة التظلم بحضور لجنة الاستثمار والدائرة القانونية\nوفق الاجراءات القانونية المتبعة والافادة خلال عشرة ايام عمل",
+          "status": "open",
+          "followups": [
+            {
+              "date": "2026-06-09",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "naib_office",
+              "taqseem": "",
+              "daysSince": 1
+            }
+          ],
+          "sheet": "مُضاف يدوياً",
+          "manualCount": 1,
+          "followEntity": "naib_office",
+          "responseMethod": "",
+          "followStart": "2026-06-09"
+        },
+        {
+          "id": 1781065929572.999,
+          "title": "مصفوفة المشاريع الخضراء 783.pdf (عاجل جدا)",
+          "from": "وزارة الإقتصاد",
+          "date": "2026-06-09",
+          "followStart": "2026-06-10",
+          "type": "ext",
+          "kpi": "gov5",
+          "note": "التخطيط لعمل اللازم بادراج مشروع الادارة المستدامة للموارد الطبيعية بظفار ومشروعات استزراع المنجروف والاشجار البرية واي مشروعات في التغير المناخي او القطاعات الاخرى تندرج تحت هذا الاطار\n",
+          "status": "open",
+          "followups": [],
+          "sheet": "مُضاف يدوياً",
+          "manualCount": 0,
+          "followEntity": "rais_depts",
+          "responseMethod": ""
+        },
+        {
+          "id": 1781166399999.954,
+          "title": "طرح المختبر البيئي للاستثمار",
+          "from": "مكتب نائب رئيس الهيئة",
+          "date": "2026-05-25",
+          "followStart": "2026-05-25",
+          "type": "int",
+          "kpi": "other",
+          "note": "",
+          "status": "esc",
+          "followups": [
+            {
+              "date": "2026-05-25",
+              "replied": false,
+              "note": "متابعة",
+              "entity": "taqseem",
+              "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+              "startDate": "2026-05-25",
+              "daysSince": 0
+            }
+          ],
+          "sheet": "مُضاف يدوياً",
+          "followEntity": "taqseem",
+          "taqseemName": "المديرية العامة للشؤون الادارية والمالية"
+        }
+      ],
+      "discTxt": "مقترح معالجة شجرة المسكيت بإستخدام تقنية مكربنة تعمل بالهيروجين الأخضر.pdf\nDhofar Biodiversity Monitoring Program Proposal fo_260106_202601.pdf\nإنتاج خرائط الاساس الرقمية التفصيلية.pdf\nتقرير حالة رصد.pdf",
+      "notes": "",
+      "savedAt": "١٤‏/٦‏/٢٠٢٦"
+    }
+  ],
   "monthly": [],
   "quarterly": [],
   "dirReports": [],
