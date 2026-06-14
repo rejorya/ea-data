@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-14T07:01:24.285Z",
+  "exportedAt": "2026-06-14T07:02:25.241Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20578,7 +20578,7 @@
       "type": "ext",
       "kpi": "gov5",
       "note": "المدير المختص بالاستدامة\nللمراجعة وابداء الملاحظات والافادة خلال 5 ايام عمل",
-      "status": "esc",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-05-19",
@@ -20601,6 +20601,18 @@
           "taqseem": "مدير مختص بالاستدامة",
           "startDate": "2026-05-18",
           "daysSince": 17
+        },
+        {
+          "date": "2026-06-14",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "taqseem": "مدير مختص بالاستدامة",
+          "startDate": "2026-05-18",
+          "daysSince": 19
         }
       ],
       "sheet": "Sheet1",
@@ -20608,7 +20620,8 @@
       "followEntity": "other",
       "responseMethod": "",
       "taqseemName": "مدير مختص بالاستدامة",
-      "followStart": "2026-05-18"
+      "followStart": "2026-05-18",
+      "divFollowDate": "2026-06-14"
     },
     {
       "id": 1780826442613.4426,
@@ -22007,7 +22020,7 @@
           "type": "ext",
           "kpi": "gov5",
           "note": "المدير المختص بالاستدامة\nللمراجعة وابداء الملاحظات والافادة خلال 5 ايام عمل",
-          "status": "esc",
+          "status": "awaiting_div",
           "followups": [
             {
               "date": "2026-05-19",
@@ -22030,6 +22043,18 @@
               "taqseem": "مدير مختص بالاستدامة",
               "startDate": "2026-05-18",
               "daysSince": 17
+            },
+            {
+              "date": "2026-06-14",
+              "replied": false,
+              "note": "متابعة",
+              "actionType": "visit",
+              "by": "",
+              "result": "",
+              "entity": "other",
+              "taqseem": "مدير مختص بالاستدامة",
+              "startDate": "2026-05-18",
+              "daysSince": 19
             }
           ],
           "sheet": "Sheet1",
@@ -22037,7 +22062,8 @@
           "followEntity": "other",
           "responseMethod": "",
           "taqseemName": "مدير مختص بالاستدامة",
-          "followStart": "2026-05-18"
+          "followStart": "2026-05-18",
+          "divFollowDate": "2026-06-14"
         },
         {
           "id": 1781166399999.954,
@@ -22474,7 +22500,7 @@
           "type": "ext",
           "kpi": "gov5",
           "note": "المدير المختص بالاستدامة\nللمراجعة وابداء الملاحظات والافادة خلال 5 ايام عمل",
-          "status": "esc",
+          "status": "awaiting_div",
           "followups": [
             {
               "date": "2026-05-19",
@@ -22497,6 +22523,18 @@
               "taqseem": "مدير مختص بالاستدامة",
               "startDate": "2026-05-18",
               "daysSince": 17
+            },
+            {
+              "date": "2026-06-14",
+              "replied": false,
+              "note": "متابعة",
+              "actionType": "visit",
+              "by": "",
+              "result": "",
+              "entity": "other",
+              "taqseem": "مدير مختص بالاستدامة",
+              "startDate": "2026-05-18",
+              "daysSince": 19
             }
           ],
           "sheet": "Sheet1",
@@ -22504,7 +22542,8 @@
           "followEntity": "other",
           "responseMethod": "",
           "taqseemName": "مدير مختص بالاستدامة",
-          "followStart": "2026-05-18"
+          "followStart": "2026-05-18",
+          "divFollowDate": "2026-06-14"
         },
         {
           "id": 1780826442625.1667,
