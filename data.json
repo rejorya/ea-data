@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-14T07:20:25.260Z",
+  "exportedAt": "2026-06-14T07:21:25.265Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -17742,13 +17742,25 @@
           "date": "2026-06-07",
           "replied": true,
           "note": "2"
+        },
+        {
+          "date": "2026-06-14",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-04-23",
+          "daysSince": 36
         }
       ],
       "sheet": "Sheet1",
       "manualCount": 5,
       "followEntity": "rais_depts",
       "responseMethod": "via_follow",
-      "followStart": "",
+      "followStart": "2026-04-23",
       "docNo": "1170/3/2022v398-29",
       "toEntity": "",
       "priority": "normal",
@@ -22272,13 +22284,25 @@
               "date": "2026-06-07",
               "replied": true,
               "note": "2"
+            },
+            {
+              "date": "2026-06-14",
+              "replied": false,
+              "note": "متابعة",
+              "actionType": "visit",
+              "by": "",
+              "result": "",
+              "entity": "rais_depts",
+              "taqseem": "",
+              "startDate": "2026-04-23",
+              "daysSince": 36
             }
           ],
           "sheet": "Sheet1",
           "manualCount": 5,
           "followEntity": "rais_depts",
           "responseMethod": "via_follow",
-          "followStart": "",
+          "followStart": "2026-04-23",
           "docNo": "1170/3/2022v398-29",
           "toEntity": "",
           "priority": "normal",
