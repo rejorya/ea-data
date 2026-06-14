@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-14T04:30:25.043Z",
+  "exportedAt": "2026-06-14T04:31:25.586Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20493,9 +20493,15 @@
       "sheet": "Sheet1",
       "manualCount": 5,
       "followEntity": "taqseem",
-      "responseMethod": "",
+      "responseMethod": "direct_manager",
       "taqseemName": "المديرية العامة لتنمية الغطاء النباتي",
-      "followStart": "2026-05-18"
+      "followStart": "2026-05-18",
+      "slaMode": "rais",
+      "slaDays": 5,
+      "docNo": "",
+      "toEntity": "مكتب النائب",
+      "priority": "important",
+      "confidentiality": "secret"
     },
     {
       "id": 1780826442611.3997,
@@ -22343,9 +22349,15 @@
           "sheet": "Sheet1",
           "manualCount": 5,
           "followEntity": "taqseem",
-          "responseMethod": "",
+          "responseMethod": "direct_manager",
           "taqseemName": "المديرية العامة لتنمية الغطاء النباتي",
-          "followStart": "2026-05-18"
+          "followStart": "2026-05-18",
+          "slaMode": "rais",
+          "slaDays": 5,
+          "docNo": "",
+          "toEntity": "مكتب النائب",
+          "priority": "important",
+          "confidentiality": "secret"
         },
         {
           "id": 1780826442612.2332,
