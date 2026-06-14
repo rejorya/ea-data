@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-14T07:12:25.250Z",
+  "exportedAt": "2026-06-14T07:13:25.244Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -13760,7 +13760,12 @@
       "sheet": "Sheet1",
       "manualCount": 11,
       "followEntity": "rais_depts",
-      "responseMethod": ""
+      "responseMethod": "",
+      "followStart": "",
+      "docNo": "1520/20/2022-56",
+      "toEntity": "",
+      "priority": "normal",
+      "confidentiality": "normal"
     },
     {
       "id": 1780826442238.8328,
@@ -22176,7 +22181,12 @@
           "sheet": "Sheet1",
           "manualCount": 11,
           "followEntity": "rais_depts",
-          "responseMethod": ""
+          "responseMethod": "",
+          "followStart": "",
+          "docNo": "1520/20/2022-56",
+          "toEntity": "",
+          "priority": "normal",
+          "confidentiality": "normal"
         },
         {
           "id": 1780826442332.9966,
