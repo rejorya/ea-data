@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-15T03:55:43.032Z",
+  "exportedAt": "2026-06-15T03:56:43.530Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21521,7 +21521,7 @@
       "from": "الاكاديمية الوطنية للتدريب والتطوير محافظة ظفار",
       "docNo": "1170/3/2022v405-18",
       "toEntity": "نائب الرئيس-دائرة التواصل والاعلام",
-      "taqseemName": "",
+      "taqseemName": "دائرة التواصل والاعلام-نائب الرئيس",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-06-11",
@@ -21531,9 +21531,24 @@
       "slaDays": null,
       "kpi": "doc2",
       "note": "يرشح اثنين من المختصين احدهم من الاعلام والاخر من ظفار",
-      "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "status": "awaiting_div",
+      "followups": [
+        {
+          "date": "2026-06-15",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "taqseem": "دائرة التواصل والاعلام-نائب الرئيس",
+          "startDate": "2026-06-14",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "divFollowDate": "2026-06-15",
+      "followEntity": "other"
     }
   ],
   "directives": [
