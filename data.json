@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-15T06:34:43.182Z",
+  "exportedAt": "2026-06-15T06:35:43.676Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -20673,7 +20673,7 @@
       "type": "ext",
       "kpi": "gov5",
       "note": "المدير المختص بالاستدامة\nللمراجعة وابداء الملاحظات والافادة خلال 5 ايام عمل",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-05-19",
@@ -20708,19 +20708,32 @@
           "taqseem": "مدير مختص بالاستدامة",
           "startDate": "2026-05-18",
           "daysSince": 19
+        },
+        {
+          "date": "2026-06-15",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "taqseem": "مدير مختص بالاستدامة",
+          "startDate": "2026-05-18",
+          "daysSince": 20
         }
       ],
       "sheet": "Sheet1",
       "manualCount": 2,
       "followEntity": "other",
-      "responseMethod": "",
+      "responseMethod": "via_follow",
       "taqseemName": "مدير مختص بالاستدامة",
       "followStart": "2026-05-18",
       "divFollowDate": "2026-06-14",
       "docNo": "1170/3/2022v401-95",
       "toEntity": "",
       "priority": "normal",
-      "confidentiality": "normal"
+      "confidentiality": "normal",
+      "closedAt": "2026-06-15"
     },
     {
       "id": 1780826442613.4426,
