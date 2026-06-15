@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-15T06:52:00.936Z",
+  "exportedAt": "2026-06-15T06:52:43.182Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21385,7 +21385,7 @@
       "type": "ext",
       "kpi": "naib3",
       "note": "المهندس مدير المكتب\nلنقل ما تمت الاشارة اليه في سياق الخطاب الى نائب الرئيس لأعداد المخاطبات المشار اليها والافادة.",
-      "status": "open",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-06-09",
@@ -21394,10 +21394,24 @@
           "entity": "naib_office",
           "taqseem": "",
           "daysSince": 2
+        },
+        {
+          "date": "2026-06-15",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة لالتزام البيئي",
+          "startDate": "",
+          "daysSince": 6
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "followEntity": "naib_office"
+      "followEntity": "taqseem",
+      "divFollowDate": "2026-06-15",
+      "taqseemName": "المديرية العامة لالتزام البيئي"
     },
     {
       "id": 1780994330762.7246,
