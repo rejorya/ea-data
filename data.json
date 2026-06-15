@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-15T04:01:43.047Z",
+  "exportedAt": "2026-06-15T04:02:43.530Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21556,7 +21556,7 @@
       "from": "مينا بتروليوم",
       "docNo": "1170/3/2022v405-16",
       "toEntity": "مركز الطوارئ البيئية",
-      "taqseemName": "",
+      "taqseemName": "مركز الطوارئ البيئية",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-06-11",
@@ -21566,9 +21566,26 @@
       "slaDays": null,
       "kpi": "wd3",
       "note": "",
-      "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "status": "awaiting_div",
+      "followups": [
+        {
+          "date": "2026-06-15",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "مركز الطوارئ البيئية",
+          "startDate": "2026-06-14",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "responseMethod": "",
+      "divFollowDate": "2026-06-15"
     }
   ],
   "directives": [
