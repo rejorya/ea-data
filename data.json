@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-15T06:47:43.666Z",
+  "exportedAt": "2026-06-15T06:48:43.185Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21031,7 +21031,7 @@
       "type": "ext",
       "kpi": "gov5",
       "note": "تم رفع الافادة الى مدير المكتب للعرض على رئيس الهيئة وترشيح نقطة التواصل",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-06-08",
@@ -21049,13 +21049,26 @@
           "taqseem": "",
           "startDate": "2026-06-02",
           "daysSince": 4
+        },
+        {
+          "date": "2026-06-15",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-06-02",
+          "daysSince": 9
         }
       ],
       "sheet": "Sheet1",
       "manualCount": 1,
       "followEntity": "rais_depts",
-      "responseMethod": "",
-      "followStart": "2026-06-02"
+      "responseMethod": "via_follow",
+      "followStart": "2026-06-02",
+      "closedAt": "2026-06-15"
     },
     {
       "id": 1780826442626.797,
