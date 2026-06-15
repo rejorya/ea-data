@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-15T05:15:43.096Z",
+  "exportedAt": "2026-06-15T05:16:43.593Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21659,6 +21659,29 @@
       "followups": [],
       "sheet": "من المناقشات",
       "fromDiscussionId": 1781080872827.1077
+    },
+    {
+      "id": 1781500545420.0442,
+      "title": "وضع السفينة سي إم جي سان أنطونيو والشروط المسبقة لتنفيذ أي علمية قطر.pdf",
+      "from": "شركة سي إم سي جي إم عمان",
+      "docNo": "1170/3/2022v405-50",
+      "toEntity": "مركز الطوارئ البيئية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-14",
+      "followStart": "2026-06-15",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wd3",
+      "note": "",
+      "status": "open",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 0,
+      "followEntity": "rais_depts",
+      "responseMethod": ""
     }
   ],
   "directives": [
