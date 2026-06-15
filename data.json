@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-15T04:00:43.047Z",
+  "exportedAt": "2026-06-15T04:01:43.047Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21549,6 +21549,26 @@
       "sheet": "مُضاف يدوياً",
       "divFollowDate": "2026-06-15",
       "followEntity": "other"
+    },
+    {
+      "id": 1781496077687.5105,
+      "title": "Response to the Legal Notice and Environmental Claim Regarding the Fuel Tank  Fire Incident",
+      "from": "مينا بتروليوم",
+      "docNo": "1170/3/2022v405-16",
+      "toEntity": "مركز الطوارئ البيئية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-11",
+      "followStart": "2026-06-14",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wd3",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
