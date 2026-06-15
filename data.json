@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-15T04:16:43.063Z",
+  "exportedAt": "2026-06-15T04:17:43.055Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21586,6 +21586,26 @@
       "followEntity": "rais_depts",
       "responseMethod": "",
       "divFollowDate": "2026-06-15"
+    },
+    {
+      "id": 1781497045941.764,
+      "title": "progetto NETIS FOR OMAN",
+      "from": "Luigi Sanglli",
+      "docNo": "1170/3/2022v405-9",
+      "toEntity": "رئيس الهيئة",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-15",
+      "followStart": "2026-06-14",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "std14",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
