@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-15T04:38:43.554Z",
+  "exportedAt": "2026-06-15T04:39:43.069Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21622,6 +21622,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1781498363938.153,
+      "title": "التقرير العملي الخاص بنتائج دراسات المايكروبلاستيك في البيئة البحرية في سلطنة عمان",
+      "from": "مكتب نائب رئيس الهيئة",
+      "docNo": "6332/3/2023v2-16",
+      "toEntity": "مكتب نائب رئيس الهيئة",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-10",
+      "followStart": "2026-06-15",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "std14",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
