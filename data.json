@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-15T06:58:43.688Z",
+  "exportedAt": "2026-06-15T06:59:43.203Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21448,11 +21448,25 @@
       "kpi": "other",
       "note": "نائب الرئيس\nلتقييم موضوع الشكوى والافادة.",
       "status": "open",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-06-15",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-06-09",
+          "daysSince": 4
+        }
+      ],
       "sheet": "مُضاف يدوياً",
       "manualCount": 1,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "",
+      "followStart": "2026-06-09"
     },
     {
       "id": 1780995331728.04,
