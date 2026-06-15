@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-15T03:52:43.519Z",
+  "exportedAt": "2026-06-15T03:53:43.529Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21514,6 +21514,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1781495598019.059,
+      "title": "الاكاديمية الوطنية للتدريب والتطوير",
+      "from": "الاكاديمية الوطنية للتدريب والتطوير محافظة ظفار",
+      "docNo": "1170/3/2022v405-18",
+      "toEntity": "نائب الرئيس-دائرة التواصل والاعلام",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-11",
+      "followStart": "2026-06-14",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "doc2",
+      "note": "يرشح اثنين من المختصين احدهم من الاعلام والاخر من ظفار",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
