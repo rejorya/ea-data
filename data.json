@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-16T08:06:22.253Z",
+  "exportedAt": "2026-06-16T08:07:22.251Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21848,7 +21848,7 @@
       "from": "مكتب نائب رئيس الهيئة",
       "docNo": "6332/3/2023v2-16",
       "toEntity": "دائرة التواصل والإعلام",
-      "taqseemName": "",
+      "taqseemName": "دائرة التواصل والاعلام",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-06-10",
@@ -21858,12 +21858,26 @@
       "slaDays": null,
       "kpi": "std14",
       "note": "",
-      "status": "open",
-      "followups": [],
+      "status": "awaiting_div",
+      "followups": [
+        {
+          "date": "2026-06-16",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "دائرة التواصل والاعلام",
+          "startDate": "2026-06-15",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
       "manualCount": 0,
       "followEntity": "rais_depts",
-      "responseMethod": ""
+      "responseMethod": "via_follow",
+      "divFollowDate": "2026-06-16"
     },
     {
       "id": 1781498636703.9727,
