@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-16T04:15:23.045Z",
+  "exportedAt": "2026-06-16T04:16:22.050Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -13761,23 +13761,37 @@
       "type": "int",
       "kpi": "other",
       "note": "تم التواصل اليوم مع المنظمة حول الموضوع\nوتم الافادة بأن الموضوع قيد الدراسة في المنظمة. \nوسوف نوافيكم بالمستجدات فور الحصول عليها.",
-      "status": "open",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-05-17",
           "replied": true,
           "note": "1"
+        },
+        {
+          "date": "2026-06-16",
+          "replied": true,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "دائرة التعاون الدولي",
+          "startDate": "2025-12-25",
+          "daysSince": 123
         }
       ],
       "sheet": "Sheet1",
       "manualCount": 12,
       "followEntity": "rais_depts",
-      "responseMethod": "",
-      "followStart": "",
+      "responseMethod": "via_follow",
+      "followStart": "2025-12-25",
       "docNo": "1520/20/2022-56",
       "toEntity": "",
       "priority": "normal",
-      "confidentiality": "normal"
+      "confidentiality": "normal",
+      "divFollowDate": "2026-06-16",
+      "taqseemName": "دائرة التعاون الدولي"
     },
     {
       "id": 1780826442238.8328,
