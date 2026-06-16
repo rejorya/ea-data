@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-16T04:41:36.411Z",
+  "exportedAt": "2026-06-16T04:42:22.067Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21424,9 +21424,9 @@
       "from": "شركة مزون للتعدين",
       "date": "2026-06-04",
       "type": "ext",
-      "kpi": "std14",
-      "note": "",
-      "status": "open",
+      "kpi": "",
+      "note": "لا يحتاج متابعة فقط للاطلاع ",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-06-09",
@@ -21453,7 +21453,12 @@
       "followEntity": "naib_office",
       "manualCount": 1,
       "responseMethod": "",
-      "followStart": "2026-06-09"
+      "followStart": "2026-06-09",
+      "docNo": "",
+      "toEntity": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "closedAt": "2026-06-16"
     },
     {
       "id": 1780991974965.631,
