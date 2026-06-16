@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-16T03:47:22.028Z",
+  "exportedAt": "2026-06-16T03:48:22.024Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -17931,7 +17931,7 @@
       "type": "ext",
       "kpi": "",
       "note": "1",
-      "status": "esc",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-05-20",
@@ -17954,12 +17954,25 @@
           "taqseem": "دائرة ضبط الجودة- مكتب الرقابة البيئية-مكتب النائب",
           "startDate": "2026-05-20",
           "daysSince": 16
+        },
+        {
+          "date": "2026-06-16",
+          "replied": false,
+          "note": "متابعة مكتب الرقابة حسب النقاش توجد استمارة سابقة تغطي جميع المفتشين",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "taqseem": "دائرة ضبط الجودة- مكتب الرقابة البيئية-مكتب النائب",
+          "startDate": "2026-05-20",
+          "daysSince": 19
         }
       ],
       "sheet": "Sheet1",
-      "followEntity": "naib_office",
+      "followEntity": "other",
       "taqseemName": "دائرة ضبط الجودة- مكتب الرقابة البيئية-مكتب النائب",
-      "followStart": "2026-05-20"
+      "followStart": "2026-05-20",
+      "divFollowDate": "2026-06-16"
     },
     {
       "id": 1780826442456.8745,
