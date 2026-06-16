@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-16T07:10:22.204Z",
+  "exportedAt": "2026-06-16T07:11:22.195Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21902,12 +21902,13 @@
       "slaDays": null,
       "kpi": "wd3",
       "note": "",
-      "status": "open",
+      "status": "closed",
       "followups": [],
       "sheet": "مُضاف يدوياً",
       "manualCount": 0,
       "followEntity": "rais_depts",
-      "responseMethod": ""
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-06-16"
     }
   ],
   "directives": [
