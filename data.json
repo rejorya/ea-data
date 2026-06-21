@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-21T05:33:32.007Z",
+  "exportedAt": "2026-06-21T05:34:32.054Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -17992,8 +17992,8 @@
       "date": "2026-04-23",
       "type": "ext",
       "kpi": "wd2",
-      "note": "",
-      "status": "",
+      "note": "تم رفع استمارة من المديرية العامة للشؤون الادارية والمالية",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-05-20",
@@ -18066,7 +18066,8 @@
       "toEntity": "مكتب النائب",
       "priority": "normal",
       "confidentiality": "normal",
-      "manualCount": 6
+      "manualCount": 6,
+      "closedAt": "2026-06-21"
     },
     {
       "id": 1780826442456.8745,
