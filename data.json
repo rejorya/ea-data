@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-21T03:50:31.904Z",
+  "exportedAt": "2026-06-21T03:51:31.909Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22227,7 +22227,15 @@
       "action": "",
       "status": "awaiting",
       "note": "إعداد ضوابط حماية المحميات الطبيعية",
-      "followLog": []
+      "followLog": [
+        {
+          "date": "2026-06-21",
+          "action": "عبر وصول",
+          "by": "",
+          "result": "",
+          "note": ""
+        }
+      ]
     }
   ],
   "weekly": [
