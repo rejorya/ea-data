@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-21T05:27:32.030Z",
+  "exportedAt": "2026-06-21T05:28:32.049Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21187,7 +21187,7 @@
       "type": "ext",
       "kpi": "naib3",
       "note": "رد الجهة :بناءً على توجيهات المدير العام، جارٍ انتظار رد وزارة المالية بشأن الموضوع ذاته، وذلك تمهيدًا لصياغة الرد النهائي بعد استكمال جميع الموافقات اللازمة.",
-      "status": "open",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-06-07",
@@ -21217,13 +21217,31 @@
           "entity": "taqseem",
           "taqseem": "المديرية العامة للشؤون الادارية والمالية",
           "daysSince": 8
+        },
+        {
+          "date": "2026-06-21",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+          "startDate": "",
+          "daysSince": 14
         }
       ],
       "sheet": "Sheet1",
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "taqseem",
       "responseMethod": "via_follow",
-      "taqseemName": "المديرية العامة للشؤون الادارية والمالية"
+      "taqseemName": "المديرية العامة للشؤون الادارية والمالية",
+      "divFollowDate": "2026-06-21",
+      "followStart": "",
+      "docNo": "",
+      "toEntity": "",
+      "priority": "normal",
+      "confidentiality": "normal"
     },
     {
       "id": 1780826442627.5752,
