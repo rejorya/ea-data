@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-21T05:32:32.007Z",
+  "exportedAt": "2026-06-21T05:33:32.007Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -17993,7 +17993,7 @@
       "type": "ext",
       "kpi": "wd2",
       "note": "",
-      "status": "awaiting",
+      "status": "",
       "followups": [
         {
           "date": "2026-05-20",
@@ -18040,13 +18040,25 @@
           "taqseem": "دائرة ضبط الجودة- مكتب الرقابة البيئية-مكتب النائب",
           "startDate": "2026-05-20",
           "daysSince": 19
+        },
+        {
+          "date": "2026-06-21",
+          "replied": true,
+          "note": "تم رفع استمارة من المديرية العامة للشؤون الادارية والمالية",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "taqseem": "دائرة ضبط الجودة- مكتب الرقابة البيئية-مكتب النائب",
+          "startDate": "2026-05-20",
+          "daysSince": 22
         }
       ],
       "sheet": "Sheet1",
       "followEntity": "other",
       "taqseemName": "دائرة ضبط الجودة- مكتب الرقابة البيئية-مكتب النائب",
       "followStart": "2026-05-20",
-      "divFollowDate": "2026-06-16",
+      "divFollowDate": "2026-06-21",
       "responseMethod": "via_follow",
       "slaMode": "rais",
       "slaDays": 3,
