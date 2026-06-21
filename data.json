@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-21T03:57:31.915Z",
+  "exportedAt": "2026-06-21T03:58:31.949Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21823,7 +21823,7 @@
       "slaDays": null,
       "kpi": "wd3",
       "note": "",
-      "status": "ready_esc",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-06-15",
@@ -21836,13 +21836,25 @@
           "taqseem": "مركز الطوارئ البيئية",
           "startDate": "2026-06-14",
           "daysSince": 1
+        },
+        {
+          "date": "2026-06-21",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "مركز الطوارئ البيئية",
+          "startDate": "2026-06-14",
+          "daysSince": 5
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "rais_depts",
-      "responseMethod": "",
-      "divFollowDate": "2026-06-15"
+      "responseMethod": "direct_manager",
+      "divFollowDate": "2026-06-21"
     },
     {
       "id": 1781497045941.764,
