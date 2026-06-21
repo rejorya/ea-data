@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-21T05:01:31.962Z",
+  "exportedAt": "2026-06-21T05:02:32.020Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18405,7 +18405,7 @@
       "type": "int",
       "kpi": "other",
       "note": "لتقديم برنامج زمني من مركز الاعتماد للوصول الاعتراف الدولي بشهادات روزنة خلال 6 اشهر بما في ذلك استيفاء كامل المتطلبات",
-      "status": "ready_esc",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-05-04",
@@ -18444,7 +18444,7 @@
       ],
       "sheet": "Sheet1",
       "manualCount": 5,
-      "followEntity": "other",
+      "followEntity": "rais_depts",
       "responseMethod": "via_follow",
       "taqseemName": "دائرة ضبط الجودة",
       "followStart": "2026-05-04",
