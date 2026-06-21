@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-21T04:54:31.950Z",
+  "exportedAt": "2026-06-21T04:55:32.009Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -17991,9 +17991,9 @@
       "responsible": "خلود المحرمي (مكتب نائب الرئيس) دائرة ضبط الجودة مكتب الرقابة البيئية",
       "date": "2026-04-23",
       "type": "ext",
-      "kpi": "",
-      "note": "1",
-      "status": "ready_esc",
+      "kpi": "wd2",
+      "note": "",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-05-20",
@@ -18047,7 +18047,14 @@
       "taqseemName": "دائرة ضبط الجودة- مكتب الرقابة البيئية-مكتب النائب",
       "followStart": "2026-05-20",
       "divFollowDate": "2026-06-16",
-      "responseMethod": "via_follow"
+      "responseMethod": "via_follow",
+      "slaMode": "rais",
+      "slaDays": 3,
+      "docNo": "1181/104/2025v4-80",
+      "toEntity": "مكتب النائب",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "manualCount": 6
     },
     {
       "id": 1780826442456.8745,
