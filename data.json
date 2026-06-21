@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-21T06:06:32.028Z",
+  "exportedAt": "2026-06-21T06:07:32.079Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21784,7 +21784,7 @@
       "type": "ext",
       "kpi": "gov5",
       "note": "التخطيط لعمل اللازم بادراج مشروع الادارة المستدامة للموارد الطبيعية بظفار ومشروعات استزراع المنجروف والاشجار البرية واي مشروعات في التغير المناخي او القطاعات الاخرى تندرج تحت هذا الاطار\n",
-      "status": "ready_esc",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-06-14",
@@ -21797,6 +21797,18 @@
           "taqseem": "دائرة التخطيط الاستراتيجي",
           "startDate": "2026-06-10",
           "daysSince": 2
+        },
+        {
+          "date": "2026-06-21",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "دائرة التخطيط الاستراتيجي",
+          "startDate": "2026-06-10",
+          "daysSince": 7
         }
       ],
       "sheet": "مُضاف يدوياً",
@@ -21807,7 +21819,7 @@
       "toEntity": "دائرة التخطيط الاستراتيجي",
       "priority": "normal",
       "confidentiality": "normal",
-      "divFollowDate": "2026-06-14",
+      "divFollowDate": "2026-06-21",
       "taqseemName": "دائرة التخطيط الاستراتيجي"
     },
     {
