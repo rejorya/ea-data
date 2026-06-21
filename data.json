@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-21T06:00:38.066Z",
+  "exportedAt": "2026-06-21T06:01:32.073Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21672,7 +21672,7 @@
       "type": "ext",
       "kpi": "other",
       "note": "نائب الرئيس\nلتقييم موضوع الشكوى والافادة.",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-06-15",
@@ -21697,17 +21697,30 @@
           "taqseem": "",
           "startDate": "2026-06-09",
           "daysSince": 5
+        },
+        {
+          "date": "2026-06-21",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-06-09",
+          "daysSince": 8
         }
       ],
       "sheet": "مُضاف يدوياً",
       "manualCount": 2,
       "followEntity": "naib_office",
-      "responseMethod": "",
+      "responseMethod": "direct_manager",
       "followStart": "2026-06-09",
       "docNo": "1170/3/2022v404-54",
       "toEntity": "",
       "priority": "normal",
-      "confidentiality": "normal"
+      "confidentiality": "normal",
+      "closedAt": "2026-06-21"
     },
     {
       "id": 1780995331728.04,
