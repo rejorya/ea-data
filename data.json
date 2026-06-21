@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-21T04:41:31.946Z",
+  "exportedAt": "2026-06-21T04:42:31.995Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -17784,7 +17784,7 @@
       "type": "ext",
       "kpi": "other",
       "note": "حاليا في طور الجلوس مع المالية لمناقشة النقاط المتعلقة بالنظام المالي.\nاخر موعد للرد 20/6",
-      "status": "open",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-06-07",
@@ -17802,6 +17802,18 @@
           "taqseem": "",
           "startDate": "2026-04-23",
           "daysSince": 36
+        },
+        {
+          "date": "2026-06-21",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "دائرة التخطيط الاستراتيجي",
+          "startDate": "2026-04-23",
+          "daysSince": 41
         }
       ],
       "sheet": "Sheet1",
@@ -17812,7 +17824,9 @@
       "docNo": "1170/3/2022v398-29",
       "toEntity": "",
       "priority": "normal",
-      "confidentiality": "normal"
+      "confidentiality": "normal",
+      "divFollowDate": "2026-06-21",
+      "taqseemName": "دائرة التخطيط الاستراتيجي"
     },
     {
       "id": 1780826442446.6943,
