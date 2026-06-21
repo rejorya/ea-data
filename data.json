@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-21T04:22:31.981Z",
+  "exportedAt": "2026-06-21T04:23:31.930Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22026,6 +22026,26 @@
       ],
       "sheet": "مُضاف يدوياً",
       "followEntity": "naib_office"
+    },
+    {
+      "id": 1782015790643.8625,
+      "title": "مشروع المخطط الهيكلي للرستاق.",
+      "from": "وزارة الاسكان والتخطيط العمراني",
+      "docNo": "1170/3/2022v406-18",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "normal",
+      "date": "2026-06-17",
+      "followStart": "2026-06-21",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
