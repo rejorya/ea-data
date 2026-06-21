@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-21T03:27:31.886Z",
+  "exportedAt": "2026-06-21T03:28:31.888Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21939,6 +21939,40 @@
       "followEntity": "rais_depts",
       "responseMethod": "direct_manager",
       "closedAt": "2026-06-16"
+    },
+    {
+      "id": 1782012481640.7427,
+      "title": "استحداث نطاقات زراعية في محافظة جنوب الشرقية.pdf",
+      "from": "وزارة الإسكان والتخطيط العمراني",
+      "docNo": "1170/3/2022v405-99",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-06-16",
+      "followStart": "2026-06-21",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "std14",
+      "note": "نائب الرئيس\nالالتزام البيئي\nللدراسة والافادة",
+      "status": "open",
+      "followups": [
+        {
+          "date": "2026-06-21",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-06-21",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "followEntity": "naib_office"
     }
   ],
   "directives": [
