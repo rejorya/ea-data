@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-21T03:43:31.946Z",
+  "exportedAt": "2026-06-21T03:44:31.944Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21926,17 +21926,18 @@
       "type": "ext",
       "kpi": "gov5",
       "note": "توجيه من مناقشة مع الرئيس: خدمة المراجعين\nلعمل اللازم وفقا لما تم مناقشته",
-      "status": "open",
+      "status": "closed",
       "followups": [],
       "sheet": "من المناقشات",
       "fromDiscussionId": 1781080872827.1077,
       "docNo": "1170/3/2022v404-49",
-      "toEntity": "",
+      "toEntity": "دائرة خدمة المراجعين",
       "priority": "normal",
       "confidentiality": "secret",
       "manualCount": 0,
       "followEntity": "rais_depts",
-      "responseMethod": ""
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-06-21"
     },
     {
       "id": 1781500545420.0442,
