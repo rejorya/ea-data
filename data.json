@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-21T05:57:32.074Z",
+  "exportedAt": "2026-06-21T05:58:32.023Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21565,7 +21565,11 @@
       "followEntity": "rais_depts",
       "responseMethod": "via_follow",
       "taqseemName": "مركز الاعمال البيئية- مكتب الرقابة-مكتب نائب الرئيس",
-      "divFollowDate": "2026-06-21"
+      "divFollowDate": "2026-06-21",
+      "docNo": "1170/3/2022v405-30",
+      "toEntity": "مكتب النائب / مركز الاعمال البيئية",
+      "priority": "normal",
+      "confidentiality": "normal"
     },
     {
       "id": 1780991713416.4797,
