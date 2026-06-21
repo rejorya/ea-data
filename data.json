@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-21T05:49:38.069Z",
+  "exportedAt": "2026-06-21T05:50:32.064Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21367,7 +21367,7 @@
       "type": "ext",
       "kpi": "other",
       "note": "نائب الرئيس\nللالتقاء بممثل الشركة والافادة.",
-      "status": "open",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-06-08",
@@ -21394,7 +21394,11 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": "",
-      "followStart": "2026-06-08"
+      "followStart": "2026-06-08",
+      "docNo": "",
+      "toEntity": "",
+      "priority": "normal",
+      "confidentiality": "normal"
     },
     {
       "id": 1780911645072.8655,
