@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-22T04:15:50.322Z",
+  "exportedAt": "2026-06-22T04:16:50.331Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22251,6 +22251,26 @@
       "followEntity": "naib_office",
       "manualCount": 1,
       "responseMethod": ""
+    },
+    {
+      "id": 1782101792654.854,
+      "title": "طلب اصدار ترخيص بيئي لمشروع إنشاء مصنع معالجة وإعادة تدوير خبث النحاس بالدقم",
+      "from": "شركة الغزال للبيئة والتنمية المستدامة ش م م",
+      "docNo": "1170/3/2022v406-27",
+      "toEntity": "مركز الاعمال البيئية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-21",
+      "followStart": "2026-06-21",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "مركز الاعمال \nلاصدار موافقة وعدم ممانعة من اقامة المشروع واذا هناك من تصريح فلا مانع من اصداره",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
