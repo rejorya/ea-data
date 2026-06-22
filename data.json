@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-22T07:42:50.493Z",
+  "exportedAt": "2026-06-22T07:43:50.495Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18746,7 +18746,7 @@
       "date": "2026-05-05",
       "type": "int",
       "kpi": "other",
-      "note": "د. مريم\nلتقديم نطاق مشروع لدراسة الفرص الاستثمارية في القطاع البيئي",
+      "note": "",
       "status": "awaiting_div",
       "followups": [
         {
@@ -18780,14 +18780,14 @@
         }
       ],
       "sheet": "Sheet1",
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "other",
       "responseMethod": "via_follow",
       "closedAt": "2026-06-14",
       "taqseemName": "مديرة الاستدامة",
       "followStart": "2026-05-12",
-      "docNo": "",
-      "toEntity": "",
+      "docNo": "1170/3/2022v400-39",
+      "toEntity": "مديرة الاستدامة",
       "priority": "normal",
       "confidentiality": "normal",
       "divFollowDate": "2026-06-22"
