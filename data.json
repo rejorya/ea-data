@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-22T08:34:49.934Z",
+  "exportedAt": "2026-06-22T08:35:49.936Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22322,6 +22322,26 @@
       "slaDays": null,
       "kpi": "other",
       "note": "مركز الاعمال \nلاصدار موافقة وعدم ممانعة من اقامة المشروع واذا هناك من تصريح فلا مانع من اصداره",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
+    },
+    {
+      "id": 1782117341404.0837,
+      "title": "توفير خمسين الف شتلة لممشروع ازرع عمان.pdf",
+      "from": "شؤون البلاط السلطاني",
+      "docNo": "1170/3/2022v403-73",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "secret",
+      "date": "2026-06-02",
+      "followStart": "2026-06-22",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "",
       "status": "new",
       "followups": [],
       "sheet": "مُضاف يدوياً"
