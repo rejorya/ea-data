@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-23T04:14:52.813Z",
+  "exportedAt": "2026-06-23T04:15:52.939Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22324,7 +22324,10 @@
       "note": "مركز الاعمال \nلاصدار موافقة وعدم ممانعة من اقامة المشروع واذا هناك من تصريح فلا مانع من اصداره",
       "status": "new",
       "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 0,
+      "followEntity": "rais_depts",
+      "responseMethod": ""
     },
     {
       "id": 1782117341404.0837,
@@ -22450,7 +22453,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "للافادة حول موافقة المسئول المباشر هل هي فوق الحمل الوظيفي ام دون؟",
-      "status": "",
+      "status": "open",
       "followups": [
         {
           "date": "2026-06-23",
@@ -22466,7 +22469,9 @@
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "followEntity": "naib_office"
+      "followEntity": "naib_office",
+      "manualCount": 1,
+      "responseMethod": ""
     }
   ],
   "directives": [
