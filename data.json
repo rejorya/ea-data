@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-23T04:13:52.813Z",
+  "exportedAt": "2026-06-23T04:14:52.813Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22414,9 +22414,25 @@
       "slaDays": null,
       "kpi": "std14",
       "note": "نائب الرئيس\nالالتزام البيئي\nللدراسة واعداد تقرير مماثل لمخاطبة وزير التجارة",
-      "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "status": "open",
+      "followups": [
+        {
+          "date": "2026-06-23",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-06-22",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     },
     {
       "id": 1782187966014.4639,
@@ -22434,9 +22450,23 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "للافادة حول موافقة المسئول المباشر هل هي فوق الحمل الوظيفي ام دون؟",
-      "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "status": "",
+      "followups": [
+        {
+          "date": "2026-06-23",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-06-22",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "followEntity": "naib_office"
     }
   ],
   "directives": [
