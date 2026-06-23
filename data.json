@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-23T04:32:52.830Z",
+  "exportedAt": "2026-06-23T04:33:52.951Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -19011,7 +19011,7 @@
       "type": "ext",
       "kpi": "other",
       "note": "نائب الرئيس\nالالتزام البيئي\nالتنوع الاحيائي\n\nلاهمية الموضوع يجب تقديم المتطلبات الواردة في خطاب مدير عام التخطيط بوزارة الاسكان واي وثائق اخرى كادلة الاجراءات والحوكمة وغيرها وترسل الى الوزارة خلال اسبوعين عمل من تاريخه ويجب متابعة الموضوع مع الوزارة والتاكد من اتمامه بنجاح\n",
-      "status": "open",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-05-17",
@@ -19025,18 +19025,32 @@
           "entity": "naib_office",
           "taqseem": "",
           "daysSince": 18
+        },
+        {
+          "date": "2026-06-23",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-05-10",
+          "daysSince": 32
         }
       ],
       "sheet": "Sheet1",
       "manualCount": 3,
-      "followEntity": "naib_office",
+      "followEntity": "taqseem",
       "responseMethod": "",
-      "followStart": "",
+      "followStart": "2026-05-10",
       "docNo": "",
       "toEntity": "",
       "priority": "normal",
       "confidentiality": "normal",
-      "closedAt": "2026-06-14"
+      "closedAt": "2026-06-14",
+      "divFollowDate": "2026-06-23",
+      "taqseemName": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية"
     },
     {
       "id": 1780826442497.3965,
