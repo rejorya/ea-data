@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-23T04:11:52.815Z",
+  "exportedAt": "2026-06-23T04:12:52.810Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22414,6 +22414,26 @@
       "slaDays": null,
       "kpi": "std14",
       "note": "نائب الرئيس\nالالتزام البيئي\nللدراسة واعداد تقرير مماثل لمخاطبة وزير التجارة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
+    },
+    {
+      "id": 1782187966014.4639,
+      "title": "نقل خدمات الفاضلة وفاء بنت هلال الحوسني.pdf",
+      "from": "وزارة التعليم",
+      "docNo": "1170/3/2022v406-44",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-22",
+      "followStart": "2026-06-22",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "للافادة حول موافقة المسئول المباشر هل هي فوق الحمل الوظيفي ام دون؟",
       "status": "new",
       "followups": [],
       "sheet": "مُضاف يدوياً"
