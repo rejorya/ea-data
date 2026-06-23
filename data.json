@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-23T04:09:52.937Z",
+  "exportedAt": "2026-06-23T04:10:52.813Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22397,6 +22397,26 @@
       "followEntity": "naib_office",
       "manualCount": 1,
       "responseMethod": ""
+    },
+    {
+      "id": 1782187847998.8167,
+      "title": "مقترحات تنظيمية وفنية للحد من الآثار البيئة والصحية لعبوات  مياه الشرب البلاستسكية.pdf",
+      "from": "بلدية مسقط",
+      "docNo": "1170/3/2022v406-40",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-22",
+      "followStart": "2026-06-22",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "std14",
+      "note": "نائب الرئيس\nالالتزام البيئي\nللدراسة واعداد تقرير مماثل لمخاطبة وزير التجارة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
