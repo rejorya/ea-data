@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-24T07:47:01.205Z",
+  "exportedAt": "2026-06-24T07:48:01.200Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22632,7 +22632,7 @@
       "docNo": "1170/3/2022v406-48",
       "toEntity": "نائب الرئيس",
       "taqseemName": "",
-      "priority": "normal",
+      "priority": "urgent",
       "confidentiality": "normal",
       "date": "2026-06-22",
       "followStart": "2026-06-24",
@@ -22641,8 +22641,21 @@
       "slaDays": null,
       "kpi": "std14",
       "note": "نائب الرئيس\nالالتزام البيئي\nللدراسة والافادة",
-      "status": "new",
-      "followups": [],
+      "status": "open",
+      "followups": [
+        {
+          "date": "2026-06-24",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-06-24",
+          "daysSince": 0
+        }
+      ],
       "sheet": "مُضاف يدوياً",
       "manualCount": 1,
       "followEntity": "naib_office",
