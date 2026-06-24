@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-24T04:56:02.718Z",
+  "exportedAt": "2026-06-24T04:57:03.122Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21477,7 +21477,7 @@
       "type": "ext",
       "kpi": "naib3",
       "note": "",
-      "status": "open",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-06-08",
@@ -21516,6 +21516,18 @@
           "taqseem": "",
           "startDate": "2026-06-08",
           "daysSince": 9
+        },
+        {
+          "date": "2026-06-24",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+          "startDate": "2026-06-08",
+          "daysSince": 12
         }
       ],
       "sheet": "مُضاف يدوياً",
@@ -21523,12 +21535,13 @@
       "responseMethod": "direct_manager",
       "taqseemName": "المديرية العامة للشؤون الادارية والمالية",
       "followStart": "2026-06-08",
-      "manualCount": 4,
+      "manualCount": 5,
       "closedAt": "2026-06-11",
       "docNo": "1170/3/2022v403-42",
       "toEntity": "",
       "priority": "normal",
-      "confidentiality": "normal"
+      "confidentiality": "normal",
+      "divFollowDate": "2026-06-24"
     },
     {
       "id": 1780987865442.4202,
