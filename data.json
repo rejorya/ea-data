@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-24T04:39:02.700Z",
+  "exportedAt": "2026-06-24T04:40:03.121Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22363,7 +22363,7 @@
       "from": "شركة الغزال للبيئة والتنمية المستدامة ش م م",
       "docNo": "1170/3/2022v406-27",
       "toEntity": "مركز الاعمال البيئية",
-      "taqseemName": "",
+      "taqseemName": "مركز الاعمال البيئية",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-06-21",
@@ -22373,12 +22373,26 @@
       "slaDays": null,
       "kpi": "other",
       "note": "مركز الاعمال \nلاصدار موافقة وعدم ممانعة من اقامة المشروع واذا هناك من تصريح فلا مانع من اصداره",
-      "status": "new",
-      "followups": [],
+      "status": "",
+      "followups": [
+        {
+          "date": "2026-06-23",
+          "replied": true,
+          "note": "متابعة",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "مركز الاعمال البيئية",
+          "startDate": "2026-06-21",
+          "daysSince": 2
+        }
+      ],
       "sheet": "مُضاف يدوياً",
       "manualCount": 0,
       "followEntity": "rais_depts",
-      "responseMethod": ""
+      "responseMethod": "via_follow",
+      "divFollowDate": "2026-06-23"
     },
     {
       "id": 1782117341404.0837,
