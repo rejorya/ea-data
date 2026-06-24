@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-24T07:24:01.248Z",
+  "exportedAt": "2026-06-24T07:24:31.418Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18418,7 +18418,7 @@
       "type": "int",
       "kpi": "other",
       "note": "لتقديم برنامج زمني من مركز الاعتماد للوصول الاعتراف الدولي بشهادات روزنة خلال 6 اشهر بما في ذلك استيفاء كامل المتطلبات",
-      "status": "esc",
+      "status": "disc",
       "followups": [
         {
           "date": "2026-05-04",
@@ -18453,6 +18453,18 @@
           "taqseem": "دائرة ضبط الجودة",
           "startDate": "2026-05-04",
           "daysSince": 29
+        },
+        {
+          "date": "2026-06-24",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "دائرة ضبط الجودة",
+          "startDate": "2026-05-04",
+          "daysSince": 37
         }
       ],
       "sheet": "Sheet1",
@@ -18465,7 +18477,7 @@
       "toEntity": "",
       "priority": "normal",
       "confidentiality": "normal",
-      "divFollowDate": "2026-06-14"
+      "divFollowDate": "2026-06-24"
     },
     {
       "id": 1780826442474.1848,
@@ -22623,6 +22635,78 @@
       "sheet": "مُضاف يدوياً",
       "followEntity": "naib_office",
       "manualCount": 1,
+      "responseMethod": ""
+    },
+    {
+      "id": 1782284976039.4905,
+      "title": "المؤتمر السنوي الخامس والعشرون للمنظمة العربية للتنمية الإدارية حول جاهزية الحكومات لمستقبل مستدام صلالة (11-13) من أغسطس 2026م.pdf",
+      "from": "وزارة العمل",
+      "docNo": "1170/3/2022v406-46",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-22",
+      "followStart": "2026-06-24",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "doc2",
+      "note": "",
+      "status": "open",
+      "followups": [
+        {
+          "date": "2026-06-24",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-06-24",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "followEntity": "naib_office",
+      "manualCount": 1,
+      "responseMethod": ""
+    },
+    {
+      "id": 1782285429355.082,
+      "title": "المواطن عوض بن صالح بن محمد العلوي",
+      "from": "ديوان البلاط السلطاني",
+      "docNo": "1170/3/2022v406-60",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-22",
+      "followStart": "2026-06-24",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "نائب الرئيس\nمكتب الرئيس\nللافادة باي خلفيات واعداد الرد",
+      "status": "open",
+      "followups": [
+        {
+          "date": "2026-06-24",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-06-24",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
       "responseMethod": ""
     }
   ],
