@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-24T07:46:01.274Z",
+  "exportedAt": "2026-06-24T07:47:01.205Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22623,6 +22623,29 @@
       "sheet": "مُضاف يدوياً",
       "followEntity": "naib_office",
       "manualCount": 1,
+      "responseMethod": ""
+    },
+    {
+      "id": 1782287186449.6902,
+      "title": "طلب ترخيص مشروع المجمع السياحي المتكامل في الجبل الأخضر بمحافظة الداخلية.pdf",
+      "from": "وزارة الاسكان والتخطيط العمراني",
+      "docNo": "1170/3/2022v406-48",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-22",
+      "followStart": "2026-06-24",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "std14",
+      "note": "نائب الرئيس\nالالتزام البيئي\nللدراسة والافادة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
       "responseMethod": ""
     }
   ],
