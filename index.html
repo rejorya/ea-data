@@ -2,12 +2,12 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>EA Dashboard</title>
+  <title>EA System</title>
 </head>
 
 <body>
 
-<h2 id="header">Loading...</h2>
+<h2 id="header"></h2>
 <div id="content"></div>
 
 <script>
@@ -17,7 +17,7 @@ async function loadData() {
     const data = await res.json();
 
     document.getElementById('header').innerText =
-      data.exportedBy || "Dashboard";
+      data.exportedBy;
 
     let html = "";
 
@@ -25,8 +25,6 @@ async function loadData() {
       data.topics.forEach(t => {
         html += `<p>${t.title} : ${t.value}</p>`;
       });
-    } else {
-      html = "<p>No data</p>";
     }
 
     document.getElementById('content').innerHTML = html;
