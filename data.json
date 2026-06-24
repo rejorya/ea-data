@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-24T04:50:16.267Z",
+  "exportedAt": "2026-06-24T04:51:03.126Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21865,7 +21865,7 @@
       "type": "ext",
       "kpi": "gov5",
       "note": "نود إفادتكم بأنه تم مخاطبة التقسيمات الإدارية بناء على توجيهات سعادته لموافاتنا بالبيانات المطلوبة في موعد أقصاه اليوم 21 يونيو وعليه سنقوم بموافاتكم بالمصفوفات فور استلامها واكتمالها.\n",
-      "status": "ready_esc",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-06-14",
@@ -21890,17 +21890,29 @@
           "taqseem": "دائرة التخطيط الاستراتيجي",
           "startDate": "2026-06-10",
           "daysSince": 7
+        },
+        {
+          "date": "2026-06-24",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "دائرة التخطيط الاستراتيجي",
+          "startDate": "2026-06-10",
+          "daysSince": 10
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "rais_depts",
       "responseMethod": "",
       "docNo": "1170/3/2022v404-97",
       "toEntity": "دائرة التخطيط الاستراتيجي",
       "priority": "normal",
       "confidentiality": "normal",
-      "divFollowDate": "2026-06-21",
+      "divFollowDate": "2026-06-24",
       "taqseemName": "دائرة التخطيط الاستراتيجي"
     },
     {
