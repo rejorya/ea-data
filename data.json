@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-24T05:04:02.716Z",
+  "exportedAt": "2026-06-24T05:05:03.143Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21472,12 +21472,12 @@
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "naib_office",
       "responseMethod": "",
       "followStart": "2026-06-08",
-      "docNo": "",
-      "toEntity": "",
+      "docNo": "1170/3/2022v404-35",
+      "toEntity": "نائب الرئيس",
       "priority": "normal",
       "confidentiality": "normal"
     },
