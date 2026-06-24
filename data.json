@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-24T07:22:48.256Z",
+  "exportedAt": "2026-06-24T07:22:53.092Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22623,78 +22623,6 @@
       "sheet": "مُضاف يدوياً",
       "followEntity": "naib_office",
       "manualCount": 1,
-      "responseMethod": ""
-    },
-    {
-      "id": 1782284976039.4905,
-      "title": "المؤتمر السنوي الخامس والعشرون للمنظمة العربية للتنمية الإدارية حول جاهزية الحكومات لمستقبل مستدام صلالة (11-13) من أغسطس 2026م.pdf",
-      "from": "وزارة العمل",
-      "docNo": "1170/3/2022v406-46",
-      "toEntity": "نائب الرئيس",
-      "taqseemName": "",
-      "priority": "normal",
-      "confidentiality": "normal",
-      "date": "2026-06-22",
-      "followStart": "2026-06-24",
-      "type": "ext",
-      "slaMode": "kpi",
-      "slaDays": null,
-      "kpi": "doc2",
-      "note": "",
-      "status": "open",
-      "followups": [
-        {
-          "date": "2026-06-24",
-          "replied": false,
-          "note": "متابعة",
-          "actionType": "visit",
-          "by": "",
-          "result": "",
-          "entity": "naib_office",
-          "taqseem": "",
-          "startDate": "2026-06-24",
-          "daysSince": 0
-        }
-      ],
-      "sheet": "مُضاف يدوياً",
-      "followEntity": "naib_office",
-      "manualCount": 1,
-      "responseMethod": ""
-    },
-    {
-      "id": 1782285429355.082,
-      "title": "المواطن عوض بن صالح بن محمد العلوي",
-      "from": "ديوان البلاط السلطاني",
-      "docNo": "1170/3/2022v406-60",
-      "toEntity": "نائب الرئيس",
-      "taqseemName": "",
-      "priority": "normal",
-      "confidentiality": "normal",
-      "date": "2026-06-22",
-      "followStart": "2026-06-24",
-      "type": "ext",
-      "slaMode": "kpi",
-      "slaDays": null,
-      "kpi": "naib3",
-      "note": "نائب الرئيس\nمكتب الرئيس\nللافادة باي خلفيات واعداد الرد",
-      "status": "open",
-      "followups": [
-        {
-          "date": "2026-06-24",
-          "replied": false,
-          "note": "متابعة",
-          "actionType": "visit",
-          "by": "",
-          "result": "",
-          "entity": "naib_office",
-          "taqseem": "",
-          "startDate": "2026-06-24",
-          "daysSince": 0
-        }
-      ],
-      "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
-      "followEntity": "naib_office",
       "responseMethod": ""
     }
   ],
