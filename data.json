@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-24T04:54:03.135Z",
+  "exportedAt": "2026-06-24T04:55:02.718Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21538,7 +21538,7 @@
       "type": "int",
       "kpi": "other",
       "note": "نائب الرئيس\nلمقابلة المذكور والافادة.",
-      "status": "esc",
+      "status": "disc",
       "followups": [
         {
           "date": "2026-06-14",
@@ -21563,6 +21563,18 @@
           "taqseem": "",
           "startDate": "2026-06-07",
           "daysSince": 7
+        },
+        {
+          "date": "2026-06-24",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-06-07",
+          "daysSince": 13
         }
       ],
       "sheet": "مُضاف يدوياً",
