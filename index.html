@@ -6713,6 +6713,33 @@ window.addEventListener('load', () => {
 })();
 <div id="output"></div>
 
-<script src="script.js"></script>>
+<script src="script.js"></script>
+
+<script>
+fetch('data.json')
+  .then(res => {
+    if (!res.ok) {
+      throw new Error("File not found");
+    }
+    return res.json();
+  })
+  .then(data => {
+    const container = document.getElementById("output");
+
+    container.innerHTML = (data.topics || []).map(t => `
+      <div style="border:1px solid #ccc; margin:10px; padding:10px;">
+        <h4>${t.title || ""}</h4>
+        <p>${t.from || ""}</p>
+        <hr>
+      </div>
+    `).join('');
+  })
+  .catch(err => {
+    console.error(err);
+    document.getElementById("output").innerHTML =
+      "في مشكلة في تحميل البيانات";
+  });
+</script>
+
 </body>
 </html>
