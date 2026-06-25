@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-25T07:41:09.975Z",
+  "exportedAt": "2026-06-25T07:42:09.963Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22660,6 +22660,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1782373293895.373,
+      "title": "المؤتمر السنوي الخامس والعشرون للمنظمة العربية للتنمية الإدارية حول جاهزية الحكومات لمستقبل مستدام صلالة (11-13) من أغسطس 2026م.pdf",
+      "from": "وزارة العمل",
+      "docNo": "1170/3/2022v406-46",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "المديرية العامة للتغير المناخي",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-22",
+      "followStart": "2026-06-24",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "doc2",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
