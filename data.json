@@ -1,4 +1,7 @@
 {
+  "version": "3.0",
+  "exportedBy": "رحاب بنت نصيب الفرج",
+  "exportedAt": "2026-06-25T04:10:03.409Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18744,7 +18747,7 @@
       "type": "int",
       "kpi": "other",
       "note": "",
-      "status": "awaiting_div",
+      "status": "ready_esc",
       "followups": [
         {
           "date": "2026-05-19",
@@ -26892,7 +26895,5 @@
       "note": "موعد المناقشة يوم الاثنين 29/6/2026 الساعة 11.00 صباحا",
       "attendees": ""
     }
-  ],
-  "exportedAt": "2026-06-24T09:43:27.979Z",
-  "exportedBy": "رحاب بنت نصيب الفرج"
+  ]
 }
