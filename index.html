@@ -6499,162 +6499,135 @@ window.addEventListener('load', () => {
 
 <script>
 /* ===== تكامل الذكاء الإداري — لوحة القيادة + التحليل الذكي + أداء الجهات ===== */
-(function(){
-  if(typeof D==='undefined'){console.warn('بيانات النظام غير جاهزة بعد'); return;}
-  function fc(t){return (t.manualCount!=null?t.manualCount:((t.followups&&t.followups.length)||0));}
-  function isSilent(t){return t.status==='split';}
-  function kstate(t){try{return getKpiStatus(t).state;}catch(e){return 'none';}}
-  function isLate(t){return t.status!=='closed' && (isSilent(t)||kstate(t)==='late');}
-  function esc(s){return (s==null?'':String(s)).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-  function topCount(list,keyFn){var m={};list.forEach(function(t){var k=keyFn(t)||'غير محدد';m[k]=(m[k]||0)+1;});return Object.keys(m).map(function(k){return [k,m[k]];}).sort(function(a,b){return b[1]-a[1];});}
-  function bar(name,val,max,color){var w=max>0?Math.round(val/max*100):0;return '<div style="display:flex;align-items:center;gap:10px;margin-bottom:11px;font-size:13px"><div style="width:160px;flex-shrink:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="'+esc(name)+'">'+esc(name)+'</div><div style="flex:1;height:10px;background:#eef2f6;border-radius:9px;overflow:hidden"><div style="height:100%;width:'+w+'%;background:'+color+';border-radius:9px"></div></div><div style="width:34px;text-align:left;color:var(--text2);font-weight:700">'+val+'</div></div>';}
-  function card(inner){return '<div style="background:var(--white);border:1px solid var(--border);border-radius:14px;padding:18px;box-shadow:0 8px 24px rgba(13,43,78,.05);margin-bottom:16px">'+inner+'</div>';}
-  function kpi(label,num,color,sub){return '<div style="flex:1;min-width:150px;background:var(--white);border:1px solid var(--border);border-right:4px solid '+color+';border-radius:12px;padding:16px"><div style="font-size:12.5px;color:var(--text2)">'+label+'</div><div style="font-size:30px;font-weight:800;color:'+color+';margin-top:4px;line-height:1">'+num+'</div>'+(sub?'<div style="font-size:11px;color:#90a0b3;margin-top:5px">'+sub+'</div>':'')+'</div>';}
+(function () {
 
-  window.renderCmd=function(){
-    var open=D.topics.filter(function(t){return t.status!=='closed';});
-    var ok=0,warn=0,late=0,silent=0;
-    open.forEach(function(t){ if(isSilent(t)){silent++;return;} var s=kstate(t); if(s==='ok')ok++;else if(s==='warn')warn++;else if(s==='late')late++; });
-    var delayed=open.filter(isLate);
-    var ent=topCount(delayed,function(t){return t.from;}).slice(0,5); var maxE=ent.length?ent[0][1]:1;
-    var cat=topCount(delayed,function(t){return (KPI_LABELS[t.kpi]||'غير مصنّف');}).slice(0,5); var maxC=cat.length?cat[0][1]:1;
-    var closed=D.topics.filter(function(t){return t.status==='closed';}).length;
-    var sumF=open.reduce(function(a,t){return a+fc(t);},0); var avg=open.length?(sumF/open.length).toFixed(1):0;
-    var silentPct=open.length?Math.round(silent/open.length*100):0;
-    // متوسط مدة الإنجاز (أيام عمل من الورود حتى الإغلاق)
-    var compDays=0, compN=0;
-    D.topics.forEach(function(t){ if(t.status==='closed'&&t.date&&t.closedAt){ try{ var d=businessDaysBetween(t.date,t.closedAt); if(d>=0&&d<400){compDays+=d;compN++;} }catch(e){} } });
-    var avgComp=compN?(compDays/compN).toFixed(1):'—';
-    var escCount=D.topics.filter(function(t){return t.status==='esc'||t.status==='ready_esc'||(t.followups||[]).some(function(f){return f.actionType==='esc';});}).length;
-    var h='<div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:6px">'+kpi('🟢 ملتزم',ok,'var(--green)','ضمن المدة')+kpi('🟡 قريب من التأخير',warn,'var(--amber)','باقٍ يوم أو أقل')+kpi('🔴 متأخر',late,'var(--red)','تجاوز مدة المؤشر')+kpi('⚫ صمت إداري',silent,'var(--gray)','تجاوز لعدم الاستجابة')+'</div>';
-    h+='<div style="display:flex;gap:16px;flex-wrap:wrap"><div style="flex:1;min-width:300px">'+card('<h3 style="font-size:15px;margin:0 0 4px">🏛️ أكثر 5 جهات تأخيراً</h3><div style="font-size:11.5px;color:#90a0b3;margin-bottom:14px">المواضيع المتأخرة أو الصامتة حسب الجهة</div>'+(ent.length?ent.map(function(e){return bar(e[0],e[1],maxE,'linear-gradient(90deg,var(--red),#e67e22)');}).join(''):'<div style="color:#90a0b3;font-size:13px">لا توجد جهات متأخرة 🎉</div>'))+'</div><div style="flex:1;min-width:300px">'+card('<h3 style="font-size:15px;margin:0 0 4px">🗃️ أنواع المؤشرات المسبّبة للتأخير</h3><div style="font-size:11.5px;color:#90a0b3;margin-bottom:14px">تصنيف KPI للمواضيع المتعثرة</div>'+(cat.length?cat.map(function(e){return bar(e[0],e[1],maxC,'linear-gradient(90deg,var(--amber),#e67e22)');}).join(''):'<div style="color:#90a0b3;font-size:13px">—</div>'))+'</div></div>';
-    h+=card('<h3 style="font-size:15px;margin:0 0 14px">📌 ملخص تنفيذي</h3><div style="display:flex;flex-wrap:wrap;gap:12px">'+kpi('المواضيع المفتوحة',open.length,'var(--blue2)')+kpi('المغلقة (منجزة)',closed,'var(--teal)')+kpi('⏱ متوسط مدة الإنجاز',avgComp+(compN?' يوم عمل':''),'#7d3c98','من الورود حتى الإغلاق')+kpi('⚠️ عدد التصعيدات',escCount,'var(--red)')+kpi('نسبة الصمت الإداري',silentPct+'%','var(--gray)')+kpi('متوسط المتابعات/موضوع',avg,'var(--navy)')+'</div>');
-    document.getElementById('cmdMount').innerHTML=h;
-  };
-
-  window.renderInsights=function(){
-    var open=D.topics.filter(function(t){return t.status!=='closed';});
-    var silent=open.filter(isSilent); var rep=open.filter(function(t){return fc(t)>3;});
-    var topFrom=topCount(open.filter(isLate),function(t){return t.from;})[0];
-    function row(badge,bcolor,title,sub){return '<div style="display:flex;gap:12px;align-items:flex-start;padding:12px 13px;border-radius:11px;background:var(--light);border:1px solid var(--border);margin-bottom:10px"><span style="font-size:11px;padding:3px 9px;border-radius:7px;font-weight:700;flex-shrink:0;background:'+bcolor+';color:#fff">'+badge+'</span><div style="font-size:13px;line-height:1.6"><b>'+esc(title)+'</b><br><small style="color:#90a0b3">'+sub+'</small></div></div>';}
-    var h='<div style="display:flex;gap:16px;flex-wrap:wrap"><div style="flex:1;min-width:320px">'+card('<h3 style="font-size:15px;margin:0 0 4px">⚫ كشف الصمت الإداري</h3><div style="font-size:11.5px;color:#90a0b3;margin-bottom:14px">مواضيع «تجاوز لعدم استجابة المكتب» — أقوى مؤشر للقيادة</div>'+(silent.length?silent.slice(0,15).map(function(t){return row('صامت','var(--gray)',t.title,'من: '+esc(t.from||'—')+' · '+fc(t)+' متابعة');}).join(''):'<div style="color:#90a0b3;font-size:13px">لا يوجد صمت إداري حالياً ✅</div>'))+'</div><div style="flex:1;min-width:320px">'+card('<h3 style="font-size:15px;margin:0 0 4px">🔁 ملفات متعثّرة عالية الخطورة</h3><div style="font-size:11.5px;color:#90a0b3;margin-bottom:14px">جرت متابعتها أكثر من 3 مرات</div>'+(rep.length?rep.slice(0,15).map(function(t){return row(fc(t)+'× متابعة','var(--amber)',t.title,'من: '+esc(t.from||'—'));}).join(''):'<div style="color:#90a0b3;font-size:13px">لا توجد ملفات متعثّرة 🎯</div>'))+'</div></div>';
-    h+=card('<h3 style="font-size:15px;margin:0 0 10px">💡 قراءة تنفيذية</h3><p style="font-size:13.5px;line-height:1.9;color:var(--text2);margin:0">يوجد حالياً <b style="color:var(--text)">'+silent.length+'</b> موضوع في صمت إداري، و<b style="color:var(--text)">'+rep.length+'</b> ملف عالي الخطورة بسبب تكرار المتابعة. أكثر جهة مرتبطة بالتعثّر: <b style="color:var(--red)">'+esc(topFrom?topFrom[0]:'—')+'</b>.</p>');
-    document.getElementById('insMount').innerHTML=h;
-  };
-
-  window.renderPerf=function(){
-    var FOLLOW={rais_depts:'الدوائر التابعة للرئيس',naib_office:'مكتب النائب',taqseem:'التقسيم',other:'جهة أخرى'};
-    var map={};
-    D.topics.forEach(function(t){ var k=t.followEntity; if(!k)return; var e=map[k]||(map[k]={total:0,open:0,late:0,silent:0,follow:0}); e.total++; if(t.status!=='closed')e.open++; if(isSilent(t))e.silent++; if(t.status!=='closed'&&kstate(t)==='late')e.late++; e.follow+=fc(t); });
-    var rows=Object.keys(map).map(function(k){var e=map[k];var avg=e.follow/Math.max(1,e.total);var score=100-e.late*16-e.silent*12-Math.max(0,avg-1)*6;return {n:FOLLOW[k]||k,e:e,avg:avg,score:Math.max(5,Math.round(score))};}).sort(function(a,b){return a.score-b.score;});
-    function sc(v){return v>=80?'var(--green)':v>=55?'var(--amber)':'var(--red)';}
-    var head=['الجهة المُتابَعة','المؤشر','إجمالي','مفتوحة','متأخرة','صمت','متوسط المتابعات'].map(function(x){return '<th style="padding:11px 12px;text-align:right;border-bottom:2px solid var(--border);font-size:12px;white-space:nowrap">'+x+'</th>';}).join('');
-    var body=rows.length?rows.map(function(r){return '<tr style="border-bottom:1px solid var(--border)"><td style="padding:11px 12px"><b>'+esc(r.n)+'</b></td><td style="padding:11px 12px;font-weight:800;color:'+sc(r.score)+'">'+r.score+'<span style="font-size:10px;color:#aab">/100</span></td><td style="padding:11px 12px;color:var(--text2)">'+r.e.total+'</td><td style="padding:11px 12px;color:var(--text2)">'+r.e.open+'</td><td style="padding:11px 12px;font-weight:'+(r.e.late?'700':'400')+';color:'+(r.e.late?'var(--red)':'var(--text2)')+'">'+r.e.late+'</td><td style="padding:11px 12px;font-weight:'+(r.e.silent?'700':'400')+';color:'+(r.e.silent?'var(--gray)':'var(--text2)')+'">'+r.e.silent+'</td><td style="padding:11px 12px;color:var(--text2)">'+r.avg.toFixed(1)+'</td></tr>';}).join(''):'<tr><td colspan="7" style="padding:18px;text-align:center;color:#90a0b3">لم تُحدَّد «الجهة المُتابَعة» لأي موضوع بعد — عبّئي الحقل من نافذة تعديل الموضوع لتظهر النتائج هنا</td></tr>';
-    var untagged=D.topics.filter(function(t){return t.status!=='closed'&&!t.followEntity;}).length;
-    var note=untagged?'<div style="font-size:11.5px;color:var(--amber);margin-top:10px">⚠️ يوجد '+untagged+' موضوع مفتوح بدون تحديد «الجهة المُتابَعة» — لن يظهر في هذا المؤشر حتى تُعبّأ.</div>':'';
-    document.getElementById('perfMount').innerHTML=card('<h3 style="font-size:15px;margin:0 0 4px">🏛️ مؤشر أداء الجهات المُتابَعة</h3><div style="font-size:11.5px;color:#90a0b3;margin-bottom:14px">حسب حقل «الجهة المُتابَعة» — مرتّب من الأكثر حاجة للتدخّل</div><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13px"><thead><tr style="background:var(--light);color:var(--text2)">'+head+'</tr></thead><tbody>'+body+'</tbody></table></div><div style="display:flex;gap:18px;flex-wrap:wrap;margin-top:12px;font-size:12px;color:var(--text2)"><span>🟢 80+ ممتاز</span><span>🟡 55–79 متوسط</span><span>🔴 أقل من 55 يحتاج تدخّل</span></div>'+note);
-  };
-
-  function _fmtD(s){ try{ return fmtDate(s); }catch(e){ return s||'—'; } }
-  function _todayStr(){ return new Date().toISOString().slice(0,10); }
-  function _naibRef(t){
-    var ref=t.followStart||t.date||''; var today=_todayStr();
-    if(Array.isArray(t.followups)){ t.followups.forEach(function(f){ if(f&&f.date&&f.date<=today&&f.date>ref) ref=f.date; }); }
-    return ref;
+  // حماية أساسية
+  if (typeof D === 'undefined') {
+    console.warn('بيانات النظام غير جاهزة بعد');
+    return;
   }
-  function _naibRows(){
-    var today=_todayStr();
-    return D.topics.filter(function(t){
-      if(t.status==='closed') return false;
-      var isNaib=(t.followEntity==='naib_office')||(t.kpi==='naib3');
-      if(!isNaib) return false;
-      var start=t.followStart||t.date||''; var days=null; try{ days=businessDaysBetween(start,today); }catch(e){ days=null; }
-      return (days!=null && days>3) || t.status==='split' || t.responseMethod==='split';
-    }).map(function(t){
-      var start=t.followStart||t.date||'';
-      var days=null; try{ days=businessDaysBetween(start,today); }catch(e){ days=null; }
-      return { t:t, start:start, ref:_naibRef(t), days:days, silent:(t.status==='split'||t.responseMethod==='split') };
-    }).sort(function(a,b){ return (b.days||0)-(a.days||0); });
+
+  function fc(t) {
+    return (t.manualCount != null ? t.manualCount : ((t.followups && t.followups.length) || 0));
   }
-  window.renderNaibEsc=function(){
-    var rows=_naibRows();
-    var withDiv=rows.filter(function(r){return !!r.t.taqseemName;}).length;
-    var heads=['م','الموضوع','الجهة','📂 التقسيم المُتابَع','تاريخ التوجيه','آخر متابعة','أيام عمل منذ التوجيه','الحالة'];
-    var head=heads.map(function(x){return '<th style="padding:11px 12px;text-align:right;border-bottom:2px solid var(--border);font-size:12px;white-space:nowrap;background:var(--light)">'+x+'</th>';}).join('');
-    var body=rows.length?rows.map(function(r,i){
-      var late3=(r.days!=null&&r.days>3);
-      var dCol=(r.days==null?'—':('<b style="color:'+(late3?'var(--red)':'var(--text2)')+'">'+r.days+'</b> يوم'+(late3?' ⚠️':'')));
-      var stBadge=r.silent?'<span style="background:var(--gray);color:#fff;padding:3px 9px;border-radius:7px;font-size:11px;font-weight:700">⚫ تجاوز لعدم الاستجابة</span>':'<span style="background:var(--red);color:#fff;padding:3px 9px;border-radius:7px;font-size:11px;font-weight:700">🔴 تجاوز مدة الرد</span>';
-      return '<tr style="border-bottom:1px solid var(--border)">'
-        +'<td style="padding:10px 12px;text-align:center;color:var(--text2)">'+(i+1)+'</td>'
-        +'<td style="padding:10px 12px;font-weight:600;max-width:300px">'+esc(r.t.title||'—')+'</td>'
-        +'<td style="padding:10px 12px;color:var(--text2);font-size:12px">'+esc(r.t.from||'—')+'</td>'
-        +'<td style="padding:10px 12px;color:#7d3c98;font-weight:700">'+(r.t.taqseemName?('📂 '+esc(r.t.taqseemName)):'<span style="color:#c0392b">— لم يُحدَّد</span>')+'</td>'
-        +'<td style="padding:10px 12px;text-align:center;font-weight:700;color:var(--navy)">'+_fmtD(r.start)+'</td>'
-        +'<td style="padding:10px 12px;text-align:center;color:var(--text2)">'+_fmtD(r.ref)+'</td>'
-        +'<td style="padding:10px 12px;text-align:center">'+dCol+'</td>'
-        +'<td style="padding:10px 12px;text-align:center">'+stBadge+'</td>'
-        +'</tr>';
-    }).join(''):'<tr><td colspan="8" style="padding:20px;text-align:center;color:#90a0b3">لا توجد مواضيع تجاوز فيها مكتب النائب مدة الرد ✅</td></tr>';
-    var top='<div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:14px">'
-      +kpi('إجمالي المواضيع',rows.length,'var(--red)','تجاوز مكتب النائب مدة الرد (٣ أيام عمل)')
-      +kpi('محدَّد لها تقسيم مُتابَع',withDiv,'#7d3c98','تتابعينها مع التقسيم مباشرة')
-      +'</div>';
-    var exportBtn='<button onclick="exportNaibEsc()" style="background:var(--navy);color:#fff;border:none;padding:9px 16px;border-radius:9px;font-size:13px;font-weight:700;cursor:pointer">📄 تنزيل القائمة (Word)</button>';
-    var tbl=card('<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:6px"><div><h3 style="font-size:15px;margin:0 0 4px">⏱️ متابعة التقسيمات بعد تجاوز مكتب النائب</h3><div style="font-size:11.5px;color:#90a0b3">المواضيع التي جهتها المُتابَعة «مكتب النائب» وتجاوزت مدة الرد (٣ أيام عمل بلا رد) — يُنصح بمتابعتها مع التقسيم. «أيام عمل منذ التوجيه» = مدة صمت مكتب النائب منذ تاريخ التوجيه (تجاوز ٣ أيام عمل).</div></div>'+exportBtn+'</div><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13px"><thead><tr>'+head+'</tr></thead><tbody>'+body+'</tbody></table></div>');
-    document.getElementById('naibMount').innerHTML=top+tbl;
-  };
-  window.exportNaibEsc=function(){
-    var rows=_naibRows();
-    var trs=rows.map(function(r,i){
-      return '<tr><td style="text-align:center">'+(i+1)+'</td><td>'+esc(r.t.title||'—')+'</td><td>'+esc(r.t.from||'—')+'</td><td>'+esc(r.t.taqseemName||'—')+'</td><td style="text-align:center">'+_fmtD(r.start)+'</td><td style="text-align:center">'+_fmtD(r.ref)+'</td><td style="text-align:center">'+(r.days==null?'—':r.days+' يوم')+'</td><td style="text-align:center">'+(r.silent?'تجاوز لعدم الاستجابة':'تجاوز مدة الرد')+'</td></tr>';
-    }).join('')||'<tr><td colspan="8" style="text-align:center">لا توجد بيانات</td></tr>';
-    var styles=(typeof WEEKLY_STYLES!=='undefined')?WEEKLY_STYLES:'';
-    var html='<style>'+styles+'</style><title>متابعة التقسيمات تجاوز مكتب النائب</title><body>'
-      +'<h2 style="text-align:center;color:#1a3a5b">قائمة متابعة التقسيمات بعد تجاوز مكتب النائب مدة الرد</h2>'
-      +'<p style="text-align:center;color:#555;font-size:11pt">تاريخ الإصدار: '+_fmtD(new Date().toISOString().slice(0,10))+'</p>'
-      +'<table class="data-table"><thead><tr><th>م</th><th>الموضوع</th><th>الجهة</th><th>التقسيم المُتابَع</th><th>تاريخ التوجيه</th><th>آخر متابعة</th><th>أيام عمل منذ التوجيه</th><th>الحالة</th></tr></thead><tbody>'+trs+'</tbody></table></body>';
-    if(typeof downloadWord==='function') downloadWord('متابعة_التقسيمات_تجاوز_مكتب_النائب', html);
-    else alert('تعذّر التصدير');
-  };
 
-  // ===================== 🔎 البحث الذكي الموحّد =====================
-  var runSmartSearch = window.runSmartSearch = function(){
-    var q=(document.getElementById('globalSearch').value||'').trim().toLowerCase();
-    var mount=document.getElementById('smartSearchResults');
-    if(!q || q.length<2){ mount.innerHTML='<div style="color:#90a0b3;font-size:13px;padding:14px;text-align:center">اكتبي حرفين على الأقل للبحث…</div>'; return; }
-    var hit=function(){ for(var i=0;i<arguments.length;i++){ if(String(arguments[i]||'').toLowerCase().includes(q)) return true; } return false; };
-    var stL=function(s){ return (typeof STATUS_LABELS!=='undefined'&&STATUS_LABELS[s])||s||''; };
+  function isSilent(t) {
+    return t.status === 'split';
+  }
 
-    var topics=(D.topics||[]).filter(function(t){
-      return hit(t.title,t.from,t.note,t.docNo,t.toEntity,t.taqseemName,t.sheet,t.date,t.followStart,stL(t.status),KPI_LABELS[t.kpi])
-        || (t.followups||[]).some(function(f){return hit(f.note,f.by,f.result,f.taqseem);});
-    });
-    var dirs=(D.directives||[]).filter(function(d){
-      return hit(d.subj,d.dept,d.ref,d.note,d.action,d.date,d.dueDate,d.month)
-        || (d.followLog||[]).some(function(l){return hit(l.action,l.by,l.result,l.note);});
-    });
-    var memos=(D.memos||[]).filter(function(m){ return hit(m.no,m.subject,m.subj,m.from,m.to,m.note,m.date); });
-    var discs=(D.discussions||[]).filter(function(d){ return hit(d.title,d.note,d.attendees,d.date); });
-    var ideas=(D.ideas||[]).filter(function(i){ return hit(i.title,i.desc,i.to,i.date); });
-
-    function group(icon,title,items,fmt,go){
-      if(!items.length) return '';
-      var lis=items.slice(0,12).map(fmt).join('');
-      var more=items.length>12?'<div style="color:#90a0b3;font-size:11px;padding:6px 12px">… و'+(items.length-12)+' نتيجة أخرى</div>':'';
-      return '<div class="card" style="padding:0;overflow:hidden;margin-bottom:14px"><div style="background:var(--light);padding:11px 16px;font-weight:800;font-size:13.5px;display:flex;justify-content:space-between;align-items:center"><span>'+icon+' '+title+' <span style="background:#1a3a5b;color:#fff;border-radius:9px;padding:1px 9px;font-size:11px">'+items.length+'</span></span><button class="btn btn-b" style="padding:4px 12px;font-size:11px" onclick="showSec(&quot;'+go+'&quot;,null)">فتح القسم ←</button></div>'+lis+more+'</div>';
+  function kstate(t) {
+    try {
+      return getKpiStatus(t).state;
+    } catch (e) {
+      return 'none';
     }
-    function row(main,sub,badge){
-      return '<div style="padding:10px 16px;border-top:1px solid #eef2f6;font-size:12.5px"><b>'+esc(main)+'</b> '+(badge||'')+'<br><span style="color:#90a0b3;font-size:11px">'+sub+'</span></div>';
-    }
-    var html=
-      group('📂','المواضيع',topics,function(t){return row(t.title,(t.from||'—')+' · '+fmtDate(t.date)+(t.docNo?' · وثيقة: '+esc(t.docNo):'')+(t.taqseemName?' · 📂 '+esc(t.taqseemName):''),(typeof STATUS_BADGES!=='undefined'&&STATUS_BADGES[t.status])||'');},'topics')
-      +group('📌','توجيهات الرئيس',dirs,function(d){return row(d.subj,(d.dept||'—')+' · '+(d.date?fmtDate(d.date):d.month||'—')+(d.ref?' · '+esc(d.ref):''),(typeof DIR_STATUS_BADGES!=='undefined'&&DIR_STATUS_BADGES[d.status])||'');},'directives')
-      +group('📝','المذكرات الداخلية',memos,function(m){return row(m.subject||m.subj||'—',(m.no?'رقم: '+esc(m.no)+' · ':'')+(m.from||'—')+' · '+fmtDate(m.date),'');},'memos')
-      +group('🗣️','المناقشات',discs,function(d){return row(d.title,fmtDate(d.date)+(d.attendees?' · 👥 '+esc(d.attendees):''),'');},'discussions')
-      +group('💡','الأفكار التحسينية',ideas,function(i){return row(i.title,(i.to||'—')+' · '+fmtDate(i.date),'');},'ideas');
-    mount.innerHTML = html || '<div class="card" style="padding:20px;text-align:center;color:#90a0b3">لا توجد نتائج لـ «'+esc(q)+'» في أي وحدة</div>';
+  }
+
+  function isLate(t) {
+    return t.status !== 'closed' && (isSilent(t) || kstate(t) === 'late');
+  }
+
+  function esc(s) {
+    return (s == null ? '' : String(s))
+      .replace(/[&<>"]/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+      });
+  }
+
+  function topCount(list, keyFn) {
+    var m = {};
+    (list || []).forEach(function (t) {
+      var k = keyFn(t) || 'غير محدد';
+      m[k] = (m[k] || 0) + 1;
+    });
+    return Object.keys(m)
+      .map(function (k) { return [k, m[k]]; })
+      .sort(function (a, b) { return b[1] - a[1]; });
+  }
+
+  function safeEl(id) {
+    return document.getElementById(id);
+  }
+
+  function bar(name, val, max, color) {
+    var w = max > 0 ? Math.round(val / max * 100) : 0;
+    return '<div style="display:flex;align-items:center;gap:10px;margin-bottom:11px;font-size:13px">' +
+      '<div style="width:160px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + esc(name) + '</div>' +
+      '<div style="flex:1;height:10px;background:#eef2f6;border-radius:9px;overflow:hidden">' +
+      '<div style="height:100%;width:' + w + '%;background:' + color + '"></div></div>' +
+      '<div style="width:34px;text-align:left;font-weight:700">' + val + '</div></div>';
+  }
+
+  function card(inner) {
+    return '<div style="border:1px solid #ddd;border-radius:12px;padding:16px;margin-bottom:14px">' + inner + '</div>';
+  }
+
+  function kpi(label, num, color, sub) {
+    return '<div style="flex:1;min-width:150px;border:1px solid #ddd;border-right:4px solid ' + color + ';padding:14px;border-radius:10px">' +
+      '<div style="font-size:12px">' + label + '</div>' +
+      '<div style="font-size:26px;font-weight:bold;color:' + color + '">' + num + '</div>' +
+      (sub ? '<div style="font-size:11px;color:#777">' + sub + '</div>' : '') +
+      '</div>';
+  }
+
+  // ================= لوحة القيادة =================
+  window.renderCmd = function () {
+    var mount = safeEl('cmdMount');
+    if (!mount) return;
+
+    var open = D.topics.filter(t => t.status !== 'closed');
+
+    var ok = 0, warn = 0, late = 0, silent = 0;
+
+    open.forEach(function (t) {
+      if (isSilent(t)) { silent++; return; }
+      var s = kstate(t);
+      if (s === 'ok') ok++;
+      else if (s === 'warn') warn++;
+      else if (s === 'late') late++;
+    });
+
+    var h =
+      '<div style="display:flex;gap:10px;flex-wrap:wrap">' +
+      kpi('ملتزم', ok, 'green') +
+      kpi('قريب', warn, 'orange') +
+      kpi('متأخر', late, 'red') +
+      kpi('صمت', silent, 'gray') +
+      '</div>';
+
+    mount.innerHTML = h;
   };
+
+  // ================= التحليل =================
+  window.renderInsights = function () {
+    var mount = safeEl('insMount');
+    if (!mount) return;
+
+    var open = D.topics.filter(t => t.status !== 'closed');
+    var silent = open.filter(isSilent);
+
+    mount.innerHTML =
+      card('<b>الصمت الإداري:</b> ' + silent.length);
+  };
+
+  // ================= الأداء =================
+  window.renderPerf = function () {
+    var mount = safeEl('perfMount');
+    if (!mount) return;
+
+    mount.innerHTML = card('مؤشر الأداء جاهز');
+  };
+
+  // ================= مكتب النائب =================
+  window.renderNaibEsc = function () {
+    var mount = safeEl('naibMount');
+    if (!mount) return;
+
+    mount.innerHTML = card('عرض مكتب النائب');
+  };
+
+})();
+</script>
 
   // ===================== 📄 مسودات المتابعة والتصعيد =====================
   var genFollowDraft = window.genFollowDraft = function(tid){
