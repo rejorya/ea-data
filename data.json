@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-28T03:42:56.885Z",
+  "exportedAt": "2026-06-28T03:43:02.952Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22705,7 +22705,7 @@
       "from": "دائرة التعاون الدولي",
       "docNo": "1514/1/2022v64-58",
       "toEntity": "مدير مختص بالاستدامة",
-      "taqseemName": "",
+      "taqseemName": "مدير مختص بالاستدامة",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-06-24",
@@ -22715,9 +22715,24 @@
       "slaDays": null,
       "kpi": "wd3",
       "note": "الدكتورة مريم\nللمراجعة بالتنسيق مع الغطاء النباتي والافادة",
-      "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "status": "awaiting_div",
+      "followups": [
+        {
+          "date": "2026-06-28",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "taqseem": "مدير مختص بالاستدامة",
+          "startDate": "2026-06-25",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "divFollowDate": "2026-06-28",
+      "followEntity": "other"
     }
   ],
   "directives": [
