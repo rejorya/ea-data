@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-28T03:54:56.888Z",
+  "exportedAt": "2026-06-28T03:55:20.273Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22735,6 +22735,26 @@
       "followEntity": "other",
       "manualCount": 1,
       "responseMethod": ""
+    },
+    {
+      "id": 1782618918188.1814,
+      "title": "مجالات التعاون في البيئة البحرية 2026.pdf",
+      "from": "المنظمة البيئية لحماية البيئة البحرية",
+      "docNo": "1170/3/2022v406-91",
+      "toEntity": "التعاون الدولي",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-24",
+      "followStart": "2026-06-25",
+      "type": "ext",
+      "slaMode": "rais",
+      "slaDays": 5,
+      "kpi": "",
+      "note": "التعاون الدولي\nللتنسيق مع المديريات التخصصية وعمل اللازم خلال 5 ايام عمل وكذلك التنسيق مع التنوع الاحيائي لاضافة مشروع المسح الوطني للبيئية البحرية",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
