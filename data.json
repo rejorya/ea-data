@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-28T09:02:54.768Z",
+  "exportedAt": "2026-06-28T09:03:01.634Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22993,6 +22993,26 @@
       "followEntity": "naib_office",
       "manualCount": 1,
       "responseMethod": ""
+    },
+    {
+      "id": 1782637379560.0322,
+      "title": "موقف الهيئة في الرد على استفسارات وملاحظات الجهاز خلال الربع الثاني 2026م",
+      "from": "دائرة التدقيق الداخلي",
+      "docNo": "3340/1/2022v2-53",
+      "toEntity": "رئيسة برنامج ترتل كوماندوز",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-28",
+      "followStart": "2026-06-28",
+      "type": "int",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "مكتب الرئيس\nلمتابعة استيفاء الفقرة ١٩",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
