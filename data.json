@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-28T03:43:02.952Z",
+  "exportedAt": "2026-06-28T03:43:13.923Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22732,7 +22732,9 @@
       ],
       "sheet": "مُضاف يدوياً",
       "divFollowDate": "2026-06-28",
-      "followEntity": "other"
+      "followEntity": "other",
+      "manualCount": 1,
+      "responseMethod": ""
     }
   ],
   "directives": [
