@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-28T07:01:25.005Z",
+  "exportedAt": "2026-06-28T07:01:36.371Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18783,7 +18783,7 @@
       "type": "int",
       "kpi": "other",
       "note": "",
-      "status": "ready_esc",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-05-19",
@@ -18813,6 +18813,18 @@
           "taqseem": "مديرة الاستدامة",
           "startDate": "2026-05-12",
           "daysSince": 29
+        },
+        {
+          "date": "2026-06-28",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "taqseem": "مديرة الاستدامة",
+          "startDate": "2026-05-12",
+          "daysSince": 33
         }
       ],
       "sheet": "Sheet1",
@@ -18826,7 +18838,7 @@
       "toEntity": "مديرة الاستدامة",
       "priority": "normal",
       "confidentiality": "normal",
-      "divFollowDate": "2026-06-22"
+      "divFollowDate": "2026-06-28"
     },
     {
       "id": 1780826442486.387,
