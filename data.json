@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-28T06:39:32.824Z",
+  "exportedAt": "2026-06-28T06:39:54.656Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -17841,7 +17841,7 @@
         }
       ],
       "sheet": "Sheet1",
-      "manualCount": 5,
+      "manualCount": 6,
       "followEntity": "rais_depts",
       "responseMethod": "via_follow",
       "followStart": "2026-04-23",
