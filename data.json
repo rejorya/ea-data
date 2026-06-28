@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-28T06:35:55.365Z",
+  "exportedAt": "2026-06-28T06:36:44.357Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -17436,7 +17436,7 @@
       "type": "int",
       "kpi": "",
       "note": "رد دائرة التواصل والاعلام:\n تمت الافادة مسبقا بأنه تم إنتاج الفيديو ولكن توجد به بعض الملاحظات ونود إفادتكم بأنه تم تسليم النسخة الثانية بالامس ولكن للاسف لازال به ملاحظات ، وستتم موافاتكم عند الانتهاء من التعديلات  \n",
-      "status": "ready_esc",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-04-27",
@@ -17454,6 +17454,18 @@
           "taqseem": "دائرة التواصل والاعلام",
           "startDate": "2026-04-14",
           "daysSince": 48
+        },
+        {
+          "date": "2026-06-28",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "دائرة التواصل والاعلام",
+          "startDate": "2026-04-14",
+          "daysSince": 53
         }
       ],
       "sheet": "Sheet1",
@@ -17466,7 +17478,7 @@
       "manualCount": 2,
       "followEntity": "rais_depts",
       "responseMethod": "",
-      "divFollowDate": "2026-06-21",
+      "divFollowDate": "2026-06-28",
       "taqseemName": "دائرة التواصل والاعلام"
     },
     {
