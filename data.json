@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-28T08:56:54.768Z",
+  "exportedAt": "2026-06-28T08:57:45.968Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22957,6 +22957,26 @@
       "followEntity": "rais_depts",
       "manualCount": 1,
       "responseMethod": ""
+    },
+    {
+      "id": 1782637063880.6326,
+      "title": "نقل الموظفة وداد بنت حمدان بن سيف القريني.pdf",
+      "from": "وزارة التنمية الاجتماعية",
+      "docNo": "1170/3/2022v407-17",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-25",
+      "followStart": "2026-06-28",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "نائب الرئيس\nللافادة وفق الحمل الوظيفي وراي المسئول المباشر",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
