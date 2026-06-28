@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-28T03:41:56.881Z",
+  "exportedAt": "2026-06-28T03:42:28.565Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22698,6 +22698,26 @@
       "manualCount": 2,
       "responseMethod": "direct_manager",
       "closedAt": "2026-06-28"
+    },
+    {
+      "id": 1782618146495.6726,
+      "title": "إيفاد خبير بيئي للقيام ببحوث بيئية لسلطنة عمان",
+      "from": "دائرة التعاون الدولي",
+      "docNo": "1514/1/2022v64-58",
+      "toEntity": "مدير مختص بالاستدامة",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-24",
+      "followStart": "2026-06-25",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wd3",
+      "note": "الدكتورة مريم\nللمراجعة بالتنسيق مع الغطاء النباتي والافادة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
