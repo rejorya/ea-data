@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-28T04:04:56.912Z",
+  "exportedAt": "2026-06-28T04:05:21.088Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22411,6 +22411,18 @@
           "taqseem": "",
           "startDate": "2026-06-21",
           "daysSince": 3
+        },
+        {
+          "date": "2026-06-25",
+          "replied": true,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "المتبقي خطاب الى وزارة التجارة",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-06-21",
+          "daysSince": 4
         }
       ],
       "sheet": "مُضاف يدوياً",
