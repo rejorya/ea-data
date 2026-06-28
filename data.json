@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-28T07:06:57.200Z",
+  "exportedAt": "2026-06-28T07:07:32.263Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -19059,7 +19059,7 @@
       "type": "ext",
       "kpi": "other",
       "note": "كشف بأسماء المواطنين الراغبين في الحصول على الأراضي داخل المحميات المطلوبة ",
-      "status": "ready_esc",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-05-17",
@@ -19085,19 +19085,31 @@
           "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
           "startDate": "2026-05-10",
           "daysSince": 32
+        },
+        {
+          "date": "2026-06-28",
+          "replied": true,
+          "note": "تم رفع الافادة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-05-10",
+          "daysSince": 35
         }
       ],
       "sheet": "Sheet1",
       "manualCount": 4,
       "followEntity": "taqseem",
-      "responseMethod": "",
+      "responseMethod": "via_other",
       "followStart": "2026-05-10",
       "docNo": "1170/3/2022v400-76",
       "toEntity": "",
       "priority": "normal",
       "confidentiality": "normal",
       "closedAt": "2026-06-14",
-      "divFollowDate": "2026-06-23",
+      "divFollowDate": "2026-06-28",
       "taqseemName": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية"
     },
     {
