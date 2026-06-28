@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-28T06:10:01.340Z",
+  "exportedAt": "2026-06-28T06:10:55.342Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22605,7 +22605,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "للافادة حول موافقة المسئول المباشر هل هي فوق الحمل الوظيفي ام دون؟",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-06-23",
@@ -22630,12 +22630,25 @@
           "taqseem": "",
           "startDate": "2026-06-22",
           "daysSince": 2
+        },
+        {
+          "date": "2026-06-25",
+          "replied": true,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-06-22",
+          "daysSince": 3
         }
       ],
       "sheet": "مُضاف يدوياً",
       "followEntity": "naib_office",
       "manualCount": 1,
-      "responseMethod": ""
+      "responseMethod": "via_other",
+      "closedAt": "2026-06-25"
     },
     {
       "id": 1782287186449.6902,
