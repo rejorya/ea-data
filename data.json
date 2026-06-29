@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-29T09:53:53.754Z",
+  "exportedAt": "2026-06-29T09:54:39.952Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23148,6 +23148,26 @@
       "sheet": "مُضاف يدوياً",
       "closedAt": "2026-06-29",
       "followEntity": "naib_office"
+    },
+    {
+      "id": 1782726877860.6975,
+      "title": "نقل خدماتي من هيئة المؤسسات الصغيرة والمتوسطة إلى هيئة البيئة.pdf",
+      "from": "المواطن/جمعه بن محمد العامري",
+      "docNo": "1170/3/2022v407-40",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-28",
+      "followStart": "2026-06-29",
+      "type": "int",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "للمقابلة والافادة\n",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
