@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-29T03:47:55.968Z",
+  "exportedAt": "2026-06-29T03:48:11.930Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23042,6 +23042,26 @@
       "followEntity": "rais_depts",
       "responseMethod": "",
       "divFollowDate": "2026-06-28"
+    },
+    {
+      "id": 1782704889849.9443,
+      "title": "مبادرة تركيب محطات شحن للمركبات الكهربائية بمبنى الهيئة (مبادرة خطوة  خضراء)",
+      "from": "دائرة التعاون الدولي",
+      "docNo": "1514/6/2022v12-22",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-28",
+      "followStart": "2026-06-29",
+      "type": "int",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "rpt14",
+      "note": "نائب الرئيس\nلاعداد تصور لتنفيذ المبادرة وتخصيص مواقع للسيارات الكهربائية",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
