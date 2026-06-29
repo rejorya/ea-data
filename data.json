@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-29T07:42:54.961Z",
+  "exportedAt": "2026-06-29T07:43:49.573Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23087,6 +23087,26 @@
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-06-16",
+      "followStart": "2026-06-29",
+      "type": "int",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wweek",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
+    },
+    {
+      "id": 1782719027487.404,
+      "title": "تطوير التشريعات المنظمة لادارة النفايات ذات القيمة الاقتصادية والبيئية.pdf",
+      "from": "بلدية مسقط",
+      "docNo": "1170/3/2022v406-81",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-24",
       "followStart": "2026-06-29",
       "type": "int",
       "slaMode": "kpi",
