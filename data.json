@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-30T07:07:43.415Z",
+  "exportedAt": "2026-06-30T07:08:34.928Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18585,7 +18585,7 @@
       "type": "ext",
       "kpi": "other",
       "note": "رد الجهة:الأخ المهندس/ نائب الرئيس المحترم\nأحيل لكم محضر الاجتماع (مع المرفقات) المنعقد مع الجهات ذات العلاقة بشأن الموضوع،\n(تجدونه مرفق في تعليق الاخت رئيسة قسم جودة التربة والمياه).",
-      "status": "awaiting_div",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-06-07",
@@ -18632,6 +18632,18 @@
           "taqseem": "المديرية العامة لالتزام البيئي",
           "startDate": "2026-05-11",
           "daysSince": 34
+        },
+        {
+          "date": "2026-06-30",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "المديرية العامة لالتزام البيئي",
+          "startDate": "2026-05-11",
+          "daysSince": 36
         }
       ],
       "sheet": "Sheet1",
@@ -18646,7 +18658,7 @@
       "toEntity": "مكتب النائب",
       "priority": "normal",
       "confidentiality": "normal",
-      "divFollowDate": "2026-06-28"
+      "divFollowDate": "2026-06-30"
     },
     {
       "id": 1780826442478.3245,
