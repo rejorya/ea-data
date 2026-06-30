@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-30T04:35:42.618Z",
+  "exportedAt": "2026-06-30T04:36:33.613Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23207,6 +23207,26 @@
       ],
       "sheet": "مُضاف يدوياً",
       "followEntity": "naib_office"
+    },
+    {
+      "id": 1782794191137.3198,
+      "title": "Bottled drinking water in Oman a critical review-Mashael Al-Farsi.",
+      "from": "مكتب الرئيس",
+      "docNo": "",
+      "toEntity": "المديرية العامة للالتزام البيئي",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-04",
+      "followStart": "2026-06-29",
+      "type": "ext",
+      "slaMode": "rais",
+      "slaDays": 5,
+      "kpi": "",
+      "note": "اقترح اعداد نطاق عمل لاعداد دراسة علمية تحدد الاضرار الصحية والبيئية لمياه الشرب المبآة في قنينات البلاستك بالتعاون مع احد الشركات الاستشارية او احدى الجامعات والافادة بنطاق العمل خلال اسبوع عمل\n",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
