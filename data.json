@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-30T06:49:44.413Z",
+  "exportedAt": "2026-06-30T06:50:12.381Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22719,6 +22719,18 @@
           "taqseem": "",
           "startDate": "2026-06-22",
           "daysSince": 1
+        },
+        {
+          "date": "2026-06-30",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-06-22",
+          "daysSince": 6
         }
       ],
       "sheet": "مُضاف يدوياً",
