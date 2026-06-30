@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-30T09:53:43.089Z",
+  "exportedAt": "2026-06-30T09:54:43.098Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23059,7 +23059,7 @@
       "slaDays": 5,
       "kpi": "",
       "note": "التعاون الدولي\nللتنسيق مع المديريات التخصصية وعمل اللازم خلال 5 ايام عمل وكذلك التنسيق مع التنوع الاحيائي لاضافة مشروع المسح الوطني للبيئية البحرية",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-06-28",
@@ -23084,13 +23084,26 @@
           "taqseem": "دائرة التعاون الدولي",
           "startDate": "2026-06-25",
           "daysSince": 3
+        },
+        {
+          "date": "2026-06-30",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "دائرة التعاون الدولي",
+          "startDate": "2026-06-25",
+          "daysSince": 3
         }
       ],
       "sheet": "مُضاف يدوياً",
       "divFollowDate": "2026-06-30",
       "followEntity": "rais_depts",
       "manualCount": 2,
-      "responseMethod": ""
+      "responseMethod": "via_follow",
+      "closedAt": "2026-06-30"
     },
     {
       "id": 1782637063880.6326,
