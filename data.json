@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-30T06:46:42.739Z",
+  "exportedAt": "2026-06-30T06:46:49.834Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22850,7 +22850,7 @@
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "std14",
-      "note": "نائب الرئيس\nالالتزام البيئي\nللدراسة والافادة",
+      "note": "تم رفع افادة المديرية ",
       "status": "open",
       "followups": [
         {
@@ -22881,7 +22881,7 @@
       "sheet": "مُضاف يدوياً",
       "manualCount": 2,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "via_other"
     },
     {
       "id": 1782373293895.373,
