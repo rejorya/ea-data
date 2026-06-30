@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-30T07:06:42.742Z",
+  "exportedAt": "2026-06-30T07:07:10.579Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18808,7 +18808,7 @@
       "type": "int",
       "kpi": "other",
       "note": "",
-      "status": "awaiting_div",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-05-19",
@@ -18850,13 +18850,25 @@
           "taqseem": "مديرة الاستدامة",
           "startDate": "2026-05-12",
           "daysSince": 33
+        },
+        {
+          "date": "2026-06-28",
+          "replied": false,
+          "note": "تم رفع افادة المديرية",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "taqseem": "مديرة الاستدامة",
+          "startDate": "2026-05-12",
+          "daysSince": 33
         }
       ],
       "sheet": "Sheet1",
       "manualCount": 3,
       "followEntity": "other",
       "responseMethod": "via_follow",
-      "closedAt": "2026-06-14",
+      "closedAt": "2026-06-28",
       "taqseemName": "مديرة الاستدامة",
       "followStart": "2026-05-12",
       "docNo": "1170/3/2022v400-39",
