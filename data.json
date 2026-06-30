@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-30T07:04:44.413Z",
+  "exportedAt": "2026-06-30T07:05:04.872Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21419,7 +21419,7 @@
       "type": "ext",
       "kpi": "wweek",
       "note": "نائب الرئيس\nالالتزام البيئي\nلتكليف احد المكاتب الاستشارية للقيام بالدراسة وعليكم تقديم استمارة مشروع بذلك",
-      "status": "awaiting_div",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-06-21",
@@ -21456,6 +21456,18 @@
           "taqseem": "المديرية العامة لالتزام البيئي",
           "startDate": "2026-06-21",
           "daysSince": 5
+        },
+        {
+          "date": "2026-06-30",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة لالتزام البيئي",
+          "startDate": "2026-06-21",
+          "daysSince": 7
         }
       ],
       "sheet": "Sheet1",
@@ -21468,7 +21480,7 @@
       "toEntity": "مكتب النائب",
       "priority": "normal",
       "confidentiality": "normal",
-      "divFollowDate": "2026-06-28",
+      "divFollowDate": "2026-06-30",
       "taqseemName": "المديرية العامة لالتزام البيئي"
     },
     {
