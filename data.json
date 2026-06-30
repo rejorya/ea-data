@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-06-30T06:37:49.274Z",
+  "exportedAt": "2026-06-30T06:38:17.846Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23010,8 +23010,8 @@
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "naib3",
-      "note": "نائب الرئيس\nللافادة وفق الحمل الوظيفي وراي المسئول المباشر",
-      "status": "open",
+      "note": "تم رفق رد رئيس مركز البيئة بولاية السويق \nلا مانع لدينا من إستكمال اجراءات النقل.",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-06-28",
@@ -23041,7 +23041,8 @@
       "sheet": "مُضاف يدوياً",
       "followEntity": "naib_office",
       "manualCount": 1,
-      "responseMethod": ""
+      "responseMethod": "via_other",
+      "closedAt": "2026-06-30"
     },
     {
       "id": 1782637379560.0322,
