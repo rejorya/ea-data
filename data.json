@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-01T04:26:50.571Z",
+  "exportedAt": "2026-07-01T04:47:45.093Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21354,7 +21354,7 @@
       "type": "ext",
       "kpi": "wweek",
       "note": "الموارد الشرية\nلعمل اللازم خلال اسبوع عمل وعلى مدير مكتب الرئيس الاتصال بالمدير والمتابعة",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-06-07",
@@ -21432,20 +21432,32 @@
           "taqseem": "المديرية العامة للشؤون الادارية والمالية",
           "startDate": "2026-06-07",
           "daysSince": 15
+        },
+        {
+          "date": "2026-07-01",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للشؤون الادارية والمالية-الموارد البشرية",
+          "startDate": "2026-06-07",
+          "daysSince": 18
         }
       ],
       "sheet": "Sheet1",
       "manualCount": 3,
       "followEntity": "taqseem",
       "responseMethod": "via_follow",
-      "taqseemName": "المديرية العامة للشؤون الادارية والمالية",
+      "taqseemName": "المديرية العامة للشؤون الادارية والمالية-الموارد البشرية",
       "divFollowDate": "2026-06-28",
       "followStart": "2026-06-07",
       "docNo": "1170/3/2022v403-76",
       "toEntity": "الموارد البشرية",
       "priority": "normal",
       "confidentiality": "normal",
-      "closedAt": "2026-06-21"
+      "closedAt": "2026-07-01"
     },
     {
       "id": 1780826442627.5752,
