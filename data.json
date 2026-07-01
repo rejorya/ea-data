@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-01T06:12:37.305Z",
+  "exportedAt": "2026-07-01T06:13:14.415Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23042,13 +23042,13 @@
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-06-24",
-      "followStart": "2026-06-25",
+      "followStart": "2026-06-30",
       "type": "ext",
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "wd3",
-      "note": "الدكتورة مريم\nللمراجعة بالتنسيق مع الغطاء النباتي والافادة",
-      "status": "awaiting_div",
+      "note": "مستشار الرئيس\nللمناقشة مع مركز مصيرة والتنوع الاحيائي والافادة",
+      "status": "open",
       "followups": [
         {
           "date": "2026-06-28",
