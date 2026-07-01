@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-01T10:19:37.405Z",
+  "exportedAt": "2026-07-01T10:20:07.668Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23293,7 +23293,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "مكتب الرئيس\nلمتابعة استيفاء الفقرة ١٩",
-      "status": "ready_esc",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-06-28",
@@ -23306,13 +23306,25 @@
           "taqseem": "دائرة ضبط الجودة",
           "startDate": "2026-06-28",
           "daysSince": 0
+        },
+        {
+          "date": "2026-07-01",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "دائرة ضبط الجودة",
+          "startDate": "2026-06-28",
+          "daysSince": 3
         }
       ],
       "sheet": "مُضاف يدوياً",
       "manualCount": 1,
       "followEntity": "rais_depts",
       "responseMethod": "",
-      "divFollowDate": "2026-06-28"
+      "divFollowDate": "2026-07-01"
     },
     {
       "id": 1782704889849.9443,
