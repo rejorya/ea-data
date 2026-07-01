@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-01T06:25:36.364Z",
+  "exportedAt": "2026-07-01T06:25:48.290Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23280,7 +23280,7 @@
       "title": "شراء أجهزة رصد جودة الهواء",
       "from": "المديرية العامة للالتزام البيئي",
       "docNo": "1181/104/2025v5-55",
-      "toEntity": "المديرية العامة للالتزام البيئي",
+      "toEntity": "دائرة التخطيط الاستراتيجي",
       "taqseemName": "دائرة التخطيط الاستراتيجي",
       "priority": "normal",
       "confidentiality": "normal",
@@ -23291,7 +23291,7 @@
       "slaDays": null,
       "kpi": "wweek",
       "note": "استلام الاستمارة بعد المراجعه للعرض على الرئيس",
-      "status": "awaiting_div",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-06-29",
@@ -23333,7 +23333,7 @@
       "sheet": "مُضاف يدوياً",
       "divFollowDate": "2026-07-01",
       "followEntity": "rais_depts",
-      "manualCount": 2,
+      "manualCount": 3,
       "responseMethod": "via_follow",
       "closedAt": "2026-07-01"
     },
