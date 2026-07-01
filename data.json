@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-01T08:30:42.431Z",
+  "exportedAt": "2026-07-01T08:31:10.259Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -6924,7 +6924,7 @@
       "type": "int",
       "kpi": "other",
       "note": "بناء على توجيه سعادته ، يتم تسليم نتائج تحليل مشروع المسح الوطني للتنوع الاحيائي في نهاية شهر يونيو 2026م .",
-      "status": "open",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-05-14",
@@ -6962,6 +6962,18 @@
           "taqseem": "",
           "startDate": "2026-02-17",
           "daysSince": 85
+        },
+        {
+          "date": "2026-07-01",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-02-17",
+          "daysSince": 96
         }
       ],
       "sheet": "Sheet1",
