@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-01T06:55:36.776Z",
+  "exportedAt": "2026-07-01T06:55:44.857Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23492,6 +23492,26 @@
       "followups": [],
       "sheet": "من المناقشات",
       "fromDiscussionId": 1782291481423.9004
+    },
+    {
+      "id": 1782888942769.5886,
+      "title": "ترشيح للمشاركة في برنامج عازم",
+      "from": "الأكاديمية السلطانية للإدارة",
+      "docNo": "1170/3/2022v407-38",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-28",
+      "followStart": "2026-07-01",
+      "type": "ext",
+      "slaMode": "letter",
+      "slaDays": 17,
+      "kpi": "",
+      "note": "لترشيح من تنطبق عليه الاشترطات",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
