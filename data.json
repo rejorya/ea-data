@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-01T07:41:36.419Z",
+  "exportedAt": "2026-07-01T07:42:06.495Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23533,16 +23533,23 @@
     {
       "id": 1782887681579.9202,
       "title": "طلب النظر في موضوعي ومعالجته إدرايا داخل الهيئة.pdf",
-      "from": "مناقشة سعادة الرئيس",
-      "date": "2026-07-01",
+      "from": "مكتب الرئيس",
+      "date": "2026-06-16",
       "followStart": "2026-07-01",
-      "type": "int",
-      "kpi": "",
-      "note": "توجيه من مناقشة مع الرئيس: موعد المناقشة يوم الاثنين 25/6/2026",
+      "type": "ext",
+      "kpi": "other",
+      "note": "القانونية\nللافادة",
       "status": "open",
       "followups": [],
       "sheet": "من المناقشات",
-      "fromDiscussionId": 1782291481423.9004
+      "fromDiscussionId": 1782291481423.9004,
+      "docNo": "1170/3/2022v405-87",
+      "toEntity": "الدائرة القانونية",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "manualCount": 0,
+      "followEntity": "rais_depts",
+      "responseMethod": ""
     },
     {
       "id": 1782888942769.5886,
