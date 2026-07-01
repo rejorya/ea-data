@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-01T07:29:36.415Z",
+  "exportedAt": "2026-07-01T07:29:43.783Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23410,8 +23410,8 @@
       "type": "int",
       "slaMode": "kpi",
       "slaDays": null,
-      "kpi": "other",
-      "note": "للمقابلة والافادة\n",
+      "kpi": "naib3",
+      "note": "للمقابلة والافادة\nتتم متابعة التقسيم",
       "status": "awaiting_div",
       "followups": [
         {
@@ -23441,7 +23441,9 @@
       ],
       "sheet": "مُضاف يدوياً",
       "followEntity": "taqseem",
-      "divFollowDate": "2026-07-01"
+      "divFollowDate": "2026-07-01",
+      "manualCount": 3,
+      "responseMethod": ""
     },
     {
       "id": 1782794191137.3198,
