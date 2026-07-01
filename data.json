@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-01T06:16:53.118Z",
+  "exportedAt": "2026-07-01T06:17:20.774Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -17449,7 +17449,7 @@
       "type": "int",
       "kpi": "",
       "note": "تنجز الملاحظات خلال 4 ايام عمل",
-      "status": "open",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-04-27",
@@ -17491,6 +17491,18 @@
           "taqseem": "دائرة التواصل والاعلام",
           "startDate": "2026-04-14",
           "daysSince": 53
+        },
+        {
+          "date": "2026-07-01",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "دائرة التواصل والاعلام",
+          "startDate": "2026-04-14",
+          "daysSince": 56
         }
       ],
       "sheet": "Sheet1",
@@ -17503,7 +17515,7 @@
       "manualCount": 4,
       "followEntity": "rais_depts",
       "responseMethod": "",
-      "divFollowDate": "2026-06-28",
+      "divFollowDate": "2026-07-01",
       "taqseemName": "دائرة التواصل والاعلام"
     },
     {
