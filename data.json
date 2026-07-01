@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-01T07:28:36.414Z",
+  "exportedAt": "2026-07-01T07:29:10.559Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23402,7 +23402,7 @@
       "from": "المواطن/جمعه بن محمد العامري",
       "docNo": "1170/3/2022v407-40",
       "toEntity": "نائب الرئيس",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة للشؤون الادارية والمالية",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-06-28",
@@ -23412,7 +23412,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "للمقابلة والافادة\n",
-      "status": "",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-06-29",
@@ -23425,10 +23425,23 @@
           "taqseem": "",
           "startDate": "2026-06-29",
           "daysSince": 0
+        },
+        {
+          "date": "2026-07-01",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+          "startDate": "2026-06-29",
+          "daysSince": 2
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "followEntity": "naib_office"
+      "followEntity": "taqseem",
+      "divFollowDate": "2026-07-01"
     },
     {
       "id": 1782794191137.3198,
