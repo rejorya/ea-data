@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-01T03:54:59.487Z",
+  "exportedAt": "2026-07-01T04:14:36.525Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23255,7 +23255,7 @@
       "slaDays": null,
       "kpi": "wweek",
       "note": "",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-06-29",
@@ -23268,13 +23268,26 @@
           "taqseem": "المديرية العامة لالتزام البيئي",
           "startDate": "2026-06-29",
           "daysSince": 0
+        },
+        {
+          "date": "2026-07-01",
+          "replied": true,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة لالتزام البيئي",
+          "startDate": "2026-06-29",
+          "daysSince": 2
         }
       ],
       "sheet": "مُضاف يدوياً",
       "divFollowDate": "2026-06-29",
       "followEntity": "taqseem",
       "manualCount": 1,
-      "responseMethod": ""
+      "responseMethod": "via_follow",
+      "closedAt": "2026-07-01"
     },
     {
       "id": 1782719027487.404,
