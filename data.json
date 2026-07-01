@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-01T06:16:36.457Z",
+  "exportedAt": "2026-07-01T06:16:53.118Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -17500,7 +17500,7 @@
       "toEntity": "دائرة التواصل والإعلام",
       "priority": "urgent",
       "confidentiality": "normal",
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "rais_depts",
       "responseMethod": "",
       "divFollowDate": "2026-06-28",
