@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-01T07:38:36.418Z",
+  "exportedAt": "2026-07-01T07:39:00.307Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23461,7 +23461,7 @@
       "slaDays": 5,
       "kpi": "wweek",
       "note": "اقترح اعداد نطاق عمل لاعداد دراسة علمية تحدد الاضرار الصحية والبيئية لمياه الشرب المبآة في قنينات البلاستك بالتعاون مع احد الشركات الاستشارية او احدى الجامعات والافادة بنطاق العمل خلال اسبوع عمل\n",
-      "status": "awaiting_div",
+      "status": "",
       "followups": [
         {
           "date": "2026-06-30",
@@ -23474,10 +23474,22 @@
           "taqseem": "المديرية العامة لالتزام البيئي",
           "startDate": "2026-06-29",
           "daysSince": 1
+        },
+        {
+          "date": "2026-07-01",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة لالتزام البيئي",
+          "startDate": "2026-06-29",
+          "daysSince": 2
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "divFollowDate": "2026-06-30",
+      "divFollowDate": "2026-07-01",
       "followEntity": "taqseem",
       "manualCount": 1,
       "responseMethod": ""
