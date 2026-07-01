@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-01T06:24:36.363Z",
+  "exportedAt": "2026-07-01T06:24:45.713Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23290,8 +23290,8 @@
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "wweek",
-      "note": "",
-      "status": "closed",
+      "note": "استلام الاستمارة بعد المراجعه للعرض على الرئيس",
+      "status": "open",
       "followups": [
         {
           "date": "2026-06-29",
@@ -23321,7 +23321,7 @@
       "sheet": "مُضاف يدوياً",
       "divFollowDate": "2026-06-29",
       "followEntity": "taqseem",
-      "manualCount": 1,
+      "manualCount": 2,
       "responseMethod": "via_follow",
       "closedAt": "2026-07-01"
     },
