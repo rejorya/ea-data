@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-01T10:18:36.452Z",
+  "exportedAt": "2026-07-01T10:18:49.456Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23034,7 +23034,7 @@
       "slaDays": null,
       "kpi": "std14",
       "note": "تم رفع افادة المديرية ",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-06-24",
@@ -23059,12 +23059,25 @@
           "taqseem": "",
           "startDate": "2026-06-24",
           "daysSince": 2
+        },
+        {
+          "date": "2026-06-30",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-06-24",
+          "daysSince": 4
         }
       ],
       "sheet": "مُضاف يدوياً",
       "manualCount": 2,
       "followEntity": "naib_office",
-      "responseMethod": "via_other"
+      "responseMethod": "via_other",
+      "closedAt": "2026-06-30"
     },
     {
       "id": 1782373293895.373,
