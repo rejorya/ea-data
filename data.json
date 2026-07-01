@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-01T07:14:36.409Z",
+  "exportedAt": "2026-07-01T07:15:19.715Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23540,6 +23540,26 @@
       "followEntity": "naib_office",
       "manualCount": 1,
       "responseMethod": ""
+    },
+    {
+      "id": 1782890117526.7288,
+      "title": "ترشيح خبراء للمشاركة في الفريق الفني الوطني للجنة حماية بيئة الطيران الدولية CAEP.pdf",
+      "from": "هيئة الطيران المدني",
+      "docNo": "1170/3/2022v407-36",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-28",
+      "followStart": "2026-07-01",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "doc2",
+      "note": "نائب الرئيس\nالتغير المناخي\nلترشيح احد المختصين",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
