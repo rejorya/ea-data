@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-01T06:24:45.713Z",
+  "exportedAt": "2026-07-01T06:25:24.232Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23281,7 +23281,7 @@
       "from": "المديرية العامة للالتزام البيئي",
       "docNo": "1181/104/2025v5-55",
       "toEntity": "المديرية العامة للالتزام البيئي",
-      "taqseemName": "المديرية العامة لالتزام البيئي",
+      "taqseemName": "دائرة التخطيط الاستراتيجي",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-06-16",
@@ -23291,7 +23291,7 @@
       "slaDays": null,
       "kpi": "wweek",
       "note": "استلام الاستمارة بعد المراجعه للعرض على الرئيس",
-      "status": "open",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-06-29",
@@ -23316,11 +23316,23 @@
           "taqseem": "المديرية العامة لالتزام البيئي",
           "startDate": "2026-06-29",
           "daysSince": 2
+        },
+        {
+          "date": "2026-07-01",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "دائرة التخطيط الاستراتيجي",
+          "startDate": "2026-06-29",
+          "daysSince": 2
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "divFollowDate": "2026-06-29",
-      "followEntity": "taqseem",
+      "divFollowDate": "2026-07-01",
+      "followEntity": "rais_depts",
       "manualCount": 2,
       "responseMethod": "via_follow",
       "closedAt": "2026-07-01"
