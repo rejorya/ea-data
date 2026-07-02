@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-02T08:32:23.178Z",
+  "exportedAt": "2026-07-02T08:33:13.886Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23629,7 +23629,7 @@
       "slaDays": 17,
       "kpi": "",
       "note": "لترشيح من تنطبق عليه الاشترطات",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-07-01",
@@ -23647,7 +23647,8 @@
       "sheet": "مُضاف يدوياً",
       "followEntity": "naib_office",
       "manualCount": 1,
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-07-02"
     },
     {
       "id": 1782890117526.7288,
@@ -28481,5 +28482,6 @@
       "note": "موعد المناقشة يوم الأحد تاريخ 12/7/2026 الساعة 11:00 صباحاً",
       "attendees": ""
     }
-  ]
+  ],
+  "holidays": []
 }
