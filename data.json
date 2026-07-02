@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-02T04:23:50.378Z",
+  "exportedAt": "2026-07-02T04:24:36.179Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23718,9 +23718,23 @@
       "slaDays": null,
       "kpi": "std14",
       "note": "نائب الرئيس\nالالتزام البيئي\nللدراسة والافادة\nوهل الهيئة جهة اختصاص لاعتماد هذا المشروع ام منظم ونضع المعاييروالاشتراطات",
-      "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "status": "",
+      "followups": [
+        {
+          "date": "2026-07-02",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-07-02",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "followEntity": "naib_office"
     }
   ],
   "directives": [
