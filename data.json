@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-02T04:25:00.351Z",
+  "exportedAt": "2026-07-02T04:27:54.455Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22730,7 +22730,7 @@
       "slaDays": 5,
       "kpi": "",
       "note": "المتبقي خطاب الى وزارة التجارة\n\n",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-06-21",
@@ -22772,7 +22772,8 @@
       "sheet": "مُضاف يدوياً",
       "followEntity": "naib_office",
       "manualCount": 2,
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-07-02"
     },
     {
       "id": 1782101792654.854,
