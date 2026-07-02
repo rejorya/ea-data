@@ -1350,6 +1350,32 @@ body.viewer-only .print-btn { display: inline-block !important; }
     <div class="ch" style="background:#2c3e50"><h2>المستخدمون</h2></div>
     <div class="tb"><table><thead><tr><th>اسم المستخدم</th><th>الاسم</th><th>الصلاحية</th><th>إجراء</th></tr></thead><tbody id="usersTable"></tbody></table></div>
   </div>
+
+  <!-- إدارة الإجازات الرسمية -->
+  <div class="card">
+    <div class="ch" style="background:#0e6655;color:#fff"><h2>🗓️ الإجازات الرسمية والأسبوعية</h2></div>
+    <div class="fs">
+      <p style="font-size:12px;color:#666;margin-bottom:10px">
+        الإجازة الأسبوعية (الجمعة والسبت) مستثناة تلقائياً من حساب أيام العمل في كل المنصة.
+        أضيفي هنا أيضاً الإجازات الرسمية (الأعياد والمناسبات) ليُستثنى تاريخها من حساب مدد الرد والمتابعة.
+      </p>
+      <div class="fg2">
+        <div class="fgs"><label>تاريخ الإجازة</label><input type="date" id="holDate"></div>
+        <div class="fgs fw"><label>وصف الإجازة</label><input id="holName" placeholder="مثال: عيد الفطر المبارك — اليوم الأول"></div>
+      </div>
+      <button class="btn btn-s" onclick="addHoliday()">➕ إضافة إجازة</button>
+      <button class="btn" style="background:#e5e7eb;color:#333" onclick="var w=document.getElementById('holBulkWrap'); w.style.display = (w.style.display==='none'?'block':'none');">➕ إضافة عدة أيام متتالية</button>
+      <div id="holBulkWrap" style="display:none;margin-top:12px;padding:12px;background:#f7fafb;border-radius:8px">
+        <div class="fg2">
+          <div class="fgs"><label>من تاريخ</label><input type="date" id="holBulkFrom"></div>
+          <div class="fgs"><label>إلى تاريخ</label><input type="date" id="holBulkTo"></div>
+          <div class="fgs fw"><label>وصف الإجازة</label><input id="holBulkName" placeholder="مثال: إجازة اليوم الوطني"></div>
+        </div>
+        <button class="btn btn-s" onclick="addHolidayRange()">➕ إضافة الفترة كاملة</button>
+      </div>
+    </div>
+    <div class="tb"><table><thead><tr><th>م</th><th>التاريخ</th><th>الوصف</th><th>إجراء</th></tr></thead><tbody id="holidaysTable"></tbody></table></div>
+  </div>
 </div>
 
     </div><!-- content -->
@@ -1360,18 +1386,20 @@ body.viewer-only .print-btn { display: inline-block !important; }
 
 <!-- Edit Topic Modal -->
 <div class="modal" id="editTopicModal">
-  <div class="modal-c">
-    <div class="modal-h"><h3>✏️ تعديل الموضوع</h3><button class="modal-x" onclick="closeModal('editTopicModal')">×</button></div>
+  <div class="modal-c" style="max-width:760px">
+    <div class="modal-h"><h3>✏️ تعديل الموضوع ومتابعته</h3><button class="modal-x" onclick="closeModal('editTopicModal')">×</button></div>
     <div class="modal-b">
       <input type="hidden" id="editTopicId">
+
+      <!-- ===== بيانات الموضوع ===== -->
       <div class="fg2">
         <div class="fgs fw"><label>عنوان الموضوع</label><input id="editTitle"></div>
         <div class="fgs"><label>الجهة</label><input id="editFrom"></div>
         <div class="fgs"><label>تاريخ الاستلام</label><input type="date" id="editDate"></div>
-        <div class="fgs"><label>تاريخ استلام الموضوع للمتابعة</label><input type="date" id="editFollowStart"></div>
+        <div class="fgs"><label>تاريخ توجيه سعادة الرئيس للمتابعة</label><input type="date" id="editFollowStart" oninput="renderTopicTimeInfo()"></div>
         <div class="fgs"><label>نوع الموضوع</label><select id="editType"><option value="ext">خارجي</option><option value="int">داخلي</option></select></div>
         <div class="fgs"><label>فئة المؤشر</label>
-          <select id="editKpi">
+          <select id="editKpi" onchange="renderTopicTimeInfo()">
             <option value="">— اختر —</option>
             <option value="doc2">ترشيح الوثائق (2 يوم)</option>
             <option value="rpt14">تقرير (14 يوم)</option>
@@ -1387,7 +1415,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
             <option value="other">داخلي</option>
           </select>
         </div>
-        <div class="fgs"><label>مدة رد مخصصة (أيام عمل)</label><input type="number" id="editSlaDays" min="0" placeholder="تتجاوز المؤشر إن عُبّئت"></div>
+        <div class="fgs"><label>مدة رد مخصصة (أيام عمل)</label><input type="number" id="editSlaDays" min="0" placeholder="تتجاوز المؤشر إن عُبّئت" oninput="renderTopicTimeInfo()"></div>
         <div class="fgs"><label>رقم الوثيقة / وصول</label><input id="editDocNo"></div>
         <div class="fgs"><label>الجهة الموجَّه إليها</label><input id="editToEntity"></div>
         <div class="fgs"><label>الأولوية</label>
@@ -1411,7 +1439,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
           </select>
         </div>
         <div class="fgs"><label>🏢 الجهة المُتابَعة حالياً</label>
-          <select id="editFollowEntity">
+          <select id="editFollowEntity" onchange="renderTopicTimeInfo()">
             <option value="">— غير محدد —</option>
             <option value="rais_depts">الدوائر التابعة للرئيس</option>
             <option value="naib_office">مكتب النائب</option>
@@ -1431,22 +1459,22 @@ body.viewer-only .print-btn { display: inline-block !important; }
         <div class="fgs fw"><label>الملاحظات</label><textarea id="editNote" placeholder="ملاحظات الموضوع..."></textarea></div>
       </div>
       <div class="btn-row">
-        <button class="btn btn-s" onclick="saveEditTopic()">💾 حفظ</button>
-        <button class="btn btn-w" onclick="closeModal('editTopicModal')">إلغاء</button>
+        <button class="btn btn-s" onclick="saveEditTopic()">💾 حفظ بيانات الموضوع</button>
       </div>
-    </div>
-  </div>
-</div>
 
-<!-- Add Followup Modal -->
-<div class="modal" id="followupModal">
-  <div class="modal-c">
-    <div class="modal-h"><h3>➕ إضافة متابعة</h3><button class="modal-x" onclick="closeModal('followupModal')">×</button></div>
-    <div class="modal-b">
-      <input type="hidden" id="fuTopicId">
-      <p id="fuTitleDisplay" style="margin-bottom:12px;font-size:13px;color:var(--text2);padding:10px;background:var(--light);border-radius:6px"></p>
+      <!-- ===== معلومات المتابعة الزمنية ===== -->
+      <hr style="border:none;border-top:1px solid #eef2f6;margin:16px 0">
+      <h4 style="margin:0 0 8px;font-size:14px;color:#1a3a5b">⏱️ معلومات المتابعة الزمنية</h4>
+      <div id="editTimeInfo" style="font-size:12.5px"></div>
+
+      <!-- ===== سجل الإجراءات ===== -->
+      <hr style="border:none;border-top:1px solid #eef2f6;margin:16px 0">
+      <h4 style="margin:0 0 8px;font-size:14px;color:#1a3a5b">📋 سجل الإجراءات والمتابعات</h4>
+      <div id="editActionLog" style="max-height:220px;overflow-y:auto;margin-bottom:10px"></div>
+
+      <!-- ===== إضافة إجراء جديد ===== -->
+      <h4 style="margin:0 0 8px;font-size:14px;color:#1a3a5b">➕ إضافة إجراء جديد</h4>
       <div class="fg2">
-        <div class="fgs"><label>تاريخ بدء المتابعة (تاريخ التوجيه)</label><input type="date" id="fuStartDate" oninput="updateFollowupCalc()"></div>
         <div class="fgs"><label>تاريخ المتابعة *</label><input type="date" id="fuDate" oninput="updateFollowupCalc()"></div>
         <div class="fgs"><label>هل تم الرد؟</label><select id="fuReplied"><option value="false">❌ لا</option><option value="true">✅ نعم</option></select></div>
         <div class="fgs"><label>🏢 الجهة المُتابَعة</label>
@@ -1493,9 +1521,10 @@ body.viewer-only .print-btn { display: inline-block !important; }
         </div>
       </div>
       <div id="fuCalcInfo" style="margin:4px 0 10px"></div>
+      <input type="hidden" id="fuTopicId">
       <div class="btn-row">
-        <button class="btn btn-s" onclick="saveFollowup()">💾 حفظ المتابعة</button>
-        <button class="btn btn-w" onclick="closeModal('followupModal')">إلغاء</button>
+        <button class="btn btn-s" onclick="saveFollowup()">➕ حفظ الإجراء</button>
+        <button class="btn btn-w" onclick="closeModal('editTopicModal')">إغلاق</button>
       </div>
     </div>
   </div>
@@ -1624,6 +1653,7 @@ const D = {
   ideas: [],          // الأفكار
   memos: [],          // المذكرات الداخلية
   discussions: [],    // مناقشات الرئيس (مستقلة عن المواضيع)
+  holidays: [],       // الإجازات الرسمية (تواريخ ISO) — تُستثنى من حساب أيام العمل
   users: USERS        // المستخدمون
 };
 
@@ -1647,6 +1677,7 @@ function saveToStorage() {
       ideas: D.ideas,
       memos: D.memos || [],
       discussions: D.discussions || [],
+      holidays: D.holidays || [],
       savedAt: new Date().toISOString()
     };
     localStorage.setItem(STORAGE_KEY, JSON.stringify(dataToSave));
@@ -1672,6 +1703,7 @@ function loadFromStorage() {
     if(saved.ideas) D.ideas = saved.ideas;
     if(saved.memos) D.memos = saved.memos;
     if(saved.discussions) D.discussions = saved.discussions;
+    if(saved.holidays) D.holidays = saved.holidays;
     console.log('تم استرجاع البيانات المحفوظة من ' + saved.savedAt);
     return true;
   } catch(e) {
@@ -1710,7 +1742,8 @@ async function autoSaveToGitHub() {
       dirReports: D.dirReports || [],
       ideas: D.ideas || [],
       memos: D.memos || [],
-      discussions: D.discussions || []
+      discussions: D.discussions || [],
+      holidays: D.holidays || []
     };
     const content = JSON.stringify(dataToShare, null, 2);
     const contentBase64 = btoa(unescape(encodeURIComponent(content)));
@@ -2540,6 +2573,7 @@ async function downloadFromGitHub() {
     D.ideas = imported.ideas || [];
     D.memos = imported.memos || [];
     D.discussions = imported.discussions || [];
+    D.holidays = imported.holidays || [];
     
     // حفظ محلي (لرحاب فقط)
     if(CU?.admin) saveToStorage();
@@ -2553,6 +2587,7 @@ async function downloadFromGitHub() {
     refreshQuarterly();
     refreshDirReport();
     renderIdeasTable();
+    if(typeof renderHolidaysTable==='function') renderHolidaysTable();
     
     lastSyncTime = new Date();
     const stats = `✅ تم التحميل بنجاح!<br>
@@ -2642,6 +2677,7 @@ async function downloadFromGitHubPublic() {
     D.ideas = imported.ideas || [];
     D.memos = imported.memos || [];
     D.discussions = imported.discussions || [];
+    D.holidays = imported.holidays || [];
     
     // تحديث كل الواجهات
     renderTopicsTable();
@@ -2652,6 +2688,7 @@ async function downloadFromGitHubPublic() {
     refreshQuarterly();
     refreshDirReport();
     renderIdeasTable();
+    if(typeof renderHolidaysTable==='function') renderHolidaysTable();
     
     lastSyncTime = new Date();
     const stats = `✅ تم التحميل بنجاح!<br>
@@ -2809,6 +2846,7 @@ function importSharedData() {
       D.ideas = imported.ideas || [];
     D.memos = imported.memos || [];
       D.discussions = imported.discussions || [];
+      D.holidays = imported.holidays || [];
       
       // حفظ محلي (لرحاب فقط)
       if(CU?.admin) {
@@ -2854,6 +2892,7 @@ function tryLoadFromSession() {
     D.ideas = imported.ideas || [];
     D.memos = imported.memos || [];
     D.discussions = imported.discussions || [];
+    D.holidays = imported.holidays || [];
     return true;
   } catch(_) { return false; }
 }
@@ -2895,36 +2934,51 @@ const KPI_DAYS = {
   '': null
 };
 
-// ===== حساب أيام العمل الرسمية (الأحد–الخميس فقط، استثناء الجمعة والسبت) =====
+// ===== حساب أيام العمل الرسمية (الأحد–الخميس، مع استثناء الجمعة/السبت والإجازات الرسمية) =====
 function _toDateOnly(x) {
   const d = (x instanceof Date) ? new Date(x) : new Date(x);
   if(isNaN(d)) return null;
   d.setHours(0,0,0,0);
   return d;
 }
-// عدد أيام العمل بين تاريخين (لا تشمل البداية، تشمل النهاية)؛ الجمعة=5 والسبت=6 عطلة
+// مجموعة الإجازات الرسمية بصيغة YYYY-MM-DD لسرعة البحث
+function _holidaySet() {
+  const s = new Set();
+  (D.holidays || []).forEach(h => {
+    const d = typeof h === 'string' ? h : (h && h.date);
+    if(d) s.add(String(d).slice(0,10));
+  });
+  return s;
+}
+function _isHolidayDate(d) {
+  const iso = d.toISOString().slice(0,10);
+  return _holidaySet().has(iso);
+}
+// عدد أيام العمل بين تاريخين (لا تشمل البداية، تشمل النهاية)؛ الجمعة=5 والسبت=6 عطلة، وتُستثنى الإجازات الرسمية
 function businessDaysBetween(a, b) {
   const s = _toDateOnly(a), e = _toDateOnly(b);
   if(!s || !e) return null;
   if(e <= s) return 0;
+  const hol = _holidaySet();
   let count = 0;
   const cur = new Date(s);
   while(cur < e) {
     cur.setDate(cur.getDate() + 1);
     const dow = cur.getDay();
-    if(dow !== 5 && dow !== 6) count++;
+    if(dow !== 5 && dow !== 6 && !hol.has(cur.toISOString().slice(0,10))) count++;
   }
   return count;
 }
-// إضافة عدد من أيام العمل على تاريخ (لتحديد الموعد النهائي)
+// إضافة عدد من أيام العمل على تاريخ (لتحديد الموعد النهائي)، مع استثناء الإجازات الرسمية
 function addBusinessDays(a, n) {
   const d = _toDateOnly(a);
   if(!d) return null;
+  const hol = _holidaySet();
   let added = 0;
   while(added < n) {
     d.setDate(d.getDate() + 1);
     const dow = d.getDay();
-    if(dow !== 5 && dow !== 6) added++;
+    if(dow !== 5 && dow !== 6 && !hol.has(d.toISOString().slice(0,10))) added++;
   }
   return d;
 }
@@ -3243,6 +3297,7 @@ function refreshAll() {
   renderTopicsTable();
   renderDirectivesTable();
   renderUsersTable();
+  renderHolidaysTable();
   refreshWeekly();
   refreshMonthly();
   refreshQuarterly();
@@ -3635,10 +3690,9 @@ function renderTopicsTable() {
     
     const actions = CU?.admin ? `
       <td class="adminOnly" style="white-space:nowrap">
-        <button class="btn btn-b" style="padding:3px 8px;font-size:10px" onclick="openFollowupModal(${t.id})">➕ متابعة</button>
         <button class="btn" style="padding:3px 8px;font-size:10px;background:#ede9fe;color:#6d28d9" onclick="genFollowDraft(${t.id})">📄 مسودة</button>
         <button class="btn" style="padding:3px 8px;font-size:10px;background:#fee2e2;color:#b91c1c" onclick="genEscDraft(${t.id})">⚠️ تصعيد</button>
-        <button class="btn btn-o" style="padding:3px 8px;font-size:10px" onclick="openEditTopicModal(${t.id})">✏️ تعديل</button>
+        <button class="btn btn-o" style="padding:3px 8px;font-size:10px" onclick="openEditTopicModal(${t.id})">✏️ تعديل ومتابعة</button>
         <button class="btn btn-r" style="padding:3px 8px;font-size:10px" onclick="deleteTopic(${t.id})">🗑</button>
       </td>` : '<td class="adminOnly">—</td>';
     return `<tr style="${rowStyle}">
@@ -3661,7 +3715,7 @@ function renderTopicsTable() {
   $('closedTopicsTable').innerHTML = closed.map((t, i) => {
     const actions = CU?.admin ? `
       <td class="adminOnly" style="white-space:nowrap">
-        <button class="btn btn-o" style="padding:3px 8px;font-size:10px" onclick="openEditTopicModal(${t.id})">✏️ تعديل</button>
+        <button class="btn btn-o" style="padding:3px 8px;font-size:10px" onclick="openEditTopicModal(${t.id})">✏️ تعديل ومتابعة</button>
         <button class="btn btn-r" style="padding:3px 8px;font-size:10px" onclick="deleteTopic(${t.id})">🗑</button>
       </td>` : '<td class="adminOnly">—</td>';
     return `<tr>
@@ -3742,7 +3796,98 @@ function openEditTopicModal(tid) {
   if($('editResponseMethod')) $('editResponseMethod').value = t.responseMethod || '';
   $('editStatus').value = t.status || 'open';
   $('editNote').value = t.note || '';
+
+  // إعداد نموذج «إضافة إجراء جديد» (كان في نافذة منفصلة، الآن جزء من نفس النافذة)
+  $('fuTopicId').value = tid;
+  $('fuDate').value = new Date().toISOString().substring(0,10);
+  $('fuReplied').value = 'false';
+  $('fuNote').value = '';
+  if($('fuActionType')) $('fuActionType').value = '';
+  if($('fuBy')) $('fuBy').value = '';
+  if($('fuResult')) $('fuResult').value = '';
+  $('fuStatus').value = t.status || 'open';
+  if($('fuFollowEntity')) $('fuFollowEntity').value = t.followEntity || '';
+  if($('fuResponseMethod')) $('fuResponseMethod').value = t.responseMethod || '';
+  if($('fuTaqseem')) $('fuTaqseem').value = t.taqseemName || '';
+  updateFollowupCalc();
+
+  renderTopicTimeInfo();
+  renderTopicActionLog(t);
   $('editTopicModal').classList.add('on');
+}
+
+// نفس نافذة التعديل الآن تفتح مباشرة على قسم «إضافة إجراء جديد» — أُبقيت الدالة القديمة للتوافق مع كل نقاط الاستدعاء
+function openFollowupModal(tid) {
+  openEditTopicModal(tid);
+}
+
+// ⏱️ لوحة معلومات المتابعة الزمنية: تاريخ توجيه الرئيس، مدة الرد المحددة (افتراضية/مخصصة)،
+// آخر متابعة مع مكتب النائب، تاريخ بدء متابعة التقسيم — وعدد أيام العمل (باستثناء الإجازات) لكل مرحلة
+function renderTopicTimeInfo() {
+  const box = $('editTimeInfo');
+  if(!box) return;
+  const tid = parseFloat($('editTopicId').value);
+  const t = D.topics.find(x => x.id === tid);
+  if(!t) { box.innerHTML = ''; return; }
+  const today = new Date().toISOString().slice(0,10);
+  const followStart = val('editFollowStart') || t.followStart || t.date || '';
+  const kpiSel = val('editKpi');
+  const slaDaysInput = parseInt(val('editSlaDays'), 10);
+  let allowedDays = null, allowedLabel = '';
+  if(slaDaysInput > 0) {
+    allowedDays = slaDaysInput;
+    allowedLabel = 'مخصصة من توجيه الرئيس';
+  } else if(kpiSel && typeof KPI_DAYS !== 'undefined' && KPI_DAYS[kpiSel] != null) {
+    allowedDays = KPI_DAYS[kpiSel];
+    allowedLabel = 'حسب المؤشر المعتمد: ' + (typeof KPI_LABELS!=='undefined' ? (KPI_LABELS[kpiSel]||kpiSel) : kpiSel);
+  }
+  let daysSinceStart = null;
+  if(followStart) { try { daysSinceStart = businessDaysBetween(followStart, today); } catch(e) {} }
+
+  // آخر متابعة مسجّلة مع مكتب النائب تحديداً
+  const naibFollows = (t.followups||[]).filter(f => f && f.entity === 'naib_office').sort((a,b)=>(a.date||'').localeCompare(b.date||''));
+  const lastNaibFollow = naibFollows.length ? naibFollows[naibFollows.length-1] : null;
+
+  const divDate = t.divFollowDate || '';
+  let divDays = null;
+  if(divDate) { try { divDays = businessDaysBetween(divDate, today); } catch(e) {} }
+
+  function row(label, value, color) {
+    return '<div style="display:flex;justify-content:space-between;padding:7px 10px;border-bottom:1px solid #f1f5f9"><span style="color:#6b7c8d">'+label+'</span><span style="font-weight:700;color:'+(color||'#22303f')+'">'+value+'</span></div>';
+  }
+  let html = '<div style="background:#f7fafc;border:1px solid #eef2f6;border-radius:9px;overflow:hidden">';
+  html += row('📌 تاريخ توجيه سعادة الرئيس', followStart ? fmtDate(followStart) : '<span style="color:#c0392b">غير محدد</span>');
+  html += row('⏳ مدة الرد المحددة', allowedDays!=null ? ('<b>'+allowedDays+'</b> يوم عمل — '+allowedLabel) : '<span style="color:#90a0b3">لم تُحدَّد بعد</span>');
+  html += row('📆 أيام العمل المنقضية منذ التوجيه', daysSinceStart!=null ? (daysSinceStart+' يوم عمل') : '—', (allowedDays!=null && daysSinceStart!=null && daysSinceStart>allowedDays) ? '#c0392b' : '#22303f');
+  html += row('🏢 آخر متابعة مسجّلة مع مكتب النائب', lastNaibFollow ? fmtDate(lastNaibFollow.date) : '<span style="color:#90a0b3">لم تُسجَّل متابعة مع مكتب النائب بعد</span>');
+  html += row('📂 تاريخ بدء متابعة التقسيم', divDate ? fmtDate(divDate) : '<span style="color:#90a0b3">لم تبدأ متابعة التقسيم بعد</span>');
+  if(divDate) html += row('📆 أيام العمل منذ بدء متابعة التقسيم', divDays!=null ? (divDays+' يوم عمل') : '—');
+  html += '</div>';
+  if(allowedDays!=null && daysSinceStart!=null && daysSinceStart>allowedDays) {
+    html += '<div style="margin-top:8px;padding:9px 11px;background:#fdeaea;border-right:4px solid #c0392b;border-radius:6px;color:#922b21;font-weight:700;font-size:12px">⚠️ تجاوز الموضوع مدة الرد المحددة أعلاه — إن كانت الجهة المُتابَعة مكتب النائب، ابدئي متابعة التقسيم مباشرة.</div>';
+  }
+  box.innerHTML = html;
+}
+
+// 📋 عرض سجل كل الإجراءات المسجّلة على الموضوع بترتيب زمني
+function renderTopicActionLog(t) {
+  const box = $('editActionLog');
+  if(!box) return;
+  const list = (t.followups||[]).slice().sort((a,b)=>(a.date||'').localeCompare(b.date||''));
+  if(!list.length) { box.innerHTML = '<div style="color:#90a0b3;font-size:12px;padding:10px;text-align:center;background:#f7fafc;border-radius:8px">لا توجد إجراءات مسجّلة بعد على هذا الموضوع</div>'; return; }
+  const entLabels = (typeof FOLLOW_ENTITY_LABELS!=='undefined') ? FOLLOW_ENTITY_LABELS : {};
+  box.innerHTML = list.map(f => {
+    const ent = f.entity ? (entLabels[f.entity]||f.entity) : '';
+    return '<div style="border:1px solid #eef2f6;border-radius:9px;padding:9px 12px;margin-bottom:7px;font-size:12px;background:#fafcff">'
+      + '<b style="color:#1a3a5b">'+fmtDate(f.date)+'</b>'
+      + (ent?' · <span style="color:#2370a3">'+ent+'</span>':'')
+      + (f.taqseem?' · <span style="color:#7d3c98">📂 '+f.taqseem+'</span>':'')
+      + (f.replied?' · <span style="color:#1d8349">✅ تم الرد</span>':' · <span style="color:#b91c1c">❌ لم يُرد</span>')
+      + (f.by?'<br><span style="color:#6b7c8d">المنفذ: '+f.by+'</span>':'')
+      + (f.result?'<br><span style="color:#1d8349">النتيجة: '+f.result+'</span>':'')
+      + (f.note?'<br><span style="color:#888">'+f.note+'</span>':'')
+      + '</div>';
+  }).join('');
 }
 
 function saveEditTopic() {
@@ -3772,7 +3917,6 @@ function saveEditTopic() {
   }
   t.status = newStatus;
   
-  closeModal('editTopicModal');
   const fcInput = $('editFollowupCount');
   if(fcInput && fcInput.value !== '') {
     t.manualCount = parseInt(fcInput.value) || 0;
@@ -3789,7 +3933,8 @@ function saveEditTopic() {
   refreshDashboard();
   refreshAllReports();
   autoSave();
-  alert('✅ تم حفظ التعديلات');
+  renderTopicTimeInfo();
+  alert('✅ تم حفظ بيانات الموضوع');
 }
 
 function deleteTopic(tid) {
@@ -3805,44 +3950,22 @@ function deleteTopic(tid) {
   alert('✅ تم الحذف');
 }
 
-// ============== المتابعات ==============
+// ============== المتابعات (سجل الإجراءات — جزء من نافذة التعديل) ==============
 
-function openFollowupModal(tid) {
-  if(!CU?.admin) return;
-  const t = D.topics.find(x => x.id === tid);
-  if(!t) return;
-  $('fuTopicId').value = tid;
-  $('fuTitleDisplay').textContent = '📋 ' + t.title;
-  $('fuDate').value = new Date().toISOString().substring(0,10);
-  $('fuReplied').value = 'false';
-  $('fuNote').value = '';
-  if($('fuActionType')) $('fuActionType').value = '';
-  if($('fuBy')) $('fuBy').value = '';
-  if($('fuResult')) $('fuResult').value = '';
-  $('fuStatus').value = t.status || 'open';
-  if($('fuFollowEntity')) $('fuFollowEntity').value = t.followEntity || '';
-  if($('fuResponseMethod')) $('fuResponseMethod').value = t.responseMethod || '';
-  if($('fuTaqseem')) $('fuTaqseem').value = t.taqseemName || '';
-  if($('fuStartDate')) $('fuStartDate').value = t.followStart || '';
-  updateFollowupCalc();
-  $('followupModal').classList.add('on');
-}
-
-// حساب تلقائي لعدد الأيام منذ بدء المتابعة حتى تاريخ المتابعة (مستقل عن المؤشر)
+// حساب تلقائي لعدد أيام العمل منذ توجيه الرئيس حتى تاريخ المتابعة (باستثناء الإجازات)
 function updateFollowupCalc() {
   const info = $('fuCalcInfo');
   if(!info) return;
   const tid = parseFloat($('fuTopicId').value);
   const t = D.topics.find(x => x.id === tid);
   const fuDateStr = val('fuDate');
-  // نقطة البداية: تاريخ بدء المتابعة (التوجيه) ثم تاريخ بدء المتابعة المحفوظ ثم تاريخ الاستلام
-  const startStr = val('fuStartDate') || (t && t.followStart) || (t && t.date) || '';
+  // نقطة البداية: تاريخ توجيه الرئيس المحفوظ على الموضوع (يُعدَّل من قسم بيانات الموضوع أعلاه)
+  const startStr = (t && t.followStart) || (t && t.date) || '';
   if(!t || !startStr || !fuDateStr) { info.innerHTML = ''; return; }
   const start = new Date(startStr), fu = new Date(fuDateStr);
   if(isNaN(start) || isNaN(fu)) { info.innerHTML = ''; return; }
   const days = businessDaysBetween(startStr, fuDateStr);
-  const startLabel = (val('fuStartDate') || (t && t.followStart)) ? 'بدء المتابعة' : 'الاستلام';
-  let msg = `⏱️ مضى <b>${days}</b> يوم عمل (الأحد–الخميس) منذ ${startLabel} (${fmtDate(startStr)}) حتى تاريخ المتابعة.`;
+  let msg = `⏱️ مضى <b>${days}</b> يوم عمل (باستثناء الجمعة/السبت والإجازات الرسمية) منذ توجيه الرئيس (${fmtDate(startStr)}) حتى تاريخ المتابعة.`;
   const color = '#1a5276';
   const ent = val('fuFollowEntity');
   const isNaib = (ent === 'naib_office') || (t.followEntity === 'naib_office') || (t.kpi === 'naib3');
@@ -3862,11 +3985,8 @@ function saveFollowup() {
   if(!date) { alert('⚠️ يرجى تحديد تاريخ المتابعة'); return; }
   
   const taqseem = val('fuTaqseem').trim();
-  // حفظ تاريخ بدء المتابعة على الموضوع
-  const startStr = val('fuStartDate');
-  if(startStr) t.followStart = startStr;
-  // عدد الأيام منذ بدء المتابعة حتى تاريخ المتابعة (مستقل عن المؤشر)
-  const baseStr = startStr || t.followStart || t.date;
+  // عدد أيام العمل منذ توجيه الرئيس المحفوظ حتى تاريخ هذا الإجراء
+  const baseStr = t.followStart || t.date;
   let daysSince = null;
   if(baseStr) {
     daysSince = businessDaysBetween(baseStr, date);
@@ -3881,7 +4001,7 @@ function saveFollowup() {
     result: val('fuResult').trim(),
     entity: val('fuFollowEntity') || '',
     taqseem: taqseem,
-    startDate: startStr || t.followStart || '',
+    startDate: t.followStart || '',
     daysSince: daysSince
   });
   
@@ -3904,12 +4024,20 @@ function saveFollowup() {
   // حفظ اسم التقسيم المُتابَع
   if(taqseem) t.taqseemName = taqseem;
   
-  closeModal('followupModal');
+  // تبقى النافذة مفتوحة لتظهر التحديثات فوراً، وتُفرَّغ حقول الإجراء الجديد لإضافة إجراء آخر إذا لزم
+  clearFields(['fuNote','fuResult','fuBy','fuTaqseem']);
+  if($('fuActionType')) $('fuActionType').value = '';
+  if($('editFollowEntity')) $('editFollowEntity').value = t.followEntity || '';
+  if($('editResponseMethod')) $('editResponseMethod').value = t.responseMethod || '';
+  if($('editStatus')) $('editStatus').value = t.status || 'open';
+  if($('editFollowupCount')) $('editFollowupCount').value = t.manualCount ?? t.followups.length;
+  renderTopicActionLog(t);
+  renderTopicTimeInfo();
   renderTopicsTable();
   refreshDashboard();
   refreshAllReports();
   autoSave();
-  alert('✅ تم تسجيل المتابعة');
+  alert('✅ تم تسجيل الإجراء');
 }
 
 // ============== مناقشات الرئيس (مستقلة) ==============
@@ -6453,6 +6581,59 @@ function changeDelegatePassword() {
   });
 }
 
+// ===== إدارة الإجازات الرسمية =====
+function addHoliday() {
+  if(!CU?.admin) return;
+  const date = val('holDate');
+  const name = val('holName').trim();
+  if(!date) { alert('⚠️ حدّدي تاريخ الإجازة'); return; }
+  D.holidays = D.holidays || [];
+  if(D.holidays.some(h => (typeof h==='string'?h:h.date) === date)) { alert('⚠️ هذا التاريخ مضاف مسبقاً'); return; }
+  D.holidays.push({ date, name: name || 'إجازة رسمية' });
+  D.holidays.sort((a,b) => (a.date||a).localeCompare(b.date||b));
+  clearFields(['holDate','holName']);
+  renderHolidaysTable();
+  refreshDashboard();
+  autoSave();
+}
+function addHolidayRange() {
+  if(!CU?.admin) return;
+  const from = val('holBulkFrom'), to = val('holBulkTo'), name = val('holBulkName').trim();
+  if(!from || !to) { alert('⚠️ حدّدي الفترة كاملة'); return; }
+  if(to < from) { alert('⚠️ تاريخ النهاية قبل تاريخ البداية'); return; }
+  D.holidays = D.holidays || [];
+  const existing = new Set(D.holidays.map(h => typeof h==='string'?h:h.date));
+  let cur = new Date(from); const end = new Date(to); let added = 0;
+  while(cur <= end) {
+    const iso = cur.toISOString().slice(0,10);
+    if(!existing.has(iso)) { D.holidays.push({ date: iso, name: name || 'إجازة رسمية' }); existing.add(iso); added++; }
+    cur.setDate(cur.getDate()+1);
+  }
+  D.holidays.sort((a,b) => (a.date||a).localeCompare(b.date||b));
+  clearFields(['holBulkFrom','holBulkTo','holBulkName']);
+  renderHolidaysTable();
+  refreshDashboard();
+  autoSave();
+  alert('✅ أُضيفت ' + added + ' يوم/أيام إجازة');
+}
+function deleteHoliday(date) {
+  if(!CU?.admin) return;
+  D.holidays = (D.holidays||[]).filter(h => (typeof h==='string'?h:h.date) !== date);
+  renderHolidaysTable();
+  refreshDashboard();
+  autoSave();
+}
+function renderHolidaysTable() {
+  const tbl = $('holidaysTable');
+  if(!tbl) return;
+  const list = (D.holidays||[]).slice().sort((a,b)=>(a.date||a).localeCompare(b.date||b));
+  tbl.innerHTML = list.length ? list.map((h,i) => {
+    const dt = typeof h==='string' ? h : h.date;
+    const nm = typeof h==='string' ? '' : (h.name||'');
+    return `<tr><td>${i+1}</td><td>${fmtDate(dt)}</td><td>${nm}</td><td><button class="btn btn-r" style="padding:2px 8px;font-size:10px" onclick="deleteHoliday('${dt}')">🗑 حذف</button></td></tr>`;
+  }).join('') : '<tr><td colspan="4" style="text-align:center;color:#90a0b3;padding:14px">لا توجد إجازات رسمية مضافة بعد</td></tr>';
+}
+
 function addUser() {
   if(!CU?.admin) return;
   const user = val('admUser').trim();
@@ -6503,6 +6684,7 @@ function buildBackupObject() {
     ideas: D.ideas,
     memos: D.memos || [],
     discussions: D.discussions || [],
+    holidays: D.holidays || [],
     exportedAt: new Date().toISOString(),
     exportedBy: (CU && CU.name) ? CU.name : 'غير محدد'
   };
@@ -6574,6 +6756,7 @@ function restoreLastGood() {
   D.ideas = snap.ideas || [];
   D.memos = snap.memos || [];
   D.discussions = snap.discussions || [];
+  D.holidays = snap.holidays || [];
   if(CU?.admin) saveToStorage();
   refreshAll();
   alert('✅ تم الاسترجاع — ' + D.topics.length + ' موضوع');
@@ -6607,6 +6790,7 @@ function importBackup() {
       D.ideas = imported.ideas || [];
     D.memos = imported.memos || [];
       D.discussions = imported.discussions || [];
+      D.holidays = imported.holidays || [];
       
       autoSave();
       refreshAll();
@@ -6695,10 +6879,10 @@ window.addEventListener('load', () => {
 
   function _fmtD(s){ try{ return fmtDate(s); }catch(e){ return s||'—'; } }
   function _todayStr(){ return new Date().toISOString().slice(0,10); }
-  function _naibRef(t){
-    var ref=t.followStart||t.date||''; var today=_todayStr();
-    if(Array.isArray(t.followups)){ t.followups.forEach(function(f){ if(f&&f.date&&f.date<=today&&f.date>ref) ref=f.date; }); }
-    return ref;
+  // مدة رد مكتب النائب المحددة: مخصصة (slaDays) وإلا الافتراضي 3 أيام عمل
+  function _naibAllowedDays(t){
+    if(t.slaMode && t.slaMode!=='kpi' && t.slaDays) return { days:t.slaDays, custom:true };
+    return { days:3, custom:false };
   }
   function _naibRows(){
     var today=_todayStr();
@@ -6706,54 +6890,104 @@ window.addEventListener('load', () => {
       if(t.status==='closed') return false;
       var isNaib=(t.followEntity==='naib_office')||(t.kpi==='naib3');
       if(!isNaib) return false;
-      var start=t.followStart||t.date||''; var days=null; try{ days=businessDaysBetween(start,today); }catch(e){ days=null; }
-      return (days!=null && days>3) || t.status==='split' || t.responseMethod==='split';
+      var start=t.followStart||t.date||'';
+      var allowed=_naibAllowedDays(t).days;
+      var days=null; try{ days=businessDaysBetween(start,today); }catch(e){ days=null; }
+      return (days!=null && days>allowed) || t.status==='split' || t.responseMethod==='split';
     }).map(function(t){
       var start=t.followStart||t.date||'';
-      var days=null; try{ days=businessDaysBetween(start,today); }catch(e){ days=null; }
-      return { t:t, start:start, ref:_naibRef(t), days:days, silent:(t.status==='split'||t.responseMethod==='split') };
-    }).sort(function(a,b){ return (b.days||0)-(a.days||0); });
+      var allowedInfo=_naibAllowedDays(t);
+      var naibDays=null; try{ naibDays=businessDaysBetween(start,today); }catch(e){ naibDays=null; }
+      var divDate=t.divFollowDate||'';
+      var divDays=null;
+      if(divDate){ try{ divDays=businessDaysBetween(divDate,today); }catch(e){ divDays=null; } }
+      return {
+        t:t, start:start,
+        allowedDays:allowedInfo.days, allowedCustom:allowedInfo.custom,
+        naibDays:naibDays,
+        divDate:divDate, divDays:divDays,
+        silent:(t.status==='split'||t.responseMethod==='split')
+      };
+    }).sort(function(a,b){ return (b.naibDays||0)-(a.naibDays||0); });
   }
   window.renderNaibEsc=function(){
     var rows=_naibRows();
     var withDiv=rows.filter(function(r){return !!r.t.taqseemName;}).length;
-    var heads=['م','الموضوع','الجهة','📂 التقسيم المُتابَع','تاريخ التوجيه','آخر متابعة','أيام عمل منذ التوجيه','الحالة'];
+    var heads=['م','الموضوع','الجهة','📂 التقسيم المُتابَع','تاريخ توجيه الرئيس','مدة رد مكتب النائب','تاريخ متابعة التقسيم','مدة الرد (منذ متابعة التقسيم)','الحالة'];
     var head=heads.map(function(x){return '<th style="padding:11px 12px;text-align:right;border-bottom:2px solid var(--border);font-size:12px;white-space:nowrap;background:var(--light)">'+x+'</th>';}).join('');
     var body=rows.length?rows.map(function(r,i){
-      var late3=(r.days!=null&&r.days>3);
-      var dCol=(r.days==null?'—':('<b style="color:'+(late3?'var(--red)':'var(--text2)')+'">'+r.days+'</b> يوم'+(late3?' ⚠️':'')));
+      var late3=(r.naibDays!=null&&r.naibDays>r.allowedDays);
+      var naibCol=(r.naibDays==null?'—':('<b style="color:'+(late3?'var(--red)':'var(--text2)')+'">'+r.naibDays+'</b> يوم'+(late3?' ⚠️':'')));
+      var allowedCol='<b>'+r.allowedDays+'</b> يوم عمل'+(r.allowedCustom?' <span style="color:#7d3c98;font-size:10px">(مخصص)</span>':' <span style="color:#90a0b3;font-size:10px">(افتراضي)</span>');
+      var divDateCol=r.divDate?_fmtD(r.divDate):'<span style="color:#90a0b3">لم تبدأ المتابعة مع التقسيم بعد</span>';
+      var divDaysCol=r.divDate?(r.divDays==null?'—':(r.divDays+' يوم')):'—';
       var stBadge=r.silent?'<span style="background:var(--gray);color:#fff;padding:3px 9px;border-radius:7px;font-size:11px;font-weight:700">⚫ تجاوز لعدم الاستجابة</span>':'<span style="background:var(--red);color:#fff;padding:3px 9px;border-radius:7px;font-size:11px;font-weight:700">🔴 تجاوز مدة الرد</span>';
       return '<tr style="border-bottom:1px solid var(--border)">'
         +'<td style="padding:10px 12px;text-align:center;color:var(--text2)">'+(i+1)+'</td>'
-        +'<td style="padding:10px 12px;font-weight:600;max-width:300px">'+esc(r.t.title||'—')+'</td>'
+        +'<td style="padding:10px 12px;font-weight:600;max-width:260px">'+esc(r.t.title||'—')+'</td>'
         +'<td style="padding:10px 12px;color:var(--text2);font-size:12px">'+esc(r.t.from||'—')+'</td>'
         +'<td style="padding:10px 12px;color:#7d3c98;font-weight:700">'+(r.t.taqseemName?('📂 '+esc(r.t.taqseemName)):'<span style="color:#c0392b">— لم يُحدَّد</span>')+'</td>'
         +'<td style="padding:10px 12px;text-align:center;font-weight:700;color:var(--navy)">'+_fmtD(r.start)+'</td>'
-        +'<td style="padding:10px 12px;text-align:center;color:var(--text2)">'+_fmtD(r.ref)+'</td>'
-        +'<td style="padding:10px 12px;text-align:center">'+dCol+'</td>'
+        +'<td style="padding:10px 12px;text-align:center">'+allowedCol+'<br>'+naibCol+'</td>'
+        +'<td style="padding:10px 12px;text-align:center;font-size:12px">'+divDateCol+'</td>'
+        +'<td style="padding:10px 12px;text-align:center">'+divDaysCol+'</td>'
         +'<td style="padding:10px 12px;text-align:center">'+stBadge+'</td>'
         +'</tr>';
-    }).join(''):'<tr><td colspan="8" style="padding:20px;text-align:center;color:#90a0b3">لا توجد مواضيع تجاوز فيها مكتب النائب مدة الرد ✅</td></tr>';
+    }).join(''):'<tr><td colspan="9" style="padding:20px;text-align:center;color:#90a0b3">لا توجد مواضيع تجاوز فيها مكتب النائب مدة الرد ✅</td></tr>';
     var top='<div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:14px">'
-      +kpi('إجمالي المواضيع',rows.length,'var(--red)','تجاوز مكتب النائب مدة الرد (٣ أيام عمل)')
+      +kpi('إجمالي المواضيع',rows.length,'var(--red)','تجاوز مكتب النائب مدة الرد المحددة')
       +kpi('محدَّد لها تقسيم مُتابَع',withDiv,'#7d3c98','تتابعينها مع التقسيم مباشرة')
       +'</div>';
-    var exportBtn='<button onclick="exportNaibEsc()" style="background:var(--navy);color:#fff;border:none;padding:9px 16px;border-radius:9px;font-size:13px;font-weight:700;cursor:pointer">📄 تنزيل القائمة (Word)</button>';
-    var tbl=card('<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:6px"><div><h3 style="font-size:15px;margin:0 0 4px">⏱️ متابعة التقسيمات بعد تجاوز مكتب النائب</h3><div style="font-size:11.5px;color:#90a0b3">المواضيع التي جهتها المُتابَعة «مكتب النائب» وتجاوزت مدة الرد (٣ أيام عمل بلا رد) — يُنصح بمتابعتها مع التقسيم. «أيام عمل منذ التوجيه» = مدة صمت مكتب النائب منذ تاريخ التوجيه (تجاوز ٣ أيام عمل).</div></div>'+exportBtn+'</div><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13px"><thead><tr>'+head+'</tr></thead><tbody>'+body+'</tbody></table></div>');
+    var exportBtn='<button onclick="exportNaibEsc()" style="background:var(--navy);color:#fff;border:none;padding:9px 16px;border-radius:9px;font-size:13px;font-weight:700;cursor:pointer;margin-left:6px">📄 Word</button>'
+      +'<button onclick="exportNaibEscExcel()" style="background:#1d8349;color:#fff;border:none;padding:9px 16px;border-radius:9px;font-size:13px;font-weight:700;cursor:pointer">📊 Excel</button>';
+    var tbl=card('<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:6px"><div><h3 style="font-size:15px;margin:0 0 4px">⏱️ متابعة التقسيمات بعد تجاوز مكتب النائب</h3><div style="font-size:11.5px;color:#90a0b3">المواضيع التي جهتها المُتابَعة «مكتب النائب» وتجاوزت مدة الرد المحددة — يُنصح بمتابعتها مع التقسيم. الجدول يوضّح: تاريخ توجيه سعادة الرئيس، مدة رد مكتب النائب (الافتراضية 3 أيام عمل أو المخصصة إن حُدِّدت)، تاريخ بدء متابعة التقسيم، ومدة رد التقسيم منذ ذلك التاريخ — بأيام العمل مع استثناء الإجازات الأسبوعية والرسمية.</div></div><div>'+exportBtn+'</div></div><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13px"><thead><tr>'+head+'</tr></thead><tbody>'+body+'</tbody></table></div>');
     document.getElementById('naibMount').innerHTML=top+tbl;
   };
   window.exportNaibEsc=function(){
     var rows=_naibRows();
     var trs=rows.map(function(r,i){
-      return '<tr><td style="text-align:center">'+(i+1)+'</td><td>'+esc(r.t.title||'—')+'</td><td>'+esc(r.t.from||'—')+'</td><td>'+esc(r.t.taqseemName||'—')+'</td><td style="text-align:center">'+_fmtD(r.start)+'</td><td style="text-align:center">'+_fmtD(r.ref)+'</td><td style="text-align:center">'+(r.days==null?'—':r.days+' يوم')+'</td><td style="text-align:center">'+(r.silent?'تجاوز لعدم الاستجابة':'تجاوز مدة الرد')+'</td></tr>';
-    }).join('')||'<tr><td colspan="8" style="text-align:center">لا توجد بيانات</td></tr>';
+      var divDateTxt=r.divDate?_fmtD(r.divDate):'لم تبدأ المتابعة مع التقسيم';
+      var divDaysTxt=r.divDate?(r.divDays==null?'—':r.divDays+' يوم'):'—';
+      return '<tr><td style="text-align:center">'+(i+1)+'</td><td>'+esc(r.t.title||'—')+'</td><td>'+esc(r.t.from||'—')+'</td><td>'+esc(r.t.taqseemName||'—')+'</td>'
+        +'<td style="text-align:center">'+_fmtD(r.start)+'</td>'
+        +'<td style="text-align:center">'+r.allowedDays+' يوم'+(r.allowedCustom?' (مخصص)':' (افتراضي)')+'</td>'
+        +'<td style="text-align:center">'+(r.naibDays==null?'—':r.naibDays+' يوم')+'</td>'
+        +'<td style="text-align:center">'+divDateTxt+'</td>'
+        +'<td style="text-align:center">'+divDaysTxt+'</td>'
+        +'<td style="text-align:center">'+(r.silent?'تجاوز لعدم الاستجابة':'تجاوز مدة الرد')+'</td></tr>';
+    }).join('')||'<tr><td colspan="10" style="text-align:center">لا توجد بيانات</td></tr>';
     var styles=(typeof WEEKLY_STYLES!=='undefined')?WEEKLY_STYLES:'';
     var html='<style>'+styles+'</style><title>متابعة التقسيمات تجاوز مكتب النائب</title><body>'
       +'<h2 style="text-align:center;color:#1a3a5b">قائمة متابعة التقسيمات بعد تجاوز مكتب النائب مدة الرد</h2>'
       +'<p style="text-align:center;color:#555;font-size:11pt">تاريخ الإصدار: '+_fmtD(new Date().toISOString().slice(0,10))+'</p>'
-      +'<table class="data-table"><thead><tr><th>م</th><th>الموضوع</th><th>الجهة</th><th>التقسيم المُتابَع</th><th>تاريخ التوجيه</th><th>آخر متابعة</th><th>أيام عمل منذ التوجيه</th><th>الحالة</th></tr></thead><tbody>'+trs+'</tbody></table></body>';
+      +'<table class="data-table"><thead><tr><th>م</th><th>الموضوع</th><th>الجهة</th><th>التقسيم المُتابَع</th><th>تاريخ توجيه الرئيس</th><th>مدة رد مكتب النائب</th><th>أيام مضت (مكتب النائب)</th><th>تاريخ متابعة التقسيم</th><th>مدة الرد (منذ متابعة التقسيم)</th><th>الحالة</th></tr></thead><tbody>'+trs+'</tbody></table></body>';
     if(typeof downloadWord==='function') downloadWord('متابعة_التقسيمات_تجاوز_مكتب_النائب', html);
     else alert('تعذّر التصدير');
+  };
+  window.exportNaibEscExcel=function(){
+    if(typeof XLSX==='undefined'){ alert('تعذّر التصدير — مكتبة Excel غير متوفرة'); return; }
+    var rows=_naibRows();
+    var data=rows.map(function(r,i){
+      return {
+        'م': i+1,
+        'الموضوع': r.t.title||'—',
+        'الجهة': r.t.from||'—',
+        'التقسيم المُتابَع': r.t.taqseemName||'—',
+        'تاريخ توجيه الرئيس': r.start?_fmtD(r.start):'—',
+        'مدة رد مكتب النائب (أيام عمل)': r.allowedDays,
+        'مصدر المدة': r.allowedCustom?'مخصصة':'افتراضية',
+        'أيام مضت منذ توجيه الرئيس': r.naibDays==null?'—':r.naibDays,
+        'تاريخ متابعة التقسيم': r.divDate?_fmtD(r.divDate):'لم تبدأ',
+        'مدة الرد منذ متابعة التقسيم (أيام عمل)': r.divDate?(r.divDays==null?'—':r.divDays):'—',
+        'الحالة': r.silent?'تجاوز لعدم الاستجابة':'تجاوز مدة الرد'
+      };
+    });
+    if(!data.length){ alert('لا توجد بيانات للتصدير'); return; }
+    var ws=XLSX.utils.json_to_sheet(data);
+    ws['!cols']=[{wch:4},{wch:40},{wch:22},{wch:20},{wch:16},{wch:16},{wch:14},{wch:16},{wch:18},{wch:20},{wch:22}];
+    var wb=XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb,ws,'تجاوز مكتب النائب');
+    XLSX.writeFile(wb,'متابعة_التقسيمات_تجاوز_مكتب_النائب_'+_todayStr()+'.xlsx');
   };
 
   // ===================== 🔎 البحث الذكي الموحّد =====================
