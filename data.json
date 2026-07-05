@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-05T07:25:38.410Z",
+  "exportedAt": "2026-07-05T07:31:58.079Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23691,7 +23691,7 @@
       "slaDays": null,
       "kpi": "doc2",
       "note": "نائب الرئيس\nالتغير المناخي\nلترشيح احد المختصين",
-      "status": "",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-07-01",
@@ -23707,7 +23707,10 @@
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "followEntity": "naib_office"
+      "followEntity": "naib_office",
+      "closedAt": "2026-07-05",
+      "manualCount": 1,
+      "responseMethod": ""
     },
     {
       "id": 1782892755926.0667,
