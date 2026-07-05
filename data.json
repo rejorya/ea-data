@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-05T08:09:22.825Z",
+  "exportedAt": "2026-07-05T08:27:08.464Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23319,7 +23319,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "مكتب الرئيس\nلمتابعة استيفاء الفقرة ١٩",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-06-28",
@@ -23363,7 +23363,8 @@
       "followEntity": "rais_depts",
       "responseMethod": "",
       "divFollowDate": "2026-07-01",
-      "raisDeptName": ""
+      "raisDeptName": "",
+      "closedAt": "2026-07-05"
     },
     {
       "id": 1782704889849.9443,
