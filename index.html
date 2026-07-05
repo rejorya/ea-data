@@ -1376,6 +1376,25 @@ body.viewer-only .print-btn { display: inline-block !important; }
     </div>
     <div class="tb"><table><thead><tr><th>م</th><th>التاريخ</th><th>الوصف</th><th>إجراء</th></tr></thead><tbody id="holidaysTable"></tbody></table></div>
   </div>
+
+  <!-- منطقة الخطر: مسح كل المواضيع -->
+  <div class="card" style="border:2px solid #c0392b">
+    <div class="ch" style="background:#c0392b;color:#fff"><h2>🗑️ منطقة الخطر — مسح كامل المواضيع</h2></div>
+    <div class="fs">
+      <p style="font-size:12.5px;color:#922b21;margin-bottom:10px;font-weight:600">
+        هذا الإجراء يحذف <u>كل المواضيع ومتابعاتها</u> نهائياً من المنصة والسحابة، ليتيح لكِ البدء بمواضيع جديدة.
+        التوجيهات والمذكرات والمناقشات والتقارير المحفوظة والإجازات <b>لن تُمسّ</b>.
+      </p>
+      <ul style="font-size:12px;color:#555;margin:0 0 12px 0;padding-right:18px">
+        <li>قبل المسح، يُنزَّل تلقائياً ملف نسخة احتياطية كاملة على جهازك.</li>
+        <li>للتأكيد، اكتبي كلمة <b style="color:#c0392b">مسح</b> في الحقل ثم اضغطي الزر.</li>
+      </ul>
+      <div class="fg2">
+        <div class="fgs"><label>اكتبي «مسح» للتأكيد</label><input id="wipeConfirm" placeholder="مسح" autocomplete="off"></div>
+      </div>
+      <button class="btn" style="background:#c0392b;color:#fff;font-weight:700" onclick="wipeAllTopics()">🗑️ مسح كل المواضيع نهائياً</button>
+    </div>
+  </div>
 </div>
 
     </div><!-- content -->
@@ -4761,6 +4780,8 @@ function refreshDirReport() {
 // ============================================================
 
 function refreshWeekly() {
+  // التقارير المحفوظة تُعرض دائماً حتى لو الفترة غير محددة
+  renderWeeklyHistory();
   const from = val('wFrom');
   const to = val('wTo');
   if(!from || !to) {
@@ -4818,6 +4839,8 @@ function renderWeeklyHistory() {
 // ============================================================
 
 function refreshMonthly() {
+  // التقارير المحفوظة تُعرض دائماً
+  renderMonthlyHistory();
   const month = val('mM');
   const year = val('mY');
   if(!month || !year) return;
@@ -4885,6 +4908,8 @@ function getQuarterMonths(type) {
 }
 
 function refreshQuarterly() {
+  // التقارير المحفوظة تُعرض دائماً
+  renderQuarterlyHistory();
   const type = val('qType');
   const year = val('qYear');
   if(!type || !year) return;
@@ -4937,6 +4962,7 @@ function saveReport(type) {
     const data = collectWeeklyData();
     D.weekly.push(data);
     renderWeeklyHistory();
+    autoSave();
     alert('✅ تم حفظ التقرير الأسبوعي');
   } else if(type === 'monthly') {
     const month = val('mM');
@@ -4945,6 +4971,7 @@ function saveReport(type) {
     const data = collectMonthlyData();
     D.monthly.push(data);
     renderMonthlyHistory();
+    autoSave();
     alert('✅ تم حفظ التقرير الشهري');
   } else if(type === 'quarterly') {
     const qtype = val('qType');
@@ -4953,10 +4980,12 @@ function saveReport(type) {
     const data = collectQuarterlyData();
     D.quarterly.push(data);
     renderQuarterlyHistory();
+    autoSave();
     alert('✅ تم حفظ التقرير الربع/النصف سنوي');
   } else if(type === 'dirReport') {
     const data = collectDirReportData();
     D.dirReports.push(data);
+    autoSave();
     alert('✅ تم حفظ تقرير التوجيهات');
   }
 }
@@ -6660,6 +6689,28 @@ function renderHolidaysTable() {
   }).join('') : '<tr><td colspan="4" style="text-align:center;color:#90a0b3;padding:14px">لا توجد إجازات رسمية مضافة بعد</td></tr>';
 }
 
+// 🗑️ مسح كل المواضيع نهائياً (مع نسخة احتياطية تلقائية + تأكيد مزدوج)
+function wipeAllTopics() {
+  if(!CU?.admin) return;
+  const typed = val('wipeConfirm').trim();
+  if(typed !== 'مسح') { alert('⚠️ للتأكيد اكتبي كلمة «مسح» في الحقل أولاً'); return; }
+  const n = D.topics.length;
+  if(!n) { alert('لا توجد مواضيع للمسح'); return; }
+  if(!confirm('⚠️ تحذير أخير:\n\nسيتم حذف ' + n + ' موضوع بكل متابعاتها نهائياً من المنصة والسحابة.\n\nستُنزَّل نسخة احتياطية على جهازك قبل المسح.\n\nهل أنتِ متأكدة تماماً؟')) return;
+  // نسخة احتياطية تلقائية قبل المسح
+  try { downloadBackupFile(buildBackupObject(), 'نسخة_قبل_المسح'); } catch(e) {}
+  // المسح
+  D.topics = [];
+  clearFields(['wipeConfirm']);
+  renderTopicsTable();
+  refreshDashboard();
+  refreshAllReports();
+  try{ if(typeof renderNaibEsc==='function') renderNaibEsc(); }catch(e){}
+  try{ if(typeof renderPerf==='function') renderPerf(); }catch(e){}
+  autoSave();
+  alert('✅ تم مسح ' + n + ' موضوع.\nنُزّلت نسخة احتياطية على جهازك، والسحابة ستتحدّث تلقائياً.\nتقدرين الآن إضافة مواضيع جديدة.');
+}
+
 function addUser() {
   if(!CU?.admin) return;
   const user = val('admUser').trim();
@@ -6891,16 +6942,25 @@ window.addEventListener('load', () => {
   };
 
   window.renderPerf=function(){
-    var FOLLOW={rais_depts:'الدوائر التابعة للرئيس',naib_office:'مكتب النائب',taqseem:'التقسيم',other:'جهة أخرى'};
+    var FOLLOW={rais_depts:'الدوائر التابعة للرئيس',naib_office:'مكتب النائب',naib_and_rais:'مكتب النائب + دوائر الرئيس',taqseem:'التقسيم',other:'جهة أخرى'};
+    // 🔍 تفصيل بالأسماء المحددة: كل تقسيم/دائرة/جهة أخرى باسمها صف مستقل
+    function perfKey(t){
+      var k=t.followEntity; if(!k) return null;
+      if(k==='taqseem') return t.taqseemName ? ('📂 التقسيم: '+t.taqseemName) : '📂 التقسيم (غير مسمّى)';
+      if(k==='rais_depts') return t.raisDeptName ? ('🏛️ دائرة: '+t.raisDeptName) : '🏛️ دوائر الرئيس (غير مسمّاة)';
+      if(k==='naib_and_rais') return t.raisDeptName ? ('⚡ النائب + دائرة: '+t.raisDeptName) : '⚡ النائب + دوائر الرئيس';
+      if(k==='other') return t.otherEntityName ? ('🏢 '+t.otherEntityName) : '🏢 جهة أخرى (غير مسمّاة)';
+      return FOLLOW[k]||k;
+    }
     var map={};
-    D.topics.forEach(function(t){ var k=t.followEntity; if(!k)return; var e=map[k]||(map[k]={total:0,open:0,late:0,silent:0,follow:0}); e.total++; if(t.status!=='closed')e.open++; if(isSilent(t))e.silent++; if(t.status!=='closed'&&kstate(t)==='late')e.late++; e.follow+=fc(t); });
-    var rows=Object.keys(map).map(function(k){var e=map[k];var avg=e.follow/Math.max(1,e.total);var score=100-e.late*16-e.silent*12-Math.max(0,avg-1)*6;return {n:FOLLOW[k]||k,e:e,avg:avg,score:Math.max(5,Math.round(score))};}).sort(function(a,b){return a.score-b.score;});
+    D.topics.forEach(function(t){ var k=perfKey(t); if(!k)return; var e=map[k]||(map[k]={total:0,open:0,late:0,silent:0,follow:0}); e.total++; if(t.status!=='closed')e.open++; if(isSilent(t))e.silent++; if(t.status!=='closed'&&kstate(t)==='late')e.late++; e.follow+=fc(t); });
+    var rows=Object.keys(map).map(function(k){var e=map[k];var avg=e.follow/Math.max(1,e.total);var score=100-e.late*16-e.silent*12-Math.max(0,avg-1)*6;return {n:k,e:e,avg:avg,score:Math.max(5,Math.round(score))};}).sort(function(a,b){return a.score-b.score;});
     function sc(v){return v>=80?'var(--green)':v>=55?'var(--amber)':'var(--red)';}
     var head=['الجهة المُتابَعة','المؤشر','إجمالي','مفتوحة','متأخرة','صمت','متوسط المتابعات'].map(function(x){return '<th style="padding:11px 12px;text-align:right;border-bottom:2px solid var(--border);font-size:12px;white-space:nowrap">'+x+'</th>';}).join('');
     var body=rows.length?rows.map(function(r){return '<tr style="border-bottom:1px solid var(--border)"><td style="padding:11px 12px"><b>'+esc(r.n)+'</b></td><td style="padding:11px 12px;font-weight:800;color:'+sc(r.score)+'">'+r.score+'<span style="font-size:10px;color:#aab">/100</span></td><td style="padding:11px 12px;color:var(--text2)">'+r.e.total+'</td><td style="padding:11px 12px;color:var(--text2)">'+r.e.open+'</td><td style="padding:11px 12px;font-weight:'+(r.e.late?'700':'400')+';color:'+(r.e.late?'var(--red)':'var(--text2)')+'">'+r.e.late+'</td><td style="padding:11px 12px;font-weight:'+(r.e.silent?'700':'400')+';color:'+(r.e.silent?'var(--gray)':'var(--text2)')+'">'+r.e.silent+'</td><td style="padding:11px 12px;color:var(--text2)">'+r.avg.toFixed(1)+'</td></tr>';}).join(''):'<tr><td colspan="7" style="padding:18px;text-align:center;color:#90a0b3">لم تُحدَّد «الجهة المُتابَعة» لأي موضوع بعد — عبّئي الحقل من نافذة تعديل الموضوع لتظهر النتائج هنا</td></tr>';
     var untagged=D.topics.filter(function(t){return t.status!=='closed'&&!t.followEntity;}).length;
     var note=untagged?'<div style="font-size:11.5px;color:var(--amber);margin-top:10px">⚠️ يوجد '+untagged+' موضوع مفتوح بدون تحديد «الجهة المُتابَعة» — لن يظهر في هذا المؤشر حتى تُعبّأ.</div>':'';
-    document.getElementById('perfMount').innerHTML=card('<h3 style="font-size:15px;margin:0 0 4px">🏛️ مؤشر أداء الجهات المُتابَعة</h3><div style="font-size:11.5px;color:#90a0b3;margin-bottom:14px">حسب حقل «الجهة المُتابَعة» — مرتّب من الأكثر حاجة للتدخّل</div><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13px"><thead><tr style="background:var(--light);color:var(--text2)">'+head+'</tr></thead><tbody>'+body+'</tbody></table></div><div style="display:flex;gap:18px;flex-wrap:wrap;margin-top:12px;font-size:12px;color:var(--text2)"><span>🟢 80+ ممتاز</span><span>🟡 55–79 متوسط</span><span>🔴 أقل من 55 يحتاج تدخّل</span></div>'+note);
+    document.getElementById('perfMount').innerHTML=card('<h3 style="font-size:15px;margin:0 0 4px">🏛️ مؤشر أداء الجهات المُتابَعة</h3><div style="font-size:11.5px;color:#90a0b3;margin-bottom:14px">مفصّل بالأسماء: كل تقسيم ودائرة وجهة باسمها المحدد — مرتّب من الأكثر حاجة للتدخّل. لتسمية الجهة عدّلي الموضوع وعبّئي حقل الاسم.</div><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13px"><thead><tr style="background:var(--light);color:var(--text2)">'+head+'</tr></thead><tbody>'+body+'</tbody></table></div><div style="display:flex;gap:18px;flex-wrap:wrap;margin-top:12px;font-size:12px;color:var(--text2)"><span>🟢 80+ ممتاز</span><span>🟡 55–79 متوسط</span><span>🔴 أقل من 55 يحتاج تدخّل</span></div>'+note);
   };
 
   function _fmtD(s){ try{ return fmtDate(s); }catch(e){ return s||'—'; } }
