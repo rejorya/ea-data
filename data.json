@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-05T08:44:42.952Z",
+  "exportedAt": "2026-07-05T08:50:50.415Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21504,7 +21504,7 @@
       "type": "ext",
       "kpi": "wweek",
       "note": "نائب الرئيس\nالالتزام البيئي\nلتكليف احد المكاتب الاستشارية للقيام بالدراسة وعليكم تقديم استمارة مشروع بذلك",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-06-21",
@@ -21556,10 +21556,10 @@
         }
       ],
       "sheet": "Sheet1",
-      "closedAt": "2026-06-08",
+      "closedAt": "2026-07-05",
       "manualCount": 3,
       "followEntity": "taqseem",
-      "responseMethod": "",
+      "responseMethod": "direct_manager",
       "followStart": "2026-06-21",
       "docNo": "1170/3/2022v403-65",
       "toEntity": "مكتب النائب",
