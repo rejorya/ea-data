@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-05T07:48:32.831Z",
+  "exportedAt": "2026-07-05T08:04:57.966Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23368,7 +23368,7 @@
       "slaDays": null,
       "kpi": "rpt14",
       "note": "نائب الرئيس\nلاعداد تصور لتنفيذ المبادرة وتخصيص مواقع للسيارات الكهربائية",
-      "status": "",
+      "status": "open",
       "followups": [
         {
           "date": "2026-06-29",
@@ -23381,10 +23381,24 @@
           "taqseem": "",
           "startDate": "2026-06-29",
           "daysSince": 0
+        },
+        {
+          "date": "2026-07-05",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-06-29",
+          "daysSince": 4
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "followEntity": "naib_office"
+      "followEntity": "naib_office",
+      "manualCount": 3,
+      "responseMethod": ""
     },
     {
       "id": 1782718925542.2322,
