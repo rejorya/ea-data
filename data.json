@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-05T05:57:55.171Z",
+  "exportedAt": "2026-07-05T05:58:28.461Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21642,7 +21642,7 @@
       "from": "مشاريع نشايل للتجارة",
       "date": "2026-06-07",
       "type": "ext",
-      "kpi": "other",
+      "kpi": "wweek",
       "note": "نائب الرئيس\nللالتقاء بممثل الشركة والافادة.",
       "status": "open",
       "followups": [
@@ -21707,7 +21707,7 @@
       "manualCount": 3,
       "followEntity": "naib_office",
       "responseMethod": "",
-      "followStart": "2026-06-08",
+      "followStart": "2026-07-01",
       "docNo": "1170/3/2022v404-35",
       "toEntity": "نائب الرئيس",
       "priority": "normal",
