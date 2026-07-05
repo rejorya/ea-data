@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-05T09:16:58.452Z",
+  "exportedAt": "2026-07-05T09:26:20.115Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23934,6 +23934,26 @@
       ],
       "sheet": "مُضاف يدوياً",
       "followEntity": "naib_office"
+    },
+    {
+      "id": 1783243575595.656,
+      "title": "طلب نقل خدمات وظيفية إلى هيئة البيئة.pdf",
+      "from": "اسماعيل بن محمد بن اسماعيل بيت علي سليمان",
+      "docNo": "1170/3/2022v407-53",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-29",
+      "followStart": "2026-06-29",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
