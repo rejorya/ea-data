@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-05T05:47:55.889Z",
+  "exportedAt": "2026-07-05T05:48:51.769Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23764,6 +23764,26 @@
       "followEntity": "naib_office",
       "manualCount": 1,
       "responseMethod": ""
+    },
+    {
+      "id": 1783230529684.8105,
+      "title": "تظلم بشأن رفض الموافقة البيئية لمشروع إنشاء مزرعة نموذجية لتربية وتسمين العجول الصغيرة.pdf",
+      "from": "شركة اسرار الثراء",
+      "docNo": "1170/3/2022v408-11",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-07-02",
+      "followStart": "2026-07-05",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
@@ -28495,5 +28515,6 @@
       "note": "موعد المناقشة يوم الأحد تاريخ 12/7/2026 الساعة 11:00 صباحاً",
       "attendees": ""
     }
-  ]
+  ],
+  "holidays": []
 }
