@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-05T05:56:55.218Z",
+  "exportedAt": "2026-07-05T05:57:33.000Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21644,7 +21644,7 @@
       "type": "ext",
       "kpi": "other",
       "note": "نائب الرئيس\nللالتقاء بممثل الشركة والافادة.",
-      "status": "closed",
+      "status": "open",
       "followups": [
         {
           "date": "2026-06-08",
@@ -21689,6 +21689,18 @@
           "taqseem": "",
           "startDate": "2026-06-08",
           "daysSince": 14
+        },
+        {
+          "date": "2026-07-05",
+          "replied": false,
+          "note": "نائب الرئيس\nالادارية والمالية\nلتقديم استمارة مشروع لتفيذ تلك المرافق",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-06-08",
+          "daysSince": 19
         }
       ],
       "sheet": "مُضاف يدوياً",
@@ -28529,5 +28541,6 @@
       "note": "موعد المناقشة يوم الأحد تاريخ 12/7/2026 الساعة 11:00 صباحاً",
       "attendees": ""
     }
-  ]
+  ],
+  "holidays": []
 }
