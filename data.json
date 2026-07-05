@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-05T09:28:48.500Z",
+  "exportedAt": "2026-07-05T09:38:49.088Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23983,6 +23983,26 @@
       "followEntity": "taqseem",
       "responseMethod": "",
       "divFollowDate": "2026-07-01"
+    },
+    {
+      "id": 1783244327063.9807,
+      "title": "تقرير جودة الهواء للنص الاول من عام 2026 لقسم جودة الهواء",
+      "from": "المديرية العامة للالتزام البيئي",
+      "docNo": "5612/11/2025-9",
+      "toEntity": "المديرية العامة للالتزام البيئي",
+      "taqseemName": "المديرية العامة للالتزام البيئي",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-16",
+      "followStart": "2026-07-01",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wd3",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
