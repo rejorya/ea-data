@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-05T09:26:20.115Z",
+  "exportedAt": "2026-07-05T09:27:43.849Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23941,7 +23941,7 @@
       "from": "اسماعيل بن محمد بن اسماعيل بيت علي سليمان",
       "docNo": "1170/3/2022v407-53",
       "toEntity": "نائب الرئيس",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة للشؤون الادارية والمالية",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-06-29",
@@ -23951,9 +23951,26 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
-      "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "status": "awaiting_div",
+      "followups": [
+        {
+          "date": "2026-07-01",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+          "startDate": "2026-06-29",
+          "daysSince": 2
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 3,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-07-01"
     }
   ],
   "directives": [
