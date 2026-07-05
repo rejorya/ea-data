@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-05T08:41:22.677Z",
+  "exportedAt": "2026-07-05T08:44:42.952Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21877,7 +21877,7 @@
       "type": "ext",
       "kpi": "other",
       "note": "نائب الرئيس\nالالتزام البيئي\nيعد خطاب ويرفق به تقرير لنقل المصنع الى المسفاة والى حينذاك يلزم المصنع باجراءات تخفيف",
-      "status": "open",
+      "status": "ready_esc",
       "followups": [
         {
           "date": "2026-06-11",
@@ -21944,14 +21944,26 @@
           "taqseem": "",
           "startDate": "2026-06-07",
           "daysSince": 18
+        },
+        {
+          "date": "2026-07-05",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للالتزام البيئي",
+          "startDate": "2026-06-07",
+          "daysSince": 20
         }
       ],
       "sheet": "مُضاف يدوياً",
       "followStart": "2026-06-07",
-      "manualCount": 3,
-      "followEntity": "naib_office",
+      "manualCount": 4,
+      "followEntity": "taqseem",
       "responseMethod": "via_follow",
-      "taqseemName": "مركز الاعمال البيئية- مكتب الرقابة-مكتب نائب الرئيس",
+      "taqseemName": "المديرية العامة للالتزام البيئي",
       "divFollowDate": "2026-06-30",
       "docNo": "1170/3/2022v405-30",
       "toEntity": "مكتب النائب",
