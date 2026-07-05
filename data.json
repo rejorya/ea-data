@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-05T08:29:41.022Z",
+  "exportedAt": "2026-07-05T08:37:37.112Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22671,11 +22671,23 @@
           "taqseem": "",
           "startDate": "2026-06-21",
           "daysSince": 5
+        },
+        {
+          "date": "2026-07-05",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-06-21",
+          "daysSince": 10
         }
       ],
       "sheet": "مُضاف يدوياً",
       "followEntity": "naib_office",
-      "manualCount": 2,
+      "manualCount": 4,
       "responseMethod": ""
     },
     {
