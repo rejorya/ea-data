@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-05T07:00:01.030Z",
+  "exportedAt": "2026-07-05T07:25:38.410Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23715,7 +23715,7 @@
       "from": "وزارة الصحة",
       "docNo": "1170/3/2022v407-75",
       "toEntity": "",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة للالتزام البيئي",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-06-30",
@@ -23723,11 +23723,28 @@
       "type": "ext",
       "slaMode": "kpi",
       "slaDays": null,
-      "kpi": "other",
+      "kpi": "gov5",
       "note": "الدكتور محمد الكلباني\nلا مانع ويتم التواصل مع مؤتمر جامعة التقنية او الالمانية لاعطائهم الفرصة لتقديم بحثهم ضمن الباحثين ومن ثم التاكيد لهم ودعوتهم للحضور مع اخطارهم بالموعد والافادة بما تم",
-      "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "status": "awaiting",
+      "followups": [
+        {
+          "date": "2026-07-05",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للالتزام البيئي",
+          "startDate": "2026-06-30",
+          "daysSince": 3
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 2,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-07-05"
     },
     {
       "id": 1782966145820.8079,
@@ -28541,5 +28558,6 @@
       "note": "موعد المناقشة يوم الأحد تاريخ 12/7/2026 الساعة 11:00 صباحاً",
       "attendees": ""
     }
-  ]
+  ],
+  "holidays": []
 }
