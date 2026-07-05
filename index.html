@@ -443,7 +443,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
     <div class="fs">
       <div class="fg2">
         <div class="fgs"><label>تاريخ الإصدار *</label>
-          <input type="date" id="drM">
+          <input type="date" id="drM" class="viewer-allowed">
         </div>
         <div class="fgs"><label>رقم الوثيقة</label><input id="drRef" placeholder="مثال: 11-15v1153/1/2022"></div>
         <div class="fgs"><label>الجهة المسؤولة *</label><input id="drDept" placeholder="اسم المديرية"></div>
@@ -509,8 +509,8 @@ body.viewer-only .print-btn { display: inline-block !important; }
     <div class="fs">
       <div class="fg3">
         <div class="fgs"><label>الأسبوع</label><input id="wNum" placeholder="مثال: الأسبوع 20" oninput="refreshWeekly()"></div>
-        <div class="fgs"><label>من (الأحد) *</label><input type="date" id="wFrom" onchange="refreshWeekly()"></div>
-        <div class="fgs"><label>إلى (الخميس) *</label><input type="date" id="wTo" onchange="refreshWeekly()"></div>
+        <div class="fgs"><label>من (الأحد) *</label><input type="date" id="wFrom" class="viewer-allowed" onchange="refreshWeekly()"></div>
+        <div class="fgs"><label>إلى (الخميس) *</label><input type="date" id="wTo" class="viewer-allowed" onchange="refreshWeekly()"></div>
       </div>
     </div>
   </div>
@@ -598,9 +598,9 @@ body.viewer-only .print-btn { display: inline-block !important; }
     <div class="fs">
       <div class="fg2">
         <div class="fgs"><label>الشهر *</label>
-          <select id="mM" onchange="refreshMonthly()"><option>يناير</option><option>فبراير</option><option>مارس</option><option>أبريل</option><option>مايو</option><option>يونيو</option><option>يوليو</option><option>أغسطس</option><option>سبتمبر</option><option>أكتوبر</option><option>نوفمبر</option><option>ديسمبر</option></select>
+          <select id="mM" class="viewer-allowed" onchange="refreshMonthly()"><option>يناير</option><option>فبراير</option><option>مارس</option><option>أبريل</option><option>مايو</option><option>يونيو</option><option>يوليو</option><option>أغسطس</option><option>سبتمبر</option><option>أكتوبر</option><option>نوفمبر</option><option>ديسمبر</option></select>
         </div>
-        <div class="fgs"><label>السنة *</label><input type="number" id="mY" value="2026" onchange="refreshMonthly()"></div>
+        <div class="fgs"><label>السنة *</label><input type="number" id="mY" class="viewer-allowed" value="2026" onchange="refreshMonthly()"></div>
       </div>
     </div>
   </div>
@@ -682,7 +682,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
     <div class="fs">
       <div class="fg2">
         <div class="fgs"><label>نوع التقرير *</label>
-          <select id="qType" onchange="refreshQuarterly()">
+          <select id="qType" class="viewer-allowed" onchange="refreshQuarterly()">
             <option>الربع الأول (يناير – مارس)</option>
             <option>الربع الثاني (أبريل – يونيو)</option>
             <option>الربع الثالث (يوليو – سبتمبر)</option>
@@ -692,7 +692,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
             <option>التقرير السنوي (يناير – ديسمبر)</option>
           </select>
         </div>
-        <div class="fgs"><label>السنة *</label><input type="number" id="qYear" value="2026" onchange="refreshQuarterly()"></div>
+        <div class="fgs"><label>السنة *</label><input type="number" id="qYear" class="viewer-allowed" value="2026" onchange="refreshQuarterly()"></div>
       </div>
     </div>
   </div>
@@ -1439,14 +1439,16 @@ body.viewer-only .print-btn { display: inline-block !important; }
           </select>
         </div>
         <div class="fgs"><label>🏢 الجهة المُتابَعة حالياً</label>
-          <select id="editFollowEntity" onchange="renderTopicTimeInfo()">
+          <select id="editFollowEntity" onchange="toggleEditEntityName(); renderTopicTimeInfo(); updateFollowupCalc();">
             <option value="">— غير محدد —</option>
             <option value="rais_depts">الدوائر التابعة للرئيس</option>
             <option value="naib_office">مكتب النائب</option>
+            <option value="naib_and_rais">⚡ مكتب النائب + دوائر الرئيس (معاً)</option>
             <option value="taqseem">التقسيم</option>
             <option value="other">جهة أخرى</option>
           </select>
         </div>
+        <div class="fgs" id="editEntityNameWrap" style="display:none"><label id="editEntityNameLabel">📂 اسم الجهة</label><input id="editEntityName" placeholder=""></div>
         <div class="fgs"><label>📨 طريقة ورود الرد</label>
           <select id="editResponseMethod">
             <option value="">— غير محدد —</option>
@@ -1457,9 +1459,6 @@ body.viewer-only .print-btn { display: inline-block !important; }
         </div>
         <div class="fgs"><label>🔄 عدد المتابعات</label><input type="number" id="editFollowupCount" min="0" placeholder="عدد المتابعات"><small style="color:#666;font-size:11px;display:block;margin-top:4px">عدد المتابعات مع الجهة المُتابَعة</small></div>
         <div class="fgs fw"><label>الملاحظات</label><textarea id="editNote" placeholder="ملاحظات الموضوع..."></textarea></div>
-      </div>
-      <div class="btn-row">
-        <button class="btn btn-s" onclick="saveEditTopic()">💾 حفظ بيانات الموضوع</button>
       </div>
 
       <!-- ===== معلومات المتابعة الزمنية ===== -->
@@ -1472,29 +1471,12 @@ body.viewer-only .print-btn { display: inline-block !important; }
       <h4 style="margin:0 0 8px;font-size:14px;color:#1a3a5b">📋 سجل الإجراءات والمتابعات</h4>
       <div id="editActionLog" style="max-height:220px;overflow-y:auto;margin-bottom:10px"></div>
 
-      <!-- ===== إضافة إجراء جديد ===== -->
-      <h4 style="margin:0 0 8px;font-size:14px;color:#1a3a5b">➕ إضافة إجراء جديد</h4>
+      <!-- ===== إضافة إجراء جديد (اختياري) ===== -->
+      <h4 style="margin:0 0 4px;font-size:14px;color:#1a3a5b">➕ إضافة إجراء جديد (اختياري)</h4>
+      <p style="font-size:11.5px;color:#90a0b3;margin:0 0 10px">الجهة المُتابَعة وطريقة الرد والحالة تُؤخذ من بيانات الموضوع أعلاه — لا حاجة لإعادتها. يُسجَّل الإجراء فقط إذا عبّأتِ نوع الإجراء أو النتيجة أو الملاحظة.</p>
       <div class="fg2">
-        <div class="fgs"><label>تاريخ المتابعة *</label><input type="date" id="fuDate" oninput="updateFollowupCalc()"></div>
+        <div class="fgs"><label>تاريخ المتابعة</label><input type="date" id="fuDate" oninput="updateFollowupCalc()"></div>
         <div class="fgs"><label>هل تم الرد؟</label><select id="fuReplied"><option value="false">❌ لا</option><option value="true">✅ نعم</option></select></div>
-        <div class="fgs"><label>🏢 الجهة المُتابَعة</label>
-          <select id="fuFollowEntity" onchange="updateFollowupCalc()">
-            <option value="">— غير محدد —</option>
-            <option value="rais_depts">الدوائر التابعة للرئيس</option>
-            <option value="naib_office">مكتب النائب</option>
-            <option value="taqseem">التقسيم</option>
-            <option value="other">جهة أخرى</option>
-          </select>
-        </div>
-        <div class="fgs"><label>📂 اسم التقسيم المُتابَع</label><input id="fuTaqseem" placeholder="يُذكر عند المتابعة المباشرة مع التقسيم"></div>
-        <div class="fgs"><label>📨 طريقة ورود الرد</label>
-          <select id="fuResponseMethod">
-            <option value="">— غير محدد —</option>
-            <option value="via_follow">عبر المتابعة</option>
-            <option value="direct_manager">مباشر للمدير</option>
-            <option value="via_other">عبر جهة أخرى</option>
-          </select>
-        </div>
         <div class="fgs"><label>نوع الإجراء</label>
           <select id="fuActionType">
             <option value="">— اختر —</option>
@@ -1510,21 +1492,12 @@ body.viewer-only .print-btn { display: inline-block !important; }
         <div class="fgs"><label>المنفذ</label><input id="fuBy" placeholder="من قام بالمتابعة"></div>
         <div class="fgs fw"><label>نتيجة المتابعة</label><input id="fuResult" placeholder="مثال: وعدوا بالرد خلال يومين"></div>
         <div class="fgs fw"><label>ملاحظة المتابعة</label><textarea id="fuNote" placeholder="ما تم في هذه المتابعة..."></textarea></div>
-        <div class="fgs"><label>تحديث الحالة</label>
-          <select id="fuStatus">
-            <option value="open">قيد المتابعة</option>
-            <option value="disc">مناقشة رئيس</option>
-            <option value="esc">مصعّد</option>
-            <option value="split">تجاوز لعدم استجابة المكتب</option>
-            <option value="closed">مُغلق / منتهي</option>
-          </select>
-        </div>
       </div>
       <div id="fuCalcInfo" style="margin:4px 0 10px"></div>
       <input type="hidden" id="fuTopicId">
       <div class="btn-row">
-        <button class="btn btn-s" onclick="saveFollowup()">➕ حفظ الإجراء</button>
-        <button class="btn btn-w" onclick="closeModal('editTopicModal')">إغلاق</button>
+        <button class="btn btn-s" onclick="saveTopicAll()">💾 حفظ وإغلاق</button>
+        <button class="btn btn-w" onclick="closeModal('editTopicModal')">إلغاء</button>
       </div>
     </div>
   </div>
@@ -2455,7 +2428,8 @@ async function uploadToGitHub() {
       dirReports: D.dirReports,
       ideas: D.ideas,
       memos: D.memos || [],
-      discussions: D.discussions || []
+      discussions: D.discussions || [],
+      holidays: D.holidays || []
     };
     
     const content = JSON.stringify(dataToShare, null, 2);
@@ -2769,7 +2743,8 @@ function exportSharedData() {
       dirReports: D.dirReports,
       ideas: D.ideas,
       memos: D.memos || [],
-      discussions: D.discussions || []
+      discussions: D.discussions || [],
+      holidays: D.holidays || []
     };
     
     const json = JSON.stringify(dataToShare, null, 2);
@@ -3038,10 +3013,41 @@ const RESPONSE_METHOD_LABELS = {
 const FOLLOW_ENTITY_LABELS = {
   rais_depts: 'الدوائر التابعة للرئيس',
   naib_office: 'مكتب النائب',
+  naib_and_rais: 'مكتب النائب + دوائر الرئيس',
   taqseem: 'التقسيم',
   other: 'جهة أخرى',
   '': '—'
 };
+
+// 🔢 عدّادات المتابعة التلقائية المنفصلة — تُحسب من سجل الإجراءات
+// naib: كل متابعة سُجّلت على مكتب النائب (بما فيها المشتركة naib_and_rais)
+// taqseem: متابعات التقسيم (عدّاد جديد يبدأ عند التحول للتقسيم، وعدّاد النائب يبقى محفوظاً)
+// rais: متابعات دوائر الرئيس (بما فيها المشتركة)، other: جهات أخرى
+function countFollowupsByEntity(t) {
+  const c = { naib: 0, taqseem: 0, rais: 0, other: 0, none: 0, total: 0 };
+  (t.followups || []).forEach(f => {
+    if(!f) return;
+    c.total++;
+    const e = f.entity || '';
+    if(e === 'naib_office') c.naib++;
+    else if(e === 'naib_and_rais') { c.naib++; c.rais++; }
+    else if(e === 'taqseem' || f.taqseem) c.taqseem++;
+    else if(e === 'rais_depts') c.rais++;
+    else if(e === 'other') c.other++;
+    else c.none++;
+  });
+  return c;
+}
+// نص مختصر للعدّادات المنفصلة للعرض في الجداول
+function entityCountsBadge(t) {
+  const c = countFollowupsByEntity(t);
+  const parts = [];
+  if(c.naib) parts.push('<span style="color:#1a5276">نائب: '+c.naib+'</span>');
+  if(c.taqseem) parts.push('<span style="color:#7d3c98">تقسيم: '+c.taqseem+'</span>');
+  if(c.rais) parts.push('<span style="color:#0e6655">دوائر: '+c.rais+'</span>');
+  if(c.other) parts.push('<span style="color:#6b7c8d">أخرى: '+c.other+'</span>');
+  return parts.length ? '<br><span style="font-size:9.5px">'+parts.join(' · ')+'</span>' : '';
+}
 
 const STATUS_BADGES = {
   'new':'<span class="bd" style="background:#dbeafe;color:#1d4ed8">🆕 جديد</span>',
@@ -3468,7 +3474,7 @@ function buildDailyTasks(){
   });
   // 3) متابعة التقسيم المختص / جاهز للتصعيد
   open.forEach(t => {
-    const naib = (t.followEntity==='naib_office') || (t.kpi==='naib3');
+    const naib = (t.followEntity==='naib_office') || (t.followEntity==='naib_and_rais') || (t.kpi==='naib3');
     let exceeded=false; try{ exceeded = naib && getKpiStatus(t).state==='late'; }catch(e){}
     if(t.status==='ready_esc' || t.status==='split' || (exceeded && t.followEntity!=='taqseem')){
       tasks.push({ key:'div-'+t.id, cat:'division', icon:'📂', color:'#7d3c98',
@@ -3701,9 +3707,9 @@ function renderTopicsTable() {
       <td style="font-size:11px">${t.from}</td>
       <td>${fmtDate(t.date)}</td>
       <td style="font-size:10px;color:var(--text2)">${kpiBadge}</td>
-      <td style="font-size:10px;text-align:center">${t.followEntity ? FOLLOW_ENTITY_LABELS[t.followEntity] : '—'}${t.taqseemName ? '<br><span style="color:#7d3c98">📂 '+t.taqseemName+'</span>' : ''}</td>
+      <td style="font-size:10px;text-align:center">${t.followEntity ? FOLLOW_ENTITY_LABELS[t.followEntity] : '—'}${t.followEntity==='taqseem'&&t.taqseemName ? '<br><span style="color:#7d3c98">📂 '+t.taqseemName+'</span>' : (t.followEntity==='rais_depts'||t.followEntity==='naib_and_rais')&&t.raisDeptName ? '<br><span style="color:#1a5276">🏛️ '+t.raisDeptName+'</span>' : t.followEntity==='other'&&t.otherEntityName ? '<br><span style="color:#6b7c8d">🏢 '+t.otherEntityName+'</span>' : t.taqseemName ? '<br><span style="color:#7d3c98">📂 '+t.taqseemName+'</span>' : ''}</td>
       <td style="font-size:10px;text-align:center">${t.responseMethod ? RESPONSE_METHOD_LABELS[t.responseMethod] : '—'}</td>
-      <td style="text-align:center;font-weight:700;color:var(--blue)">${t.manualCount ?? t.followups.length}</td>
+      <td style="text-align:center;font-weight:700;color:var(--blue)">${t.manualCount ?? t.followups.length}${entityCountsBadge(t)}</td>
       <td>${lastFu}</td>
       <td style="max-width:180px;font-size:10px;color:var(--text2)">${t.note ? t.note : '—'}</td>
       <td>${STATUS_BADGES[t.status]||t.status}</td>
@@ -3797,7 +3803,16 @@ function openEditTopicModal(tid) {
   $('editStatus').value = t.status || 'open';
   $('editNote').value = t.note || '';
 
-  // إعداد نموذج «إضافة إجراء جديد» (كان في نافذة منفصلة، الآن جزء من نفس النافذة)
+  // حقل اسم الجهة الديناميكي (تقسيم/دائرة/جهة أخرى)
+  toggleEditEntityName();
+  const fe0 = t.followEntity || '';
+  if($('editEntityName')) {
+    $('editEntityName').value = fe0==='taqseem' ? (t.taqseemName||'')
+      : (fe0==='rais_depts'||fe0==='naib_and_rais') ? (t.raisDeptName||'')
+      : fe0==='other' ? (t.otherEntityName||'') : '';
+  }
+
+  // إعداد نموذج «إضافة إجراء جديد» (جزء من نفس النافذة، بلا حقول مكررة)
   $('fuTopicId').value = tid;
   $('fuDate').value = new Date().toISOString().substring(0,10);
   $('fuReplied').value = 'false';
@@ -3805,15 +3820,23 @@ function openEditTopicModal(tid) {
   if($('fuActionType')) $('fuActionType').value = '';
   if($('fuBy')) $('fuBy').value = '';
   if($('fuResult')) $('fuResult').value = '';
-  $('fuStatus').value = t.status || 'open';
-  if($('fuFollowEntity')) $('fuFollowEntity').value = t.followEntity || '';
-  if($('fuResponseMethod')) $('fuResponseMethod').value = t.responseMethod || '';
-  if($('fuTaqseem')) $('fuTaqseem').value = t.taqseemName || '';
   updateFollowupCalc();
 
   renderTopicTimeInfo();
   renderTopicActionLog(t);
   $('editTopicModal').classList.add('on');
+}
+
+// إظهار حقل الاسم وتسميته حسب الجهة المُتابَعة المختارة
+function toggleEditEntityName() {
+  const fe = val('editFollowEntity');
+  const wrap = $('editEntityNameWrap'), lbl = $('editEntityNameLabel'), inp = $('editEntityName');
+  if(!wrap || !lbl || !inp) return;
+  if(fe === 'taqseem') { wrap.style.display=''; lbl.textContent='📂 اسم التقسيم المُتابَع'; inp.placeholder='مثال: قسم التقييم البيئي'; }
+  else if(fe === 'rais_depts') { wrap.style.display=''; lbl.textContent='🏛️ اسم الدائرة التابعة للرئيس'; inp.placeholder='مثال: دائرة التدقيق الداخلي'; }
+  else if(fe === 'naib_and_rais') { wrap.style.display=''; lbl.textContent='🏛️ اسم الدائرة التابعة للرئيس (المتابعة مع النائب)'; inp.placeholder='مثال: دائرة التدقيق الداخلي'; }
+  else if(fe === 'other') { wrap.style.display=''; lbl.textContent='🏢 اسم الجهة الأخرى'; inp.placeholder='اذكري اسم الجهة'; }
+  else { wrap.style.display='none'; inp.value=''; }
 }
 
 // نفس نافذة التعديل الآن تفتح مباشرة على قسم «إضافة إجراء جديد» — أُبقيت الدالة القديمة للتوافق مع كل نقاط الاستدعاء
@@ -3844,9 +3867,10 @@ function renderTopicTimeInfo() {
   let daysSinceStart = null;
   if(followStart) { try { daysSinceStart = businessDaysBetween(followStart, today); } catch(e) {} }
 
-  // آخر متابعة مسجّلة مع مكتب النائب تحديداً
-  const naibFollows = (t.followups||[]).filter(f => f && f.entity === 'naib_office').sort((a,b)=>(a.date||'').localeCompare(b.date||''));
+  // آخر متابعة مسجّلة مع مكتب النائب (بما فيها المتابعات المشتركة مع دوائر الرئيس)
+  const naibFollows = (t.followups||[]).filter(f => f && (f.entity === 'naib_office' || f.entity === 'naib_and_rais')).sort((a,b)=>(a.date||'').localeCompare(b.date||''));
   const lastNaibFollow = naibFollows.length ? naibFollows[naibFollows.length-1] : null;
+  const cnt = countFollowupsByEntity(t);
 
   const divDate = t.divFollowDate || '';
   let divDays = null;
@@ -3860,7 +3884,10 @@ function renderTopicTimeInfo() {
   html += row('⏳ مدة الرد المحددة', allowedDays!=null ? ('<b>'+allowedDays+'</b> يوم عمل — '+allowedLabel) : '<span style="color:#90a0b3">لم تُحدَّد بعد</span>');
   html += row('📆 أيام العمل المنقضية منذ التوجيه', daysSinceStart!=null ? (daysSinceStart+' يوم عمل') : '—', (allowedDays!=null && daysSinceStart!=null && daysSinceStart>allowedDays) ? '#c0392b' : '#22303f');
   html += row('🏢 آخر متابعة مسجّلة مع مكتب النائب', lastNaibFollow ? fmtDate(lastNaibFollow.date) : '<span style="color:#90a0b3">لم تُسجَّل متابعة مع مكتب النائب بعد</span>');
+  html += row('🔢 عدد متابعات مكتب النائب (محفوظ تلقائياً)', cnt.naib ? ('<b style="color:#1a5276">'+cnt.naib+'</b> متابعة') : '<span style="color:#90a0b3">لا توجد</span>');
   html += row('📂 تاريخ بدء متابعة التقسيم', divDate ? fmtDate(divDate) : '<span style="color:#90a0b3">لم تبدأ متابعة التقسيم بعد</span>');
+  if(cnt.taqseem) html += row('🔢 عدد متابعات التقسيم (عدّاد مستقل)', '<b style="color:#7d3c98">'+cnt.taqseem+'</b> متابعة');
+  if(cnt.rais) html += row('🔢 عدد متابعات دوائر الرئيس', '<b style="color:#0e6655">'+cnt.rais+'</b> متابعة');
   if(divDate) html += row('📆 أيام العمل منذ بدء متابعة التقسيم', divDays!=null ? (divDays+' يوم عمل') : '—');
   html += '</div>';
   if(allowedDays!=null && daysSinceStart!=null && daysSinceStart>allowedDays) {
@@ -3925,6 +3952,11 @@ function saveEditTopic() {
   if(feInput) {
     t.followEntity = feInput.value;
   }
+  // الاسم الديناميكي حسب الجهة
+  const en = val('editEntityName').trim();
+  if(t.followEntity === 'taqseem') { if(en) t.taqseemName = en; }
+  else if(t.followEntity === 'rais_depts' || t.followEntity === 'naib_and_rais') { t.raisDeptName = en; }
+  else if(t.followEntity === 'other') { t.otherEntityName = en; }
   const rmInput = $('editResponseMethod');
   if(rmInput) {
     t.responseMethod = rmInput.value;
@@ -3933,8 +3965,61 @@ function saveEditTopic() {
   refreshDashboard();
   refreshAllReports();
   autoSave();
-  renderTopicTimeInfo();
-  alert('✅ تم حفظ بيانات الموضوع');
+}
+
+// 💾 الحفظ الموحّد: بيانات الموضوع + الإجراء الجديد (إن عُبّئ) ثم إغلاق النافذة
+function saveTopicAll() {
+  const tid = parseFloat($('editTopicId').value);
+  const t = D.topics.find(x => x.id === tid);
+  if(!t) return;
+  // 1) احفظي بيانات الموضوع
+  saveEditTopic();
+  // 2) سجّلي الإجراء الجديد فقط إذا عُبّئت تفاصيله
+  const hasAction = (val('fuActionType') || val('fuResult').trim() || val('fuNote').trim());
+  if(hasAction) {
+    const date = val('fuDate') || new Date().toISOString().substring(0,10);
+    const fe = t.followEntity || '';
+    const taq = (fe === 'taqseem') ? (val('editEntityName').trim() || t.taqseemName || '') : '';
+    const baseStr = t.followStart || t.date;
+    let daysSince = null;
+    if(baseStr) daysSince = businessDaysBetween(baseStr, date);
+    t.followups.push({
+      date: date,
+      replied: val('fuReplied') === 'true',
+      note: val('fuNote').trim() || 'متابعة',
+      actionType: val('fuActionType') || '',
+      by: val('fuBy').trim(),
+      result: val('fuResult').trim(),
+      entity: fe,
+      taqseem: taq,
+      startDate: t.followStart || '',
+      daysSince: daysSince
+    });
+    // 🔁 تدفق مكتب النائب: متابعة التقسيم تبدأ مهلة ٣ أيام عمل
+    // عدّاد النائب يبقى محفوظاً في سجل الإجراءات، وعدّاد التقسيم يبدأ من الآن
+    if((fe === 'taqseem' || taq) && t.status !== 'closed') {
+      if(!t.divFollowDate) t.divFollowDate = date;  // أول متابعة تقسيم فقط تحدد تاريخ البدء
+      if(t.status === 'open' || t.status === 'div_followed') t.status = 'awaiting_div';
+    }
+    if($('editFollowupCount') && $('editFollowupCount').value === '') {
+      // لا شيء — العدّاد اليدوي غير مستخدم
+    } else if(t.manualCount != null) {
+      t.manualCount = t.manualCount + 1;
+    }
+    // 🔗 ربط مركز الإجراءات: تسجيل الإجراء يعلّم مهام هذا الموضوع «تم» تلقائياً
+    try{
+      _markDailyDone('fu-today-'+tid);
+      _markDailyDone('late-'+tid);
+      _markDailyDone('div-'+tid);
+    }catch(e){}
+    renderTopicsTable();
+    refreshDashboard();
+    refreshAllReports();
+    autoSave();
+  }
+  // 3) إغلاق النافذة
+  closeModal('editTopicModal');
+  alert('✅ تم الحفظ' + (hasAction ? ' وتسجيل الإجراء' : ''));
 }
 
 function deleteTopic(tid) {
@@ -3967,8 +4052,8 @@ function updateFollowupCalc() {
   const days = businessDaysBetween(startStr, fuDateStr);
   let msg = `⏱️ مضى <b>${days}</b> يوم عمل (باستثناء الجمعة/السبت والإجازات الرسمية) منذ توجيه الرئيس (${fmtDate(startStr)}) حتى تاريخ المتابعة.`;
   const color = '#1a5276';
-  const ent = val('fuFollowEntity');
-  const isNaib = (ent === 'naib_office') || (t.followEntity === 'naib_office') || (t.kpi === 'naib3');
+  const ent = val('editFollowEntity');
+  const isNaib = (ent === 'naib_office') || (ent === 'naib_and_rais') || (t.followEntity === 'naib_office') || (t.followEntity === 'naib_and_rais') || (t.kpi === 'naib3');
   let extra = '';
   if(isNaib && days >= 3) {
     extra = `<div style="margin-top:8px;padding:9px 11px;background:#fdeaea;border-right:4px solid #c0392b;border-radius:6px;color:#922b21;font-weight:700;font-size:12px">⚠️ مضى أكثر من 3 أيام على مكتب النائب — تابعي التقسيم مباشرة وسجّلي اسمه في خانة «اسم التقسيم المُتابَع».</div>`;
@@ -3976,69 +4061,8 @@ function updateFollowupCalc() {
   info.innerHTML = `<div style="padding:9px 11px;background:#eef3f8;border-radius:6px;color:${color};font-size:12px">${msg}</div>${extra}`;
 }
 
-function saveFollowup() {
-  const tid = parseFloat($('fuTopicId').value);
-  const t = D.topics.find(x => x.id === tid);
-  if(!t) return;
-  
-  const date = val('fuDate');
-  if(!date) { alert('⚠️ يرجى تحديد تاريخ المتابعة'); return; }
-  
-  const taqseem = val('fuTaqseem').trim();
-  // عدد أيام العمل منذ توجيه الرئيس المحفوظ حتى تاريخ هذا الإجراء
-  const baseStr = t.followStart || t.date;
-  let daysSince = null;
-  if(baseStr) {
-    daysSince = businessDaysBetween(baseStr, date);
-  }
-  
-  t.followups.push({
-    date: date,
-    replied: val('fuReplied') === 'true',
-    note: val('fuNote').trim() || 'متابعة',
-    actionType: val('fuActionType') || '',
-    by: val('fuBy').trim(),
-    result: val('fuResult').trim(),
-    entity: val('fuFollowEntity') || '',
-    taqseem: taqseem,
-    startDate: t.followStart || '',
-    daysSince: daysSince
-  });
-  
-  const newStatus = val('fuStatus');
-  if(newStatus === 'closed' && t.status !== 'closed') {
-    t.closedAt = date;
-  }
-  t.status = newStatus;
-  
-  // 🔁 تدفق مكتب النائب: متابعة التقسيم تسجَّل وتبدأ مهلة ٣ أيام عمل
-  const fe = val('fuFollowEntity');
-  if((fe === 'taqseem' || taqseem) && newStatus !== 'closed') {
-    t.divFollowDate = date;             // تاريخ متابعة التقسيم
-    if(newStatus === 'open' || newStatus === 'div_followed') t.status = 'awaiting_div';
-  }
-  if(fe) t.followEntity = fe;
-  // حفظ طريقة ورود الرد
-  const rm = val('fuResponseMethod');
-  if(rm) t.responseMethod = rm;
-  // حفظ اسم التقسيم المُتابَع
-  if(taqseem) t.taqseemName = taqseem;
-  
-  // تبقى النافذة مفتوحة لتظهر التحديثات فوراً، وتُفرَّغ حقول الإجراء الجديد لإضافة إجراء آخر إذا لزم
-  clearFields(['fuNote','fuResult','fuBy','fuTaqseem']);
-  if($('fuActionType')) $('fuActionType').value = '';
-  if($('editFollowEntity')) $('editFollowEntity').value = t.followEntity || '';
-  if($('editResponseMethod')) $('editResponseMethod').value = t.responseMethod || '';
-  if($('editStatus')) $('editStatus').value = t.status || 'open';
-  if($('editFollowupCount')) $('editFollowupCount').value = t.manualCount ?? t.followups.length;
-  renderTopicActionLog(t);
-  renderTopicTimeInfo();
-  renderTopicsTable();
-  refreshDashboard();
-  refreshAllReports();
-  autoSave();
-  alert('✅ تم تسجيل الإجراء');
-}
+// أصبح الحفظ موحّداً — أُبقيت الدالة للتوافق مع أي استدعاءات قديمة
+function saveFollowup() { saveTopicAll(); }
 
 // ============== مناقشات الرئيس (مستقلة) ==============
 
@@ -4377,6 +4401,8 @@ function refreshAllReports() {
   refreshMonthly();
   refreshQuarterly();
   refreshDirReport();
+  // 🔗 ربط كامل: أي حفظ في المنصة يحدّث مركز الإجراءات اليومية تلقائياً
+  try{ if(typeof renderDailyCenter === 'function') renderDailyCenter(); }catch(e){}
 }
 
 // ============================================================
@@ -6888,7 +6914,7 @@ window.addEventListener('load', () => {
     var today=_todayStr();
     return D.topics.filter(function(t){
       if(t.status==='closed') return false;
-      var isNaib=(t.followEntity==='naib_office')||(t.kpi==='naib3');
+      var isNaib=(t.followEntity==='naib_office')||(t.followEntity==='naib_and_rais')||(t.kpi==='naib3');
       if(!isNaib) return false;
       var start=t.followStart||t.date||'';
       var allowed=_naibAllowedDays(t).days;
