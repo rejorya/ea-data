@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-05T10:28:06.130Z",
+  "exportedAt": "2026-07-06T04:22:29.489Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23588,7 +23588,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "للمقابلة والافادة\nتتم متابعة التقسيم",
-      "status": "awaiting_div",
+      "status": "ready_esc",
       "followups": [
         {
           "date": "2026-06-29",
@@ -23649,7 +23649,7 @@
       "slaDays": 5,
       "kpi": "wweek",
       "note": "اقترح اعداد نطاق عمل لاعداد دراسة علمية تحدد الاضرار الصحية والبيئية لمياه الشرب المبآة في قنينات البلاستك بالتعاون مع احد الشركات الاستشارية او احدى الجامعات والافادة بنطاق العمل خلال اسبوع عمل\n",
-      "status": "awaiting_div",
+      "status": "ready_esc",
       "followups": [
         {
           "date": "2026-06-30",
@@ -23951,7 +23951,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
-      "status": "awaiting_div",
+      "status": "ready_esc",
       "followups": [
         {
           "date": "2026-07-01",
