@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-06T07:32:28.737Z",
+  "exportedAt": "2026-07-06T07:33:07.919Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24005,10 +24005,24 @@
           "taqseem": "",
           "startDate": "2026-07-05",
           "daysSince": 0
+        },
+        {
+          "date": "2026-07-05",
+          "replied": true,
+          "note": "تم رفع رد الادارة الى مدير المكتب",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-07-05",
+          "daysSince": 0
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "followEntity": "naib_office"
+      "followEntity": "naib_office",
+      "manualCount": 2,
+      "responseMethod": ""
     },
     {
       "id": 1783243575595.656,
