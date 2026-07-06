@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-06T07:20:28.709Z",
+  "exportedAt": "2026-07-06T07:20:37.766Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23282,13 +23282,26 @@
           "taqseem": "مستشارة الرئيس",
           "startDate": "2026-06-25",
           "daysSince": 4
+        },
+        {
+          "date": "2026-07-06",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "taqseem": "",
+          "startDate": "2026-06-30",
+          "daysSince": 4
         }
       ],
       "sheet": "مُضاف يدوياً",
       "divFollowDate": "2026-07-01",
       "followEntity": "other",
-      "manualCount": 1,
-      "responseMethod": ""
+      "manualCount": 2,
+      "responseMethod": "",
+      "otherEntityName": "مستشارة الرئيس"
     },
     {
       "id": 1782618918188.1814,
