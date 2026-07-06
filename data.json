@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-06T04:38:28.613Z",
+  "exportedAt": "2026-07-06T04:39:29.876Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23821,7 +23821,7 @@
       "title": "طلب المشاركة ببحث علمي ضمن فعاليات اسبوع عمان.pdf",
       "from": "وزارة الصحة",
       "docNo": "1170/3/2022v407-75",
-      "toEntity": "",
+      "toEntity": "المديرية العامة للالتزام البيئي",
       "taqseemName": "المديرية العامة للالتزام البيئي",
       "priority": "normal",
       "confidentiality": "normal",
@@ -23832,7 +23832,7 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "الدكتور محمد الكلباني\nلا مانع ويتم التواصل مع مؤتمر جامعة التقنية او الالمانية لاعطائهم الفرصة لتقديم بحثهم ضمن الباحثين ومن ثم التاكيد لهم ودعوتهم للحضور مع اخطارهم بالموعد والافادة بما تم",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-07-05",
@@ -23850,8 +23850,9 @@
       "sheet": "مُضاف يدوياً",
       "manualCount": 2,
       "followEntity": "taqseem",
-      "responseMethod": "",
-      "divFollowDate": "2026-07-05"
+      "responseMethod": "via_follow",
+      "divFollowDate": "2026-07-05",
+      "closedAt": "2026-07-06"
     },
     {
       "id": 1782966145820.8079,
