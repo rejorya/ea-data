@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-06T07:13:29.599Z",
+  "exportedAt": "2026-07-06T07:14:04.303Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21876,7 +21876,7 @@
       "from": "شركة المطوع للتجارة ش.م.م",
       "date": "2026-06-04",
       "type": "ext",
-      "kpi": "other",
+      "kpi": "wd3",
       "note": "نائب الرئيس\nالالتزام البيئي\nيعد خطاب ويرفق به تقرير لنقل المصنع الى المسفاة والى حينذاك يلزم المصنع باجراءات تخفيف",
       "status": "ready_esc",
       "followups": [
@@ -21957,12 +21957,24 @@
           "taqseem": "المديرية العامة للالتزام البيئي",
           "startDate": "2026-06-07",
           "daysSince": 20
+        },
+        {
+          "date": "2026-06-30",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-06-29",
+          "daysSince": 1
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "followStart": "2026-06-07",
-      "manualCount": 4,
-      "followEntity": "taqseem",
+      "followStart": "2026-06-29",
+      "manualCount": 5,
+      "followEntity": "naib_office",
       "responseMethod": "via_follow",
       "taqseemName": "المديرية العامة للالتزام البيئي",
       "divFollowDate": "2026-06-30",
