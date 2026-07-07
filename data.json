@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-07T05:55:18.416Z",
+  "exportedAt": "2026-07-07T05:55:45.336Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22019,19 +22019,32 @@
           "taqseem": "المديرية العامة للالتزام البيئي",
           "startDate": "2026-06-29",
           "daysSince": 4
+        },
+        {
+          "date": "2026-06-21",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_and_rais",
+          "taqseem": "",
+          "startDate": "2026-06-29",
+          "daysSince": 0
         }
       ],
       "sheet": "مُضاف يدوياً",
       "followStart": "2026-06-29",
-      "manualCount": 4,
-      "followEntity": "taqseem",
+      "manualCount": 5,
+      "followEntity": "naib_and_rais",
       "responseMethod": "via_follow",
       "taqseemName": "المديرية العامة للالتزام البيئي",
       "divFollowDate": "2026-06-30",
       "docNo": "1170/3/2022v405-30",
       "toEntity": "مكتب النائب",
       "priority": "normal",
-      "confidentiality": "normal"
+      "confidentiality": "normal",
+      "raisDeptName": "مركز الاعمال البيئية"
     },
     {
       "id": 1780991713416.4797,
