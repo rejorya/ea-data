@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-07T04:22:18.333Z",
+  "exportedAt": "2026-07-07T04:22:54.883Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -6924,7 +6924,7 @@
       "type": "int",
       "kpi": "other",
       "note": "بناء على توجيه سعادته ، يتم تسليم نتائج تحليل مشروع المسح الوطني للتنوع الاحيائي في نهاية شهر يونيو 2026م .",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-05-14",
@@ -6974,17 +6974,30 @@
           "taqseem": "",
           "startDate": "2026-02-17",
           "daysSince": 96
+        },
+        {
+          "date": "2026-07-07",
+          "replied": true,
+          "note": "تم رفع افادة المديرية",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-02-17",
+          "daysSince": 100
         }
       ],
       "sheet": "Sheet1",
-      "manualCount": 5,
+      "manualCount": 6,
       "followEntity": "naib_office",
-      "responseMethod": "",
+      "responseMethod": "direct_manager",
       "followStart": "2026-02-17",
       "docNo": "1181/17/2022v27-32",
       "toEntity": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
       "priority": "normal",
-      "confidentiality": "normal"
+      "confidentiality": "normal",
+      "closedAt": "2026-07-07"
     },
     {
       "id": 1780826441881.4622,
