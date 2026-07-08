@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-08T09:17:45.195Z",
+  "exportedAt": "2026-07-08T09:18:40.402Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24289,6 +24289,26 @@
       "slaDays": null,
       "kpi": "wd2",
       "note": "مروة المحروقية\nلعمل اللازم خلال يومين عمل",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
+    },
+    {
+      "id": 1783502318271.8604,
+      "title": "تنفيذ عمليات التدقيق لتقييم مدى كفاءة أنظمة الجودة في مكتب الرئيس",
+      "from": "دائرة ضبط الجودة",
+      "docNo": "",
+      "toEntity": "مكتب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-07-08",
+      "followStart": "2026-07-08",
+      "type": "int",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
       "status": "new",
       "followups": [],
       "sheet": "مُضاف يدوياً"
