@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-08T09:02:11.899Z",
+  "exportedAt": "2026-07-08T09:02:37.904Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24217,8 +24217,24 @@
       "kpi": "wd3",
       "note": "نائب الرئيس\nلاعداد خطاب تاكيد على ان المشروع تاخر كثيرا ويجب التسريع فيه لانه يعالج تحديات جسيمة وكبيرة لا تزال مستمرة ولم تعالج بسبب تاخر المشروع",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-07-08",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-07-08",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "directives": [
