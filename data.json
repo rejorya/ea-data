@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-08T09:13:45.202Z",
+  "exportedAt": "2026-07-08T09:14:15.630Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24272,6 +24272,26 @@
       "followEntity": "rais_depts",
       "raisDeptName": "الدائرة القانونية",
       "responseMethod": ""
+    },
+    {
+      "id": 1783502053542.6777,
+      "title": "كلمة سلطنة عمان في الدورة ال 81 للجمعية العامة للأمم المتحدة.pdf",
+      "from": "وزارة الخارجية",
+      "docNo": "",
+      "toEntity": "مكتب تنفيذ رؤية عمان 2024",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-07-05",
+      "followStart": "2026-07-08",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wd2",
+      "note": "مروة المحروقية\nلعمل اللازم خلال يومين عمل",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
