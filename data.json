@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-09T04:39:22.629Z",
+  "exportedAt": "2026-07-09T04:40:07.089Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24347,8 +24347,8 @@
       "title": "ربط محطات رصد جودة الهواء المحيط بمطار مسقط الدولي ومطار صلالة بديوان عام هيئة البيئة.pdf",
       "from": "هيئة الطيران المدني",
       "docNo": "1170/3/2022v407-19",
-      "toEntity": "",
-      "taqseemName": "",
+      "toEntity": "المديرية العامة للشؤون الادارية والمالية",
+      "taqseemName": "المديرية العامة للالتزام البيئي",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-06-25",
@@ -24356,11 +24356,28 @@
       "type": "ext",
       "slaMode": "kpi",
       "slaDays": null,
-      "kpi": "",
+      "kpi": "wd3",
       "note": "في انتظار محضر الاجتماع من جودة الهواء\n",
-      "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "status": "awaiting",
+      "followups": [
+        {
+          "date": "2026-07-09",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للالتزام البيئي",
+          "startDate": "2026-07-08",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-07-09"
     }
   ],
   "directives": [
