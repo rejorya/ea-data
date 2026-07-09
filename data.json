@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-09T09:10:19.072Z",
+  "exportedAt": "2026-07-09T09:10:45.332Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23106,7 +23106,7 @@
       "from": "بلدية مسقط",
       "docNo": "1170/3/2022v406-40",
       "toEntity": "نائب الرئيس",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة للالتزام البيئي",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-06-22",
@@ -23116,7 +23116,7 @@
       "slaDays": null,
       "kpi": "std14",
       "note": "نائب الرئيس\nالالتزام البيئي\nللدراسة واعداد تقرير مماثل لمخاطبة وزير التجارة",
-      "status": "open",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-06-23",
@@ -23153,12 +23153,25 @@
           "taqseem": "",
           "startDate": "2026-06-22",
           "daysSince": 9
+        },
+        {
+          "date": "2026-07-09",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للالتزام البيئي",
+          "startDate": "2026-06-22",
+          "daysSince": 13
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 3,
-      "followEntity": "naib_office",
-      "responseMethod": ""
+      "manualCount": 4,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-07-09"
     },
     {
       "id": 1782187966014.4639,
