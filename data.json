@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-09T08:42:18.705Z",
+  "exportedAt": "2026-07-09T08:43:13.256Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24277,7 +24277,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "القانونية\nلعمل اللازم",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-07-08",
@@ -24296,7 +24296,8 @@
       "manualCount": 1,
       "followEntity": "rais_depts",
       "raisDeptName": "الدائرة القانونية",
-      "responseMethod": ""
+      "responseMethod": "via_follow",
+      "closedAt": "2026-07-09"
     },
     {
       "id": 1783502053542.6777,
