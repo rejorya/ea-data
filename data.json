@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-09T03:35:18.510Z",
+  "exportedAt": "2026-07-09T03:35:31.309Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23547,7 +23547,7 @@
       "from": "دائرة التعاون الدولي",
       "docNo": "1514/6/2022v12-22",
       "toEntity": "نائب الرئيس",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة للشؤون الادارية والمالية",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-06-28",
@@ -23557,7 +23557,7 @@
       "slaDays": null,
       "kpi": "rpt14",
       "note": "نائب الرئيس\nلاعداد تصور لتنفيذ المبادرة وتخصيص مواقع للسيارات الكهربائية",
-      "status": "open",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-06-29",
@@ -23594,12 +23594,25 @@
           "taqseem": "",
           "startDate": "2026-06-29",
           "daysSince": 4
+        },
+        {
+          "date": "2026-07-09",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+          "startDate": "2026-06-29",
+          "daysSince": 8
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "followEntity": "naib_office",
-      "manualCount": 4,
-      "responseMethod": ""
+      "followEntity": "taqseem",
+      "manualCount": 5,
+      "responseMethod": "",
+      "divFollowDate": "2026-07-09"
     },
     {
       "id": 1782718925542.2322,
