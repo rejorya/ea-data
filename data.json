@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-09T04:50:19.484Z",
+  "exportedAt": "2026-07-09T04:50:35.095Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24378,6 +24378,26 @@
       "followEntity": "taqseem",
       "responseMethod": "",
       "divFollowDate": "2026-07-09"
+    },
+    {
+      "id": 1783572633007.5564,
+      "title": "مشروع إنشاء نظام الإنذار المبكر لرصد جودة مياه البحر في سلطنة عُمان.pdf",
+      "from": "وزارة الإقتصاد",
+      "docNo": "1170/3/2022v406-92",
+      "toEntity": "",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-24",
+      "followStart": "2026-07-09",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "",
+      "note": "يعد خطاب شكر على ادراج المشروع مع ضرورة المطالبة بتوفير الاعتمادات الكاملة ل 12 محطة ",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
