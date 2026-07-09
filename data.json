@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-09T09:11:18.811Z",
+  "exportedAt": "2026-07-09T09:12:01.552Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23349,7 +23349,7 @@
       "slaDays": null,
       "kpi": "wd3",
       "note": "مستشار الرئيس\nللمناقشة مع مركز مصيرة والتنوع الاحيائي والافادة",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-06-28",
@@ -23393,7 +23393,8 @@
       "followEntity": "other",
       "manualCount": 2,
       "responseMethod": "",
-      "otherEntityName": "مستشارة الرئيس"
+      "otherEntityName": "مستشارة الرئيس",
+      "closedAt": "2026-07-09"
     },
     {
       "id": 1782618918188.1814,
