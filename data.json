@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-09T08:49:22.775Z",
+  "exportedAt": "2026-07-09T08:50:17.191Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18518,7 +18518,7 @@
       "type": "int",
       "kpi": "other",
       "note": "لتقديم برنامج زمني من مركز الاعتماد للوصول الاعتراف الدولي بشهادات روزنة خلال 6 اشهر بما في ذلك استيفاء كامل المتطلبات",
-      "status": "disc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-05-04",
@@ -18565,7 +18565,9 @@
       "toEntity": "",
       "priority": "normal",
       "confidentiality": "normal",
-      "divFollowDate": "2026-06-14"
+      "divFollowDate": "2026-06-14",
+      "closedAt": "2026-07-09",
+      "raisDeptName": ""
     },
     {
       "id": 1780826442474.1848,
