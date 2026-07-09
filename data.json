@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-09T08:50:17.191Z",
+  "exportedAt": "2026-07-09T08:51:17.597Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18754,7 +18754,7 @@
       "type": "ext",
       "kpi": "other",
       "note": "نائب الرئيس\nفسم الاستثمار\nللتنسيق مع سلطان الخضوري لاستيفاء المتطلبات والافادة خلال اسبوعين",
-      "status": "disc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-05-12",
@@ -18784,7 +18784,7 @@
         }
       ],
       "sheet": "Sheet1",
-      "closedAt": "2026-05-12",
+      "closedAt": "2026-07-09",
       "followStart": "2026-06-10",
       "manualCount": 1,
       "followEntity": "naib_office",
