@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-09T06:05:18.650Z",
+  "exportedAt": "2026-07-09T06:05:57.788Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24422,7 +24422,7 @@
       "from": "مكتب الرئيس",
       "docNo": "",
       "toEntity": "",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-07-09",
@@ -24433,8 +24433,25 @@
       "kpi": "other",
       "note": "التنوع الاحيائي\nللتواصل هاتفيا وكتابيا مع صاحب الطلب وافادته بالمتطلبات خلال ٣ ساعات",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-07-09",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-07-09",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-07-09"
     }
   ],
   "directives": [
