@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-09T08:41:17.735Z",
+  "exportedAt": "2026-07-09T08:42:12.763Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24314,13 +24314,14 @@
       "slaDays": null,
       "kpi": "wd2",
       "note": "مروة المحروقية\nلعمل اللازم خلال يومين عمل",
-      "status": "new",
+      "status": "closed",
       "followups": [],
       "sheet": "مُضاف يدوياً",
       "manualCount": 1,
       "followEntity": "other",
       "otherEntityName": "مكتب متابعة  تنفيذ رؤية عمان 2024",
-      "responseMethod": ""
+      "responseMethod": "via_follow",
+      "closedAt": "2026-07-09"
     },
     {
       "id": 1783502318271.8604,
