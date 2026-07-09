@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-09T04:39:18.578Z",
+  "exportedAt": "2026-07-09T04:39:22.629Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24338,6 +24338,26 @@
       "slaDays": null,
       "kpi": "other",
       "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
+    },
+    {
+      "id": 1783571960543.0312,
+      "title": "ربط محطات رصد جودة الهواء المحيط بمطار مسقط الدولي ومطار صلالة بديوان عام هيئة البيئة.pdf",
+      "from": "هيئة الطيران المدني",
+      "docNo": "1170/3/2022v407-19",
+      "toEntity": "",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-25",
+      "followStart": "2026-07-08",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "",
+      "note": "في انتظار محضر الاجتماع من جودة الهواء\n",
       "status": "new",
       "followups": [],
       "sheet": "مُضاف يدوياً"
