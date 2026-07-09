@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-09T06:04:18.653Z",
+  "exportedAt": "2026-07-09T06:05:02.617Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24415,6 +24415,26 @@
       "followEntity": "taqseem",
       "responseMethod": "",
       "divFollowDate": "2026-07-09"
+    },
+    {
+      "id": 1783577100497.883,
+      "title": "تصريح تصدير حيوانات برية",
+      "from": "مكتب الرئيس",
+      "docNo": "",
+      "toEntity": "",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-07-09",
+      "followStart": "2026-07-09",
+      "type": "int",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "التنوع الاحيائي\nللتواصل هاتفيا وكتابيا مع صاحب الطلب وافادته بالمتطلبات خلال ٣ ساعات",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
