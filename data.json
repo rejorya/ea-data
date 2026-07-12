@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-12T06:15:29.040Z",
+  "exportedAt": "2026-07-12T06:16:10.189Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24753,6 +24753,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1783836968108.773,
+      "title": "مشروع تطوير خور الخويرات الفوارس بولاية بركاء",
+      "from": "وزارة الاسكان والتخطيط العمراني",
+      "docNo": "1170/3/2022v408-20",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "normal",
+      "date": "2026-07-05",
+      "followStart": "2026-07-12",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "std14",
+      "note": "نائب الرئيس\nالالتزام البيئي\nللدراسة بالتنسيق مع الادارة واستطلاع رآي موارد المياه والافادة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
