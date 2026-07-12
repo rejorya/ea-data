@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-12T06:09:48.076Z",
+  "exportedAt": "2026-07-12T06:10:20.714Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24728,15 +24728,31 @@
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-07-05",
-      "followStart": "2026-07-12",
-      "type": "int",
+      "followStart": "2026-07-09",
+      "type": "ext",
       "slaMode": "rais",
       "slaDays": 3,
-      "kpi": "",
+      "kpi": "wd3",
       "note": "نائب الرئيس\nالغطاء النباتي\nللافادة خلال ٣ ايام عمل",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-07-12",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-07-09",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "directives": [
