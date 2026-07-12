@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-12T06:16:29.110Z",
+  "exportedAt": "2026-07-12T06:17:37.827Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24764,15 +24764,31 @@
       "priority": "urgent",
       "confidentiality": "normal",
       "date": "2026-07-05",
-      "followStart": "2026-07-12",
+      "followStart": "2026-07-09",
       "type": "ext",
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "std14",
       "note": "نائب الرئيس\nالالتزام البيئي\nللدراسة بالتنسيق مع الادارة واستطلاع رآي موارد المياه والافادة",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-07-12",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-07-09",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "directives": [
