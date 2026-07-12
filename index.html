@@ -1389,10 +1389,16 @@ body.viewer-only .print-btn { display: inline-block !important; }
         <li>قبل المسح، يُنزَّل تلقائياً ملف نسخة احتياطية كاملة على جهازك.</li>
         <li>للتأكيد، اكتبي كلمة <b style="color:#c0392b">مسح</b> في الحقل ثم اضغطي الزر.</li>
       </ul>
+      <div style="margin:0 0 10px;padding:10px 12px;background:#eafaf1;border-right:4px solid #1e8449;border-radius:6px">
+        <label style="display:flex;align-items:center;gap:8px;font-size:12.5px;color:#1e8449;font-weight:700;cursor:pointer">
+          <input type="checkbox" id="wipeKeepOpen" checked style="width:16px;height:16px">
+          الإبقاء على المواضيع المفتوحة (قيد الإجراء) — تظهر تلقائياً كمُرحَّلات في الفترة الجديدة
+        </label>
+      </div>
       <div class="fg2">
         <div class="fgs"><label>اكتبي «مسح» للتأكيد</label><input id="wipeConfirm" placeholder="مسح" autocomplete="off"></div>
       </div>
-      <button class="btn" style="background:#c0392b;color:#fff;font-weight:700" onclick="wipeAllTopics()">🗑️ مسح كل المواضيع نهائياً</button>
+      <button class="btn" style="background:#c0392b;color:#fff;font-weight:700" onclick="wipeAllTopics()">🗑️ مسح المواضيع (بداية فترة جديدة)</button>
     </div>
   </div>
 </div>
@@ -4803,7 +4809,7 @@ function refreshWeekly() {
     return;
   }
   
-  const newT = D.topics.filter(t => t.date >= from && t.date <= to && !t.fromDiscussionId);
+  const newT = D.topics.filter(t => { const rd = refDate(t); return rd >= from && rd <= to && !t.fromDiscussionId; });
   const clT = D.topics.filter(t => t.status === 'closed' && t.closedAt >= from && t.closedAt <= to);
   const escT = D.topics.filter(t => t.status === 'esc');
   const opT = D.topics.filter(t => t.status !== 'closed');
@@ -4858,7 +4864,7 @@ function refreshMonthly() {
   const prefix = `${year}-${String(monthNum).padStart(2,'0')}`;
   
   // المستلمة في الشهر
-  const inM = D.topics.filter(t => t.date && t.date.startsWith(prefix) && !t.fromDiscussionId);
+  const inM = D.topics.filter(t => { const rd = refDate(t); return rd && rd.startsWith(prefix) && !t.fromDiscussionId; });
   // المغلقة في الشهر (مهما كان تاريخ استلامها)
   const clM = D.topics.filter(t => t.closedAt && t.closedAt.startsWith(prefix));
   // من المستلمة في الشهر — كم منها أُغلق فعلياً (هذا هو المعيار الصحيح للنسبة)
@@ -4877,8 +4883,8 @@ function refreshMonthly() {
   setText('m-tot', inM.length);
   setText('m-int', intM.length);
   setText('m-ext', extM.length);
-  setText('m-don', clM.length);
-  setText('m-op', opM.length);
+  setText('m-don', closedFromMonth.length);
+  setText('m-op', inM.filter(t => t.status !== 'closed').length);
   setText('m-disc', discM.length);
   setText('m-pct', pct + '%');
   setText('m-dirpct', dirsPct + '%');
@@ -4926,22 +4932,22 @@ function refreshQuarterly() {
   const months = getQuarterMonths(type);
   const yearStr = String(year);
   
-  const inP = D.topics.filter(t => t.date && months.some(m => t.date.startsWith(`${yearStr}-${m}`)));
-  const clP = D.topics.filter(t => t.closedAt && months.some(m => t.closedAt.startsWith(`${yearStr}-${m}`)));
-  // من المستلمة في الفترة — كم منها أُغلق فعلياً
+  // أساس التاريخ: تاريخ الاستلام للمتابعة (refDate) — منطق تقرير المتابعة
+  const inP = D.topics.filter(t => { const rd = refDate(t); return rd && months.some(m => rd.startsWith(`${yearStr}-${m}`)) && !t.fromDiscussionId; });
   const closedFromPeriod = inP.filter(t => t.status === 'closed');
-  const opP = D.topics.filter(t => t.status !== 'closed');
-  const carP = D.topics.filter(t => t.status !== 'closed' && t.date && t.date < `${yearStr}-01-01`);
-  // النسبة الصحيحة (مضمونة ≤ 100%)
+  const opP = inP.filter(t => t.status !== 'closed');
+  // المرحّل: كل مفتوح استُلم للمتابعة قبل بداية أول شهر في الفترة
+  const periodStart = `${yearStr}-${months[0]}-01`;
+  const carP = D.topics.filter(t => { const rd = refDate(t); return t.status !== 'closed' && rd && rd < periodStart; });
   const pct = inP.length > 0 ? Math.round((closedFromPeriod.length / inP.length) * 100) : 0;
   
   setText('q-tot', inP.length);
-  setText('q-don', clP.length);
+  setText('q-don', closedFromPeriod.length);
   setText('q-op', opP.length);
   setText('q-car', carP.length);
   setText('q-pct', pct + '%');
   
-  $('q-don-list').innerHTML = clP.map((t,i) => `<tr><td>${i+1}</td><td>${t.title}</td><td>${t.from}</td><td>${fmtDate(t.closedAt)}</td></tr>`).join('') || noData(4);
+  $('q-don-list').innerHTML = closedFromPeriod.map((t,i) => `<tr><td>${i+1}</td><td>${t.title}</td><td>${t.from}</td><td>${fmtDate(t.closedAt)}</td></tr>`).join('') || noData(4);
   $('q-car-list').innerHTML = carP.map((t,i) => `<tr><td>${i+1}</td><td>${t.title}</td><td>${t.from}</td><td>${fmtDate(t.date)}</td></tr>`).join('') || noData(4);
   $('q-op-list').innerHTML = opP.slice(0,50).map((t,i) => `<tr><td>${i+1}</td><td>${t.title}</td><td>${t.from}</td><td>${fmtDate(t.date)}</td></tr>`).join('') || noData(4);
   
@@ -4999,9 +5005,13 @@ function saveReport(type) {
   }
 }
 
+// 📅 أساس التاريخ في كل التقارير: تاريخ استلام الموضوع للمتابعة (توجيه الرئيس)
+// وليس تاريخ الكتاب الأصلي الذي قد يكون قديماً — مع رجوع لتاريخ الاستلام العام إن لم يُحدَّد
+function refDate(t) { return t.followStart || t.date || ''; }
+
 function collectWeeklyData() {
   const from = val('wFrom'), to = val('wTo');
-  const newT = D.topics.filter(t => t.date >= from && t.date <= to && !t.fromDiscussionId);
+  const newT = D.topics.filter(t => { const rd = refDate(t); return rd >= from && rd <= to && !t.fromDiscussionId; });
   const clT = D.topics.filter(t => t.status === 'closed' && t.closedAt >= from && t.closedAt <= to);
   const escT = D.topics.filter(t => t.status === 'esc');
   const opT = D.topics.filter(t => t.status !== 'closed');
@@ -5020,7 +5030,7 @@ function collectWeeklyData() {
   const lateNow = newT.filter(t => { try{ return t.status!=='closed' && getKpiStatus(t).state==='late'; }catch(e){ return false; } }).length;
   const escNow = newT.filter(t => t.status==='esc' || t.status==='ready_esc').length;
   let _wcd=0,_wcn=0;
-  clT.forEach(t=>{ if(t.date&&t.closedAt){ try{ const d=businessDaysBetween(t.date,t.closedAt); if(d>=0&&d<400){_wcd+=d;_wcn++;} }catch(e){} } });
+  clT.forEach(t=>{ const rd=refDate(t); if(rd&&t.closedAt){ try{ const d=businessDaysBetween(rd,t.closedAt); if(d>=0&&d<400){_wcd+=d;_wcn++;} }catch(e){} } });
   const avgComplete = _wcn ? Math.round((_wcd/_wcn)*10)/10 : null;
   return {
     num: val('wNum') || `الأسبوع المنتهي في ${to}`,
@@ -5039,13 +5049,11 @@ function collectMonthlyData() {
   const monthNum = MONTHS.indexOf(month) + 1;
   const prefix = `${year}-${String(monthNum).padStart(2,'0')}`;
   
-  const inM = D.topics.filter(t => t.date && t.date.startsWith(prefix) && !t.fromDiscussionId);
-  const clM = D.topics.filter(t => t.closedAt && t.closedAt.startsWith(prefix));
-  // من المستلمة في الشهر — كم منها أُغلق
+  const inM = D.topics.filter(t => { const rd = refDate(t); return rd && rd.startsWith(prefix) && !t.fromDiscussionId; });
+  // منطق تقرير المتابعة: المنتهي = من وارد الشهر وأُغلق، والمفتوح = من وارد الشهر ولم يُغلق
   const closedFromMonth = inM.filter(t => t.status === 'closed');
-  const opM = D.topics.filter(t => t.status !== 'closed');
+  const opM = inM.filter(t => t.status !== 'closed');
   const discM = D.topics.filter(t => t.status === 'disc');
-  // النسبة الصحيحة (مضمونة ≤ 100%)
   const pct = inM.length > 0 ? Math.round((closedFromMonth.length / inM.length) * 100) : 0;
   
   const dirsTot = D.directives.length;
@@ -5055,7 +5063,7 @@ function collectMonthlyData() {
   // مناقشات الرئيس خلال الشهر (من الوحدة المستقلة)، مع رجوع للنص اليدوي
   // متوسط مدة الإنجاز للمواضيع المغلقة هذا الشهر (أيام عمل)
   let _cd=0,_cn=0;
-  clM.forEach(t=>{ if(t.date&&t.closedAt){ try{ const d=businessDaysBetween(t.date,t.closedAt); if(d>=0&&d<400){_cd+=d;_cn++;} }catch(e){} } });
+  closedFromMonth.forEach(t=>{ const rd=refDate(t); if(rd&&t.closedAt){ try{ const d=businessDaysBetween(rd,t.closedAt); if(d>=0&&d<400){_cd+=d;_cn++;} }catch(e){} } });
   const avgComplete = _cn ? Math.round((_cd/_cn)*10)/10 : null;
   const monthDisc = (D.discussions||[]).filter(d => (d.date||'').startsWith(prefix) && d.status !== 'upcoming')
                       .sort((a,b)=>(a.date||'').localeCompare(b.date||''));
@@ -5066,11 +5074,11 @@ function collectMonthlyData() {
     month, year,
     tot: inM.length, int: inM.filter(t => t.type === 'int').length,
     ext: inM.filter(t => t.type === 'ext').length,
-    don: clM.length, op: opM.length, disc: monthDisc.length || discM.length, avgComplete,
+    don: closedFromMonth.length, op: opM.length, disc: monthDisc.length || discM.length, avgComplete,
     lateNow: inM.filter(t => { try{ return t.status!=='closed' && getKpiStatus(t).state==='late'; }catch(e){ return false; } }).length,
     escNow: inM.filter(t => t.status==='esc' || t.status==='ready_esc').length,
     pct, dirpct: dirsPct,
-    inMonth: inM, closedMonth: clM, openTopics: opM,
+    inMonth: inM, closedMonth: closedFromMonth, openTopics: opM,
     summary: val('mSummary'), notes: val('mNotes'), discList: finalDiscList,
     savedAt: new Date().toLocaleDateString('ar-SA')
   };
@@ -5081,12 +5089,21 @@ function collectQuarterlyData() {
   const months = getQuarterMonths(type);
   const yearStr = String(year);
   
-  const inP = D.topics.filter(t => t.date && months.some(m => t.date.startsWith(`${yearStr}-${m}`)));
-  const clP = D.topics.filter(t => t.closedAt && months.some(m => t.closedAt.startsWith(`${yearStr}-${m}`)));
+  const inP = D.topics.filter(t => { const rd = refDate(t); return rd && months.some(m => rd.startsWith(`${yearStr}-${m}`)) && !t.fromDiscussionId; });
   const closedFromPeriod = inP.filter(t => t.status === 'closed');
-  const opP = D.topics.filter(t => t.status !== 'closed');
-  const carP = D.topics.filter(t => t.status !== 'closed' && t.date && t.date < `${yearStr}-01-01`);
+  const opP = inP.filter(t => t.status !== 'closed');
+  const periodStart = `${yearStr}-${months[0]}-01`;
+  const carP = D.topics.filter(t => { const rd = refDate(t); return t.status !== 'closed' && rd && rd < periodStart; });
   const pct = inP.length > 0 ? Math.round((closedFromPeriod.length / inP.length) * 100) : 0;
+  // مناقشات سعادة الرئيس خلال الفترة (المنعقدة)
+  const discP = (D.discussions||[]).filter(d => d.date && months.some(m => String(d.date).startsWith(`${yearStr}-${m}`)) && d.status !== 'upcoming')
+                  .sort((a,b)=>(a.date||'').localeCompare(b.date||''));
+  // متوسط مدة الإنجاز (أيام عمل) للمنجز من وارد الفترة
+  let _qd=0,_qn=0;
+  closedFromPeriod.forEach(t=>{ const rd=refDate(t); if(rd&&t.closedAt){ try{ const d=businessDaysBetween(rd,t.closedAt); if(d>=0&&d<400){_qd+=d;_qn++;} }catch(e){} } });
+  const avgComplete = _qn ? Math.round((_qd/_qn)*10)/10 : null;
+  const lateNow = inP.filter(t => { try{ return t.status!=='closed' && getKpiStatus(t).state==='late'; }catch(e){ return false; } }).length;
+  const escNow = inP.filter(t => t.status==='esc' || t.status==='ready_esc').length;
   
   const dirsTot = D.directives.length;
   const dirsDone = D.directives.filter(d => d.status === 'done').length;
@@ -5096,9 +5113,11 @@ function collectQuarterlyData() {
     type, year,
     tot: inP.length, int: inP.filter(t => t.type === 'int').length,
     ext: inP.filter(t => t.type === 'ext').length,
-    don: clP.length, op: opP.length, car: carP.length,
+    don: closedFromPeriod.length, op: opP.length, car: carP.length,
+    disc: discP.length, avgComplete, lateNow, escNow,
     pct, dirpct: dirsPct,
-    inPeriod: inP, closedPeriod: clP, openTopics: opP, carriedTopics: carP,
+    inPeriod: inP, closedPeriod: closedFromPeriod, openTopics: opP, carriedTopics: carP,
+    discussions: discP,
     prev: val('qPrev'), summary: val('qSummary'), notes: val('qNotes'),
     savedAt: new Date().toLocaleDateString('ar-SA')
   };
@@ -5401,90 +5420,119 @@ function buildMonthlyHTML(m) {
 }
 
 function buildQuarterlyHTML(q) {
-  const opTable = q.openTopics.length > 0 ? `
-    <table>
-      <tr><th>المتابعات</th><th>الجهة المُتابَعة</th><th>طريقة ورود الرد</th><th>الاستلام</th><th>الجهة</th><th>الموضوع</th><th style="width:30pt">م</th></tr>
-      ${q.openTopics.slice(0,50).map((t,i) => `<tr${t.status==='split'?' style="background:#e5e7eb;color:#4b5563"':''}>
-        <td style="text-align:center"><b>${t.manualCount ?? t.followups.length}</b></td>
-        <td style="text-align:center;font-size:9pt">${t.followEntity ? FOLLOW_ENTITY_LABELS[t.followEntity] : '—'}</td><td style="text-align:center;font-size:9pt">${t.responseMethod ? RESPONSE_METHOD_LABELS[t.responseMethod] : '—'}</td>
-        <td>${fmtDate(t.date)}</td>
-        <td>${t.from||'—'}</td>
-        <td>${t.title}${t.status==='split'?' <span style="color:#6b7280;font-weight:700;font-size:9pt">↪ تجاوز لعدم استجابة المكتب</span>':''}</td>
+  const byDate = arr => [...(arr||[])].sort((a,b)=>(refDate(a)||'').localeCompare(refDate(b)||''));
+  const inP = byDate(q.inPeriod);
+  const opP = byDate(q.openTopics);
+  const clP = q.closedPeriod || [];
+  const carP = byDate(q.carriedTopics);
+  const discList = q.discussions || [];
+  const label = `${q.type} ${q.year}م`;
+
+  // أولاً: الوارد خلال الفترة
+  const inTable = inP.length ? `
+    <table class="data-table">
+      <tr><th style="width:28pt">م</th><th>الموضوع</th><th>الجهة</th><th>تاريخ الاستلام</th><th>الحالة</th></tr>
+      ${inP.map((t,i)=>`<tr>
         <td style="text-align:center">${i+1}</td>
-      </tr>`).join('')}
-    </table>` : '<p class="em">لا توجد مواضيع قيد الإجراء</p>';
-  
-  const carTable = q.carriedTopics.length > 0 ? `
-    <table>
-      <tr><th>تاريخ الاستلام</th><th>الجهة</th><th>الموضوع</th><th style="width:30pt">م</th></tr>
-      ${q.carriedTopics.map((t,i) => `<tr>
-        <td>${fmtDate(t.date)}</td>
+        <td>${t.title||'—'}</td>
         <td>${t.from||'—'}</td>
-        <td>${t.title}</td>
-        <td style="text-align:center">${i+1}</td>
+        <td style="text-align:center">${fmtDate(refDate(t))}</td>
+        <td style="text-align:center">${t.status==='closed'?'<span class="done-mark">منتهي ✓</span>':'<span class="prog-mark">قيد الإجراء</span>'}</td>
       </tr>`).join('')}
-    </table>` : '<p class="em">لا توجد متأخرات مرحّلة</p>';
-  
-  return `<!DOCTYPE html><html dir="rtl" lang="ar"><head><meta charset="UTF-8"><title>${q.type}</title><style>${REPORT_STYLES}</style></head><body>
+    </table>` : '<p class="em">لا توجد معاملات واردة خلال الفترة</p>';
+
+  // ثانياً: المنجز من وارد الفترة
+  const doneList = clP.length ? `
+    <ol class="numlist">${clP.map(t=>`<li>${t.title||'—'}${t.from?` <span class="src">— ${t.from}</span>`:''}</li>`).join('')}</ol>`
+    : '<p class="em">لا توجد موضوعات مُنجزة خلال الفترة</p>';
+
+  // ثالثاً: المناقشات مع سعادة الرئيس (تلقائياً من وحدة المناقشات)
+  const discCount = discList.length || q.disc || 0;
+  const discHTML = discList.length ? `
+    <table class="data-table">
+      <tr><th style="width:28pt">م</th><th>التاريخ</th><th>الموضوع</th><th>الحضور</th></tr>
+      ${discList.map((d,i)=>`<tr>
+        <td style="text-align:center">${i+1}</td>
+        <td style="text-align:center">${fmtDate(d.date)}</td>
+        <td>${d.title||'—'}</td>
+        <td style="font-size:9pt">${d.attendees||'—'}</td>
+      </tr>`).join('')}
+    </table>` : '<p class="em">لا توجد مناقشات منعقدة خلال الفترة</p>';
+
+  // رابعاً: المرحّل من فترات سابقة (مفتوح استُلم قبل بداية الفترة)
+  const carTable = carP.length ? `
+    <table class="data-table">
+      <tr><th style="width:28pt">م</th><th>الموضوع</th><th>الجهة</th><th>تاريخ الاستلام</th><th>عدد المتابعات</th></tr>
+      ${carP.map((t,i)=>`<tr${t.status==='split'?' style="background:#e5e7eb;color:#4b5563"':''}>
+        <td style="text-align:center">${i+1}</td>
+        <td>${t.title||'—'}${t.status==='split'?' <span style="color:#6b7280;font-weight:700;font-size:9pt">↪ تجاوز لعدم استجابة المكتب</span>':''}</td>
+        <td>${t.from||'—'}</td>
+        <td style="text-align:center">${fmtDate(refDate(t))}</td>
+        <td style="text-align:center"><b>${t.manualCount ?? (t.followups?t.followups.length:0)}</b></td>
+      </tr>`).join('')}
+    </table>` : '<p class="em">لا توجد معاملات مُرحَّلة من فترات سابقة ✅</p>';
+
+  // خامساً: قيد الإجراء من وارد الفترة
+  const opTable = opP.length ? `
+    <table class="data-table">
+      <tr><th style="width:28pt">م</th><th>الموضوع</th><th>الجهة</th><th>تاريخ الاستلام</th><th>الجهة المُتابَعة</th><th>عدد المتابعات</th></tr>
+      ${opP.map((t,i)=>`<tr${t.status==='split'?' style="background:#e5e7eb;color:#4b5563"':''}>
+        <td style="text-align:center">${i+1}</td>
+        <td>${t.title||'—'}${t.status==='split'?' <span style="color:#6b7280;font-weight:700;font-size:9pt">↪ تجاوز لعدم استجابة المكتب</span>':''}</td>
+        <td>${t.from||'—'}</td>
+        <td style="text-align:center">${fmtDate(refDate(t))}</td>
+        <td style="text-align:center;font-size:9pt">${t.followEntity ? FOLLOW_ENTITY_LABELS[t.followEntity] : '—'}</td>
+        <td style="text-align:center"><b>${t.manualCount ?? (t.followups?t.followups.length:0)}</b></td>
+      </tr>`).join('')}
+    </table>` : '<p class="em">لا توجد موضوعات قيد الإجراء من وارد الفترة</p>';
+
+  return `<!DOCTYPE html><html dir="rtl" lang="ar"><head><meta charset="UTF-8"><title>التقرير ${q.type.includes('نصف')?'النصف':'الربع'} سنوي — ${label}</title><style>${WEEKLY_STYLES}</style></head><body>
     <div class="header">
       <h1>التقرير ${q.type.includes('نصف')?'النصف':'الربع'} سنوي للمتابعة الداخلية</h1>
-      <div class="sub">${q.type} ${q.year}م</div>
-      <div class="sub">مكتب رئيس الهيئة — إعداد: رحاب بنت نصيب الفرج</div>
+      <div class="period">${label}</div>
+      <div class="prep">إعداد ومتابعة: رحاب الفرج — أخصائية تنسيق ومتابعة — مكتب الرئيس</div>
     </div>
-    
-    <h2>أولاً: الملخص التنفيذي</h2>
+
+    <table class="summary-box" cellspacing="6" style="width:100%;border-collapse:separate;border-spacing:8pt;margin:18pt 0"><tr>
+      ${[[q.tot,'معاملة واردة خلال الفترة','#2370a3'],[q.don,'أُنجزت وأُغلقت','#1d8349'],[q.op,'قيد الإجراء','#b6950a'],[q.car,'مُرحَّلة من فترات سابقة','#c0392b'],[q.disc||0,'مناقشة مع سعادة الرئيس','#76448a']].map(c=>`<td bgcolor="#eef4fa" valign="top" style="background:#eef4fa;border:1pt solid #d6e2ee;border-top:4pt solid ${c[2]};border-radius:5pt;padding:12pt 8pt;text-align:center;font-size:11pt;color:#33414f"><b style="font-size:22pt;color:${c[2]};display:block;margin-bottom:4pt;font-weight:700">${c[0]}</b>${c[1]}</td>`).join('')}
+    </tr></table>
+    <p style="text-align:center;font-size:11.5pt;color:#555;margin:0 0 10pt">📈 نسبة الإنجاز من وارد الفترة: <b style="color:#1d8349">${q.pct}%</b> &nbsp;|&nbsp; 🔴 المتأخر حالياً: <b style="color:#c0392b">${q.lateNow??0}</b> &nbsp;|&nbsp; ⚠️ التصعيدات: <b style="color:#6b7280">${q.escNow??0}</b>${q.avgComplete!=null?` &nbsp;|&nbsp; ⏱ متوسط مدة الإنجاز: <b style="color:#1a3a5b">${q.avgComplete} يوم عمل</b>`:''} &nbsp;|&nbsp; 📌 تنفيذ التوجيهات: <b style="color:#76448a">${q.dirpct}%</b></p>
+
     <div class="intro">
-      يستعرض هذا التقرير حصيلة الأعمال المنجزة خلال <b>${q.type} ${q.year}م</b>،
-      ضمن منظومة المتابعة الداخلية لهيئة البيئة.
+      أرفع لكم تقريري عن <b>${label}</b>، متضمناً ملخص جميع المعاملات المستلمة للمتابعة والمنجزة خلال الفترة، وما حضرته من مناقشات مع سعادة الرئيس، والمعاملات المُرحَّلة من فترات سابقة، وما لا يزال قيد الإجراء والمتابعة.
     </div>
-    
-    <div class="stat-grid"><div class="stat-row">
-      <div class="stat"><span class="n">${q.tot}</span><span class="l">إجمالي المعاملات</span></div>
-      <div class="stat g"><span class="n">${q.don}</span><span class="l">المنجزة</span></div>
-      <div class="stat o"><span class="n">${q.op}</span><span class="l">قيد الإجراء</span></div>
-      <div class="stat r"><span class="n">${q.car}</span><span class="l">متأخرات مرحّلة</span></div>
-    </div></div>
-    
-    <h2>ثانياً: التحليل الإجمالي</h2>
-    <table>
-      <tr><th>البيان</th><th>إجمالي</th><th>داخلي</th><th>خارجي</th><th>منتهي</th><th>قيد الإجراء</th><th>الإنجاز%</th></tr>
-      <tr>
-        <td><b>${q.type}</b></td>
-        <td style="text-align:center"><b>${q.tot}</b></td>
-        <td style="text-align:center">${q.int}</td>
-        <td style="text-align:center">${q.ext}</td>
-        <td style="text-align:center;color:#1e8449"><b>${q.don}</b></td>
-        <td style="text-align:center;color:#d68910">${q.op}</td>
-        <td style="text-align:center"><b>${q.pct}%</b></td>
-      </tr>
-    </table>
-    
-    ${q.prev ? `<h2>ثالثاً: مستجدات الفترة السابقة</h2><div class="box">${q.prev.replace(/\n/g,'<br>')}</div>` : ''}
-    
-    ${q.summary ? `<h2>${q.prev?'رابعاً':'ثالثاً'}: ملخص إنجازات الفترة</h2><div class="box">${q.summary.replace(/\n/g,'<br>')}</div>` : ''}
-    
-    <h2>المعاملات المتأخرة المُرحَّلة</h2>
+
+    ${q.prev ? `<h2>مستجدات الفترة السابقة</h2><div class="box">${q.prev.replace(/\n/g,'<br>')}</div>` : ''}
+
+    <h2>أولاً: المعاملات الواردة خلال ${label}</h2>
+    <p>استُلمت للمتابعة خلال الفترة <b>${q.tot}</b> معاملة على النحو التالي:</p>
+    ${inTable}
+
+    <h2>ثانياً: ما أنجزته وأغلقته من موضوعات خلال الفترة</h2>
+    <p>أنجزت وأغلقت من وارد الفترة <b>${q.don}</b> موضوعاً بنسبة <b>${q.pct}%</b>:</p>
+    ${doneList}
+
+    <h2>ثالثاً: المناقشات والاجتماعات مع سعادة رئيس الهيئة</h2>
+    <p>حضرت خلال ${label} <b>${discCount}</b> مناقشةً مع سعادة رئيس الهيئة:</p>
+    ${discHTML}
+
+    <h2>رابعاً: المعاملات المُرحَّلة من فترات سابقة</h2>
+    <p>يبلغ عدد المعاملات المفتوحة المُرحَّلة من فترات سابقة <b>${q.car}</b> معاملة:</p>
     ${carTable}
-    
-    <h2>المعاملات قيد الإجراء</h2>
-    <p>بلغ إجمالي المعاملات قيد الإجراء <b>${q.op}</b> معاملة:</p>
+
+    <h2>خامساً: الموضوعات قيد الإجراء من وارد الفترة</h2>
+    <p>يبلغ إجمالي الموضوعات المفتوحة من وارد الفترة <b>${q.op}</b> موضوعاً:</p>
     ${opTable}
-    
-    <h2>المؤشرات</h2>
-    <table>
-      <tr><th>المؤشر</th><th>النسبة</th></tr>
-      <tr><td>نسبة الإنجاز العامة</td><td style="text-align:center;color:#1e8449"><b>${q.pct}%</b></td></tr>
-      <tr><td>نسبة تنفيذ التوجيهات</td><td style="text-align:center;color:#7d3c98"><b>${q.dirpct}%</b></td></tr>
-    </table>
-    
-    ${q.notes ? `<h2>الملاحظات</h2><div class="note-box">${q.notes.replace(/\n/g,'<br>')}</div>` : ''}
-    
+
+    ${q.summary ? `<h2>ملخص الإنجازات</h2><div class="box">${q.summary.replace(/\n/g,'<br>')}</div>` : ''}
+    ${q.notes ? `<h2>ملاحظات وأسباب التأخير</h2><div class="note-box">${q.notes.replace(/\n/g,'<br>')}</div>` : ''}
+
+    <div class="closing-note">هذا ملخص أعمالي عن ${label}، وأنا بانتظار توجيهاتكم بشأن أي من الموضوعات المذكورة، لا سيما المُرحَّل والعاجل المفتوح منها.</div>
+
     <div class="signature">
       <div class="name">رحاب بنت نصيب الفرج</div>
-      <div class="role">أخصائية تنسيق ومتابعة</div>
-      <div class="role">مكتب رئيس هيئة البيئة</div>
+      <div class="role">أخصائية تنسيق ومتابعة — مكتب رئيس هيئة البيئة</div>
     </div>
-    <div class="closing"><b>هيئة البيئة — سلطنة عُمان</b><br>${q.savedAt||new Date().toLocaleDateString('ar-SA')} | متوافق مع ISO 9001:2015</div>
   </body></html>`;
 }
 
@@ -6703,13 +6751,16 @@ function wipeAllTopics() {
   if(!CU?.admin) return;
   const typed = val('wipeConfirm').trim();
   if(typed !== 'مسح') { alert('⚠️ للتأكيد اكتبي كلمة «مسح» في الحقل أولاً'); return; }
-  const n = D.topics.length;
-  if(!n) { alert('لا توجد مواضيع للمسح'); return; }
-  if(!confirm('⚠️ تحذير أخير:\n\nسيتم حذف ' + n + ' موضوع بكل متابعاتها نهائياً من المنصة والسحابة.\n\nستُنزَّل نسخة احتياطية على جهازك قبل المسح.\n\nهل أنتِ متأكدة تماماً؟')) return;
+  const keepOpen = !!($('wipeKeepOpen') && $('wipeKeepOpen').checked);
+  const openList = D.topics.filter(t => t.status !== 'closed');
+  const delCount = keepOpen ? (D.topics.length - openList.length) : D.topics.length;
+  if(!delCount) { alert('لا توجد مواضيع للمسح'); return; }
+  const keepMsg = keepOpen ? ('\n\n✅ سيبقى ' + openList.length + ' موضوعاً مفتوحاً — تظهر تلقائياً كمُرحَّلات في الفترة الجديدة.') : '';
+  if(!confirm('⚠️ تحذير أخير:\n\nسيتم حذف ' + delCount + ' موضوع بكل متابعاتها نهائياً من المنصة والسحابة.' + keepMsg + '\n\nستُنزَّل نسخة احتياطية على جهازك قبل المسح.\n\nهل أنتِ متأكدة تماماً؟')) return;
   // نسخة احتياطية تلقائية قبل المسح
   try { downloadBackupFile(buildBackupObject(), 'نسخة_قبل_المسح'); } catch(e) {}
-  // المسح
-  D.topics = [];
+  // المسح — مع الإبقاء على المفتوحة إن اختير
+  D.topics = keepOpen ? openList : [];
   clearFields(['wipeConfirm']);
   renderTopicsTable();
   refreshDashboard();
@@ -6717,7 +6768,7 @@ function wipeAllTopics() {
   try{ if(typeof renderNaibEsc==='function') renderNaibEsc(); }catch(e){}
   try{ if(typeof renderPerf==='function') renderPerf(); }catch(e){}
   autoSave();
-  alert('✅ تم مسح ' + n + ' موضوع.\nنُزّلت نسخة احتياطية على جهازك، والسحابة ستتحدّث تلقائياً.\nتقدرين الآن إضافة مواضيع جديدة.');
+  alert('✅ تم مسح ' + delCount + ' موضوع.' + (keepOpen && openList.length ? '\n📌 بقي ' + openList.length + ' موضوعاً مفتوحاً كمُرحَّلات للفترة الجديدة.' : '') + '\nنُزّلت نسخة احتياطية على جهازك، والسحابة ستتحدّث تلقائياً.');
 }
 
 function addUser() {
