@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-12T04:15:40.202Z",
+  "exportedAt": "2026-07-12T04:17:54.099Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24534,8 +24534,8 @@
       "date": "2026-07-05",
       "followStart": "2026-07-12",
       "type": "int",
-      "slaMode": "rais",
-      "slaDays": 5,
+      "slaMode": "kpi",
+      "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nالالتزام البيئي\nلعمل اللازم والافادة خلال اسبوع عمل",
       "status": "new",
