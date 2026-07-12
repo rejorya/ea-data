@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-12T04:40:28.163Z",
+  "exportedAt": "2026-07-12T04:40:41.999Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24569,14 +24569,30 @@
       "confidentiality": "normal",
       "date": "2026-07-09",
       "followStart": "2026-07-12",
-      "type": "int",
+      "type": "ext",
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nللافادة بالخلفيات",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-07-12",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-07-12",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "directives": [
