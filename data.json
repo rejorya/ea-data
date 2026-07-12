@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-12T05:46:31.017Z",
+  "exportedAt": "2026-07-12T05:46:53.235Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21673,7 +21673,7 @@
       "type": "ext",
       "kpi": "wweek",
       "note": "نائب الرئيس\nللالتقاء بممثل الشركة والافادة.",
-      "status": "open",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-06-08",
@@ -21730,18 +21730,32 @@
           "taqseem": "",
           "startDate": "2026-06-08",
           "daysSince": 19
+        },
+        {
+          "date": "2026-07-12",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+          "startDate": "2026-07-01",
+          "daysSince": 7
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 3,
-      "followEntity": "naib_office",
+      "manualCount": 4,
+      "followEntity": "taqseem",
       "responseMethod": "",
       "followStart": "2026-07-01",
       "docNo": "1170/3/2022v404-35",
       "toEntity": "نائب الرئيس",
       "priority": "normal",
       "confidentiality": "normal",
-      "closedAt": "2026-06-28"
+      "closedAt": "2026-06-28",
+      "taqseemName": "المديرية العامة للشؤون الادارية والمالية",
+      "divFollowDate": "2026-07-12"
     },
     {
       "id": 1780911645072.8655,
