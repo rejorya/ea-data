@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-12T05:35:29.995Z",
+  "exportedAt": "2026-07-12T05:36:00.986Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23635,11 +23635,23 @@
           "taqseem": "المديرية العامة للشؤون الادارية والمالية",
           "startDate": "2026-06-29",
           "daysSince": 8
+        },
+        {
+          "date": "2026-07-12",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+          "startDate": "2026-06-29",
+          "daysSince": 9
         }
       ],
       "sheet": "مُضاف يدوياً",
       "followEntity": "taqseem",
-      "manualCount": 5,
+      "manualCount": 6,
       "responseMethod": "",
       "divFollowDate": "2026-07-09"
     },
