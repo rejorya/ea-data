@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-12T09:45:27.769Z",
+  "exportedAt": "2026-07-12T09:46:28.249Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24795,7 +24795,7 @@
       "title": "تقرير تقييم الوضع الراهن لنظام إدارة الأداء الاستراتيجي.",
       "from": "قسم أمن المعلومات الإلكترونية",
       "docNo": "",
-      "toEntity": "",
+      "toEntity": "دائرة ضبط الجودة",
       "taqseemName": "",
       "priority": "normal",
       "confidentiality": "normal",
@@ -24804,11 +24804,28 @@
       "type": "int",
       "slaMode": "rais",
       "slaDays": 10,
-      "kpi": "",
+      "kpi": "w2week",
       "note": "",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-07-12",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-07-12",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "دائرة ضبط الجودة",
+      "responseMethod": ""
     }
   ],
   "directives": [
