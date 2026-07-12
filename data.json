@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-12T03:46:59.802Z",
+  "exportedAt": "2026-07-12T03:55:55.596Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24484,6 +24484,26 @@
       "followEntity": "taqseem",
       "responseMethod": "",
       "divFollowDate": "2026-07-09"
+    },
+    {
+      "id": 1783828545696.0305,
+      "title": "معلومات عن النمر العربي",
+      "from": "مكتب الرئيس",
+      "docNo": "1170/1/2022v16-34",
+      "toEntity": "مدير الاستدامة",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-21",
+      "followStart": "2026-07-09",
+      "type": "int",
+      "slaMode": "letter",
+      "slaDays": 5,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
