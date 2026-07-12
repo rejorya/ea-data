@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-12T04:09:16.525Z",
+  "exportedAt": "2026-07-12T04:14:43.434Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24521,6 +24521,26 @@
       "followEntity": "other",
       "otherEntityName": "مديرة مختصة  بالاستدامة",
       "responseMethod": ""
+    },
+    {
+      "id": 1783829681357.724,
+      "title": "بشأن خطاب شركة   Arva Greentech Remediation AG",
+      "from": "مكتب الرئيس",
+      "docNo": "",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-07-05",
+      "followStart": "2026-07-12",
+      "type": "int",
+      "slaMode": "rais",
+      "slaDays": 5,
+      "kpi": "",
+      "note": "نائب الرئيس\nالالتزام البيئي\nلعمل اللازم والافادة خلال اسبوع عمل",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
