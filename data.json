@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-12T05:04:28.967Z",
+  "exportedAt": "2026-07-12T05:05:22.883Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24464,7 +24464,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "التنوع الاحيائي\nللتواصل هاتفيا وكتابيا مع صاحب الطلب وافادته بالمتطلبات خلال ٣ ساعات",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-07-09",
@@ -24483,7 +24483,8 @@
       "manualCount": 1,
       "followEntity": "taqseem",
       "responseMethod": "",
-      "divFollowDate": "2026-07-09"
+      "divFollowDate": "2026-07-09",
+      "closedAt": "2026-07-12"
     },
     {
       "id": 1783828545696.0305,
