@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-12T06:09:27.969Z",
+  "exportedAt": "2026-07-12T06:09:48.076Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24717,6 +24717,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1783836585998.4062,
+      "title": "جهود سلطنة عمان في دعم مبارة الشرق الاوسط الاخضر",
+      "from": "وزارة الثروة الزراعية و السمكية و موارد المياه",
+      "docNo": "1170/3/2022v408-21",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-07-05",
+      "followStart": "2026-07-12",
+      "type": "int",
+      "slaMode": "rais",
+      "slaDays": 3,
+      "kpi": "",
+      "note": "نائب الرئيس\nالغطاء النباتي\nللافادة خلال ٣ ايام عمل",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
