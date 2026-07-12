@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-12T03:55:55.596Z",
+  "exportedAt": "2026-07-12T04:09:16.525Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24499,11 +24499,28 @@
       "type": "int",
       "slaMode": "letter",
       "slaDays": 5,
-      "kpi": "",
+      "kpi": "wweek",
       "note": "",
-      "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "status": "awaiting",
+      "followups": [
+        {
+          "date": "2026-07-12",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "taqseem": "",
+          "startDate": "2026-07-09",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "other",
+      "otherEntityName": "مديرة مختصة  بالاستدامة",
+      "responseMethod": ""
     }
   ],
   "directives": [
