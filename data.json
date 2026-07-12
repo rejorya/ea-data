@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-12T04:41:28.158Z",
+  "exportedAt": "2026-07-12T04:42:15.243Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24568,7 +24568,7 @@
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-07-09",
-      "followStart": "2026-07-12",
+      "followStart": "2026-07-09",
       "type": "ext",
       "slaMode": "kpi",
       "slaDays": null,
