@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-12T09:44:27.765Z",
+  "exportedAt": "2026-07-12T09:44:44.426Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24789,6 +24789,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1783849482339.015,
+      "title": "تقرير تقييم الوضع الراهن لنظام إدارة الأداء الاستراتيجي.",
+      "from": "قسم أمن المعلومات الإلكترونية",
+      "docNo": "",
+      "toEntity": "",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-06-30",
+      "followStart": "2026-07-12",
+      "type": "int",
+      "slaMode": "rais",
+      "slaDays": 10,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
