@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-13T06:14:16.486Z",
+  "exportedAt": "2026-07-13T06:14:34.146Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24637,7 +24637,7 @@
       "slaDays": 5,
       "kpi": "wweek",
       "note": "",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-07-12",
@@ -24656,7 +24656,8 @@
       "manualCount": 1,
       "followEntity": "other",
       "otherEntityName": "مديرة مختصة  بالاستدامة",
-      "responseMethod": ""
+      "responseMethod": "via_follow",
+      "closedAt": "2026-07-13"
     },
     {
       "id": 1783829681357.724,
