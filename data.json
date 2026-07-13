@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-13T09:52:17.097Z",
+  "exportedAt": "2026-07-13T09:52:30.689Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21685,7 +21685,7 @@
       "type": "ext",
       "kpi": "wweek",
       "note": "نائب الرئيس\nللالتقاء بممثل الشركة والافادة.",
-      "status": "awaiting_div",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-06-08",
