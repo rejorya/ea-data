@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-13T07:54:16.285Z",
+  "exportedAt": "2026-07-13T07:55:11.228Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24990,6 +24990,26 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1783929309141.4421,
+      "title": "استضافة النسخة السابعة من المنتدى الإقليمي العربي للحد من مخاطر الكوارث.pdf",
+      "from": "وزارة المالية",
+      "docNo": "1170/3/2022v408-101",
+      "toEntity": "مكتب الرقابة البيئية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-07-09",
+      "followStart": "2026-07-13",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wd3",
+      "note": "مكتب الرقابة\nلمخاطبة الخارجية",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
