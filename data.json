@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-13T05:16:17.880Z",
+  "exportedAt": "2026-07-13T05:16:37.105Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24930,6 +24930,26 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1783919794633.459,
+      "title": "متابعة ورصد الجهود المبذولة في مجال حقوق الطفل خلال الفترة من (2023-منتصف 2026).pdf",
+      "from": "وزارة التنمية الاجتماعية",
+      "docNo": "1170/3/2022v409-12",
+      "toEntity": "",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-07-09",
+      "followStart": "2026-07-13",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
