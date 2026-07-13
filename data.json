@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-13T05:19:16.798Z",
+  "exportedAt": "2026-07-13T05:19:39.051Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24964,15 +24964,31 @@
       "priority": "normal",
       "confidentiality": "secret",
       "date": "2026-07-12",
-      "followStart": "2026-07-13",
+      "followStart": "2026-07-12",
       "type": "ext",
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nالالتزام البيئي\nمهم جدا\nلعمل اللازم",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-07-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "taqseem": "",
+          "startDate": "2026-07-12",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "directives": [
