@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-13T09:26:17.067Z",
+  "exportedAt": "2026-07-13T09:27:54.349Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22356,11 +22356,11 @@
       "title": "طرح المختبر البيئي للاستثمار",
       "from": "مكتب نائب رئيس الهيئة",
       "date": "2026-05-25",
-      "followStart": "2026-05-25",
+      "followStart": "2026-07-12",
       "type": "int",
       "kpi": "other",
       "note": "",
-      "status": "disc",
+      "status": "open",
       "followups": [
         {
           "date": "2026-05-25",
@@ -22374,9 +22374,9 @@
       ],
       "sheet": "مُضاف يدوياً",
       "followEntity": "taqseem",
-      "taqseemName": "المديرية العامة للشؤون الادارية والمالية",
+      "taqseemName": "المديرية العامة للبيئة بمحافظة ظفار",
       "docNo": "1181/56/2023-20",
-      "toEntity": "المديرية العامة للشؤون الادارية والمالية",
+      "toEntity": "المديرية العامة للبيئة بمحافظة ظفار",
       "priority": "normal",
       "confidentiality": "secret",
       "manualCount": 1,
