@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-13T05:18:16.798Z",
+  "exportedAt": "2026-07-13T05:19:03.749Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24953,6 +24953,26 @@
       "manualCount": 0,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1783919941672.63,
+      "title": "إجراءات حفظ المواد المشعة والتخلص منها.pdf",
+      "from": "المكتب السلطاني",
+      "docNo": "1170/3/2022v409-30",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-07-12",
+      "followStart": "2026-07-13",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "نائب الرئيس\nالالتزام البيئي\nمهم جدا\nلعمل اللازم",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
