@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-14T09:46:58.462Z",
+  "exportedAt": "2026-07-14T09:47:45.889Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24808,7 +24808,7 @@
       "from": "وزارة الثروة الزراعية و السمكية و موارد المياه",
       "docNo": "1170/3/2022v408-21",
       "toEntity": "نائب الرئيس",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة لتنمية الغطاء النباتي",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-07-05",
@@ -24831,12 +24831,25 @@
           "taqseem": "",
           "startDate": "2026-07-09",
           "daysSince": 1
+        },
+        {
+          "date": "2026-07-14",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة لتنمية الغطاء النباتي",
+          "startDate": "2026-07-09",
+          "daysSince": 3
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
-      "followEntity": "naib_office",
-      "responseMethod": ""
+      "manualCount": 2,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-07-14"
     },
     {
       "id": 1783836968108.773,
