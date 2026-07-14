@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-14T09:11:56.430Z",
+  "exportedAt": "2026-07-14T09:12:21.736Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23770,7 +23770,7 @@
       "slaDays": null,
       "kpi": "wweek",
       "note": "استلام الاستمارة بعد المراجعه للعرض على الرئيس",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-06-29",
@@ -23813,8 +23813,9 @@
       "divFollowDate": "2026-07-01",
       "followEntity": "rais_depts",
       "manualCount": 3,
-      "responseMethod": "via_follow",
-      "closedAt": "2026-07-01"
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-07-14",
+      "raisDeptName": ""
     },
     {
       "id": 1782719027487.404,
