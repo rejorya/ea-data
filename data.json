@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-14T08:06:55.623Z",
+  "exportedAt": "2026-07-14T08:07:10.950Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24862,15 +24862,36 @@
       "id": 1783914402479.2903,
       "title": "مشروع تكامل الرقابة البيئية على المحميات الطبيعية بين هيئة البيئة ومؤسسة الأمن والسلامة.pdf",
       "from": "مناقشة سعادة الرئيس",
-      "date": "2026-07-12",
+      "date": "2026-07-01",
       "followStart": "2026-07-12",
       "type": "int",
-      "kpi": "",
-      "note": "توجيه من مناقشة مع الرئيس: موعد المناقشة يوم الاحد الموافق 12/7/2026 الساعة 11.30 صباحا",
+      "kpi": "wweek",
+      "note": "",
       "status": "open",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-07-14",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-07-12",
+          "daysSince": 2
+        }
+      ],
       "sheet": "من المناقشات",
-      "fromDiscussionId": 1783242444439.9136
+      "fromDiscussionId": 1783242444439.9136,
+      "docNo": "",
+      "toEntity": "مكتب الرقابة البيئية",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "مكتب الرقابة البيئية",
+      "responseMethod": ""
     },
     {
       "id": 1783914418511.5283,
