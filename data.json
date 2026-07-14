@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-14T07:54:55.592Z",
+  "exportedAt": "2026-07-14T07:55:04.415Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24477,26 +24477,6 @@
       "otherEntityName": "مكتب متابعة  تنفيذ رؤية عمان 2024",
       "responseMethod": "via_follow",
       "closedAt": "2026-07-09"
-    },
-    {
-      "id": 1783502318271.8604,
-      "title": "تنفيذ عمليات التدقيق لتقييم مدى كفاءة أنظمة الجودة في مكتب الرئيس",
-      "from": "دائرة ضبط الجودة",
-      "docNo": "",
-      "toEntity": "مكتب الرئيس",
-      "taqseemName": "",
-      "priority": "normal",
-      "confidentiality": "normal",
-      "date": "2026-07-08",
-      "followStart": "2026-07-08",
-      "type": "int",
-      "slaMode": "kpi",
-      "slaDays": null,
-      "kpi": "other",
-      "note": "",
-      "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
     },
     {
       "id": 1783571960543.0312,
