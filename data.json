@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-14T09:23:55.698Z",
+  "exportedAt": "2026-07-14T09:24:44.586Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24583,7 +24583,7 @@
       "slaDays": null,
       "kpi": "wd3",
       "note": "يعد خطاب شكر على ادراج المشروع مع ضرورة المطالبة بتوفير الاعتمادات الكاملة ل 12 محطة ",
-      "status": "ready_esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-07-09",
@@ -24626,7 +24626,8 @@
       "manualCount": 3,
       "followEntity": "taqseem",
       "responseMethod": "",
-      "divFollowDate": "2026-07-09"
+      "divFollowDate": "2026-07-09",
+      "closedAt": "2026-07-14"
     },
     {
       "id": 1783577100497.883,
