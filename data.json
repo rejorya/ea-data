@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-14T07:24:56.099Z",
+  "exportedAt": "2026-07-14T07:25:47.673Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25052,6 +25052,26 @@
       "followEntity": "rais_depts",
       "raisDeptName": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1784013945371.3406,
+      "title": "ضرورة أن تكون لدى كافة وحدات الجهاز الإداري للدولة والمنشآت والشركات خطط للطوارئ لتفعيلها وقت الحاجة.pdf",
+      "from": "الامانة العامة لمجلس الوزراء",
+      "docNo": "1170/3/2022v409-15",
+      "toEntity": "نائب الرئيس -مركز الطوارئ البيئية -مكتب الرقابة البيئية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "top_secret",
+      "date": "2026-07-09",
+      "followStart": "2026-07-14",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "نائب الرئيس\nمركز الطوارئ\nالرقابة\nلوضع التوجيهات السامية محل التنفيذ\n\nمكتب الرئيس\nللمتابعة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
