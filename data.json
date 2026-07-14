@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-14T07:58:55.596Z",
+  "exportedAt": "2026-07-14T07:59:55.995Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25132,6 +25132,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1784015994389.0515,
+      "title": "إعداد التقارير المتصلة بالميثاق العربي لحقوق الانسان",
+      "from": "وزارة العدل والشؤون القانونية",
+      "docNo": "1170/3/2022v409-33",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-07-12",
+      "followStart": "2026-07-13",
+      "type": "ext",
+      "slaMode": "letter",
+      "slaDays": 5,
+      "kpi": "",
+      "note": "نائب الرئيس\nالالتزام البيئي\nلعمل اللازم",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
