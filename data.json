@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-14T09:22:56.432Z",
+  "exportedAt": "2026-07-14T09:23:51.587Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24534,7 +24534,7 @@
       "slaDays": null,
       "kpi": "wd3",
       "note": "في انتظار محضر الاجتماع من جودة الهواء\n",
-      "status": "awaiting",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-07-09",
