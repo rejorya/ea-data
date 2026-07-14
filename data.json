@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-14T08:48:57.389Z",
+  "exportedAt": "2026-07-14T08:49:45.997Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21685,7 +21685,7 @@
       "type": "ext",
       "kpi": "wweek",
       "note": "نائب الرئيس\nللالتقاء بممثل الشركة والافادة.",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-06-08",
@@ -21765,7 +21765,7 @@
       "toEntity": "نائب الرئيس",
       "priority": "normal",
       "confidentiality": "normal",
-      "closedAt": "2026-06-28",
+      "closedAt": "2026-07-14",
       "taqseemName": "المديرية العامة للشؤون الادارية والمالية",
       "divFollowDate": "2026-07-12"
     },
