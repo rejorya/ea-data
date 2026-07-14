@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-14T07:55:55.592Z",
+  "exportedAt": "2026-07-14T07:56:40.898Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25111,11 +25111,27 @@
       "type": "int",
       "slaMode": "rais",
       "slaDays": 5,
-      "kpi": "",
+      "kpi": "wweek",
       "note": "نائب الرئيس\nالالتزام البيئي\nالادارية والمالية\nلا مانع من توفير زي الالتزام البيئي لجميع المختصين بالمحافظات ويجب اضافة تلك الخطوة في استمارة المشروع واحالتها الى التخطيط والرؤية خلال اسبوع ",
-      "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "status": "awaiting",
+      "followups": [
+        {
+          "date": "2026-07-14",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-07-12",
+          "daysSince": 2
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "directives": [
