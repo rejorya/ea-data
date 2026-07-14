@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-14T07:48:55.592Z",
+  "exportedAt": "2026-07-14T07:49:19.809Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24975,7 +24975,7 @@
       "title": "متابعة ورصد الجهود المبذولة في مجال حقوق الطفل خلال الفترة من (2023-منتصف 2026).pdf",
       "from": "وزارة التنمية الاجتماعية",
       "docNo": "1170/3/2022v409-12",
-      "toEntity": "",
+      "toEntity": "نائب الرئيس -دائرة التواصل والاعلام",
       "taqseemName": "",
       "priority": "normal",
       "confidentiality": "normal",
@@ -24984,14 +24984,28 @@
       "type": "ext",
       "slaMode": "kpi",
       "slaDays": null,
-      "kpi": "other",
-      "note": "",
+      "kpi": "gov5",
+      "note": "نائب الرئيس\nالتغير المناخي \nالاعلام \nللافادة",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-07-14",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_and_rais",
+          "taqseem": "",
+          "startDate": "2026-07-09",
+          "daysSince": 3
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 0,
-      "followEntity": "",
-      "responseMethod": ""
+      "manualCount": 1,
+      "followEntity": "naib_and_rais",
+      "responseMethod": "",
+      "raisDeptName": "نائب الرئيس -دائرة التواصل والاعلام"
     },
     {
       "id": 1783919941672.63,
