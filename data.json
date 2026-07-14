@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-14T07:26:55.568Z",
+  "exportedAt": "2026-07-14T07:27:02.937Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25070,8 +25070,25 @@
       "kpi": "gov5",
       "note": "نائب الرئيس\nمركز الطوارئ\nالرقابة\nلوضع التوجيهات السامية محل التنفيذ\n\nمكتب الرئيس\nللمتابعة",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-07-14",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_and_rais",
+          "taqseem": "",
+          "startDate": "2026-07-14",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_and_rais",
+      "raisDeptName": "",
+      "responseMethod": ""
     }
   ],
   "directives": [
