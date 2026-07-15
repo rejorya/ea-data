@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-15T05:13:53.586Z",
+  "exportedAt": "2026-07-15T05:14:48.647Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25406,6 +25406,26 @@
       "followEntity": "naib_and_rais",
       "raisDeptName": "نائب الرئيس -الدائرة القانونية",
       "responseMethod": ""
+    },
+    {
+      "id": 1784092485876.7278,
+      "title": "محضر الاجتماع 38 للفريق الفني المكلف  بمراجعة قوائم السلع الممنوعة والمقيدة.pdf",
+      "from": "شرطة عمان السلطانية",
+      "docNo": "1170/3/2022v409-66",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-07-13",
+      "followStart": "2026-07-15",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "نائب الرئيس\nالالتزام\nلعمل اللازم",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
