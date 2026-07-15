@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-15T05:02:50.153Z",
+  "exportedAt": "2026-07-15T05:03:43.644Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25375,7 +25375,7 @@
       "title": "مشروع اتفاقية تعاون في مجال النقل البحري بين حكومة سلطنة عمان وحكومة الكويت.pdf",
       "from": "وزارة النقل والاتصالات وتقنية المعلومات",
       "docNo": "1170/3/2022v409-68",
-      "toEntity": "",
+      "toEntity": "نائب الرئيس -الدائرة القانونية",
       "taqseemName": "",
       "priority": "normal",
       "confidentiality": "normal",
@@ -25387,8 +25387,25 @@
       "kpi": "naib3",
       "note": "نائب الرئيس\nالقانونية\nللمراجعة والافادة",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-07-15",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_and_rais",
+          "taqseem": "",
+          "startDate": "2026-07-15",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_and_rais",
+      "raisDeptName": "نائب الرئيس -الدائرة القانونية",
+      "responseMethod": ""
     }
   ],
   "directives": [
