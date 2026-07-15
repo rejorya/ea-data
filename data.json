@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-15T07:26:50.721Z",
+  "exportedAt": "2026-07-15T07:27:47.276Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -21899,7 +21899,7 @@
       "type": "int",
       "kpi": "other",
       "note": "نائب الرئيس\nلمقابلة المذكور والافادة.",
-      "status": "disc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-06-14",
@@ -21946,7 +21946,8 @@
       "docNo": "",
       "toEntity": "",
       "priority": "normal",
-      "confidentiality": "normal"
+      "confidentiality": "normal",
+      "closedAt": "2026-07-15"
     },
     {
       "id": 1780988012338.838,
