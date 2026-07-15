@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-15T07:27:47.276Z",
+  "exportedAt": "2026-07-15T07:28:47.214Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18987,10 +18987,22 @@
           "taqseem": "",
           "startDate": "2026-05-12",
           "daysSince": 43
+        },
+        {
+          "date": "2026-07-15",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "taqseem": "",
+          "startDate": "2026-05-12",
+          "daysSince": 46
         }
       ],
       "sheet": "Sheet1",
-      "manualCount": 5,
+      "manualCount": 6,
       "followEntity": "other",
       "responseMethod": "via_follow",
       "closedAt": "2026-06-28",
