@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-15T04:56:50.153Z",
+  "exportedAt": "2026-07-15T04:57:07.332Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25349,6 +25349,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1784091425235.2017,
+      "title": "طلب دعم مبادرة وطنية لإنتاج أعمال وثائقية تُوثّق الإرث البيئي لسلطنة عُمان وتعزّز حضورها إعلاميًا وعالميًا 245-2026.pdf",
+      "from": "الاستقامة للفضائيات العالمية",
+      "docNo": "1170/3/2022v408-13",
+      "toEntity": "",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-07-15",
+      "followStart": "2026-07-15",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "std14",
+      "note": "الاعلام\nللدراسة والافادة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
