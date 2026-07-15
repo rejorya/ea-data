@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-15T07:30:50.309Z",
+  "exportedAt": "2026-07-15T07:30:57.760Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18733,10 +18733,22 @@
           "taqseem": "",
           "startDate": "2026-07-12",
           "daysSince": 2
+        },
+        {
+          "date": "2026-07-15",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-07-12",
+          "daysSince": 3
         }
       ],
       "sheet": "Sheet1",
-      "manualCount": 10,
+      "manualCount": 11,
       "followEntity": "naib_office",
       "responseMethod": "via_follow",
       "taqseemName": "المديرية العامة لالتزام البيئي",
