@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-15T05:01:50.157Z",
+  "exportedAt": "2026-07-15T05:02:28.752Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25366,6 +25366,26 @@
       "slaDays": null,
       "kpi": "std14",
       "note": "الاعلام\nللدراسة والافادة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
+    },
+    {
+      "id": 1784091746667.1035,
+      "title": "مشروع اتفاقية تعاون في مجال النقل البحري بين حكومة سلطنة عمان وحكومة الكويت.pdf",
+      "from": "وزارة النقل والاتصالات وتقنية المعلومات",
+      "docNo": "1170/3/2022v409-68",
+      "toEntity": "",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-07-13",
+      "followStart": "2026-07-15",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "نائب الرئيس\nالقانونية\nللمراجعة والافادة",
       "status": "new",
       "followups": [],
       "sheet": "مُضاف يدوياً"
