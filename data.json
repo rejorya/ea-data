@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-15T06:44:50.261Z",
+  "exportedAt": "2026-07-15T06:44:55.830Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24976,16 +24976,24 @@
     {
       "id": 1783914453887.4333,
       "title": "مقترح ايقاف استيراد اسماك القرش ومشتقاتها من اليمن الى سلطنة عمان",
-      "from": "مناقشة سعادة الرئيس",
+      "from": "مكتب نائب رئيس الهيئة",
       "date": "2026-07-08",
-      "followStart": "2026-07-08",
+      "followStart": "2026-07-12",
       "type": "int",
       "kpi": "",
       "note": "توجيه من مناقشة مع الرئيس: موعد المناقشة يوم الاربعاءالموافق 8/7/2026 الساعة 12.45 مساء",
-      "status": "open",
+      "status": "closed",
       "followups": [],
       "sheet": "من المناقشات",
-      "fromDiscussionId": 1782727344151.4817
+      "fromDiscussionId": 1782727344151.4817,
+      "docNo": "1512/9/2022-50",
+      "toEntity": "نائب رئيس",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "closedAt": "2026-07-15",
+      "manualCount": 0,
+      "followEntity": "",
+      "responseMethod": ""
     },
     {
       "id": 1783916552462.3687,
