@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-16T03:38:00.833Z",
+  "exportedAt": "2026-07-16T03:38:24.159Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25587,6 +25587,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1784173101512.7288,
+      "title": "بشأن الخطاب الوارد من الدكتورة / جابرييل روزيلس المدير الشريك لشركة ماكون حول مشاريع الحلول القائمة على الطبيعة",
+      "from": "مكتب الرئيس",
+      "docNo": "",
+      "toEntity": "",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-07-05",
+      "followStart": "2026-07-15",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "نائب الرئيس\nالغطاء النباتي\nالتغير المناخي\nللاجتماع مع الدكتورة جابريلا والدكتورة مريم والافادة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
