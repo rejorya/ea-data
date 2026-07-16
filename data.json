@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-16T06:10:40.414Z",
+  "exportedAt": "2026-07-16T06:11:50.504Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25546,9 +25546,13 @@
       "slaDays": null,
       "kpi": "std14",
       "note": "الاعلام\nللدراسة والافادة",
-      "status": "new",
+      "status": "closed",
       "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "sheet": "مُضاف يدوياً",
+      "closedAt": "2026-07-16",
+      "manualCount": 0,
+      "followEntity": "",
+      "responseMethod": "direct_manager"
     },
     {
       "id": 1784091746667.1035,
