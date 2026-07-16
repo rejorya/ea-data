@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-16T03:16:46.598Z",
+  "exportedAt": "2026-07-16T03:17:17.492Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25550,6 +25550,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1784171835335.4045,
+      "title": "مشروع تطوير منظومة التدريب الحكومي 2026 – 2028م",
+      "from": "وزارة العمل",
+      "docNo": "1170/3/2022v410-6",
+      "toEntity": "",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "normal",
+      "date": "2026-07-15",
+      "followStart": "2026-07-16",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "وزارة العمل\n",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
