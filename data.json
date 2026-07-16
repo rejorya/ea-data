@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-16T03:44:59.779Z",
+  "exportedAt": "2026-07-16T03:59:29.019Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24870,7 +24870,7 @@
       "slaDays": 3,
       "kpi": "wd3",
       "note": "نائب الرئيس\nالغطاء النباتي\nللافادة خلال ٣ ايام عمل",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-07-12",
@@ -24901,7 +24901,8 @@
       "manualCount": 2,
       "followEntity": "taqseem",
       "responseMethod": "",
-      "divFollowDate": "2026-07-14"
+      "divFollowDate": "2026-07-14",
+      "closedAt": "2026-07-16"
     },
     {
       "id": 1783836968108.773,
