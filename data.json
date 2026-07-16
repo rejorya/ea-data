@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-16T03:23:46.616Z",
+  "exportedAt": "2026-07-16T03:24:16.129Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25111,7 +25111,7 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "نائب الرئيس\nالتغير المناخي \nالاعلام \nللافادة",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-07-14",
@@ -25142,7 +25142,8 @@
       "manualCount": 2,
       "followEntity": "naib_and_rais",
       "responseMethod": "",
-      "raisDeptName": "نائب الرئيس -دائرة التواصل والاعلام"
+      "raisDeptName": "نائب الرئيس -دائرة التواصل والاعلام",
+      "closedAt": "2026-07-16"
     },
     {
       "id": 1783919941672.63,
