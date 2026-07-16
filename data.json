@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-16T03:44:46.636Z",
+  "exportedAt": "2026-07-16T03:44:59.779Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25605,8 +25605,24 @@
       "kpi": "other",
       "note": "نائب الرئيس\nالغطاء النباتي\nالتغير المناخي\nللاجتماع مع الدكتورة جابريلا والدكتورة مريم والافادة",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-07-16",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-07-15",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "directives": [
