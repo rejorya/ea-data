@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-16T09:37:35.331Z",
+  "exportedAt": "2026-07-16T09:38:03.322Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25571,7 +25571,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nالقانونية\nللمراجعة والافادة",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-07-15",
@@ -25602,7 +25602,8 @@
       "manualCount": 2,
       "followEntity": "naib_and_rais",
       "raisDeptName": "نائب الرئيس -الدائرة القانونية",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-07-16"
     },
     {
       "id": 1784092485876.7278,
