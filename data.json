@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-16T04:34:59.340Z",
+  "exportedAt": "2026-07-16T04:35:26.273Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25034,10 +25034,18 @@
       "type": "int",
       "kpi": "",
       "note": "توجيه من مناقشة مع الرئيس: د موعد المناقشة يوم الاحد الموافق 12/7/2026 الساعة 12.00 ظهرا",
-      "status": "open",
+      "status": "closed",
       "followups": [],
       "sheet": "من المناقشات",
-      "fromDiscussionId": 1783574935454.7231
+      "fromDiscussionId": 1783574935454.7231,
+      "docNo": "",
+      "toEntity": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "closedAt": "2026-07-16",
+      "manualCount": 0,
+      "followEntity": "",
+      "responseMethod": ""
     },
     {
       "id": 1783914453887.4333,
