@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-19T10:04:09.992Z",
+  "exportedAt": "2026-07-19T10:05:05.494Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25233,7 +25233,7 @@
       "from": "المكتب السلطاني",
       "docNo": "1170/3/2022v409-30",
       "toEntity": "نائب الرئيس",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة للالتزام البيئي",
       "priority": "normal",
       "confidentiality": "secret",
       "date": "2026-07-12",
@@ -25243,7 +25243,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nالالتزام البيئي\nمهم جدا\nلعمل اللازم",
-      "status": "new",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-07-13",
@@ -25268,12 +25268,25 @@
           "taqseem": "",
           "startDate": "2026-07-12",
           "daysSince": 3
+        },
+        {
+          "date": "2026-07-19",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للالتزام البيئي",
+          "startDate": "2026-07-12",
+          "daysSince": 5
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 2,
-      "followEntity": "",
-      "responseMethod": ""
+      "manualCount": 3,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-07-19"
     },
     {
       "id": 1783929309141.4421,
