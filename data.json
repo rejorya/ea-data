@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-16T10:12:46.725Z",
+  "exportedAt": "2026-07-19T04:16:38.161Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25724,6 +25724,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1784434596065.6997,
+      "title": "شكوى ضد الموظف عيسى بن عبدالله على الجنيبي في هيئة البيئة بولاية هيماء.pdf",
+      "from": "شركة تاج الخليج العربية للتجارة",
+      "docNo": "1170/3/2022v408-15",
+      "toEntity": "مكتب الرقابة البيئية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-07-02",
+      "followStart": "2026-07-19",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wd3",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
