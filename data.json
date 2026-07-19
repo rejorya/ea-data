@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-19T04:16:57.848Z",
+  "exportedAt": "2026-07-19T04:39:55.000Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24840,13 +24840,13 @@
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-07-09",
-      "followStart": "2026-07-09",
+      "followStart": "2026-07-15",
       "type": "ext",
       "slaMode": "kpi",
       "slaDays": null,
-      "kpi": "naib3",
-      "note": "نائب الرئيس\nللافادة بالخلفيات",
-      "status": "closed",
+      "kpi": "other",
+      "note": "نائب الرئيس  (اخر موعد(10/10/2026)\nالغطاء النباتي\nادارة جنوب الشرقية\nيشكل فريق عمل من المديرية والادارة لوضع خطة لخمسة اعوام لتاهيل الغطاء النباتي والشجري في المحمية وما حولها واعداد دراسة بذلك تمهيدا لعرضها لطلب التمويل والدعم\n\nويرجى انجاز الدراسة والمخطط وبنك المشروعات والكلف المتوقعة خلال ٣ اشهر ولكم في ذلك الاستعانة باستشاري اذا تطلب",
+      "status": "open",
       "followups": [
         {
           "date": "2026-07-12",
@@ -24883,10 +24883,22 @@
           "taqseem": "",
           "startDate": "2026-07-09",
           "daysSince": 4
+        },
+        {
+          "date": "2026-07-19",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-07-15",
+          "daysSince": 2
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "naib_office",
       "responseMethod": "",
       "closedAt": "2026-07-15"
