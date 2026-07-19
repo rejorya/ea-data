@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-19T07:07:09.785Z",
+  "exportedAt": "2026-07-19T07:07:47.918Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -18957,7 +18957,7 @@
       "type": "int",
       "kpi": "other",
       "note": "",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-05-19",
@@ -19053,7 +19053,7 @@
       "manualCount": 6,
       "followEntity": "other",
       "responseMethod": "via_follow",
-      "closedAt": "2026-06-28",
+      "closedAt": "2026-07-19",
       "taqseemName": "مديرة الاستدامة",
       "followStart": "2026-05-12",
       "docNo": "1170/3/2022v400-39",
