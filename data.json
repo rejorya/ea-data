@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-19T09:43:09.974Z",
+  "exportedAt": "2026-07-19T09:43:47.765Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25683,7 +25683,7 @@
       "from": "وزارة العمل",
       "docNo": "1170/3/2022v410-6",
       "toEntity": "نائب الرئيس",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة للشؤون الادارية والمالية",
       "priority": "urgent",
       "confidentiality": "normal",
       "date": "2026-07-15",
@@ -25693,7 +25693,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nلعمل اللازم",
-      "status": "new",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-07-16",
@@ -25706,12 +25706,25 @@
           "taqseem": "",
           "startDate": "2026-07-15",
           "daysSince": 1
+        },
+        {
+          "date": "2026-07-19",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+          "startDate": "2026-07-15",
+          "daysSince": 2
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
-      "followEntity": "naib_office",
-      "responseMethod": ""
+      "manualCount": 2,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-07-19"
     },
     {
       "id": 1784173101512.7288,
