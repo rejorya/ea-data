@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-19T10:01:10.000Z",
+  "exportedAt": "2026-07-19T10:01:49.943Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25353,10 +25353,22 @@
           "taqseem": "",
           "startDate": "2026-07-14",
           "daysSince": 0
+        },
+        {
+          "date": "2026-07-19",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_and_rais",
+          "taqseem": "",
+          "startDate": "2026-07-14",
+          "daysSince": 3
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "naib_and_rais",
       "raisDeptName": "",
       "responseMethod": ""
