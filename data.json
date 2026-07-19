@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-19T09:55:10.120Z",
+  "exportedAt": "2026-07-19T09:56:33.689Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25645,7 +25645,7 @@
       "slaDays": null,
       "kpi": "doc2",
       "note": "نائب الرئيس\nالالتزام\nلعمل اللازم",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-07-15",
@@ -25675,7 +25675,8 @@
       "sheet": "مُضاف يدوياً",
       "manualCount": 2,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-07-19"
     },
     {
       "id": 1784171835335.4045,
