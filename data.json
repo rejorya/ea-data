@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-21T05:24:27.414Z",
+  "exportedAt": "2026-07-21T05:25:06.871Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25191,7 +25191,7 @@
       "type": "ext",
       "slaMode": "rais",
       "slaDays": 10,
-      "kpi": "",
+      "kpi": "w2week",
       "note": "الدكتورة مريم البوسعيدي\nللتنسيق مع التغير المناخي والتقسيمات ذات العلاقة وتدارس امكانية الاستضافة مع ايجاد تمويل من القطاع الخاص والافادة خلال عشرة ايام عمل",
       "status": "new",
       "followups": [
@@ -25218,10 +25218,22 @@
           "taqseem": "",
           "startDate": "2026-07-09",
           "daysSince": 4
+        },
+        {
+          "date": "2026-07-21",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "taqseem": "",
+          "startDate": "2026-07-09",
+          "daysSince": 8
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "",
       "responseMethod": ""
     },
