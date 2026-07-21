@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-21T05:41:24.567Z",
+  "exportedAt": "2026-07-21T05:41:28.935Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25365,7 +25365,7 @@
       "slaDays": null,
       "kpi": "wd3",
       "note": "مكتب الرقابة\nلمخاطبة الخارجية",
-      "status": "new",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-07-13",
@@ -25402,10 +25402,22 @@
           "taqseem": "",
           "startDate": "2026-07-12",
           "daysSince": 5
+        },
+        {
+          "date": "2026-07-21",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-07-12",
+          "daysSince": 7
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "rais_depts",
       "raisDeptName": "",
       "responseMethod": ""
