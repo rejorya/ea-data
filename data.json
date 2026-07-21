@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-21T08:16:23.089Z",
+  "exportedAt": "2026-07-21T08:17:02.476Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -22459,7 +22459,7 @@
       "type": "int",
       "kpi": "other",
       "note": "",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-05-25",
@@ -22479,7 +22479,8 @@
       "priority": "normal",
       "confidentiality": "secret",
       "manualCount": 1,
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-07-21"
     },
     {
       "id": 1781495302350.2554,
