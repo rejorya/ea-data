@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-21T08:57:23.128Z",
+  "exportedAt": "2026-07-21T08:58:14.217Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24635,7 +24635,7 @@
       "slaDays": null,
       "kpi": "wd3",
       "note": "في انتظار محضر الاجتماع من جودة الهواء\n",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-07-09",
@@ -24666,7 +24666,8 @@
       "manualCount": 2,
       "followEntity": "taqseem",
       "responseMethod": "",
-      "divFollowDate": "2026-07-09"
+      "divFollowDate": "2026-07-09",
+      "closedAt": "2026-07-21"
     },
     {
       "id": 1783572633007.5564,
