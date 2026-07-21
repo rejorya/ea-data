@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-21T09:06:22.259Z",
+  "exportedAt": "2026-07-21T09:06:41.449Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23291,7 +23291,7 @@
       "slaDays": null,
       "kpi": "std14",
       "note": "نائب الرئيس\nالالتزام البيئي\nللدراسة واعداد تقرير مماثل لمخاطبة وزير التجارة",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-06-23",
@@ -23358,7 +23358,8 @@
       "manualCount": 5,
       "followEntity": "taqseem",
       "responseMethod": "",
-      "divFollowDate": "2026-07-09"
+      "divFollowDate": "2026-07-09",
+      "closedAt": "2026-07-21"
     },
     {
       "id": 1782187966014.4639,
@@ -24400,7 +24401,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-07-01",
@@ -24455,7 +24456,8 @@
       "manualCount": 5,
       "followEntity": "taqseem",
       "responseMethod": "",
-      "divFollowDate": "2026-07-01"
+      "divFollowDate": "2026-07-01",
+      "closedAt": "2026-07-21"
     },
     {
       "id": 1783244327063.9807,
