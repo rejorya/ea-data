@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-21T10:07:25.201Z",
+  "exportedAt": "2026-07-21T10:08:16.766Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25982,10 +25982,22 @@
           "taqseem": "",
           "startDate": "2026-07-19",
           "daysSince": 0
+        },
+        {
+          "date": "2026-07-21",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-07-19",
+          "daysSince": 2
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "rais_depts",
       "raisDeptName": "",
       "responseMethod": ""
