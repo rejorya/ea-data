@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-21T06:58:25.527Z",
+  "exportedAt": "2026-07-21T06:59:03.649Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25945,6 +25945,26 @@
       "followEntity": "rais_depts",
       "raisDeptName": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1784617141568.4524,
+      "title": "إدماج المؤسسات الصغيرة والمتوسطة في الاقتصاد الدائري",
+      "from": "وزارة الإقتصاد",
+      "docNo": "1170/3/2022v410-46",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-07-19",
+      "followStart": "2026-07-21",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
