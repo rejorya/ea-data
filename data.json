@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-21T09:54:22.292Z",
+  "exportedAt": "2026-07-21T09:54:47.056Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25871,7 +25871,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nلعمل اللازم",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-07-16",
@@ -25902,7 +25902,8 @@
       "manualCount": 2,
       "followEntity": "taqseem",
       "responseMethod": "",
-      "divFollowDate": "2026-07-19"
+      "divFollowDate": "2026-07-19",
+      "closedAt": "2026-07-21"
     },
     {
       "id": 1784173101512.7288,
