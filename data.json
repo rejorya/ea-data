@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-22T05:24:15.442Z",
+  "exportedAt": "2026-07-22T05:25:11.424Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26063,20 +26063,36 @@
       "title": "تعزيز صون البيئة البحرية  في بحر المنظمة من خلال المحميات البحرية",
       "from": "مكتب الأمين التنفيذي",
       "docNo": "1170/3/2022v409-63",
-      "toEntity": "",
+      "toEntity": "نائب الرئيس",
       "taqseemName": "",
       "priority": "normal",
       "confidentiality": "secret",
       "date": "2026-07-13",
-      "followStart": "2026-07-22",
+      "followStart": "2026-07-14",
       "type": "ext",
       "slaMode": "letter",
       "slaDays": 38,
-      "kpi": "",
+      "kpi": "other",
       "note": "التسليم قبل 31 اغسطس",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-07-22",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-07-14",
+          "daysSince": 6
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "directives": [
