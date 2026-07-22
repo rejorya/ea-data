@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-22T04:55:25.366Z",
+  "exportedAt": "2026-07-22T04:55:40.833Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26037,6 +26037,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1784696138744.7588,
+      "title": "الموظفة أصيلة بنت سعيد سالم اليحمدي.pdf",
+      "from": "المجلس الاعلى للقضاء",
+      "docNo": "1170/3/2022v410-44",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-07-19",
+      "followStart": "2026-07-21",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
