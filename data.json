@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-23T04:13:57.276Z",
+  "exportedAt": "2026-07-23T08:06:54.800Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25096,10 +25096,22 @@
           "taqseem": "",
           "startDate": "2026-07-12",
           "daysSince": 7
+        },
+        {
+          "date": "2026-07-23",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-07-12",
+          "daysSince": 9
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "rais_depts",
       "raisDeptName": "دائرة ضبط الجودة",
       "responseMethod": ""
