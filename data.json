@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-22T10:17:48.049Z",
+  "exportedAt": "2026-07-23T04:12:37.869Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26054,9 +26054,13 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
-      "status": "new",
+      "status": "closed",
       "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "sheet": "مُضاف يدوياً",
+      "closedAt": "2026-07-23",
+      "manualCount": 0,
+      "followEntity": "naib_office",
+      "responseMethod": "direct_manager"
     },
     {
       "id": 1784696459718.7454,
