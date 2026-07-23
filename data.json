@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-07-23T08:06:54.800Z",
+  "exportedAt": "2026-07-23T08:13:04.964Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26021,7 +26021,7 @@
       "from": "وزارة الإقتصاد",
       "docNo": "1170/3/2022v410-46",
       "toEntity": "نائب الرئيس",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة للالتزام البيئي",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-07-19",
@@ -26044,12 +26044,25 @@
           "taqseem": "",
           "startDate": "2026-07-21",
           "daysSince": 0
+        },
+        {
+          "date": "2026-07-23",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للالتزام البيئي",
+          "startDate": "2026-07-21",
+          "daysSince": 2
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
-      "followEntity": "naib_office",
-      "responseMethod": ""
+      "manualCount": 2,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-07-23"
     },
     {
       "id": 1784696138744.7588,
