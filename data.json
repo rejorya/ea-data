@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-04T06:13:36.636Z",
+  "exportedAt": "2026-08-04T06:14:28.489Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26306,15 +26306,31 @@
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-08-02",
-      "followStart": "2026-08-04",
+      "followStart": "2026-08-02",
       "type": "int",
       "slaMode": "rais",
       "slaDays": 10,
-      "kpi": "",
+      "kpi": "w2week",
       "note": "نائب الرئيس\nالتنوع الاحيائي\nالادارية والمالية\nتوضع خطة لتنفيذ جميع التوصيات وترفع الينا خلال اسبوعين بحيث تكون الادارة وفق الاختصاص وبحسب نوع المبادرة",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-08-04",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-08-02",
+          "daysSince": 2
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "directives": [
