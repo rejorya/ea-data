@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-03T10:12:07.248Z",
+  "exportedAt": "2026-08-04T04:16:27.879Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25444,7 +25444,7 @@
       "slaDays": null,
       "kpi": "wd3",
       "note": "مكتب الرقابة\nلمخاطبة الخارجية",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-07-13",
@@ -25499,7 +25499,8 @@
       "manualCount": 4,
       "followEntity": "rais_depts",
       "raisDeptName": "",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-08-04"
     },
     {
       "id": 1784013945371.3406,
