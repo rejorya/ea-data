@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-04T06:05:36.637Z",
+  "exportedAt": "2026-08-04T06:05:44.089Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26259,6 +26259,26 @@
       "followEntity": "naib_and_rais",
       "raisDeptName": "الدائرة القانونية",
       "responseMethod": ""
+    },
+    {
+      "id": 1785823541959.501,
+      "title": "مشاركة الإيسيسكو في الدورة الحادية والثلاثين لمؤتمر الطراف بشأن تغير المناخ",
+      "from": "وزارة التعليم",
+      "docNo": "1170/3/2022v412-57",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-03",
+      "followStart": "2026-08-04",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "نائب الرئيس\nالتغير المناخي\nلعمل اللازم",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
