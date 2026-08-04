@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-04T04:16:27.879Z",
+  "exportedAt": "2026-08-04T04:37:02.862Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26185,6 +26185,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1785818220785.8765,
+      "title": "عقد الدراسة الاستشارية مه مجموعة إذكاء بخصوص  مشروع  بنك المعلومات البيئية.pdf",
+      "from": "شركة إدارة التحول الرقمي",
+      "docNo": "1170/3/2022v412-61",
+      "toEntity": "مدير التحول الرقمي/الدائرة القانونية",
+      "taqseemName": "مدير التحول الرقمي/الدائرة القانونية",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-03",
+      "followStart": "2026-08-04",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wd3",
+      "note": "مدير التحول الرقمي\nالقانونية\nللمناقشة والمراجعة والافادة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
