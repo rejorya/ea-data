@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-04T07:37:36.014Z",
+  "exportedAt": "2026-08-04T07:38:20.811Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26415,15 +26415,19 @@
       "priority": "urgent",
       "confidentiality": "normal",
       "date": "2026-07-29",
-      "followStart": "2026-08-04",
+      "followStart": "2026-08-02",
       "type": "ext",
-      "slaMode": "letter",
-      "slaDays": 10,
-      "kpi": "",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "w2week",
       "note": "مكتب الرؤية\nلوضع المتطلبات محل التنفيذ وانجازها خلال اسبوعين والتنسيق مع مكتب التنافسية لعقد الاجتماعات",
       "status": "new",
       "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 0,
+      "followEntity": "rais_depts",
+      "raisDeptName": "",
+      "responseMethod": ""
     }
   ],
   "directives": [
