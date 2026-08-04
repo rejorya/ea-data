@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-04T10:32:37.276Z",
+  "exportedAt": "2026-08-04T10:33:06.750Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26058,7 +26058,7 @@
       "slaDays": null,
       "kpi": "wd3",
       "note": "",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-07-19",
@@ -26089,7 +26089,8 @@
       "manualCount": 2,
       "followEntity": "rais_depts",
       "raisDeptName": "",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-08-04"
     },
     {
       "id": 1784617141568.4524,
