@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-04T04:44:40.827Z",
+  "exportedAt": "2026-08-04T04:45:10.653Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26240,8 +26240,25 @@
       "kpi": "naib3",
       "note": "نائب الرئيس\nالادارية والمالية\nالقانونية\nللافادة",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-08-04",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_and_rais",
+          "taqseem": "",
+          "startDate": "2026-08-04",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_and_rais",
+      "raisDeptName": "الدائرة القانونية",
+      "responseMethod": ""
     }
   ],
   "directives": [
