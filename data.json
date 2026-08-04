@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-04T04:37:02.862Z",
+  "exportedAt": "2026-08-04T04:37:32.554Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26203,8 +26203,25 @@
       "kpi": "wd3",
       "note": "مدير التحول الرقمي\nالقانونية\nللمناقشة والمراجعة والافادة",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-08-04",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-04",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "",
+      "responseMethod": ""
     }
   ],
   "directives": [
