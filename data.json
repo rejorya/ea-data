@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-04T10:21:36.536Z",
+  "exportedAt": "2026-08-04T10:21:43.280Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23220,7 +23220,7 @@
       "slaDays": 30,
       "kpi": "other",
       "note": "نائب الرئيس\nالالتزام البيئي\nتنفذ التوصيات ويتم افادتنا بما تم خلال شهر 2/8/2026\n\n",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-06-23",
@@ -23286,7 +23286,8 @@
       "sheet": "مُضاف يدوياً",
       "followEntity": "naib_office",
       "manualCount": 6,
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-08-04"
     },
     {
       "id": 1782187847998.8167,
