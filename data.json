@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-04T06:17:39.949Z",
+  "exportedAt": "2026-08-04T06:18:28.316Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26344,8 +26344,8 @@
       "date": "2026-07-28",
       "followStart": "2026-08-02",
       "type": "int",
-      "slaMode": "rais",
-      "slaDays": 1,
+      "slaMode": "kpi",
+      "slaDays": null,
       "kpi": "wweek",
       "note": "توضع خطة لاتمتة الخدمة الورقية ورقمنة ال ٦ خدمات الاخرى وذلك خلال اسبوع عمل",
       "status": "new",
