@@ -7061,7 +7061,13 @@ window.addEventListener('load', () => {
         closed:closed,
         silent:(t.status==='split'||t.responseMethod==='split')
       };
-    }).sort(function(a,b){ return (b.divDate||'').localeCompare(a.divDate||'') || (b.naibDays||0)-(a.naibDays||0); });
+    }).sort(function(a,b){
+      // ترتيب: المفتوح أولاً، ثم الأكثر تجاوزاً — يُحسب من تاريخ متابعة التقسيم إن بدأت، وإلا من تاريخ التوجيه
+      if(a.closed !== b.closed) return a.closed ? 1 : -1;
+      var da = a.divDate ? (a.divDays||0) : (a.naibDays||0);
+      var db = b.divDate ? (b.divDays||0) : (b.naibDays||0);
+      return db - da;
+    });
   }
   // فلتر الشهر الحالي للقسم ('all' = الكل)
   window._naibMonthFilter = window._naibMonthFilter || 'all';
@@ -7078,6 +7084,7 @@ window.addEventListener('load', () => {
     var allRows=_naibRows();
     var rows=_naibRowsFiltered();
     var withDiv=rows.filter(function(r){return !!r.divDate;}).length;
+    var divLateCnt=rows.filter(function(r){return !r.closed && r.divDate && r.divDays!=null && r.divDays>r.allowedDays;}).length;
     var closedCnt=rows.filter(function(r){return r.closed;}).length;
     // خيارات الأشهر من البيانات الفعلية (أشهر بدء متابعة التقسيم)
     var monthsSet={}; allRows.forEach(function(r){ if(r.divMonth) monthsSet[r.divMonth]=1; });
@@ -7094,10 +7101,21 @@ window.addEventListener('load', () => {
       var naibCol=(r.naibDays==null?'—':('<b style="color:'+(late3?'var(--red)':'var(--text2)')+'">'+r.naibDays+'</b> يوم'+(late3?' ⚠️':'')));
       var allowedCol='<b>'+r.allowedDays+'</b> يوم عمل'+(r.allowedCustom?' <span style="color:#7d3c98;font-size:10px">(مخصص)</span>':' <span style="color:#90a0b3;font-size:10px">(افتراضي)</span>');
       var divDateCol=r.divDate?_fmtD(r.divDate):'<span style="color:#90a0b3">لم تبدأ المتابعة مع التقسيم بعد</span>';
-      var divDaysCol=r.divDate?(r.divDays==null?'—':(r.divDays+' يوم')):'—';
-      var stBadge = r.closed
-        ? '<span style="background:#1d8349;color:#fff;padding:3px 9px;border-radius:7px;font-size:11px;font-weight:700">✅ أُغلق بعد متابعة التقسيم</span>'
-        : (r.silent?'<span style="background:var(--gray);color:#fff;padding:3px 9px;border-radius:7px;font-size:11px;font-weight:700">⚫ تجاوز لعدم الاستجابة</span>':'<span style="background:var(--red);color:#fff;padding:3px 9px;border-radius:7px;font-size:11px;font-weight:700">🔴 تجاوز مدة الرد</span>');
+      // الحساب الأساسي لتحديد التجاوز: من تاريخ متابعة التقسيم إن بدأت — وإلا من تاريخ التوجيه لمكتب النائب
+      var divLate = r.divDate && r.divDays!=null && r.divDays>r.allowedDays;
+      var divDaysCol=r.divDate?(r.divDays==null?'—':('<b style="color:'+(divLate?'var(--red)':'var(--text2)')+'">'+r.divDays+'</b> يوم'+(divLate?' ⚠️':''))):'—';
+      var stBadge;
+      if(r.closed){
+        stBadge='<span style="background:#1d8349;color:#fff;padding:3px 9px;border-radius:7px;font-size:11px;font-weight:700">✅ أُغلق بعد متابعة التقسيم</span>';
+      } else if(r.divDate){
+        stBadge = divLate
+          ? '<span style="background:var(--red);color:#fff;padding:3px 9px;border-radius:7px;font-size:11px;font-weight:700">🔴 تجاوز رد التقسيم</span>'
+          : '<span style="background:#d68910;color:#fff;padding:3px 9px;border-radius:7px;font-size:11px;font-weight:700">🟡 قيد متابعة التقسيم</span>';
+      } else if(r.silent){
+        stBadge='<span style="background:var(--gray);color:#fff;padding:3px 9px;border-radius:7px;font-size:11px;font-weight:700">⚫ تجاوز لعدم الاستجابة</span>';
+      } else {
+        stBadge='<span style="background:var(--red);color:#fff;padding:3px 9px;border-radius:7px;font-size:11px;font-weight:700">🔴 تجاوز مدة الرد</span>';
+      }
       return '<tr style="border-bottom:1px solid var(--border)'+(r.closed?';background:#f6fbf7':'')+'">'
         +'<td style="padding:10px 12px;text-align:center;color:var(--text2)">'+(i+1)+'</td>'
         +'<td style="padding:10px 12px;font-weight:600;max-width:260px">'+esc(r.t.title||'—')+'</td>'
@@ -7114,12 +7132,13 @@ window.addEventListener('load', () => {
     var top='<div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:14px">'
       +kpi('إجمالي المواضيع',rows.length,'var(--red)','تجاوز مكتب النائب — ضمن الفلتر الحالي')
       +kpi('بدأت متابعة التقسيم',withDiv,'#7d3c98','لعدم رد مكتب النائب')
+      +kpi('متجاوزة رد التقسيم حالياً',divLateCnt,'var(--red)','تجاوزت مدة الرد من تاريخ متابعة التقسيم')
       +kpi('أُغلقت بعد متابعة التقسيم',closedCnt,'#1d8349','تظهر في الكشف التاريخي')
       +'</div>';
     var exportBtn=monthSel
       +'<button onclick="exportNaibEsc()" style="background:var(--navy);color:#fff;border:none;padding:9px 16px;border-radius:9px;font-size:13px;font-weight:700;cursor:pointer;margin:0 6px">📄 Word</button>'
       +'<button onclick="exportNaibEscExcel()" style="background:#1d8349;color:#fff;border:none;padding:9px 16px;border-radius:9px;font-size:13px;font-weight:700;cursor:pointer">📊 Excel</button>';
-    var tbl=card('<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:6px"><div><h3 style="font-size:15px;margin:0 0 4px">⏱️ متابعة التقسيمات بعد تجاوز مكتب النائب</h3><div style="font-size:11.5px;color:#90a0b3">كل المواضيع التي بدأت فيها متابعة التقسيم لعدم رد مكتب النائب (تبقى في الكشف حتى بعد إغلاقها)، إضافة للمواضيع المتجاوزة حالياً لدى المكتب — مع فلتر شهري لاستخراج الكشف بالأشهر. الجدول يوضّح: تاريخ توجيه سعادة الرئيس، مدة رد مكتب النائب (الافتراضية 3 أيام عمل أو المخصصة إن حُدِّدت)، تاريخ بدء متابعة التقسيم، ومدة رد التقسيم منذ ذلك التاريخ — بأيام العمل مع استثناء الإجازات الأسبوعية والرسمية.</div></div><div>'+exportBtn+'</div></div><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13px"><thead><tr>'+head+'</tr></thead><tbody>'+body+'</tbody></table></div>');
+    var tbl=card('<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:6px"><div><h3 style="font-size:15px;margin:0 0 4px">⏱️ متابعة التقسيمات بعد تجاوز مكتب النائب</h3><div style="font-size:11.5px;color:#90a0b3">كل المواضيع التي بدأت فيها متابعة التقسيم لعدم رد مكتب النائب (تبقى في الكشف حتى بعد إغلاقها)، إضافة للمواضيع المتجاوزة حالياً لدى المكتب — مع فلتر شهري لاستخراج الكشف بالأشهر. <b>مدة التجاوز تُحسب من تاريخ متابعة التقسيم نفسه</b> (وليس من تاريخ التوجيه الأصلي) بأيام العمل مع استثناء الإجازات — فموضوع بدأ متابعة تقسيمه لتوّه يظهر «قيد متابعة التقسيم» لا «متجاوز»، حتى يتجاوز فعلاً مدة الرد المحددة من ذلك التاريخ.</div></div><div>'+exportBtn+'</div></div><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13px"><thead><tr>'+head+'</tr></thead><tbody>'+body+'</tbody></table></div>');
     document.getElementById('naibMount').innerHTML=top+tbl;
   };
   window.exportNaibEsc=function(){
@@ -7129,7 +7148,8 @@ window.addEventListener('load', () => {
     var trs=rows.map(function(r,i){
       var divDateTxt=r.divDate?_fmtD(r.divDate):'لم تبدأ المتابعة مع التقسيم';
       var divDaysTxt=r.divDate?(r.divDays==null?'—':r.divDays+' يوم'):'—';
-      var stTxt=r.closed?'أُغلق بعد متابعة التقسيم':(r.silent?'تجاوز لعدم الاستجابة':'تجاوز مدة الرد');
+      var divLate2 = r.divDate && r.divDays!=null && r.divDays>r.allowedDays;
+      var stTxt = r.closed ? 'أُغلق بعد متابعة التقسيم' : (r.divDate ? (divLate2?'تجاوز رد التقسيم':'قيد متابعة التقسيم') : (r.silent?'تجاوز لعدم الاستجابة':'تجاوز مدة الرد'));
       return '<tr><td style="text-align:center">'+(i+1)+'</td><td>'+esc(r.t.title||'—')+'</td><td>'+esc(r.t.from||'—')+'</td><td>'+esc(r.t.taqseemName||'—')+'</td>'
         +'<td style="text-align:center">'+_fmtD(r.start)+'</td>'
         +'<td style="text-align:center">'+r.allowedDays+' يوم'+(r.allowedCustom?' (مخصص)':' (افتراضي)')+'</td>'
@@ -7164,7 +7184,7 @@ window.addEventListener('load', () => {
         'تاريخ متابعة التقسيم': r.divDate?_fmtD(r.divDate):'لم تبدأ',
         'شهر متابعة التقسيم': r.divMonth?_naibMonthLabel(r.divMonth):'—',
         'مدة الرد منذ متابعة التقسيم (أيام عمل)': r.divDate?(r.divDays==null?'—':r.divDays):'—',
-        'الحالة': r.closed?'أُغلق بعد متابعة التقسيم':(r.silent?'تجاوز لعدم الاستجابة':'تجاوز مدة الرد')
+        'الحالة': r.closed?'أُغلق بعد متابعة التقسيم':(r.divDate?((r.divDays!=null&&r.divDays>r.allowedDays)?'تجاوز رد التقسيم':'قيد متابعة التقسيم'):(r.silent?'تجاوز لعدم الاستجابة':'تجاوز مدة الرد'))
       };
     });
     if(!data.length){ alert('لا توجد بيانات للتصدير'); return; }
