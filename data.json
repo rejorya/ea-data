@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-05T08:53:31.498Z",
+  "exportedAt": "2026-08-05T08:54:00.542Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26402,9 +26402,9 @@
       "id": 1785824856792.4573,
       "title": "الإجتماع مع شركة R-NOX المتخصصة في أنظمة مراقبة جودة الهواء",
       "from": "مكتب الرقابة البيئية",
-      "docNo": "",
+      "docNo": "5612/2/2022v8-98",
       "toEntity": "نائب الرئيس",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة للالتزام البيئي",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-08-02",
@@ -26414,7 +26414,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nالالتزام البيئي\nللافادة",
-      "status": "new",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-08-04",
@@ -26427,12 +26427,25 @@
           "taqseem": "",
           "startDate": "2026-08-02",
           "daysSince": 2
+        },
+        {
+          "date": "2026-08-05",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للالتزام البيئي",
+          "startDate": "2026-08-02",
+          "daysSince": 3
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
-      "followEntity": "naib_office",
-      "responseMethod": ""
+      "manualCount": 2,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-08-05"
     },
     {
       "id": 1785828105864.7075,
