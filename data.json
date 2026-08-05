@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-05T05:42:33.045Z",
+  "exportedAt": "2026-08-05T05:43:12.253Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25200,6 +25200,18 @@
           "taqseem": "",
           "startDate": "2026-08-02",
           "daysSince": 1
+        },
+        {
+          "date": "2026-08-05",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-02",
+          "daysSince": 3
         }
       ],
       "sheet": "من المناقشات",
@@ -25208,7 +25220,7 @@
       "toEntity": "مكتب الرقابة البيئية",
       "priority": "normal",
       "confidentiality": "normal",
-      "manualCount": 4,
+      "manualCount": 5,
       "followEntity": "rais_depts",
       "raisDeptName": "مكتب الرقابة البيئية",
       "responseMethod": "",
