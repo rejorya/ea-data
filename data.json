@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-06T04:33:30.159Z",
+  "exportedAt": "2026-08-06T04:36:32.765Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26317,7 +26317,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nالتغير المناخي\nلعمل اللازم",
-      "status": "new",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-08-04",
@@ -26330,10 +26330,22 @@
           "taqseem": "",
           "startDate": "2026-08-04",
           "daysSince": 0
+        },
+        {
+          "date": "2026-08-06",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-08-04",
+          "daysSince": 2
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "naib_office",
       "responseMethod": ""
     },
