@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-06T04:36:59.011Z",
+  "exportedAt": "2026-08-06T04:41:13.596Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26258,7 +26258,7 @@
       "from": "شركة الفزاري المتحدة للتجارة والمقاولات",
       "docNo": "1170/3/2022v412-60",
       "toEntity": "نائب الرئيس / الدائرة القانونية",
-      "taqseemName": "نائب الرئيس / الدائرة القانونية",
+      "taqseemName": "الدائرة القانونية/المديرية العامة للشؤون الادارية والمالية",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-08-03",
@@ -26268,7 +26268,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nالادارية والمالية\nالقانونية\nللافادة",
-      "status": "awaiting",
+      "status": "split",
       "followups": [
         {
           "date": "2026-08-04",
@@ -26293,13 +26293,26 @@
           "taqseem": "",
           "startDate": "2026-08-04",
           "daysSince": 1
+        },
+        {
+          "date": "2026-08-06",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "الدائرة القانونية/المديرية العامة للشؤون الادارية والمالية",
+          "startDate": "2026-08-04",
+          "daysSince": 2
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 2,
-      "followEntity": "naib_and_rais",
+      "manualCount": 3,
+      "followEntity": "taqseem",
       "raisDeptName": "الدائرة القانونية",
-      "responseMethod": ""
+      "responseMethod": "",
+      "divFollowDate": "2026-08-06"
     },
     {
       "id": 1785823541959.501,
