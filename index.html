@@ -330,7 +330,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
         <div class="fgs fw"><label>عنوان الموضوع *</label><input id="tNewTitle" placeholder="عنوان الموضوع"></div>
         <div class="fgs"><label>الجهة المُحيلة *</label><input id="tNewFrom" placeholder="اسم الجهة"></div>
         <div class="fgs"><label>تاريخ الاستلام</label><input type="date" id="tNewDate"></div>
-        <div class="fgs"><label>تاريخ استلام الموضوع للمتابعة</label><input type="date" id="tNewFollowStart"></div>
+        <div class="fgs"><label>تاريخ استلام الموضوع للمتابعة</label><input type="date" id="tNewFollowStart"><small style="color:#666;font-size:11px;display:block;margin-top:4px">اتركيه فارغاً ليُحتسب تلقائياً بتاريخ اليوم — فيُنسب الموضوع لشهر استلامك له فعلياً بالتقارير، بغض النظر عن قِدم تاريخ الخطاب</small></div>
         <div class="fgs"><label>نوع الموضوع</label>
           <select id="tNewType"><option value="ext">خارجي</option><option value="int">داخلي</option></select>
         </div>
@@ -3796,7 +3796,7 @@ function addTopic() {
     priority: val('tNewPriority') || 'normal',
     confidentiality: val('tNewConf') || 'normal',
     date: val('tNewDate') || new Date().toISOString().substring(0,10),
-    followStart: val('tNewFollowStart') || '',
+    followStart: val('tNewFollowStart') || new Date().toISOString().substring(0,10),
     type: val('tNewType'),
     slaMode: slaMode,
     slaDays: (slaMode!=='kpi') ? slaDays : null,
@@ -5168,6 +5168,7 @@ const WEEKLY_STYLES = `
   .sb2{border-top-color:#1d8349}.sb2 b{color:#1d8349}
   .sb3{border-top-color:#b6950a}.sb3 b{color:#b6950a}
   .sb4{border-top-color:#1a3a5b}.sb4 b{color:#1a3a5b}
+  .sb5{border-top-color:#c0392b}.sb5 b{color:#c0392b}
   .intro{margin:14pt 0;line-height:2;text-align:justify;text-indent:30pt}
   h2{color:#1a3a5b;font-size:15pt;margin:18pt 0 10pt;font-weight:700;background:transparent;padding:0 10pt 5pt 0;border:none;border-bottom:2pt solid #1a3a5b;border-right:6pt solid #1a3a5b;padding-right:10pt}
   .bullets{padding-right:30pt;margin:10pt 0;list-style-type:disc}
@@ -5541,6 +5542,7 @@ function buildDirReportHTML() {
   const tot = _dd.tot, done = _dd.done, late = _dd.late, rate = _dd.rate;
   const ontime = tot > 0 ? Math.round(((tot - late) / tot) * 100) : 0;
   const _isDone = d => DIR_DONE_SET.includes(d.status);
+  const todayStr2 = new Date().toISOString().slice(0,10);
   
   const byM = {};
   D.directives.forEach(d => {
@@ -5558,113 +5560,98 @@ function buildDirReportHTML() {
       <td><b>${m}</b></td>
       <td style="text-align:center">${v.tot}</td>
       <td style="text-align:center;color:#1e8449"><b>${v.done}</b></td>
-      <td><div class="progress-cell"><div class="progress-fill" style="width:${p}%">${p}%</div></div></td>
-      <td style="text-align:center;font-weight:700">${p}%</td>
+      <td style="text-align:center;font-weight:700;color:${p>=80?'#1e8449':p>=50?'#b6950a':'#c0392b'}">${p}%</td>
     </tr>`;
   }).join('');
   
   const _stTxt = {new:'جديد',prog:'قيد التنفيذ',awaiting:'بانتظار الإفادة',done:'✔ منفذ',partial:'منفذ جزئياً',late:'⏰ متأخر',closed:'مغلق'};
   const dirRows = D.directives.map((d,i) => `<tr${isDirLate(d)?' style="background:#fdf0ef"':''}>
-    <td>${_isDone(d)?'<span class="badge-done">'+(_stTxt[d.status]||'✔ منفذ')+'</span>':'<span class="badge-prog">'+(_stTxt[d.status]||'قيد التنفيذ')+'</span>'}${isDirLate(d)&&!_isDone(d)?'<br><span style="color:#c0392b;font-size:8.5pt;font-weight:700">⏰ تجاوز الاستحقاق</span>':''}</td>
-    <td style="font-size:9pt">${d.action||'—'}</td>
-    <td style="white-space:nowrap">${d.dueDate?fmtDate(d.dueDate):(d.due||'—')}</td>
-    <td>${d.subj}</td>
-    <td style="font-size:10pt">${d.dept}</td>
-    <td style="font-size:9pt">${d.ref||'—'}</td>
-    <td>${d.date ? fmtDate(d.date) : (d.month||'—')}</td>
     <td style="text-align:center">${i+1}</td>
+    <td>${d.subj||'—'}</td>
+    <td style="font-size:9pt">${d.dept||'—'}</td>
+    <td style="text-align:center">${d.date ? fmtDate(d.date) : (d.month||'—')}</td>
+    <td style="text-align:center;white-space:nowrap">${d.dueDate?fmtDate(d.dueDate):(d.due||'—')}</td>
+    <td style="text-align:center">${_isDone(d)?'<span class="done-mark">'+(_stTxt[d.status]||'✔ منفذ')+'</span>':'<span class="prog-mark">'+(_stTxt[d.status]||'قيد التنفيذ')+'</span>'}${isDirLate(d)&&!_isDone(d)?'<br><span style="color:#c0392b;font-size:8.5pt;font-weight:700">⏰ تجاوز الاستحقاق</span>':''}</td>
   </tr>`).join('');
   
   const lateRows = D.directives.filter(d => d.note && d.note.trim()).map((d,i) => `<tr>
-    <td style="color:#d68910">${d.note}</td>
-    <td>${d.subj}</td>
-    <td style="font-size:9pt">${d.ref||'—'}</td>
     <td style="text-align:center">${i+1}</td>
+    <td>${d.subj||'—'}</td>
+    <td style="font-size:9pt">${d.ref||'—'}</td>
+    <td style="color:#b6950a">${d.note}</td>
   </tr>`).join('');
   
-  return `<!DOCTYPE html><html dir="rtl" lang="ar"><head><meta charset="UTF-8"><title>تقرير تنفيذ التوجيهات</title><style>${REPORT_STYLES}</style></head><body>
+  return `<!DOCTYPE html><html dir="rtl" lang="ar"><head><meta charset="UTF-8"><title>تقرير تنفيذ التوجيهات — ${fmtDate(todayStr2)}</title><style>${WEEKLY_STYLES}</style></head><body>
     <div class="header">
-      <h1>تقرير متابعة تنفيذ توجيهات رئيس الهيئة</h1>
-      <div class="sub">مكتب رئيس الهيئة | إعداد: رحاب بنت نصيب الفرج</div>
+      <h1>تقرير متابعة تنفيذ توجيهات سعادة رئيس الهيئة</h1>
+      <div class="period">بتاريخ ${fmtDate(todayStr2)}</div>
+      <div class="prep">إعداد ومتابعة: رحاب الفرج — أخصائية تنسيق ومتابعة — مكتب الرئيس</div>
     </div>
-    
-    <h2>أولاً: هدف التقرير ونطاقه</h2>
-    <div class="intro">
-      يُقدِّم هذا التقرير ويرصد حالة تنفيذ جميع التوجيهات الصادرة عن سعادة رئيس هيئة البيئة.
-      تستند منهجية المتابعة إلى التحديث المستمر والتنسيق المباشر مع الجهات المختصة،
-      وقياس مستوى الإنجاز الفعلي لكل توجيه، مع إبراز الملاحظات والتأخيرات.
-    </div>
-    
-    <h2>ثانياً: الملخص التنفيذي</h2>
-    <table cellspacing="6" style="width:100%;border-collapse:separate;border-spacing:6pt;margin:12pt 0"><tr>
-      ${[[tot,'إجمالي التوجيهات','#1a5276'],[done,'منفذة','#1e8449'],[_dd.prog,'قيد التنفيذ','#d68910'],[late,'متأخرة / تجاوزت المدة','#c0392b']].map(c=>`<td bgcolor="#eaf4fd" valign="top" style="background:#eaf4fd;border:1pt solid #dce6f0;border-top:4pt solid ${c[2]};border-radius:4pt;padding:12pt;text-align:center"><b style="font-size:24pt;color:${c[2]};display:block;margin-bottom:3pt;font-weight:700">${c[0]}</b><span style="font-size:9.5pt;color:#555">${c[1]}</span></td>`).join('')}
+
+    <table class="summary-box" cellspacing="6" style="width:100%;border-collapse:separate;border-spacing:8pt;margin:18pt 0"><tr>
+      ${[[tot,'إجمالي التوجيهات','#2370a3'],[done,'منفذة','#1d8349'],[_dd.prog,'قيد التنفيذ','#b6950a'],[late,'متأخرة / تجاوزت المدة','#c0392b']].map(c=>`<td bgcolor="#eef4fa" valign="top" style="background:#eef4fa;border:1pt solid #d6e2ee;border-top:4pt solid ${c[2]};border-radius:5pt;padding:12pt 8pt;text-align:center;font-size:11pt;color:#33414f"><b style="font-size:22pt;color:${c[2]};display:block;margin-bottom:4pt;font-weight:700">${c[0]}</b>${c[1]}</td>`).join('')}
     </tr></table>
-    
-    ${rate===100 && tot>0 ? `<div class="box" style="background:#d4edda;border-right:4px solid #1e8449"><b>✔ تم إنجاز جميع التوجيهات الـ ${tot} بنسبة ${rate}%</b></div>` : `<div class="box">نسبة الإنجاز الحالية: <b style="color:#1a5276;font-size:14pt">${rate}%</b> من إجمالي ${tot} توجيه</div>`}
-    
-    <h3>توزيع التوجيهات حسب الشهر:</h3>
-    ${monthRows ? `<table>
-      <tr><th>الشهر</th><th>الإجمالي</th><th>المنجزة</th><th>شريط التقدم</th><th>النسبة</th></tr>
+    <p style="text-align:center;font-size:11.5pt;color:#555;margin:0 0 10pt">📊 نسبة الإنجاز الكلية: <b style="color:#1a3a5b">${rate}%</b> &nbsp;|&nbsp; ⏱ الالتزام بالمواعيد: <b style="color:#2370a3">${ontime}%</b></p>
+
+    <div class="intro">
+      أرفع لكم هذا التقرير الذي يرصد حالة تنفيذ جميع التوجيهات الصادرة عن سعادة رئيس الهيئة، استناداً إلى المتابعة المستمرة والتنسيق المباشر مع الجهات المختصة، وقياس مستوى الإنجاز الفعلي لكل توجيه، مع إبراز الملاحظات والتأخيرات.
+    </div>
+
+    <h2>أولاً: توزيع التوجيهات حسب الشهر</h2>
+    ${monthRows ? `<table class="data-table">
+      <tr><th>الشهر</th><th>الإجمالي</th><th>المنجزة</th><th>النسبة</th></tr>
       ${monthRows}
-      <tr>
-        <td bgcolor="#0d2b4e" style="background:#0d2b4e;color:#fff"><b>الإجمالي</b></td>
-        <td bgcolor="#0d2b4e" style="background:#0d2b4e;color:#fff;text-align:center"><b>${tot}</b></td>
-        <td bgcolor="#0d2b4e" style="background:#0d2b4e;color:#fff;text-align:center"><b>${done}</b></td>
-        <td bgcolor="#0d2b4e" style="background:#0d2b4e"></td>
-        <td bgcolor="#0d2b4e" style="background:#0d2b4e;color:#fff;text-align:center"><b>${rate}%</b></td>
+      <tr style="background:#1a3a5b;color:#fff;font-weight:700">
+        <td style="color:#fff">الإجمالي</td>
+        <td style="text-align:center;color:#fff">${tot}</td>
+        <td style="text-align:center;color:#fff">${done}</td>
+        <td style="text-align:center;color:#fff">${rate}%</td>
       </tr>
     </table>` : '<p class="em">لا توجد بيانات شهرية</p>'}
-    
-    <h2>ثالثاً: جدول التوجيهات التفصيلي</h2>
-    ${dirRows ? `<table>
-      <tr><th>الحالة</th><th>الإجراء</th><th>الاستحقاق</th><th>الموضوع</th><th>الجهة</th><th>رقم الوثيقة</th><th>التاريخ</th><th style="width:30pt">م</th></tr>
+
+    <h2>ثانياً: جدول التوجيهات التفصيلي</h2>
+    <p>بلغ إجمالي التوجيهات المسجّلة <b>${tot}</b> توجيهاً:</p>
+    ${dirRows ? `<table class="data-table">
+      <tr><th style="width:26pt">م</th><th>الموضوع</th><th>الجهة</th><th>التاريخ</th><th>الاستحقاق</th><th>الحالة</th></tr>
       ${dirRows}
     </table>` : '<p class="em">لا توجد توجيهات</p>'}
-    
-    <h2>رابعاً: نسبة التنفيذ حسب الجهة المنفذة</h2>
-    ${_dd.byDept.length ? `<table>
+
+    <h2>ثالثاً: نسبة التنفيذ حسب الجهة المنفذة</h2>
+    ${_dd.byDept.length ? `<table class="data-table">
       <tr><th>الجهة المنفذة</th><th>الإجمالي</th><th>المنفذ</th><th>المتأخر</th><th>نسبة التنفيذ</th></tr>
       ${_dd.byDept.map(r=>`<tr>
         <td><b>${r.name}</b></td>
         <td style="text-align:center">${r.tot}</td>
         <td style="text-align:center;color:#1e8449"><b>${r.done}</b></td>
         <td style="text-align:center;color:${r.late?'#c0392b':'#888'}">${r.late}</td>
-        <td><div class="progress-cell"><div class="progress-fill" style="width:${r.pct}%;background:${r.pct>=80?'#1e8449':r.pct>=50?'#d68910':'#c0392b'}">${r.pct}%</div></div></td>
+        <td style="text-align:center;font-weight:700;color:${r.pct>=80?'#1e8449':r.pct>=50?'#b6950a':'#c0392b'}">${r.pct}%</td>
       </tr>`).join('')}
     </table>` : '<p class="em">لا توجد بيانات</p>'}
-    
-    ${_dd.lateList.length ? `<h2>خامساً: التوجيهات التي تجاوزت المدة المحددة</h2>
-    <table>
-      <tr><th>الموضوع</th><th>الجهة</th><th>تاريخ الاستحقاق</th><th>الحالة</th><th style="width:30pt">م</th></tr>
-      ${_dd.lateList.map((d,i)=>`<tr><td>${d.subj}</td><td style="font-size:10pt">${d.dept}</td><td style="text-align:center;color:#c0392b;font-weight:700">${d.dueDate?fmtDate(d.dueDate):(d.due||'—')}</td><td style="font-size:9.5pt">${_stTxt[d.status]||d.status}</td><td style="text-align:center">${i+1}</td></tr>`).join('')}
+
+    ${_dd.lateList.length ? `<h2>رابعاً: التوجيهات التي تجاوزت المدة المحددة</h2>
+    <table class="data-table">
+      <tr><th style="width:26pt">م</th><th>الموضوع</th><th>الجهة</th><th>تاريخ الاستحقاق</th><th>الحالة</th></tr>
+      ${_dd.lateList.map((d,i)=>`<tr><td style="text-align:center">${i+1}</td><td>${d.subj||'—'}</td><td style="font-size:10pt">${d.dept||'—'}</td><td style="text-align:center;color:#c0392b;font-weight:700">${d.dueDate?fmtDate(d.dueDate):(d.due||'—')}</td><td style="font-size:9.5pt">${_stTxt[d.status]||d.status}</td></tr>`).join('')}
     </table>` : ''}
-    
-    ${_dd.noReply.length ? `<h2>${_dd.lateList.length?'سادساً':'خامساً'}: التوجيهات التي لم ترد بشأنها إفادة</h2>
-    <table>
-      <tr><th>الموضوع</th><th>الجهة</th><th>تاريخ الإصدار</th><th style="width:30pt">م</th></tr>
-      ${_dd.noReply.map((d,i)=>`<tr><td>${d.subj}</td><td style="font-size:10pt">${d.dept}</td><td style="text-align:center">${d.date?fmtDate(d.date):(d.month||'—')}</td><td style="text-align:center">${i+1}</td></tr>`).join('')}
+
+    ${_dd.noReply.length ? `<h2>${_dd.lateList.length?'خامساً':'رابعاً'}: التوجيهات التي لم ترد بشأنها إفادة</h2>
+    <table class="data-table">
+      <tr><th style="width:26pt">م</th><th>الموضوع</th><th>الجهة</th><th>تاريخ الإصدار</th></tr>
+      ${_dd.noReply.map((d,i)=>`<tr><td style="text-align:center">${i+1}</td><td>${d.subj||'—'}</td><td style="font-size:10pt">${d.dept||'—'}</td><td style="text-align:center">${d.date?fmtDate(d.date):(d.month||'—')}</td></tr>`).join('')}
     </table>` : ''}
-    
-    ${lateRows ? `<h2>الملاحظات والتنبيهات</h2>
-    <table>
-      <tr><th>الملاحظة</th><th>الموضوع</th><th>رقم الوثيقة</th><th style="width:30pt">م</th></tr>
+
+    ${lateRows ? `<h2>ملاحظات وتنبيهات</h2>
+    <table class="data-table">
+      <tr><th style="width:26pt">م</th><th>الموضوع</th><th>رقم الوثيقة</th><th>الملاحظة</th></tr>
       ${lateRows}
     </table>` : ''}
-    
-    <h2>مؤشرات الأداء (KPIs)</h2>
-    <table>
-      <tr><th>المؤشر</th><th>النسبة</th><th>شريط التقدم</th></tr>
-      <tr><td><b>معدل الإنجاز الكلي</b></td><td style="text-align:center;color:#1e8449"><b>${rate}%</b></td><td><div class="progress-cell"><div class="progress-fill" style="width:${rate}%">${rate}%</div></div></td></tr>
-      <tr><td><b>الالتزام بالمواعيد</b></td><td style="text-align:center;color:#1a5276"><b>${ontime}%</b></td><td><div class="progress-cell"><div class="progress-fill" style="width:${ontime}%;background:#1a5276">${ontime}%</div></div></td></tr>
-      <tr><td><b>بدون ملاحظات</b></td><td style="text-align:center;color:#148f77"><b>${ontime}%</b></td><td><div class="progress-cell"><div class="progress-fill" style="width:${ontime}%;background:#148f77">${ontime}%</div></div></td></tr>
-    </table>
-    
+
+    <div class="closing-note">هذا تقرير متابعة تنفيذ التوجيهات بتاريخ ${fmtDate(todayStr2)}، وأنا بانتظار توجيهاتكم بشأن أي من التوجيهات المذكورة، لا سيما المتأخرة منها.</div>
+
     <div class="signature">
       <div class="name">رحاب بنت نصيب الفرج</div>
-      <div class="role">أخصائية تنسيق ومتابعة</div>
-      <div class="role">مكتب رئيس هيئة البيئة</div>
+      <div class="role">أخصائية تنسيق ومتابعة — مكتب رئيس هيئة البيئة</div>
     </div>
-    <div class="closing"><b>هيئة البيئة — سلطنة عُمان</b><br>${new Date().toLocaleDateString('ar-SA')} | متوافق مع ISO 9001:2015</div>
   </body></html>`;
 }
 
@@ -7221,14 +7208,15 @@ window.addEventListener('load', () => {
       var more=items.length>12?'<div style="color:#90a0b3;font-size:11px;padding:6px 12px">… و'+(items.length-12)+' نتيجة أخرى</div>':'';
       return '<div class="card" style="padding:0;overflow:hidden;margin-bottom:14px"><div style="background:var(--light);padding:11px 16px;font-weight:800;font-size:13.5px;display:flex;justify-content:space-between;align-items:center"><span>'+icon+' '+title+' <span style="background:#1a3a5b;color:#fff;border-radius:9px;padding:1px 9px;font-size:11px">'+items.length+'</span></span><button class="btn btn-b" style="padding:4px 12px;font-size:11px" onclick="showSec(&quot;'+go+'&quot;,null)">فتح القسم ←</button></div>'+lis+more+'</div>';
     }
-    function row(main,sub,badge){
-      return '<div style="padding:10px 16px;border-top:1px solid #eef2f6;font-size:12.5px"><b>'+esc(main)+'</b> '+(badge||'')+'<br><span style="color:#90a0b3;font-size:11px">'+sub+'</span></div>';
+    function row(main,sub,badge,openFn){
+      var clickAttr = openFn ? ' onclick="'+openFn+'" style="cursor:pointer"' : '';
+      return '<div'+clickAttr+' style="padding:10px 16px;border-top:1px solid #eef2f6;font-size:12.5px" onmouseover="this.style.background=\'#f7fafc\'" onmouseout="this.style.background=\'\'"><b>'+esc(main)+'</b> '+(badge||'')+(openFn?' <span style="color:#2370a3;font-size:10.5px">فتح ↩</span>':'')+'<br><span style="color:#90a0b3;font-size:11px">'+sub+'</span></div>';
     }
     var html=
-      group('📂','المواضيع',topics,function(t){return row(t.title,(t.from||'—')+' · '+fmtDate(t.date)+(t.docNo?' · وثيقة: '+esc(t.docNo):'')+(t.taqseemName?' · 📂 '+esc(t.taqseemName):''),(typeof STATUS_BADGES!=='undefined'&&STATUS_BADGES[t.status])||'');},'topics')
-      +group('📌','توجيهات الرئيس',dirs,function(d){return row(d.subj,(d.dept||'—')+' · '+(d.date?fmtDate(d.date):d.month||'—')+(d.ref?' · '+esc(d.ref):''),(typeof DIR_STATUS_BADGES!=='undefined'&&DIR_STATUS_BADGES[d.status])||'');},'directives')
-      +group('📝','المذكرات الداخلية',memos,function(m){return row(m.subject||m.subj||'—',(m.no?'رقم: '+esc(m.no)+' · ':'')+(m.from||'—')+' · '+fmtDate(m.date),'');},'memos')
-      +group('🗣️','المناقشات',discs,function(d){return row(d.title,fmtDate(d.date)+(d.attendees?' · 👥 '+esc(d.attendees):''),'');},'discussions')
+      group('📂','المواضيع',topics,function(t){return row(t.title,(t.from||'—')+' · '+fmtDate(t.date)+(t.docNo?' · وثيقة: '+esc(t.docNo):'')+(t.taqseemName?' · 📂 '+esc(t.taqseemName):''),(typeof STATUS_BADGES!=='undefined'&&STATUS_BADGES[t.status])||'',"showSec('topics',null);openEditTopicModal("+t.id+")");},'topics')
+      +group('📌','توجيهات الرئيس',dirs,function(d){return row(d.subj,(d.dept||'—')+' · '+(d.date?fmtDate(d.date):d.month||'—')+(d.ref?' · '+esc(d.ref):''),(typeof DIR_STATUS_BADGES!=='undefined'&&DIR_STATUS_BADGES[d.status])||'',"showSec('directives',null);openEditDirModal('"+d.id+"')");},'directives')
+      +group('📝','المذكرات الداخلية',memos,function(m){return row(m.subject||m.subj||'—',(m.no?'رقم: '+esc(m.no)+' · ':'')+(m.from||'—')+' · '+fmtDate(m.date),'',"showSec('memos',null);openEditMemoModal('"+m.id+"')");},'memos')
+      +group('🗣️','المناقشات',discs,function(d){return row(d.title,fmtDate(d.date)+(d.attendees?' · 👥 '+esc(d.attendees):''),'',"showSec('discussions',null);openEditDiscussion('"+d.id+"')");},'discussions')
       +group('💡','الأفكار التحسينية',ideas,function(i){return row(i.title,(i.to||'—')+' · '+fmtDate(i.date),'');},'ideas');
     mount.innerHTML = html || '<div class="card" style="padding:20px;text-align:center;color:#90a0b3">لا توجد نتائج لـ «'+esc(q)+'» في أي وحدة</div>';
   };
