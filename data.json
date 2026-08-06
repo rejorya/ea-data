@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-06T05:47:25.421Z",
+  "exportedAt": "2026-08-06T05:47:57.335Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25085,7 +25085,7 @@
       "slaDays": 10,
       "kpi": "w2week",
       "note": "",
-      "status": "disc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-07-12",
@@ -25140,7 +25140,8 @@
       "manualCount": 4,
       "followEntity": "rais_depts",
       "raisDeptName": "دائرة ضبط الجودة",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-08-06"
     },
     {
       "id": 1783914402479.2903,
