@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-09T05:25:01.249Z",
+  "exportedAt": "2026-08-09T05:28:15.913Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26305,7 +26305,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nالادارية والمالية\nالقانونية\nللافادة",
-      "status": "split",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-08-04",
