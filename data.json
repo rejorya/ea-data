@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-09T05:28:15.913Z",
+  "exportedAt": "2026-08-09T06:20:35.287Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -25789,7 +25789,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "نائب الرئيس\nادارة مسندم\nلعمل اللازم والافادة بعد المكافحة\n",
-      "status": "new",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-07-14",
@@ -25802,10 +25802,22 @@
           "taqseem": "",
           "startDate": "2026-07-13",
           "daysSince": 1
+        },
+        {
+          "date": "2026-08-09",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-07-13",
+          "daysSince": 19
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "naib_office",
       "responseMethod": ""
     },
