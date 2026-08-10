@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-09T10:55:12.876Z",
+  "exportedAt": "2026-08-10T06:09:59.858Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26062,16 +26062,16 @@
       "from": "مكتب الرئيس",
       "docNo": "",
       "toEntity": "",
-      "taqseemName": "",
+      "taqseemName": "مدير الاستدامة/المديرية العامة للتغير المناخي/المديرية العامة لتنمية الغطاء النباتي",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-07-05",
-      "followStart": "2026-07-15",
+      "followStart": "2026-08-10",
       "type": "ext",
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "other",
-      "note": "نائب الرئيس\nالغطاء النباتي\nالتغير المناخي\nللاجتماع مع الدكتورة جابريلا والدكتورة مريم والافادة",
+      "note": "مدير عام الغطاء النباتي\nمدير عام التغير المناخي \nمدير الاستدامة\nلعمل اللازم خلال ٣ ايام عمل",
       "status": "esc",
       "followups": [
         {
@@ -26109,12 +26109,25 @@
           "taqseem": "",
           "startDate": "2026-07-15",
           "daysSince": 6
+        },
+        {
+          "date": "2026-08-10",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "مدير الاستدامة/المديرية العامة للتغير المناخي/المديرية العامة لتنمية الغطاء النباتي",
+          "startDate": "2026-08-10",
+          "daysSince": 0
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 3,
-      "followEntity": "naib_office",
-      "responseMethod": ""
+      "manualCount": 4,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-08-10"
     },
     {
       "id": 1784434596065.6997,
