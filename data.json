@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-11T09:04:40.959Z",
+  "exportedAt": "2026-08-11T09:04:52.084Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26645,6 +26645,26 @@
       "responseMethod": "direct_manager",
       "divFollowDate": "2026-08-05",
       "closedAt": "2026-08-09"
+    },
+    {
+      "id": 1786439089997.267,
+      "title": "تحديث سجل المخاطر الوطنية قصير المدى.pdf",
+      "from": "هيئة الدفاع المدني والإسعاف",
+      "docNo": "1170/3/2022v413-36",
+      "toEntity": "دائرة التخطيط الاستراتيجي",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-10",
+      "followStart": "2026-08-11",
+      "type": "ext",
+      "slaMode": "rais",
+      "slaDays": 4,
+      "kpi": "",
+      "note": "التخطيط\nلعمل اللازم خلال يومين",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
