@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-11T09:04:52.084Z",
+  "exportedAt": "2026-08-11T09:05:26.303Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26658,13 +26658,16 @@
       "date": "2026-08-10",
       "followStart": "2026-08-11",
       "type": "ext",
-      "slaMode": "rais",
-      "slaDays": 4,
-      "kpi": "",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wd2",
       "note": "التخطيط\nلعمل اللازم خلال يومين",
       "status": "new",
       "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 0,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "directives": [
