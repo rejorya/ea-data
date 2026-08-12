@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-12T06:38:44.509Z",
+  "exportedAt": "2026-08-12T06:39:10.800Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26651,7 +26651,11 @@
       "note": "التخطيط لإبداء الرأي",
       "status": "new",
       "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 0,
+      "followEntity": "rais_depts",
+      "raisDeptName": "",
+      "responseMethod": ""
     }
   ],
   "directives": [
