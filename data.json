@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-12T06:38:35.002Z",
+  "exportedAt": "2026-08-12T06:38:44.509Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26632,6 +26632,26 @@
       "responseMethod": "direct_manager",
       "divFollowDate": "2026-08-05",
       "closedAt": "2026-08-09"
+    },
+    {
+      "id": 1786516722425.833,
+      "title": "اعتماد مسار تنفيذ مشروع اعداد تصور انشاء وتشغيل مركز لتأهيل الكائنات البحرية (السلاحف والثدييات البحرية) بالتنسيق مع شركة عمران",
+      "from": "المديرية العامة للتنوع الأحيائي والمحميات الطبيعية",
+      "docNo": "6314/1/2022v9-16",
+      "toEntity": "دائرة التخطيط الاستراتيجي",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-12",
+      "followStart": "2026-08-12",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wd3",
+      "note": "التخطيط لإبداء الرأي",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
