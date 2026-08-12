@@ -1377,22 +1377,6 @@ body.viewer-only .print-btn { display: inline-block !important; }
     <div class="tb"><table><thead><tr><th>م</th><th>التاريخ</th><th>الوصف</th><th>إجراء</th></tr></thead><tbody id="holidaysTable"></tbody></table></div>
   </div>
 
-  <!-- إدارة التقسيمات التابعة لمكتب النائب -->
-  <div class="card">
-    <div class="ch" style="background:#7d3c98;color:#fff"><h2>🏢 التقسيمات التابعة لمكتب النائب</h2></div>
-    <div class="fs">
-      <p style="font-size:12px;color:#666;margin-bottom:10px">
-        التقسيمات التابعة فعلياً لمكتب النائب هي <b>المديريات العامة والإدارات</b> فقط. أضيفيها هنا بأسمائها الدقيقة —
-        بعدها يعرض قسم «⏱️ تجاوز مكتب النائب» ويقترح بخانة «اسم التقسيم المُتابَع» هذه القائمة حصراً، فلا تظهر بالقسم أي جهة متابعة ليست من ضمنها.
-      </p>
-      <div class="fg2">
-        <div class="fgs fw"><label>اسم المديرية العامة / الإدارة</label><input id="divName" placeholder="مثال: المديرية العامة لصون الطبيعة"></div>
-      </div>
-      <button class="btn btn-s" onclick="addNaibDivision()">➕ إضافة تقسيم</button>
-    </div>
-    <div class="tb"><table><thead><tr><th>م</th><th>اسم التقسيم</th><th>إجراء</th></tr></thead><tbody id="naibDivisionsTable"></tbody></table></div>
-  </div>
-
   <!-- منطقة الخطر: مسح كل المواضيع -->
   <div class="card" style="border:2px solid #c0392b">
     <div class="ch" style="background:#c0392b;color:#fff"><h2>🗑️ منطقة الخطر — مسح كامل المواضيع</h2></div>
@@ -1489,7 +1473,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
             <option value="other">جهة أخرى</option>
           </select>
         </div>
-        <div class="fgs" id="editEntityNameWrap" style="display:none"><label id="editEntityNameLabel">📂 اسم الجهة</label><input id="editEntityName" list="naibDivisionsList" placeholder=""><datalist id="naibDivisionsList"></datalist></div>
+        <div class="fgs" id="editEntityNameWrap" style="display:none"><label id="editEntityNameLabel">📂 اسم الجهة</label><input id="editEntityName" placeholder=""></div>
         <div class="fgs"><label>📨 طريقة ورود الرد</label>
           <select id="editResponseMethod">
             <option value="">— غير محدد —</option>
@@ -1668,7 +1652,6 @@ const D = {
   memos: [],          // المذكرات الداخلية
   discussions: [],    // مناقشات الرئيس (مستقلة عن المواضيع)
   holidays: [],       // الإجازات الرسمية (تواريخ ISO) — تُستثنى من حساب أيام العمل
-  naibDivisions: [],  // المديريات العامة والإدارات التابعة فعلياً لمكتب النائب
   users: USERS        // المستخدمون
 };
 
@@ -1693,7 +1676,6 @@ function saveToStorage() {
       memos: D.memos || [],
       discussions: D.discussions || [],
       holidays: D.holidays || [],
-      naibDivisions: D.naibDivisions || [],
       savedAt: new Date().toISOString()
     };
     localStorage.setItem(STORAGE_KEY, JSON.stringify(dataToSave));
@@ -1720,7 +1702,6 @@ function loadFromStorage() {
     if(saved.memos) D.memos = saved.memos;
     if(saved.discussions) D.discussions = saved.discussions;
     if(saved.holidays) D.holidays = saved.holidays;
-    if(saved.naibDivisions) D.naibDivisions = saved.naibDivisions;
     console.log('تم استرجاع البيانات المحفوظة من ' + saved.savedAt);
     return true;
   } catch(e) {
@@ -1760,8 +1741,7 @@ async function autoSaveToGitHub() {
       ideas: D.ideas || [],
       memos: D.memos || [],
       discussions: D.discussions || [],
-      holidays: D.holidays || [],
-      naibDivisions: D.naibDivisions || []
+      holidays: D.holidays || []
     };
     const content = JSON.stringify(dataToShare, null, 2);
     const contentBase64 = btoa(unescape(encodeURIComponent(content)));
@@ -2474,8 +2454,7 @@ async function uploadToGitHub() {
       ideas: D.ideas,
       memos: D.memos || [],
       discussions: D.discussions || [],
-      holidays: D.holidays || [],
-      naibDivisions: D.naibDivisions || []
+      holidays: D.holidays || []
     };
     
     const content = JSON.stringify(dataToShare, null, 2);
@@ -2594,7 +2573,6 @@ async function downloadFromGitHub() {
     D.memos = imported.memos || [];
     D.discussions = imported.discussions || [];
     D.holidays = imported.holidays || [];
-    D.naibDivisions = imported.naibDivisions || [];
     
     // حفظ محلي (لرحاب فقط)
     if(CU?.admin) saveToStorage();
@@ -2609,8 +2587,6 @@ async function downloadFromGitHub() {
     refreshDirReport();
     renderIdeasTable();
     if(typeof renderHolidaysTable==='function') renderHolidaysTable();
-    if(typeof renderNaibDivisionsTable==='function') renderNaibDivisionsTable();
-    if(typeof populateNaibDivisionsList==='function') populateNaibDivisionsList();
     
     lastSyncTime = new Date();
     const stats = `✅ تم التحميل بنجاح!<br>
@@ -2701,7 +2677,6 @@ async function downloadFromGitHubPublic() {
     D.memos = imported.memos || [];
     D.discussions = imported.discussions || [];
     D.holidays = imported.holidays || [];
-    D.naibDivisions = imported.naibDivisions || [];
     
     // تحديث كل الواجهات
     renderTopicsTable();
@@ -2713,8 +2688,6 @@ async function downloadFromGitHubPublic() {
     refreshDirReport();
     renderIdeasTable();
     if(typeof renderHolidaysTable==='function') renderHolidaysTable();
-    if(typeof renderNaibDivisionsTable==='function') renderNaibDivisionsTable();
-    if(typeof populateNaibDivisionsList==='function') populateNaibDivisionsList();
     
     lastSyncTime = new Date();
     const stats = `✅ تم التحميل بنجاح!<br>
@@ -2796,8 +2769,7 @@ function exportSharedData() {
       ideas: D.ideas,
       memos: D.memos || [],
       discussions: D.discussions || [],
-      holidays: D.holidays || [],
-      naibDivisions: D.naibDivisions || []
+      holidays: D.holidays || []
     };
     
     const json = JSON.stringify(dataToShare, null, 2);
@@ -2875,7 +2847,6 @@ function importSharedData() {
     D.memos = imported.memos || [];
       D.discussions = imported.discussions || [];
       D.holidays = imported.holidays || [];
-      D.naibDivisions = imported.naibDivisions || [];
       
       // حفظ محلي (لرحاب فقط)
       if(CU?.admin) {
@@ -2922,7 +2893,6 @@ function tryLoadFromSession() {
     D.memos = imported.memos || [];
     D.discussions = imported.discussions || [];
     D.holidays = imported.holidays || [];
-    D.naibDivisions = imported.naibDivisions || [];
     return true;
   } catch(_) { return false; }
 }
@@ -3366,8 +3336,6 @@ function refreshAll() {
   renderDirectivesTable();
   renderUsersTable();
   renderHolidaysTable();
-  renderNaibDivisionsTable();
-  populateNaibDivisionsList();
   refreshWeekly();
   refreshMonthly();
   refreshQuarterly();
@@ -3895,7 +3863,6 @@ function openEditTopicModal(tid) {
 
 // إظهار حقل الاسم وتسميته حسب الجهة المُتابَعة المختارة
 function toggleEditEntityName() {
-  if(typeof populateNaibDivisionsList === 'function') populateNaibDivisionsList();
   const fe = val('editFollowEntity');
   const wrap = $('editEntityNameWrap'), lbl = $('editEntityNameLabel'), inp = $('editEntityName');
   if(!wrap || !lbl || !inp) return;
@@ -6791,49 +6758,6 @@ function wipeAllTopics() {
   alert('✅ تم مسح ' + delCount + ' موضوع.' + (keepOpen && openList.length ? '\n📌 بقي ' + openList.length + ' موضوعاً مفتوحاً كمُرحَّلات للفترة الجديدة.' : '') + '\nنُزّلت نسخة احتياطية على جهازك، والسحابة ستتحدّث تلقائياً.');
 }
 
-// ===== إدارة التقسيمات التابعة لمكتب النائب (المديريات العامة والإدارات) =====
-function addNaibDivision() {
-  if(!CU?.admin) return;
-  const name = val('divName').trim();
-  if(!name) { alert('⚠️ اكتبي اسم التقسيم'); return; }
-  D.naibDivisions = D.naibDivisions || [];
-  if(D.naibDivisions.some(x => x.trim() === name)) { alert('⚠️ هذا التقسيم مضاف مسبقاً'); return; }
-  D.naibDivisions.push(name);
-  D.naibDivisions.sort((a,b) => a.localeCompare(b,'ar'));
-  clearFields(['divName']);
-  renderNaibDivisionsTable();
-  populateNaibDivisionsList();
-  autoSave();
-}
-function deleteNaibDivision(name) {
-  if(!CU?.admin) return;
-  D.naibDivisions = (D.naibDivisions||[]).filter(x => x !== name);
-  renderNaibDivisionsTable();
-  populateNaibDivisionsList();
-  autoSave();
-}
-function renderNaibDivisionsTable() {
-  const tbl = $('naibDivisionsTable');
-  if(!tbl) return;
-  const list = (D.naibDivisions||[]).slice().sort((a,b)=>a.localeCompare(b,'ar'));
-  tbl.innerHTML = list.length ? list.map((name,i) =>
-    `<tr><td>${i+1}</td><td>${name}</td><td><button class="btn btn-r" style="padding:2px 8px;font-size:10px" onclick="deleteNaibDivision('${name.replace(/'/g,"\\'")}')">🗑 حذف</button></td></tr>`
-  ).join('') : '<tr><td colspan="3" style="text-align:center;color:#90a0b3;padding:14px">لم تُضف تقسيمات بعد — أضيفي المديريات العامة والإدارات التابعة لمكتب النائب</td></tr>';
-}
-// تعبئة قائمة الاقتراح (datalist) في نافذة تعديل الموضوع
-function populateNaibDivisionsList() {
-  const dl = $('naibDivisionsList');
-  if(!dl) return;
-  const list = (D.naibDivisions||[]).slice().sort((a,b)=>a.localeCompare(b,'ar'));
-  dl.innerHTML = list.map(name => `<option value="${name}"></option>`).join('');
-}
-// هل هذا الاسم من ضمن التقسيمات المعتمدة تابعة النائب؟
-function isNaibDivision(name) {
-  if(!name) return false;
-  const n = String(name).trim();
-  return (D.naibDivisions||[]).some(x => x.trim() === n);
-}
-
 function addUser() {
   if(!CU?.admin) return;
   const user = val('admUser').trim();
@@ -6885,7 +6809,6 @@ function buildBackupObject() {
     memos: D.memos || [],
     discussions: D.discussions || [],
     holidays: D.holidays || [],
-    naibDivisions: D.naibDivisions || [],
     exportedAt: new Date().toISOString(),
     exportedBy: (CU && CU.name) ? CU.name : 'غير محدد'
   };
@@ -6958,7 +6881,6 @@ function restoreLastGood() {
   D.memos = snap.memos || [];
   D.discussions = snap.discussions || [];
   D.holidays = snap.holidays || [];
-  D.naibDivisions = snap.naibDivisions || [];
   if(CU?.admin) saveToStorage();
   refreshAll();
   alert('✅ تم الاسترجاع — ' + D.topics.length + ' موضوع');
@@ -6993,7 +6915,6 @@ function importBackup() {
     D.memos = imported.memos || [];
       D.discussions = imported.discussions || [];
       D.holidays = imported.holidays || [];
-      D.naibDivisions = imported.naibDivisions || [];
       
       autoSave();
       refreshAll();
@@ -7098,14 +7019,9 @@ window.addEventListener('load', () => {
   }
   function _naibRows(){
     var today=_todayStr();
-    // القائمة المعتمدة للتقسيمات التابعة فعلياً لمكتب النائب (مديريات عامة وإدارات)؛ إن كانت فارغة (لم تُضبط بعد) لا نطبّق تقييداً حتى لا تختفي البيانات فجأة
-    var divList = D.naibDivisions || [];
-    var hasDivList = divList.length > 0;
-    function _divOk(name){ if(!hasDivList) return true; if(!name) return false; return divList.some(function(x){ return x.trim()===String(name).trim(); }); }
     return D.topics.filter(function(t){
       // ١) كل موضوع بدأت فيه متابعة التقسيم (لعدم رد مكتب النائب) — يظهر دائماً حتى بعد إغلاقه، لأغراض الكشف الشهري
-      // بشرط أن يكون التقسيم المُتابَع من ضمن المديريات العامة والإدارات التابعة فعلياً لمكتب النائب
-      if(t.divFollowDate) return _divOk(t.taqseemName);
+      if(t.divFollowDate) return true;
       // ٢) المفتوح المتجاوز حالياً لدى مكتب النائب (لم تبدأ متابعة التقسيم بعد)
       if(t.status==='closed') return false;
       var isNaib=(t.followEntity==='naib_office')||(t.followEntity==='naib_and_rais')||(t.kpi==='naib3');
@@ -7157,8 +7073,6 @@ window.addEventListener('load', () => {
     var withDiv=rows.filter(function(r){return !!r.divDate;}).length;
     var divLateCnt=rows.filter(function(r){return !r.closed && r.divDate && r.divDays!=null && r.divDays>r.allowedDays;}).length;
     var closedCnt=rows.filter(function(r){return r.closed;}).length;
-    var noDivListNotice = (!D.naibDivisions || !D.naibDivisions.length)
-      ? '<div style="margin-bottom:12px;padding:10px 14px;background:#f4f0fb;border-right:4px solid #7d3c98;border-radius:6px;font-size:12px;color:#5b2c76">💡 لم تُضبط بعد قائمة «التقسيمات التابعة لمكتب النائب» من إدارة المستخدمين — القسم حالياً يعرض كل الجهات دون تمييز. أضيفي المديريات العامة والإدارات الفعلية ليقتصر الكشف عليها حصراً.</div>' : '';
     // خيارات الأشهر من البيانات الفعلية (أشهر بدء متابعة التقسيم)
     var monthsSet={}; allRows.forEach(function(r){ if(r.divMonth) monthsSet[r.divMonth]=1; });
     var monthOpts=Object.keys(monthsSet).sort().reverse();
@@ -7212,7 +7126,7 @@ window.addEventListener('load', () => {
       +'<button onclick="exportNaibEsc()" style="background:var(--navy);color:#fff;border:none;padding:9px 16px;border-radius:9px;font-size:13px;font-weight:700;cursor:pointer;margin:0 6px">📄 Word</button>'
       +'<button onclick="exportNaibEscExcel()" style="background:#1d8349;color:#fff;border:none;padding:9px 16px;border-radius:9px;font-size:13px;font-weight:700;cursor:pointer">📊 Excel</button>';
     var tbl=card('<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:6px"><div><h3 style="font-size:15px;margin:0 0 4px">⏱️ متابعة التقسيمات بعد تجاوز مكتب النائب</h3><div style="font-size:11.5px;color:#90a0b3">كل المواضيع التي بدأت فيها متابعة التقسيم لعدم رد مكتب النائب (تبقى في الكشف حتى بعد إغلاقها)، إضافة للمواضيع المتجاوزة حالياً لدى المكتب — مع فلتر شهري لاستخراج الكشف بالأشهر. <b>مدة التجاوز تُحسب من تاريخ متابعة التقسيم نفسه</b> (وليس من تاريخ التوجيه الأصلي) بأيام العمل مع استثناء الإجازات — فموضوع بدأ متابعة تقسيمه لتوّه يظهر «قيد متابعة التقسيم» لا «متجاوز»، حتى يتجاوز فعلاً مدة الرد المحددة من ذلك التاريخ.</div></div><div>'+exportBtn+'</div></div><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13px"><thead><tr>'+head+'</tr></thead><tbody>'+body+'</tbody></table></div>');
-    document.getElementById('naibMount').innerHTML=noDivListNotice+top+tbl;
+    document.getElementById('naibMount').innerHTML=top+tbl;
   };
   window.exportNaibEsc=function(){
     var rows=_naibRowsFiltered();
