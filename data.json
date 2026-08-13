@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-13T03:56:30.345Z",
+  "exportedAt": "2026-08-13T03:56:42.062Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26682,13 +26682,30 @@
       "date": "2026-08-10",
       "followStart": "2026-08-11",
       "type": "ext",
-      "slaMode": "rais",
-      "slaDays": 2,
-      "kpi": "",
-      "note": "",
-      "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wd2",
+      "note": "التخطيط\nلعمل اللازم خلال يومين",
+      "status": "awaiting",
+      "followups": [
+        {
+          "date": "2026-08-12",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-11",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "دائرة التخطيط الاستراتيجي",
+      "responseMethod": ""
     }
   ],
   "directives": [
