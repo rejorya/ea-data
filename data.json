@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-12T10:59:12.700Z",
+  "exportedAt": "2026-08-13T03:31:13.285Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26343,24 +26343,12 @@
           "taqseem": "",
           "startDate": "2026-08-04",
           "daysSince": 4
-        },
-        {
-          "date": "2026-08-12",
-          "replied": false,
-          "note": "متابعة",
-          "actionType": "visit",
-          "by": "",
-          "result": "",
-          "entity": "rais_depts",
-          "taqseem": "",
-          "startDate": "2026-08-04",
-          "daysSince": 6
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 4,
+      "manualCount": 3,
       "followEntity": "rais_depts",
-      "raisDeptName": "الدائرة القانونية",
+      "raisDeptName": "",
       "responseMethod": ""
     },
     {
@@ -26644,80 +26632,6 @@
       "responseMethod": "direct_manager",
       "divFollowDate": "2026-08-05",
       "closedAt": "2026-08-09"
-    },
-    {
-      "id": 1786516722425.833,
-      "title": "اعتماد مسار تنفيذ مشروع اعداد تصور انشاء وتشغيل مركز لتأهيل الكائنات البحرية (السلاحف والثدييات البحرية) بالتنسيق مع شركة عمران",
-      "from": "المديرية العامة للتنوع الأحيائي والمحميات الطبيعية",
-      "docNo": "6314/1/2022v9-16",
-      "toEntity": "دائرة التخطيط الاستراتيجي",
-      "taqseemName": "",
-      "priority": "normal",
-      "confidentiality": "normal",
-      "date": "2026-08-12",
-      "followStart": "2026-08-12",
-      "type": "ext",
-      "slaMode": "kpi",
-      "slaDays": null,
-      "kpi": "wd3",
-      "note": "التخطيط لإبداء الرأي",
-      "status": "new",
-      "followups": [
-        {
-          "date": "2026-08-12",
-          "replied": false,
-          "note": "متابعة",
-          "actionType": "visit",
-          "by": "",
-          "result": "",
-          "entity": "rais_depts",
-          "taqseem": "",
-          "startDate": "2026-08-12",
-          "daysSince": 0
-        }
-      ],
-      "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
-      "followEntity": "rais_depts",
-      "raisDeptName": "دائرة التخطيط الاستراتيجي",
-      "responseMethod": ""
-    },
-    {
-      "id": 1786517003919.6396,
-      "title": "تحديث سجل المخاطر الوطنية قصير المدى.pdf",
-      "from": "هيئة الدفاع المدني والإسعاف",
-      "docNo": "1170/3/2022v413-36",
-      "toEntity": "دائرة التخطيط الاستراتيجي",
-      "taqseemName": "",
-      "priority": "normal",
-      "confidentiality": "normal",
-      "date": "2026-08-10",
-      "followStart": "2026-08-11",
-      "type": "ext",
-      "slaMode": "kpi",
-      "slaDays": null,
-      "kpi": "wd2",
-      "note": "",
-      "status": "new",
-      "followups": [
-        {
-          "date": "2026-08-12",
-          "replied": false,
-          "note": "متابعة",
-          "actionType": "visit",
-          "by": "",
-          "result": "",
-          "entity": "rais_depts",
-          "taqseem": "",
-          "startDate": "2026-08-11",
-          "daysSince": 1
-        }
-      ],
-      "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
-      "followEntity": "rais_depts",
-      "raisDeptName": "دائرة التخطيط الاستراتيجي",
-      "responseMethod": ""
     }
   ],
   "directives": [
@@ -27005,19 +26919,12 @@
       "dueDate": "2026-08-13",
       "subj": "معسكر القبلية",
       "action": "إعداد خطة عمل لمسح  البيئة البحرية في جزيرة القبلية وجزر الحلانيات وإعادة تنظيفها  ومعالجة الاضرار وتأهيلها بدءاً من 1 أكتوبر 2026 م",
-      "status": "awaiting",
+      "status": "new",
       "note": "",
       "followLog": [
         {
           "date": "2026-08-09",
           "action": "تم متابعة التقسيم عبر وصول",
-          "by": "",
-          "result": "",
-          "note": ""
-        },
-        {
-          "date": "2026-08-12",
-          "action": "عبر وصول",
           "by": "",
           "result": "",
           "note": ""
