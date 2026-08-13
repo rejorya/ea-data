@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-13T04:42:30.009Z",
+  "exportedAt": "2026-08-13T04:43:30.240Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26706,6 +26706,26 @@
       "followEntity": "rais_depts",
       "raisDeptName": "دائرة التخطيط الاستراتيجي",
       "responseMethod": ""
+    },
+    {
+      "id": 1786596208502.3557,
+      "title": "مذكرة تفاهم مع شركة EPD الدولية",
+      "from": "مكتب الرئيس",
+      "docNo": "1153/24/2026-3",
+      "toEntity": "ادائرة القانونية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-07-13",
+      "followStart": "2026-08-13",
+      "type": "int",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "rev3",
+      "note": "مذكرة تفاهم مع شركة EPD الدولية",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
