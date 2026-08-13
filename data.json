@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-13T05:00:39.712Z",
+  "exportedAt": "2026-08-13T05:00:53.427Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26743,6 +26743,26 @@
       "followEntity": "rais_depts",
       "raisDeptName": "الدائرة القانونية",
       "responseMethod": ""
+    },
+    {
+      "id": 1786597251177.1416,
+      "title": "توصيات ورشة عمل مناقشة خطة تنفيذ مشروع إغلاق وإعادة تأهيل المطامر التقليدية.pdf",
+      "from": "شركة بيئة",
+      "docNo": "1170/3/2022v413-33",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-10",
+      "followStart": "2026-08-12",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "نائب الرئيس \nالالتزام \nللإفادة بالرأي",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
