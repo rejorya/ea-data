@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-13T05:24:41.070Z",
+  "exportedAt": "2026-08-13T05:25:36.330Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26816,6 +26816,26 @@
       "followEntity": "rais_depts",
       "raisDeptName": "دائرة التعاون الدولي",
       "responseMethod": ""
+    },
+    {
+      "id": 1786598734241.1868,
+      "title": "إجراءات إدخال بيانات الأداء الفعلي لموظفي دائرة التواصل والإعلام للنصف الأول من عام 2026م",
+      "from": "مكتب الرئيس",
+      "docNo": "1181/127/2026-6",
+      "toEntity": "",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "secret",
+      "date": "2026-08-08",
+      "followStart": "2026-08-12",
+      "type": "ext",
+      "slaMode": "rais",
+      "slaDays": 5,
+      "kpi": "",
+      "note": "تنفذ التوصيات خلال أسبوع وعلى مكتب الرئيس المتابعة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
