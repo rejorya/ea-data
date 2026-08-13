@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-13T05:27:39.363Z",
+  "exportedAt": "2026-08-13T05:27:56.183Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26822,20 +26822,37 @@
       "title": "إجراءات إدخال بيانات الأداء الفعلي لموظفي دائرة التواصل والإعلام للنصف الأول من عام 2026م",
       "from": "مكتب الرئيس",
       "docNo": "1181/127/2026-6",
-      "toEntity": "",
+      "toEntity": "مكتب تنفيذ رؤية عمان 2024/دائرة التواصل والاعلام/دائرة الموارد البشرية",
       "taqseemName": "",
       "priority": "urgent",
       "confidentiality": "secret",
       "date": "2026-08-08",
       "followStart": "2026-08-12",
-      "type": "ext",
-      "slaMode": "rais",
-      "slaDays": 5,
-      "kpi": "",
+      "type": "int",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wweek",
       "note": "تنفذ التوصيات خلال أسبوع وعلى مكتب الرئيس المتابعة",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-08-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-12",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "مكتب تنفيذ رؤية عمان 2024/دائرة التواصل والاعلام/دائرة الموارد البشرية",
+      "responseMethod": ""
     }
   ],
   "directives": [
