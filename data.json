@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-13T04:43:30.240Z",
+  "exportedAt": "2026-08-13T04:44:04.858Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26712,20 +26712,37 @@
       "title": "مذكرة تفاهم مع شركة EPD الدولية",
       "from": "مكتب الرئيس",
       "docNo": "1153/24/2026-3",
-      "toEntity": "ادائرة القانونية",
+      "toEntity": "الدائرة القانونية",
       "taqseemName": "",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-07-13",
-      "followStart": "2026-08-13",
+      "followStart": "2026-08-12",
       "type": "int",
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "rev3",
       "note": "مذكرة تفاهم مع شركة EPD الدولية",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-08-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-12",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "الدائرة القانونية",
+      "responseMethod": ""
     }
   ],
   "directives": [
