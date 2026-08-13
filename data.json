@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-13T07:17:23.194Z",
+  "exportedAt": "2026-08-13T07:18:13.365Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26853,6 +26853,26 @@
       "followEntity": "rais_depts",
       "raisDeptName": "مكتب تنفيذ رؤية عمان 2024/دائرة التواصل والاعلام/دائرة الموارد البشرية",
       "responseMethod": ""
+    },
+    {
+      "id": 1786605491266.4377,
+      "title": "مراجعة مشروعات القرارات الخاصة بإدارة المحميات.",
+      "from": "وزارة العدل والشؤون القانونية",
+      "docNo": "1170/3/2022v413-96",
+      "toEntity": "",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "normal",
+      "date": "2026-08-13",
+      "followStart": "2026-08-13",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
