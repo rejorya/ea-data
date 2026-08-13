@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-13T05:16:39.345Z",
+  "exportedAt": "2026-08-13T05:16:50.247Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26779,6 +26779,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1786598207869.8777,
+      "title": "مذكرة تفاهم بين هيئة البيئة والمركز العلمي لموناكو  في مجال حماية النظم البيئية البحرية",
+      "from": "وزارة العدل والشؤون القانونية",
+      "docNo": "1170/3/2022v413-77",
+      "toEntity": "دائرة التعاون الدولي",
+      "taqseemName": "دائرة التعاون الدولي",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-12",
+      "followStart": "2026-08-12",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wweek",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
