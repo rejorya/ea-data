@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-18T05:48:45.565Z",
+  "exportedAt": "2026-08-18T05:50:08.726Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26632,6 +26632,26 @@
       "responseMethod": "direct_manager",
       "divFollowDate": "2026-08-05",
       "closedAt": "2026-08-09"
+    },
+    {
+      "id": 1787032206648.1274,
+      "title": "المشاركة في توفير محتوى لجناح سلطنة عمان في نؤتمر الأطراف 31 لاتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ.",
+      "from": "هيئة تنظيم الخدمات العامة",
+      "docNo": "1170/3/2022v414-5",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "secret",
+      "date": "2026-08-13",
+      "followStart": "2026-08-16",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
