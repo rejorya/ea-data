@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-18T09:03:09.532Z",
+  "exportedAt": "2026-08-18T09:03:19.401Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27092,7 +27092,7 @@
       "slaDays": null,
       "kpi": "wd3",
       "note": "التخطيط لإبداء الرأي",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-08-12",
@@ -27111,7 +27111,8 @@
       "manualCount": 1,
       "followEntity": "rais_depts",
       "raisDeptName": "دائرة التخطيط الاستراتيجي",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-08-18"
     }
   ],
   "directives": [
