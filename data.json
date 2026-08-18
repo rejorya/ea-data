@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-18T05:45:32.064Z",
+  "exportedAt": "2026-08-18T05:11:17.016Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26632,117 +26632,6 @@
       "responseMethod": "direct_manager",
       "divFollowDate": "2026-08-05",
       "closedAt": "2026-08-09"
-    },
-    {
-      "id": 1786593144769.8518,
-      "title": "اعتماد مسار تنفيذ مشروع اعداد تصور انشاء وتشغيل مركز لتأهيل الكائنات البحرية (السلاحف والثدييات البحرية) بالتنسيق مع شركة عمران",
-      "from": "مكتب نائب رئيس الهيئة",
-      "docNo": "6314/1/2022v9-16",
-      "toEntity": "دائرة التخطيط الاستراتيجي",
-      "taqseemName": "دائرة التخطيط الاستراتيجي",
-      "priority": "normal",
-      "confidentiality": "normal",
-      "date": "2026-08-09",
-      "followStart": "2026-08-12",
-      "type": "int",
-      "slaMode": "kpi",
-      "slaDays": null,
-      "kpi": "wd3",
-      "note": "التخطيط لإبداء الرأي",
-      "status": "awaiting",
-      "followups": [
-        {
-          "date": "2026-08-12",
-          "replied": false,
-          "note": "متابعة",
-          "actionType": "visit",
-          "by": "",
-          "result": "",
-          "entity": "rais_depts",
-          "taqseem": "",
-          "startDate": "2026-08-12",
-          "daysSince": 0
-        }
-      ],
-      "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
-      "followEntity": "rais_depts",
-      "raisDeptName": "دائرة التخطيط الاستراتيجي",
-      "responseMethod": ""
-    },
-    {
-      "id": 1786593331767.1519,
-      "title": "تحديث سجل المخاطر الوطنية قصير المدى.pdf",
-      "from": "هيئة الدفاع المدني والإسعاف",
-      "docNo": "1170/3/2022v413-36",
-      "toEntity": "دائرة التخطيط الاستراتيجي",
-      "taqseemName": "",
-      "priority": "normal",
-      "confidentiality": "normal",
-      "date": "2026-08-10",
-      "followStart": "2026-08-11",
-      "type": "ext",
-      "slaMode": "kpi",
-      "slaDays": null,
-      "kpi": "wd2",
-      "note": "التخطيط\nلعمل اللازم خلال يومين",
-      "status": "esc",
-      "followups": [
-        {
-          "date": "2026-08-12",
-          "replied": false,
-          "note": "متابعة",
-          "actionType": "visit",
-          "by": "",
-          "result": "",
-          "entity": "rais_depts",
-          "taqseem": "",
-          "startDate": "2026-08-11",
-          "daysSince": 1
-        }
-      ],
-      "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
-      "followEntity": "rais_depts",
-      "raisDeptName": "دائرة التخطيط الاستراتيجي",
-      "responseMethod": ""
-    },
-    {
-      "id": 1786596208502.3557,
-      "title": "مذكرة تفاهم مع شركة EPD الدولية",
-      "from": "مكتب الرئيس",
-      "docNo": "1153/24/2026-3",
-      "toEntity": "الدائرة القانونية",
-      "taqseemName": "",
-      "priority": "normal",
-      "confidentiality": "normal",
-      "date": "2026-07-13",
-      "followStart": "2026-08-12",
-      "type": "int",
-      "slaMode": "kpi",
-      "slaDays": null,
-      "kpi": "rev3",
-      "note": "مذكرة تفاهم مع شركة EPD الدولية",
-      "status": "new",
-      "followups": [
-        {
-          "date": "2026-08-13",
-          "replied": false,
-          "note": "متابعة",
-          "actionType": "visit",
-          "by": "",
-          "result": "",
-          "entity": "rais_depts",
-          "taqseem": "",
-          "startDate": "2026-08-12",
-          "daysSince": 1
-        }
-      ],
-      "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
-      "followEntity": "rais_depts",
-      "raisDeptName": "الدائرة القانونية",
-      "responseMethod": ""
     }
   ],
   "directives": [
@@ -31681,17 +31570,6 @@
     "مركز محمية حديقة السليل الطبيعية"
   ],
   "activityLog": [
-    {
-      "id": 1787030265631.9827,
-      "user": "rahab@ea2026",
-      "name": "رحاب بنت نصيب الفرج",
-      "role": "أخصائية تنسيق ومتابعة",
-      "type": "مدير",
-      "loginAt": "2026-08-18T05:17:45.631Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null
-    },
     {
       "id": 1787026938675.0442,
       "user": "rahab@ea2026",
