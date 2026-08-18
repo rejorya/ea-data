@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-18T07:33:00.168Z",
+  "exportedAt": "2026-08-18T07:33:38.281Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26706,6 +26706,26 @@
       "followEntity": "rais_depts",
       "raisDeptName": "مكتب الرؤية/مركز الاعمال البيئية",
       "responseMethod": ""
+    },
+    {
+      "id": 1787038416195.5588,
+      "title": "تصور مقترح مبادرة الغرف الصامتة ومساحات الخصوصية في بيئة العمل",
+      "from": "مكتب الرئيس",
+      "docNo": "1153/24/2026-4",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-13",
+      "followStart": "2026-08-16",
+      "type": "int",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wd3",
+      "note": "نائب الرئيس\nالادارية والمالية\nلاعداد تصور بذلك",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
