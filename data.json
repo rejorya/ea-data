@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-18T09:01:59.271Z",
+  "exportedAt": "2026-08-18T09:02:41.686Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27075,6 +27075,26 @@
       "raisDeptName": "دائرة التخطيط الاستراتيجي",
       "responseMethod": "direct_manager",
       "closedAt": "2026-08-18"
+    },
+    {
+      "id": 1787043759604.855,
+      "title": "اعتماد مسار تنفيذ مشروع اعداد تصور انشاء وتشغيل مركز لتأهيل الكائنات البحرية (السلاحف والثدييات البحرية) بالتنسيق مع شركة عمران",
+      "from": "مكتب نائب رئيس الهيئة",
+      "docNo": "6314/1/2022v9-16",
+      "toEntity": "دائرة التخطيط الاستراتيجي",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-09",
+      "followStart": "2026-08-12",
+      "type": "int",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wd3",
+      "note": "التخطيط لإبداء الرأي",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
