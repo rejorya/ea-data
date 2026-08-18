@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-18T07:39:59.629Z",
+  "exportedAt": "2026-08-18T07:40:04.077Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26742,6 +26742,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1787038801995.5757,
+      "title": "معسكر القبلية",
+      "from": "مكتب الرئيس",
+      "docNo": "1153/1/2022v12-30",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-09",
+      "followStart": "2026-08-18",
+      "type": "int",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wweek",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
