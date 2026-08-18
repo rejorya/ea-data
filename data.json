@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-18T08:05:00.194Z",
+  "exportedAt": "2026-08-18T08:05:59.153Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26988,6 +26988,26 @@
       "followEntity": "naib_office",
       "responseMethod": "direct_manager",
       "closedAt": "2026-08-18"
+    },
+    {
+      "id": 1787040355750.237,
+      "title": "مذكرة تفاهم مع شركة EPD الدولية",
+      "from": "مكتب الرئيس",
+      "docNo": "1153/24/2026-3",
+      "toEntity": "الدائرة القانونية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-07-14",
+      "followStart": "2026-08-12",
+      "type": "int",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wd3",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
