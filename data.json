@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-18T08:02:20.479Z",
+  "exportedAt": "2026-08-18T08:02:30.622Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26968,7 +26968,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس \nالالتزام \nللإفادة بالرأي",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-08-13",
@@ -26986,7 +26986,8 @@
       "sheet": "مُضاف يدوياً",
       "manualCount": 1,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-08-18"
     }
   ],
   "directives": [
