@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-18T05:50:08.726Z",
+  "exportedAt": "2026-08-18T05:50:31.806Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26639,7 +26639,7 @@
       "from": "هيئة تنظيم الخدمات العامة",
       "docNo": "1170/3/2022v414-5",
       "toEntity": "نائب الرئيس",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة للتغير المناخي",
       "priority": "urgent",
       "confidentiality": "secret",
       "date": "2026-08-13",
@@ -26649,9 +26649,26 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
-      "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "status": "awaiting",
+      "followups": [
+        {
+          "date": "2026-08-18",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للتغير المناخي",
+          "startDate": "2026-08-16",
+          "daysSince": 2
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-08-18"
     }
   ],
   "directives": [
