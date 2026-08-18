@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-18T05:58:21.684Z",
+  "exportedAt": "2026-08-18T06:00:25.204Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26719,6 +26719,26 @@
       "followEntity": "rais_depts",
       "raisDeptName": "دائرة التعاون الدولي",
       "responseMethod": "via_follow"
+    },
+    {
+      "id": 1787032823126.7007,
+      "title": "مراجعة مشروعات القرارات الخاصة بإدارة المحميات.",
+      "from": "وزارة العدل والشؤون القانونية",
+      "docNo": "1170/3/2022v413-96",
+      "toEntity": "الدائرة القانونية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-13",
+      "followStart": "2026-08-13",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
