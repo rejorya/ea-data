@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-18T07:58:12.311Z",
+  "exportedAt": "2026-08-18T07:58:19.704Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26932,10 +26932,22 @@
           "taqseem": "",
           "startDate": "2026-08-13",
           "daysSince": 0
+        },
+        {
+          "date": "2026-08-18",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-13",
+          "daysSince": 3
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "rais_depts",
       "raisDeptName": "دائرة التواصل والاعلام/مكتب الرؤية/دائرة الموارد البشرية",
       "responseMethod": ""
