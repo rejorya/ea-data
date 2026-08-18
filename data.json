@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-18T07:21:59.613Z",
+  "exportedAt": "2026-08-18T07:22:32.271Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26669,6 +26669,26 @@
       "followEntity": "rais_depts",
       "raisDeptName": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1787037750167.0479,
+      "title": "مؤشرات منصة تنافسية المحافظات.",
+      "from": "محافظة مسقط",
+      "docNo": "1170/3/2022v413-97",
+      "toEntity": "مكتب الرؤية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-13",
+      "followStart": "2026-08-16",
+      "type": "ext",
+      "slaMode": "rais",
+      "slaDays": 5,
+      "kpi": "",
+      "note": "مكتب الرؤية\nمركز الاعمال\nلعمل الازم والافادة بالخطة خلال 5 ايام عمل",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
