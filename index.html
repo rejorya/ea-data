@@ -2569,7 +2569,34 @@ async function downloadFromGitHub() {
     const fileData = await res.json();
     // فك تشفير Base64 مع دعم الأحرف العربية
     const decoded = decodeURIComponent(escape(atob(fileData.content.replace(/\n/g, ''))));
-    const imported = JSON.parse(decoded);
+    
+    // 🛡️ تشخيص واضح: الملف موجود على GitHub لكنه فارغ أو تالف (بدل خطأ JSON غامض)
+    if(!decoded || !decoded.trim()) {
+      showGitHubInfo(
+        '❌ ملف data.json على GitHub فارغ تماماً!<br>' +
+        'هذا لا يعني فقدان بياناتك بالضرورة — GitHub يحتفظ بكل نسخة سابقة:<br>' +
+        '١) افتحي المستودع على GitHub ← data.json ← زر "History"<br>' +
+        '٢) افتحي آخر نسخة قبل ما صارت فارغة، وانسخي محتواها<br>' +
+        '٣) الصقيه محل الملف الحالي واحفظي (Commit)، ثم ارجعي هنا واضغطي "تحميل آخر تحديث"<br>' +
+        'أو استخدمي "استرجاع آخر نسخة محلية تلقائية" من الأسفل إذا كنتِ بنفس الجهاز الذي عملتِ عليه آخر مرة.',
+        'error'
+      );
+      updateGitHubStatus('❌ ملف فارغ', 'error');
+      return; // لا نكمل — ولا نضبط _cloudLoadConfirmed، فتبقى حماية عدم الرفع الفارغ فعّالة
+    }
+    
+    let imported;
+    try {
+      imported = JSON.parse(decoded);
+    } catch(parseErr) {
+      showGitHubInfo(
+        '❌ ملف data.json على GitHub تالف (محتوى غير صالح كـ JSON):<br>' + parseErr.message + '<br>' +
+        'افتحي "History" لملف data.json على GitHub وارجعي لآخر نسخة سليمة، أو استخدمي "استرجاع آخر نسخة محلية تلقائية".',
+        'error'
+      );
+      updateGitHubStatus('❌ ملف تالف', 'error');
+      return;
+    }
     
     if(!imported.topics && !imported.directives) {
       showGitHubInfo('❌ ملف غير صالح', 'error');
@@ -2679,7 +2706,24 @@ async function downloadFromGitHubPublic() {
       return;
     }
     
-    const imported = await res.json();
+    const rawText = await res.text();
+    if(!rawText || !rawText.trim()) {
+      showGitHubInfo(
+        '❌ ملف data.json على GitHub فارغ تماماً!<br>' +
+        'هذا لا يعني فقدان البيانات بالضرورة — GitHub يحتفظ بكل نسخة سابقة. اطلبي من رحاب مراجعة "History" لملف data.json على GitHub واستعادة آخر نسخة سليمة.',
+        'error'
+      );
+      updateGitHubStatus('❌ ملف فارغ', 'error');
+      return;
+    }
+    let imported;
+    try {
+      imported = JSON.parse(rawText);
+    } catch(parseErr) {
+      showGitHubInfo('❌ ملف data.json تالف (محتوى غير صالح): ' + parseErr.message, 'error');
+      updateGitHubStatus('❌ ملف تالف', 'error');
+      return;
+    }
     
     if(!imported.topics && !imported.directives) {
       showGitHubInfo('❌ ملف غير صالح', 'error');
