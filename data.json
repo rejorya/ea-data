@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-18T07:45:59.631Z",
+  "exportedAt": "2026-08-18T07:46:26.495Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26778,6 +26778,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1787039184395.2314,
+      "title": "مراجعة مشروعات القرارات الخاصة بإدارة المحميات.",
+      "from": "وزارة العدل والشؤون القانونية",
+      "docNo": "1170/3/2022v413-96",
+      "toEntity": "الدائرة القانونية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-13",
+      "followStart": "2026-08-13",
+      "type": "int",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
