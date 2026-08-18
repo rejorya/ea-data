@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-18T05:17:50.483Z",
+  "exportedAt": "2026-08-18T05:18:18.167Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -24974,10 +24974,22 @@
           "taqseem": "",
           "startDate": "2026-07-15",
           "daysSince": 14
+        },
+        {
+          "date": "2026-08-11",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-07-15",
+          "daysSince": 19
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 5,
+      "manualCount": 6,
       "followEntity": "naib_office",
       "responseMethod": "",
       "closedAt": "2026-07-15"
@@ -25692,7 +25704,7 @@
       "slaDays": 5,
       "kpi": "gov5",
       "note": "نائب الرئيس\nالالتزام البيئي\nلعمل اللازم\nموعد اقصاة 1 سبتمبر",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-07-14",
@@ -25758,7 +25770,8 @@
       "sheet": "مُضاف يدوياً",
       "manualCount": 5,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-08-13"
     },
     {
       "id": 1784017403769.1228,
@@ -26478,7 +26491,7 @@
       "slaDays": 10,
       "kpi": "w2week",
       "note": "نائب الرئيس\nالتنوع الاحيائي\nالادارية والمالية\nتوضع خطة لتنفيذ جميع التوصيات وترفع الينا خلال اسبوعين بحيث تكون الادارة وفق الاختصاص وبحسب نوع المبادرة",
-      "status": "awaiting",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-08-04",
@@ -26503,10 +26516,22 @@
           "taqseem": "",
           "startDate": "2026-08-02",
           "daysSince": 5
+        },
+        {
+          "date": "2026-08-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "esc",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-08-02",
+          "daysSince": 9
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "naib_office",
       "responseMethod": ""
     },
@@ -26563,10 +26588,22 @@
           "taqseem": "",
           "startDate": "2026-08-02",
           "daysSince": 4
+        },
+        {
+          "date": "2026-08-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-02",
+          "daysSince": 9
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "rais_depts",
       "raisDeptName": "دائرة ضبط الجودة",
       "responseMethod": ""
@@ -26632,6 +26669,266 @@
       "responseMethod": "direct_manager",
       "divFollowDate": "2026-08-05",
       "closedAt": "2026-08-09"
+    },
+    {
+      "id": 1786593144769.8518,
+      "title": "اعتماد مسار تنفيذ مشروع اعداد تصور انشاء وتشغيل مركز لتأهيل الكائنات البحرية (السلاحف والثدييات البحرية) بالتنسيق مع شركة عمران",
+      "from": "مكتب نائب رئيس الهيئة",
+      "docNo": "6314/1/2022v9-16",
+      "toEntity": "دائرة التخطيط الاستراتيجي",
+      "taqseemName": "دائرة التخطيط الاستراتيجي",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-09",
+      "followStart": "2026-08-12",
+      "type": "int",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wd3",
+      "note": "التخطيط لإبداء الرأي",
+      "status": "awaiting",
+      "followups": [
+        {
+          "date": "2026-08-12",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-12",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "دائرة التخطيط الاستراتيجي",
+      "responseMethod": ""
+    },
+    {
+      "id": 1786593331767.1519,
+      "title": "تحديث سجل المخاطر الوطنية قصير المدى.pdf",
+      "from": "هيئة الدفاع المدني والإسعاف",
+      "docNo": "1170/3/2022v413-36",
+      "toEntity": "دائرة التخطيط الاستراتيجي",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-10",
+      "followStart": "2026-08-11",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wd2",
+      "note": "التخطيط\nلعمل اللازم خلال يومين",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-08-12",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-11",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "دائرة التخطيط الاستراتيجي",
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-08-13"
+    },
+    {
+      "id": 1786596208502.3557,
+      "title": "مذكرة تفاهم مع شركة EPD الدولية",
+      "from": "مكتب الرئيس",
+      "docNo": "1153/24/2026-3",
+      "toEntity": "الدائرة القانونية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-07-13",
+      "followStart": "2026-08-12",
+      "type": "int",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "rev3",
+      "note": "مذكرة تفاهم مع شركة EPD الدولية",
+      "status": "new",
+      "followups": [
+        {
+          "date": "2026-08-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-12",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "الدائرة القانونية",
+      "responseMethod": ""
+    },
+    {
+      "id": 1786597251177.1416,
+      "title": "توصيات ورشة عمل مناقشة خطة تنفيذ مشروع إغلاق وإعادة تأهيل المطامر التقليدية.pdf",
+      "from": "شركة بيئة",
+      "docNo": "1170/3/2022v413-33",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-10",
+      "followStart": "2026-08-12",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "نائب الرئيس \nالالتزام \nللإفادة بالرأي",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-08-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-08-12",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "closedAt": "2026-08-13"
+    },
+    {
+      "id": 1786598207869.8777,
+      "title": "مذكرة تفاهم بين هيئة البيئة والمركز العلمي لموناكو  في مجال حماية النظم البيئية البحرية",
+      "from": "وزارة العدل والشؤون القانونية",
+      "docNo": "1170/3/2022v413-77",
+      "toEntity": "دائرة التعاون الدولي",
+      "taqseemName": "دائرة التعاون الدولي",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-12",
+      "followStart": "2026-08-12",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wweek",
+      "note": "",
+      "status": "new",
+      "followups": [
+        {
+          "date": "2026-08-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-12",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "دائرة التعاون الدولي",
+      "responseMethod": ""
+    },
+    {
+      "id": 1786598734241.1868,
+      "title": "إجراءات إدخال بيانات الأداء الفعلي لموظفي دائرة التواصل والإعلام للنصف الأول من عام 2026م",
+      "from": "مكتب الرئيس",
+      "docNo": "1181/127/2026-6",
+      "toEntity": "مكتب تنفيذ رؤية عمان 2024/دائرة التواصل والاعلام/دائرة الموارد البشرية",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "secret",
+      "date": "2026-08-08",
+      "followStart": "2026-08-12",
+      "type": "int",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wweek",
+      "note": "تنفذ التوصيات خلال أسبوع وعلى مكتب الرئيس المتابعة",
+      "status": "new",
+      "followups": [
+        {
+          "date": "2026-08-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-12",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "مكتب تنفيذ رؤية عمان 2024/دائرة التواصل والاعلام/دائرة الموارد البشرية",
+      "responseMethod": ""
+    },
+    {
+      "id": 1786605491266.4377,
+      "title": "مراجعة مشروعات القرارات الخاصة بإدارة المحميات.",
+      "from": "وزارة العدل والشؤون القانونية",
+      "docNo": "1170/3/2022v413-96",
+      "toEntity": "الدائرة القانونية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-13",
+      "followStart": "2026-08-13",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "",
+      "status": "new",
+      "followups": [
+        {
+          "date": "2026-08-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-13",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "الدائرة القانونية",
+      "responseMethod": ""
     }
   ],
   "directives": [
