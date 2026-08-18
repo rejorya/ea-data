@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-18T07:47:59.635Z",
+  "exportedAt": "2026-08-18T07:48:03.305Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26526,7 +26526,7 @@
       "slaDays": null,
       "kpi": "wweek",
       "note": "توضع خطة لاتمتة الخدمة الورقية ورقمنة ال ٦ خدمات الاخرى وذلك خلال اسبوع عمل",
-      "status": "awaiting",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-08-04",
@@ -26568,7 +26568,7 @@
       "sheet": "مُضاف يدوياً",
       "manualCount": 3,
       "followEntity": "rais_depts",
-      "raisDeptName": "دائرة ضبط الجودة",
+      "raisDeptName": "دائرة ضبط الجودة/ التحول الرقمي",
       "responseMethod": ""
     },
     {
