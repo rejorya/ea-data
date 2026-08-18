@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-18T07:33:59.631Z",
+  "exportedAt": "2026-08-18T07:34:24.517Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26721,11 +26721,27 @@
       "type": "int",
       "slaMode": "kpi",
       "slaDays": null,
-      "kpi": "wd3",
+      "kpi": "wweek",
       "note": "نائب الرئيس\nالادارية والمالية\nلاعداد تصور بذلك",
-      "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "status": "awaiting",
+      "followups": [
+        {
+          "date": "2026-08-18",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-08-16",
+          "daysSince": 2
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "directives": [
