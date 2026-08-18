@@ -952,54 +952,6 @@ body.viewer-only .print-btn { display: inline-block !important; }
       </div>
     </div>
   </div>
-  
-  <!-- للمدير: تصدير ملف بيانات -->
-  <div class="card adminOnly">
-    <div class="ch p"><h2>📤 تصدير ملف البيانات (للمشاركة مع المسؤولين)</h2></div>
-    <div class="fs">
-      <div style="background:#f5f0fb;border:2px dashed var(--purple);border-radius:8px;padding:14px">
-        <p style="font-size:13px;color:#666;margin-bottom:12px;line-height:1.8">
-          <b>📌 الخطوات:</b><br>
-          1️⃣ بعد ما تستوردين الإكسل وتضيفين بيانات جديدة<br>
-          2️⃣ اضغطي "تصدير ملف البيانات" — سينزل ملف <code>.json</code><br>
-          3️⃣ أرسلي الملف للمسؤولين عبر WhatsApp / Email<br>
-          4️⃣ هم يستوردونه في نظامهم وستظهر لهم كل البيانات
-        </p>
-        <button class="btn btn-p" onclick="exportSharedData()">📤 تصدير ملف البيانات</button>
-      </div>
-    </div>
-  </div>
-  
-  <!-- للجميع: استيراد ملف بيانات -->
-  <div class="card">
-    <div class="ch b"><h2>📥 استيراد ملف بيانات من رحاب</h2></div>
-    <div class="fs">
-      <div style="background:#eaf4fd;border:2px dashed var(--blue);border-radius:8px;padding:14px">
-        <p style="font-size:13px;color:#666;margin-bottom:12px;line-height:1.8">
-          <b>📌 إذا استلمتم ملف بيانات من رحاب:</b><br>
-          1️⃣ اختاروا الملف (.json) من جهازكم<br>
-          2️⃣ اضغطوا "استيراد البيانات"<br>
-          3️⃣ ستظهر كل المواضيع والتوجيهات تلقائياً
-        </p>
-        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
-          <input type="file" id="sharedDataFile" accept=".json" class="viewer-allowed" style="flex:1;min-width:200px;padding:6px">
-          <button class="btn btn-b" onclick="importSharedData()">📥 استيراد البيانات</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="card">
-    <div class="ch t"><h2>ℹ️ معلومات</h2></div>
-    <div class="fs">
-      <p style="line-height:2;font-size:13px">
-        ✦ <b>للمدير (رحاب):</b> بعد كل إضافة/استيراد، صدّري الملف وأرسليه للمسؤولين<br>
-        ✦ <b>للمسؤولين:</b> استوردوا الملف عند استلامه لتشاهدوا أحدث البيانات<br>
-        ✦ البيانات تشمل: المواضيع، التوجيهات، التقارير المحفوظة، الأفكار<br>
-        ✦ <b>التوصية:</b> صدّري الملف مرة أسبوعياً على الأقل
-      </p>
-    </div>
-  </div>
 </div>
 
 <div class="sec adminOnly" id="sec-backup">
@@ -1032,23 +984,6 @@ body.viewer-only .print-btn { display: inline-block !important; }
       <div style="margin-top:16px;padding-top:14px;border-top:1px dashed var(--border)">
         <p style="font-size:12px;color:var(--text2);margin-bottom:8px">🛟 نسخة طوارئ: النظام يحفظ تلقائياً آخر حالة محلية قبل كل تحميل من السحابة.</p>
         <button class="btn btn-o" onclick="restoreLastGood()" style="padding:10px 20px;font-size:13px">⏮️ استرجاع آخر نسخة محلية تلقائية</button>
-      </div>
-    </div>
-  </div>
-  
-  <div class="card adminOnly">
-    <div class="ch b"><h2>🌐 الحل الأمثل لمشاركة البيانات مع المسؤولين</h2></div>
-    <div class="fs">
-      <div style="line-height:2;font-size:13px">
-        <p><b>الوضع الحالي:</b> النظام يحفظ البيانات في متصفحك فقط.</p>
-        <p><b>لتظهر التحديثات للمسؤولين:</b></p>
-        <ol style="padding-right:22px;margin-top:8px">
-          <li>أدخلي/استوردي البيانات الجديدة</li>
-          <li>اضغطي <b>"تصدير نسخة احتياطية"</b> أعلاه</li>
-          <li>احفظي الملف JSON على جهازك</li>
-          <li>أرسليه لي وأنا أُدمج البيانات في النظام مباشرة</li>
-          <li>أرفع الملف على Netlify ليصل للمسؤولين</li>
-        </ol>
       </div>
     </div>
   </div>
@@ -1669,6 +1604,7 @@ const D = {
   discussions: [],    // مناقشات الرئيس (مستقلة عن المواضيع)
   holidays: [],       // الإجازات الرسمية (تواريخ ISO) — تُستثنى من حساب أيام العمل
   naibDivisions: [],  // المديريات العامة والإدارات التابعة فعلياً لمكتب النائب
+  activityLog: [],    // سجل تسجيلات الدخول والخروج — من كل الأجهزة (مُزامَن بالسحابة)
   users: USERS        // المستخدمون
 };
 
@@ -1694,6 +1630,7 @@ function saveToStorage() {
       discussions: D.discussions || [],
       holidays: D.holidays || [],
       naibDivisions: D.naibDivisions || [],
+      activityLog: D.activityLog || [],
       savedAt: new Date().toISOString()
     };
     localStorage.setItem(STORAGE_KEY, JSON.stringify(dataToSave));
@@ -1721,6 +1658,7 @@ function loadFromStorage() {
     if(saved.discussions) D.discussions = saved.discussions;
     if(saved.holidays) D.holidays = saved.holidays;
     if(saved.naibDivisions) D.naibDivisions = saved.naibDivisions;
+    if(saved.activityLog) D.activityLog = saved.activityLog;
     console.log('تم استرجاع البيانات المحفوظة من ' + saved.savedAt);
     return true;
   } catch(e) {
@@ -1732,6 +1670,8 @@ function loadFromStorage() {
 // حفظ تلقائي كل تغيير
 // queue لتجميع التغييرات وإرسالها دفعة واحدة بعد ثانيتين
 let _asTimer = null;
+// 🛡️ علم تأكيد تحميل السحابة بنجاح في هذه الجلسة — يمنع الحفظ التلقائي من محو بيانات السحابة الحقيقية ببيانات محلية فارغة/غير محمَّلة بعد
+window._cloudLoadConfirmed = false;
 function autoSave() {
   if(CU?.admin) {
     saveToStorage(); // احفظ محلياً فوراً كضمان
@@ -1743,9 +1683,32 @@ function autoSave() {
   }
 }
 
+// 🛡️ رفع فوري (بدون تأخير) للسحابة — يُستخدم بعد عمليات الاسترجاع/الاستيراد الحرجة
+// حتى لا يضيع الرفع لو أغلقت رحاب المتصفح قبل انتهاء مهلة الحفظ التلقائي المؤجّل
+async function forceSyncToGithubNow() {
+  if(!CU?.admin) return false;
+  saveToStorage();
+  clearTimeout(_asTimer);
+  window._cloudLoadConfirmed = true; // البيانات المستعادة/المستوردة هي الحالة الصحيحة الآن — يُسمح برفعها
+  try {
+    await autoSaveToGitHub();
+    return true;
+  } catch(e) {
+    console.warn('forceSyncToGithubNow failed:', e.message);
+    return false;
+  }
+}
+
 async function autoSaveToGitHub() {
   const config = getGitHubConfig();
   if(!config || !config.token) return; // بدون token ما نقدر نكتب
+  // 🛡️ حماية حرجة من الكتابة الفارغة: لا نرفع فوق بيانات السحابة إلا بعد تأكيد تحميلها بنجاح في هذه الجلسة —
+  // يمنع سيناريو خطير: فتح المنصة، فشل/تأخّر تحميل السحابة، ثم أي إجراء يستدعي autoSave() فيمحو بيانات السحابة الحقيقية ببيانات محلية فارغة
+  if(D.topics.length === 0 && !window._cloudLoadConfirmed) {
+    console.warn('⛔ تم تجاهل الرفع التلقائي: لا توجد مواضيع محلية ولم يُؤكَّد تحميل السحابة بعد في هذه الجلسة (حماية من الكتابة الفارغة)');
+    showGitHubInfo('⏸️ تم تجاهل الحفظ التلقائي — لم تُحمَّل بيانات السحابة بعد', 'warning');
+    return;
+  }
   try {
     const dataToShare = {
       version: '3.0',
@@ -1761,7 +1724,8 @@ async function autoSaveToGitHub() {
       memos: D.memos || [],
       discussions: D.discussions || [],
       holidays: D.holidays || [],
-      naibDivisions: D.naibDivisions || []
+      naibDivisions: D.naibDivisions || [],
+      activityLog: D.activityLog || []
     };
     const content = JSON.stringify(dataToShare, null, 2);
     const contentBase64 = btoa(unescape(encodeURIComponent(content)));
@@ -2024,18 +1988,40 @@ function printIdeas() {
 const ACTIVITY_KEY = 'ea_activity_log_v1';
 let currentSession = null; // { user, name, role, loginAt, lastActivity }
 
+// 🔗 سجل النشاط مُزامَن بالسحابة الآن (كان محلياً بكل جهاز فقط) — يظهر تسجيل الدخول من كل الأجهزة
 function loadActivityLog() {
+  if(!Array.isArray(D.activityLog)) D.activityLog = [];
+  // ترحيل تلقائي لمرة واحدة: أي سجل قديم محفوظ محلياً بهذا الجهاز فقط، يُدمَج مع السجل المُزامَن
   try {
-    const raw = localStorage.getItem(ACTIVITY_KEY);
-    return raw ? JSON.parse(raw) : [];
-  } catch(e) { return []; }
+    const oldRaw = localStorage.getItem(ACTIVITY_KEY);
+    if(oldRaw && !localStorage.getItem(ACTIVITY_KEY + '_migrated')) {
+      const oldLog = JSON.parse(oldRaw);
+      if(Array.isArray(oldLog) && oldLog.length) {
+        D.activityLog = mergeActivityLogs(D.activityLog, oldLog);
+      }
+      localStorage.setItem(ACTIVITY_KEY + '_migrated', '1');
+    }
+  } catch(e) {}
+  return D.activityLog;
 }
 
 function saveActivityLog(log) {
-  try {
-    localStorage.setItem(ACTIVITY_KEY, JSON.stringify(log));
-    return true;
-  } catch(e) { return false; }
+  D.activityLog = log;
+  if(D.activityLog.length > 500) D.activityLog.length = 500;
+  autoSave(); // يرفع السجل المحدَّث للسحابة، فيظهر بكل الأجهزة
+  return true;
+}
+
+// دمج سجلين بلا تكرار (بحسب id)، مرتّبَين بالأحدث أولاً — يُستخدم عند تنزيل نسخة السحابة حتى لا تُفقَد تسجيلات دخول من أجهزة أخرى
+function mergeActivityLogs(a, b) {
+  const map = {};
+  (a || []).forEach(e => { if(e && e.id != null) map[e.id] = e; });
+  (b || []).forEach(e => { if(e && e.id != null) {
+    // لو نفس الـ id موجود بالطرفين، نُفضّل النسخة الأحدث تحديثاً (اللي فيها logoutAt أو تفاصيل أكثر)
+    const existing = map[e.id];
+    if(!existing || (e.logoutAt && !existing.logoutAt)) map[e.id] = e;
+  }});
+  return Object.values(map).sort((x,y) => new Date(y.loginAt) - new Date(x.loginAt)).slice(0,500);
 }
 
 function recordLogin(user, name, role, isAdmin) {
@@ -2245,12 +2231,14 @@ function exportActivityJson() {
 }
 
 function clearActivityLog() {
-  if (!confirm('⚠️ هل أنتِ متأكدة من مسح كامل السجل؟\n\nسيتم حذف جميع السجلات نهائياً ولا يمكن التراجع.')) return;
+  if (!confirm('⚠️ هل أنتِ متأكدة من مسح كامل السجل؟\n\nسيتم حذف جميع السجلات نهائياً من كل الأجهزة ولا يمكن التراجع.')) return;
   if (!confirm('تأكيد ثاني: هل تريدين بالفعل مسح السجل؟')) return;
+  D.activityLog = [];
   localStorage.removeItem(ACTIVITY_KEY);
+  autoSave();
   refreshActivityStats();
   renderActivityLog();
-  alert('✅ تم مسح السجل');
+  alert('✅ تم مسح السجل من كل الأجهزة');
 }
 
 // تسجيل إغلاق المتصفح
@@ -2457,6 +2445,14 @@ async function uploadToGitHub() {
     return;
   }
   
+  // 🛡️ تحذير قبل رفع بيانات فارغة أو غير مؤكَّد تحميلها — لتفادي محو بيانات السحابة الحقيقية بالخطأ
+  if(D.topics.length === 0 && !window._cloudLoadConfirmed) {
+    if(!confirm('⚠️ تنبيه مهم:\n\nلا توجد مواضيع محلياً الآن، ولم يُؤكَّد تحميل بيانات السحابة في هذه الجلسة.\n\nرفع الآن قد يحذف كل بياناتك من السحابة نهائياً!\n\nهل أنتِ متأكدة تريدين المتابعة؟')) {
+      showGitHubInfo('⏸️ أُلغي الرفع للحفاظ على بيانات السحابة', 'warning');
+      return;
+    }
+  }
+  
   showGitHubInfo('⬆️ جاري رفع البيانات...', 'info');
   updateGitHubStatus('⬆️ جاري الرفع...', 'info');
   
@@ -2475,7 +2471,8 @@ async function uploadToGitHub() {
       memos: D.memos || [],
       discussions: D.discussions || [],
       holidays: D.holidays || [],
-      naibDivisions: D.naibDivisions || []
+      naibDivisions: D.naibDivisions || [],
+      activityLog: D.activityLog || []
     };
     
     const content = JSON.stringify(dataToShare, null, 2);
@@ -2518,6 +2515,7 @@ async function uploadToGitHub() {
     
     if(putRes.ok) {
       lastSyncTime = new Date();
+      window._cloudLoadConfirmed = true; // ✅ رفع ناجح يؤكد تطابق السحابة مع المحلي
       const stats = `✅ تم الرفع بنجاح!<br>
         📊 ${D.topics.length} موضوع | ${D.directives.length} توجيه<br>
         📋 ${D.weekly.length} أسبوعي | ${D.monthly.length} شهري<br>
@@ -2561,6 +2559,7 @@ async function downloadFromGitHub() {
     if(!res.ok) {
       if(res.status === 404) {
         showGitHubInfo('⚠️ لا توجد بيانات مرفوعة بعد', 'warning');
+        window._cloudLoadConfirmed = true; // مستودع جديد فعلاً بلا بيانات — يسمح بأول حفظ
       } else {
         showGitHubInfo('❌ خطأ: ' + res.status, 'error');
       }
@@ -2595,6 +2594,7 @@ async function downloadFromGitHub() {
     D.discussions = imported.discussions || [];
     D.holidays = imported.holidays || [];
     D.naibDivisions = imported.naibDivisions || [];
+    D.activityLog = mergeActivityLogs(D.activityLog, imported.activityLog || []);
     
     // حفظ محلي (لرحاب فقط)
     if(CU?.admin) saveToStorage();
@@ -2613,6 +2613,8 @@ async function downloadFromGitHub() {
     if(typeof populateNaibDivisionsList==='function') populateNaibDivisionsList();
     
     lastSyncTime = new Date();
+    window._cloudLoadConfirmed = true; // ✅ تأكيد نجاح تحميل السحابة — يسمح الآن بالحفظ التلقائي بأمان
+    autoSave(); // مزامنة سجل النشاط المُدمَج فوراً (مثل تسجيل الدخول الحالي) دون انتظار أي تعديل آخر
     const stats = `✅ تم التحميل بنجاح!<br>
       📊 ${D.topics.length} موضوع | ${D.directives.length} توجيه<br>
       📋 ${D.weekly.length} أسبوعي | ${D.monthly.length} شهري<br>
@@ -2702,6 +2704,7 @@ async function downloadFromGitHubPublic() {
     D.discussions = imported.discussions || [];
     D.holidays = imported.holidays || [];
     D.naibDivisions = imported.naibDivisions || [];
+    D.activityLog = mergeActivityLogs(D.activityLog, imported.activityLog || []);
     
     // تحديث كل الواجهات
     renderTopicsTable();
@@ -2717,6 +2720,8 @@ async function downloadFromGitHubPublic() {
     if(typeof populateNaibDivisionsList==='function') populateNaibDivisionsList();
     
     lastSyncTime = new Date();
+    window._cloudLoadConfirmed = true; // ✅ تأكيد نجاح تحميل السحابة — يسمح الآن بالحفظ التلقائي بأمان
+    autoSave(); // مزامنة سجل النشاط المُدمَج فوراً (مثل تسجيل الدخول الحالي) دون انتظار أي تعديل آخر
     const stats = `✅ تم التحميل بنجاح!<br>
       📊 ${D.topics.length} موضوع | ${D.directives.length} توجيه<br>
       📋 ${D.weekly.length} أسبوعي | ${D.monthly.length} شهري<br>
@@ -2779,153 +2784,7 @@ function initGitHub() {
 //        تصدير/استيراد البيانات المشتركة (JSON)
 // ============================================================
 
-function exportSharedData() {
-  if(!CU?.admin) { alert('غير مصرح — للمدير فقط'); return; }
-  
-  try {
-    const dataToShare = {
-      version: '2.0',
-      exportedBy: CU.name,
-      exportedAt: new Date().toISOString(),
-      topics: D.topics,
-      directives: D.directives,
-      weekly: D.weekly,
-      monthly: D.monthly,
-      quarterly: D.quarterly,
-      dirReports: D.dirReports,
-      ideas: D.ideas,
-      memos: D.memos || [],
-      discussions: D.discussions || [],
-      holidays: D.holidays || [],
-      naibDivisions: D.naibDivisions || []
-    };
-    
-    const json = JSON.stringify(dataToShare, null, 2);
-    const blob = new Blob([json], { type: 'application/json;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    const today = new Date().toISOString().substring(0,10);
-    a.href = url;
-    a.download = `بيانات_النظام_${today}.json`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    setTimeout(() => URL.revokeObjectURL(url), 100);
-    
-    const stats = `
-✅ تم تصدير ملف البيانات بنجاح!
-
-📊 محتوى الملف:
-  • ${D.topics.length} موضوع
-  • ${D.directives.length} توجيه
-  • ${D.weekly.length} تقرير أسبوعي
-  • ${D.monthly.length} تقرير شهري
-  • ${D.quarterly.length} تقرير ربع/نصف سنوي
-  • ${D.ideas.length} فكرة
-
-📤 الخطوة التالية:
-أرسلي الملف للمسؤولين ليستوردوه في نظامهم.
-    `;
-    alert(stats.trim());
-  } catch(e) {
-    alert('❌ خطأ في التصدير: ' + e.message);
-  }
-}
-
-function importSharedData() {
-  const file = $('sharedDataFile').files[0];
-  if(!file) { alert('⚠️ يرجى اختيار ملف بيانات (.json)'); return; }
-  
-  const reader = new FileReader();
-  reader.onload = (e) => {
-    try {
-      const imported = JSON.parse(e.target.result);
-      
-      if(!imported.topics && !imported.directives) {
-        alert('❌ ملف غير صالح — يجب أن يحتوي على بيانات النظام');
-        return;
-      }
-      
-      const stats = `
-📥 محتوى الملف:
-  • ${(imported.topics||[]).length} موضوع
-  • ${(imported.directives||[]).length} توجيه
-  • ${(imported.weekly||[]).length} تقرير أسبوعي
-  • ${(imported.monthly||[]).length} تقرير شهري
-  • ${(imported.quarterly||[]).length} تقرير ربع/نصف سنوي
-  • ${(imported.ideas||[]).length} فكرة
-
-📅 تاريخ التصدير: ${imported.exportedAt ? new Date(imported.exportedAt).toLocaleString('ar-SA') : 'غير محدد'}
-👤 المُصَدِّر: ${imported.exportedBy || 'غير محدد'}
-
-⚠️ سيتم استبدال كل البيانات الحالية.
-هل تريدون المتابعة؟
-      `;
-      
-      if(!confirm(stats.trim())) return;
-      
-      // استبدال البيانات
-      D.topics = imported.topics || [];
-      D.directives = imported.directives || [];
-      D.weekly = imported.weekly || [];
-      D.monthly = imported.monthly || [];
-      D.quarterly = imported.quarterly || [];
-      D.dirReports = imported.dirReports || [];
-      D.ideas = imported.ideas || [];
-    D.memos = imported.memos || [];
-      D.discussions = imported.discussions || [];
-      D.holidays = imported.holidays || [];
-      D.naibDivisions = imported.naibDivisions || [];
-      
-      // حفظ محلي (لرحاب فقط)
-      if(CU?.admin) {
-        saveToStorage();
-      } else {
-        // للمسؤولين: حفظ في session بدون لمس localStorage
-        try { sessionStorage.setItem('ea_imported_data', e.target.result); } catch(_) {}
-      }
-      
-      // تحديث كل الواجهات
-      $('sharedDataFile').value = '';
-      renderTopicsTable();
-      renderDirectivesTable();
-      refreshDashboard();
-      refreshWeekly();
-      refreshMonthly();
-      refreshQuarterly();
-      refreshDirReport();
-      renderIdeasTable();
-      
-      alert(`✅ تم استيراد البيانات بنجاح!\n\nيمكنكم الآن مشاهدة كل المواضيع والتوجيهات والتقارير.`);
-    } catch(err) {
-      alert('❌ خطأ في قراءة الملف: ' + err.message);
-    }
-  };
-  reader.onerror = () => alert('❌ خطأ في قراءة الملف');
-  reader.readAsText(file, 'utf-8');
-}
-
 // محاولة استرجاع البيانات من sessionStorage (للمسؤولين بعد reload)
-function tryLoadFromSession() {
-  if(CU?.admin) return false;
-  try {
-    const raw = sessionStorage.getItem('ea_imported_data');
-    if(!raw) return false;
-    const imported = JSON.parse(raw);
-    D.topics = imported.topics || [];
-    D.directives = imported.directives || [];
-    D.weekly = imported.weekly || [];
-    D.monthly = imported.monthly || [];
-    D.quarterly = imported.quarterly || [];
-    D.dirReports = imported.dirReports || [];
-    D.ideas = imported.ideas || [];
-    D.memos = imported.memos || [];
-    D.discussions = imported.discussions || [];
-    D.holidays = imported.holidays || [];
-    D.naibDivisions = imported.naibDivisions || [];
-    return true;
-  } catch(_) { return false; }
-}
 
 
 
@@ -6787,8 +6646,9 @@ function wipeAllTopics() {
   refreshAllReports();
   try{ if(typeof renderNaibEsc==='function') renderNaibEsc(); }catch(e){}
   try{ if(typeof renderPerf==='function') renderPerf(); }catch(e){}
-  autoSave();
-  alert('✅ تم مسح ' + delCount + ' موضوع.' + (keepOpen && openList.length ? '\n📌 بقي ' + openList.length + ' موضوعاً مفتوحاً كمُرحَّلات للفترة الجديدة.' : '') + '\nنُزّلت نسخة احتياطية على جهازك، والسحابة ستتحدّث تلقائياً.');
+  // ☁️ رفع فوري وحتمي — عملية حرجة، لا نعتمد على الحفظ المؤجَّل
+  forceSyncToGithubNow();
+  alert('✅ تم مسح ' + delCount + ' موضوع.' + (keepOpen && openList.length ? '\n📌 بقي ' + openList.length + ' موضوعاً مفتوحاً كمُرحَّلات للفترة الجديدة.' : '') + '\nنُزّلت نسخة احتياطية على جهازك، وجاري رفع السحابة الآن.');
 }
 
 // ===== إدارة التقسيمات التابعة لمكتب النائب (المديريات العامة والإدارات) =====
@@ -6886,6 +6746,7 @@ function buildBackupObject() {
     discussions: D.discussions || [],
     holidays: D.holidays || [],
     naibDivisions: D.naibDivisions || [],
+    activityLog: D.activityLog || [],
     exportedAt: new Date().toISOString(),
     exportedBy: (CU && CU.name) ? CU.name : 'غير محدد'
   };
@@ -6959,9 +6820,14 @@ function restoreLastGood() {
   D.discussions = snap.discussions || [];
   D.holidays = snap.holidays || [];
   D.naibDivisions = snap.naibDivisions || [];
-  if(CU?.admin) saveToStorage();
+  D.activityLog = mergeActivityLogs(D.activityLog, snap.activityLog || []);
   refreshAll();
-  alert('✅ تم الاسترجاع — ' + D.topics.length + ' موضوع');
+  // ☁️ رفع فوري وحتمي للسحابة — لا نعتمد على الحفظ المؤجَّل حتى لا يضيع الاسترجاع لو أُغلقت الصفحة
+  showGitHubInfo('☁️ جاري رفع البيانات المستَرجعة للسحابة... لا تُغلقي الصفحة', 'info');
+  forceSyncToGithubNow().then(okSync => {
+    if(okSync) alert('✅ تم الاسترجاع ورفعه للسحابة بنجاح — ' + D.topics.length + ' موضوع');
+    else alert('⚠️ تم الاسترجاع محلياً، لكن الرفع للسحابة فشل — يرجى الضغط على «رفع يدوي» من إعدادات GitHub للتأكد، وإلا سيختفي الاسترجاع غداً.');
+  });
 }
 
 function exportBackup() {
@@ -6994,11 +6860,16 @@ function importBackup() {
       D.discussions = imported.discussions || [];
       D.holidays = imported.holidays || [];
       D.naibDivisions = imported.naibDivisions || [];
+    D.activityLog = mergeActivityLogs(D.activityLog, imported.activityLog || []);
       
-      autoSave();
       refreshAll();
       $('backupFile').value = '';
-      alert(`✅ تم الاسترجاع بنجاح!\n\n• ${D.topics.length} موضوع\n• ${D.directives.length} توجيه\n• ${D.weekly.length} تقرير أسبوعي`);
+      // ☁️ رفع فوري وحتمي للسحابة — لا نعتمد على الحفظ المؤجَّل حتى لا يضيع الاستيراد لو أُغلقت الصفحة بعده مباشرة
+      showGitHubInfo('☁️ جاري رفع البيانات المستوردة للسحابة... لا تُغلقي الصفحة', 'info');
+      forceSyncToGithubNow().then(okSync => {
+        if(okSync) alert(`✅ تم الاسترجاع ورفعه للسحابة بنجاح!\n\n• ${D.topics.length} موضوع\n• ${D.directives.length} توجيه\n• ${D.weekly.length} تقرير أسبوعي`);
+        else alert('⚠️ تم الاسترجاع محلياً، لكن الرفع للسحابة فشل — يرجى المحاولة مرة أخرى أو استخدام «رفع يدوي» من إعدادات GitHub، وإلا سيختفي الاسترجاع غداً.');
+      });
     } catch(err) {
       alert('❌ خطأ في قراءة الملف: ' + err.message);
     }
