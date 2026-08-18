@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-18T06:18:27.101Z",
+  "exportedAt": "2026-08-18T07:37:59.637Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26632,6 +26632,116 @@
       "responseMethod": "direct_manager",
       "divFollowDate": "2026-08-05",
       "closedAt": "2026-08-09"
+    },
+    {
+      "id": 1787037347979.8447,
+      "title": "التعاون في تعزيز القدرات الوطنية لمراقبة الحوادث البحرية والتسربات النفطية",
+      "from": "شركة التقنيات العالمية الصاعدة",
+      "docNo": "1170/3/2022v414-24",
+      "toEntity": "مركز الطوارئ البيئية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-16",
+      "followStart": "2026-08-16",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wweek",
+      "note": "نائب الرئيس\nمركز الطوارئ البيئية\nلا مانع ويتم التنسيق لاعداد تصور لمشروع يمكن الهيئة من تتبع اي تسرب زيتي وذلك من خلال بناء نظام نماذج عددية متطور ويتم تغذيته بصور الاقمار الاصطناعية وفقا للاحتياج",
+      "status": "awaiting",
+      "followups": [
+        {
+          "date": "2026-08-18",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-16",
+          "daysSince": 2
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "",
+      "responseMethod": ""
+    },
+    {
+      "id": 1787037750167.0479,
+      "title": "مؤشرات منصة تنافسية المحافظات.",
+      "from": "محافظة مسقط",
+      "docNo": "1170/3/2022v413-97",
+      "toEntity": "مكتب الرؤية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-13",
+      "followStart": "2026-08-16",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wweek",
+      "note": "مكتب الرؤية\nمركز الاعمال\nلعمل الازم والافادة بالخطة خلال 5 ايام عمل",
+      "status": "awaiting",
+      "followups": [
+        {
+          "date": "2026-08-18",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-16",
+          "daysSince": 2
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "مكتب الرؤية/مركز الاعمال البيئية",
+      "responseMethod": ""
+    },
+    {
+      "id": 1787038416195.5588,
+      "title": "تصور مقترح مبادرة الغرف الصامتة ومساحات الخصوصية في بيئة العمل",
+      "from": "مكتب الرئيس",
+      "docNo": "1153/24/2026-4",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-13",
+      "followStart": "2026-08-16",
+      "type": "int",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wweek",
+      "note": "نائب الرئيس\nالادارية والمالية\nلاعداد تصور بذلك",
+      "status": "awaiting",
+      "followups": [
+        {
+          "date": "2026-08-18",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-08-16",
+          "daysSince": 2
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "directives": [
@@ -31563,6 +31673,17 @@
     "مركز محمية حديقة السليل الطبيعية"
   ],
   "activityLog": [
+    {
+      "id": 1787036239798.572,
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "loginAt": "2026-08-18T06:57:19.798Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
     {
       "id": 1787033706810.097,
       "user": "rahab@ea2026",
