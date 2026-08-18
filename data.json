@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-18T08:57:59.794Z",
+  "exportedAt": "2026-08-18T08:58:07.100Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27037,6 +27037,26 @@
       "followEntity": "rais_depts",
       "raisDeptName": "الدائرة القانونية",
       "responseMethod": ""
+    },
+    {
+      "id": 1787043485018.2458,
+      "title": "تحديث سجل المخاطر الوطنية قصير المدى.pdf",
+      "from": "هيئة الدفاع المدني والإسعاف",
+      "docNo": "1170/3/2022v413-36",
+      "toEntity": "دائرة التخطيط الاستراتيجي",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-10",
+      "followStart": "2026-08-10",
+      "type": "ext",
+      "slaMode": "rais",
+      "slaDays": 2,
+      "kpi": "",
+      "note": "التخطيط\nلعمل اللازم خلال يومين",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
