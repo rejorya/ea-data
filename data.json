@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-18T05:56:43.222Z",
+  "exportedAt": "2026-08-18T05:58:21.684Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26698,9 +26698,27 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "",
-      "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-08-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-13",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "closedAt": "2026-08-18",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "دائرة التعاون الدولي",
+      "responseMethod": "via_follow"
     }
   ],
   "directives": [
