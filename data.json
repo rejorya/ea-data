@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-18T07:24:59.623Z",
+  "exportedAt": "2026-08-18T07:25:59.518Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26682,13 +26682,30 @@
       "date": "2026-08-13",
       "followStart": "2026-08-16",
       "type": "ext",
-      "slaMode": "rais",
-      "slaDays": 5,
-      "kpi": "",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wweek",
       "note": "مكتب الرؤية\nمركز الاعمال\nلعمل الازم والافادة بالخطة خلال 5 ايام عمل",
-      "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "status": "awaiting",
+      "followups": [
+        {
+          "date": "2026-08-18",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-16",
+          "daysSince": 2
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "مكتب الرؤية/مركز الاعمال البيئية",
+      "responseMethod": ""
     }
   ],
   "directives": [
