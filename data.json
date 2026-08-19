@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-19T07:13:58.576Z",
+  "exportedAt": "2026-08-19T07:14:12.112Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27188,8 +27188,24 @@
       "kpi": "wd3",
       "note": "مركز الطوارئ\nللافادة بالرد",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-08-19",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "taqseem": "",
+          "startDate": "2026-08-19",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "directives": [
