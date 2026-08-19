@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-19T10:25:49.432Z",
+  "exportedAt": "2026-08-19T10:26:09.679Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26797,7 +26797,7 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "",
-      "status": "new",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-08-13",
