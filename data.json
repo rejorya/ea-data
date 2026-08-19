@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-19T10:25:21.022Z",
+  "exportedAt": "2026-08-19T10:25:49.432Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26687,7 +26687,7 @@
       "slaDays": null,
       "kpi": "wweek",
       "note": "مكتب الرؤية\nمركز الاعمال\nلعمل الازم والافادة بالخطة خلال 5 ايام عمل",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-08-18",
@@ -26706,7 +26706,8 @@
       "manualCount": 1,
       "followEntity": "rais_depts",
       "raisDeptName": "مكتب الرؤية/مركز الاعمال البيئية",
-      "responseMethod": ""
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-08-19"
     },
     {
       "id": 1787038416195.5588,
