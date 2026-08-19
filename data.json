@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-19T07:08:04.051Z",
+  "exportedAt": "2026-08-19T07:08:28.537Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27142,7 +27142,7 @@
       "docNo": "1520/10/2022v4-52",
       "toEntity": "نائب الرئيس",
       "taqseemName": "",
-      "priority": "urgent",
+      "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-08-17",
       "followStart": "2026-08-19",
@@ -27152,8 +27152,24 @@
       "kpi": "std14",
       "note": "لا مانع من التعاقد مع الشركة واعداد دراسة للعرض على مجلس الوزراء الموقر",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-08-19",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-08-19",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "directives": [
