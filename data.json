@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-19T07:14:28.210Z",
+  "exportedAt": "2026-08-19T07:14:35.092Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27187,7 +27187,7 @@
       "slaDays": null,
       "kpi": "wd3",
       "note": "مركز الطوارئ\nللافادة بالرد",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-08-19",
@@ -27204,8 +27204,10 @@
       ],
       "sheet": "مُضاف يدوياً",
       "manualCount": 1,
-      "followEntity": "",
-      "responseMethod": ""
+      "followEntity": "rais_depts",
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-08-19",
+      "raisDeptName": ""
     }
   ],
   "directives": [
