@@ -1,7 +1,4 @@
 {
-  "version": "3.0",
-  "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-19T10:30:03.564Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26687,7 +26684,7 @@
       "slaDays": null,
       "kpi": "wweek",
       "note": "مكتب الرؤية\nمركز الاعمال\nلعمل الازم والافادة بالخطة خلال 5 ايام عمل",
-      "status": "closed",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-08-18",
@@ -26706,8 +26703,7 @@
       "manualCount": 1,
       "followEntity": "rais_depts",
       "raisDeptName": "مكتب الرؤية/مركز الاعمال البيئية",
-      "responseMethod": "direct_manager",
-      "closedAt": "2026-08-19"
+      "responseMethod": ""
     },
     {
       "id": 1787038416195.5588,
@@ -26797,7 +26793,7 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "",
-      "status": "esc",
+      "status": "new",
       "followups": [
         {
           "date": "2026-08-13",
@@ -26921,7 +26917,7 @@
       "slaDays": null,
       "kpi": "wweek",
       "note": "تنفذ التوصيات خلال أسبوع وعلى مكتب الرئيس المتابعة",
-      "status": "esc",
+      "status": "new",
       "followups": [
         {
           "date": "2026-08-13",
@@ -27007,7 +27003,7 @@
       "slaDays": null,
       "kpi": "wd3",
       "note": "",
-      "status": "closed",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-08-13",
@@ -27038,8 +27034,7 @@
       "manualCount": 2,
       "followEntity": "rais_depts",
       "raisDeptName": "الدائرة القانونية",
-      "responseMethod": "direct_manager",
-      "closedAt": "2026-08-19"
+      "responseMethod": ""
     },
     {
       "id": 1787043485018.2458,
@@ -32142,17 +32137,6 @@
   ],
   "activityLog": [
     {
-      "id": 1787135001867.057,
-      "user": "rahab@ea2026",
-      "name": "رحاب بنت نصيب الفرج",
-      "role": "أخصائية تنسيق ومتابعة",
-      "type": "مدير",
-      "loginAt": "2026-08-19T10:23:21.867Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null
-    },
-    {
       "id": 1787120558913.873,
       "user": "rahab@ea2026",
       "name": "رحاب بنت نصيب الفرج",
@@ -32185,5 +32169,7 @@
       "duration": null,
       "logoutReason": null
     }
-  ]
+  ],
+  "exportedAt": "2026-08-19T07:59:45.992Z",
+  "exportedBy": "رحاب بنت نصيب الفرج"
 }
