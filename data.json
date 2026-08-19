@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-19T07:13:28.209Z",
+  "exportedAt": "2026-08-19T07:13:58.576Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27170,6 +27170,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1787123636491.673,
+      "title": "التداعيات المحتملة للتسرب الزيتي الناتج عن جنوح الناقلة (كارولين بيزينجي) على المشاريع الاستراتيجية لمجموعة أوكيو بالمنطقة الإقتصادية الخاصة بالدقم",
+      "from": "مجموعة أوكيو",
+      "docNo": "1170/3/2022v413-83",
+      "toEntity": "مركز الطوارئ البيئية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-12",
+      "followStart": "2026-08-19",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wd3",
+      "note": "مركز الطوارئ\nللافادة بالرد",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
