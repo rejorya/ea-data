@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-20T10:05:16.730Z",
+  "exportedAt": "2026-08-20T10:05:21.631Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27289,6 +27289,26 @@
       "responseMethod": "direct_manager",
       "closedAt": "2026-08-19",
       "raisDeptName": ""
+    },
+    {
+      "id": 1787220319390.4294,
+      "title": "استضافة مؤتمر الأطراف في اتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ",
+      "from": "مكتب الرئيس",
+      "docNo": "",
+      "toEntity": "المديرية العامة للتغير المناخي",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-05-18",
+      "followStart": "2026-08-20",
+      "type": "int",
+      "slaMode": "rais",
+      "slaDays": 20,
+      "kpi": "",
+      "note": "للمتابعة بعد 5 اسابيع",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "directives": [
