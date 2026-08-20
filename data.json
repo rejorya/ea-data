@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-20T08:11:58.972Z",
+  "exportedAt": "2026-08-20T08:30:43.572Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26920,7 +26920,7 @@
       "slaDays": null,
       "kpi": "wweek",
       "note": "تنفذ التوصيات خلال أسبوع وعلى مكتب الرئيس المتابعة",
-      "status": "new",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-08-13",
@@ -26951,7 +26951,7 @@
       "manualCount": 2,
       "followEntity": "rais_depts",
       "raisDeptName": "دائرة التواصل والاعلام/مكتب الرؤية/دائرة الموارد البشرية",
-      "responseMethod": ""
+      "responseMethod": "via_follow"
     },
     {
       "id": 1787040097611.1965,
