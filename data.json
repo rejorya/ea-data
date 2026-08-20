@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-20T09:02:23.497Z",
+  "exportedAt": "2026-08-20T09:02:35.787Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27196,8 +27196,24 @@
       "kpi": "gov5",
       "note": "مكتب الرؤية\nالتخطيط الاستراتيجي\nلعمل اللازم خلال خمسة ايام عمل",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-08-20",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "taqseem": "",
+          "startDate": "2026-08-18",
+          "daysSince": 2
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     },
     {
       "id": 1787123281963.1387,
