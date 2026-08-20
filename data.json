@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-08-20T08:30:43.572Z",
+  "exportedAt": "2026-08-20T08:40:11.219Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26858,10 +26858,22 @@
           "taqseem": "المديرية العامة للتغير المناخي",
           "startDate": "2026-08-16",
           "daysSince": 2
+        },
+        {
+          "date": "2026-08-20",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للتغير المناخي",
+          "startDate": "2026-08-16",
+          "daysSince": 4
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "taqseem",
       "responseMethod": "",
       "divFollowDate": "2026-08-18"
