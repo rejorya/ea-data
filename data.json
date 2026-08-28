@@ -1,7 +1,7 @@
 {
   "version": "3.0",
-  "exportedBy": "admin",
-  "exportedAt": "2026-08-28T01:48:37.370Z",
+  "exportedBy": "رحاب بنت نصيب الفرج",
+  "exportedAt": "2026-08-28T06:34:38.832Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32672,6 +32672,17 @@
   ],
   "activityLog": [
     {
+      "id": 1787898874945.9072,
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "loginAt": "2026-08-28T06:34:34.945Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": 1787881693408.1472,
       "user": "rahab@ea2026",
       "name": "رحاب بنت نصيب الفرج",
@@ -32808,6 +32819,5 @@
       "duration": null,
       "logoutReason": null
     }
-  ],
-  "forceLogoutAfter": null
+  ]
 }
