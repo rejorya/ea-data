@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-13T07:09:12.064Z",
+  "exportedAt": "2026-09-13T07:09:57.989Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27705,6 +27705,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1789283395116.5815,
+      "title": "تظلم بشأن مخالفة بيئية رقم 4303 تركيب كسارة متنقلة",
+      "from": "ناصر بشير وشريكه للتجارة ش.م.م",
+      "docNo": "1170/3/2022v417-42",
+      "toEntity": "مركز الاعمال البيئية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-09",
+      "followStart": "2026-09-09",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "اللجنة المختصة\nللدراسة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "archivedTopics": [
@@ -33575,6 +33595,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789283395144.9944,
+          "at": "2026-09-13T07:09:55.144Z",
+          "action": "إضافة موضوع",
+          "details": "تظلم بشأن مخالفة بيئية رقم 4303 تركيب كسارة متنقلة"
+        },
         {
           "id": 1789281981667.1953,
           "at": "2026-09-13T06:46:21.667Z",
