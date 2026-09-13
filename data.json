@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-13T07:49:07.717Z",
+  "exportedAt": "2026-09-13T07:49:49.925Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27729,6 +27729,26 @@
       "followEntity": "rais_depts",
       "raisDeptName": "مركز الاعمال البيئية",
       "responseMethod": ""
+    },
+    {
+      "id": 1789285783034.087,
+      "title": "التأمين على أصول هيئة البيئة للسنة التأمينية 2028/2027م",
+      "from": "وزارة المالية",
+      "docNo": "1170/3/2022v416-92",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-06",
+      "followStart": "2026-09-07",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "archivedTopics": [
@@ -33621,6 +33641,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789285783066.1672,
+          "at": "2026-09-13T07:49:43.066Z",
+          "action": "إضافة موضوع",
+          "details": "التأمين على أصول هيئة البيئة للسنة التأمينية 2028/2027م"
+        },
         {
           "id": 1789284612252.1501,
           "at": "2026-09-13T07:30:12.252Z",
