@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-13T06:29:07.643Z",
+  "exportedAt": "2026-09-13T06:29:13.383Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27014,7 +27014,7 @@
       "slaDays": null,
       "kpi": "wweek",
       "note": "تنفذ التوصيات خلال أسبوع وعلى مكتب الرئيس المتابعة",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-08-13",
@@ -27051,13 +27051,26 @@
           "taqseem": "",
           "startDate": "2026-08-13",
           "daysSince": 21
+        },
+        {
+          "date": "2026-09-13",
+          "replied": true,
+          "note": "تم رفع إفادة ديرة الدائرة \nنود إفادتكم بأن قسم الاعلام قد عدل أداه الفعلي ، \nاما قسم التواصل الرقمي فقد قام الموظفين بإرسال طلب التعديل الى رئيس القسم ولكنه لم يقم بالموافقة على التعديل",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-13",
+          "daysSince": 21
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "rais_depts",
       "raisDeptName": "دائرة التواصل والاعلام/مكتب الرؤية/دائرة الموارد البشرية",
-      "responseMethod": "via_follow"
+      "responseMethod": "via_follow",
+      "closedAt": "2026-09-13"
     },
     {
       "id": 1787040097611.1965,
@@ -27976,6 +27989,71 @@
       "responseMethod": "",
       "closedAt": "2026-09-13",
       "archivedAt": "2026-09-13T04:28:07.897Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1787039849358.081,
+      "title": "إجراءات إدخال بيانات الأداء الفعلي لموظفي دائرة التواصل والإعلام للنصف الأول من عام 2026م",
+      "from": "مكتب الرئيس",
+      "docNo": "1181/127/2026-6",
+      "toEntity": "دائرة التواصل والاعلام/مكتب الرؤية/دائرة الموارد البشرية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-09",
+      "followStart": "2026-08-13",
+      "type": "int",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wweek",
+      "note": "تنفذ التوصيات خلال أسبوع وعلى مكتب الرئيس المتابعة",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-08-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-13",
+          "daysSince": 0
+        },
+        {
+          "date": "2026-08-18",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-13",
+          "daysSince": 3
+        },
+        {
+          "date": "2026-09-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-13",
+          "daysSince": 21
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 3,
+      "followEntity": "rais_depts",
+      "raisDeptName": "دائرة التواصل والاعلام/مكتب الرؤية/دائرة الموارد البشرية",
+      "responseMethod": "via_follow",
+      "closedAt": "2026-09-13",
+      "archivedAt": "2026-09-13T06:29:11.300Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -33389,6 +33467,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789280951366.6646,
+          "at": "2026-09-13T06:29:11.366Z",
+          "action": "إضافة متابعة",
+          "details": "إجراءات إدخال بيانات الأداء الفعلي لموظفي دائرة التواصل والإعلام للنصف الأول من عام 2026م"
+        },
+        {
+          "id": 1789280951326.4106,
+          "at": "2026-09-13T06:29:11.326Z",
+          "action": "تعديل موضوع",
+          "details": "إجراءات إدخال بيانات الأداء الفعلي لموظفي دائرة التواصل والإعلام للنصف الأول من عام 2026م"
+        },
         {
           "id": 1789279836001.9575,
           "at": "2026-09-13T06:10:36.001Z",
