@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-13T04:11:07.900Z",
+  "exportedAt": "2026-09-13T04:11:59.550Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26579,7 +26579,7 @@
       "slaDays": null,
       "kpi": "wweek",
       "note": "توضع خطة لاتمتة الخدمة الورقية ورقمنة ال ٦ خدمات الاخرى وذلك خلال اسبوع عمل",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-08-04",
@@ -26622,7 +26622,8 @@
       "manualCount": 3,
       "followEntity": "rais_depts",
       "raisDeptName": "دائرة ضبط الجودة/ التحول الرقمي",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-09-13"
     },
     {
       "id": 1785824856792.4573,
@@ -27464,6 +27465,71 @@
       "responseMethod": "",
       "closedAt": "2026-09-13",
       "archivedAt": "2026-09-13T04:10:32.653Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1785824212642.3281,
+      "title": "التقرير النصف سنوي لتقييم وضع خدمات هيئة البيئة المقدمة للمتعامل الخارجي",
+      "from": "دائرة ضبط الجودة",
+      "docNo": "1415/23/2025-10",
+      "toEntity": "دائرة ضبط الجودة",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-07-28",
+      "followStart": "2026-08-02",
+      "type": "int",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wweek",
+      "note": "توضع خطة لاتمتة الخدمة الورقية ورقمنة ال ٦ خدمات الاخرى وذلك خلال اسبوع عمل",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-08-04",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-02",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-08-05",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-02",
+          "daysSince": 3
+        },
+        {
+          "date": "2026-08-06",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-02",
+          "daysSince": 4
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 3,
+      "followEntity": "rais_depts",
+      "raisDeptName": "دائرة ضبط الجودة/ التحول الرقمي",
+      "responseMethod": "",
+      "closedAt": "2026-09-13",
+      "archivedAt": "2026-09-13T04:11:57.507Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -32854,6 +32920,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789272717526.4883,
+          "at": "2026-09-13T04:11:57.526Z",
+          "action": "تعديل موضوع",
+          "details": "التقرير النصف سنوي لتقييم وضع خدمات هيئة البيئة المقدمة للمتعامل الخارجي"
+        },
         {
           "id": 1789272632672.113,
           "at": "2026-09-13T04:10:32.672Z",
