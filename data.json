@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-13T04:15:08.913Z",
+  "exportedAt": "2026-09-13T04:15:42.829Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26791,7 +26791,7 @@
       "slaDays": null,
       "kpi": "wweek",
       "note": "نائب الرئيس\nالادارية والمالية\nلاعداد تصور بذلك",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-08-18",
@@ -26821,7 +26821,8 @@
       "sheet": "مُضاف يدوياً",
       "manualCount": 2,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-09-13"
     },
     {
       "id": 1787038801995.5757,
@@ -27584,6 +27585,58 @@
       "responseMethod": "direct_manager",
       "closedAt": "2026-09-13",
       "archivedAt": "2026-09-13T04:13:36.858Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1787038416195.5588,
+      "title": "تصور مقترح مبادرة الغرف الصامتة ومساحات الخصوصية في بيئة العمل",
+      "from": "مكتب الرئيس",
+      "docNo": "1153/24/2026-4",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-13",
+      "followStart": "2026-08-16",
+      "type": "int",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wweek",
+      "note": "نائب الرئيس\nالادارية والمالية\nلاعداد تصور بذلك",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-08-18",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-08-16",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-08-20",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-08-16",
+          "daysSince": 4
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 2,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "closedAt": "2026-09-13",
+      "archivedAt": "2026-09-13T04:15:40.800Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -32974,6 +33027,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789272940817.867,
+          "at": "2026-09-13T04:15:40.817Z",
+          "action": "تعديل موضوع",
+          "details": "تصور مقترح مبادرة الغرف الصامتة ومساحات الخصوصية في بيئة العمل"
+        },
         {
           "id": 1789272816875.3992,
           "at": "2026-09-13T04:13:36.875Z",
