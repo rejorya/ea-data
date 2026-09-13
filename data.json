@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-13T04:42:07.562Z",
+  "exportedAt": "2026-09-13T04:42:53.678Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27352,6 +27352,26 @@
       "status": "new",
       "followups": [],
       "sheet": "مُضاف يدوياً"
+    },
+    {
+      "id": 1789274571645.4478,
+      "title": "السفينة المتضررة (Caroline Bezengl)",
+      "from": "دائرة التعاون الدولي",
+      "docNo": "",
+      "toEntity": "نائب الرئيس/مركز الطوارئ البيئية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-10",
+      "followStart": "2026-09-10",
+      "type": "ext",
+      "slaMode": "rais",
+      "slaDays": 14,
+      "kpi": "",
+      "note": "نائب الرئيس\nمركز الطوارئ\nلاعداد تقرير لتوضيح الملابسات الواردة في التقرير والرد عليها فيما يخص مصدر التلوث واضراره والكلفة الباهضة له ",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "archivedTopics": [
@@ -33134,6 +33154,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789274571664.9822,
+          "at": "2026-09-13T04:42:51.664Z",
+          "action": "إضافة موضوع",
+          "details": "السفينة المتضررة (Caroline Bezengl)"
+        },
         {
           "id": 1789274197742.2354,
           "at": "2026-09-13T04:36:37.742Z",
