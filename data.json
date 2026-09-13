@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-13T07:52:07.725Z",
+  "exportedAt": "2026-09-13T07:52:15.687Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27747,8 +27747,24 @@
       "kpi": "naib3",
       "note": "",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-09-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-07",
+          "daysSince": 4
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -33641,6 +33657,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789285933668.4143,
+          "at": "2026-09-13T07:52:13.668Z",
+          "action": "إضافة متابعة",
+          "details": "التأمين على أصول هيئة البيئة للسنة التأمينية 2028/2027م"
+        },
+        {
+          "id": 1789285933626.2905,
+          "at": "2026-09-13T07:52:13.626Z",
+          "action": "تعديل موضوع",
+          "details": "التأمين على أصول هيئة البيئة للسنة التأمينية 2028/2027م"
+        },
         {
           "id": 1789285783066.1672,
           "at": "2026-09-13T07:49:43.066Z",
