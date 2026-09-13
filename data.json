@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-13T04:46:07.566Z",
+  "exportedAt": "2026-09-13T04:46:12.719Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27365,13 +27365,30 @@
       "date": "2026-09-10",
       "followStart": "2026-09-10",
       "type": "ext",
-      "slaMode": "rais",
-      "slaDays": 14,
-      "kpi": "",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "rpt14",
       "note": "نائب الرئيس\nمركز الطوارئ\nلاعداد تقرير لتوضيح الملابسات الواردة في التقرير والرد عليها فيما يخص مصدر التلوث واضراره والكلفة الباهضة له ",
-      "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "status": "open",
+      "followups": [
+        {
+          "date": "2026-09-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_and_rais",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_and_rais",
+      "raisDeptName": "نائب الرئيس/مركز الطوارئ البيئية",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -33154,6 +33171,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789274770705.3528,
+          "at": "2026-09-13T04:46:10.705Z",
+          "action": "إضافة متابعة",
+          "details": "السفينة المتضررة (Caroline Bezengl)"
+        },
+        {
+          "id": 1789274770680.5776,
+          "at": "2026-09-13T04:46:10.680Z",
+          "action": "تعديل موضوع",
+          "details": "السفينة المتضررة (Caroline Bezengl)"
+        },
         {
           "id": 1789274571664.9822,
           "at": "2026-09-13T04:42:51.664Z",
