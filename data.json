@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-13T04:04:07.906Z",
+  "exportedAt": "2026-09-13T04:05:02.062Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26122,7 +26122,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "مدير عام الغطاء النباتي\nمدير عام التغير المناخي \nمدير الاستدامة\nلعمل اللازم خلال ٣ ايام عمل\nتم رفع افاده المديريتين 12/8",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-07-16",
@@ -26177,7 +26177,8 @@
       "manualCount": 4,
       "followEntity": "taqseem",
       "responseMethod": "",
-      "divFollowDate": "2026-08-10"
+      "divFollowDate": "2026-08-10",
+      "closedAt": "2026-09-13"
     },
     {
       "id": 1784434596065.6997,
@@ -27335,7 +27336,85 @@
       "sheet": "مُضاف يدوياً"
     }
   ],
-  "archivedTopics": [],
+  "archivedTopics": [
+    {
+      "id": 1784173101512.7288,
+      "title": "بشأن الخطاب الوارد من الدكتورة / جابرييل روزيلس المدير الشريك لشركة ماكون حول مشاريع الحلول القائمة على الطبيعة",
+      "from": "مكتب الرئيس",
+      "docNo": "",
+      "toEntity": "",
+      "taqseemName": "مدير الاستدامة/المديرية العامة للتغير المناخي/المديرية العامة لتنمية الغطاء النباتي",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-07-05",
+      "followStart": "2026-08-10",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "مدير عام الغطاء النباتي\nمدير عام التغير المناخي \nمدير الاستدامة\nلعمل اللازم خلال ٣ ايام عمل\nتم رفع افاده المديريتين 12/8",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-07-16",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-07-15",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-07-21",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-07-15",
+          "daysSince": 4
+        },
+        {
+          "date": "2026-07-23",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-07-15",
+          "daysSince": 6
+        },
+        {
+          "date": "2026-08-10",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "مدير الاستدامة/المديرية العامة للتغير المناخي/المديرية العامة لتنمية الغطاء النباتي",
+          "startDate": "2026-08-10",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 4,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-08-10",
+      "closedAt": "2026-09-13",
+      "archivedAt": "2026-09-13T04:05:00.025Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    }
+  ],
   "directives": [
     {
       "id": 1780825018545.113,
@@ -32722,6 +32801,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789272300046.792,
+          "at": "2026-09-13T04:05:00.046Z",
+          "action": "تعديل موضوع",
+          "details": "بشأن الخطاب الوارد من الدكتورة / جابرييل روزيلس المدير الشريك لشركة ماكون حول مشاريع الحلول القائمة على الطبيعة"
+        },
         {
           "id": 1789272221524.871,
           "at": "2026-09-13T04:03:41.524Z",
