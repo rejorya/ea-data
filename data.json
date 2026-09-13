@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-13T04:13:07.899Z",
+  "exportedAt": "2026-09-13T04:13:38.892Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26703,7 +26703,7 @@
       "slaDays": null,
       "kpi": "wweek",
       "note": "نائب الرئيس\nمركز الطوارئ البيئية\nلا مانع ويتم التنسيق لاعداد تصور لمشروع يمكن الهيئة من تتبع اي تسرب زيتي وذلك من خلال بناء نظام نماذج عددية متطور ويتم تغذيته بصور الاقمار الاصطناعية وفقا للاحتياج",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-08-18",
@@ -26734,7 +26734,8 @@
       "manualCount": 2,
       "followEntity": "rais_depts",
       "raisDeptName": "",
-      "responseMethod": "direct_manager"
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-09-13"
     },
     {
       "id": 1787037750167.0479,
@@ -27530,6 +27531,59 @@
       "responseMethod": "",
       "closedAt": "2026-09-13",
       "archivedAt": "2026-09-13T04:11:57.507Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1787037347979.8447,
+      "title": "التعاون في تعزيز القدرات الوطنية لمراقبة الحوادث البحرية والتسربات النفطية",
+      "from": "شركة التقنيات العالمية الصاعدة",
+      "docNo": "1170/3/2022v414-24",
+      "toEntity": "مركز الطوارئ البيئية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-16",
+      "followStart": "2026-08-16",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wweek",
+      "note": "نائب الرئيس\nمركز الطوارئ البيئية\nلا مانع ويتم التنسيق لاعداد تصور لمشروع يمكن الهيئة من تتبع اي تسرب زيتي وذلك من خلال بناء نظام نماذج عددية متطور ويتم تغذيته بصور الاقمار الاصطناعية وفقا للاحتياج",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-08-18",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-16",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-08-20",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-16",
+          "daysSince": 4
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 2,
+      "followEntity": "rais_depts",
+      "raisDeptName": "",
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-09-13",
+      "archivedAt": "2026-09-13T04:13:36.858Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -32920,6 +32974,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789272816875.3992,
+          "at": "2026-09-13T04:13:36.875Z",
+          "action": "تعديل موضوع",
+          "details": "التعاون في تعزيز القدرات الوطنية لمراقبة الحوادث البحرية والتسربات النفطية"
+        },
         {
           "id": 1789272770365.8328,
           "at": "2026-09-13T04:12:50.365Z",
