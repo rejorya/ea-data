@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-13T06:45:07.672Z",
+  "exportedAt": "2026-09-13T06:46:03.484Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27669,6 +27669,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1789281961424.4233,
+      "title": "مسودة إرشادات بشأن القوائم المحدثة للملوثات العضوية - اتفاقية ستوكهولم",
+      "from": "1170/3/2022v417-31",
+      "docNo": "وزراة التجارة والصناعة وترويج الاستثمار",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "top_secret",
+      "date": "2026-09-08",
+      "followStart": "2026-09-10",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "نائب الرئيس\nلعمل اللازم\n",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "archivedTopics": [
@@ -33539,6 +33559,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789281961458.7173,
+          "at": "2026-09-13T06:46:01.458Z",
+          "action": "إضافة موضوع",
+          "details": "مسودة إرشادات بشأن القوائم المحدثة للملوثات العضوية - اتفاقية ستوكهولم"
+        },
         {
           "id": 1789281640706.7478,
           "at": "2026-09-13T06:40:40.706Z",
