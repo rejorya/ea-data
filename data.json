@@ -1,7 +1,7 @@
 {
   "version": "3.0",
-  "exportedBy": "admin",
-  "exportedAt": "2026-09-11T14:42:15.138Z",
+  "exportedBy": "رحاب بنت نصيب الفرج",
+  "exportedAt": "2026-09-13T03:35:02.800Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27311,6 +27311,7 @@
       "sheet": "مُضاف يدوياً"
     }
   ],
+  "archivedTopics": [],
   "directives": [
     {
       "id": 1780825018545.113,
@@ -32672,6 +32673,32 @@
   ],
   "activityLog": [
     {
+      "id": 1789270390332.9846,
+      "sessionId": "bc289626-db24-41e4-a333-bd75221112ba",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-09-13T03:33:10.332Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": 1789137725302.0872,
       "user": "rahab@ea2026",
       "name": "رحاب بنت نصيب الفرج",
@@ -32844,5 +32871,21 @@
       "duration": null,
       "logoutReason": null
     }
-  ]
+  ],
+  "users": {
+    "rahab@ea2026": {
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "hash": "899ddbc03a2069b74d76dde15f1f2d3b1941a515cac27c52c6f76f5e77ad9ef1",
+      "admin": true,
+      "delegate": false
+    },
+    "mufawwad@ea": {
+      "name": "المفوّض",
+      "role": "صلاحية اطّلاع ومتابعة",
+      "hash": "8e1816618ac24e0ce8bb62d1a7d07a47503fedba2f7029150e9964789d85c8ed",
+      "admin": false,
+      "delegate": true
+    }
+  }
 }
