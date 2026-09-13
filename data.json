@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-13T06:40:07.667Z",
+  "exportedAt": "2026-09-13T06:40:17.295Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27633,6 +27633,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1789281615247.393,
+      "title": "مذكرة التلوث بالمواد البلاستكية.pdf",
+      "from": "وزارة الخارجية",
+      "docNo": "",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-09",
+      "followStart": "2026-09-10",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "م. خالد البلوشي\nللمراجعة والافادة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "archivedTopics": [
@@ -33503,6 +33523,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789281615276.89,
+          "at": "2026-09-13T06:40:15.276Z",
+          "action": "إضافة موضوع",
+          "details": "مذكرة التلوث بالمواد البلاستكية.pdf"
+        },
         {
           "id": 1789281347678.0854,
           "at": "2026-09-13T06:35:47.678Z",
