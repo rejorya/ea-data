@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-13T06:35:07.641Z",
+  "exportedAt": "2026-09-13T06:35:26.843Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27597,6 +27597,26 @@
       "followEntity": "rais_depts",
       "raisDeptName": "الدائرة القانونية",
       "responseMethod": ""
+    },
+    {
+      "id": 1789281324786.6926,
+      "title": "إعداد تقديرات الميزانية لعام 2027 م",
+      "from": "وزارة المالية",
+      "docNo": "1170/3/2022v417-66",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-09",
+      "followStart": "2026-09-10",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "نائب الرئيس\nالادارية والمالية\nلعمل اللازم",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "archivedTopics": [
@@ -33467,6 +33487,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789281324815.4902,
+          "at": "2026-09-13T06:35:24.815Z",
+          "action": "إضافة موضوع",
+          "details": "إعداد تقديرات الميزانية لعام 2027 م"
+        },
         {
           "id": 1789280951366.6646,
           "at": "2026-09-13T06:29:11.366Z",
