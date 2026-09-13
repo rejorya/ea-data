@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-13T05:24:07.574Z",
+  "exportedAt": "2026-09-13T05:24:20.861Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27404,11 +27404,15 @@
       "type": "ext",
       "slaMode": "kpi",
       "slaDays": null,
-      "kpi": "",
+      "kpi": "gov5",
       "note": "القانونية\nلعمل اللازم",
       "status": "new",
       "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 0,
+      "followEntity": "rais_depts",
+      "raisDeptName": "الدائرة القانونية",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -33214,6 +33218,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789277058846.2441,
+          "at": "2026-09-13T05:24:18.846Z",
+          "action": "تعديل موضوع",
+          "details": "مذكرة تفاهم بين هيئة البيئة والمركز العلمي لموناكو  في مجال حماية النظم البيئية البحرية.pdf"
+        },
         {
           "id": 1789277014185.9148,
           "at": "2026-09-13T05:23:34.185Z",
