@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-13T04:20:07.912Z",
+  "exportedAt": "2026-09-13T04:20:47.691Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26926,7 +26926,7 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-08-18",
@@ -26957,7 +26957,8 @@
       "manualCount": 2,
       "followEntity": "taqseem",
       "responseMethod": "",
-      "divFollowDate": "2026-08-18"
+      "divFollowDate": "2026-08-18",
+      "closedAt": "2026-09-13"
     },
     {
       "id": 1787039618554.882,
@@ -27637,6 +27638,59 @@
       "responseMethod": "",
       "closedAt": "2026-09-13",
       "archivedAt": "2026-09-13T04:15:40.800Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1787039386154.0642,
+      "title": "المشاركة في توفير محتوى لجناح سلطنة عمان في نؤتمر الأطراف 31 لاتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ.",
+      "from": "هيئة تنظيم الخدمات العامة",
+      "docNo": "1170/3/2022v414-5",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "المديرية العامة للتغير المناخي",
+      "priority": "urgent",
+      "confidentiality": "secret",
+      "date": "2026-08-13",
+      "followStart": "2026-08-16",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-08-18",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للتغير المناخي",
+          "startDate": "2026-08-16",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-08-20",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للتغير المناخي",
+          "startDate": "2026-08-16",
+          "daysSince": 4
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 2,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-08-18",
+      "closedAt": "2026-09-13",
+      "archivedAt": "2026-09-13T04:20:45.650Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -33027,6 +33081,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789273245667.9385,
+          "at": "2026-09-13T04:20:45.667Z",
+          "action": "تعديل موضوع",
+          "details": "المشاركة في توفير محتوى لجناح سلطنة عمان في نؤتمر الأطراف 31 لاتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ."
+        },
         {
           "id": 1789273139707.5417,
           "at": "2026-09-13T04:18:59.707Z",
