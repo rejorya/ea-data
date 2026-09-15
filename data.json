@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-15T09:19:04.796Z",
+  "exportedAt": "2026-09-15T09:19:39.004Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27577,7 +27577,7 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "القانونية\nلعمل اللازم",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-13",
@@ -27596,7 +27596,8 @@
       "manualCount": 1,
       "followEntity": "rais_depts",
       "raisDeptName": "الدائرة القانونية",
-      "responseMethod": ""
+      "responseMethod": "via_follow",
+      "closedAt": "2026-09-15"
     },
     {
       "id": 1789281324786.6926,
@@ -28533,6 +28534,47 @@
       "responseMethod": "via_follow",
       "closedAt": "2026-09-13",
       "archivedAt": "2026-09-13T06:29:11.300Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1789279805672.8616,
+      "title": "النظام (القانون) الموحد لمجلس التعاون لدول الخليج العربية بشأن المواد الخاضعة للرقابة في بروتوكول مونتريال للمواد المستنفدة لطبقة الأوزون وبدائلها",
+      "from": "الأمانة العامة لمجلس الوزراء",
+      "docNo": "1170/3/2022v417-64",
+      "toEntity": "الدائرة القانونية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-09-09",
+      "followStart": "2026-09-10",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "القانونية\nلعمل اللازم",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "الدائرة القانونية",
+      "responseMethod": "",
+      "closedAt": "2026-09-15",
+      "archivedAt": "2026-09-15T09:19:36.937Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -33968,6 +34010,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789463976973.9207,
+          "at": "2026-09-15T09:19:36.973Z",
+          "action": "تعديل موضوع",
+          "details": "النظام (القانون) الموحد لمجلس التعاون لدول الخليج العربية بشأن المواد الخاضعة للرقابة في بروتوكول مونتريال للمواد المستنفدة لطبقة الأوزون وبدائلها"
+        },
         {
           "id": 1789462045952.6025,
           "at": "2026-09-15T08:47:25.952Z",
