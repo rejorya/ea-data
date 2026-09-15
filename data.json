@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-15T07:08:05.883Z",
+  "exportedAt": "2026-09-15T07:08:16.049Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27931,6 +27931,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1789456093991.8157,
+      "title": "طلب نقل للعمل بالهيئة",
+      "from": "المواطن / سعيد بن بخيت مسلم زعبنوت",
+      "docNo": "1170/3/2022v416-40",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-02",
+      "followStart": "2026-09-02",
+      "type": "ext",
+      "slaMode": "rais",
+      "slaDays": 14,
+      "kpi": "",
+      "note": "للمقابلة والاطلاع على تقربر الموظف وادئه والتزامه والافادة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "archivedTopics": [
@@ -33823,6 +33843,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789456094029.9724,
+          "at": "2026-09-15T07:08:14.029Z",
+          "action": "إضافة موضوع",
+          "details": "طلب نقل للعمل بالهيئة"
+        },
         {
           "id": 1789455355236.4658,
           "at": "2026-09-15T06:55:55.236Z",
