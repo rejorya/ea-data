@@ -359,7 +359,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
         <div class="fgs"><label>تاريخ الاستلام</label><input type="date" id="tNewDate"></div>
         <div class="fgs"><label>تاريخ استلام الموضوع للمتابعة</label><input type="date" id="tNewFollowStart"><small style="color:#666;font-size:11px;display:block;margin-top:4px">اتركيه فارغاً ليُحتسب تلقائياً بتاريخ اليوم — فيُنسب الموضوع لشهر استلامك له فعلياً بالتقارير، بغض النظر عن قِدم تاريخ الخطاب</small></div>
         <div class="fgs"><label>نوع الموضوع</label>
-          <select id="tNewType"><option value="ext">خارجي</option><option value="int">داخلي</option><option value="both">داخلي + خارجي</option></select>
+          <select id="tNewType"><option value="ext">خارجي</option><option value="int">داخلي</option></select>
         </div>
         <div class="fgs"><label>رقم الوثيقة / وصول</label><input id="tNewDocNo" placeholder="رقم الوثيقة أو رقم وصول"></div>
         <div class="fgs"><label>الجهة الموجَّه إليها</label><input id="tNewToEntity" placeholder="الجهة الموجَّه إليها الخطاب"></div>
@@ -421,6 +421,16 @@ body.viewer-only .print-btn { display: inline-block !important; }
       <tbody id="openTopicsTable"></tbody>
     </table></div>
   </div>
+
+  <!-- جدول المواضيع المغلقة -->
+  <div class="card">
+    <div class="ch g"><h2>✅ المواضيع المُنتهية</h2><span class="ref"><span id="closedCount">0</span> موضوع</span></div>
+    <div class="tb"><table>
+      <thead><tr><th>#</th><th>الموضوع</th><th>الجهة</th><th>تاريخ الاستلام</th><th>تاريخ الإغلاق</th><th class="editAction">إجراء</th></tr></thead>
+      <tbody id="closedTopicsTable"></tbody>
+    </table></div>
+  </div>
+</div>
 
 <!-- ============ ARCHIVE ============ -->
 <div class="sec" id="sec-archive">
@@ -945,7 +955,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
           3️⃣ Expiration: <code>No expiration</code> (بدون انتهاء)<br>
           4️⃣ Scopes: ✅ اختاري <code>public_repo</code> فقط (لمشاركة آمنة)<br>
           5️⃣ اضغطي "Generate token" واحفظي المفتاح<br>
-          ⚠️ <b>هام:</b> Token خاص بكِ فقط — لا يُحفظ داخل المستودع ولا داخل data.json؛ يُحفظ محلياً على هذا الجهاز فقط
+          ⚠️ <b>هام:</b> Token خاص بكِ فقط — لا تشاركيه مع أي شخص
         </p>
       </div>
       
@@ -1410,7 +1420,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
         <div class="fgs"><label>الجهة</label><input id="editFrom"></div>
         <div class="fgs"><label>تاريخ الاستلام</label><input type="date" id="editDate"></div>
         <div class="fgs"><label>تاريخ توجيه سعادة الرئيس للمتابعة</label><input type="date" id="editFollowStart" oninput="renderTopicTimeInfo()"></div>
-        <div class="fgs"><label>نوع الموضوع</label><select id="editType"><option value="ext">خارجي</option><option value="int">داخلي</option><option value="both">داخلي + خارجي</option></select></div>
+        <div class="fgs"><label>نوع الموضوع</label><select id="editType"><option value="ext">خارجي</option><option value="int">داخلي</option></select></div>
         <div class="fgs"><label>فئة المؤشر</label>
           <select id="editKpi" onchange="renderTopicTimeInfo()">
             <option value="">— اختر —</option>
@@ -1490,7 +1500,6 @@ body.viewer-only .print-btn { display: inline-block !important; }
       <div class="fg2">
         <div class="fgs"><label>تاريخ المتابعة</label><input type="date" id="fuDate" oninput="updateFollowupCalc()"></div>
         <div class="fgs"><label>هل تم الرد؟</label><select id="fuReplied"><option value="false">❌ لا</option><option value="true">✅ نعم</option></select></div>
-        <div class="fgs"><label>مسار المتابعة</label><select id="fuScope"><option value="">— حددي المسار —</option><option value="internal">🔵 داخلية</option><option value="external">🟢 خارجية</option></select></div>
         <div class="fgs"><label>نوع الإجراء</label>
           <select id="fuActionType">
             <option value="">— اختر —</option>
@@ -2461,13 +2470,12 @@ function getGitHubConfig() {
     const c = raw ? JSON.parse(raw) : null;
     if(c && c.user && c.repo) {
       let token = '';
-      try { token = localStorage.getItem(GH_CONFIG_KEY + '_token') || ''; } catch(e) {}
-      if(!token){ try { token = sessionStorage.getItem(GH_CONFIG_KEY + '_token') || ''; if(token) localStorage.setItem(GH_CONFIG_KEY + '_token', token); } catch(e) {} }
+      try { token = sessionStorage.getItem(GH_CONFIG_KEY + '_token') || ''; } catch(e) {}
       return { user:c.user, repo:c.repo, token };
     }
   } catch(e) {}
-  let token = ''; try { token = localStorage.getItem(GH_CONFIG_KEY + '_token') || ''; } catch(e) {}
-  if(!token){ try { token = sessionStorage.getItem(GH_CONFIG_KEY + '_token') || ''; if(token) localStorage.setItem(GH_CONFIG_KEY + '_token', token); } catch(e) {} }
+  // الإعدادات الافتراضية لا تحتوي أي سرّ؛ المفتاح لا يُخزّن بشكل دائم.
+  let token = ''; try { token = sessionStorage.getItem(GH_CONFIG_KEY + '_token') || ''; } catch(e) {}
   return { user: GH_PUBLIC_USER, repo: GH_PUBLIC_REPO, token };
 }
 
@@ -2490,12 +2498,10 @@ function saveGitHubConfig() {
   if(!requireAdmin()) return;
   const user = val('ghUser').trim();
   const repo = val('ghRepo').trim();
-  const tokenInput = val('ghToken').trim();
-  const existingConfig = getGitHubConfig();
-  const token = tokenInput || (existingConfig && existingConfig.token) || '';
+  const token = val('ghToken').trim();
   
   if(!user || !repo || !token) {
-    alert('⚠️ يرجى إدخال اسم المستخدم واسم المستودع وToken عند الإعداد لأول مرة');
+    alert('⚠️ يرجى ملء جميع الحقول');
     return;
   }
   
@@ -2505,10 +2511,9 @@ function saveGitHubConfig() {
   }
   
   try {
-    // 🛡️ لا نضع المفتاح السري داخل المستودع؛ يُحفظ محلياً على هذا الجهاز فقط.
+    // 🛡️ اسم المستودع/المستخدم فقط يبقى محلياً؛ المفتاح السري يعيش في sessionStorage ويُمسح عند انتهاء الجلسة/التبويب.
     localStorage.setItem(GH_CONFIG_KEY, JSON.stringify({ user, repo }));
-    localStorage.setItem(GH_CONFIG_KEY + '_token', token);
-    try{ sessionStorage.setItem(GH_CONFIG_KEY + '_token', token); }catch(e){}
+    sessionStorage.setItem(GH_CONFIG_KEY + '_token', token);
     updateGitHubStatus('☁️ مفعّل', 'success');
     alert('✅ تم حفظ إعدادات GitHub.');
   } catch(e) {
@@ -2520,7 +2525,7 @@ function clearGitHubConfig() {
   if(!requireAdmin()) return;
   if(!confirm('هل أنتِ متأكدة من مسح إعدادات GitHub؟')) return;
   localStorage.removeItem(GH_CONFIG_KEY);
-  try{ localStorage.removeItem(GH_CONFIG_KEY + '_token'); sessionStorage.removeItem(GH_CONFIG_KEY + '_token'); }catch(e){}
+  try{ sessionStorage.removeItem(GH_CONFIG_KEY + '_token'); }catch(e){}
   $('ghUser').value = '';
   $('ghRepo').value = 'ea-data';
   $('ghToken').value = '';
@@ -2533,8 +2538,8 @@ function loadGitHubConfig() {
   if(config) {
     if($('ghUser')) $('ghUser').value = config.user || '';
     if($('ghRepo')) $('ghRepo').value = config.repo || 'ea-data';
-    if($('ghToken')) { $('ghToken').value = ''; $('ghToken').placeholder = config.token ? '🔐 Token محفوظ على هذا الجهاز — اتركيه فارغاً لاستخدامه' : 'ghp_xxxxxxxxxxxxxxxxxxxx'; }
-    updateGitHubStatus(config.token ? '🔐 محفوظ' : '⚪ غير مفعّل', config.token ? 'success' : 'neutral');
+    if($('ghToken')) $('ghToken').value = ''; // لا نعرض/نخزن المفتاح بعد إعادة فتح التبويب
+    updateGitHubStatus('✅ مفعّل', 'success');
   }
 }
 
@@ -2907,17 +2912,15 @@ async function downloadFromGitHub() {
 function saveViewerConfig() {
   const user = val('ghUserViewer').trim();
   const repo = val('ghRepoViewer').trim();
-  const tokenInput = val('ghTokenViewer').trim();
-  const existingConfig = getGitHubConfig();
-  const token = tokenInput || (existingConfig && existingConfig.token) || '';
+  const token = val('ghTokenViewer').trim();
   if(!user || !repo) { alert('⚠️ يرجى إدخال اسم مستخدم GitHub واسم المستودع'); return; }
   if(token && !token.startsWith('github_pat_') && !token.startsWith('ghp_')) {
     alert('⚠️ مفتاح GitHub غير صحيح'); return;
   }
   try {
     localStorage.setItem(GH_CONFIG_KEY, JSON.stringify({user,repo}));
-    if(token) localStorage.setItem(GH_CONFIG_KEY + '_token', token);
-    else { try{ sessionStorage.removeItem(GH_CONFIG_KEY + '_token'); }catch(e){} }
+    if(token) sessionStorage.setItem(GH_CONFIG_KEY + '_token', token);
+    else sessionStorage.removeItem(GH_CONFIG_KEY + '_token');
     updateGitHubStatus('✅ مفعّل', 'success');
     showGitHubInfo('✅ تم الحفظ! جاري تحميل البيانات...', 'success');
     setTimeout(() => downloadFromGitHub(), 300);
@@ -3406,7 +3409,7 @@ function doLogout() {
 }
 
 function forceLogout(reason) {
-  // Token محفوظ محلياً ولا يُحذف عند تسجيل الخروج.
+  try { sessionStorage.removeItem(GH_CONFIG_KEY + '_token'); } catch(e) {}
   // تسجيل عملية الخروج
   recordLogout(reason || 'تسجيل خروج عادي');
   
@@ -3963,11 +3966,13 @@ function renderTopicsTable() {
       .some(v => String(v||'').toLowerCase().includes(q));
   };
   const open = D.topics.filter(t => t.status !== 'closed' && matchQ(t));
+  const closed = D.topics.filter(t => t.status === 'closed' && matchQ(t));
   // المواضيع المنتهية تُعرض في الأرشيف تلقائياً، ولا تُعرض في قائمة المواضيع الحالية.
   setText('openCount', open.length);
+  setText('closedCount', closed.length);
   if($('searchHint')) {
     $('searchHint').textContent = q
-      ? `نتائج البحث: ${open.length} موضوع نشط`
+      ? `نتائج البحث: ${open.length} مفتوح + ${closed.length} منتهٍ (من إجمالي ${D.topics.length})`
       : '';
   }
   
@@ -4017,6 +4022,7 @@ function renderTopicsTable() {
   }).join('') || noData(12);
   
   // المنتهية تنتقل تلقائياً إلى الأرشيف، لذلك لا نعرضها هنا.
+  $('closedTopicsTable').innerHTML = noData(6);
 }
 
 function onSlaModeChange(prefix){
@@ -4103,7 +4109,6 @@ function openEditTopicModal(tid) {
   $('fuReplied').value = 'false';
   $('fuNote').value = '';
   if($('fuActionType')) $('fuActionType').value = '';
-  if($('fuScope')) $('fuScope').value = '';
   if($('fuBy')) $('fuBy').value = '';
   if($('fuResult')) $('fuResult').value = '';
   updateFollowupCalc();
@@ -4192,10 +4197,8 @@ function renderTopicActionLog(t) {
   const entLabels = (typeof FOLLOW_ENTITY_LABELS!=='undefined') ? FOLLOW_ENTITY_LABELS : {};
   box.innerHTML = list.map(f => {
     const ent = f.entity ? (entLabels[f.entity]||f.entity) : '';
-    const scopeLabel = f.scope === 'internal' ? '🔵 داخلية' : (f.scope === 'external' ? '🟢 خارجية' : '');
     return '<div style="border:1px solid #eef2f6;border-radius:9px;padding:9px 12px;margin-bottom:7px;font-size:12px;background:#fafcff">'
        + '<b style="color:#1a3a5b">'+escHtml(fmtDate(f.date))+'</b>'
-      + (scopeLabel?' · <span style="color:#2563eb">'+scopeLabel+'</span>':'')
       + (ent?' · <span style="color:#2370a3">'+escHtml(ent)+'</span>':'')
       + (f.taqseem?' · <span style="color:#7d3c98">📂 '+escHtml(f.taqseem)+'</span>':'')
       + (f.replied?' · <span style="color:#1d8349">✅ تم الرد</span>':' · <span style="color:#b91c1c">❌ لم يُرد</span>')
@@ -4290,7 +4293,6 @@ function saveTopicAll() {
       replied: val('fuReplied') === 'true',
       note: val('fuNote').trim() || 'متابعة',
       actionType: val('fuActionType') || '',
-      scope: val('fuScope') || (t.type === 'int' ? 'internal' : (t.type === 'ext' ? 'external' : '')),
       by: val('fuBy').trim(),
       result: val('fuResult').trim(),
       entity: fe,
@@ -4321,21 +4323,6 @@ function saveTopicAll() {
     autoSave();
     recordActivityAction('إضافة متابعة', t.title || ('رقم '+tid));
   }
-  // عند إغلاق الموضوع: الأرشيف يحتفظ بالنسخة النهائية بعد آخر متابعة، ثم يختفي الموضوع من القائمة النشطة.
-  if(t.status === 'closed') {
-    if(!Array.isArray(D.archivedTopics)) D.archivedTopics = [];
-    const archivedFinal = JSON.parse(JSON.stringify(t));
-    archivedFinal.archivedAt = new Date().toISOString();
-    archivedFinal.archivedBy = CU?.name || CU?.user || 'مستخدم';
-    archivedFinal.archiveVersion = 1;
-    D.archivedTopics = D.archivedTopics.filter(x => x.id !== t.id);
-    D.archivedTopics.push(archivedFinal);
-  }
-  renderTopicsTable();
-  renderArchiveTable();
-  refreshDashboard();
-  refreshAllReports();
-  autoSave();
   // 3) إغلاق النافذة
   closeModal('editTopicModal');
   alert('✅ تم الحفظ' + (hasAction ? ' وتسجيل الإجراء' : ''));
@@ -4355,7 +4342,7 @@ function archiveTopic(tid) {
   archived.archivedAt = new Date().toISOString();
   archived.archivedBy = CU?.name || CU?.user || 'مستخدم';
   archived.archiveVersion = 1;
-  // نحتفظ بسجل الموضوع داخلياً للتقارير التاريخية، لكن لا يظهر في قائمة المواضيع النشطة؛ الأرشيف هو واجهة الحفظ النهائية.
+  // لا نحذف الموضوع من D.topics حتى تبقى التقارير التاريخية صحيحة؛ الأرشيف هو واجهة الحفظ النهائية.
   D.archivedTopics = D.archivedTopics.filter(x => x.id !== tid);
   D.archivedTopics.push(archived);
   renderTopicsTable();
