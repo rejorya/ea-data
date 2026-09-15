@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-15T09:23:06.708Z",
+  "exportedAt": "2026-09-15T09:24:01.006Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27895,7 +27895,7 @@
       "manualCount": 1,
       "followEntity": "rais_depts",
       "raisDeptName": "مكتب متابعة تنفيذ رؤية عمان 2040",
-      "responseMethod": ""
+      "responseMethod": "via_follow"
     },
     {
       "id": 1789455326581.1074,
@@ -34010,6 +34010,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789464238983.5051,
+          "at": "2026-09-15T09:23:58.983Z",
+          "action": "تعديل موضوع",
+          "details": "التخطيط المالي للخطة السنوية"
+        },
         {
           "id": 1789463976973.9207,
           "at": "2026-09-15T09:19:36.973Z",
