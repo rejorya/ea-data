@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-15T09:33:04.802Z",
+  "exportedAt": "2026-09-15T09:33:59.485Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27675,7 +27675,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "م. خالد البلوشي\nللمراجعة والافادة",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-13",
@@ -27688,12 +27688,25 @@
           "taqseem": "",
           "startDate": "2026-09-10",
           "daysSince": 1
+        },
+        {
+          "date": "2026-09-15",
+          "replied": false,
+          "note": "تم رفع افادة المديرية الى مدير المكتب",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 3
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "via_other",
+      "closedAt": "2026-09-15"
     },
     {
       "id": 1789281961424.4233,
@@ -28611,6 +28624,46 @@
       "responseMethod": "",
       "closedAt": "2026-09-15",
       "archivedAt": "2026-09-15T09:19:36.937Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1789281615247.393,
+      "title": "مذكرة التلوث بالمواد البلاستكية.pdf",
+      "from": "وزارة الخارجية",
+      "docNo": "",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-09",
+      "followStart": "2026-09-10",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "م. خالد البلوشي\nللمراجعة والافادة",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "closedAt": "2026-09-15",
+      "archivedAt": "2026-09-15T09:33:57.386Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -34046,6 +34099,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789464837467.5566,
+          "at": "2026-09-15T09:33:57.467Z",
+          "action": "إضافة متابعة",
+          "details": "مذكرة التلوث بالمواد البلاستكية.pdf"
+        },
+        {
+          "id": 1789464837419.251,
+          "at": "2026-09-15T09:33:57.420Z",
+          "action": "تعديل موضوع",
+          "details": "مذكرة التلوث بالمواد البلاستكية.pdf"
+        },
         {
           "id": 1789464598970.092,
           "at": "2026-09-15T09:29:58.970Z",
