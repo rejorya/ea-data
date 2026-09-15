@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-15T06:29:05.838Z",
+  "exportedAt": "2026-09-15T06:29:39.621Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27868,16 +27868,33 @@
       "taqseemName": "",
       "priority": "normal",
       "confidentiality": "normal",
-      "date": "2026-09-30",
-      "followStart": "2026-09-15",
+      "date": "2026-08-20",
+      "followStart": "2026-08-26",
       "type": "int",
       "slaMode": "rais",
       "slaDays": 30,
-      "kpi": "",
+      "kpi": "other",
       "note": "الادارية والمالية\nمكتب الرؤية\nللتنسق مع التخطيط وايجاد مسار مناسب للتخطيط المالي للخطط السنوية بما يحقق الخطة الخمسية للهيئة وذلك خلال شهر",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-09-15",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-26",
+          "daysSince": 14
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "مكتب متابعة تنفيذ رؤية عمان 2040",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -33770,6 +33787,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789453777599.0432,
+          "at": "2026-09-15T06:29:37.599Z",
+          "action": "إضافة متابعة",
+          "details": "التخطيط المالي للخطة السنوية"
+        },
+        {
+          "id": 1789453777544.2964,
+          "at": "2026-09-15T06:29:37.544Z",
+          "action": "تعديل موضوع",
+          "details": "التخطيط المالي للخطة السنوية"
+        },
         {
           "id": 1789453689759.0105,
           "at": "2026-09-15T06:28:09.759Z",
