@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-13T10:10:06.168Z",
+  "exportedAt": "2026-09-15T05:53:09.395Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27821,6 +27821,43 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1789451509916.7585,
+      "title": "خطة تقييم قبو ل الجهات الحكومية المستفيدة من نظام وصول.",
+      "from": "الأمانة العامة لمجلس الوزراء",
+      "docNo": "1170/3/2022v414-74",
+      "toEntity": "دائرة التميز المؤسسي",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "secret",
+      "date": "2026-09-19",
+      "followStart": "2026-09-15",
+      "type": "ext",
+      "slaMode": "letter",
+      "slaDays": 122,
+      "kpi": "other",
+      "note": "الجودة لعمل اللازم والافادة\nمكتب الرئيس\nللمتابعة",
+      "status": "new",
+      "followups": [
+        {
+          "date": "2026-09-15",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-09-15",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "دائرة التميز المؤسسي",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -33687,6 +33724,52 @@
     "مركز محمية حديقة السليل الطبيعية"
   ],
   "activityLog": [
+    {
+      "id": 1789447988361.2493,
+      "sessionId": "a20dcf29-bc9d-470f-b261-8af18275575c",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-09-15T04:53:08.360Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null,
+      "actions": [
+        {
+          "id": 1789451548737.0408,
+          "at": "2026-09-15T05:52:28.737Z",
+          "action": "إضافة متابعة",
+          "details": "خطة تقييم قبو ل الجهات الحكومية المستفيدة من نظام وصول."
+        },
+        {
+          "id": 1789451548675.4836,
+          "at": "2026-09-15T05:52:28.675Z",
+          "action": "تعديل موضوع",
+          "details": "خطة تقييم قبو ل الجهات الحكومية المستفيدة من نظام وصول."
+        },
+        {
+          "id": 1789451509953.9824,
+          "at": "2026-09-15T05:51:49.953Z",
+          "action": "إضافة موضوع",
+          "details": "خطة تقييم قبو ل الجهات الحكومية المستفيدة من نظام وصول."
+        }
+      ]
+    },
     {
       "id": 1789270390332.9846,
       "sessionId": "bc289626-db24-41e4-a333-bd75221112ba",
