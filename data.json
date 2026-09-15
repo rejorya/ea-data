@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-15T08:41:04.755Z",
+  "exportedAt": "2026-09-15T08:41:24.649Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28022,8 +28022,24 @@
       "kpi": "naib3",
       "note": "نائب الرئيس\nللافادة",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-09-15",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-14",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -33916,6 +33932,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789461681891.2605,
+          "at": "2026-09-15T08:41:21.891Z",
+          "action": "إضافة متابعة",
+          "details": "طلب رفع التأثير عن قطعة أرض سكنية  للفاضلة راية بنت ناصر الحربي"
+        },
+        {
+          "id": 1789461681840.798,
+          "at": "2026-09-15T08:41:21.840Z",
+          "action": "تعديل موضوع",
+          "details": "طلب رفع التأثير عن قطعة أرض سكنية  للفاضلة راية بنت ناصر الحربي"
+        },
         {
           "id": 1789461659358.0347,
           "at": "2026-09-15T08:40:59.358Z",
