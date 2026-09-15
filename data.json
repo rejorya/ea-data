@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-15T08:40:04.757Z",
+  "exportedAt": "2026-09-15T08:41:01.378Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28004,6 +28004,26 @@
       "followEntity": "naib_and_rais",
       "raisDeptName": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1789461659319.0928,
+      "title": "طلب رفع التأثير عن قطعة أرض سكنية  للفاضلة راية بنت ناصر الحربي",
+      "from": "المواطنة / راية بنت ناصر بن علي الحربي",
+      "docNo": "1170/3/2022v417-98",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-13",
+      "followStart": "2026-09-14",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "نائب الرئيس\nللافادة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "archivedTopics": [
@@ -33896,6 +33916,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789461659358.0347,
+          "at": "2026-09-15T08:40:59.358Z",
+          "action": "إضافة موضوع",
+          "details": "طلب رفع التأثير عن قطعة أرض سكنية  للفاضلة راية بنت ناصر الحربي"
+        },
         {
           "id": 1789456518348.7446,
           "at": "2026-09-15T07:15:18.348Z",
