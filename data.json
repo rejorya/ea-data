@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-15T09:29:05.701Z",
+  "exportedAt": "2026-09-15T09:30:00.987Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27627,7 +27627,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nالادارية والمالية\nلعمل اللازم",
-      "status": "new",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-09-13",
@@ -27640,10 +27640,22 @@
           "taqseem": "",
           "startDate": "2026-09-10",
           "daysSince": 1
+        },
+        {
+          "date": "2026-09-15",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 3
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "naib_office",
       "responseMethod": ""
     },
@@ -34034,6 +34046,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789464598970.092,
+          "at": "2026-09-15T09:29:58.970Z",
+          "action": "إضافة متابعة",
+          "details": "إعداد تقديرات الميزانية لعام 2027 م"
+        },
+        {
+          "id": 1789464598922.0486,
+          "at": "2026-09-15T09:29:58.922Z",
+          "action": "تعديل موضوع",
+          "details": "إعداد تقديرات الميزانية لعام 2027 م"
+        },
         {
           "id": 1789464503196.5293,
           "at": "2026-09-15T09:28:23.196Z",
