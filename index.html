@@ -359,7 +359,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
         <div class="fgs"><label>تاريخ الاستلام</label><input type="date" id="tNewDate"></div>
         <div class="fgs"><label>تاريخ استلام الموضوع للمتابعة</label><input type="date" id="tNewFollowStart"><small style="color:#666;font-size:11px;display:block;margin-top:4px">اتركيه فارغاً ليُحتسب تلقائياً بتاريخ اليوم — فيُنسب الموضوع لشهر استلامك له فعلياً بالتقارير، بغض النظر عن قِدم تاريخ الخطاب</small></div>
         <div class="fgs"><label>نوع الموضوع</label>
-          <select id="tNewType"><option value="ext">خارجي</option><option value="int">داخلي</option><option value="both">داخلي + خارجي</option></select>
+          <select id="tNewType"><option value="ext">خارجي</option><option value="int">داخلي</option></select>
         </div>
         <div class="fgs"><label>رقم الوثيقة / وصول</label><input id="tNewDocNo" placeholder="رقم الوثيقة أو رقم وصول"></div>
         <div class="fgs"><label>الجهة الموجَّه إليها</label><input id="tNewToEntity" placeholder="الجهة الموجَّه إليها الخطاب"></div>
@@ -421,6 +421,16 @@ body.viewer-only .print-btn { display: inline-block !important; }
       <tbody id="openTopicsTable"></tbody>
     </table></div>
   </div>
+
+  <!-- جدول المواضيع المغلقة -->
+  <div class="card">
+    <div class="ch g"><h2>✅ المواضيع المُنتهية</h2><span class="ref"><span id="closedCount">0</span> موضوع</span></div>
+    <div class="tb"><table>
+      <thead><tr><th>#</th><th>الموضوع</th><th>الجهة</th><th>تاريخ الاستلام</th><th>تاريخ الإغلاق</th><th class="editAction">إجراء</th></tr></thead>
+      <tbody id="closedTopicsTable"></tbody>
+    </table></div>
+  </div>
+</div>
 
 <!-- ============ ARCHIVE ============ -->
 <div class="sec" id="sec-archive">
@@ -945,7 +955,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
           3️⃣ Expiration: <code>No expiration</code> (بدون انتهاء)<br>
           4️⃣ Scopes: ✅ اختاري <code>public_repo</code> فقط (لمشاركة آمنة)<br>
           5️⃣ اضغطي "Generate token" واحفظي المفتاح<br>
-          ⚠️ <b>هام:</b> Token خاص بكِ فقط — لا يُحفظ داخل المستودع ولا داخل data.json؛ يُحفظ محلياً على هذا الجهاز فقط
+          ⚠️ <b>هام:</b> Token خاص بكِ فقط — لا تشاركيه مع أي شخص
         </p>
       </div>
       
@@ -1410,7 +1420,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
         <div class="fgs"><label>الجهة</label><input id="editFrom"></div>
         <div class="fgs"><label>تاريخ الاستلام</label><input type="date" id="editDate"></div>
         <div class="fgs"><label>تاريخ توجيه سعادة الرئيس للمتابعة</label><input type="date" id="editFollowStart" oninput="renderTopicTimeInfo()"></div>
-        <div class="fgs"><label>نوع الموضوع</label><select id="editType"><option value="ext">خارجي</option><option value="int">داخلي</option><option value="both">داخلي + خارجي</option></select></div>
+        <div class="fgs"><label>نوع الموضوع</label><select id="editType"><option value="ext">خارجي</option><option value="int">داخلي</option></select></div>
         <div class="fgs"><label>فئة المؤشر</label>
           <select id="editKpi" onchange="renderTopicTimeInfo()">
             <option value="">— اختر —</option>
@@ -1490,7 +1500,6 @@ body.viewer-only .print-btn { display: inline-block !important; }
       <div class="fg2">
         <div class="fgs"><label>تاريخ المتابعة</label><input type="date" id="fuDate" oninput="updateFollowupCalc()"></div>
         <div class="fgs"><label>هل تم الرد؟</label><select id="fuReplied"><option value="false">❌ لا</option><option value="true">✅ نعم</option></select></div>
-        <div class="fgs"><label>مسار المتابعة</label><select id="fuScope"><option value="">— حددي المسار —</option><option value="internal">🔵 داخلية</option><option value="external">🟢 خارجية</option></select></div>
         <div class="fgs"><label>نوع الإجراء</label>
           <select id="fuActionType">
             <option value="">— اختر —</option>
@@ -1647,30 +1656,6 @@ async function sha256hex(msg) {
   return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
 }
 
-// 🔐 حماية Token عبر الأجهزة: يُحفظ مشفراً داخل data.json ولا يُحفظ خاماً في localStorage.
-window._ghMasterPassword = '';
-window._ghSessionToken = '';
-async function _ghDeriveKey(password, saltBytes) {
-  const base = await crypto.subtle.importKey('raw', new TextEncoder().encode(String(password)), 'PBKDF2', false, ['deriveKey']);
-  return crypto.subtle.deriveKey({name:'PBKDF2', salt:saltBytes, iterations:150000, hash:'SHA-256'}, base, {name:'AES-GCM', length:256}, false, ['encrypt','decrypt']);
-}
-function _ghB64(bytes){ let s=''; bytes.forEach(b=>s+=String.fromCharCode(b)); return btoa(s); }
-function _ghBytes(b64){ const s=atob(b64); const a=new Uint8Array(s.length); for(let i=0;i<s.length;i++) a[i]=s.charCodeAt(i); return a; }
-async function encryptGitHubToken(token, password){
-  if(!token || !password) throw new Error('لا يمكن تشفير Token بدون كلمة مرور المدير.');
-  const salt=crypto.getRandomValues(new Uint8Array(16)); const iv=crypto.getRandomValues(new Uint8Array(12));
-  const key=await _ghDeriveKey(password,salt);
-  const ct=new Uint8Array(await crypto.subtle.encrypt({name:'AES-GCM',iv},key,new TextEncoder().encode(token)));
-  return {v:1,alg:'AES-GCM',kdf:'PBKDF2-SHA256',iterations:150000,salt:_ghB64(salt),iv:_ghB64(iv),ciphertext:_ghB64(ct)};
-}
-async function decryptGitHubToken(blob,password){
-  if(!blob || !password) return '';
-  const salt=_ghBytes(blob.salt), iv=_ghBytes(blob.iv), ct=_ghBytes(blob.ciphertext);
-  const key=await _ghDeriveKey(password,salt);
-  const plain=await crypto.subtle.decrypt({name:'AES-GCM',iv},key,ct);
-  return new TextDecoder().decode(plain);
-}
-
 let CU = null;  // المستخدم الحالي
 let sessionInterval = null;
 let sessionSecondsLeft = 20 * 60;
@@ -1821,11 +1806,7 @@ async function autoSaveToGitHub() {
       holidays: D.holidays || [],
       naibDivisions: D.naibDivisions || [],
       activityLog: D.activityLog || [],
-      users: USERS,
-      // 🔐 لا يوجد Token خام هنا؛ فقط النسخة المشفرة القابلة للاسترجاع بعد دخول المدير.
-      githubTokenEncrypted: window._ghEncryptedToken || null,
-      githubUser: config.user,
-      githubRepo: config.repo
+      users: USERS
     };
     const content = JSON.stringify(dataToShare, null, 2);
     const contentBase64 = btoa(unescape(encodeURIComponent(content)));
@@ -2484,13 +2465,18 @@ let autoSyncInterval = null;
 let lastSyncTime = null;
 
 function getGitHubConfig() {
-  let user=GH_PUBLIC_USER, repo=GH_PUBLIC_REPO;
   try {
-    const raw=localStorage.getItem(GH_CONFIG_KEY); const c=raw?JSON.parse(raw):null;
-    if(c&&c.user&&c.repo){ user=c.user; repo=c.repo; }
+    const raw = localStorage.getItem(GH_CONFIG_KEY);
+    const c = raw ? JSON.parse(raw) : null;
+    if(c && c.user && c.repo) {
+      let token = '';
+      try { token = sessionStorage.getItem(GH_CONFIG_KEY + '_token') || ''; } catch(e) {}
+      return { user:c.user, repo:c.repo, token };
+    }
   } catch(e) {}
-  // لا نقرأ Token من localStorage/sessionStorage: المصدر المشترك هو النسخة المشفرة في data.json.
-  return { user, repo, token: window._ghSessionToken || '' };
+  // الإعدادات الافتراضية لا تحتوي أي سرّ؛ المفتاح لا يُخزّن بشكل دائم.
+  let token = ''; try { token = sessionStorage.getItem(GH_CONFIG_KEY + '_token') || ''; } catch(e) {}
+  return { user: GH_PUBLIC_USER, repo: GH_PUBLIC_REPO, token };
 }
 
 async function enforcePrivateGitHubRepo(user, repo, token){
@@ -2508,33 +2494,38 @@ async function enforcePrivateGitHubRepo(user, repo, token){
   return true;
 }
 
-async function saveGitHubConfig() {
+function saveGitHubConfig() {
   if(!requireAdmin()) return;
-  const user=val('ghUser').trim(), repo=val('ghRepo').trim(), tokenInput=val('ghToken').trim();
-  const existing=getGitHubConfig(); const token=tokenInput || existing.token || '';
-  if(!user||!repo||!token){ alert('⚠️ أدخلي Token عند الإعداد لأول مرة. بعد حفظه لن تحتاجي لإدخاله على أي جهاز آخر.'); return; }
-  if(!token.startsWith('ghp_')&&!token.startsWith('github_pat_')){ alert('⚠️ Token غير صحيح\nيجب أن يبدأ بـ ghp_ أو github_pat_'); return; }
-  if(!window._ghMasterPassword){ alert('⚠️ يجب تسجيل الدخول كمدير أولاً حتى يتم حفظ Token مشفراً.'); return; }
-  try{
-    const encrypted=await encryptGitHubToken(token,window._ghMasterPassword);
-    localStorage.setItem(GH_CONFIG_KEY,JSON.stringify({user,repo}));
-    localStorage.removeItem(GH_CONFIG_KEY+'_token');
-    try{ sessionStorage.removeItem(GH_CONFIG_KEY+'_token'); }catch(e){}
-    window._ghSessionToken=token;
-    window._ghEncryptedToken=encrypted;
+  const user = val('ghUser').trim();
+  const repo = val('ghRepo').trim();
+  const token = val('ghToken').trim();
+  
+  if(!user || !repo || !token) {
+    alert('⚠️ يرجى ملء جميع الحقول');
+    return;
+  }
+  
+  if(!token.startsWith('ghp_') && !token.startsWith('github_pat_')) {
+    alert('⚠️ Token غير صحيح\nيجب أن يبدأ بـ ghp_ أو github_pat_');
+    return;
+  }
+  
+  try {
+    // 🛡️ اسم المستودع/المستخدم فقط يبقى محلياً؛ المفتاح السري يعيش في sessionStorage ويُمسح عند انتهاء الجلسة/التبويب.
+    localStorage.setItem(GH_CONFIG_KEY, JSON.stringify({ user, repo }));
+    sessionStorage.setItem(GH_CONFIG_KEY + '_token', token);
     updateGitHubStatus('☁️ مفعّل', 'success');
-    // حفظ النسخة المشفرة داخل data.json على GitHub حتى تصبح متاحة لأي جهاز بعد تسجيل الدخول.
-    await autoSaveToGitHub();
-    alert('✅ تم حفظ Token بشكل مشفّر على السحابة. لن تحتاجي لإدخاله مرة أخرى من أي جهاز.');
-  }catch(e){ alert('❌ خطأ في حفظ Token: '+e.message); }
+    alert('✅ تم حفظ إعدادات GitHub.');
+  } catch(e) {
+    alert('❌ خطأ في الحفظ: ' + e.message);
+  }
 }
 
 function clearGitHubConfig() {
   if(!requireAdmin()) return;
   if(!confirm('هل أنتِ متأكدة من مسح إعدادات GitHub؟')) return;
   localStorage.removeItem(GH_CONFIG_KEY);
-  try{ localStorage.removeItem(GH_CONFIG_KEY + '_token'); sessionStorage.removeItem(GH_CONFIG_KEY + '_token'); }catch(e){}
-  window._ghSessionToken=''; window._ghEncryptedToken=null;
+  try{ sessionStorage.removeItem(GH_CONFIG_KEY + '_token'); }catch(e){}
   $('ghUser').value = '';
   $('ghRepo').value = 'ea-data';
   $('ghToken').value = '';
@@ -2547,8 +2538,8 @@ function loadGitHubConfig() {
   if(config) {
     if($('ghUser')) $('ghUser').value = config.user || '';
     if($('ghRepo')) $('ghRepo').value = config.repo || 'ea-data';
-    if($('ghToken')) { $('ghToken').value = ''; $('ghToken').placeholder = config.token ? '🔐 Token متاح للجلسة — اتركيه فارغاً' : 'سيتم استرجاع Token المشفّر تلقائياً بعد تسجيل الدخول'; }
-    updateGitHubStatus(config.token ? '🔐 محفوظ' : '⚪ غير مفعّل', config.token ? 'success' : 'neutral');
+    if($('ghToken')) $('ghToken').value = ''; // لا نعرض/نخزن المفتاح بعد إعادة فتح التبويب
+    updateGitHubStatus('✅ مفعّل', 'success');
   }
 }
 
@@ -2859,21 +2850,6 @@ async function downloadFromGitHub() {
       showGitHubInfo('❌ ملف غير صالح', 'error');
       return;
     }
-
-    // 🔐 استرجاع Token المشفّر من السحابة بعد تسجيل دخول المدير؛ لا حاجة لإعادة إدخاله على الجهاز الجديد.
-    if(CU?.admin && imported.githubTokenEncrypted && window._ghMasterPassword){
-      try{
-        window._ghSessionToken = await decryptGitHubToken(imported.githubTokenEncrypted, window._ghMasterPassword);
-        window._ghEncryptedToken = imported.githubTokenEncrypted;
-        if(imported.githubUser && imported.githubRepo){
-          localStorage.setItem(GH_CONFIG_KEY,JSON.stringify({user:imported.githubUser,repo:imported.githubRepo}));
-        }
-        updateGitHubStatus('🔐 Token مسترجع من السحابة', 'success');
-      }catch(ex){
-        window._ghSessionToken=''; window._ghEncryptedToken=imported.githubTokenEncrypted;
-        console.warn('GitHub token decrypt failed:', ex.message);
-      }
-    }
     
     // حماية من فقدان البيانات قبل الكتابة فوق المحلي
     if(!safeBeforeCloudOverwrite(imported)) {
@@ -2936,17 +2912,15 @@ async function downloadFromGitHub() {
 function saveViewerConfig() {
   const user = val('ghUserViewer').trim();
   const repo = val('ghRepoViewer').trim();
-  const tokenInput = val('ghTokenViewer').trim();
-  const existingConfig = getGitHubConfig();
-  const token = tokenInput || (existingConfig && existingConfig.token) || '';
+  const token = val('ghTokenViewer').trim();
   if(!user || !repo) { alert('⚠️ يرجى إدخال اسم مستخدم GitHub واسم المستودع'); return; }
   if(token && !token.startsWith('github_pat_') && !token.startsWith('ghp_')) {
     alert('⚠️ مفتاح GitHub غير صحيح'); return;
   }
   try {
     localStorage.setItem(GH_CONFIG_KEY, JSON.stringify({user,repo}));
-    if(token) localStorage.setItem(GH_CONFIG_KEY + '_token', token);
-    else { try{ sessionStorage.removeItem(GH_CONFIG_KEY + '_token'); }catch(e){} }
+    if(token) sessionStorage.setItem(GH_CONFIG_KEY + '_token', token);
+    else sessionStorage.removeItem(GH_CONFIG_KEY + '_token');
     updateGitHubStatus('✅ مفعّل', 'success');
     showGitHubInfo('✅ تم الحفظ! جاري تحميل البيانات...', 'success');
     setTimeout(() => downloadFromGitHub(), 300);
@@ -3420,7 +3394,7 @@ async function doLogin(e) {
   }
   try {
     const h = await sha256hex(pass);
-    if(h === u.hash) { window._ghMasterPassword = pass; loginAs({...u, id:user}); return false; }
+    if(h === u.hash) { loginAs({...u, id:user}); return false; }
     if(err) { err.textContent='❌ اسم المستخدم أو كلمة المرور غير صحيحة'; err.classList.add('on'); err.style.display='block'; }
   } catch(ex) {
     console.error('Login error:', ex);
@@ -3435,13 +3409,11 @@ function doLogout() {
 }
 
 function forceLogout(reason) {
-  // Token محفوظ محلياً ولا يُحذف عند تسجيل الخروج.
+  try { sessionStorage.removeItem(GH_CONFIG_KEY + '_token'); } catch(e) {}
   // تسجيل عملية الخروج
   recordLogout(reason || 'تسجيل خروج عادي');
   
   CU = null;
-  window._ghMasterPassword = '';
-  window._ghSessionToken = '';
   if(sessionInterval) clearInterval(sessionInterval);
   $('app').classList.remove('on');
   $('loginScreen').style.display = 'flex';
@@ -3994,11 +3966,13 @@ function renderTopicsTable() {
       .some(v => String(v||'').toLowerCase().includes(q));
   };
   const open = D.topics.filter(t => t.status !== 'closed' && matchQ(t));
+  const closed = D.topics.filter(t => t.status === 'closed' && matchQ(t));
   // المواضيع المنتهية تُعرض في الأرشيف تلقائياً، ولا تُعرض في قائمة المواضيع الحالية.
   setText('openCount', open.length);
+  setText('closedCount', closed.length);
   if($('searchHint')) {
     $('searchHint').textContent = q
-      ? `نتائج البحث: ${open.length} موضوع نشط`
+      ? `نتائج البحث: ${open.length} مفتوح + ${closed.length} منتهٍ (من إجمالي ${D.topics.length})`
       : '';
   }
   
@@ -4048,6 +4022,7 @@ function renderTopicsTable() {
   }).join('') || noData(12);
   
   // المنتهية تنتقل تلقائياً إلى الأرشيف، لذلك لا نعرضها هنا.
+  $('closedTopicsTable').innerHTML = noData(6);
 }
 
 function onSlaModeChange(prefix){
@@ -4134,7 +4109,6 @@ function openEditTopicModal(tid) {
   $('fuReplied').value = 'false';
   $('fuNote').value = '';
   if($('fuActionType')) $('fuActionType').value = '';
-  if($('fuScope')) $('fuScope').value = '';
   if($('fuBy')) $('fuBy').value = '';
   if($('fuResult')) $('fuResult').value = '';
   updateFollowupCalc();
@@ -4223,10 +4197,8 @@ function renderTopicActionLog(t) {
   const entLabels = (typeof FOLLOW_ENTITY_LABELS!=='undefined') ? FOLLOW_ENTITY_LABELS : {};
   box.innerHTML = list.map(f => {
     const ent = f.entity ? (entLabels[f.entity]||f.entity) : '';
-    const scopeLabel = f.scope === 'internal' ? '🔵 داخلية' : (f.scope === 'external' ? '🟢 خارجية' : '');
     return '<div style="border:1px solid #eef2f6;border-radius:9px;padding:9px 12px;margin-bottom:7px;font-size:12px;background:#fafcff">'
        + '<b style="color:#1a3a5b">'+escHtml(fmtDate(f.date))+'</b>'
-      + (scopeLabel?' · <span style="color:#2563eb">'+scopeLabel+'</span>':'')
       + (ent?' · <span style="color:#2370a3">'+escHtml(ent)+'</span>':'')
       + (f.taqseem?' · <span style="color:#7d3c98">📂 '+escHtml(f.taqseem)+'</span>':'')
       + (f.replied?' · <span style="color:#1d8349">✅ تم الرد</span>':' · <span style="color:#b91c1c">❌ لم يُرد</span>')
@@ -4321,7 +4293,6 @@ function saveTopicAll() {
       replied: val('fuReplied') === 'true',
       note: val('fuNote').trim() || 'متابعة',
       actionType: val('fuActionType') || '',
-      scope: val('fuScope') || (t.type === 'int' ? 'internal' : (t.type === 'ext' ? 'external' : '')),
       by: val('fuBy').trim(),
       result: val('fuResult').trim(),
       entity: fe,
@@ -4352,21 +4323,6 @@ function saveTopicAll() {
     autoSave();
     recordActivityAction('إضافة متابعة', t.title || ('رقم '+tid));
   }
-  // عند إغلاق الموضوع: الأرشيف يحتفظ بالنسخة النهائية بعد آخر متابعة، ثم يختفي الموضوع من القائمة النشطة.
-  if(t.status === 'closed') {
-    if(!Array.isArray(D.archivedTopics)) D.archivedTopics = [];
-    const archivedFinal = JSON.parse(JSON.stringify(t));
-    archivedFinal.archivedAt = new Date().toISOString();
-    archivedFinal.archivedBy = CU?.name || CU?.user || 'مستخدم';
-    archivedFinal.archiveVersion = 1;
-    D.archivedTopics = D.archivedTopics.filter(x => x.id !== t.id);
-    D.archivedTopics.push(archivedFinal);
-  }
-  renderTopicsTable();
-  renderArchiveTable();
-  refreshDashboard();
-  refreshAllReports();
-  autoSave();
   // 3) إغلاق النافذة
   closeModal('editTopicModal');
   alert('✅ تم الحفظ' + (hasAction ? ' وتسجيل الإجراء' : ''));
@@ -4386,7 +4342,7 @@ function archiveTopic(tid) {
   archived.archivedAt = new Date().toISOString();
   archived.archivedBy = CU?.name || CU?.user || 'مستخدم';
   archived.archiveVersion = 1;
-  // نحتفظ بسجل الموضوع داخلياً للتقارير التاريخية، لكن لا يظهر في قائمة المواضيع النشطة؛ الأرشيف هو واجهة الحفظ النهائية.
+  // لا نحذف الموضوع من D.topics حتى تبقى التقارير التاريخية صحيحة؛ الأرشيف هو واجهة الحفظ النهائية.
   D.archivedTopics = D.archivedTopics.filter(x => x.id !== tid);
   D.archivedTopics.push(archived);
   renderTopicsTable();
