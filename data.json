@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-16T07:47:08.531Z",
+  "exportedAt": "2026-09-16T07:47:41.480Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27774,7 +27774,7 @@
       "from": "وزارة المالية",
       "docNo": "1170/3/2022v416-92",
       "toEntity": "نائب الرئيس",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة للشؤون الادارية والمالية",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-09-06",
@@ -27784,7 +27784,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
-      "status": "new",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-09-13",
@@ -27797,12 +27797,25 @@
           "taqseem": "",
           "startDate": "2026-09-07",
           "daysSince": 4
+        },
+        {
+          "date": "2026-09-16",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+          "startDate": "2026-09-07",
+          "daysSince": 7
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
-      "followEntity": "naib_office",
-      "responseMethod": ""
+      "manualCount": 2,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-09-16"
     },
     {
       "id": 1789286293507.2776,
@@ -34129,6 +34142,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789544859465.45,
+          "at": "2026-09-16T07:47:39.465Z",
+          "action": "إضافة متابعة",
+          "details": "التأمين على أصول هيئة البيئة للسنة التأمينية 2028/2027م"
+        },
+        {
+          "id": 1789544859418.053,
+          "at": "2026-09-16T07:47:39.418Z",
+          "action": "تعديل موضوع",
+          "details": "التأمين على أصول هيئة البيئة للسنة التأمينية 2028/2027م"
+        },
         {
           "id": 1789544689336.7612,
           "at": "2026-09-16T07:44:49.336Z",
