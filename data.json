@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-16T07:49:06.959Z",
+  "exportedAt": "2026-09-16T07:49:23.318Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27714,7 +27714,7 @@
       "from": "1170/3/2022v417-31",
       "docNo": "وزراة التجارة والصناعة وترويج الاستثمار",
       "toEntity": "نائب الرئيس",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة للالتزام البيئي",
       "priority": "normal",
       "confidentiality": "top_secret",
       "date": "2026-09-08",
@@ -27724,7 +27724,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nلعمل اللازم\n",
-      "status": "open",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-09-13",
@@ -27737,12 +27737,25 @@
           "taqseem": "",
           "startDate": "2026-09-10",
           "daysSince": 1
+        },
+        {
+          "date": "2026-09-16",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للالتزام البيئي",
+          "startDate": "2026-09-10",
+          "daysSince": 4
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
-      "followEntity": "naib_office",
-      "responseMethod": ""
+      "manualCount": 2,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-09-16"
     },
     {
       "id": 1789283395116.5815,
@@ -34142,6 +34155,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789544961297.8064,
+          "at": "2026-09-16T07:49:21.297Z",
+          "action": "إضافة متابعة",
+          "details": "مسودة إرشادات بشأن القوائم المحدثة للملوثات العضوية - اتفاقية ستوكهولم"
+        },
+        {
+          "id": 1789544961249.7568,
+          "at": "2026-09-16T07:49:21.249Z",
+          "action": "تعديل موضوع",
+          "details": "مسودة إرشادات بشأن القوائم المحدثة للملوثات العضوية - اتفاقية ستوكهولم"
+        },
         {
           "id": 1789544859465.45,
           "at": "2026-09-16T07:47:39.465Z",
