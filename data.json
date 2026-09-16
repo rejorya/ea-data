@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-16T07:28:06.937Z",
+  "exportedAt": "2026-09-16T07:28:20.009Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28097,7 +28097,7 @@
       "from": "وزارة العمل",
       "docNo": "1170/3/2022v417-94",
       "toEntity": "نائب الرئيس",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة للشؤون الادارية والمالية",
       "priority": "urgent",
       "confidentiality": "normal",
       "date": "2026-09-13",
@@ -28107,7 +28107,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nلعمل اللازم",
-      "status": "new",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-09-15",
@@ -28120,12 +28120,25 @@
           "taqseem": "",
           "startDate": "2026-09-13",
           "daysSince": 2
+        },
+        {
+          "date": "2026-09-16",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+          "startDate": "2026-09-13",
+          "daysSince": 3
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
-      "followEntity": "naib_office",
-      "responseMethod": ""
+      "manualCount": 2,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-09-16"
     }
   ],
   "archivedTopics": [
@@ -34088,7 +34101,21 @@
       "loginAt": "2026-09-16T05:08:09.756Z",
       "logoutAt": null,
       "duration": null,
-      "logoutReason": null
+      "logoutReason": null,
+      "actions": [
+        {
+          "id": 1789543697986.3115,
+          "at": "2026-09-16T07:28:17.986Z",
+          "action": "إضافة متابعة",
+          "details": "الاستعجال في استيعاب موظفي المديرية العامة للمياه - سابقاً غير المنقولين إلى الوحدات الحكومية.pdf"
+        },
+        {
+          "id": 1789543697940.5684,
+          "at": "2026-09-16T07:28:17.940Z",
+          "action": "تعديل موضوع",
+          "details": "الاستعجال في استيعاب موظفي المديرية العامة للمياه - سابقاً غير المنقولين إلى الوحدات الحكومية.pdf"
+        }
+      ]
     },
     {
       "id": 1789447988361.2493,
