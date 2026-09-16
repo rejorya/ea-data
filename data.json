@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-16T07:40:06.941Z",
+  "exportedAt": "2026-09-16T07:40:34.377Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28061,7 +28061,7 @@
       "from": "المواطنة / راية بنت ناصر بن علي الحربي",
       "docNo": "1170/3/2022v417-98",
       "toEntity": "نائب الرئيس",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-09-13",
@@ -28071,7 +28071,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nللافادة",
-      "status": "new",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-09-15",
@@ -28084,12 +28084,25 @@
           "taqseem": "",
           "startDate": "2026-09-14",
           "daysSince": 1
+        },
+        {
+          "date": "2026-09-16",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-09-14",
+          "daysSince": 2
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
-      "followEntity": "naib_office",
-      "responseMethod": ""
+      "manualCount": 2,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-09-16"
     },
     {
       "id": 1789462024836.112,
@@ -34103,6 +34116,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789544432356.786,
+          "at": "2026-09-16T07:40:32.356Z",
+          "action": "إضافة متابعة",
+          "details": "طلب رفع التأثير عن قطعة أرض سكنية  للفاضلة راية بنت ناصر الحربي"
+        },
+        {
+          "id": 1789544432311.3545,
+          "at": "2026-09-16T07:40:32.311Z",
+          "action": "تعديل موضوع",
+          "details": "طلب رفع التأثير عن قطعة أرض سكنية  للفاضلة راية بنت ناصر الحربي"
+        },
         {
           "id": 1789543697986.3115,
           "at": "2026-09-16T07:28:17.986Z",
