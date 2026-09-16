@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-16T08:11:53.643Z",
+  "exportedAt": "2026-09-16T08:11:59.092Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27931,7 +27931,7 @@
       "taqseemName": "",
       "priority": "urgent",
       "confidentiality": "secret",
-      "date": "2026-09-19",
+      "date": "2026-08-19",
       "followStart": "2026-09-15",
       "type": "ext",
       "slaMode": "letter",
@@ -34196,7 +34196,15 @@
       "loginAt": "2026-09-16T08:03:04.976Z",
       "logoutAt": null,
       "duration": null,
-      "logoutReason": null
+      "logoutReason": null,
+      "actions": [
+        {
+          "id": 1789546317062.2036,
+          "at": "2026-09-16T08:11:57.062Z",
+          "action": "تعديل موضوع",
+          "details": "خطة تقييم قبو ل الجهات الحكومية المستفيدة من نظام وصول."
+        }
+      ]
     },
     {
       "id": 1789535289757.132,
