@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-16T08:02:06.967Z",
+  "exportedAt": "2026-09-16T08:02:11.512Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -26394,10 +26394,22 @@
           "taqseem": "",
           "startDate": "2026-08-04",
           "daysSince": 4
+        },
+        {
+          "date": "2026-09-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "esc",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-04",
+          "daysSince": 28
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "rais_depts",
       "raisDeptName": "",
       "responseMethod": ""
@@ -34186,6 +34198,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789545729483.519,
+          "at": "2026-09-16T08:02:09.483Z",
+          "action": "إضافة متابعة",
+          "details": "عقد الدراسة الاستشارية مه مجموعة إذكاء بخصوص  مشروع  بنك المعلومات البيئية.pdf"
+        },
+        {
+          "id": 1789545729437.7952,
+          "at": "2026-09-16T08:02:09.437Z",
+          "action": "تعديل موضوع",
+          "details": "عقد الدراسة الاستشارية مه مجموعة إذكاء بخصوص  مشروع  بنك المعلومات البيئية.pdf"
+        },
         {
           "id": 1789545436930.8242,
           "at": "2026-09-16T07:57:16.930Z",
