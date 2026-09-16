@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-16T07:49:23.318Z",
+  "exportedAt": "2026-09-16T07:49:57.966Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27652,10 +27652,22 @@
           "taqseem": "",
           "startDate": "2026-09-10",
           "daysSince": 3
+        },
+        {
+          "date": "2026-09-16",
+          "replied": true,
+          "note": "سوف يتم الرد بعد اسبوع",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 4
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "naib_office",
       "responseMethod": ""
     },
@@ -34155,6 +34167,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789544995948.8271,
+          "at": "2026-09-16T07:49:55.948Z",
+          "action": "إضافة متابعة",
+          "details": "إعداد تقديرات الميزانية لعام 2027 م"
+        },
+        {
+          "id": 1789544995909.6807,
+          "at": "2026-09-16T07:49:55.909Z",
+          "action": "تعديل موضوع",
+          "details": "إعداد تقديرات الميزانية لعام 2027 م"
+        },
         {
           "id": 1789544961297.8064,
           "at": "2026-09-16T07:49:21.297Z",
