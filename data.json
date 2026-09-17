@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-16T10:40:07.540Z",
+  "exportedAt": "2026-09-17T05:48:14.159Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34182,6 +34182,32 @@
   ],
   "activityLog": [
     {
+      "id": 1789620057386.4763,
+      "sessionId": "748fb45c-45ca-4282-90ed-87ee59e78526",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-09-17T04:40:57.386Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": 1789545784977.027,
       "sessionId": "64ce86f9-12c0-4c80-bfdd-ab48d42b3a77",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -35160,5 +35186,16 @@
       "admin": false,
       "delegate": true
     }
-  }
+  },
+  "githubTokenEncrypted": {
+    "v": 1,
+    "alg": "AES-GCM",
+    "kdf": "PBKDF2-SHA256",
+    "iterations": 150000,
+    "salt": "Sqkjz1okfJMMdoxL9iQ/ng==",
+    "iv": "5oE1usBjzGXiWjgn",
+    "ciphertext": "UjKoGoKIwhzNr2AcqK7gREyeQpieqsPA1GTgjg3CI5m4i1a4tIvzK1y6bjyysT3aUky7tL2rYy8="
+  },
+  "githubUser": "rejorya",
+  "githubRepo": "ea-data"
 }
