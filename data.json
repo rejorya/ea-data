@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-17T11:09:38.922Z",
+  "exportedAt": "2026-09-17T11:10:15.659Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28321,6 +28321,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1789643413605.374,
+      "title": "دعوة لحضور ورشة تعريفية بشهادة المحتوى المحلي",
+      "from": "هيئة المشاريع والمناقصات والمحتوى المحلي",
+      "docNo": "1170/3/2022v418-67",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-17",
+      "followStart": "2026-09-17",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "doc2",
+      "note": "نائب الرئيس\nلعمل اللازم",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "archivedTopics": [
@@ -34315,6 +34335,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789643413642.448,
+          "at": "2026-09-17T11:10:13.642Z",
+          "action": "إضافة موضوع",
+          "details": "دعوة لحضور ورشة تعريفية بشهادة المحتوى المحلي"
+        },
         {
           "id": 1789643228677.784,
           "at": "2026-09-17T11:07:08.677Z",
