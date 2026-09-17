@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-17T11:10:15.659Z",
+  "exportedAt": "2026-09-17T11:10:34.983Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28339,8 +28339,25 @@
       "kpi": "doc2",
       "note": "نائب الرئيس\nلعمل اللازم",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-09-17",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-17",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -34335,6 +34352,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789643432842.1743,
+          "at": "2026-09-17T11:10:32.842Z",
+          "action": "إضافة متابعة",
+          "details": "دعوة لحضور ورشة تعريفية بشهادة المحتوى المحلي"
+        },
+        {
+          "id": 1789643432791.774,
+          "at": "2026-09-17T11:10:32.791Z",
+          "action": "تعديل موضوع",
+          "details": "دعوة لحضور ورشة تعريفية بشهادة المحتوى المحلي"
+        },
         {
           "id": 1789643413642.448,
           "at": "2026-09-17T11:10:13.642Z",
