@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-17T10:25:38.868Z",
+  "exportedAt": "2026-09-17T10:25:48.605Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28227,6 +28227,26 @@
       "followEntity": "taqseem",
       "responseMethod": "",
       "divFollowDate": "2026-09-16"
+    },
+    {
+      "id": 1789640746547.1846,
+      "title": "قائمة حصر المواد النووية والمشعة في سلطنة عمان",
+      "from": "المكتب السلطاني",
+      "docNo": "1170/3/2022v416-27",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-09-01",
+      "followStart": "2026-09-02",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "نائب الرئيس\nلعمل اللازم",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "archivedTopics": [
@@ -34221,6 +34241,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789640746587.1724,
+          "at": "2026-09-17T10:25:46.587Z",
+          "action": "إضافة موضوع",
+          "details": "قائمة حصر المواد النووية والمشعة في سلطنة عمان"
+        },
         {
           "id": 1789629637332.519,
           "at": "2026-09-17T07:20:37.332Z",
