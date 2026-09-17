@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-17T05:48:32.406Z",
+  "exportedAt": "2026-09-17T05:49:38.695Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35186,5 +35186,16 @@
       "admin": false,
       "delegate": true
     }
-  }
+  },
+  "githubTokenEncrypted": {
+    "v": 1,
+    "alg": "AES-GCM",
+    "kdf": "PBKDF2-SHA256",
+    "iterations": 150000,
+    "salt": "AirHOPYtBlva2KlwVPgGmQ==",
+    "iv": "/jyBoUZZs07Gjq8i",
+    "ciphertext": "5IJ1ZN0gQ1XDBxQVLMhsCd4Oox3WSjYqZRxZkTXDP5YrpsbV0AO5oa2cvK9ZynJAn02m6jD57/s="
+  },
+  "githubUser": "rejorya",
+  "githubRepo": "ea-data"
 }
