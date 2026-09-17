@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-17T11:06:42.676Z",
+  "exportedAt": "2026-09-17T11:07:12.176Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28302,8 +28302,25 @@
       "kpi": "naib3",
       "note": "نائب الرئيس\nللمراجعة والافادة بالرايس",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-09-17",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-17",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -34298,6 +34315,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789643228677.784,
+          "at": "2026-09-17T11:07:08.677Z",
+          "action": "إضافة متابعة",
+          "details": "مقترحات تنظيمية زفنية للحد من الاثار البيئية والصحية لعبوات الشرب البلاستكية"
+        },
+        {
+          "id": 1789643228630.6133,
+          "at": "2026-09-17T11:07:08.630Z",
+          "action": "تعديل موضوع",
+          "details": "مقترحات تنظيمية زفنية للحد من الاثار البيئية والصحية لعبوات الشرب البلاستكية"
+        },
         {
           "id": 1789643200658.8848,
           "at": "2026-09-17T11:06:40.658Z",
