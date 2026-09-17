@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-17T11:02:38.909Z",
+  "exportedAt": "2026-09-17T11:03:07.209Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28264,6 +28264,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1789642985034.1895,
+      "title": "مشاركة ممثلي الجهات أعضاء فريق العمل  في الزيارة الرسمية إلى جمهورية سنغافورة",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v418-76",
+      "toEntity": "عدة جهات",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "normal",
+      "date": "2026-09-17",
+      "followStart": "2026-09-17",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wd2",
+      "note": "متابعة الجهات الخارجية",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "archivedTopics": [
@@ -34258,6 +34278,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789642985071.8923,
+          "at": "2026-09-17T11:03:05.071Z",
+          "action": "إضافة موضوع",
+          "details": "مشاركة ممثلي الجهات أعضاء فريق العمل  في الزيارة الرسمية إلى جمهورية سنغافورة"
+        },
         {
           "id": 1789640849985.8982,
           "at": "2026-09-17T10:27:29.985Z",
