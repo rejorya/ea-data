@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-17T10:26:38.867Z",
+  "exportedAt": "2026-09-17T10:27:32.129Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28240,13 +28240,30 @@
       "date": "2026-09-01",
       "followStart": "2026-09-02",
       "type": "ext",
-      "slaMode": "kpi",
-      "slaDays": null,
+      "slaMode": "rais",
+      "slaDays": 30,
       "kpi": "other",
-      "note": "نائب الرئيس\nلعمل اللازم",
+      "note": "نائب الرئيس\nلعمل اللازم\nالتسليم 8/10",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-09-17",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-02",
+          "daysSince": 11
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -34241,6 +34258,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789640849985.8982,
+          "at": "2026-09-17T10:27:29.985Z",
+          "action": "إضافة متابعة",
+          "details": "قائمة حصر المواد النووية والمشعة في سلطنة عمان"
+        },
+        {
+          "id": 1789640849934.9111,
+          "at": "2026-09-17T10:27:29.934Z",
+          "action": "تعديل موضوع",
+          "details": "قائمة حصر المواد النووية والمشعة في سلطنة عمان"
+        },
         {
           "id": 1789640746587.1724,
           "at": "2026-09-17T10:25:46.587Z",
