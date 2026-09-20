@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-20T06:29:46.938Z",
+  "exportedAt": "2026-09-20T06:30:08.632Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28537,7 +28537,7 @@
       "toEntity": "وزارة الخارجية",
       "taqseemName": "",
       "priority": "normal",
-      "confidentiality": "secret",
+      "confidentiality": "normal",
       "date": "2026-09-20",
       "followStart": "2026-09-20",
       "type": "ext",
@@ -28547,7 +28547,11 @@
       "note": "متابعة خارجية",
       "status": "new",
       "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 0,
+      "followEntity": "other",
+      "otherEntityName": "وزارة الخارجية",
+      "responseMethod": ""
     },
     {
       "id": 1789885706080.2993,
@@ -34553,6 +34557,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789885806613.5083,
+          "at": "2026-09-20T06:30:06.613Z",
+          "action": "تعديل موضوع",
+          "details": "المشاركة في زيارة إلى جمهورية إستونيا للاطلاع على تجربتها في مؤشر الأداء البيئي"
+        },
         {
           "id": 1789885706119.0007,
           "at": "2026-09-20T06:28:26.119Z",
