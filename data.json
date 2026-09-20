@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-20T04:28:46.809Z",
+  "exportedAt": "2026-09-20T04:28:49.633Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28440,9 +28440,22 @@
       "kpi": "w2week",
       "note": "المهندس نائب الرئيس\nلمناقشة الشركة والافادة",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-09-20",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-09-15",
+          "daysSince": 3
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 0,
+      "manualCount": 1,
       "followEntity": "rais_depts",
       "raisDeptName": "مركز الطوارئ البيئية",
       "responseMethod": ""
@@ -34431,6 +34444,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789878527618.555,
+          "at": "2026-09-20T04:28:47.618Z",
+          "action": "إضافة متابعة",
+          "details": "مقترح فني لعمليات المعالجة الجوية للتسريبات النفطية في سلطنة عُمان."
+        },
+        {
+          "id": 1789878527571.6199,
+          "at": "2026-09-20T04:28:47.571Z",
+          "action": "تعديل موضوع",
+          "details": "مقترح فني لعمليات المعالجة الجوية للتسريبات النفطية في سلطنة عُمان."
+        },
         {
           "id": 1789878515312.0854,
           "at": "2026-09-20T04:28:35.312Z",
