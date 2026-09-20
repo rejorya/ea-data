@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-20T04:29:47.114Z",
+  "exportedAt": "2026-09-20T04:30:18.893Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28073,7 +28073,7 @@
       "slaDays": 14,
       "kpi": "other",
       "note": "للمقابلة والاطلاع على تقربر الموظف وادئه والتزامه والافادة",
-      "status": "new",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-09-15",
@@ -28086,10 +28086,22 @@
           "taqseem": "",
           "startDate": "2026-09-02",
           "daysSince": 9
+        },
+        {
+          "date": "2026-09-20",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-02",
+          "daysSince": 12
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "naib_office",
       "responseMethod": ""
     },
@@ -34444,6 +34456,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789878616878.158,
+          "at": "2026-09-20T04:30:16.878Z",
+          "action": "إضافة متابعة",
+          "details": "طلب نقل للعمل بالهيئة"
+        },
+        {
+          "id": 1789878616833.1099,
+          "at": "2026-09-20T04:30:16.833Z",
+          "action": "تعديل موضوع",
+          "details": "طلب نقل للعمل بالهيئة"
+        },
         {
           "id": 1789878527618.555,
           "at": "2026-09-20T04:28:47.618Z",
