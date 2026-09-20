@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-20T07:32:47.016Z",
+  "exportedAt": "2026-09-20T07:32:54.938Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27516,7 +27516,7 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "التعاون الدولي\nالقانونية\nلعمل اللازم",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-13",
@@ -27535,7 +27535,8 @@
       "manualCount": 1,
       "followEntity": "rais_depts",
       "raisDeptName": "دائرة التعاون الدولي/ الدائرة القانونية",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-09-20"
     },
     {
       "id": 1789279578893.2625,
@@ -29367,6 +29368,47 @@
       "divFollowDate": "2026-09-16",
       "closedAt": "2026-09-20",
       "archivedAt": "2026-09-20T07:24:25.202Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1789279134965.4658,
+      "title": "توقيع مذكرة التفاهم مع مؤسسة الأمير ألبرت الثاني أمير موناكو وتوقيع مذكرة تفاهم بين هيئة البيئة في سلطنة عُمان ومعهد ميتسوبيشي للأبحاث  باليابان",
+      "from": "الأمانة العامة لمجلس الوزراء",
+      "docNo": "1170/3/2022v417-21",
+      "toEntity": "دائرة التعاون الدولي/ الدائرة القانونية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-09-08",
+      "followStart": "2026-09-10",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "التعاون الدولي\nالقانونية\nلعمل اللازم",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "دائرة التعاون الدولي/ الدائرة القانونية",
+      "responseMethod": "",
+      "closedAt": "2026-09-20",
+      "archivedAt": "2026-09-20T07:32:52.880Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -34814,6 +34856,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789889572916.3328,
+          "at": "2026-09-20T07:32:52.916Z",
+          "action": "تعديل موضوع",
+          "details": "توقيع مذكرة التفاهم مع مؤسسة الأمير ألبرت الثاني أمير موناكو وتوقيع مذكرة تفاهم بين هيئة البيئة في سلطنة عُمان ومعهد ميتسوبيشي للأبحاث  باليابان"
+        },
         {
           "id": 1789889434164.6384,
           "at": "2026-09-20T07:30:34.164Z",
