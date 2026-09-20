@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-20T04:38:46.829Z",
+  "exportedAt": "2026-09-20T04:39:23.054Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28471,6 +28471,26 @@
       "followEntity": "rais_depts",
       "raisDeptName": "مركز الطوارئ البيئية",
       "responseMethod": ""
+    },
+    {
+      "id": 1789879161002.0417,
+      "title": "مذكرة تفاهم بين هيئة البيئة والمركز العلمي لموناكو  في مجال حماية النظم البيئية البحرية.pdf",
+      "from": "وزارة العدل والشؤون القانونية",
+      "docNo": "1170/3/2022v417-24",
+      "toEntity": "الدائرة القانونية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-08",
+      "followStart": "2026-09-10",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "القانونية\nلعمل اللازم",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "archivedTopics": [
@@ -34456,6 +34476,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789879161036.0562,
+          "at": "2026-09-20T04:39:21.036Z",
+          "action": "إضافة موضوع",
+          "details": "مذكرة تفاهم بين هيئة البيئة والمركز العلمي لموناكو  في مجال حماية النظم البيئية البحرية.pdf"
+        },
         {
           "id": 1789878865643.2466,
           "at": "2026-09-20T04:34:25.643Z",
