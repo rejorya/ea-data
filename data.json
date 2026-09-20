@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-20T07:12:46.978Z",
+  "exportedAt": "2026-09-20T07:13:33.968Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27902,7 +27902,7 @@
       "slaDays": 14,
       "kpi": "rpt14",
       "note": "نائب الرئيس\nالالتزام البيئي\nلاجراءاتكم\nولاعداد تقرير عن المطامر التقليدية في سلطنة عمان في جميع الولايات وتوضيح وضعها الحالي بالصور",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-13",
@@ -27920,7 +27920,8 @@
       "sheet": "مُضاف يدوياً",
       "manualCount": 1,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-09-20"
     },
     {
       "id": 1789451509916.7585,
@@ -29247,6 +29248,46 @@
       "responseMethod": "",
       "closedAt": "2026-09-20",
       "archivedAt": "2026-09-20T07:02:07.583Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1789289505359.5767,
+      "title": "توصيات ورشة عمل مناقشة خطة تنفيذ مشروع إغلاق وإعادة تأهيل المطامر التقليدية",
+      "from": "محافظة ظفار",
+      "docNo": "1170/3/2022v416-54",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "important",
+      "confidentiality": "normal",
+      "date": "2026-09-03",
+      "followStart": "2026-09-03",
+      "type": "ext",
+      "slaMode": "rais",
+      "slaDays": 14,
+      "kpi": "rpt14",
+      "note": "نائب الرئيس\nالالتزام البيئي\nلاجراءاتكم\nولاعداد تقرير عن المطامر التقليدية في سلطنة عمان في جميع الولايات وتوضيح وضعها الحالي بالصور",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-03",
+          "daysSince": 6
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "closedAt": "2026-09-20",
+      "archivedAt": "2026-09-20T07:13:31.917Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -34694,6 +34735,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789888411949.3774,
+          "at": "2026-09-20T07:13:31.949Z",
+          "action": "تعديل موضوع",
+          "details": "توصيات ورشة عمل مناقشة خطة تنفيذ مشروع إغلاق وإعادة تأهيل المطامر التقليدية"
+        },
         {
           "id": 1789888356793.1628,
           "at": "2026-09-20T07:12:36.793Z",
