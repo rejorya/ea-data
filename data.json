@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-20T04:10:46.798Z",
+  "exportedAt": "2026-09-20T04:11:19.086Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28358,6 +28358,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1789877477034.7769,
+      "title": "استضافة سلطنة عُمان اجتماع مجلس الصندوق الأخضر للمناخ 2027م",
+      "from": "مكتب الرئيس",
+      "docNo": "1170/3/2022v412-71",
+      "toEntity": "وزارة الخارجية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-09-03",
+      "followStart": "2026-09-17",
+      "type": "ext",
+      "slaMode": "rais",
+      "slaDays": 30,
+      "kpi": "",
+      "note": "تم التواصل من قبل المديرية العامة لتغير المناخي \nتم التواصل مع المختصين في وزارة الخارجية وتم الإفادة بأنه لم يتم توقيع الخطاب بعد.",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "archivedTopics": [
@@ -34341,7 +34361,15 @@
       "loginAt": "2026-09-20T03:32:12.256Z",
       "logoutAt": null,
       "duration": null,
-      "logoutReason": null
+      "logoutReason": null,
+      "actions": [
+        {
+          "id": 1789877477072.518,
+          "at": "2026-09-20T04:11:17.072Z",
+          "action": "إضافة موضوع",
+          "details": "استضافة سلطنة عُمان اجتماع مجلس الصندوق الأخضر للمناخ 2027م"
+        }
+      ]
     },
     {
       "id": 1789804126610.353,
