@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-20T06:38:47.236Z",
+  "exportedAt": "2026-09-20T06:39:38.286Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28207,7 +28207,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nلعمل اللازم",
-      "status": "awaiting_div",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-15",
@@ -28237,8 +28237,9 @@
       "sheet": "مُضاف يدوياً",
       "manualCount": 2,
       "followEntity": "taqseem",
-      "responseMethod": "",
-      "divFollowDate": "2026-09-16"
+      "responseMethod": "direct_manager",
+      "divFollowDate": "2026-09-16",
+      "closedAt": "2026-09-20"
     },
     {
       "id": 1789640746547.1846,
@@ -29115,6 +29116,59 @@
       "responseMethod": "",
       "closedAt": "2026-09-15",
       "archivedAt": "2026-09-15T09:33:57.386Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1789462024836.112,
+      "title": "الاستعجال في استيعاب موظفي المديرية العامة للمياه - سابقاً غير المنقولين إلى الوحدات الحكومية.pdf",
+      "from": "وزارة العمل",
+      "docNo": "1170/3/2022v417-94",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "المديرية العامة للشؤون الادارية والمالية",
+      "priority": "urgent",
+      "confidentiality": "normal",
+      "date": "2026-09-13",
+      "followStart": "2026-09-13",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "نائب الرئيس\nلعمل اللازم",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-15",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-13",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-09-16",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+          "startDate": "2026-09-13",
+          "daysSince": 3
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 2,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-09-16",
+      "closedAt": "2026-09-20",
+      "archivedAt": "2026-09-20T06:39:36.229Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -34562,6 +34616,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789886376266.2842,
+          "at": "2026-09-20T06:39:36.266Z",
+          "action": "تعديل موضوع",
+          "details": "الاستعجال في استيعاب موظفي المديرية العامة للمياه - سابقاً غير المنقولين إلى الوحدات الحكومية.pdf"
+        },
         {
           "id": 1789886221982.9963,
           "at": "2026-09-20T06:37:01.982Z",
