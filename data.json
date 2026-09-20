@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-20T07:11:48.278Z",
+  "exportedAt": "2026-09-20T07:12:38.827Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28000,10 +28000,22 @@
           "taqseem": "",
           "startDate": "2026-08-26",
           "daysSince": 14
+        },
+        {
+          "date": "2026-09-20",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-26",
+          "daysSince": 17
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "rais_depts",
       "raisDeptName": "مكتب متابعة تنفيذ رؤية عمان 2040",
       "responseMethod": "via_follow"
@@ -34682,6 +34694,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789888356793.1628,
+          "at": "2026-09-20T07:12:36.793Z",
+          "action": "إضافة متابعة",
+          "details": "التخطيط المالي للخطة السنوية"
+        },
+        {
+          "id": 1789888356741.4856,
+          "at": "2026-09-20T07:12:36.741Z",
+          "action": "تعديل موضوع",
+          "details": "التخطيط المالي للخطة السنوية"
+        },
         {
           "id": 1789887835931.7551,
           "at": "2026-09-20T07:03:55.931Z",
