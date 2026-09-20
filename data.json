@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-20T10:02:47.026Z",
+  "exportedAt": "2026-09-20T10:02:57.475Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28421,7 +28421,7 @@
       "slaDays": null,
       "kpi": "doc2",
       "note": "نائب الرئيس\nلعمل اللازم",
-      "status": "awaiting_div",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-17",
@@ -28452,8 +28452,9 @@
       "sheet": "مُضاف يدوياً",
       "manualCount": 2,
       "followEntity": "taqseem",
-      "responseMethod": "",
-      "divFollowDate": "2026-09-20"
+      "responseMethod": "via_follow",
+      "divFollowDate": "2026-09-20",
+      "closedAt": "2026-09-20"
     },
     {
       "id": 1789877477034.7769,
@@ -29478,6 +29479,60 @@
       "responseMethod": "",
       "closedAt": "2026-09-20",
       "archivedAt": "2026-09-20T07:32:52.880Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1789643413605.374,
+      "title": "دعوة لحضور ورشة تعريفية بشهادة المحتوى المحلي",
+      "from": "هيئة المشاريع والمناقصات والمحتوى المحلي",
+      "docNo": "1170/3/2022v418-67",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "المديرية العامة للشؤون الادارية والمالية",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-17",
+      "followStart": "2026-09-17",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "doc2",
+      "note": "نائب الرئيس\nلعمل اللازم",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-17",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-17",
+          "daysSince": 0
+        },
+        {
+          "date": "2026-09-20",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+          "startDate": "2026-09-17",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 2,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-09-20",
+      "closedAt": "2026-09-20",
+      "archivedAt": "2026-09-20T10:02:55.413Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -34925,6 +34980,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789898575447.6653,
+          "at": "2026-09-20T10:02:55.447Z",
+          "action": "تعديل موضوع",
+          "details": "دعوة لحضور ورشة تعريفية بشهادة المحتوى المحلي"
+        },
         {
           "id": 1789898198551.395,
           "at": "2026-09-20T09:56:38.551Z",
