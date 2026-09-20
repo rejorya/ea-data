@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-20T06:24:46.937Z",
+  "exportedAt": "2026-09-20T06:25:08.912Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28508,6 +28508,26 @@
       "followEntity": "rais_depts",
       "raisDeptName": "الدائرة القانونية",
       "responseMethod": ""
+    },
+    {
+      "id": 1789885506849.844,
+      "title": "قمة قادة العالم",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v418-81",
+      "toEntity": "الأمانة العامة لمجلس الوزراء",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-09-20",
+      "followStart": "2026-09-20",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "متابعة خارجية",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "archivedTopics": [
@@ -34493,6 +34513,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789885506886.3784,
+          "at": "2026-09-20T06:25:06.886Z",
+          "action": "إضافة موضوع",
+          "details": "قمة قادة العالم"
+        },
         {
           "id": 1789879188230.3684,
           "at": "2026-09-20T04:39:48.230Z",
