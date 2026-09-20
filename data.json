@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-20T07:23:47.005Z",
+  "exportedAt": "2026-09-20T07:24:29.243Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27747,8 +27747,8 @@
     {
       "id": 1789281961424.4233,
       "title": "مسودة إرشادات بشأن القوائم المحدثة للملوثات العضوية - اتفاقية ستوكهولم",
-      "from": "1170/3/2022v417-31",
-      "docNo": "وزراة التجارة والصناعة وترويج الاستثمار",
+      "from": "وزراة التجارة والصناعة وترويج الاستثمار",
+      "docNo": "1170/3/2022v417-31",
       "toEntity": "نائب الرئيس",
       "taqseemName": "المديرية العامة للالتزام البيئي",
       "priority": "normal",
@@ -27760,7 +27760,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nلعمل اللازم\n",
-      "status": "awaiting_div",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-13",
@@ -27790,8 +27790,9 @@
       "sheet": "مُضاف يدوياً",
       "manualCount": 2,
       "followEntity": "taqseem",
-      "responseMethod": "",
-      "divFollowDate": "2026-09-16"
+      "responseMethod": "via_other",
+      "divFollowDate": "2026-09-16",
+      "closedAt": "2026-09-20"
     },
     {
       "id": 1789283395116.5815,
@@ -29313,6 +29314,59 @@
       "responseMethod": "",
       "closedAt": "2026-09-20",
       "archivedAt": "2026-09-20T07:13:31.917Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1789281961424.4233,
+      "title": "مسودة إرشادات بشأن القوائم المحدثة للملوثات العضوية - اتفاقية ستوكهولم",
+      "from": "وزراة التجارة والصناعة وترويج الاستثمار",
+      "docNo": "1170/3/2022v417-31",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "المديرية العامة للالتزام البيئي",
+      "priority": "normal",
+      "confidentiality": "top_secret",
+      "date": "2026-09-08",
+      "followStart": "2026-09-10",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "نائب الرئيس\nلعمل اللازم\n",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-09-16",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للالتزام البيئي",
+          "startDate": "2026-09-10",
+          "daysSince": 4
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 2,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-09-16",
+      "closedAt": "2026-09-20",
+      "archivedAt": "2026-09-20T07:24:25.202Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -34760,6 +34814,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789889065241.3547,
+          "at": "2026-09-20T07:24:25.241Z",
+          "action": "تعديل موضوع",
+          "details": "مسودة إرشادات بشأن القوائم المحدثة للملوثات العضوية - اتفاقية ستوكهولم"
+        },
         {
           "id": 1789888857150.9038,
           "at": "2026-09-20T07:20:57.150Z",
