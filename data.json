@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-20T10:03:47.331Z",
+  "exportedAt": "2026-09-20T10:04:26.781Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27455,7 +27455,7 @@
       "slaDays": null,
       "kpi": "shura10",
       "note": "مركز الطوارئ\nلاعداد تقرير للرد",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-13",
@@ -27474,7 +27474,8 @@
       "manualCount": 1,
       "followEntity": "rais_depts",
       "raisDeptName": "مركز الطوارئ البيئية",
-      "responseMethod": ""
+      "responseMethod": "via_follow",
+      "closedAt": "2026-09-20"
     },
     {
       "id": 1789277708970.8843,
@@ -29533,6 +29534,47 @@
       "divFollowDate": "2026-09-20",
       "closedAt": "2026-09-20",
       "archivedAt": "2026-09-20T10:02:55.413Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1789277456356.2717,
+      "title": "طلب الإحاطة بشأن حادثة ناقلة النفط كارولين بيزنجي",
+      "from": "مجلس الشورى",
+      "docNo": "1170/3/2022v417-16",
+      "toEntity": "مركز الطوارئ البيئية",
+      "taqseemName": "مركز الطوارئ البيئية",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-08",
+      "followStart": "2026-09-10",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "shura10",
+      "note": "مركز الطوارئ\nلاعداد تقرير للرد",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "مركز الطوارئ البيئية",
+      "responseMethod": "",
+      "closedAt": "2026-09-20",
+      "archivedAt": "2026-09-20T10:04:24.724Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -34980,6 +35022,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789898664759.2336,
+          "at": "2026-09-20T10:04:24.759Z",
+          "action": "تعديل موضوع",
+          "details": "طلب الإحاطة بشأن حادثة ناقلة النفط كارولين بيزنجي"
+        },
         {
           "id": 1789898575447.6653,
           "at": "2026-09-20T10:02:55.447Z",
