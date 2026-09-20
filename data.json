@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-20T06:34:47.246Z",
+  "exportedAt": "2026-09-20T06:35:40.712Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28327,10 +28327,22 @@
           "taqseem": "",
           "startDate": "2026-09-17",
           "daysSince": 0
+        },
+        {
+          "date": "2026-09-20",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-17",
+          "daysSince": 1
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "naib_office",
       "responseMethod": ""
     },
@@ -34570,6 +34582,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789886138689.694,
+          "at": "2026-09-20T06:35:38.689Z",
+          "action": "إضافة متابعة",
+          "details": "مقترحات تنظيمية زفنية للحد من الاثار البيئية والصحية لعبوات الشرب البلاستكية"
+        },
+        {
+          "id": 1789886138629.072,
+          "at": "2026-09-20T06:35:38.629Z",
+          "action": "تعديل موضوع",
+          "details": "مقترحات تنظيمية زفنية للحد من الاثار البيئية والصحية لعبوات الشرب البلاستكية"
+        },
         {
           "id": 1789886049450.4756,
           "at": "2026-09-20T06:34:09.450Z",
