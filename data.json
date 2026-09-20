@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-20T06:33:47.510Z",
+  "exportedAt": "2026-09-20T06:34:11.471Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28340,7 +28340,7 @@
       "from": "هيئة المشاريع والمناقصات والمحتوى المحلي",
       "docNo": "1170/3/2022v418-67",
       "toEntity": "نائب الرئيس",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة للشؤون الادارية والمالية",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-09-17",
@@ -28350,7 +28350,7 @@
       "slaDays": null,
       "kpi": "doc2",
       "note": "نائب الرئيس\nلعمل اللازم",
-      "status": "new",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-09-17",
@@ -28364,12 +28364,25 @@
           "taqseem": "",
           "startDate": "2026-09-17",
           "daysSince": 0
+        },
+        {
+          "date": "2026-09-20",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+          "startDate": "2026-09-17",
+          "daysSince": 1
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
-      "followEntity": "naib_office",
-      "responseMethod": ""
+      "manualCount": 2,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-09-20"
     },
     {
       "id": 1789877477034.7769,
@@ -34557,6 +34570,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789886049450.4756,
+          "at": "2026-09-20T06:34:09.450Z",
+          "action": "إضافة متابعة",
+          "details": "دعوة لحضور ورشة تعريفية بشهادة المحتوى المحلي"
+        },
+        {
+          "id": 1789886049400.1296,
+          "at": "2026-09-20T06:34:09.400Z",
+          "action": "تعديل موضوع",
+          "details": "دعوة لحضور ورشة تعريفية بشهادة المحتوى المحلي"
+        },
         {
           "id": 1789885806613.5083,
           "at": "2026-09-20T06:30:06.613Z",
