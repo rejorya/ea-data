@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-20T07:01:46.979Z",
+  "exportedAt": "2026-09-20T07:02:09.654Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28121,7 +28121,7 @@
       "slaDays": 10,
       "kpi": "w2week",
       "note": "التحول الرقمي\nلمناقشة المقترح فنيا بالشراكة مع اذكاء والمختصين في وزارة النقل والافادة حول كفاءة الانظمة وفعاليتها خلال اسبوعين\n\nالمحميات\nلمناقشة عمران والافادة حول استعدادها حول تغطية كلف محمية المها والافادة خلال اسبوعين",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-15",
@@ -28140,7 +28140,8 @@
       "manualCount": 1,
       "followEntity": "naib_and_rais",
       "raisDeptName": "",
-      "responseMethod": ""
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-09-20"
     },
     {
       "id": 1789461659319.0928,
@@ -29181,6 +29182,47 @@
       "divFollowDate": "2026-09-16",
       "closedAt": "2026-09-20",
       "archivedAt": "2026-09-20T06:39:36.229Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1789456475450.1833,
+      "title": "العرض المرئي الذي قدمه ممثلوا شركة أوريكسل (Oryxel) لهيئة البيئة - محضر الإجتماع",
+      "from": "التحول الرقمي",
+      "docNo": "1181/17/2022v28-25",
+      "toEntity": "التحول الرقمي / مكتب النائب",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-06",
+      "followStart": "2026-09-13",
+      "type": "int",
+      "slaMode": "rais",
+      "slaDays": 10,
+      "kpi": "w2week",
+      "note": "التحول الرقمي\nلمناقشة المقترح فنيا بالشراكة مع اذكاء والمختصين في وزارة النقل والافادة حول كفاءة الانظمة وفعاليتها خلال اسبوعين\n\nالمحميات\nلمناقشة عمران والافادة حول استعدادها حول تغطية كلف محمية المها والافادة خلال اسبوعين",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-15",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_and_rais",
+          "taqseem": "",
+          "startDate": "2026-09-13",
+          "daysSince": 2
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_and_rais",
+      "raisDeptName": "",
+      "responseMethod": "",
+      "closedAt": "2026-09-20",
+      "archivedAt": "2026-09-20T07:02:07.583Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -34628,6 +34670,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789887727623.6785,
+          "at": "2026-09-20T07:02:07.623Z",
+          "action": "تعديل موضوع",
+          "details": "العرض المرئي الذي قدمه ممثلوا شركة أوريكسل (Oryxel) لهيئة البيئة - محضر الإجتماع"
+        },
         {
           "id": 1789886462957.0269,
           "at": "2026-09-20T06:41:02.957Z",
