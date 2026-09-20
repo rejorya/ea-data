@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-20T07:20:50.291Z",
+  "exportedAt": "2026-09-20T07:20:59.182Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27810,9 +27810,22 @@
       "kpi": "std14",
       "note": "اللجنة المختصة\nللدراسة",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-09-20",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-09-09",
+          "daysSince": 7
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 0,
+      "manualCount": 1,
       "followEntity": "rais_depts",
       "raisDeptName": "مركز الاعمال البيئية",
       "responseMethod": ""
@@ -34747,6 +34760,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1789888857150.9038,
+          "at": "2026-09-20T07:20:57.150Z",
+          "action": "إضافة متابعة",
+          "details": "تظلم بشأن مخالفة بيئية رقم 4303 تركيب كسارة متنقلة"
+        },
+        {
+          "id": 1789888857093.1248,
+          "at": "2026-09-20T07:20:57.093Z",
+          "action": "تعديل موضوع",
+          "details": "تظلم بشأن مخالفة بيئية رقم 4303 تركيب كسارة متنقلة"
+        },
         {
           "id": 1789888597072.9102,
           "at": "2026-09-20T07:16:37.072Z",
