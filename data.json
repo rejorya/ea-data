@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-22T09:58:03.702Z",
+  "exportedAt": "2026-09-22T09:58:20.106Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28214,7 +28214,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nللافادة",
-      "status": "ready_esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-15",
@@ -28256,8 +28256,9 @@
       "sheet": "مُضاف يدوياً",
       "manualCount": 3,
       "followEntity": "taqseem",
-      "responseMethod": "",
-      "divFollowDate": "2026-09-16"
+      "responseMethod": "direct_manager",
+      "divFollowDate": "2026-09-16",
+      "closedAt": "2026-09-22"
     },
     {
       "id": 1789462024836.112,
@@ -29872,6 +29873,71 @@
       "responseMethod": "",
       "closedAt": "2026-09-22",
       "archivedAt": "2026-09-22T09:20:34.501Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1789461659319.0928,
+      "title": "طلب رفع التأثير عن قطعة أرض سكنية  للفاضلة راية بنت ناصر الحربي",
+      "from": "المواطنة / راية بنت ناصر بن علي الحربي",
+      "docNo": "1170/3/2022v417-98",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-13",
+      "followStart": "2026-09-14",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "نائب الرئيس\nللافادة",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-15",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-14",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-09-16",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-09-14",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-09-20",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-09-14",
+          "daysSince": 4
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 3,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-09-16",
+      "closedAt": "2026-09-22",
+      "archivedAt": "2026-09-22T09:58:18.048Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -35319,6 +35385,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790071098080.305,
+          "at": "2026-09-22T09:58:18.080Z",
+          "action": "تعديل موضوع",
+          "details": "طلب رفع التأثير عن قطعة أرض سكنية  للفاضلة راية بنت ناصر الحربي"
+        },
         {
           "id": 1790071036097.3953,
           "at": "2026-09-22T09:57:16.097Z",
