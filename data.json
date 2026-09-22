@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-22T08:26:30.444Z",
+  "exportedAt": "2026-09-22T08:27:02.907Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28895,11 +28895,15 @@
       "type": "ext",
       "slaMode": "kpi",
       "slaDays": null,
-      "kpi": "w2week",
+      "kpi": "",
       "note": "متابعة خارجية",
       "status": "new",
       "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 0,
+      "followEntity": "other",
+      "otherEntityName": "وزارة التعليم",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -35249,6 +35253,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790065620886.6646,
+          "at": "2026-09-22T08:27:00.886Z",
+          "action": "تعديل موضوع",
+          "details": "طلب اعتماد أكاديمي لجامعة آسيا الوسطى للدراسات البيئية وتغير المناخ بجمهورية أوزبكستان"
+        },
         {
           "id": 1790065588425.3706,
           "at": "2026-09-22T08:26:28.426Z",
