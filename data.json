@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-22T04:34:02.896Z",
+  "exportedAt": "2026-09-22T04:34:47.387Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28804,6 +28804,26 @@
       "followEntity": "rais_depts",
       "raisDeptName": "مركز الطوارئ البيئية",
       "responseMethod": ""
+    },
+    {
+      "id": 1790051685332.65,
+      "title": "لجنة الرقابة على الإجراءات والإشتراطات المتبعة في تداول وتخزين المواد الخطرة",
+      "from": "وزارة النقل والاتصالات وتقنية المعلومات",
+      "docNo": "1170/3/2022v418-99",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-09-20",
+      "followStart": "2026-09-20",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "doc2",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "archivedTopics": [
@@ -35153,6 +35173,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790051685372.294,
+          "at": "2026-09-22T04:34:45.372Z",
+          "action": "إضافة موضوع",
+          "details": "لجنة الرقابة على الإجراءات والإشتراطات المتبعة في تداول وتخزين المواد الخطرة"
+        },
         {
           "id": 1790048749234.0322,
           "at": "2026-09-22T03:45:49.234Z",
