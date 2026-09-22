@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-22T08:27:23.723Z",
+  "exportedAt": "2026-09-22T08:28:02.398Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28782,11 +28782,15 @@
       "type": "ext",
       "slaMode": "kpi",
       "slaDays": null,
-      "kpi": "w2week",
-      "note": "",
+      "kpi": "",
+      "note": "متابعة خارجية",
       "status": "new",
       "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 0,
+      "followEntity": "other",
+      "otherEntityName": "وزارة الماليـــــــــــــــــــــــــــــــــــــــــة",
+      "responseMethod": ""
     },
     {
       "id": 1789985424100.699,
@@ -35256,6 +35260,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790065680370.4485,
+          "at": "2026-09-22T08:28:00.370Z",
+          "action": "تعديل موضوع",
+          "details": "فتح صلاحية إجراء المناقلات المالية الداخلية"
+        },
         {
           "id": 1790065641706.6174,
           "at": "2026-09-22T08:27:21.706Z",
