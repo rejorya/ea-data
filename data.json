@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-22T10:12:03.277Z",
+  "exportedAt": "2026-09-22T10:12:15.934Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28043,10 +28043,22 @@
           "taqseem": "",
           "startDate": "2026-08-26",
           "daysSince": 17
+        },
+        {
+          "date": "2026-09-22",
+          "replied": false,
+          "note": "تم  رفع افادة مكتب الرؤية",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-26",
+          "daysSince": 19
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "rais_depts",
       "raisDeptName": "مكتب متابعة تنفيذ رؤية عمان 2040",
       "responseMethod": "via_follow"
@@ -35397,6 +35409,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790071933906.1775,
+          "at": "2026-09-22T10:12:13.906Z",
+          "action": "إضافة متابعة",
+          "details": "التخطيط المالي للخطة السنوية"
+        },
+        {
+          "id": 1790071933847.9614,
+          "at": "2026-09-22T10:12:13.847Z",
+          "action": "تعديل موضوع",
+          "details": "التخطيط المالي للخطة السنوية"
+        },
         {
           "id": 1790071848199.5168,
           "at": "2026-09-22T10:10:48.199Z",
