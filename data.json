@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-22T08:26:03.154Z",
+  "exportedAt": "2026-09-22T08:26:30.444Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28880,6 +28880,26 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1790065588387.0488,
+      "title": "طلب اعتماد أكاديمي لجامعة آسيا الوسطى للدراسات البيئية وتغير المناخ بجمهورية أوزبكستان",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v419-28",
+      "toEntity": "وزارة التعليم",
+      "taqseemName": "وزارة التعليم",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-21",
+      "followStart": "2026-09-21",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "w2week",
+      "note": "متابعة خارجية",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً"
     }
   ],
   "archivedTopics": [
@@ -35229,6 +35249,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790065588425.3706,
+          "at": "2026-09-22T08:26:28.426Z",
+          "action": "إضافة موضوع",
+          "details": "طلب اعتماد أكاديمي لجامعة آسيا الوسطى للدراسات البيئية وتغير المناخ بجمهورية أوزبكستان"
+        },
         {
           "id": 1790065385367.207,
           "at": "2026-09-22T08:23:05.367Z",
