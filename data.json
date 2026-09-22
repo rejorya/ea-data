@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-22T04:35:02.898Z",
+  "exportedAt": "2026-09-22T04:35:08.324Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28822,8 +28822,24 @@
       "kpi": "doc2",
       "note": "",
       "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً"
+      "followups": [
+        {
+          "date": "2026-09-22",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-20",
+          "daysSince": 2
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -35173,6 +35189,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790051705725.1238,
+          "at": "2026-09-22T04:35:05.725Z",
+          "action": "إضافة متابعة",
+          "details": "لجنة الرقابة على الإجراءات والإشتراطات المتبعة في تداول وتخزين المواد الخطرة"
+        },
+        {
+          "id": 1790051705676.8318,
+          "at": "2026-09-22T04:35:05.676Z",
+          "action": "تعديل موضوع",
+          "details": "لجنة الرقابة على الإجراءات والإشتراطات المتبعة في تداول وتخزين المواد الخطرة"
+        },
         {
           "id": 1790051685372.294,
           "at": "2026-09-22T04:34:45.372Z",
