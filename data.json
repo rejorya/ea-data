@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-23T07:36:04.860Z",
+  "exportedAt": "2026-09-23T07:36:29.521Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31569,14 +31569,31 @@
           "taqseem": "",
           "startDate": "2026-09-20",
           "daysSince": 3
+        },
+        {
+          "date": "2026-09-23",
+          "replied": true,
+          "responseMethod": "via_follow",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "افادة الدائرة القانونية المقرر عقد إجتماع غدا في تمام الساعة الواحدة",
+          "entity": "naib_and_rais",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-20",
+          "daysSince": 3
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790139832332.6987,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "naib_and_rais",
       "raisDeptName": "الدائرة القانونية",
-      "responseMethod": ""
+      "responseMethod": "via_follow",
+      "presidentDirection": ""
     },
     {
       "id": 1790140472850.1199,
@@ -38387,6 +38404,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790148987441.075,
+          "at": "2026-09-23T07:36:27.441Z",
+          "action": "إضافة متابعة",
+          "details": "الوقائع المرتبطة بتنفيذ أمر الشراء رقم (14/2025) الخاص بإعداد وإخراج مجلة (رفراف)"
+        },
+        {
+          "id": 1790148987387.5547,
+          "at": "2026-09-23T07:36:27.387Z",
+          "action": "تعديل موضوع",
+          "details": "الوقائع المرتبطة بتنفيذ أمر الشراء رقم (14/2025) الخاص بإعداد وإخراج مجلة (رفراف)"
+        },
         {
           "id": 1790148882432.054,
           "at": "2026-09-23T07:34:42.432Z",
