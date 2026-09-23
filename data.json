@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-23T05:14:06.257Z",
+  "exportedAt": "2026-09-23T05:14:34.937Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31565,6 +31565,31 @@
       "followEntity": "naib_and_rais",
       "raisDeptName": "الدائرة القانونية",
       "responseMethod": ""
+    },
+    {
+      "id": 1790140472850.1199,
+      "transactionType": "followup",
+      "title": "طلب الموافقة على جمع أوراق شجرة العلعلان.",
+      "from": "المواطنة/نادية بنت سالم بن راشد البوسعيدية",
+      "docNo": "1170/3/2022v419-13",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-20",
+      "receivedFollowDate": "2026-09-23",
+      "followStart": "2026-09-21",
+      "type": "ext",
+      "followScope": "external",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "std14",
+      "note": "نائب الرئيس\nللدراسة والافادة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790140472850.1199
     }
   ],
   "archivedTopics": [
@@ -38300,6 +38325,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790140472916.148,
+          "at": "2026-09-23T05:14:32.916Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب الموافقة على جمع أوراق شجرة العلعلان."
+        },
         {
           "id": 1790139936519.6062,
           "at": "2026-09-23T05:05:36.519Z",
