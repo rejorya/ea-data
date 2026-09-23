@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-23T04:10:25.752Z",
+  "exportedAt": "2026-09-23T04:11:06.247Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -29700,7 +29700,8 @@
       "followEntity": "naib_office",
       "responseMethod": "",
       "transactionType": "followup",
-      "recordId": 1787123281963.1387
+      "recordId": 1787123281963.1387,
+      "externalEntities": []
     },
     {
       "id": 1787123636491.673,
