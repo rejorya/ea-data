@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-23T04:36:06.208Z",
+  "exportedAt": "2026-09-23T04:36:21.549Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31073,15 +31073,33 @@
           "taqseem": "",
           "startDate": "2026-09-17",
           "daysSince": 3
+        },
+        {
+          "date": "2026-09-23",
+          "replied": false,
+          "responseMethod": "",
+          "note": "تم التواصل مع جميع الجهات واستلام خطاب رد من كلا من :\n-المركز الوطني لإدارة الحالات الطارئة \n-هيئة الدفاع المدني والاسعاف\n-وزارة الثروة الزراعية والسمكية وموارد المياة \nأما بالنسبة الى هيئة تنظيم الخدمات العامة تم ارسالبريد الكتروني الى الفاضل محمد الهدابي",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-17",
+          "daysSince": 4
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "",
       "responseMethod": "",
       "transactionType": "followup",
       "recordId": 1789878087520.3118,
-      "externalEntities": []
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "followScope": "external"
     },
     {
       "id": 1789878428221.8396,
@@ -38211,6 +38229,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790138179418.7014,
+          "at": "2026-09-23T04:36:19.418Z",
+          "action": "إضافة متابعة",
+          "details": "ترشيح ممثلين لمناقشة السياسات والأطر التنظيمية لإدارة المخاطر بهيئة البيئة"
+        },
+        {
+          "id": 1790138179360.4265,
+          "at": "2026-09-23T04:36:19.360Z",
+          "action": "تعديل موضوع",
+          "details": "ترشيح ممثلين لمناقشة السياسات والأطر التنظيمية لإدارة المخاطر بهيئة البيئة"
+        },
         {
           "id": 1790136623637.4526,
           "at": "2026-09-23T04:10:23.637Z",
