@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-23T07:17:25.750Z",
+  "exportedAt": "2026-09-23T07:17:51.575Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31691,9 +31691,29 @@
       "kpi": "gov5",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-09-23",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-22",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790147843687.3472
+      "recordId": 1790147843687.3472,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -38320,6 +38340,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790147869510.33,
+          "at": "2026-09-23T07:17:49.510Z",
+          "action": "إضافة متابعة",
+          "details": "هيئة البيئة إبراز جهود قطاعات الاستجابة لتداعيات التصعيد العسكري ضد إيران"
+        },
+        {
+          "id": 1790147869454.0886,
+          "at": "2026-09-23T07:17:49.454Z",
+          "action": "تعديل موضوع",
+          "details": "هيئة البيئة إبراز جهود قطاعات الاستجابة لتداعيات التصعيد العسكري ضد إيران"
+        },
         {
           "id": 1790147843725.7239,
           "at": "2026-09-23T07:17:23.725Z",
