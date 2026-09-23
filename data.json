@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-23T05:33:06.275Z",
+  "exportedAt": "2026-09-23T05:33:37.118Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31610,6 +31610,31 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1790141614955.2498,
+      "transactionType": "followup",
+      "title": "مشروع الجبل العالي بولاية الجبل الاخضر تحديث الموافقة على ناق الدراسة البيئية.pdf",
+      "from": "وزارة الاسكان والتخطيط العمراني",
+      "docNo": "1170/3/2022v419-18",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "secret",
+      "date": "2026-09-20",
+      "receivedFollowDate": "2026-09-23",
+      "followStart": "2026-09-21",
+      "type": "ext",
+      "followScope": "external",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "std14",
+      "note": "نائب الرئيس\nالالتزام \nلعمل اللازم",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790141614955.2498
     }
   ],
   "archivedTopics": [
@@ -38345,6 +38370,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790141615035.3953,
+          "at": "2026-09-23T05:33:35.035Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "مشروع الجبل العالي بولاية الجبل الاخضر تحديث الموافقة على ناق الدراسة البيئية.pdf"
+        },
         {
           "id": 1790140507175.457,
           "at": "2026-09-23T05:15:07.175Z",
