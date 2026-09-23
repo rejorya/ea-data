@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-23T07:17:04.833Z",
+  "exportedAt": "2026-09-23T07:17:25.750Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31667,6 +31667,33 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1790147843687.3472,
+      "transactionType": "followup",
+      "title": "هيئة البيئة إبراز جهود قطاعات الاستجابة لتداعيات التصعيد العسكري ضد إيران",
+      "from": "المركز الوطني لإدارة الحالات الطارئة",
+      "docNo": "1170/3/2022v419-11",
+      "toEntity": "مركز الطوارئ",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "secret",
+      "date": "2026-09-20",
+      "receivedFollowDate": "2026-09-23",
+      "presidentDirection": "نائب الرئيس\nمركز الطوارئ\nلعمل اللازم",
+      "createdAt": "2026-09-23T07:17:23.687Z",
+      "followStart": "2026-09-22",
+      "type": "ext",
+      "followScope": "external",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790147843687.3472
     }
   ],
   "archivedTopics": [
@@ -38293,6 +38320,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790147843725.7239,
+          "at": "2026-09-23T07:17:23.725Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "هيئة البيئة إبراز جهود قطاعات الاستجابة لتداعيات التصعيد العسكري ضد إيران"
+        },
         {
           "id": 1790146009796.6826,
           "at": "2026-09-23T06:46:49.796Z",
