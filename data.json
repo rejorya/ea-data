@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-23T05:49:06.310Z",
+  "exportedAt": "2026-09-23T05:49:58.865Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32023,48 +32023,6 @@
       "recordId": 1787039386154.0642
     },
     {
-      "id": 1787121351868.858,
-      "title": "المشاريع ذات الأثر الاستراتيجي المدرجة ضمن تقرير رؤية عُمان 2040.",
-      "from": "وزارة الاقتصاد",
-      "docNo": "1170/3/2022v414-59",
-      "toEntity": "مكتب الرؤية",
-      "taqseemName": "",
-      "priority": "urgent",
-      "confidentiality": "normal",
-      "date": "2026-08-18",
-      "followStart": "2026-08-18",
-      "type": "ext",
-      "slaMode": "kpi",
-      "slaDays": null,
-      "kpi": "gov5",
-      "note": "مكتب الرؤية\nالتخطيط الاستراتيجي\nلعمل اللازم خلال خمسة ايام عمل",
-      "status": "closed",
-      "followups": [
-        {
-          "date": "2026-08-20",
-          "replied": false,
-          "note": "متابعة",
-          "actionType": "visit",
-          "by": "",
-          "result": "",
-          "entity": "",
-          "taqseem": "",
-          "startDate": "2026-08-18",
-          "daysSince": 2
-        }
-      ],
-      "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
-      "followEntity": "",
-      "responseMethod": "",
-      "closedAt": "2026-09-13",
-      "archivedAt": "2026-09-13T04:28:07.897Z",
-      "archivedBy": "رحاب بنت نصيب الفرج",
-      "archiveVersion": 1,
-      "transactionType": "followup",
-      "recordId": 1787121351868.858
-    },
-    {
       "id": 1787039849358.081,
       "title": "إجراءات إدخال بيانات الأداء الفعلي لموظفي دائرة التواصل والإعلام للنصف الأول من عام 2026م",
       "from": "مكتب الرئيس",
@@ -38390,6 +38348,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790142596841.7786,
+          "at": "2026-09-23T05:49:56.841Z",
+          "action": "استرجاع موضوع من الأرشيف",
+          "details": "المشاريع ذات الأثر الاستراتيجي المدرجة ضمن تقرير رؤية عُمان 2040."
+        },
         {
           "id": 1790141714682.915,
           "at": "2026-09-23T05:35:14.682Z",
