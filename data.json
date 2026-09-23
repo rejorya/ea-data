@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-23T04:27:06.197Z",
+  "exportedAt": "2026-09-23T04:28:06.264Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31080,7 +31080,8 @@
       "followEntity": "",
       "responseMethod": "",
       "transactionType": "followup",
-      "recordId": 1789878087520.3118
+      "recordId": 1789878087520.3118,
+      "externalEntities": []
     },
     {
       "id": 1789878428221.8396,
