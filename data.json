@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-23T10:01:03.387Z",
+  "exportedAt": "2026-09-23T10:01:18.488Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -29636,7 +29636,7 @@
       "title": "المشاريع ذات الأثر الاستراتيجي المدرجة ضمن تقرير رؤية عُمان 2040.",
       "from": "وزارة الاقتصاد",
       "docNo": "1170/3/2022v414-59",
-      "toEntity": "مكتب الرؤية",
+      "toEntity": "دائرة التخطيط الاستراتيجي",
       "taqseemName": "",
       "priority": "urgent",
       "confidentiality": "normal",
@@ -29647,7 +29647,7 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "مكتب الرؤية\nالتخطيط الاستراتيجي\nلعمل اللازم خلال خمسة ايام عمل",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-08-20",
@@ -29660,10 +29660,26 @@
           "taqseem": "",
           "startDate": "2026-08-18",
           "daysSince": 2
+        },
+        {
+          "date": "2026-09-23",
+          "replied": true,
+          "responseMethod": "via_follow",
+          "note": "متابعة",
+          "actionType": "other",
+          "scope": "internal",
+          "by": "",
+          "result": "تمت الافادة",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-08-18",
+          "daysSince": 26
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "",
       "responseMethod": "via_follow",
       "transactionType": "followup",
@@ -29675,7 +29691,11 @@
           "by": "رحاب بنت نصيب الفرج"
         }
       ],
-      "externalEntities": []
+      "externalEntities": [],
+      "presidentDirection": "",
+      "receivedFollowDate": "",
+      "closedAt": "2026-09-23",
+      "followScope": "external"
     },
     {
       "id": 1787123281963.1387,
@@ -32719,6 +32739,75 @@
       "archiveVersion": 1,
       "transactionType": "followup",
       "recordId": 1789461659319.0928
+    },
+    {
+      "id": 1787121351868.858,
+      "title": "المشاريع ذات الأثر الاستراتيجي المدرجة ضمن تقرير رؤية عُمان 2040.",
+      "from": "وزارة الاقتصاد",
+      "docNo": "1170/3/2022v414-59",
+      "toEntity": "دائرة التخطيط الاستراتيجي",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "normal",
+      "date": "2026-08-18",
+      "followStart": "2026-08-18",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "مكتب الرؤية\nالتخطيط الاستراتيجي\nلعمل اللازم خلال خمسة ايام عمل",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-08-20",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "taqseem": "",
+          "startDate": "2026-08-18",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-09-23",
+          "replied": true,
+          "responseMethod": "via_follow",
+          "note": "متابعة",
+          "actionType": "other",
+          "scope": "internal",
+          "by": "",
+          "result": "تمت الافادة",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-08-18",
+          "daysSince": 26
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 2,
+      "followEntity": "",
+      "responseMethod": "via_follow",
+      "transactionType": "followup",
+      "recordId": 1787121351868.858,
+      "reopenHistory": [
+        {
+          "closedAt": "2026-09-13",
+          "reopenedAt": "2026-09-23T06:46:18.160Z",
+          "by": "رحاب بنت نصيب الفرج"
+        }
+      ],
+      "externalEntities": [],
+      "presidentDirection": "",
+      "receivedFollowDate": "",
+      "closedAt": "2026-09-23",
+      "followScope": "external",
+      "archivedAt": "2026-09-23T10:01:16.102Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -38405,6 +38494,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790157676080.9421,
+          "at": "2026-09-23T10:01:16.080Z",
+          "action": "إضافة متابعة",
+          "details": "المشاريع ذات الأثر الاستراتيجي المدرجة ضمن تقرير رؤية عُمان 2040."
+        },
+        {
+          "id": 1790157676025.4292,
+          "at": "2026-09-23T10:01:16.025Z",
+          "action": "تعديل موضوع",
+          "details": "المشاريع ذات الأثر الاستراتيجي المدرجة ضمن تقرير رؤية عُمان 2040."
+        },
         {
           "id": 1790148987441.075,
           "at": "2026-09-23T07:36:27.441Z",
