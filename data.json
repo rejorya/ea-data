@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-23T05:05:06.239Z",
+  "exportedAt": "2026-09-23T05:05:39.300Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31532,18 +31532,39 @@
       "confidentiality": "normal",
       "date": "2026-09-08",
       "receivedFollowDate": "2026-09-22",
-      "followStart": "2026-09-08",
+      "followStart": "2026-09-20",
       "type": "int",
       "followScope": "internal",
       "externalEntities": [],
       "slaMode": "rais",
       "slaDays": 10,
-      "kpi": "",
+      "kpi": "w2week",
       "note": "نائب الرئيس\nالقانونية\nلعقد اجتماع بحضور كل من نزهة البلوشي وسلطان الشكيلي لمعالجة الموضوع وايجاد الحل المناسب وعلى سلطان الحضور سواء عن بعد او حضوريا ، ومن ثم رفع ما تم الخروج به وذلك خلال اسبوعين من تاريخه",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-09-23",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_and_rais",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-20",
+          "daysSince": 3
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790139832332.6987
+      "recordId": 1790139832332.6987,
+      "manualCount": 1,
+      "followEntity": "naib_and_rais",
+      "raisDeptName": "الدائرة القانونية",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -38279,6 +38300,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790139936519.6062,
+          "at": "2026-09-23T05:05:36.519Z",
+          "action": "إضافة متابعة",
+          "details": "الوقائع المرتبطة بتنفيذ أمر الشراء رقم (14/2025) الخاص بإعداد وإخراج مجلة (رفراف)"
+        },
+        {
+          "id": 1790139936467.0425,
+          "at": "2026-09-23T05:05:36.467Z",
+          "action": "تعديل موضوع",
+          "details": "الوقائع المرتبطة بتنفيذ أمر الشراء رقم (14/2025) الخاص بإعداد وإخراج مجلة (رفراف)"
+        },
         {
           "id": 1790139832373.1409,
           "at": "2026-09-23T05:03:52.373Z",
