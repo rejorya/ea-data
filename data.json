@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-23T07:34:04.858Z",
+  "exportedAt": "2026-09-23T07:34:44.493Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31723,8 +31723,8 @@
       "docNo": "1170/3/2022v419-29",
       "toEntity": "نائب الرئيس",
       "taqseemName": "",
-      "priority": "urgent",
-      "confidentiality": "secret",
+      "priority": "normal",
+      "confidentiality": "normal",
       "date": "2026-09-21",
       "receivedFollowDate": "2026-09-23",
       "presidentDirection": "نائب الرئيس\nللاطلاع والافادة",
@@ -31738,9 +31738,29 @@
       "kpi": "naib3",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-09-23",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-21",
+          "daysSince": 2
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790148820020.7178
+      "recordId": 1790148820020.7178,
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -38367,6 +38387,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790148882432.054,
+          "at": "2026-09-23T07:34:42.432Z",
+          "action": "إضافة متابعة",
+          "details": "تقرير مشاركة بلدية ظفار في الدورة السابعة عشر لمؤتمر الاطراف في اتفاقية الامم المتحدة لمكافحة التصحر العنوان"
+        },
+        {
+          "id": 1790148882380.6174,
+          "at": "2026-09-23T07:34:42.380Z",
+          "action": "تعديل موضوع",
+          "details": "تقرير مشاركة بلدية ظفار في الدورة السابعة عشر لمؤتمر الاطراف في اتفاقية الامم المتحدة لمكافحة التصحر العنوان"
+        },
         {
           "id": 1790148820092.99,
           "at": "2026-09-23T07:33:40.092Z",
