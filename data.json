@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-23T04:10:06.231Z",
+  "exportedAt": "2026-09-23T04:10:25.752Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -29747,23 +29747,46 @@
       "title": "استضافة مؤتمر الأطراف في اتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ",
       "from": "مكتب الرئيس",
       "docNo": "",
-      "toEntity": "المديرية العامة للتغير المناخي",
-      "taqseemName": "",
+      "toEntity": "وزيـــــــــــــــــــــــــــــر الماليـــــــــــــــــــــــــــــة",
+      "taqseemName": "المديرية العامة للتغير المناخي",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-05-18",
       "followStart": "2026-08-20",
       "type": "int",
-      "slaMode": "rais",
-      "slaDays": 20,
-      "kpi": "",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
       "note": "للمتابعة بعد 5 اسابيع",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-09-23",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للتغير المناخي",
+          "startDate": "2026-08-20",
+          "daysSince": 24
+        }
+      ],
       "sheet": "مُضاف يدوياً",
       "transactionType": "followup",
       "recordId": 1787220319390.4294,
-      "externalEntities": []
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "manualCount": 1,
+      "followScope": "internal",
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-09-23"
     },
     {
       "id": 1789274571645.4478,
@@ -38186,6 +38209,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790136623637.4526,
+          "at": "2026-09-23T04:10:23.637Z",
+          "action": "إضافة متابعة",
+          "details": "استضافة مؤتمر الأطراف في اتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ"
+        },
+        {
+          "id": 1790136623583.7917,
+          "at": "2026-09-23T04:10:23.583Z",
+          "action": "تعديل موضوع",
+          "details": "استضافة مؤتمر الأطراف في اتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ"
+        },
         {
           "id": 1790136091624.398,
           "at": "2026-09-23T04:01:31.624Z",
