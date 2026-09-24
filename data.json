@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T05:18:38.794Z",
+  "exportedAt": "2026-09-24T06:22:33.741Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31760,7 +31760,7 @@
       "from": "بلدية مسقط",
       "docNo": "1170/3/2022v419-29",
       "toEntity": "نائب الرئيس",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة لتنمية الغطاء النباتي",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-09-21",
@@ -31775,7 +31775,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
-      "status": "new",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-09-23",
@@ -31792,13 +31792,30 @@
           "taqseem": "",
           "startDate": "2026-09-21",
           "daysSince": 2
+        },
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة لتنمية الغطاء النباتي",
+          "startDate": "2026-09-21",
+          "daysSince": 3
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790148820020.7178,
-      "manualCount": 1,
-      "followEntity": "naib_office",
-      "responseMethod": ""
+      "manualCount": 2,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-09-24"
     },
     {
       "id": 1790225187962.9585,
@@ -38551,6 +38568,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790230951637.8733,
+          "at": "2026-09-24T06:22:31.637Z",
+          "action": "إضافة متابعة",
+          "details": "تقرير مشاركة بلدية ظفار في الدورة السابعة عشر لمؤتمر الاطراف في اتفاقية الامم المتحدة لمكافحة التصحر العنوان"
+        },
+        {
+          "id": 1790230951590.1465,
+          "at": "2026-09-24T06:22:31.590Z",
+          "action": "تعديل موضوع",
+          "details": "تقرير مشاركة بلدية ظفار في الدورة السابعة عشر لمؤتمر الاطراف في اتفاقية الامم المتحدة لمكافحة التصحر العنوان"
+        },
         {
           "id": 1790227116769.1025,
           "at": "2026-09-24T05:18:36.769Z",
