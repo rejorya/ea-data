@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T04:47:47.021Z",
+  "exportedAt": "2026-09-24T05:18:38.794Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31829,6 +31829,33 @@
       "manualCount": 0,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1790227116726.0547,
+      "transactionType": "followup",
+      "title": "ملخص المتجمع عن التقرير السنوي للجهاز عن عام 2025م",
+      "from": "جهاز الرقابة المالية والادارية للدولة",
+      "docNo": "1170/3/2022v419-68",
+      "toEntity": "نائب الرئيس/دائرة التدقيق الداخلي/الدائرة القاونية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-09-24",
+      "receivedFollowDate": "2026-09-24",
+      "presidentDirection": "نائب الرئيس\nالتدقيق\nالقانونية\nللاطلاع",
+      "createdAt": "2026-09-24T05:18:36.727Z",
+      "followStart": "2026-09-24",
+      "type": "ext",
+      "followScope": "external",
+      "externalEntities": [],
+      "slaMode": "letter",
+      "slaDays": 10,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790227116726.0547
     }
   ],
   "archivedTopics": [
@@ -38524,6 +38551,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790227116769.1025,
+          "at": "2026-09-24T05:18:36.769Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "ملخص المتجمع عن التقرير السنوي للجهاز عن عام 2025م"
+        },
         {
           "id": 1790225264892.7632,
           "at": "2026-09-24T04:47:44.892Z",
