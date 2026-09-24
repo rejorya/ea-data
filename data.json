@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-23T10:08:04.986Z",
+  "exportedAt": "2026-09-24T04:46:30.018Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31799,6 +31799,33 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1790225187962.9585,
+      "transactionType": "followup",
+      "title": "طلب ترشيح ممثل لعضوية اللجنة التوجيهية لمشروع اِزرع عُمان 2050",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v419-74",
+      "toEntity": "وزارة الطاقة والمعادن",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-23",
+      "receivedFollowDate": "2026-09-24",
+      "presidentDirection": "",
+      "createdAt": "2026-09-24T04:46:27.962Z",
+      "followStart": "",
+      "type": "ext",
+      "followScope": "external",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790225187962.9585
     }
   ],
   "archivedTopics": [
@@ -38468,6 +38495,40 @@
     "مركز محمية حديقة السليل الطبيعية"
   ],
   "activityLog": [
+    {
+      "id": 1790224684906.6604,
+      "sessionId": "313cb885-0173-4cc3-a2ef-d8f4058b8426",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-09-24T04:38:04.905Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null,
+      "actions": [
+        {
+          "id": 1790225187996.192,
+          "at": "2026-09-24T04:46:27.996Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب ترشيح ممثل لعضوية اللجنة التوجيهية لمشروع اِزرع عُمان 2050"
+        }
+      ]
+    },
     {
       "id": 1790145879819.3718,
       "sessionId": "ec41312f-7d11-4447-a821-1c8dd4f651a7",
