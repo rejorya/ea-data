@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T08:32:47.092Z",
+  "exportedAt": "2026-09-24T08:33:18.028Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32237,6 +32237,33 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1790238795365.944,
+      "transactionType": "followup",
+      "title": "طلب التصريح بنقل حطب أشجار السمر عبر منفذ دبا الحدودي",
+      "from": "محمد بن علي بن محمد العلي الشحي عضو مجلس الشورى ممثل ولاية دبا",
+      "docNo": "1170/3/2022v419-58",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-24",
+      "receivedFollowDate": "2026-09-24",
+      "presidentDirection": "يعتذر",
+      "createdAt": "2026-09-24T08:33:15.365Z",
+      "followStart": "2026-09-24",
+      "type": "ext",
+      "followScope": "external",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790238795365.944
     }
   ],
   "archivedTopics": [
@@ -39198,6 +39225,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790238795447.5952,
+          "at": "2026-09-24T08:33:15.447Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب التصريح بنقل حطب أشجار السمر عبر منفذ دبا الحدودي"
+        },
         {
           "id": 1790238522373.6396,
           "at": "2026-09-24T08:28:42.373Z",
