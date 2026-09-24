@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T08:58:46.438Z",
+  "exportedAt": "2026-09-24T08:59:48.171Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32378,6 +32378,33 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1790240386126.0469,
+      "transactionType": "followup",
+      "title": "طلب ترشيح ممثل لعضوية اللجنة التوجيهية لمشروع اِزرع عُمان 2050",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v419-80",
+      "toEntity": "مكتب نائب رئيس الوزراء للشؤون الاقتصادية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-23",
+      "receivedFollowDate": "2026-09-24",
+      "presidentDirection": "",
+      "createdAt": "2026-09-24T08:59:46.126Z",
+      "followStart": "",
+      "type": "ext",
+      "followScope": "external",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "متابعة خارجية ",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790240386126.0469
     }
   ],
   "archivedTopics": [
@@ -39339,6 +39366,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790240386163.8503,
+          "at": "2026-09-24T08:59:46.163Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب ترشيح ممثل لعضوية اللجنة التوجيهية لمشروع اِزرع عُمان 2050"
+        },
         {
           "id": 1790240097268.3306,
           "at": "2026-09-24T08:54:57.268Z",
