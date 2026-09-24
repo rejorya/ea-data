@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T07:58:47.046Z",
+  "exportedAt": "2026-09-24T07:59:47.123Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27312,15 +27312,41 @@
           "taqseem": "",
           "startDate": "2026-07-15",
           "daysSince": 42
+        },
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-07-15",
+          "daysSince": 51
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 7,
+      "manualCount": 8,
       "followEntity": "naib_office",
       "responseMethod": "",
-      "closedAt": "2026-07-15",
       "transactionType": "followup",
-      "recordId": 1783831212982.3103
+      "recordId": 1783831212982.3103,
+      "externalEntities": [],
+      "presidentDirection": "",
+      "receivedFollowDate": "",
+      "followScope": "external",
+      "reopenHistory": [
+        {
+          "closedAt": "2026-07-15",
+          "reopenedAt": "2026-09-24T07:59:45.219Z",
+          "by": "رحاب بنت نصيب الفرج"
+        }
+      ]
     },
     {
       "id": 1783836585998.4062,
@@ -38942,6 +38968,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790236785388.6294,
+          "at": "2026-09-24T07:59:45.388Z",
+          "action": "إضافة متابعة",
+          "details": "دعم مشروع إستزراع الاشجار البرية بمنطقة شجة ام الدمن وشجة ام العظام بولاية جعلان بني بوحسن"
+        },
+        {
+          "id": 1790236785332.7097,
+          "at": "2026-09-24T07:59:45.332Z",
+          "action": "تعديل موضوع",
+          "details": "دعم مشروع إستزراع الاشجار البرية بمنطقة شجة ام الدمن وشجة ام العظام بولاية جعلان بني بوحسن"
+        },
         {
           "id": 1790235405162.229,
           "at": "2026-09-24T07:36:45.162Z",
