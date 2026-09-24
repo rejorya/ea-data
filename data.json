@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T07:30:46.331Z",
+  "exportedAt": "2026-09-24T07:31:47.570Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -30721,15 +30721,34 @@
           "taqseem": "",
           "startDate": "2026-09-02",
           "daysSince": 12
+        },
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-02",
+          "daysSince": 16
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "naib_office",
       "responseMethod": "",
       "transactionType": "followup",
       "recordId": 1789456093991.8157,
-      "externalEntities": []
+      "externalEntities": [],
+      "presidentDirection": "",
+      "receivedFollowDate": "",
+      "followScope": "external"
     },
     {
       "id": 1789456475450.1833,
@@ -38821,6 +38840,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790235105987.1038,
+          "at": "2026-09-24T07:31:45.987Z",
+          "action": "إضافة متابعة",
+          "details": "طلب نقل للعمل بالهيئة"
+        },
+        {
+          "id": 1790235105945.4314,
+          "at": "2026-09-24T07:31:45.945Z",
+          "action": "تعديل موضوع",
+          "details": "طلب نقل للعمل بالهيئة"
+        },
         {
           "id": 1790233010976.7654,
           "at": "2026-09-24T06:56:50.976Z",
