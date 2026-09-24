@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T08:20:46.397Z",
+  "exportedAt": "2026-09-24T08:21:22.505Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32167,9 +32167,29 @@
       "kpi": "other",
       "note": "متابعة خارجية",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "تم توجية الموضوع للمديرية للاختصاص",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-23",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790238032900.7354
+      "recordId": 1790238032900.7354,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -39131,6 +39151,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790238080395.0264,
+          "at": "2026-09-24T08:21:20.395Z",
+          "action": "إضافة متابعة",
+          "details": "طلب الموافقة المبدئية على ترشيح محافظة مسقط ضمن برنامج اعتماد مدن الأراضي الرطبة التابع لاتفاقية رامسار"
+        },
+        {
+          "id": 1790238080339.5962,
+          "at": "2026-09-24T08:21:20.339Z",
+          "action": "تعديل موضوع",
+          "details": "طلب الموافقة المبدئية على ترشيح محافظة مسقط ضمن برنامج اعتماد مدن الأراضي الرطبة التابع لاتفاقية رامسار"
+        },
         {
           "id": 1790238032935.9507,
           "at": "2026-09-24T08:20:32.935Z",
