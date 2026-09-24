@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T08:01:48.064Z",
+  "exportedAt": "2026-09-24T08:02:40.550Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -7740,10 +7740,26 @@
           "taqseem": "",
           "startDate": "2026-02-16",
           "daysSince": 149
+        },
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-02-16",
+          "daysSince": 158
         }
       ],
       "sheet": "Sheet1",
-      "manualCount": 9,
+      "manualCount": 10,
       "followEntity": "naib_office",
       "responseMethod": "direct_manager",
       "followStart": "2026-02-16",
@@ -7751,9 +7767,19 @@
       "toEntity": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
       "priority": "normal",
       "confidentiality": "normal",
-      "closedAt": "2026-07-07",
       "transactionType": "followup",
-      "recordId": 1780826441880.0312
+      "recordId": 1780826441880.0312,
+      "externalEntities": [],
+      "presidentDirection": "",
+      "receivedFollowDate": "",
+      "followScope": "internal",
+      "reopenHistory": [
+        {
+          "closedAt": "2026-07-07",
+          "reopenedAt": "2026-09-24T08:02:38.264Z",
+          "by": "رحاب بنت نصيب الفرج"
+        }
+      ]
     },
     {
       "id": 1780826441881.4622,
@@ -38968,6 +38994,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790236958422.2236,
+          "at": "2026-09-24T08:02:38.422Z",
+          "action": "إضافة متابعة",
+          "details": "ملخص ورشة عمل مشروع المسح الوطني للتنوع الأحيائي"
+        },
+        {
+          "id": 1790236958362.1072,
+          "at": "2026-09-24T08:02:38.362Z",
+          "action": "تعديل موضوع",
+          "details": "ملخص ورشة عمل مشروع المسح الوطني للتنوع الأحيائي"
+        },
         {
           "id": 1790236785388.6294,
           "at": "2026-09-24T07:59:45.388Z",
