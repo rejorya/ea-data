@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T06:28:33.664Z",
+  "exportedAt": "2026-09-24T06:40:36.612Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -30904,7 +30904,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nللمراجعة والافادة بالرايس",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-17",
@@ -30942,15 +30942,36 @@
           "taqseem": "المديرية العامة للالتزام البيئي",
           "startDate": "2026-09-17",
           "daysSince": 3
+        },
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "تم رفع افادة المديرية مع العلم لم يتم توجيه الافادة لمكتب الرئيس",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للالتزام البيئي",
+          "startDate": "2026-09-17",
+          "daysSince": 5
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "taqseem",
       "responseMethod": "",
       "divFollowDate": "2026-09-22",
       "transactionType": "followup",
-      "recordId": 1789643200619.7637
+      "recordId": 1789643200619.7637,
+      "externalEntities": [],
+      "presidentDirection": "",
+      "receivedFollowDate": "",
+      "closedAt": "2026-09-24",
+      "followScope": "external"
     },
     {
       "id": 1789643413605.374,
@@ -32986,6 +33007,94 @@
       "presidentDirection": "",
       "closedAt": "2026-09-24",
       "archivedAt": "2026-09-24T06:28:31.572Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1789643200619.7637,
+      "title": "مقترحات تنظيمية زفنية للحد من الاثار البيئية والصحية لعبوات الشرب البلاستكية",
+      "from": "شركة الزوبعة للتكنولوجيا والخدمات",
+      "docNo": "1170/3/2022v418-70",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "المديرية العامة للالتزام البيئي",
+      "priority": "urgent",
+      "confidentiality": "normal",
+      "date": "2026-09-17",
+      "followStart": "2026-09-17",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "نائب الرئيس\nللمراجعة والافادة بالرايس",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-17",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-17",
+          "daysSince": 0
+        },
+        {
+          "date": "2026-09-20",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-17",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-09-22",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للالتزام البيئي",
+          "startDate": "2026-09-17",
+          "daysSince": 3
+        },
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "تم رفع افادة المديرية مع العلم لم يتم توجيه الافادة لمكتب الرئيس",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للالتزام البيئي",
+          "startDate": "2026-09-17",
+          "daysSince": 5
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 4,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-09-22",
+      "transactionType": "followup",
+      "recordId": 1789643200619.7637,
+      "externalEntities": [],
+      "presidentDirection": "",
+      "receivedFollowDate": "",
+      "closedAt": "2026-09-24",
+      "followScope": "external",
+      "archivedAt": "2026-09-24T06:40:34.534Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -38674,6 +38783,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790232034519.1023,
+          "at": "2026-09-24T06:40:34.519Z",
+          "action": "إضافة متابعة",
+          "details": "مقترحات تنظيمية زفنية للحد من الاثار البيئية والصحية لعبوات الشرب البلاستكية"
+        },
+        {
+          "id": 1790232034468.2046,
+          "at": "2026-09-24T06:40:34.468Z",
+          "action": "تعديل موضوع",
+          "details": "مقترحات تنظيمية زفنية للحد من الاثار البيئية والصحية لعبوات الشرب البلاستكية"
+        },
         {
           "id": 1790231311558.2249,
           "at": "2026-09-24T06:28:31.558Z",
