@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T10:26:47.211Z",
+  "exportedAt": "2026-09-24T10:27:16.244Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32645,6 +32645,33 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1790245634131.9485,
+      "transactionType": "followup",
+      "title": "ملتقى أخلاقيات البحوث الإنسانية والبيئية..هيئة البيئة",
+      "from": "جامعة السلطان قابوس",
+      "docNo": "1170/3/2022v419-65",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-23",
+      "receivedFollowDate": "2026-09-24",
+      "presidentDirection": "ترشح الدكتورة مريم البوسعيدي",
+      "createdAt": "2026-09-24T10:27:14.131Z",
+      "followStart": "",
+      "type": "ext",
+      "followScope": "external",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "doc2",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790245634131.9485
     }
   ],
   "archivedTopics": [
@@ -39606,6 +39633,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790245634220.489,
+          "at": "2026-09-24T10:27:14.220Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "ملتقى أخلاقيات البحوث الإنسانية والبيئية..هيئة البيئة"
+        },
         {
           "id": 1790244162603.2375,
           "at": "2026-09-24T10:02:42.603Z",
