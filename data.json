@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T06:22:33.741Z",
+  "exportedAt": "2026-09-24T06:26:22.333Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31668,7 +31668,7 @@
       "from": "وزارة الاسكان والتخطيط العمراني",
       "docNo": "1170/3/2022v419-18",
       "toEntity": "نائب الرئيس",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة للالتزام البيئي",
       "priority": "urgent",
       "confidentiality": "secret",
       "date": "2026-09-20",
@@ -31681,7 +31681,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nالالتزام \nلعمل اللازم",
-      "status": "new",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-09-23",
@@ -31698,13 +31698,31 @@
           "taqseem": "",
           "startDate": "2026-09-21",
           "daysSince": 2
+        },
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للالتزام البيئي",
+          "startDate": "2026-09-21",
+          "daysSince": 3
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790141614955.2498,
-      "manualCount": 1,
-      "followEntity": "",
-      "responseMethod": ""
+      "manualCount": 2,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "presidentDirection": "",
+      "divFollowDate": "2026-09-24"
     },
     {
       "id": 1790147843687.3472,
@@ -38568,6 +38586,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790231180223.4475,
+          "at": "2026-09-24T06:26:20.223Z",
+          "action": "إضافة متابعة",
+          "details": "مشروع الجبل العالي بولاية الجبل الاخضر تحديث الموافقة على ناق الدراسة البيئية.pdf"
+        },
+        {
+          "id": 1790231180175.1794,
+          "at": "2026-09-24T06:26:20.175Z",
+          "action": "تعديل موضوع",
+          "details": "مشروع الجبل العالي بولاية الجبل الاخضر تحديث الموافقة على ناق الدراسة البيئية.pdf"
+        },
         {
           "id": 1790230951637.8733,
           "at": "2026-09-24T06:22:31.637Z",
