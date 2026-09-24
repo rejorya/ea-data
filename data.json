@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T09:56:46.477Z",
+  "exportedAt": "2026-09-24T09:57:22.547Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32598,6 +32598,33 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1790243840481.5815,
+      "transactionType": "followup",
+      "title": "تقديم عرض حول خطوط المياه وفرص الاستفادة من المياه المعالجة",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v419-53",
+      "toEntity": "هيئة تنظيم الخدمات العامة",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-23",
+      "receivedFollowDate": "2026-09-24",
+      "presidentDirection": "",
+      "createdAt": "2026-09-24T09:57:20.481Z",
+      "followStart": "2026-09-23",
+      "type": "ext",
+      "followScope": "external",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "متابعة خارجية",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790243840481.5815
     }
   ],
   "archivedTopics": [
@@ -39559,6 +39586,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790243840520.1445,
+          "at": "2026-09-24T09:57:20.520Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "تقديم عرض حول خطوط المياه وفرص الاستفادة من المياه المعالجة"
+        },
         {
           "id": 1790242238518.523,
           "at": "2026-09-24T09:30:38.518Z",
