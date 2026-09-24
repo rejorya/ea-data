@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T07:33:46.350Z",
+  "exportedAt": "2026-09-24T07:34:46.337Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -30603,7 +30603,8 @@
       "raisDeptName": "مكتب متابعة تنفيذ رؤية عمان 2040",
       "responseMethod": "via_follow",
       "transactionType": "followup",
-      "recordId": 1789453689725.6372
+      "recordId": 1789453689725.6372,
+      "externalEntities": []
     },
     {
       "id": 1789455326581.1074,
