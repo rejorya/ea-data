@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T08:33:46.401Z",
+  "exportedAt": "2026-09-24T08:34:08.902Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32261,9 +32261,29 @@
       "kpi": "other",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "تتم متابعة مكتب النائب للحصول على نسخة من خطاب الاعتذار",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 0
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790238795365.944
+      "recordId": 1790238795365.944,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -39225,6 +39245,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790238846791.2363,
+          "at": "2026-09-24T08:34:06.791Z",
+          "action": "إضافة متابعة",
+          "details": "طلب التصريح بنقل حطب أشجار السمر عبر منفذ دبا الحدودي"
+        },
+        {
+          "id": 1790238846739.052,
+          "at": "2026-09-24T08:34:06.739Z",
+          "action": "تعديل موضوع",
+          "details": "طلب التصريح بنقل حطب أشجار السمر عبر منفذ دبا الحدودي"
+        },
         {
           "id": 1790238795447.5952,
           "at": "2026-09-24T08:33:15.447Z",
