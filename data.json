@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T06:47:59.731Z",
+  "exportedAt": "2026-09-24T06:56:53.084Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -30151,17 +30151,34 @@
           "taqseem": "",
           "startDate": "2026-09-10",
           "daysSince": 9
+        },
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 10
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 4,
+      "manualCount": 5,
       "followEntity": "naib_office",
       "responseMethod": "",
       "transactionType": "followup",
       "recordId": 1789281324786.6926,
       "externalEntities": [],
       "receivedFollowDate": "",
-      "followScope": "external"
+      "followScope": "external",
+      "presidentDirection": ""
     },
     {
       "id": 1789281615247.393,
@@ -38803,6 +38820,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790233010976.7654,
+          "at": "2026-09-24T06:56:50.976Z",
+          "action": "إضافة متابعة",
+          "details": "إعداد تقديرات الميزانية لعام 2027 م"
+        },
+        {
+          "id": 1790233010932.172,
+          "at": "2026-09-24T06:56:50.932Z",
+          "action": "تعديل موضوع",
+          "details": "إعداد تقديرات الميزانية لعام 2027 م"
+        },
         {
           "id": 1790232477616.9238,
           "at": "2026-09-24T06:47:57.616Z",
