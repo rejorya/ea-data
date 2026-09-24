@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T06:27:05.891Z",
+  "exportedAt": "2026-09-24T06:28:33.664Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31069,7 +31069,7 @@
       "slaDays": 5,
       "kpi": "",
       "note": "عدة جهات:\n-المركز الوطني لإدارة الحالات الطارئة (تم الرد)\n-وزارة النقل والاتصالات وتقنية المعلومات\n-وزارة الثروة الزراعية والسمكية وموارد المياة\n-وزارة الصحة\n-هيئة الدفاع المدني والاسعاف( تم الرد)\n-هيئة الطيران المدني \n-",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-22",
@@ -31132,7 +31132,9 @@
       "recordId": 1789878087520.3118,
       "externalEntities": [],
       "receivedFollowDate": "",
-      "followScope": "external"
+      "followScope": "external",
+      "presidentDirection": "",
+      "closedAt": "2026-09-24"
     },
     {
       "id": 1789878428221.8396,
@@ -32898,6 +32900,92 @@
       "closedAt": "2026-09-23",
       "followScope": "external",
       "archivedAt": "2026-09-23T10:01:16.102Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1789878087520.3118,
+      "title": "ترشيح ممثلين لمناقشة السياسات والأطر التنظيمية لإدارة المخاطر بهيئة البيئة",
+      "from": "مكتب الرئيس",
+      "docNo": "1170/3/2022v418-74",
+      "toEntity": "عدة جهات",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "normal",
+      "date": "2026-09-17",
+      "followStart": "2026-09-17",
+      "type": "ext",
+      "slaMode": "letter",
+      "slaDays": 5,
+      "kpi": "",
+      "note": "عدة جهات:\n-المركز الوطني لإدارة الحالات الطارئة (تم الرد)\n-وزارة النقل والاتصالات وتقنية المعلومات\n-وزارة الثروة الزراعية والسمكية وموارد المياة\n-وزارة الصحة\n-هيئة الدفاع المدني والاسعاف( تم الرد)\n-هيئة الطيران المدني \n-",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-22",
+          "replied": false,
+          "note": "-المركز الوطني لإدارة الحالات الطارئة (تم الرد) 20/9\n-هيئة الدفاع المدني والاسعاف( تم الرد) 20/9",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "taqseem": "",
+          "startDate": "2026-09-17",
+          "daysSince": 3
+        },
+        {
+          "date": "2026-09-22",
+          "replied": true,
+          "note": "-المركز الوطني لإدارة الحالات الطارئة (تم الرد) 20/9 - (1170/3/2022v419-7)\n-هيئة الدفاع المدني والاسعاف( تم الرد) 20/9 - (1170/3/2022v419-37)",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "taqseem": "",
+          "startDate": "2026-09-17",
+          "daysSince": 3
+        },
+        {
+          "date": "2026-09-22",
+          "replied": true,
+          "note": "وزارة الثروة الزراعية والسمكية وموارد المياة (تم الرد) - (1170/3/2022v419-45) 22/9",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "taqseem": "",
+          "startDate": "2026-09-17",
+          "daysSince": 3
+        },
+        {
+          "date": "2026-09-23",
+          "replied": false,
+          "responseMethod": "",
+          "note": "تم التواصل مع جميع الجهات واستلام خطاب رد من كلا من :\n-المركز الوطني لإدارة الحالات الطارئة \n-هيئة الدفاع المدني والاسعاف\n-وزارة الثروة الزراعية والسمكية وموارد المياة \nأما بالنسبة الى هيئة تنظيم الخدمات العامة تم ارسالبريد الكتروني الى الفاضل محمد الهدابي",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-17",
+          "daysSince": 4
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 4,
+      "followEntity": "",
+      "responseMethod": "",
+      "transactionType": "followup",
+      "recordId": 1789878087520.3118,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "followScope": "external",
+      "presidentDirection": "",
+      "closedAt": "2026-09-24",
+      "archivedAt": "2026-09-24T06:28:31.572Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -38586,6 +38674,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790231311558.2249,
+          "at": "2026-09-24T06:28:31.558Z",
+          "action": "تعديل موضوع",
+          "details": "ترشيح ممثلين لمناقشة السياسات والأطر التنظيمية لإدارة المخاطر بهيئة البيئة"
+        },
         {
           "id": 1790231223786.2524,
           "at": "2026-09-24T06:27:03.786Z",
