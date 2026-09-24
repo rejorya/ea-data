@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T08:15:46.390Z",
+  "exportedAt": "2026-09-24T08:16:27.291Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32120,11 +32120,27 @@
           "taqseem": "",
           "startDate": "2026-09-23",
           "daysSince": 1
+        },
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "تم توجيه الخطاب للتقسيم للاختصاص",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-23",
+          "daysSince": 1
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790237468180.4507,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "",
       "responseMethod": ""
     }
@@ -39088,6 +39104,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790237785173.5923,
+          "at": "2026-09-24T08:16:25.173Z",
+          "action": "إضافة متابعة",
+          "details": "طلب التنسيق مع منظمة الأغذية والزراعة للأمم المتحدة (FAO) لدعم المشروع الوطني للحد من الفاقد والهدر الغذائي"
+        },
+        {
+          "id": 1790237785120.5833,
+          "at": "2026-09-24T08:16:25.120Z",
+          "action": "تعديل موضوع",
+          "details": "طلب التنسيق مع منظمة الأغذية والزراعة للأمم المتحدة (FAO) لدعم المشروع الوطني للحد من الفاقد والهدر الغذائي"
+        },
         {
           "id": 1790237539806.7593,
           "at": "2026-09-24T08:12:19.806Z",
