@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T07:34:46.337Z",
+  "exportedAt": "2026-09-24T07:35:39.194Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -29713,7 +29713,7 @@
       "slaDays": null,
       "kpi": "std14",
       "note": "لا مانع من التعاقد مع الشركة واعداد دراسة للعرض على مجلس الوزراء الموقر",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-08-19",
@@ -29731,10 +29731,14 @@
       "sheet": "مُضاف يدوياً",
       "manualCount": 1,
       "followEntity": "naib_office",
-      "responseMethod": "",
+      "responseMethod": "direct_manager",
       "transactionType": "followup",
       "recordId": 1787123281963.1387,
-      "externalEntities": []
+      "externalEntities": [],
+      "presidentDirection": "",
+      "receivedFollowDate": "",
+      "closedAt": "2026-09-24",
+      "followScope": "internal"
     },
     {
       "id": 1787123636491.673,
@@ -33153,6 +33157,52 @@
       "closedAt": "2026-09-24",
       "followScope": "external",
       "archivedAt": "2026-09-24T06:40:34.534Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1787123281963.1387,
+      "title": "التعاقد مع شركة إستشارية متخصصة لإعداد دراسة تحليلية لإستضافة سلطنة عمان لمؤتمر الاطراف لتغير المناخ ( كوب 33 )",
+      "from": "مكتب نائب رئيس الهيئة",
+      "docNo": "1520/10/2022v4-52",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-17",
+      "followStart": "2026-08-19",
+      "type": "int",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "std14",
+      "note": "لا مانع من التعاقد مع الشركة واعداد دراسة للعرض على مجلس الوزراء الموقر",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-08-19",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-08-19",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": "direct_manager",
+      "transactionType": "followup",
+      "recordId": 1787123281963.1387,
+      "externalEntities": [],
+      "presidentDirection": "",
+      "receivedFollowDate": "",
+      "closedAt": "2026-09-24",
+      "followScope": "internal",
+      "archivedAt": "2026-09-24T07:35:37.107Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -38841,6 +38891,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790235337091.962,
+          "at": "2026-09-24T07:35:37.091Z",
+          "action": "تعديل موضوع",
+          "details": "التعاقد مع شركة إستشارية متخصصة لإعداد دراسة تحليلية لإستضافة سلطنة عمان لمؤتمر الاطراف لتغير المناخ ( كوب 33 )"
+        },
         {
           "id": 1790235105987.1038,
           "at": "2026-09-24T07:31:45.987Z",
