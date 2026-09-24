@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T08:43:46.418Z",
+  "exportedAt": "2026-09-24T08:44:07.107Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32284,6 +32284,33 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1790239443441.7979,
+      "transactionType": "followup",
+      "title": "مؤتمر التعليم البيئي",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v419-70",
+      "toEntity": "وزارة التعليم",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-23",
+      "receivedFollowDate": "2026-09-24",
+      "presidentDirection": "",
+      "createdAt": "2026-09-24T08:44:03.441Z",
+      "followStart": "2026-09-23",
+      "type": "ext",
+      "followScope": "external",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "متابعه خارجية",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790239443441.7979
     }
   ],
   "archivedTopics": [
@@ -39245,6 +39272,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790239443479.1924,
+          "at": "2026-09-24T08:44:03.479Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "مؤتمر التعليم البيئي"
+        },
         {
           "id": 1790238846791.2363,
           "at": "2026-09-24T08:34:06.791Z",
