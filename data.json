@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T09:06:46.461Z",
+  "exportedAt": "2026-09-24T09:06:57.602Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32393,7 +32393,7 @@
       "receivedFollowDate": "2026-09-24",
       "presidentDirection": "",
       "createdAt": "2026-09-24T08:59:46.126Z",
-      "followStart": "",
+      "followStart": "2026-09-23",
       "type": "ext",
       "followScope": "external",
       "externalEntities": [],
@@ -32434,11 +32434,27 @@
           "taqseem": "",
           "startDate": "",
           "daysSince": null
+        },
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "تم توجية الخطاب للتقسيم الاختصاص",
+          "actionType": "visit",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-23",
+          "daysSince": 1
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790240386126.0469,
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "",
       "responseMethod": ""
     }
@@ -39402,6 +39418,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790240815464.1492,
+          "at": "2026-09-24T09:06:55.464Z",
+          "action": "إضافة متابعة",
+          "details": "طلب ترشيح ممثل لعضوية اللجنة التوجيهية لمشروع اِزرع عُمان 2050"
+        },
+        {
+          "id": 1790240815409.7556,
+          "at": "2026-09-24T09:06:55.409Z",
+          "action": "تعديل موضوع",
+          "details": "طلب ترشيح ممثل لعضوية اللجنة التوجيهية لمشروع اِزرع عُمان 2050"
+        },
         {
           "id": 1790240489275.9739,
           "at": "2026-09-24T09:01:29.275Z",
