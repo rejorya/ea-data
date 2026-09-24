@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T08:06:46.064Z",
+  "exportedAt": "2026-09-24T08:07:24.078Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32046,7 +32046,7 @@
       "confidentiality": "normal",
       "date": "2026-09-21",
       "receivedFollowDate": "2026-09-24",
-      "presidentDirection": "",
+      "presidentDirection": "نائب الرئيس\nللدراسة وابداء الراي",
       "createdAt": "2026-09-24T08:06:43.960Z",
       "followStart": "2026-09-24",
       "type": "ext",
@@ -32057,9 +32057,29 @@
       "kpi": "std14",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 0
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790237203960.906
+      "recordId": 1790237203960.906,
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -39021,6 +39041,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790237241338.359,
+          "at": "2026-09-24T08:07:21.338Z",
+          "action": "إضافة متابعة",
+          "details": "طلب الموافقة على بدء في إعداد وتقديم نطاق عمل الدراسة البيئية لموقع مبادرة المتحف العسكري العُماني لسياحة الغوص جزر الديمانيات"
+        },
+        {
+          "id": 1790237241284.5854,
+          "at": "2026-09-24T08:07:21.284Z",
+          "action": "تعديل موضوع",
+          "details": "طلب الموافقة على بدء في إعداد وتقديم نطاق عمل الدراسة البيئية لموقع مبادرة المتحف العسكري العُماني لسياحة الغوص جزر الديمانيات"
+        },
         {
           "id": 1790237204028.3103,
           "at": "2026-09-24T08:06:44.028Z",
