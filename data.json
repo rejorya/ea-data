@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T09:23:46.448Z",
+  "exportedAt": "2026-09-24T09:24:47.281Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32551,6 +32551,33 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1790241885374.2515,
+      "transactionType": "followup",
+      "title": "تقديم عرض حول آليات التمويل المتعلقة بالاستزراع والاقتصاد الأخضر",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v419-54",
+      "toEntity": "هيئة الخدمات المالية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-23",
+      "receivedFollowDate": "2026-09-24",
+      "presidentDirection": "",
+      "createdAt": "2026-09-24T09:24:45.374Z",
+      "followStart": "2026-09-23",
+      "type": "ext",
+      "followScope": "external",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790241885374.2515
     }
   ],
   "archivedTopics": [
@@ -39512,6 +39539,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790241885415.1196,
+          "at": "2026-09-24T09:24:45.415Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "تقديم عرض حول آليات التمويل المتعلقة بالاستزراع والاقتصاد الأخضر"
+        },
         {
           "id": 1790241521783.506,
           "at": "2026-09-24T09:18:41.783Z",
