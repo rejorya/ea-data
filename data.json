@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T10:27:46.523Z",
+  "exportedAt": "2026-09-24T10:27:53.380Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32660,7 +32660,7 @@
       "receivedFollowDate": "2026-09-24",
       "presidentDirection": "ترشح الدكتورة مريم البوسعيدي",
       "createdAt": "2026-09-24T10:27:14.131Z",
-      "followStart": "",
+      "followStart": "2026-09-24",
       "type": "ext",
       "followScope": "external",
       "externalEntities": [],
@@ -32669,9 +32669,29 @@
       "kpi": "doc2",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 0
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790245634131.9485
+      "recordId": 1790245634131.9485,
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -39633,6 +39653,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790245671251.8267,
+          "at": "2026-09-24T10:27:51.251Z",
+          "action": "إضافة متابعة",
+          "details": "ملتقى أخلاقيات البحوث الإنسانية والبيئية..هيئة البيئة"
+        },
+        {
+          "id": 1790245671187.2732,
+          "at": "2026-09-24T10:27:51.187Z",
+          "action": "تعديل موضوع",
+          "details": "ملتقى أخلاقيات البحوث الإنسانية والبيئية..هيئة البيئة"
+        },
         {
           "id": 1790245634220.489,
           "at": "2026-09-24T10:27:14.220Z",
