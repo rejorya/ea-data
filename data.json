@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T09:16:47.148Z",
+  "exportedAt": "2026-09-24T09:17:06.698Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32504,6 +32504,33 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1790241424620.697,
+      "transactionType": "followup",
+      "title": "دعوة لرعاية ورشة عمل المناطق ذات التنوع البيولوجي العالي",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v419-73",
+      "toEntity": "هيئة البحث العلمي والابتكار",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-23",
+      "receivedFollowDate": "2026-09-24",
+      "presidentDirection": "",
+      "createdAt": "2026-09-24T09:17:04.620Z",
+      "followStart": "2026-09-24",
+      "type": "ext",
+      "followScope": "external",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790241424620.697
     }
   ],
   "archivedTopics": [
@@ -39465,6 +39492,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790241424663.027,
+          "at": "2026-09-24T09:17:04.663Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "دعوة لرعاية ورشة عمل المناطق ذات التنوع البيولوجي العالي"
+        },
         {
           "id": 1790241122806.019,
           "at": "2026-09-24T09:12:02.806Z",
