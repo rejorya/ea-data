@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T09:17:47.138Z",
+  "exportedAt": "2026-09-24T09:18:43.907Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32526,11 +32526,31 @@
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "other",
-      "note": "",
+      "note": "متابعة خارجية",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 0
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790241424620.697
+      "recordId": 1790241424620.697,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -39492,6 +39512,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790241521783.506,
+          "at": "2026-09-24T09:18:41.783Z",
+          "action": "إضافة متابعة",
+          "details": "دعوة لرعاية ورشة عمل المناطق ذات التنوع البيولوجي العالي"
+        },
+        {
+          "id": 1790241521723.0063,
+          "at": "2026-09-24T09:18:41.723Z",
+          "action": "تعديل موضوع",
+          "details": "دعوة لرعاية ورشة عمل المناطق ذات التنوع البيولوجي العالي"
+        },
         {
           "id": 1790241424663.027,
           "at": "2026-09-24T09:17:04.663Z",
