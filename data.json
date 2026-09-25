@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-24T10:30:56.347Z",
+  "exportedAt": "2026-09-25T14:53:09.606Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39628,6 +39628,32 @@
   ],
   "activityLog": [
     {
+      "id": 1790347984727.7805,
+      "sessionId": "efbccfef-bf15-4d83-8bb7-759b9691c1f9",
+      "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "هاتف/جهاز لوحي • Android • Chrome",
+      "deviceType": "هاتف/جهاز لوحي",
+      "deviceOS": "Android",
+      "browser": "Chrome",
+      "platform": "Linux armv81",
+      "deviceSnapshot": {
+        "id": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+        "label": "هاتف/جهاز لوحي • Android • Chrome",
+        "type": "هاتف/جهاز لوحي",
+        "os": "Android",
+        "browser": "Chrome",
+        "platform": "Linux armv81"
+      },
+      "loginAt": "2026-09-25T14:53:04.726Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": 1790224684906.6604,
       "sessionId": "313cb885-0173-4cc3-a2ef-d8f4058b8426",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -42000,17 +42026,6 @@
       "logoutReason": null
     }
   ],
-  "githubTokenEncrypted": {
-    "v": 1,
-    "alg": "AES-GCM",
-    "kdf": "PBKDF2-SHA256",
-    "iterations": 150000,
-    "salt": "nkI2uEcaX0TqVFfa9ZXWoA==",
-    "iv": "9f1XjdT7azYYpFcp",
-    "ciphertext": "DNC8W3xRbdU5B90cZGcaESGLwvbsBXTY1KlMce3F10Kn0Rt+6kCTmdjQsSIiQbo/76i02+mtcWc="
-  },
-  "githubUser": "rejorya",
-  "githubRepo": "ea-data",
   "users": {
     "rahab@ea2026": {
       "name": "رحاب بنت نصيب الفرج",
@@ -42026,5 +42041,16 @@
       "admin": false,
       "delegate": true
     }
-  }
+  },
+  "githubTokenEncrypted": {
+    "v": 1,
+    "alg": "AES-GCM",
+    "kdf": "PBKDF2-SHA256",
+    "iterations": 150000,
+    "salt": "nkI2uEcaX0TqVFfa9ZXWoA==",
+    "iv": "9f1XjdT7azYYpFcp",
+    "ciphertext": "DNC8W3xRbdU5B90cZGcaESGLwvbsBXTY1KlMce3F10Kn0Rt+6kCTmdjQsSIiQbo/76i02+mtcWc="
+  },
+  "githubUser": "rejorya",
+  "githubRepo": "ea-data"
 }
