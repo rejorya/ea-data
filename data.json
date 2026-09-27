@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-27T04:36:31.091Z",
+  "exportedAt": "2026-09-27T04:37:19.655Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32389,7 +32389,7 @@
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "other",
-      "note": "متابعه خارجية",
+      "note": "",
       "status": "new",
       "followups": [
         {
@@ -32413,7 +32413,8 @@
       "recordId": 1790239762954.166,
       "manualCount": 1,
       "followEntity": "",
-      "responseMethod": ""
+      "responseMethod": "",
+      "correspondenceDirection": "out"
     },
     {
       "id": 1790240386126.0469,
@@ -39757,6 +39758,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790483837509.751,
+          "at": "2026-09-27T04:37:17.509Z",
+          "action": "تعديل موضوع",
+          "details": "طلب ترشيح ممثل لعضوية اللجنة التوجيهية لمشروع اِزرع عمان 2050"
+        },
         {
           "id": 1790483788952.8704,
           "at": "2026-09-27T04:36:28.952Z",
