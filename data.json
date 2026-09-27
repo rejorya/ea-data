@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-27T07:49:31.753Z",
+  "exportedAt": "2026-09-27T07:50:09.968Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32920,6 +32920,32 @@
       "followEntity": "other",
       "otherEntityName": "الشركة العمانية للغاز الطبيعي المسال-مجموعة (أسياد)- الشركة العمانية للصهاريج \"أوتكو\"",
       "responseMethod": ""
+    },
+    {
+      "id": 1790495407876.232,
+      "transactionType": "followup",
+      "title": "تحديات تشغيلية لنظام تخطيط وإدارة موارد وأصول وعمليات هيئة البيئة (الـERP) لدى الشؤون الإدارية والمالية",
+      "from": "التحول الرقمي",
+      "docNo": "",
+      "toEntity": "مكتب الرؤية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-27",
+      "receivedFollowDate": "2026-09-27",
+      "followStart": "2026-09-27",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "",
+      "note": "الرؤية\nللافادة بالراي",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790495407876.232
     }
   ],
   "archivedTopics": [
@@ -39949,6 +39975,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790495407930.2336,
+          "at": "2026-09-27T07:50:07.930Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "تحديات تشغيلية لنظام تخطيط وإدارة موارد وأصول وعمليات هيئة البيئة (الـERP) لدى الشؤون الإدارية والمالية"
+        },
         {
           "id": 1790487872375.564,
           "at": "2026-09-27T05:44:32.375Z",
