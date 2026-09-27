@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-27T08:17:31.772Z",
+  "exportedAt": "2026-09-27T08:18:15.476Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32946,6 +32946,32 @@
       "followups": [],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790495407876.232
+    },
+    {
+      "id": 1790497093413.9426,
+      "transactionType": "followup",
+      "title": "دعم مشروع منظومة الرصد والمراقبة الذكية بمحمية المها العربي",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v419-51",
+      "toEntity": "مجموعة عُمران",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-23",
+      "receivedFollowDate": "2026-09-23",
+      "followStart": "2026-09-23",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790497093413.9426
     }
   ],
   "archivedTopics": [
@@ -39975,6 +40001,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790497093444.0354,
+          "at": "2026-09-27T08:18:13.444Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "دعم مشروع منظومة الرصد والمراقبة الذكية بمحمية المها العربي"
+        },
         {
           "id": 1790495407930.2336,
           "at": "2026-09-27T07:50:07.930Z",
