@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-27T08:45:48.545Z",
+  "exportedAt": "2026-09-27T08:46:21.223Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -30074,7 +30074,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nللافادة",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-13",
@@ -30118,7 +30118,12 @@
       "followEntity": "naib_office",
       "responseMethod": "",
       "transactionType": "followup",
-      "recordId": 1789279578893.2625
+      "recordId": 1789279578893.2625,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "",
+      "closedAt": "2026-09-27",
+      "followScope": "external"
     },
     {
       "id": 1789279805672.8616,
@@ -34313,6 +34318,76 @@
       "correspondenceDirection": "out",
       "closedAt": "2026-09-27",
       "archivedAt": "2026-09-27T04:36:28.967Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1789279578893.2625,
+      "title": "طلب تدخل  عاجل والبت في مشروع كفاءة الطاقة  بمحمية جرز الديمانيات الطبيعية العقد رقم 2026/80",
+      "from": "موارد للهندسة والاستثمار",
+      "docNo": "1170/3/2022v417-15",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-09-08",
+      "followStart": "2026-09-10",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "نائب الرئيس\nللافادة",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-09-15",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 3
+        },
+        {
+          "date": "2026-09-16",
+          "replied": true,
+          "note": "في انتظار الاطلاع من قبل المدير العام الشؤون الادارية والمالية حتى تاريخ لم يتم التوجيه علما يوجد رد المختصين لديهم",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 4
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 3,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "transactionType": "followup",
+      "recordId": 1789279578893.2625,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "",
+      "closedAt": "2026-09-27",
+      "followScope": "external",
+      "archivedAt": "2026-09-27T08:46:19.181Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -40001,6 +40076,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790498779160.228,
+          "at": "2026-09-27T08:46:19.160Z",
+          "action": "تعديل موضوع",
+          "details": "طلب تدخل  عاجل والبت في مشروع كفاءة الطاقة  بمحمية جرز الديمانيات الطبيعية العقد رقم 2026/80"
+        },
         {
           "id": 1790497093444.0354,
           "at": "2026-09-27T08:18:13.444Z",
