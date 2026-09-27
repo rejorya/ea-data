@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-27T04:34:30.165Z",
+  "exportedAt": "2026-09-27T04:36:31.091Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32231,7 +32231,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "متابعة خارجية",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-24",
@@ -32248,13 +32248,31 @@
           "taqseem": "",
           "startDate": "2026-09-23",
           "daysSince": 1
+        },
+        {
+          "date": "2026-09-24",
+          "replied": true,
+          "responseMethod": "",
+          "note": "1170/3/2022v419-91 رقم الخطاب الوارد للرد",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-23",
+          "daysSince": 1
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790238469908.5254,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "",
-      "responseMethod": ""
+      "responseMethod": "",
+      "correspondenceDirection": "out",
+      "closedAt": "2026-09-27"
     },
     {
       "id": 1790238795365.944,
@@ -33983,6 +34001,74 @@
       "closedAt": "2026-09-24",
       "followScope": "internal",
       "archivedAt": "2026-09-24T07:36:45.177Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1790238469908.5254,
+      "transactionType": "followup",
+      "title": "طلب ترشيح ممثل لعضوية اللجنة التوجيهية لمشروع اِزرع عُمان 2050",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v419-85",
+      "toEntity": "جمعية البيئة العمانية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-23",
+      "receivedFollowDate": "2026-09-24",
+      "presidentDirection": "",
+      "createdAt": "2026-09-24T08:27:49.908Z",
+      "followStart": "2026-09-23",
+      "type": "ext",
+      "followScope": "external",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "متابعة خارجية",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "تم توجية الخطاب الى التقسيم للاختصاص",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-23",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-09-24",
+          "replied": true,
+          "responseMethod": "",
+          "note": "1170/3/2022v419-91 رقم الخطاب الوارد للرد",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-23",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790238469908.5254,
+      "manualCount": 2,
+      "followEntity": "",
+      "responseMethod": "",
+      "correspondenceDirection": "out",
+      "closedAt": "2026-09-27",
+      "archivedAt": "2026-09-27T04:36:28.967Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -39671,6 +39757,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790483788952.8704,
+          "at": "2026-09-27T04:36:28.952Z",
+          "action": "إضافة متابعة",
+          "details": "طلب ترشيح ممثل لعضوية اللجنة التوجيهية لمشروع اِزرع عُمان 2050"
+        },
+        {
+          "id": 1790483788903.3506,
+          "at": "2026-09-27T04:36:28.903Z",
+          "action": "تعديل موضوع",
+          "details": "طلب ترشيح ممثل لعضوية اللجنة التوجيهية لمشروع اِزرع عُمان 2050"
+        },
         {
           "id": 1790483667777.8162,
           "at": "2026-09-27T04:34:27.777Z",
