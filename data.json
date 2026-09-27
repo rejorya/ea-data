@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-27T05:26:38.313Z",
+  "exportedAt": "2026-09-27T05:35:48.545Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32868,6 +32868,32 @@
       "followups": [],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790485791088.0447
+    },
+    {
+      "id": 1790487346468.0342,
+      "transactionType": "followup",
+      "title": "طلب دعم مشروع توظيف تقنيات الأقمار الصناعية في رصد ومتابعة الأنشطة البحرية والتلوث البحري",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v419-38",
+      "toEntity": "عدة جهات",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-21",
+      "receivedFollowDate": "2026-09-21",
+      "followStart": "2026-09-21",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790487346468.0342
     }
   ],
   "archivedTopics": [
@@ -39897,6 +39923,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790487346504.8647,
+          "at": "2026-09-27T05:35:46.504Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب دعم مشروع توظيف تقنيات الأقمار الصناعية في رصد ومتابعة الأنشطة البحرية والتلوث البحري"
+        },
         {
           "id": 1790486796177.8794,
           "at": "2026-09-27T05:26:36.177Z",
