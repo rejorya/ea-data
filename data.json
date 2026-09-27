@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-27T09:22:31.438Z",
+  "exportedAt": "2026-09-27T09:22:52.114Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31173,22 +31173,46 @@
       "from": "مكتب الرئيس",
       "docNo": "1170/3/2022v412-71",
       "toEntity": "وزارة الخارجية",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة للتغير المناخي",
       "priority": "normal",
       "confidentiality": "secret",
       "date": "2026-09-03",
       "followStart": "2026-09-17",
-      "type": "ext",
+      "type": "int",
       "slaMode": "rais",
       "slaDays": 30,
       "kpi": "",
       "note": "تم التواصل من قبل المديرية العامة لتغير المناخي \nتم التواصل مع المختصين في وزارة الخارجية وتم الإفادة بأنه لم يتم توقيع الخطاب بعد.",
-      "status": "new",
-      "followups": [],
+      "status": "awaiting_div",
+      "followups": [
+        {
+          "date": "2026-09-27",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للتغير المناخي",
+          "startDate": "2026-09-17",
+          "daysSince": 6
+        }
+      ],
       "sheet": "مُضاف يدوياً",
       "transactionType": "followup",
       "recordId": 1789877477034.7769,
-      "externalEntities": []
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "",
+      "manualCount": 1,
+      "followScope": "external",
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-09-27"
     },
     {
       "id": 1789877650603.5947,
@@ -40235,6 +40259,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790500970049.0876,
+          "at": "2026-09-27T09:22:50.049Z",
+          "action": "إضافة متابعة",
+          "details": "استضافة سلطنة عُمان اجتماع مجلس الصندوق الأخضر للمناخ 2027م"
+        },
+        {
+          "id": 1790500969975.2847,
+          "at": "2026-09-27T09:22:49.975Z",
+          "action": "تعديل موضوع",
+          "details": "استضافة سلطنة عُمان اجتماع مجلس الصندوق الأخضر للمناخ 2027م"
+        },
         {
           "id": 1790499655078.0435,
           "at": "2026-09-27T09:00:55.078Z",
