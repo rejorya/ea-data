@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-27T04:43:29.259Z",
+  "exportedAt": "2026-09-27T04:43:41.222Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32516,7 +32516,7 @@
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790240386126.0469,
-      "manualCount": 3,
+      "manualCount": 0,
       "followEntity": "",
       "responseMethod": "",
       "correspondenceDirection": "out"
@@ -39793,6 +39793,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790484219076.0034,
+          "at": "2026-09-27T04:43:39.076Z",
+          "action": "تعديل موضوع",
+          "details": "طلب ترشيح ممثل لعضوية اللجنة التوجيهية لمشروع اِزرع عُمان 2050"
+        },
         {
           "id": 1790484207091.7483,
           "at": "2026-09-27T04:43:27.091Z",
