@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-27T08:56:31.829Z",
+  "exportedAt": "2026-09-27T08:56:46.974Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33020,6 +33020,32 @@
       "followups": [],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790497093413.9426
+    },
+    {
+      "id": 1790499404915.8545,
+      "transactionType": "followup",
+      "title": "التقرير النصف سنوي لتقييم وضع خدمات هيئة البيئة المقدمة للمتعامل الخارجي",
+      "from": "دائرة ضبط الجودة",
+      "docNo": "1415/23/2025-10",
+      "toEntity": "التحول الرقمي",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-02",
+      "receivedFollowDate": "2026-08-04",
+      "followStart": "2026-08-02",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "rais",
+      "slaDays": 5,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790499404915.8545
     }
   ],
   "archivedTopics": [
@@ -40170,6 +40196,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790499404953.1228,
+          "at": "2026-09-27T08:56:44.953Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "التقرير النصف سنوي لتقييم وضع خدمات هيئة البيئة المقدمة للمتعامل الخارجي"
+        },
         {
           "id": 1790499029795.6895,
           "at": "2026-09-27T08:50:29.795Z",
