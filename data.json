@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-27T08:48:31.410Z",
+  "exportedAt": "2026-09-27T08:48:44.710Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31205,16 +31205,36 @@
       "slaDays": 5,
       "kpi": "",
       "note": "عدة جهات: \nجامعة التقنية والعلوم التطبيقية\n-هيئة البحث العلمي والابتكار\n-هيئة تنمية المؤسسات الصغيرة والمتوسطة\n-صندوق غمان المستقبل\n -شركة تنمية نفط عمان \n-شركة بيئة\n-شركة الجبر ",
-      "status": "new",
-      "followups": [],
+      "status": "open",
+      "followups": [
+        {
+          "date": "2026-09-27",
+          "replied": true,
+          "responseMethod": "",
+          "note": "-شركة بيئة تم الرد",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-17",
+          "daysSince": 6
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 0,
+      "manualCount": 1,
       "followEntity": "other",
       "otherEntityName": "",
       "responseMethod": "",
       "transactionType": "followup",
       "recordId": 1789877650603.5947,
-      "externalEntities": []
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "out",
+      "followScope": "external"
     },
     {
       "id": 1789878087520.3118,
@@ -40077,6 +40097,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790498922648.1157,
+          "at": "2026-09-27T08:48:42.648Z",
+          "action": "إضافة متابعة",
+          "details": "مشاركة ممثلي الجهات أعضاء فريق العمل  في الزيارة الرسمية إلى جمهورية سنغافورة"
+        },
+        {
+          "id": 1790498922589.7573,
+          "at": "2026-09-27T08:48:42.589Z",
+          "action": "تعديل موضوع",
+          "details": "مشاركة ممثلي الجهات أعضاء فريق العمل  في الزيارة الرسمية إلى جمهورية سنغافورة"
+        },
         {
           "id": 1790498779160.228,
           "at": "2026-09-27T08:46:19.160Z",
