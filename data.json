@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-27T10:20:31.906Z",
+  "exportedAt": "2026-09-27T10:21:09.601Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31701,7 +31701,7 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "نائب الرئيس\nمركز الطوارئ\nللمناقشة وعمل اللازم",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-22",
@@ -31722,7 +31722,12 @@
       "raisDeptName": "مركز الطوارئ البيئية",
       "responseMethod": "",
       "transactionType": "followup",
-      "recordId": 1790048686178.394
+      "recordId": 1790048686178.394,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "",
+      "closedAt": "2026-09-27",
+      "followScope": "external"
     },
     {
       "id": 1790051685332.65,
@@ -34684,6 +34689,53 @@
       "followEntity": "",
       "responseMethod": "",
       "archivedAt": "2026-09-27T09:50:28.023Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1790048686178.394,
+      "title": "تقييم الاثار الاقتصادية والمالية المحتملة لحادثة جنوح السفينة كارولين بيرنجي",
+      "from": "وزارة الإقتصاد",
+      "docNo": "1170/3/2022v418-56",
+      "toEntity": "مركز الطوارئ البيئية",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "normal",
+      "date": "2026-09-16",
+      "followStart": "2026-09-20",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "نائب الرئيس\nمركز الطوارئ\nللمناقشة وعمل اللازم",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-22",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-09-20",
+          "daysSince": 2
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "مركز الطوارئ البيئية",
+      "responseMethod": "",
+      "transactionType": "followup",
+      "recordId": 1790048686178.394,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "",
+      "closedAt": "2026-09-27",
+      "followScope": "external",
+      "archivedAt": "2026-09-27T10:21:07.544Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -40372,6 +40424,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790504467524.0786,
+          "at": "2026-09-27T10:21:07.524Z",
+          "action": "تعديل موضوع",
+          "details": "تقييم الاثار الاقتصادية والمالية المحتملة لحادثة جنوح السفينة كارولين بيرنجي"
+        },
         {
           "id": 1790504398760.9739,
           "at": "2026-09-27T10:19:58.760Z",
