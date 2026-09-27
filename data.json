@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-27T05:14:00.521Z",
+  "exportedAt": "2026-09-27T05:17:47.678Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32048,17 +32048,39 @@
       "presidentDirection": "نائب الرئيس\nالتدقيق\nالقانونية\nللاطلاع",
       "createdAt": "2026-09-24T05:18:36.727Z",
       "followStart": "2026-09-24",
-      "type": "ext",
-      "followScope": "external",
+      "type": "int",
+      "followScope": "internal",
       "externalEntities": [],
       "slaMode": "letter",
       "slaDays": 10,
       "kpi": "",
-      "note": "",
+      "note": "نائب الرئيس\nالتدقيق\nالقانونية\nللاطلاع",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-09-27",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_and_rais",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790227116726.0547
+      "recordId": 1790227116726.0547,
+      "correspondenceDirection": "",
+      "manualCount": 1,
+      "followEntity": "naib_and_rais",
+      "raisDeptName": "نائب الرئيس/دائرة التدقيق الداخلي/الدائرة القاونية",
+      "responseMethod": ""
     },
     {
       "id": 1790237203960.906,
@@ -39871,6 +39893,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790486265520.7605,
+          "at": "2026-09-27T05:17:45.520Z",
+          "action": "إضافة متابعة",
+          "details": "ملخص المتجمع عن التقرير السنوي للجهاز عن عام 2025م"
+        },
+        {
+          "id": 1790486265454.2302,
+          "at": "2026-09-27T05:17:45.454Z",
+          "action": "تعديل موضوع",
+          "details": "ملخص المتجمع عن التقرير السنوي للجهاز عن عام 2025م"
+        },
         {
           "id": 1790486038367.7617,
           "at": "2026-09-27T05:13:58.367Z",
