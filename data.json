@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-27T08:57:31.412Z",
+  "exportedAt": "2026-09-27T08:57:41.824Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33040,12 +33040,33 @@
       "externalEntities": [],
       "slaMode": "rais",
       "slaDays": 5,
-      "kpi": "",
+      "kpi": "wweek",
       "note": "",
-      "status": "new",
-      "followups": [],
+      "status": "open",
+      "followups": [
+        {
+          "date": "2026-09-27",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-08-02",
+          "daysSince": 40
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790499404915.8545
+      "recordId": 1790499404915.8545,
+      "manualCount": 6,
+      "followEntity": "rais_depts",
+      "raisDeptName": "التحول الرقمي",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -40196,6 +40217,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790499458879.8462,
+          "at": "2026-09-27T08:57:38.879Z",
+          "action": "إضافة متابعة",
+          "details": "التقرير النصف سنوي لتقييم وضع خدمات هيئة البيئة المقدمة للمتعامل الخارجي"
+        },
+        {
+          "id": 1790499458815.5032,
+          "at": "2026-09-27T08:57:38.815Z",
+          "action": "تعديل موضوع",
+          "details": "التقرير النصف سنوي لتقييم وضع خدمات هيئة البيئة المقدمة للمتعامل الخارجي"
+        },
         {
           "id": 1790499404953.1228,
           "at": "2026-09-27T08:56:44.953Z",
