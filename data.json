@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-27T04:43:49.884Z",
+  "exportedAt": "2026-09-27T04:49:20.037Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32733,14 +32733,14 @@
       "presidentDirection": "ترشح الدكتورة مريم البوسعيدي",
       "createdAt": "2026-09-24T10:27:14.131Z",
       "followStart": "2026-09-24",
-      "type": "ext",
-      "followScope": "external",
+      "type": "int",
+      "followScope": "internal",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "doc2",
       "note": "",
-      "status": "new",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-09-24",
@@ -32757,13 +32757,30 @@
           "taqseem": "",
           "startDate": "2026-09-24",
           "daysSince": 0
+        },
+        {
+          "date": "2026-09-27",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 1
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790245634131.9485,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "",
+      "correspondenceDirection": ""
     }
   ],
   "archivedTopics": [
@@ -39793,6 +39810,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790484557900.8777,
+          "at": "2026-09-27T04:49:17.900Z",
+          "action": "إضافة متابعة",
+          "details": "ملتقى أخلاقيات البحوث الإنسانية والبيئية..هيئة البيئة"
+        },
+        {
+          "id": 1790484557850.1514,
+          "at": "2026-09-27T04:49:17.850Z",
+          "action": "تعديل موضوع",
+          "details": "ملتقى أخلاقيات البحوث الإنسانية والبيئية..هيئة البيئة"
+        },
         {
           "id": 1790484227721.2332,
           "at": "2026-09-27T04:43:47.721Z",
