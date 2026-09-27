@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-27T04:37:53.551Z",
+  "exportedAt": "2026-09-27T04:40:12.434Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32011,7 +32011,15 @@
       "followStart": "",
       "type": "ext",
       "followScope": "external",
-      "externalEntities": [],
+      "externalEntities": [
+        {
+          "id": 1790484002593.313,
+          "name": "وزارة الطاقة والمعادن",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        }
+      ],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "",
@@ -39759,6 +39767,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790484010307.2317,
+          "at": "2026-09-27T04:40:10.307Z",
+          "action": "تعديل موضوع",
+          "details": "طلب ترشيح ممثل لعضوية اللجنة التوجيهية لمشروع اِزرع عُمان 2050"
+        },
         {
           "id": 1790483871418.1436,
           "at": "2026-09-27T04:37:51.418Z",
