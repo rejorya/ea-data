@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-27T08:49:31.406Z",
+  "exportedAt": "2026-09-27T08:50:31.409Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31547,15 +31547,37 @@
       "slaDays": null,
       "kpi": "",
       "note": "متابعة خارجية استلام الرد خلال أسبوعين ",
-      "status": "new",
-      "followups": [],
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-27",
+          "replied": true,
+          "responseMethod": "",
+          "note": "تم الرد",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-20",
+          "daysSince": 5
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 0,
+      "manualCount": 1,
       "followEntity": "other",
       "otherEntityName": "وزارة الاقتصاد",
       "responseMethod": "",
       "transactionType": "followup",
-      "recordId": 1789981534133.634
+      "recordId": 1789981534133.634,
+      "externalEntities": [],
+      "receivedFollowDate": "2026-09-20",
+      "correspondenceDirection": "out",
+      "closedAt": "2026-09-27",
+      "followScope": "external"
     },
     {
       "id": 1789981819179.5964,
@@ -34409,6 +34431,57 @@
       "closedAt": "2026-09-27",
       "followScope": "external",
       "archivedAt": "2026-09-27T08:46:19.181Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1789981534133.634,
+      "title": "المشاركة في زيارة إلى جمهورية إستونيا للاطلاع على تجربتها في مؤشر الأداء البيئي",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v418-87",
+      "toEntity": "وزارة الاقتصاد",
+      "taqseemName": "متابعة خارجية",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-20",
+      "followStart": "2026-09-20",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "",
+      "note": "متابعة خارجية استلام الرد خلال أسبوعين ",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-27",
+          "replied": true,
+          "responseMethod": "",
+          "note": "تم الرد",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-20",
+          "daysSince": 5
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "other",
+      "otherEntityName": "وزارة الاقتصاد",
+      "responseMethod": "",
+      "transactionType": "followup",
+      "recordId": 1789981534133.634,
+      "externalEntities": [],
+      "receivedFollowDate": "2026-09-20",
+      "correspondenceDirection": "out",
+      "closedAt": "2026-09-27",
+      "followScope": "external",
+      "archivedAt": "2026-09-27T08:50:29.818Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -40097,6 +40170,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790499029795.6895,
+          "at": "2026-09-27T08:50:29.795Z",
+          "action": "إضافة متابعة",
+          "details": "المشاركة في زيارة إلى جمهورية إستونيا للاطلاع على تجربتها في مؤشر الأداء البيئي"
+        },
+        {
+          "id": 1790499029727.8037,
+          "at": "2026-09-27T08:50:29.727Z",
+          "action": "تعديل موضوع",
+          "details": "المشاركة في زيارة إلى جمهورية إستونيا للاطلاع على تجربتها في مؤشر الأداء البيئي"
+        },
         {
           "id": 1790498922648.1157,
           "at": "2026-09-27T08:48:42.648Z",
