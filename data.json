@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-27T04:52:52.038Z",
+  "exportedAt": "2026-09-27T04:57:02.975Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32380,7 +32380,7 @@
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790239443441.7979,
-      "manualCount": 1,
+      "manualCount": 0,
       "followEntity": "",
       "responseMethod": "",
       "correspondenceDirection": "out"
@@ -39819,6 +39819,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790485020847.7937,
+          "at": "2026-09-27T04:57:00.848Z",
+          "action": "تعديل موضوع",
+          "details": "مؤتمر التعليم البيئي"
+        },
         {
           "id": 1790484769911.148,
           "at": "2026-09-27T04:52:49.911Z",
