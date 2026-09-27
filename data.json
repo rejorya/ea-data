@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-27T05:35:48.545Z",
+  "exportedAt": "2026-09-27T05:44:34.505Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32885,7 +32885,29 @@
       "type": "ext",
       "followScope": "external",
       "correspondenceDirection": "out",
-      "externalEntities": [],
+      "externalEntities": [
+        {
+          "id": 1790487617110.606,
+          "name": "الشركة العمانية للغاز الطبيعي المسال",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        },
+        {
+          "id": 1790487636086.1968,
+          "name": "مجموعة (أسياد)",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        },
+        {
+          "id": 1790487827232.5776,
+          "name": "الشركة العمانية للصهاريج \"أوتكو\"",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        }
+      ],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "",
@@ -32893,7 +32915,11 @@
       "status": "new",
       "followups": [],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790487346468.0342
+      "recordId": 1790487346468.0342,
+      "manualCount": 0,
+      "followEntity": "other",
+      "otherEntityName": "الشركة العمانية للغاز الطبيعي المسال-مجموعة (أسياد)- الشركة العمانية للصهاريج \"أوتكو\"",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -39923,6 +39949,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790487872375.564,
+          "at": "2026-09-27T05:44:32.375Z",
+          "action": "تعديل موضوع",
+          "details": "طلب دعم مشروع توظيف تقنيات الأقمار الصناعية في رصد ومتابعة الأنشطة البحرية والتلوث البحري"
+        },
         {
           "id": 1790487346504.8647,
           "at": "2026-09-27T05:35:46.504Z",
