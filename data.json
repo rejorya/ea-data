@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T06:54:49.316Z",
+  "exportedAt": "2026-09-28T06:55:36.747Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33379,9 +33379,30 @@
       "kpi": "other",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-09-28",
+          "replied": false,
+          "responseMethod": "",
+          "note": "تم احله لخطاب للتقسيم للاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-27",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790578487251.011
+      "recordId": 1790578487251.011,
+      "manualCount": 1,
+      "followEntity": "other",
+      "otherEntityName": "جامعة السلطان قابوس",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -40645,6 +40666,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790578534600.4978,
+          "at": "2026-09-28T06:55:34.600Z",
+          "action": "إضافة متابعة",
+          "details": "الخطة المقترحة لتنفيذ مبدأ فرز النفايات من المصدر في جامعة السلطان قابوس"
+        },
+        {
+          "id": 1790578534541.4429,
+          "at": "2026-09-28T06:55:34.541Z",
+          "action": "تعديل موضوع",
+          "details": "الخطة المقترحة لتنفيذ مبدأ فرز النفايات من المصدر في جامعة السلطان قابوس"
+        },
         {
           "id": 1790578487286.0098,
           "at": "2026-09-28T06:54:47.286Z",
