@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T07:21:05.485Z",
+  "exportedAt": "2026-09-28T07:22:26.885Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -28768,7 +28768,7 @@
       "slaDays": null,
       "kpi": "wd3",
       "note": "مدير التحول الرقمي\nالقانونية\nللمناقشة والمراجعة والافادة",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-08-04",
@@ -28823,9 +28823,14 @@
       "manualCount": 4,
       "followEntity": "rais_depts",
       "raisDeptName": "",
-      "responseMethod": "",
+      "responseMethod": "direct_manager",
       "transactionType": "followup",
-      "recordId": 1785818220785.8765
+      "recordId": 1785818220785.8765,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "",
+      "closedAt": "2026-09-28",
+      "followScope": "external"
     },
     {
       "id": 1785818678730.6252,
@@ -35246,6 +35251,89 @@
       "archivedAt": "2026-09-28T07:14:14.542Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1785818220785.8765,
+      "title": "عقد الدراسة الاستشارية مه مجموعة إذكاء بخصوص  مشروع  بنك المعلومات البيئية.pdf",
+      "from": "شركة إدارة التحول الرقمي",
+      "docNo": "1170/3/2022v412-61",
+      "toEntity": "مدير التحول الرقمي/الدائرة القانونية",
+      "taqseemName": "مدير التحول الرقمي/الدائرة القانونية",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-03",
+      "followStart": "2026-08-04",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wd3",
+      "note": "مدير التحول الرقمي\nالقانونية\nللمناقشة والمراجعة والافادة",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-08-04",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-04",
+          "daysSince": 0
+        },
+        {
+          "date": "2026-08-06",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-04",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-08-10",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-04",
+          "daysSince": 4
+        },
+        {
+          "date": "2026-09-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "esc",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-04",
+          "daysSince": 28
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 4,
+      "followEntity": "rais_depts",
+      "raisDeptName": "",
+      "responseMethod": "direct_manager",
+      "transactionType": "followup",
+      "recordId": 1785818220785.8765,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "",
+      "closedAt": "2026-09-28",
+      "followScope": "external",
+      "archivedAt": "2026-09-28T07:22:24.771Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -40932,6 +41020,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790580144748.726,
+          "at": "2026-09-28T07:22:24.748Z",
+          "action": "تعديل موضوع",
+          "details": "عقد الدراسة الاستشارية مه مجموعة إذكاء بخصوص  مشروع  بنك المعلومات البيئية.pdf"
+        },
         {
           "id": 1790580063331.2285,
           "at": "2026-09-28T07:21:03.331Z",
