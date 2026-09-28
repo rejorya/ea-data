@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T08:34:34.081Z",
+  "exportedAt": "2026-09-28T08:41:01.379Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32257,7 +32257,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
-      "status": "awaiting_div",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-23",
@@ -32296,8 +32296,10 @@
       "recordId": 1790148820020.7178,
       "manualCount": 2,
       "followEntity": "taqseem",
-      "responseMethod": "",
-      "divFollowDate": "2026-09-24"
+      "responseMethod": "direct_manager",
+      "divFollowDate": "2026-09-24",
+      "correspondenceDirection": "",
+      "closedAt": "2026-09-28"
     },
     {
       "id": 1790225187962.9585,
@@ -35654,6 +35656,75 @@
       "closedAt": "2026-09-28",
       "followScope": "internal",
       "archivedAt": "2026-09-28T08:10:43.704Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1790148820020.7178,
+      "transactionType": "followup",
+      "title": "تقرير مشاركة بلدية ظفار في الدورة السابعة عشر لمؤتمر الاطراف في اتفاقية الامم المتحدة لمكافحة التصحر العنوان",
+      "from": "بلدية مسقط",
+      "docNo": "1170/3/2022v419-29",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "المديرية العامة لتنمية الغطاء النباتي",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-21",
+      "receivedFollowDate": "2026-09-23",
+      "presidentDirection": "نائب الرئيس\nللاطلاع والافادة",
+      "createdAt": "2026-09-23T07:33:40.020Z",
+      "followStart": "2026-09-21",
+      "type": "ext",
+      "followScope": "external",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-23",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-21",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة لتنمية الغطاء النباتي",
+          "startDate": "2026-09-21",
+          "daysSince": 3
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790148820020.7178,
+      "manualCount": 2,
+      "followEntity": "taqseem",
+      "responseMethod": "direct_manager",
+      "divFollowDate": "2026-09-24",
+      "correspondenceDirection": "",
+      "closedAt": "2026-09-28",
+      "archivedAt": "2026-09-28T08:40:47.587Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -41342,6 +41413,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790584847563.9724,
+          "at": "2026-09-28T08:40:47.563Z",
+          "action": "تعديل موضوع",
+          "details": "تقرير مشاركة بلدية ظفار في الدورة السابعة عشر لمؤتمر الاطراف في اتفاقية الامم المتحدة لمكافحة التصحر العنوان"
+        },
         {
           "id": 1790584451365.7378,
           "at": "2026-09-28T08:34:11.365Z",
