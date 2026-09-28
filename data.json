@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T07:12:18.742Z",
+  "exportedAt": "2026-09-28T07:12:42.972Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33569,7 +33569,11 @@
       "status": "new",
       "followups": [],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790579536686.3147
+      "recordId": 1790579536686.3147,
+      "manualCount": 0,
+      "followEntity": "other",
+      "otherEntityName": "الأمانة العامة لمجلس الوزراء",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -40833,6 +40837,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790579560813.4436,
+          "at": "2026-09-28T07:12:40.813Z",
+          "action": "تعديل موضوع",
+          "details": "دعوة للمشاركة في الصالون الدولي لاسترجاع وتثمين النفايات بالجزائر"
+        },
         {
           "id": 1790579536720.683,
           "at": "2026-09-28T07:12:16.720Z",
