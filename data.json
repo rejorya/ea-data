@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T07:09:45.549Z",
+  "exportedAt": "2026-09-28T07:10:21.440Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33520,9 +33520,30 @@
       "kpi": "other",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-09-28",
+          "replied": false,
+          "responseMethod": "",
+          "note": "تم احالته للدائرة للمتابعة للاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-27",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790579383487.4158
+      "recordId": 1790579383487.4158,
+      "manualCount": 1,
+      "followEntity": "other",
+      "otherEntityName": "وزارة العدل والشؤون القانونية",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -40786,6 +40807,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790579419285.3137,
+          "at": "2026-09-28T07:10:19.285Z",
+          "action": "إضافة متابعة",
+          "details": "المشاركة في ملتقى «الإدارة السليمة لاستخدام المواد الكيميائية والتشريعات المنظمة لها»"
+        },
+        {
+          "id": 1790579419225.5928,
+          "at": "2026-09-28T07:10:19.225Z",
+          "action": "تعديل موضوع",
+          "details": "المشاركة في ملتقى «الإدارة السليمة لاستخدام المواد الكيميائية والتشريعات المنظمة لها»"
+        },
         {
           "id": 1790579383519.8687,
           "at": "2026-09-28T07:09:43.519Z",
