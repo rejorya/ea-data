@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T07:04:51.471Z",
+  "exportedAt": "2026-09-28T07:05:28.689Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33473,9 +33473,30 @@
       "kpi": "other",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-09-28",
+          "replied": false,
+          "responseMethod": "",
+          "note": "تم احالتها للتقسيم للاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-27",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790579071129.4922
+      "recordId": 1790579071129.4922,
+      "manualCount": 1,
+      "followEntity": "other",
+      "otherEntityName": "وزارة الطاقة والمعادن",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -40739,6 +40760,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790579126535.1443,
+          "at": "2026-09-28T07:05:26.535Z",
+          "action": "إضافة متابعة",
+          "details": "طلب الموقف الرسمي النهائي بشأن المحميات الطبيعية المقترحة"
+        },
+        {
+          "id": 1790579126475.9502,
+          "at": "2026-09-28T07:05:26.475Z",
+          "action": "تعديل موضوع",
+          "details": "طلب الموقف الرسمي النهائي بشأن المحميات الطبيعية المقترحة"
+        },
         {
           "id": 1790579089323.7842,
           "at": "2026-09-28T07:04:49.323Z",
