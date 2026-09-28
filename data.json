@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T08:24:22.361Z",
+  "exportedAt": "2026-09-28T08:25:31.530Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31801,7 +31801,11 @@
       "responseMethod": "",
       "otherEntityName": "جامعة السلطان قابوس",
       "transactionType": "followup",
-      "recordId": 1789985424100.699
+      "recordId": 1789985424100.699,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "out",
+      "followScope": "external"
     },
     {
       "id": 1790048686178.394,
@@ -41301,6 +41305,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790583928753.162,
+          "at": "2026-09-28T08:25:28.753Z",
+          "action": "تعديل موضوع",
+          "details": "الموافقة على إقامة ورشة لإطلاق مشروع تطبيق مبدأ فرز النفايات من المصدر بجامعة السلطان قابوس"
+        },
         {
           "id": 1790583859543.061,
           "at": "2026-09-28T08:24:19.543Z",
