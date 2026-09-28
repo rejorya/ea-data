@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T07:04:33.194Z",
+  "exportedAt": "2026-09-28T07:04:51.471Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33263,8 +33263,8 @@
       "docNo": "1170/3/2022v420-10",
       "toEntity": "وزارة الدفاع",
       "taqseemName": "",
-      "priority": "normal",
-      "confidentiality": "normal",
+      "priority": "urgent",
+      "confidentiality": "secret",
       "date": "2026-09-27",
       "receivedFollowDate": "2026-09-27",
       "followStart": "2026-09-27",
@@ -40739,6 +40739,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790579089323.7842,
+          "at": "2026-09-28T07:04:49.323Z",
+          "action": "تعديل موضوع",
+          "details": "طلب الموقف الرسمي النهائي بشأن المحميات الطبيعية المقترحة"
+        },
         {
           "id": 1790579071168.2842,
           "at": "2026-09-28T07:04:31.168Z",
