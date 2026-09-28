@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T06:41:51.928Z",
+  "exportedAt": "2026-09-28T06:42:45.423Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33271,15 +33271,44 @@
       "type": "ext",
       "followScope": "external",
       "correspondenceDirection": "out",
-      "externalEntities": [],
+      "externalEntities": [
+        {
+          "id": 1790577729258.088,
+          "name": "وزارة الدفاع",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        }
+      ],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "other",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-09-28",
+          "replied": false,
+          "responseMethod": "",
+          "note": "تم احالة الخطاب للتقسيم للاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-27",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790577709862.3247
+      "recordId": 1790577709862.3247,
+      "manualCount": 1,
+      "followEntity": "other",
+      "otherEntityName": "وزارة الدفاع",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -40543,6 +40572,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790577762709.8252,
+          "at": "2026-09-28T06:42:42.709Z",
+          "action": "إضافة متابعة",
+          "details": "طلب الموقف الرسمي النهائي بشأن المحميات الطبيعية المقترحة"
+        },
+        {
+          "id": 1790577762652.706,
+          "at": "2026-09-28T06:42:42.652Z",
+          "action": "تعديل موضوع",
+          "details": "طلب الموقف الرسمي النهائي بشأن المحميات الطبيعية المقترحة"
+        },
         {
           "id": 1790577709898.893,
           "at": "2026-09-28T06:41:49.898Z",
