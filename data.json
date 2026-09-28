@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T06:15:21.775Z",
+  "exportedAt": "2026-09-28T06:16:17.594Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33161,6 +33161,32 @@
       "followEntity": "rais_depts",
       "raisDeptName": "التحول الرقمي",
       "responseMethod": ""
+    },
+    {
+      "id": 1790576175474.0667,
+      "transactionType": "followup",
+      "title": "مستجدات حالة التلوث الزيتي البحري والساحلي بمنطقة دور صني وخور شيصة بولاية خصب والمخاطر والإجراءات المقترحة",
+      "from": "محافظة مسندم",
+      "docNo": "1170/3/2022v420-6",
+      "toEntity": "مركز الطوارئ البيئية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-27",
+      "receivedFollowDate": "2026-09-27",
+      "followStart": "2026-09-27",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "rais",
+      "slaDays": 3,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790576175474.0667
     }
   ],
   "archivedTopics": [
@@ -40422,7 +40448,15 @@
       "loginAt": "2026-09-28T06:15:18.020Z",
       "logoutAt": null,
       "duration": null,
-      "logoutReason": null
+      "logoutReason": null,
+      "actions": [
+        {
+          "id": 1790576175547.0671,
+          "at": "2026-09-28T06:16:15.547Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "مستجدات حالة التلوث الزيتي البحري والساحلي بمنطقة دور صني وخور شيصة بولاية خصب والمخاطر والإجراءات المقترحة"
+        }
+      ]
     },
     {
       "id": 1790568091965.3494,
