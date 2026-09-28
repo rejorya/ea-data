@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T06:42:45.423Z",
+  "exportedAt": "2026-09-28T06:48:46.321Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33309,6 +33309,32 @@
       "followEntity": "other",
       "otherEntityName": "وزارة الدفاع",
       "responseMethod": ""
+    },
+    {
+      "id": 1790578124247.0896,
+      "transactionType": "followup",
+      "title": "المسودة النهائية للاستراتيجية الوطنية المتكاملة لإدارة المواد الكيميائية في سلطنة عُمان وخطتها التنفيذية",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v420-21",
+      "toEntity": "غرفة تجارة وصناعة عُمان",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-27",
+      "receivedFollowDate": "2026-09-27",
+      "followStart": "2026-09-27",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790578124247.0896
     }
   ],
   "archivedTopics": [
@@ -40572,6 +40598,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790578124284.3225,
+          "at": "2026-09-28T06:48:44.284Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "المسودة النهائية للاستراتيجية الوطنية المتكاملة لإدارة المواد الكيميائية في سلطنة عُمان وخطتها التنفيذية"
+        },
         {
           "id": 1790577762709.8252,
           "at": "2026-09-28T06:42:42.709Z",
