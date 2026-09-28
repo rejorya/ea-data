@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T09:32:05.300Z",
+  "exportedAt": "2026-09-28T09:32:20.456Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33479,7 +33479,7 @@
       "slaDays": 3,
       "kpi": "",
       "note": "نائب الرئيس\nمركز الطوارئ\nلاعداد التصور حول الفريق وكذلك حول الموازنات المطلوبة لتعيين شركات متخصصة للتعامل مع حوادث الانسكاب الزيتي في مسندم\n\nوذلك خلال ٣ ايام عمل",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-28",
@@ -33519,7 +33519,8 @@
       "manualCount": 2,
       "followEntity": "rais_depts",
       "raisDeptName": "مركز الطوارئ البيئية",
-      "responseMethod": "direct_manager"
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-09-28"
     },
     {
       "id": 1790576869870.932,
@@ -36066,6 +36067,73 @@
       "responseMethod": "direct_manager",
       "closedAt": "2026-09-28",
       "archivedAt": "2026-09-28T09:24:27.584Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1790576175474.0667,
+      "transactionType": "followup",
+      "title": "مستجدات حالة التلوث الزيتي البحري والساحلي بمنطقة دور صني وخور شيصة بولاية خصب والمخاطر والإجراءات المقترحة",
+      "from": "محافظة مسندم",
+      "docNo": "1170/3/2022v420-6",
+      "toEntity": "مركز الطوارئ البيئية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-09-27",
+      "receivedFollowDate": "2026-09-27",
+      "followStart": "2026-09-27",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "rais",
+      "slaDays": 3,
+      "kpi": "",
+      "note": "نائب الرئيس\nمركز الطوارئ\nلاعداد التصور حول الفريق وكذلك حول الموازنات المطلوبة لتعيين شركات متخصصة للتعامل مع حوادث الانسكاب الزيتي في مسندم\n\nوذلك خلال ٣ ايام عمل",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-28",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-27",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-09-28",
+          "replied": true,
+          "responseMethod": "direct_manager",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-27",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790576175474.0667,
+      "manualCount": 2,
+      "followEntity": "rais_depts",
+      "raisDeptName": "مركز الطوارئ البيئية",
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-09-28",
+      "archivedAt": "2026-09-28T09:32:18.337Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -41754,6 +41822,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790587938315.294,
+          "at": "2026-09-28T09:32:18.315Z",
+          "action": "تعديل موضوع",
+          "details": "مستجدات حالة التلوث الزيتي البحري والساحلي بمنطقة دور صني وخور شيصة بولاية خصب والمخاطر والإجراءات المقترحة"
+        },
         {
           "id": 1790587923176.689,
           "at": "2026-09-28T09:32:03.176Z",
