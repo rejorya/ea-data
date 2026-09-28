@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T06:55:36.747Z",
+  "exportedAt": "2026-09-28T06:59:10.704Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33403,6 +33403,32 @@
       "followEntity": "other",
       "otherEntityName": "جامعة السلطان قابوس",
       "responseMethod": ""
+    },
+    {
+      "id": 1790578748635.2563,
+      "transactionType": "followup",
+      "title": "طلب ترشيح ممثل لعضوية اللجنة التوجيهية لمشروع اِزرع عُمان 2050",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v420-19",
+      "toEntity": "هيئة الخدمات المالية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-27",
+      "receivedFollowDate": "2026-09-27",
+      "followStart": "2026-09-27",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790578748635.2563
     }
   ],
   "archivedTopics": [
@@ -40666,6 +40692,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790578748670.7852,
+          "at": "2026-09-28T06:59:08.670Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب ترشيح ممثل لعضوية اللجنة التوجيهية لمشروع اِزرع عُمان 2050"
+        },
         {
           "id": 1790578534600.4978,
           "at": "2026-09-28T06:55:34.600Z",
