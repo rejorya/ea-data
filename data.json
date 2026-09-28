@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T09:32:20.456Z",
+  "exportedAt": "2026-09-28T09:50:47.602Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33197,7 +33197,7 @@
       "slaDays": null,
       "kpi": "doc2",
       "note": "",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-24",
@@ -33237,7 +33237,8 @@
       "manualCount": 2,
       "followEntity": "naib_office",
       "responseMethod": "",
-      "correspondenceDirection": ""
+      "correspondenceDirection": "",
+      "closedAt": "2026-09-28"
     },
     {
       "id": 1790485791088.0447,
@@ -36134,6 +36135,74 @@
       "responseMethod": "direct_manager",
       "closedAt": "2026-09-28",
       "archivedAt": "2026-09-28T09:32:18.337Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1790245634131.9485,
+      "transactionType": "followup",
+      "title": "ملتقى أخلاقيات البحوث الإنسانية والبيئية..هيئة البيئة",
+      "from": "جامعة السلطان قابوس",
+      "docNo": "1170/3/2022v419-65",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-23",
+      "receivedFollowDate": "2026-09-24",
+      "presidentDirection": "ترشح الدكتورة مريم البوسعيدي",
+      "createdAt": "2026-09-24T10:27:14.131Z",
+      "followStart": "2026-09-24",
+      "type": "int",
+      "followScope": "internal",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "doc2",
+      "note": "",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 0
+        },
+        {
+          "date": "2026-09-27",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790245634131.9485,
+      "manualCount": 2,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "correspondenceDirection": "",
+      "closedAt": "2026-09-28",
+      "archivedAt": "2026-09-28T09:50:45.458Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -41822,6 +41891,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790589045434.571,
+          "at": "2026-09-28T09:50:45.434Z",
+          "action": "تعديل موضوع",
+          "details": "ملتقى أخلاقيات البحوث الإنسانية والبيئية..هيئة البيئة"
+        },
         {
           "id": 1790587938315.294,
           "at": "2026-09-28T09:32:18.315Z",
