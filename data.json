@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T06:16:17.594Z",
+  "exportedAt": "2026-09-28T06:17:49.409Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33171,7 +33171,7 @@
       "toEntity": "مركز الطوارئ البيئية",
       "taqseemName": "",
       "priority": "normal",
-      "confidentiality": "normal",
+      "confidentiality": "secret",
       "date": "2026-09-27",
       "receivedFollowDate": "2026-09-27",
       "followStart": "2026-09-27",
@@ -33182,11 +33182,32 @@
       "slaMode": "rais",
       "slaDays": 3,
       "kpi": "",
-      "note": "",
-      "status": "new",
-      "followups": [],
+      "note": "نائب الرئيس\nمركز الطوارئ\nلاعداد التصور حول الفريق وكذلك حول الموازنات المطلوبة لتعيين شركات متخصصة للتعامل مع حوادث الانسكاب الزيتي في مسندم\n\nوذلك خلال ٣ ايام عمل",
+      "status": "open",
+      "followups": [
+        {
+          "date": "2026-09-28",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-27",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790576175474.0667
+      "recordId": 1790576175474.0667,
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "مركز الطوارئ البيئية",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -40450,6 +40471,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790576267013.757,
+          "at": "2026-09-28T06:17:47.013Z",
+          "action": "إضافة متابعة",
+          "details": "مستجدات حالة التلوث الزيتي البحري والساحلي بمنطقة دور صني وخور شيصة بولاية خصب والمخاطر والإجراءات المقترحة"
+        },
+        {
+          "id": 1790576266953.1343,
+          "at": "2026-09-28T06:17:46.953Z",
+          "action": "تعديل موضوع",
+          "details": "مستجدات حالة التلوث الزيتي البحري والساحلي بمنطقة دور صني وخور شيصة بولاية خصب والمخاطر والإجراءات المقترحة"
+        },
         {
           "id": 1790576175547.0671,
           "at": "2026-09-28T06:16:15.547Z",
