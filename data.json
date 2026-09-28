@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T09:10:15.986Z",
+  "exportedAt": "2026-09-28T09:11:47.098Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33137,8 +33137,10 @@
       "sheet": "مُضاف يدوياً",
       "recordId": 1790243840481.5815,
       "manualCount": 1,
-      "followEntity": "",
-      "responseMethod": ""
+      "followEntity": "other",
+      "responseMethod": "",
+      "correspondenceDirection": "out",
+      "otherEntityName": "هيئة تنظيم الخدمات العامة"
     },
     {
       "id": 1790245634131.9485,
@@ -41505,6 +41507,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790586703562.141,
+          "at": "2026-09-28T09:11:43.562Z",
+          "action": "تعديل موضوع",
+          "details": "تقديم عرض حول خطوط المياه وفرص الاستفادة من المياه المعالجة"
+        },
         {
           "id": 1790586613821.4084,
           "at": "2026-09-28T09:10:13.821Z",
