@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T07:10:21.440Z",
+  "exportedAt": "2026-09-28T07:12:18.742Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33544,6 +33544,32 @@
       "followEntity": "other",
       "otherEntityName": "وزارة العدل والشؤون القانونية",
       "responseMethod": ""
+    },
+    {
+      "id": 1790579536686.3147,
+      "transactionType": "followup",
+      "title": "دعوة للمشاركة في الصالون الدولي لاسترجاع وتثمين النفايات بالجزائر",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v420-17",
+      "toEntity": "الأمانة العامة لمجلس الوزراء",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-09-27",
+      "receivedFollowDate": "2026-09-27",
+      "followStart": "2026-09-27",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790579536686.3147
     }
   ],
   "archivedTopics": [
@@ -40807,6 +40833,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790579536720.683,
+          "at": "2026-09-28T07:12:16.720Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "دعوة للمشاركة في الصالون الدولي لاسترجاع وتثمين النفايات بالجزائر"
+        },
         {
           "id": 1790579419285.3137,
           "at": "2026-09-28T07:10:19.285Z",
