@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T08:27:45.885Z",
+  "exportedAt": "2026-09-28T08:31:40.143Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32019,11 +32019,27 @@
           "taqseem": "",
           "startDate": "2026-09-20",
           "daysSince": 5
+        },
+        {
+          "date": "2026-09-28",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_and_rais",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-20",
+          "daysSince": 6
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790139832332.6987,
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "naib_and_rais",
       "raisDeptName": "الدائرة القانونية",
       "responseMethod": "via_follow",
@@ -41309,6 +41325,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790584298014.0652,
+          "at": "2026-09-28T08:31:38.014Z",
+          "action": "إضافة متابعة",
+          "details": "الوقائع المرتبطة بتنفيذ أمر الشراء رقم (14/2025) الخاص بإعداد وإخراج مجلة (رفراف)"
+        },
+        {
+          "id": 1790584297948.2612,
+          "at": "2026-09-28T08:31:37.948Z",
+          "action": "تعديل موضوع",
+          "details": "الوقائع المرتبطة بتنفيذ أمر الشراء رقم (14/2025) الخاص بإعداد وإخراج مجلة (رفراف)"
+        },
         {
           "id": 1790584063727.298,
           "at": "2026-09-28T08:27:43.727Z",
