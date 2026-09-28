@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T07:44:42.028Z",
+  "exportedAt": "2026-09-28T07:46:44.564Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31467,15 +31467,35 @@
           "taqseem": "",
           "startDate": "2026-09-15",
           "daysSince": 3
+        },
+        {
+          "date": "2026-09-28",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-15",
+          "daysSince": 9
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "rais_depts",
       "raisDeptName": "مركز الطوارئ البيئية",
       "responseMethod": "",
       "transactionType": "followup",
-      "recordId": 1789878428221.8396
+      "recordId": 1789878428221.8396,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "",
+      "followScope": "external"
     },
     {
       "id": 1789879161002.0417,
@@ -41206,6 +41226,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790581600145.6543,
+          "at": "2026-09-28T07:46:40.145Z",
+          "action": "إضافة متابعة",
+          "details": "مقترح فني لعمليات المعالجة الجوية للتسريبات النفطية في سلطنة عُمان."
+        },
+        {
+          "id": 1790581600087.114,
+          "at": "2026-09-28T07:46:40.087Z",
+          "action": "تعديل موضوع",
+          "details": "مقترح فني لعمليات المعالجة الجوية للتسريبات النفطية في سلطنة عُمان."
+        },
         {
           "id": 1790581479896.2925,
           "at": "2026-09-28T07:44:39.896Z",
