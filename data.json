@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T06:59:10.704Z",
+  "exportedAt": "2026-09-28T06:59:53.844Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33426,9 +33426,30 @@
       "kpi": "other",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-09-28",
+          "replied": false,
+          "responseMethod": "",
+          "note": "تم احالتها للتقسيم للاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-27",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790578748635.2563
+      "recordId": 1790578748635.2563,
+      "manualCount": 1,
+      "followEntity": "other",
+      "otherEntityName": "هيئة الخدمات المالية",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -40692,6 +40713,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790578791704.0344,
+          "at": "2026-09-28T06:59:51.704Z",
+          "action": "إضافة متابعة",
+          "details": "طلب ترشيح ممثل لعضوية اللجنة التوجيهية لمشروع اِزرع عُمان 2050"
+        },
+        {
+          "id": 1790578791645.1196,
+          "at": "2026-09-28T06:59:51.646Z",
+          "action": "تعديل موضوع",
+          "details": "طلب ترشيح ممثل لعضوية اللجنة التوجيهية لمشروع اِزرع عُمان 2050"
+        },
         {
           "id": 1790578748670.7852,
           "at": "2026-09-28T06:59:08.670Z",
