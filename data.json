@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T07:29:16.748Z",
+  "exportedAt": "2026-09-28T07:31:05.052Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -29958,7 +29958,7 @@
       "slaDays": null,
       "kpi": "rpt14",
       "note": "نائب الرئيس\nمركز الطوارئ\nلاعداد تقرير لتوضيح الملابسات الواردة في التقرير والرد عليها فيما يخص مصدر التلوث واضراره والكلفة الباهضة له ",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-13",
@@ -29977,9 +29977,14 @@
       "manualCount": 1,
       "followEntity": "naib_and_rais",
       "raisDeptName": "نائب الرئيس/مركز الطوارئ البيئية",
-      "responseMethod": "",
+      "responseMethod": "direct_manager",
       "transactionType": "followup",
-      "recordId": 1789274571645.4478
+      "recordId": 1789274571645.4478,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "",
+      "closedAt": "2026-09-28",
+      "followScope": "external"
     },
     {
       "id": 1789277456356.2717,
@@ -35369,6 +35374,53 @@
       "closedAt": "2026-09-28",
       "followScope": "external",
       "archivedAt": "2026-09-28T07:22:24.771Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1789274571645.4478,
+      "title": "السفينة المتضررة (Caroline Bezengl)",
+      "from": "دائرة التعاون الدولي",
+      "docNo": "",
+      "toEntity": "نائب الرئيس/مركز الطوارئ البيئية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-10",
+      "followStart": "2026-09-10",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "rpt14",
+      "note": "نائب الرئيس\nمركز الطوارئ\nلاعداد تقرير لتوضيح الملابسات الواردة في التقرير والرد عليها فيما يخص مصدر التلوث واضراره والكلفة الباهضة له ",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_and_rais",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "naib_and_rais",
+      "raisDeptName": "نائب الرئيس/مركز الطوارئ البيئية",
+      "responseMethod": "direct_manager",
+      "transactionType": "followup",
+      "recordId": 1789274571645.4478,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "",
+      "closedAt": "2026-09-28",
+      "followScope": "external",
+      "archivedAt": "2026-09-28T07:31:02.927Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -41057,6 +41109,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790580662904.526,
+          "at": "2026-09-28T07:31:02.904Z",
+          "action": "تعديل موضوع",
+          "details": "السفينة المتضررة (Caroline Bezengl)"
+        },
         {
           "id": 1790580554593.3972,
           "at": "2026-09-28T07:29:14.593Z",
