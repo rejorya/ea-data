@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T06:49:29.433Z",
+  "exportedAt": "2026-09-28T06:54:49.316Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33356,6 +33356,32 @@
       "followEntity": "other",
       "otherEntityName": "غرفة تجارة وصناعة عُمان",
       "responseMethod": ""
+    },
+    {
+      "id": 1790578487251.011,
+      "transactionType": "followup",
+      "title": "الخطة المقترحة لتنفيذ مبدأ فرز النفايات من المصدر في جامعة السلطان قابوس",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v420-18",
+      "toEntity": "جامعة السلطان قابوس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-27",
+      "receivedFollowDate": "2026-09-27",
+      "followStart": "2026-09-27",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790578487251.011
     }
   ],
   "archivedTopics": [
@@ -40619,6 +40645,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790578487286.0098,
+          "at": "2026-09-28T06:54:47.286Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "الخطة المقترحة لتنفيذ مبدأ فرز النفايات من المصدر في جامعة السلطان قابوس"
+        },
         {
           "id": 1790578167209.7166,
           "at": "2026-09-28T06:49:27.209Z",
