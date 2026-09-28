@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T07:42:41.817Z",
+  "exportedAt": "2026-09-28T07:44:42.028Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31094,14 +31094,34 @@
           "taqseem": "",
           "startDate": "2026-09-02",
           "daysSince": 11
+        },
+        {
+          "date": "2026-09-28",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-02",
+          "daysSince": 18
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "naib_office",
       "responseMethod": "",
       "transactionType": "followup",
-      "recordId": 1789640746547.1846
+      "recordId": 1789640746547.1846,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "",
+      "followScope": "external"
     },
     {
       "id": 1789643200619.7637,
@@ -41186,6 +41206,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790581479896.2925,
+          "at": "2026-09-28T07:44:39.896Z",
+          "action": "إضافة متابعة",
+          "details": "قائمة حصر المواد النووية والمشعة في سلطنة عمان"
+        },
+        {
+          "id": 1790581479837.0305,
+          "at": "2026-09-28T07:44:39.837Z",
+          "action": "تعديل موضوع",
+          "details": "قائمة حصر المواد النووية والمشعة في سلطنة عمان"
+        },
         {
           "id": 1790581359674.6555,
           "at": "2026-09-28T07:42:39.674Z",
