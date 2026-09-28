@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T06:59:53.844Z",
+  "exportedAt": "2026-09-28T07:04:33.194Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33450,6 +33450,32 @@
       "followEntity": "other",
       "otherEntityName": "هيئة الخدمات المالية",
       "responseMethod": ""
+    },
+    {
+      "id": 1790579071129.4922,
+      "transactionType": "followup",
+      "title": "طلب الموقف الرسمي النهائي بشأن المحميات الطبيعية المقترحة",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v420-16",
+      "toEntity": "وزارة الطاقة والمعادن",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "secret",
+      "date": "2026-09-27",
+      "receivedFollowDate": "2026-09-27",
+      "followStart": "2026-09-27",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790579071129.4922
     }
   ],
   "archivedTopics": [
@@ -40713,6 +40739,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790579071168.2842,
+          "at": "2026-09-28T07:04:31.168Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب الموقف الرسمي النهائي بشأن المحميات الطبيعية المقترحة"
+        },
         {
           "id": 1790578791704.0344,
           "at": "2026-09-28T06:59:51.704Z",
