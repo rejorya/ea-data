@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T09:26:50.486Z",
+  "exportedAt": "2026-09-28T09:30:18.215Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33870,6 +33870,32 @@
       "followEntity": "other",
       "otherEntityName": "الأمانة العامة لمجلس الوزراء",
       "responseMethod": ""
+    },
+    {
+      "id": 1790587816135.3389,
+      "transactionType": "followup",
+      "title": "الإجتماع السنوي الثالث عشر للجنة الفرعية للجنة المندوبين الدائمين المنعقد خلال الفترة 7-11 سبتمبر في مدينة نيروبي -الجمهورية الكينية",
+      "from": "نائب الرئيس",
+      "docNo": "",
+      "toEntity": "",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-09-27",
+      "receivedFollowDate": "2026-09-28",
+      "followStart": "2026-09-27",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "الدكتور ربيع\nالتعاون الدولي\nالموارد البشرية\nلوضع خطة مجدولة زمنيا لتفيذ التوصيات كاملة ورفعها للاعتماد",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790587816135.3389
     }
   ],
   "archivedTopics": [
@@ -41712,6 +41738,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790587816174.0608,
+          "at": "2026-09-28T09:30:16.174Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "الإجتماع السنوي الثالث عشر للجنة الفرعية للجنة المندوبين الدائمين المنعقد خلال الفترة 7-11 سبتمبر في مدينة نيروبي -الجمهورية الكينية"
+        },
         {
           "id": 1790587608340.7231,
           "at": "2026-09-28T09:26:48.340Z",
