@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T08:31:40.143Z",
+  "exportedAt": "2026-09-28T08:34:34.081Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32083,13 +32083,30 @@
           "taqseem": "",
           "startDate": "2026-09-21",
           "daysSince": 2
+        },
+        {
+          "date": "2026-09-28",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-21",
+          "daysSince": 5
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790140472850.1199,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "",
+      "correspondenceDirection": ""
     },
     {
       "id": 1790141614955.2498,
@@ -41325,6 +41342,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790584451365.7378,
+          "at": "2026-09-28T08:34:11.365Z",
+          "action": "إضافة متابعة",
+          "details": "طلب الموافقة على جمع أوراق شجرة العلعلان."
+        },
+        {
+          "id": 1790584451308.512,
+          "at": "2026-09-28T08:34:11.308Z",
+          "action": "تعديل موضوع",
+          "details": "طلب الموافقة على جمع أوراق شجرة العلعلان."
+        },
         {
           "id": 1790584298014.0652,
           "at": "2026-09-28T08:31:38.014Z",
