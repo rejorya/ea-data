@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T08:59:17.971Z",
+  "exportedAt": "2026-09-28T09:10:15.986Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33088,8 +33088,10 @@
       "sheet": "مُضاف يدوياً",
       "recordId": 1790241885374.2515,
       "manualCount": 0,
-      "followEntity": "",
-      "responseMethod": ""
+      "followEntity": "other",
+      "responseMethod": "",
+      "correspondenceDirection": "out",
+      "otherEntityName": "هيئة الخدمات المالية"
     },
     {
       "id": 1790243840481.5815,
@@ -41503,6 +41505,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790586613821.4084,
+          "at": "2026-09-28T09:10:13.821Z",
+          "action": "تعديل موضوع",
+          "details": "تقديم عرض حول آليات التمويل المتعلقة بالاستزراع والاقتصاد الأخضر"
+        },
         {
           "id": 1790585955811.8552,
           "at": "2026-09-28T08:59:15.811Z",
