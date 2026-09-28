@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T06:48:46.321Z",
+  "exportedAt": "2026-09-28T06:49:29.433Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33332,9 +33332,30 @@
       "kpi": "other",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-09-28",
+          "replied": false,
+          "responseMethod": "",
+          "note": "تم احالتا للتقسيم للاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-27",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790578124247.0896
+      "recordId": 1790578124247.0896,
+      "manualCount": 1,
+      "followEntity": "other",
+      "otherEntityName": "غرفة تجارة وصناعة عُمان",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -40598,6 +40619,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790578167209.7166,
+          "at": "2026-09-28T06:49:27.209Z",
+          "action": "إضافة متابعة",
+          "details": "المسودة النهائية للاستراتيجية الوطنية المتكاملة لإدارة المواد الكيميائية في سلطنة عُمان وخطتها التنفيذية"
+        },
+        {
+          "id": 1790578167150.33,
+          "at": "2026-09-28T06:49:27.150Z",
+          "action": "تعديل موضوع",
+          "details": "المسودة النهائية للاستراتيجية الوطنية المتكاملة لإدارة المواد الكيميائية في سلطنة عُمان وخطتها التنفيذية"
+        },
         {
           "id": 1790578124284.3225,
           "at": "2026-09-28T06:48:44.284Z",
