@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T09:24:29.686Z",
+  "exportedAt": "2026-09-28T09:26:50.486Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31341,13 +31341,29 @@
           "taqseem": "",
           "startDate": "2026-09-17",
           "daysSince": 6
+        },
+        {
+          "date": "2026-09-28",
+          "replied": true,
+          "responseMethod": "via_follow",
+          "note": "رقم خطاب الرد 1170/3/2022v420-28",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-17",
+          "daysSince": 7
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "other",
       "otherEntityName": "",
-      "responseMethod": "",
+      "responseMethod": "via_follow",
       "transactionType": "followup",
       "recordId": 1789877650603.5947,
       "externalEntities": [],
@@ -41696,6 +41712,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790587608340.7231,
+          "at": "2026-09-28T09:26:48.340Z",
+          "action": "إضافة متابعة",
+          "details": "مشاركة ممثلي الجهات أعضاء فريق العمل  في الزيارة الرسمية إلى جمهورية سنغافورة"
+        },
+        {
+          "id": 1790587608283.8452,
+          "at": "2026-09-28T09:26:48.283Z",
+          "action": "تعديل موضوع",
+          "details": "مشاركة ممثلي الجهات أعضاء فريق العمل  في الزيارة الرسمية إلى جمهورية سنغافورة"
+        },
         {
           "id": 1790587467561.956,
           "at": "2026-09-28T09:24:27.561Z",
