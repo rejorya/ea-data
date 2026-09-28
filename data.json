@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T06:28:59.044Z",
+  "exportedAt": "2026-09-28T06:41:51.928Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33254,6 +33254,32 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1790577709862.3247,
+      "transactionType": "followup",
+      "title": "طلب الموقف الرسمي النهائي بشأن المحميات الطبيعية المقترحة",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v420-10",
+      "toEntity": "وزارة الدفاع",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-27",
+      "receivedFollowDate": "2026-09-27",
+      "followStart": "2026-09-27",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790577709862.3247
     }
   ],
   "archivedTopics": [
@@ -40517,6 +40543,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790577709898.893,
+          "at": "2026-09-28T06:41:49.898Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب الموقف الرسمي النهائي بشأن المحميات الطبيعية المقترحة"
+        },
         {
           "id": 1790576936889.4158,
           "at": "2026-09-28T06:28:56.889Z",
