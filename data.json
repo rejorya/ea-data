@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T07:46:44.564Z",
+  "exportedAt": "2026-09-28T07:50:38.189Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31556,7 +31556,15 @@
       "followups": [],
       "sheet": "مُضاف يدوياً",
       "transactionType": "followup",
-      "recordId": 1789885506849.844
+      "recordId": 1789885506849.844,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "out",
+      "manualCount": 0,
+      "followScope": "external",
+      "followEntity": "other",
+      "otherEntityName": "الأمانة العامة لمجلس الوزراء",
+      "responseMethod": ""
     },
     {
       "id": 1789885624384.0776,
@@ -41226,6 +41234,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790581836033.847,
+          "at": "2026-09-28T07:50:36.033Z",
+          "action": "تعديل موضوع",
+          "details": "قمة قادة العالم"
+        },
         {
           "id": 1790581600145.6543,
           "at": "2026-09-28T07:46:40.145Z",
