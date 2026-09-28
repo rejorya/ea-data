@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T09:15:50.031Z",
+  "exportedAt": "2026-09-28T09:23:07.498Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33245,9 +33245,29 @@
       "kpi": "other",
       "note": "نائب الرئيس\nمركز الطوارئ\nلاجراءاتكم",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-09-28",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 2
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790485791088.0447
+      "recordId": 1790485791088.0447,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     },
     {
       "id": 1790487346468.0342,
@@ -41603,6 +41623,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790587385350.6367,
+          "at": "2026-09-28T09:23:05.350Z",
+          "action": "إضافة متابعة",
+          "details": "استضافة سلطنة عمان للدورة السابعة للمنصة العربية الإقليمية للحد من مخاطر الكوارث.pdf"
+        },
+        {
+          "id": 1790587385287.2246,
+          "at": "2026-09-28T09:23:05.287Z",
+          "action": "تعديل موضوع",
+          "details": "استضافة سلطنة عمان للدورة السابعة للمنصة العربية الإقليمية للحد من مخاطر الكوارث.pdf"
+        },
         {
           "id": 1790586947875.9485,
           "at": "2026-09-28T09:15:47.875Z",
