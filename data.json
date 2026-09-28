@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T09:24:13.826Z",
+  "exportedAt": "2026-09-28T09:24:29.686Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33342,7 +33342,7 @@
       "slaDays": null,
       "kpi": "wd3",
       "note": "الرؤية\nللافادة بالراي",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-28",
@@ -33366,7 +33366,8 @@
       "manualCount": 1,
       "followEntity": "rais_depts",
       "raisDeptName": "مكتب متابعة  تنفيذ رؤية عمان 2024",
-      "responseMethod": "direct_manager"
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-09-28"
     },
     {
       "id": 1790497093413.9426,
@@ -35956,6 +35957,57 @@
       "followScope": "external",
       "closedAt": "2026-09-28",
       "archivedAt": "2026-09-28T09:15:47.899Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1790495407876.232,
+      "transactionType": "followup",
+      "title": "تحديات تشغيلية لنظام تخطيط وإدارة موارد وأصول وعمليات هيئة البيئة (الـERP) لدى الشؤون الإدارية والمالية",
+      "from": "التحول الرقمي",
+      "docNo": "",
+      "toEntity": "مكتب الرؤية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-27",
+      "receivedFollowDate": "2026-09-27",
+      "followStart": "2026-09-27",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wd3",
+      "note": "الرؤية\nللافادة بالراي",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-28",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-27",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790495407876.232,
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "مكتب متابعة  تنفيذ رؤية عمان 2024",
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-09-28",
+      "archivedAt": "2026-09-28T09:24:27.584Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -41644,6 +41696,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790587467561.956,
+          "at": "2026-09-28T09:24:27.561Z",
+          "action": "تعديل موضوع",
+          "details": "تحديات تشغيلية لنظام تخطيط وإدارة موارد وأصول وعمليات هيئة البيئة (الـERP) لدى الشؤون الإدارية والمالية"
+        },
         {
           "id": 1790587451668.99,
           "at": "2026-09-28T09:24:11.668Z",
