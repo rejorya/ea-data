@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-28T07:05:28.689Z",
+  "exportedAt": "2026-09-28T07:09:45.549Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33497,6 +33497,32 @@
       "followEntity": "other",
       "otherEntityName": "وزارة الطاقة والمعادن",
       "responseMethod": ""
+    },
+    {
+      "id": 1790579383487.4158,
+      "transactionType": "followup",
+      "title": "المشاركة في ملتقى «الإدارة السليمة لاستخدام المواد الكيميائية والتشريعات المنظمة لها»",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v420-15",
+      "toEntity": "وزارة العدل والشؤون القانونية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-27",
+      "receivedFollowDate": "2026-09-27",
+      "followStart": "2026-09-27",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790579383487.4158
     }
   ],
   "archivedTopics": [
@@ -40760,6 +40786,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790579383519.8687,
+          "at": "2026-09-28T07:09:43.519Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "المشاركة في ملتقى «الإدارة السليمة لاستخدام المواد الكيميائية والتشريعات المنظمة لها»"
+        },
         {
           "id": 1790579126535.1443,
           "at": "2026-09-28T07:05:26.535Z",
