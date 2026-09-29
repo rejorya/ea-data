@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-29T06:06:57.205Z",
+  "exportedAt": "2026-09-29T06:07:34.065Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33964,9 +33964,30 @@
       "kpi": "",
       "note": "اخر موعد للتسليم 8 أكتوبر 2026",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-09-29",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-29",
+          "daysSince": 0
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790662015111.5461
+      "recordId": 1790662015111.5461,
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -42305,6 +42326,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790662051996.3733,
+          "at": "2026-09-29T06:07:31.996Z",
+          "action": "إضافة متابعة",
+          "details": "ابداء الراي حول مشروع مراجعة وتطوير عملية التميز  ضمن برنامج الانشان والمحيط الحيوي"
+        },
+        {
+          "id": 1790662051939.7275,
+          "at": "2026-09-29T06:07:31.939Z",
+          "action": "تعديل موضوع",
+          "details": "ابداء الراي حول مشروع مراجعة وتطوير عملية التميز  ضمن برنامج الانشان والمحيط الحيوي"
+        },
         {
           "id": 1790662015173.6038,
           "at": "2026-09-29T06:06:55.174Z",
