@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-29T04:35:40.728Z",
+  "exportedAt": "2026-09-29T04:36:32.494Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33261,7 +33261,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "نائب الرئيس\nمركز الطوارئ\nلاجراءاتكم",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-28",
@@ -33278,13 +33278,32 @@
           "taqseem": "",
           "startDate": "2026-09-24",
           "daysSince": 2
+        },
+        {
+          "date": "2026-09-27",
+          "replied": true,
+          "responseMethod": "via_follow",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 1
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790485791088.0447,
-      "manualCount": 1,
-      "followEntity": "",
-      "responseMethod": ""
+      "manualCount": 2,
+      "followEntity": "rais_depts",
+      "responseMethod": "via_follow",
+      "closedAt": "2026-09-29",
+      "raisDeptName": "مركز الطوارئ البيئية"
     },
     {
       "id": 1790487346468.0342,
@@ -36225,6 +36244,74 @@
       "correspondenceDirection": "",
       "closedAt": "2026-09-28",
       "archivedAt": "2026-09-28T09:50:45.458Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1790485791088.0447,
+      "transactionType": "followup",
+      "title": "استضافة سلطنة عمان للدورة السابعة للمنصة العربية الإقليمية للحد من مخاطر الكوارث.pdf",
+      "from": "وزارة الخارجية",
+      "docNo": "1170/3/2022v416-11",
+      "toEntity": "نائب الرئيس/مركز الطوارئ",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-01",
+      "receivedFollowDate": "2026-09-24",
+      "followStart": "2026-09-24",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "نائب الرئيس\nمركز الطوارئ\nلاجراءاتكم",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-28",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-09-27",
+          "replied": true,
+          "responseMethod": "via_follow",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790485791088.0447,
+      "manualCount": 2,
+      "followEntity": "rais_depts",
+      "responseMethod": "via_follow",
+      "closedAt": "2026-09-29",
+      "raisDeptName": "مركز الطوارئ البيئية",
+      "archivedAt": "2026-09-29T04:36:30.444Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -41913,6 +42000,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790656590420.994,
+          "at": "2026-09-29T04:36:30.420Z",
+          "action": "إضافة متابعة",
+          "details": "استضافة سلطنة عمان للدورة السابعة للمنصة العربية الإقليمية للحد من مخاطر الكوارث.pdf"
+        },
+        {
+          "id": 1790656590360.476,
+          "at": "2026-09-29T04:36:30.360Z",
+          "action": "تعديل موضوع",
+          "details": "استضافة سلطنة عمان للدورة السابعة للمنصة العربية الإقليمية للحد من مخاطر الكوارث.pdf"
+        },
         {
           "id": 1790655153513.0144,
           "at": "2026-09-29T04:12:33.513Z",
