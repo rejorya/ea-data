@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-29T04:11:40.706Z",
+  "exportedAt": "2026-09-29T04:12:40.708Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33895,7 +33895,7 @@
       "title": "الإجتماع السنوي الثالث عشر للجنة الفرعية للجنة المندوبين الدائمين المنعقد خلال الفترة 7-11 سبتمبر في مدينة نيروبي -الجمهورية الكينية",
       "from": "نائب الرئيس",
       "docNo": "",
-      "toEntity": "",
+      "toEntity": "نائب الرئيس- دائرة التعاون الدولي",
       "taqseemName": "",
       "priority": "normal",
       "confidentiality": "secret",
@@ -33910,10 +33910,32 @@
       "slaDays": null,
       "kpi": "other",
       "note": "الدكتور ربيع\nالتعاون الدولي\nالموارد البشرية\nلوضع خطة مجدولة زمنيا لتفيذ التوصيات كاملة ورفعها للاعتماد",
-      "status": "new",
-      "followups": [],
+      "status": "open",
+      "followups": [
+        {
+          "date": "2026-09-29",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_and_rais",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-27",
+          "daysSince": 2
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790587816135.3389
+      "recordId": 1790587816135.3389,
+      "manualCount": 1,
+      "followEntity": "naib_and_rais",
+      "raisDeptName": "دائرة التعاون الدولي",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -41889,7 +41911,21 @@
       "loginAt": "2026-09-29T04:05:03.507Z",
       "logoutAt": null,
       "duration": null,
-      "logoutReason": null
+      "logoutReason": null,
+      "actions": [
+        {
+          "id": 1790655153513.0144,
+          "at": "2026-09-29T04:12:33.513Z",
+          "action": "إضافة متابعة",
+          "details": "الإجتماع السنوي الثالث عشر للجنة الفرعية للجنة المندوبين الدائمين المنعقد خلال الفترة 7-11 سبتمبر في مدينة نيروبي -الجمهورية الكينية"
+        },
+        {
+          "id": 1790655153446.233,
+          "at": "2026-09-29T04:12:33.446Z",
+          "action": "تعديل موضوع",
+          "details": "الإجتماع السنوي الثالث عشر للجنة الفرعية للجنة المندوبين الدائمين المنعقد خلال الفترة 7-11 سبتمبر في مدينة نيروبي -الجمهورية الكينية"
+        }
+      ]
     },
     {
       "id": 1790576118021.043,
