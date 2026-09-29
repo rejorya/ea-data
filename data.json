@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-29T05:59:41.780Z",
+  "exportedAt": "2026-09-29T06:00:06.918Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -30612,7 +30612,7 @@
       "slaDays": 30,
       "kpi": "other",
       "note": "الادارية والمالية\nمكتب الرؤية\nللتنسق مع التخطيط وايجاد مسار مناسب للتخطيط المالي للخطط السنوية بما يحقق الخطة الخمسية للهيئة وذلك خلال شهر",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-15",
@@ -30670,7 +30670,11 @@
       "responseMethod": "via_follow",
       "transactionType": "followup",
       "recordId": 1789453689725.6372,
-      "externalEntities": []
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "",
+      "closedAt": "2026-09-29",
+      "followScope": "internal"
     },
     {
       "id": 1789455326581.1074,
@@ -36488,6 +36492,89 @@
       "archivedAt": "2026-09-29T05:57:35.686Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1789453689725.6372,
+      "title": "التخطيط المالي للخطة السنوية",
+      "from": "مكتب متابعة تنفيذ رؤية عمان 2040",
+      "docNo": "1422/1/2023-90",
+      "toEntity": "مكتب متابعة تنفيذ رؤية عمان 2040",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-20",
+      "followStart": "2026-08-26",
+      "type": "int",
+      "slaMode": "rais",
+      "slaDays": 30,
+      "kpi": "other",
+      "note": "الادارية والمالية\nمكتب الرؤية\nللتنسق مع التخطيط وايجاد مسار مناسب للتخطيط المالي للخطط السنوية بما يحقق الخطة الخمسية للهيئة وذلك خلال شهر",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-15",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-26",
+          "daysSince": 14
+        },
+        {
+          "date": "2026-09-15",
+          "replied": true,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-26",
+          "daysSince": 14
+        },
+        {
+          "date": "2026-09-20",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-26",
+          "daysSince": 17
+        },
+        {
+          "date": "2026-09-22",
+          "replied": false,
+          "note": "تم  رفع افادة مكتب الرؤية",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-08-26",
+          "daysSince": 19
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 4,
+      "followEntity": "rais_depts",
+      "raisDeptName": "مكتب متابعة تنفيذ رؤية عمان 2040",
+      "responseMethod": "via_follow",
+      "transactionType": "followup",
+      "recordId": 1789453689725.6372,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "",
+      "closedAt": "2026-09-29",
+      "followScope": "internal",
+      "archivedAt": "2026-09-29T06:00:04.769Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -42174,6 +42261,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790661604743.3606,
+          "at": "2026-09-29T06:00:04.743Z",
+          "action": "تعديل موضوع",
+          "details": "التخطيط المالي للخطة السنوية"
+        },
         {
           "id": 1790661518495.0198,
           "at": "2026-09-29T05:58:38.495Z",
