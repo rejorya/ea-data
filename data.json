@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-29T06:06:40.829Z",
+  "exportedAt": "2026-09-29T06:06:57.205Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33941,6 +33941,32 @@
       "followEntity": "other",
       "otherEntityName": "وزارة التعليم",
       "responseMethod": ""
+    },
+    {
+      "id": 1790662015111.5461,
+      "transactionType": "followup",
+      "title": "ابداء الراي حول مشروع مراجعة وتطوير عملية التميز  ضمن برنامج الانشان والمحيط الحيوي",
+      "from": "وزارة التعليم",
+      "docNo": "1170/3/2022v420-37",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-29",
+      "receivedFollowDate": "2026-09-29",
+      "followStart": "2026-09-29",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "letter",
+      "slaDays": 8,
+      "kpi": "",
+      "note": "اخر موعد للتسليم 8 أكتوبر 2026",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790662015111.5461
     }
   ],
   "archivedTopics": [
@@ -42279,6 +42305,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790662015173.6038,
+          "at": "2026-09-29T06:06:55.174Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "ابداء الراي حول مشروع مراجعة وتطوير عملية التميز  ضمن برنامج الانشان والمحيط الحيوي"
+        },
         {
           "id": 1790661729020.4595,
           "at": "2026-09-29T06:02:09.020Z",
