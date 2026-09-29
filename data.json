@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-29T09:27:41.035Z",
+  "exportedAt": "2026-09-29T09:27:57.825Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -30157,7 +30157,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nالادارية والمالية\nلعمل اللازم",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-13",
@@ -30242,19 +30242,37 @@
           "taqseem": "",
           "startDate": "2026-09-10",
           "daysSince": 11
+        },
+        {
+          "date": "2026-09-29",
+          "replied": true,
+          "responseMethod": "via_follow",
+          "replyDocNo": "1181/131/2026-1",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 13
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 6,
+      "manualCount": 7,
       "followEntity": "naib_office",
-      "responseMethod": "",
+      "responseMethod": "via_follow",
       "transactionType": "followup",
       "recordId": 1789281324786.6926,
       "externalEntities": [],
       "receivedFollowDate": "",
       "followScope": "external",
       "presidentDirection": "",
-      "correspondenceDirection": ""
+      "correspondenceDirection": "",
+      "closedAt": "2026-09-29"
     },
     {
       "id": 1789281615247.393,
@@ -36867,6 +36885,142 @@
       "archivedAt": "2026-09-29T07:11:59.509Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1789281324786.6926,
+      "title": "إعداد تقديرات الميزانية لعام 2027 م",
+      "from": "وزارة المالية",
+      "docNo": "1170/3/2022v417-66",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-09",
+      "followStart": "2026-09-10",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "نائب الرئيس\nالادارية والمالية\nلعمل اللازم",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-09-15",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 3
+        },
+        {
+          "date": "2026-09-16",
+          "replied": true,
+          "note": "سوف يتم الرد بعد اسبوع",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 4
+        },
+        {
+          "date": "2026-09-23",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 9
+        },
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 10
+        },
+        {
+          "date": "2026-09-27",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 11
+        },
+        {
+          "date": "2026-09-29",
+          "replied": true,
+          "responseMethod": "via_follow",
+          "replyDocNo": "1181/131/2026-1",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 13
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 7,
+      "followEntity": "naib_office",
+      "responseMethod": "via_follow",
+      "transactionType": "followup",
+      "recordId": 1789281324786.6926,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "followScope": "external",
+      "presidentDirection": "",
+      "correspondenceDirection": "",
+      "closedAt": "2026-09-29",
+      "archivedAt": "2026-09-29T09:27:55.775Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -42553,6 +42707,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790674075752.4727,
+          "at": "2026-09-29T09:27:55.752Z",
+          "action": "إضافة متابعة",
+          "details": "إعداد تقديرات الميزانية لعام 2027 م"
+        },
+        {
+          "id": 1790674075693.56,
+          "at": "2026-09-29T09:27:55.693Z",
+          "action": "تعديل موضوع",
+          "details": "إعداد تقديرات الميزانية لعام 2027 م"
+        },
         {
           "id": 1790673827429.4714,
           "at": "2026-09-29T09:23:47.429Z",
