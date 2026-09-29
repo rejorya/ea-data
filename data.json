@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-29T05:56:41.785Z",
+  "exportedAt": "2026-09-29T05:57:37.732Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -27253,7 +27253,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "نائب الرئيس  (اخر موعد(10/10/2026)\nالغطاء النباتي\nادارة جنوب الشرقية\nيشكل فريق عمل من المديرية والادارة لوضع خطة لخمسة اعوام لتاهيل الغطاء النباتي والشجري في المحمية وما حولها واعداد دراسة بذلك تمهيدا لعرضها لطلب التمويل والدعم\n\nويرجى انجاز الدراسة والمخطط وبنك المشروعات والكلف المتوقعة خلال ٣ اشهر ولكم في ذلك الاستعانة باستشاري اذا تطلب",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-07-12",
@@ -27389,7 +27389,8 @@
           "by": "رحاب بنت نصيب الفرج"
         }
       ],
-      "correspondenceDirection": ""
+      "correspondenceDirection": "",
+      "closedAt": "2026-09-29"
     },
     {
       "id": 1783836585998.4062,
@@ -36325,6 +36326,164 @@
       "archivedAt": "2026-09-29T05:10:24.144Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1783831212982.3103,
+      "title": "دعم مشروع إستزراع الاشجار البرية بمنطقة شجة ام الدمن وشجة ام العظام بولاية جعلان بني بوحسن",
+      "from": "ولاية جعلان بني بو حسن",
+      "docNo": "1170/3/2022v408-92",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-07-09",
+      "followStart": "2026-07-15",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "نائب الرئيس  (اخر موعد(10/10/2026)\nالغطاء النباتي\nادارة جنوب الشرقية\nيشكل فريق عمل من المديرية والادارة لوضع خطة لخمسة اعوام لتاهيل الغطاء النباتي والشجري في المحمية وما حولها واعداد دراسة بذلك تمهيدا لعرضها لطلب التمويل والدعم\n\nويرجى انجاز الدراسة والمخطط وبنك المشروعات والكلف المتوقعة خلال ٣ اشهر ولكم في ذلك الاستعانة باستشاري اذا تطلب",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-07-12",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-07-12",
+          "daysSince": 0
+        },
+        {
+          "date": "2026-07-14",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-07-09",
+          "daysSince": 3
+        },
+        {
+          "date": "2026-07-15",
+          "replied": false,
+          "note": "تم رفع الافادة",
+          "actionType": "",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-07-09",
+          "daysSince": 4
+        },
+        {
+          "date": "2026-07-19",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-07-15",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-08-04",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-07-15",
+          "daysSince": 14
+        },
+        {
+          "date": "2026-08-20",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-07-15",
+          "daysSince": 26
+        },
+        {
+          "date": "2026-09-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-07-15",
+          "daysSince": 42
+        },
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-07-15",
+          "daysSince": 51
+        },
+        {
+          "date": "2026-09-27",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "الفاضل/مدير المكتب تكرما بالعلم لم يتم العمل بالكامل بتوجيهات الرئيس  حيث جاءت  توجيهات  الرئيس بتاريخ 16 يوليو  2026م كالتالي : نائب الرئيس الغطاء النباتي ادارة جنوب الشرقية يشكل فريق عمل من المديرية والادارة لوضع خطة لخمسة اعوام لتاهيل الغطاء النباتي والشجري في المحمية وما حولها واعداد دراسة بذلك تمهيدا لعرضها لطلب التمويل والدعم ويرجى انجاز الدراسة والمخطط وبنك المشروعات والكلف المتوقعة خلال ٣ اشهر ولكم في ذلك الاستعانة باستشاري اذا تطلب  إعداد دراسة . والى تاريخة لم يتم رفع  الدراسة والمخطط وبنك المشروعات والكلف المتوقعة",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-07-15",
+          "daysSince": 52
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 9,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "transactionType": "followup",
+      "recordId": 1783831212982.3103,
+      "externalEntities": [],
+      "presidentDirection": "",
+      "receivedFollowDate": "",
+      "followScope": "external",
+      "reopenHistory": [
+        {
+          "closedAt": "2026-07-15",
+          "reopenedAt": "2026-09-24T07:59:45.219Z",
+          "by": "رحاب بنت نصيب الفرج"
+        }
+      ],
+      "correspondenceDirection": "",
+      "closedAt": "2026-09-29",
+      "archivedAt": "2026-09-29T05:57:35.686Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -42011,6 +42170,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790661455665.9094,
+          "at": "2026-09-29T05:57:35.665Z",
+          "action": "تعديل موضوع",
+          "details": "دعم مشروع إستزراع الاشجار البرية بمنطقة شجة ام الدمن وشجة ام العظام بولاية جعلان بني بوحسن"
+        },
         {
           "id": 1790661343516.0422,
           "at": "2026-09-29T05:55:43.516Z",
