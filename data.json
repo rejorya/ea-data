@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-29T06:11:41.794Z",
+  "exportedAt": "2026-09-29T06:12:21.192Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33988,6 +33988,32 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1790662339128.1594,
+      "transactionType": "followup",
+      "title": "التقرير الأسبوعي الأول لنتائج أعمال معالجة التلوث الزيتي والتقرير اليومي لأعمال تنظيف التلوث القاعي",
+      "from": "نائب الرئيس",
+      "docNo": "7110/2/16/2023-31",
+      "toEntity": "دائرة التواصل والاعلام",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-27",
+      "receivedFollowDate": "2026-09-27",
+      "followStart": "2026-09-27",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wweek",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790662339128.1594
     }
   ],
   "archivedTopics": [
@@ -42326,6 +42352,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790662339163.2224,
+          "at": "2026-09-29T06:12:19.163Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "التقرير الأسبوعي الأول لنتائج أعمال معالجة التلوث الزيتي والتقرير اليومي لأعمال تنظيف التلوث القاعي"
+        },
         {
           "id": 1790662051996.3733,
           "at": "2026-09-29T06:07:31.996Z",
