@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-29T05:55:40.820Z",
+  "exportedAt": "2026-09-29T05:55:45.539Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -29000,96 +29000,6 @@
       "recordId": 1785823964244.2876
     },
     {
-      "id": 1785824212642.3281,
-      "title": "التقرير النصف سنوي لتقييم وضع خدمات هيئة البيئة المقدمة للمتعامل الخارجي",
-      "from": "دائرة ضبط الجودة",
-      "docNo": "1415/23/2025-10",
-      "toEntity": "دائرة ضبط الجودة",
-      "taqseemName": "",
-      "priority": "normal",
-      "confidentiality": "normal",
-      "date": "2026-08-02",
-      "followStart": "2026-08-02",
-      "type": "int",
-      "slaMode": "kpi",
-      "slaDays": null,
-      "kpi": "wweek",
-      "note": "توضع خطة لاتمتة الخدمة الورقية ورقمنة ال ٦ خدمات الاخرى وذلك خلال اسبوع عمل",
-      "status": "open",
-      "followups": [
-        {
-          "date": "2026-08-04",
-          "replied": false,
-          "note": "متابعة",
-          "actionType": "visit",
-          "by": "",
-          "result": "",
-          "entity": "rais_depts",
-          "taqseem": "",
-          "startDate": "2026-08-02",
-          "daysSince": 2
-        },
-        {
-          "date": "2026-08-05",
-          "replied": false,
-          "note": "متابعة",
-          "actionType": "visit",
-          "by": "",
-          "result": "",
-          "entity": "rais_depts",
-          "taqseem": "",
-          "startDate": "2026-08-02",
-          "daysSince": 3
-        },
-        {
-          "date": "2026-08-06",
-          "replied": false,
-          "note": "متابعة",
-          "actionType": "visit",
-          "by": "",
-          "result": "",
-          "entity": "rais_depts",
-          "taqseem": "",
-          "startDate": "2026-08-02",
-          "daysSince": 4
-        },
-        {
-          "date": "2026-09-27",
-          "replied": true,
-          "responseMethod": "",
-          "note": "رد صلاح المحذوري :ما زال العمل جاري لتحديث البيانات الواردة لنا للنصف الثاني من العام الجاري، على إعتبار بأن تقرير النصف الأول لا يعكس بصورةٍ متكاملة وضع خدمات الهيئة المقدمة للمتعامل الخارجي. حيث تم دمج بعض الخدمات الرقمية وبالتالي القائمة النهائية لفهرس سجل الخدمة سيتغير - للإحاطة. وسنقوم برفع عرض تحليلي لمستوى نضج الخدمات الخارجية للهيئة كنسبة مئوية (%) لسعادة الدكتور الرئيس بعد التحديثات النهائية وتجريبها على البوابة الرقمية الحكومية بحلول منتصف شهر أكتوبر 2026م.",
-          "actionType": "",
-          "scope": "internal",
-          "by": "",
-          "result": "",
-          "entity": "rais_depts",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-08-02",
-          "daysSince": 40
-        }
-      ],
-      "sheet": "مُضاف يدوياً",
-      "manualCount": 4,
-      "followEntity": "rais_depts",
-      "raisDeptName": "دائرة ضبط الجودة/ التحول الرقمي",
-      "responseMethod": "",
-      "transactionType": "followup",
-      "recordId": 1785824212642.3281,
-      "reopenHistory": [
-        {
-          "closedAt": "2026-09-13",
-          "reopenedAt": "2026-09-23T06:46:49.796Z",
-          "by": "رحاب بنت نصيب الفرج"
-        }
-      ],
-      "externalEntities": [],
-      "receivedFollowDate": "2026-08-04",
-      "correspondenceDirection": "",
-      "followScope": "internal"
-    },
-    {
       "id": 1785824856792.4573,
       "title": "الإجتماع مع شركة R-NOX المتخصصة في أنظمة مراقبة جودة الهواء",
       "from": "مكتب الرقابة البيئية",
@@ -42101,6 +42011,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790661343516.0422,
+          "at": "2026-09-29T05:55:43.516Z",
+          "action": "حذف موضوع",
+          "details": "التقرير النصف سنوي لتقييم وضع خدمات هيئة البيئة المقدمة للمتعامل الخارجي"
+        },
         {
           "id": 1790661333593.47,
           "at": "2026-09-29T05:55:33.593Z",
