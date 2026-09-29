@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-29T05:09:41.728Z",
+  "exportedAt": "2026-09-29T05:10:26.191Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33977,10 +33977,33 @@
       "slaDays": null,
       "kpi": "other",
       "note": "",
-      "status": "new",
-      "followups": [],
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-29",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "1170/3/2022v420-38",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-20",
+          "daysSince": 7
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790658510855.733
+      "recordId": 1790658510855.733,
+      "closedAt": "2026-09-29",
+      "manualCount": 1,
+      "followEntity": "other",
+      "otherEntityName": "وزارة التعليم",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -36338,6 +36361,58 @@
       "closedAt": "2026-09-29",
       "raisDeptName": "مركز الطوارئ البيئية",
       "archivedAt": "2026-09-29T04:36:30.444Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1790658510855.733,
+      "transactionType": "followup",
+      "title": "طلب ندب الفاضلة/ هنادي بنت سالم بن حبين الحبسي",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v418-91",
+      "toEntity": "وزارة التعليم",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-20",
+      "receivedFollowDate": "2026-09-20",
+      "followStart": "2026-09-20",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-29",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "1170/3/2022v420-38",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-20",
+          "daysSince": 7
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790658510855.733,
+      "closedAt": "2026-09-29",
+      "manualCount": 1,
+      "followEntity": "other",
+      "otherEntityName": "وزارة التعليم",
+      "responseMethod": "",
+      "archivedAt": "2026-09-29T05:10:24.144Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -42026,6 +42101,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790658624123.5698,
+          "at": "2026-09-29T05:10:24.123Z",
+          "action": "إضافة متابعة",
+          "details": "طلب ندب الفاضلة/ هنادي بنت سالم بن حبين الحبسي"
+        },
+        {
+          "id": 1790658624071.8381,
+          "at": "2026-09-29T05:10:24.071Z",
+          "action": "تعديل موضوع",
+          "details": "طلب ندب الفاضلة/ هنادي بنت سالم بن حبين الحبسي"
+        },
         {
           "id": 1790658510889.6208,
           "at": "2026-09-29T05:08:30.889Z",
