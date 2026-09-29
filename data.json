@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-29T07:11:41.345Z",
+  "exportedAt": "2026-09-29T07:12:01.555Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -30427,7 +30427,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-13",
@@ -30504,7 +30504,9 @@
       "externalEntities": [],
       "presidentDirection": "",
       "receivedFollowDate": "",
-      "followScope": "external"
+      "followScope": "external",
+      "correspondenceDirection": "",
+      "closedAt": "2026-09-29"
     },
     {
       "id": 1789286293507.2776,
@@ -36692,6 +36694,106 @@
       "archivedAt": "2026-09-29T06:00:04.769Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1789285783034.087,
+      "title": "التأمين على أصول هيئة البيئة للسنة التأمينية 2028/2027م",
+      "from": "وزارة المالية",
+      "docNo": "1170/3/2022v416-92",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "المديرية العامة للشؤون الادارية والمالية",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-06",
+      "followStart": "2026-09-07",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-13",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-07",
+          "daysSince": 4
+        },
+        {
+          "date": "2026-09-16",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+          "startDate": "2026-09-07",
+          "daysSince": 7
+        },
+        {
+          "date": "2026-09-20",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+          "startDate": "2026-09-07",
+          "daysSince": 9
+        },
+        {
+          "date": "2026-09-22",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+          "startDate": "2026-09-07",
+          "daysSince": 11
+        },
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "esc",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للشؤون الادارية والمالية",
+          "startDate": "2026-09-07",
+          "daysSince": 13
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 5,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-09-16",
+      "transactionType": "followup",
+      "recordId": 1789285783034.087,
+      "externalEntities": [],
+      "presidentDirection": "",
+      "receivedFollowDate": "",
+      "followScope": "external",
+      "correspondenceDirection": "",
+      "closedAt": "2026-09-29",
+      "archivedAt": "2026-09-29T07:11:59.509Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -42378,6 +42480,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790665919487.3835,
+          "at": "2026-09-29T07:11:59.487Z",
+          "action": "تعديل موضوع",
+          "details": "التأمين على أصول هيئة البيئة للسنة التأمينية 2028/2027م"
+        },
         {
           "id": 1790662467581.363,
           "at": "2026-09-29T06:14:27.581Z",
