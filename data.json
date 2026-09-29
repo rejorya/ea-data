@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-29T05:07:40.783Z",
+  "exportedAt": "2026-09-29T05:08:32.929Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33955,6 +33955,32 @@
       "followEntity": "naib_and_rais",
       "raisDeptName": "دائرة التعاون الدولي",
       "responseMethod": ""
+    },
+    {
+      "id": 1790658510855.733,
+      "transactionType": "followup",
+      "title": "طلب ندب الفاضلة/ هنادي بنت سالم بن حبين الحبسي",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v418-91",
+      "toEntity": "وزارة التعليم",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-20",
+      "receivedFollowDate": "2026-09-20",
+      "followStart": "2026-09-20",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790658510855.733
     }
   ],
   "archivedTopics": [
@@ -42000,6 +42026,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790658510889.6208,
+          "at": "2026-09-29T05:08:30.889Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب ندب الفاضلة/ هنادي بنت سالم بن حبين الحبسي"
+        },
         {
           "id": 1790656590420.994,
           "at": "2026-09-29T04:36:30.420Z",
