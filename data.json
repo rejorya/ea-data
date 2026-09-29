@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-29T09:23:41.032Z",
+  "exportedAt": "2026-09-29T09:23:49.462Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34089,6 +34089,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1790673827391.7822,
+      "transactionType": "followup",
+      "title": "إصدار اللائحة التنظيمية في شأن التعويض النقدي من حالات الافتراس الناتجة عن الحيوانات",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v420-41",
+      "toEntity": "وزارة المالية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-29",
+      "receivedFollowDate": "2026-09-29",
+      "followStart": "2026-09-29",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790673827391.7822
     }
   ],
   "archivedTopics": [
@@ -42527,6 +42553,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790673827429.4714,
+          "at": "2026-09-29T09:23:47.429Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "إصدار اللائحة التنظيمية في شأن التعويض النقدي من حالات الافتراس الناتجة عن الحيوانات"
+        },
         {
           "id": 1790671321566.944,
           "at": "2026-09-29T08:42:01.566Z",
