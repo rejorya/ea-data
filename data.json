@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-29T05:54:41.771Z",
+  "exportedAt": "2026-09-29T05:55:35.683Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -29008,7 +29008,7 @@
       "taqseemName": "",
       "priority": "normal",
       "confidentiality": "normal",
-      "date": "2026-07-28",
+      "date": "2026-08-02",
       "followStart": "2026-08-02",
       "type": "int",
       "slaMode": "kpi",
@@ -29085,7 +29085,7 @@
         }
       ],
       "externalEntities": [],
-      "receivedFollowDate": "",
+      "receivedFollowDate": "2026-08-04",
       "correspondenceDirection": "",
       "followScope": "internal"
     },
@@ -42101,6 +42101,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790661333593.47,
+          "at": "2026-09-29T05:55:33.593Z",
+          "action": "تعديل موضوع",
+          "details": "التقرير النصف سنوي لتقييم وضع خدمات هيئة البيئة المقدمة للمتعامل الخارجي"
+        },
         {
           "id": 1790658624123.5698,
           "at": "2026-09-29T05:10:24.123Z",
