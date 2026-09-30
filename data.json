@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-30T04:13:57.155Z",
+  "exportedAt": "2026-09-30T04:15:49.775Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34049,9 +34049,30 @@
       "kpi": "wweek",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-09-30",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-27",
+          "daysSince": 3
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1790662339128.1594
+      "recordId": 1790662339128.1594,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     },
     {
       "id": 1790662467546.4966,
@@ -42778,6 +42799,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790741747645.4243,
+          "at": "2026-09-30T04:15:47.645Z",
+          "action": "إضافة متابعة",
+          "details": "التقرير الأسبوعي الأول لنتائج أعمال معالجة التلوث الزيتي والتقرير اليومي لأعمال تنظيف التلوث القاعي"
+        },
+        {
+          "id": 1790741747594.3135,
+          "at": "2026-09-30T04:15:47.594Z",
+          "action": "تعديل موضوع",
+          "details": "التقرير الأسبوعي الأول لنتائج أعمال معالجة التلوث الزيتي والتقرير اليومي لأعمال تنظيف التلوث القاعي"
+        },
         {
           "id": 1790741635023.7727,
           "at": "2026-09-30T04:13:55.023Z",
