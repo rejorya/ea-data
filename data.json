@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-30T08:07:07.051Z",
+  "exportedAt": "2026-09-30T08:07:21.778Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33210,7 +33210,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-24",
@@ -33268,7 +33268,8 @@
       "followEntity": "other",
       "responseMethod": "via_follow",
       "correspondenceDirection": "out",
-      "otherEntityName": "هيئة البحث العلمي والابتكار"
+      "otherEntityName": "هيئة البحث العلمي والابتكار",
+      "closedAt": "2026-09-30"
     },
     {
       "id": 1790241885374.2515,
@@ -37471,6 +37472,100 @@
       "responseMethod": "direct_manager",
       "closedAt": "2026-09-30",
       "archivedAt": "2026-09-30T05:14:22.743Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1790241424620.697,
+      "transactionType": "followup",
+      "title": "دعوة لرعاية ورشة عمل المناطق ذات التنوع البيولوجي العالي",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v419-73",
+      "toEntity": "هيئة البحث العلمي والابتكار",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-23",
+      "receivedFollowDate": "2026-09-24",
+      "presidentDirection": "",
+      "createdAt": "2026-09-24T09:17:04.620Z",
+      "followStart": "2026-09-24",
+      "type": "ext",
+      "followScope": "external",
+      "externalEntities": [
+        {
+          "id": 1790485989024.6096,
+          "name": "هيئة البحث العلمي والابتكار",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        }
+      ],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 0
+        },
+        {
+          "date": "2026-09-27",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "call",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-09-30",
+          "replied": true,
+          "responseMethod": "via_follow",
+          "replyDocNo": "1170/3/2022v420-50",
+          "note": "تم الرد 1170/3/2022v420-50",
+          "actionType": "visit",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 4
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790241424620.697,
+      "manualCount": 3,
+      "followEntity": "other",
+      "responseMethod": "via_follow",
+      "correspondenceDirection": "out",
+      "otherEntityName": "هيئة البحث العلمي والابتكار",
+      "closedAt": "2026-09-30",
+      "archivedAt": "2026-09-30T08:07:12.095Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -43159,6 +43254,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790755632074.0012,
+          "at": "2026-09-30T08:07:12.074Z",
+          "action": "تعديل موضوع",
+          "details": "دعوة لرعاية ورشة عمل المناطق ذات التنوع البيولوجي العالي"
+        },
         {
           "id": 1790755614381.136,
           "at": "2026-09-30T08:06:54.381Z",
