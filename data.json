@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-30T08:06:07.057Z",
+  "exportedAt": "2026-09-30T08:06:58.044Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33209,7 +33209,7 @@
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "other",
-      "note": "متابعة خارجية",
+      "note": "",
       "status": "new",
       "followups": [
         {
@@ -33243,13 +33243,30 @@
           "taqseem": "",
           "startDate": "2026-09-24",
           "daysSince": 1
+        },
+        {
+          "date": "2026-09-30",
+          "replied": true,
+          "responseMethod": "via_follow",
+          "replyDocNo": "1170/3/2022v420-50",
+          "note": "تم الرد 1170/3/2022v420-50",
+          "actionType": "visit",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 4
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790241424620.697,
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "other",
-      "responseMethod": "",
+      "responseMethod": "via_follow",
       "correspondenceDirection": "out",
       "otherEntityName": "هيئة البحث العلمي والابتكار"
     },
@@ -43142,6 +43159,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790755614381.136,
+          "at": "2026-09-30T08:06:54.381Z",
+          "action": "إضافة متابعة",
+          "details": "دعوة لرعاية ورشة عمل المناطق ذات التنوع البيولوجي العالي"
+        },
+        {
+          "id": 1790755614325.7964,
+          "at": "2026-09-30T08:06:54.325Z",
+          "action": "تعديل موضوع",
+          "details": "دعوة لرعاية ورشة عمل المناطق ذات التنوع البيولوجي العالي"
+        },
         {
           "id": 1790746466210.3618,
           "at": "2026-09-30T05:34:26.210Z",
