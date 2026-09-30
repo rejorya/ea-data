@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-30T04:52:24.897Z",
+  "exportedAt": "2026-09-30T04:54:39.026Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -30632,7 +30632,7 @@
       "slaDays": 122,
       "kpi": "other",
       "note": "الجودة لعمل اللازم والافادة\nمكتب الرئيس\nللمتابعة",
-      "status": "new",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-09-15",
@@ -30645,15 +30645,36 @@
           "taqseem": "",
           "startDate": "2026-09-15",
           "daysSince": 0
+        },
+        {
+          "date": "2026-09-30",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-15",
+          "daysSince": 11
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "rais_depts",
       "raisDeptName": "دائرة التميز المؤسسي",
       "responseMethod": "",
       "transactionType": "followup",
-      "recordId": 1789451509916.7585
+      "recordId": 1789451509916.7585,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "",
+      "followScope": "external"
     },
     {
       "id": 1789453689725.6372,
@@ -43018,6 +43039,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790744076911.9976,
+          "at": "2026-09-30T04:54:36.911Z",
+          "action": "إضافة متابعة",
+          "details": "خطة تقييم قبو ل الجهات الحكومية المستفيدة من نظام وصول."
+        },
+        {
+          "id": 1790744076866.7507,
+          "at": "2026-09-30T04:54:36.866Z",
+          "action": "تعديل موضوع",
+          "details": "خطة تقييم قبو ل الجهات الحكومية المستفيدة من نظام وصول."
+        },
         {
           "id": 1790743942762.187,
           "at": "2026-09-30T04:52:22.762Z",
