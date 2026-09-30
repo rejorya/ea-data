@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-30T04:22:34.124Z",
+  "exportedAt": "2026-09-30T04:22:43.549Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33555,7 +33555,7 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "",
-      "status": "new",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-09-28",
@@ -42854,6 +42854,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790742161389.692,
+          "at": "2026-09-30T04:22:41.389Z",
+          "action": "تعديل موضوع",
+          "details": "تداول خرائط سلطنة عمان"
+        },
         {
           "id": 1790742151976.1191,
           "at": "2026-09-30T04:22:31.976Z",
