@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-30T04:26:42.173Z",
+  "exportedAt": "2026-09-30T04:43:11.825Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -29984,15 +29984,36 @@
           "taqseem": "",
           "startDate": "2026-09-10",
           "daysSince": 6
+        },
+        {
+          "date": "2026-09-30",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 14
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "rais_depts",
       "raisDeptName": "الدائرة القانونية",
       "responseMethod": "",
       "transactionType": "followup",
-      "recordId": 1789277708970.8843
+      "recordId": 1789277708970.8843,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "",
+      "followScope": "external"
     },
     {
       "id": 1789279134965.4658,
@@ -42942,6 +42963,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790743389693.1384,
+          "at": "2026-09-30T04:43:09.693Z",
+          "action": "إضافة متابعة",
+          "details": "مذكرة التفاهم بين هيئة البيئة في سلطنة عمان واللجنة العلمية للبحر الأبيض المتوسط في إمارة موناكو"
+        },
+        {
+          "id": 1790743389640.678,
+          "at": "2026-09-30T04:43:09.640Z",
+          "action": "تعديل موضوع",
+          "details": "مذكرة التفاهم بين هيئة البيئة في سلطنة عمان واللجنة العلمية للبحر الأبيض المتوسط في إمارة موناكو"
+        },
         {
           "id": 1790742400038.848,
           "at": "2026-09-30T04:26:40.038Z",
