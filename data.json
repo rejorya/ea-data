@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-30T05:29:08.755Z",
+  "exportedAt": "2026-09-30T05:34:28.387Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31407,10 +31407,27 @@
           "taqseem": "",
           "startDate": "2026-09-17",
           "daysSince": 2
+        },
+        {
+          "date": "2026-09-28",
+          "replied": true,
+          "responseMethod": "direct_manager",
+          "replyDocNo": "1170/3/2022v420-28",
+          "note": "تم استلام رد هيئة البحث العلمي والابتكار \n1170/3/2022v420-28",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-17",
+          "daysSince": 7
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "other",
       "otherEntityName": "",
       "responseMethod": "direct_manager",
@@ -43125,6 +43142,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790746466210.3618,
+          "at": "2026-09-30T05:34:26.210Z",
+          "action": "إضافة متابعة",
+          "details": "مشاركة ممثلي الجهات أعضاء فريق العمل  في الزيارة الرسمية إلى جمهورية سنغافورة"
+        },
+        {
+          "id": 1790746466158.4626,
+          "at": "2026-09-30T05:34:26.158Z",
+          "action": "تعديل موضوع",
+          "details": "مشاركة ممثلي الجهات أعضاء فريق العمل  في الزيارة الرسمية إلى جمهورية سنغافورة"
+        },
         {
           "id": 1790746146615.134,
           "at": "2026-09-30T05:29:06.615Z",
