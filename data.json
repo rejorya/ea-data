@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-30T04:17:20.083Z",
+  "exportedAt": "2026-09-30T04:20:20.673Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32678,11 +32678,28 @@
           "taqseem": "",
           "startDate": "2026-09-24",
           "daysSince": 2
+        },
+        {
+          "date": "2026-09-30",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 4
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790238795365.944,
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "",
       "responseMethod": "",
       "correspondenceDirection": ""
@@ -42820,6 +42837,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790742018529.3022,
+          "at": "2026-09-30T04:20:18.529Z",
+          "action": "إضافة متابعة",
+          "details": "طلب التصريح بنقل حطب أشجار السمر عبر منفذ دبا الحدودي"
+        },
+        {
+          "id": 1790742018479.157,
+          "at": "2026-09-30T04:20:18.479Z",
+          "action": "تعديل موضوع",
+          "details": "طلب التصريح بنقل حطب أشجار السمر عبر منفذ دبا الحدودي"
+        },
         {
           "id": 1790741837955.521,
           "at": "2026-09-30T04:17:17.955Z",
