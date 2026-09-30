@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-30T05:14:24.882Z",
+  "exportedAt": "2026-09-30T05:20:16.187Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -29824,7 +29824,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "للمتابعة بعد 5 اسابيع",
-      "status": "new",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-09-23",
@@ -29857,6 +29857,23 @@
           "taqseem": "المديرية العامة للتغير المناخي",
           "startDate": "2026-08-20",
           "daysSince": 27
+        },
+        {
+          "date": "2026-09-29",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "esc",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للتغير المناخي",
+          "startDate": "2026-08-20",
+          "daysSince": 28
         }
       ],
       "sheet": "مُضاف يدوياً",
@@ -29864,7 +29881,7 @@
       "recordId": 1787220319390.4294,
       "externalEntities": [],
       "receivedFollowDate": "",
-      "manualCount": 2,
+      "manualCount": 3,
       "followScope": "internal",
       "followEntity": "taqseem",
       "responseMethod": "",
@@ -43091,6 +43108,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790745614031.8472,
+          "at": "2026-09-30T05:20:14.031Z",
+          "action": "إضافة متابعة",
+          "details": "استضافة مؤتمر الأطراف في اتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ"
+        },
+        {
+          "id": 1790745613974.6382,
+          "at": "2026-09-30T05:20:13.974Z",
+          "action": "تعديل موضوع",
+          "details": "استضافة مؤتمر الأطراف في اتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ"
+        },
         {
           "id": 1790745262726.6602,
           "at": "2026-09-30T05:14:22.726Z",
