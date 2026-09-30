@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-30T04:54:39.026Z",
+  "exportedAt": "2026-09-30T05:14:24.882Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33577,7 +33577,7 @@
       "slaDays": 5,
       "kpi": "wweek",
       "note": "",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-27",
@@ -33601,7 +33601,8 @@
       "manualCount": 6,
       "followEntity": "rais_depts",
       "raisDeptName": "التحول الرقمي",
-      "responseMethod": ""
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-09-30"
     },
     {
       "id": 1790576175474.0667,
@@ -37351,6 +37352,57 @@
       "correspondenceDirection": "",
       "closedAt": "2026-09-30",
       "archivedAt": "2026-09-30T04:26:40.056Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1790499404915.8545,
+      "transactionType": "followup",
+      "title": "التقرير النصف سنوي لتقييم وضع خدمات هيئة البيئة المقدمة للمتعامل الخارجي",
+      "from": "دائرة ضبط الجودة",
+      "docNo": "1415/23/2025-10",
+      "toEntity": "التحول الرقمي",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-02",
+      "receivedFollowDate": "2026-08-04",
+      "followStart": "2026-08-02",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "rais",
+      "slaDays": 5,
+      "kpi": "wweek",
+      "note": "",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-27",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-08-02",
+          "daysSince": 40
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790499404915.8545,
+      "manualCount": 6,
+      "followEntity": "rais_depts",
+      "raisDeptName": "التحول الرقمي",
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-09-30",
+      "archivedAt": "2026-09-30T05:14:22.743Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -43039,6 +43091,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790745262726.6602,
+          "at": "2026-09-30T05:14:22.726Z",
+          "action": "تعديل موضوع",
+          "details": "التقرير النصف سنوي لتقييم وضع خدمات هيئة البيئة المقدمة للمتعامل الخارجي"
+        },
         {
           "id": 1790744076911.9976,
           "at": "2026-09-30T04:54:36.911Z",
