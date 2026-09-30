@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-30T05:20:16.187Z",
+  "exportedAt": "2026-09-30T05:29:08.755Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31390,13 +31390,30 @@
           "taqseem": "",
           "startDate": "2026-09-17",
           "daysSince": 7
+        },
+        {
+          "date": "2026-09-21",
+          "replied": true,
+          "responseMethod": "direct_manager",
+          "replyDocNo": "1170/3/2022v419-31",
+          "note": "تم الرد من شركة تنمية نفط عمان 1170/3/2022v419-31",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-17",
+          "daysSince": 2
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "other",
       "otherEntityName": "",
-      "responseMethod": "via_follow",
+      "responseMethod": "direct_manager",
       "transactionType": "followup",
       "recordId": 1789877650603.5947,
       "externalEntities": [],
@@ -43108,6 +43125,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790746146615.134,
+          "at": "2026-09-30T05:29:06.615Z",
+          "action": "إضافة متابعة",
+          "details": "مشاركة ممثلي الجهات أعضاء فريق العمل  في الزيارة الرسمية إلى جمهورية سنغافورة"
+        },
+        {
+          "id": 1790746146564.7048,
+          "at": "2026-09-30T05:29:06.564Z",
+          "action": "تعديل موضوع",
+          "details": "مشاركة ممثلي الجهات أعضاء فريق العمل  في الزيارة الرسمية إلى جمهورية سنغافورة"
+        },
         {
           "id": 1790745614031.8472,
           "at": "2026-09-30T05:20:14.031Z",
