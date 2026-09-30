@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-30T03:51:53.344Z",
+  "exportedAt": "2026-09-30T04:13:57.155Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33538,11 +33538,28 @@
           "taqseem": "",
           "startDate": "2026-09-27",
           "daysSince": 1
+        },
+        {
+          "date": "2026-09-30",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-27",
+          "daysSince": 3
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790576869870.932,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "naib_office",
       "responseMethod": ""
     },
@@ -42759,7 +42776,21 @@
       "loginAt": "2026-09-30T03:51:49.480Z",
       "logoutAt": null,
       "duration": null,
-      "logoutReason": null
+      "logoutReason": null,
+      "actions": [
+        {
+          "id": 1790741635023.7727,
+          "at": "2026-09-30T04:13:55.023Z",
+          "action": "إضافة متابعة",
+          "details": "تداول خرائط سلطنة عمان"
+        },
+        {
+          "id": 1790741634976.4592,
+          "at": "2026-09-30T04:13:54.976Z",
+          "action": "تعديل موضوع",
+          "details": "تداول خرائط سلطنة عمان"
+        }
+      ]
     },
     {
       "id": 1790678777940.3352,
