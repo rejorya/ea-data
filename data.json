@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-29T10:46:20.856Z",
+  "exportedAt": "2026-09-30T03:51:53.344Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31234,7 +31234,7 @@
       "slaDays": 30,
       "kpi": "",
       "note": "تم التواصل من قبل المديرية العامة لتغير المناخي \nتم التواصل مع المختصين في وزارة الخارجية وتم الإفادة بأنه لم يتم توقيع الخطاب بعد.",
-      "status": "awaiting_div",
+      "status": "ready_esc",
       "followups": [
         {
           "date": "2026-09-27",
@@ -42735,6 +42735,32 @@
     "مركز محمية حديقة السليل الطبيعية"
   ],
   "activityLog": [
+    {
+      "id": 1790740309480.9236,
+      "sessionId": "d665b9af-7016-44c8-b072-47374975e945",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-09-30T03:51:49.480Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
     {
       "id": 1790678777940.3352,
       "sessionId": "9440503c-2f0c-4552-a268-05d53db44b65",
