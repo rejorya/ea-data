@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-09-30T04:43:11.825Z",
+  "exportedAt": "2026-09-30T04:45:33.919Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31524,7 +31524,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "القانونية\nلعمل اللازم",
-      "status": "new",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-09-20",
@@ -31537,15 +31537,36 @@
           "taqseem": "",
           "startDate": "2026-09-10",
           "daysSince": 6
+        },
+        {
+          "date": "2026-09-30",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 14
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "rais_depts",
       "raisDeptName": "الدائرة القانونية",
       "responseMethod": "",
       "transactionType": "followup",
-      "recordId": 1789879161002.0417
+      "recordId": 1789879161002.0417,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "",
+      "followScope": "external"
     },
     {
       "id": 1789885506849.844,
@@ -42963,6 +42984,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1790743531788.9177,
+          "at": "2026-09-30T04:45:31.788Z",
+          "action": "إضافة متابعة",
+          "details": "مذكرة تفاهم بين هيئة البيئة والمركز العلمي لموناكو  في مجال حماية النظم البيئية البحرية.pdf"
+        },
+        {
+          "id": 1790743531742.4236,
+          "at": "2026-09-30T04:45:31.742Z",
+          "action": "تعديل موضوع",
+          "details": "مذكرة تفاهم بين هيئة البيئة والمركز العلمي لموناكو  في مجال حماية النظم البيئية البحرية.pdf"
+        },
         {
           "id": 1790743389693.1384,
           "at": "2026-09-30T04:43:09.693Z",
