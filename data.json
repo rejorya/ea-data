@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-01T03:53:03.971Z",
+  "exportedAt": "2026-10-01T03:53:33.002Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34141,7 +34141,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "الدكتور ربيع\nالتعاون الدولي\nالموارد البشرية\nلوضع خطة مجدولة زمنيا لتفيذ التوصيات كاملة ورفعها للاعتماد",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-29",
@@ -34159,14 +34159,32 @@
           "taqseem": "",
           "startDate": "2026-09-27",
           "daysSince": 2
+        },
+        {
+          "date": "2026-10-01",
+          "replied": true,
+          "responseMethod": "via_follow",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_and_rais",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-27",
+          "daysSince": 4
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790587816135.3389,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "naib_and_rais",
       "raisDeptName": "دائرة التعاون الدولي",
-      "responseMethod": ""
+      "responseMethod": "via_follow",
+      "closedAt": "2026-10-01"
     },
     {
       "id": 1790658510855.733,
@@ -37566,6 +37584,75 @@
       "otherEntityName": "هيئة البحث العلمي والابتكار",
       "closedAt": "2026-09-30",
       "archivedAt": "2026-09-30T08:07:12.095Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1790587816135.3389,
+      "transactionType": "followup",
+      "title": "الإجتماع السنوي الثالث عشر للجنة الفرعية للجنة المندوبين الدائمين المنعقد خلال الفترة 7-11 سبتمبر في مدينة نيروبي -الجمهورية الكينية",
+      "from": "نائب الرئيس",
+      "docNo": "",
+      "toEntity": "نائب الرئيس- دائرة التعاون الدولي",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-09-27",
+      "receivedFollowDate": "2026-09-28",
+      "followStart": "2026-09-27",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "الدكتور ربيع\nالتعاون الدولي\nالموارد البشرية\nلوضع خطة مجدولة زمنيا لتفيذ التوصيات كاملة ورفعها للاعتماد",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-29",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_and_rais",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-27",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-10-01",
+          "replied": true,
+          "responseMethod": "via_follow",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_and_rais",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-27",
+          "daysSince": 4
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790587816135.3389,
+      "manualCount": 2,
+      "followEntity": "naib_and_rais",
+      "raisDeptName": "دائرة التعاون الدولي",
+      "responseMethod": "via_follow",
+      "closedAt": "2026-10-01",
+      "archivedAt": "2026-10-01T03:53:30.876Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -43252,7 +43339,21 @@
       "loginAt": "2026-10-01T03:50:46.469Z",
       "logoutAt": null,
       "duration": null,
-      "logoutReason": null
+      "logoutReason": null,
+      "actions": [
+        {
+          "id": 1790826810851.6462,
+          "at": "2026-10-01T03:53:30.851Z",
+          "action": "إضافة متابعة",
+          "details": "الإجتماع السنوي الثالث عشر للجنة الفرعية للجنة المندوبين الدائمين المنعقد خلال الفترة 7-11 سبتمبر في مدينة نيروبي -الجمهورية الكينية"
+        },
+        {
+          "id": 1790826810784.5173,
+          "at": "2026-10-01T03:53:30.784Z",
+          "action": "تعديل موضوع",
+          "details": "الإجتماع السنوي الثالث عشر للجنة الفرعية للجنة المندوبين الدائمين المنعقد خلال الفترة 7-11 سبتمبر في مدينة نيروبي -الجمهورية الكينية"
+        }
+      ]
     },
     {
       "id": 1790765299185.5022,
