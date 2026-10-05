@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-05T17:30:09.482Z",
+  "exportedAt": "2026-10-05T18:16:28.775Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -43506,6 +43506,59 @@
   ],
   "activityLog": [
     {
+      "id": 1791224184928.9797,
+      "sessionId": "a5375389-b844-459c-95ca-02c9e71350d1",
+      "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "هاتف/جهاز لوحي • Android • Chrome",
+      "deviceType": "هاتف/جهاز لوحي",
+      "deviceOS": "Android",
+      "browser": "Chrome",
+      "platform": "Linux armv81",
+      "deviceSnapshot": {
+        "id": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+        "label": "هاتف/جهاز لوحي • Android • Chrome",
+        "type": "هاتف/جهاز لوحي",
+        "os": "Android",
+        "browser": "Chrome",
+        "platform": "Linux armv81"
+      },
+      "loginAt": "2026-10-05T18:16:24.927Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
+      "id": 1791221598233.6865,
+      "sessionId": "4e97abfa-eff7-4725-847e-bae31d3985cd",
+      "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+      "user": "guest",
+      "name": "زائر",
+      "role": "اطّلاع عام",
+      "type": "زائر",
+      "device": "هاتف/جهاز لوحي • Android • Chrome",
+      "deviceType": "هاتف/جهاز لوحي",
+      "deviceOS": "Android",
+      "browser": "Chrome",
+      "platform": "Linux armv81",
+      "deviceSnapshot": {
+        "id": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+        "label": "هاتف/جهاز لوحي • Android • Chrome",
+        "type": "هاتف/جهاز لوحي",
+        "os": "Android",
+        "browser": "Chrome",
+        "platform": "Linux armv81"
+      },
+      "loginAt": "2026-10-05T17:33:18.233Z",
+      "logoutAt": "2026-10-05T17:34:20.587Z",
+      "duration": "1 دقيقة و 2 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
+      "durationMinutes": 1
+    },
+    {
       "id": 1791221405846.24,
       "sessionId": "af0e0b26-83f9-4d21-951c-8a3083ea3744",
       "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
@@ -43527,9 +43580,10 @@
         "platform": "Linux armv81"
       },
       "loginAt": "2026-10-05T17:30:05.845Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null
+      "logoutAt": "2026-10-05T17:30:20.264Z",
+      "duration": "0 دقيقة و 14 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
+      "durationMinutes": 0
     },
     {
       "id": 1791214360522.94,
@@ -43553,9 +43607,10 @@
         "platform": "Linux armv81"
       },
       "loginAt": "2026-10-05T15:32:40.521Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null
+      "logoutAt": "2026-10-05T15:35:20.992Z",
+      "duration": "2 دقيقة و 40 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
+      "durationMinutes": 2
     },
     {
       "id": 1791201649233.0266,
@@ -47466,6 +47521,7 @@
       "logoutReason": null
     }
   ],
+  "visitorCodeHash": "",
   "users": {
     "rahab@ea2026": {
       "name": "رحاب بنت نصيب الفرج",
