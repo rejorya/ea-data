@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T08:03:42.698Z",
+  "exportedAt": "2026-10-06T08:05:51.880Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34101,7 +34101,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-28",
@@ -34118,14 +34118,32 @@
           "taqseem": "",
           "startDate": "2026-09-27",
           "daysSince": 1
+        },
+        {
+          "date": "2026-10-06",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "1170/3/2022v420-81",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-27",
+          "daysSince": 7
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790579383487.4158,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "other",
       "otherEntityName": "وزارة العدل والشؤون القانونية",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-10-06"
     },
     {
       "id": 1790579536686.3147,
@@ -38634,6 +38652,74 @@
       "responseMethod": "direct_manager",
       "closedAt": "2026-10-06",
       "archivedAt": "2026-10-06T06:09:10.686Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1790579383487.4158,
+      "transactionType": "followup",
+      "title": "المشاركة في ملتقى «الإدارة السليمة لاستخدام المواد الكيميائية والتشريعات المنظمة لها»",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v420-15",
+      "toEntity": "وزارة العدل والشؤون القانونية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-27",
+      "receivedFollowDate": "2026-09-27",
+      "followStart": "2026-09-27",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-28",
+          "replied": false,
+          "responseMethod": "",
+          "note": "تم احالته للدائرة للمتابعة للاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-27",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-10-06",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "1170/3/2022v420-81",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-27",
+          "daysSince": 7
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790579383487.4158,
+      "manualCount": 2,
+      "followEntity": "other",
+      "otherEntityName": "وزارة العدل والشؤون القانونية",
+      "responseMethod": "",
+      "closedAt": "2026-10-06",
+      "archivedAt": "2026-10-06T08:05:49.838Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -44322,6 +44408,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791273949812.836,
+          "at": "2026-10-06T08:05:49.812Z",
+          "action": "إضافة متابعة",
+          "details": "المشاركة في ملتقى «الإدارة السليمة لاستخدام المواد الكيميائية والتشريعات المنظمة لها»"
+        },
+        {
+          "id": 1791273949748.4158,
+          "at": "2026-10-06T08:05:49.748Z",
+          "action": "تعديل موضوع",
+          "details": "المشاركة في ملتقى «الإدارة السليمة لاستخدام المواد الكيميائية والتشريعات المنظمة لها»"
+        },
         {
           "id": 1791273819818.3208,
           "at": "2026-10-06T08:03:39.818Z",
