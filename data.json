@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-05T18:16:28.775Z",
+  "exportedAt": "2026-10-06T00:48:38.696Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33758,7 +33758,7 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "",
-      "status": "awaiting_div",
+      "status": "ready_esc",
       "followups": [
         {
           "date": "2026-09-28",
@@ -43506,6 +43506,32 @@
   ],
   "activityLog": [
     {
+      "id": 1791247715252.3228,
+      "sessionId": "f3042b09-644e-4c40-8f39-2d8c657d50c2",
+      "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "هاتف/جهاز لوحي • Android • Chrome",
+      "deviceType": "هاتف/جهاز لوحي",
+      "deviceOS": "Android",
+      "browser": "Chrome",
+      "platform": "Linux armv81",
+      "deviceSnapshot": {
+        "id": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+        "label": "هاتف/جهاز لوحي • Android • Chrome",
+        "type": "هاتف/جهاز لوحي",
+        "os": "Android",
+        "browser": "Chrome",
+        "platform": "Linux armv81"
+      },
+      "loginAt": "2026-10-06T00:48:35.252Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": 1791224184928.9797,
       "sessionId": "a5375389-b844-459c-95ca-02c9e71350d1",
       "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
@@ -43527,9 +43553,10 @@
         "platform": "Linux armv81"
       },
       "loginAt": "2026-10-05T18:16:24.927Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null
+      "logoutAt": "2026-10-05T18:18:00.326Z",
+      "duration": "1 دقيقة و 35 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
+      "durationMinutes": 1
     },
     {
       "id": 1791221598233.6865,
