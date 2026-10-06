@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T07:51:09.038Z",
+  "exportedAt": "2026-10-06T07:55:17.470Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35099,6 +35099,32 @@
       "followEntity": "other",
       "otherEntityName": "الشركة العُمانية للاتصالات",
       "responseMethod": ""
+    },
+    {
+      "id": 1791273314288.1423,
+      "transactionType": "followup",
+      "title": "استكمال إجراءات اعتماد برنامج التعاون الدليل التشغيلي لمركز الابتكار للحاضنات والمسرعات",
+      "from": "مكتب الرئيس",
+      "docNo": "1170/3/2022v420-71",
+      "toEntity": "شركة تنمية نفط عُمان",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-04",
+      "receivedFollowDate": "2026-10-04",
+      "followStart": "2026-10-04",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791273314288.1423
     }
   ],
   "archivedTopics": [
@@ -44180,6 +44206,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791273314331.9146,
+          "at": "2026-10-06T07:55:14.331Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "استكمال إجراءات اعتماد برنامج التعاون الدليل التشغيلي لمركز الابتكار للحاضنات والمسرعات"
+        },
         {
           "id": 1791273066948.461,
           "at": "2026-10-06T07:51:06.948Z",
