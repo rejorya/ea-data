@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T06:09:12.823Z",
+  "exportedAt": "2026-10-06T06:17:49.053Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34615,6 +34615,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1791267466988.0295,
+      "transactionType": "followup",
+      "title": "ترشيح نقاط اتصال لإدخال بيانات الجرد الوطني في منصة «مناخ»",
+      "from": "مكتب الرئيس",
+      "docNo": "1170/3/2022v420-100",
+      "toEntity": "وزارة الثروة الزراعية والسمكية وموارد المياه",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-04",
+      "receivedFollowDate": "2026-10-05",
+      "followStart": "2026-10-04",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "",
+      "note": "تم التوجية الى التقسيم للاختصاص",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791267466988.0295
     }
   ],
   "archivedTopics": [
@@ -43696,6 +43722,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791267467027.9114,
+          "at": "2026-10-06T06:17:47.027Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "ترشيح نقاط اتصال لإدخال بيانات الجرد الوطني في منصة «مناخ»"
+        },
         {
           "id": 1791266950667.029,
           "at": "2026-10-06T06:09:10.667Z",
