@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T06:22:44.562Z",
+  "exportedAt": "2026-10-06T06:26:14.687Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34709,6 +34709,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1791267972601.019,
+      "transactionType": "followup",
+      "title": "المعسكر السنوي للرقابة والتفتيش البيئي",
+      "from": "مكتب الرئيس",
+      "docNo": "1170/3/2022v420-94",
+      "toEntity": "عدة جهات",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-04",
+      "receivedFollowDate": "2026-10-05",
+      "followStart": "2026-10-04",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791267972601.019
     }
   ],
   "archivedTopics": [
@@ -43790,6 +43816,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791267972646.929,
+          "at": "2026-10-06T06:26:12.646Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "المعسكر السنوي للرقابة والتفتيش البيئي"
+        },
         {
           "id": 1791267761543.8108,
           "at": "2026-10-06T06:22:41.543Z",
