@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T09:46:57.144Z",
+  "exportedAt": "2026-10-06T09:48:41.258Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32652,8 +32652,8 @@
       "presidentDirection": "نائب الرئيس\nللدراسة وابداء الراي",
       "createdAt": "2026-09-24T08:06:43.960Z",
       "followStart": "2026-09-24",
-      "type": "ext",
-      "followScope": "external",
+      "type": "int",
+      "followScope": "internal",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
@@ -32709,11 +32709,28 @@
           "taqseem": "",
           "startDate": "2026-09-24",
           "daysSince": 4
+        },
+        {
+          "date": "2026-10-06",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 8
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790237203960.906,
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "naib_office",
       "responseMethod": "",
       "correspondenceDirection": ""
@@ -44784,6 +44801,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791280119190.487,
+          "at": "2026-10-06T09:48:39.190Z",
+          "action": "إضافة متابعة",
+          "details": "طلب الموافقة على بدء في إعداد وتقديم نطاق عمل الدراسة البيئية لموقع مبادرة المتحف العسكري العُماني لسياحة الغوص جزر الديمانيات"
+        },
+        {
+          "id": 1791280119127.0962,
+          "at": "2026-10-06T09:48:39.127Z",
+          "action": "تعديل موضوع",
+          "details": "طلب الموافقة على بدء في إعداد وتقديم نطاق عمل الدراسة البيئية لموقع مبادرة المتحف العسكري العُماني لسياحة الغوص جزر الديمانيات"
+        },
         {
           "id": 1791280015068.7522,
           "at": "2026-10-06T09:46:55.068Z",
