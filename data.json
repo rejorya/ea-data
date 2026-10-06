@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T04:34:59.558Z",
+  "exportedAt": "2026-10-06T05:30:50.100Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34502,6 +34502,32 @@
       "followups": [],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790673827391.7822
+    },
+    {
+      "id": 1791264646851.2927,
+      "transactionType": "followup",
+      "title": "مذكرة تفاهم بين هيئة البيئة بسلطنة عُمان وصندوق النمر العربي بالمملكة العربية السعودية في مجال صون النمر العربي",
+      "from": "مكتب الرئيس",
+      "docNo": "1170/3/2022v421-16",
+      "toEntity": "وزارة العدل والشؤون القانونية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-05",
+      "receivedFollowDate": "2026-10-06",
+      "followStart": "2026-10-05",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791264646851.2927
     }
   ],
   "archivedTopics": [
@@ -43529,7 +43555,15 @@
       "loginAt": "2026-10-06T04:34:56.075Z",
       "logoutAt": null,
       "duration": null,
-      "logoutReason": null
+      "logoutReason": null,
+      "actions": [
+        {
+          "id": 1791264646896.4495,
+          "at": "2026-10-06T05:30:46.896Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "مذكرة تفاهم بين هيئة البيئة بسلطنة عُمان وصندوق النمر العربي بالمملكة العربية السعودية في مجال صون النمر العربي"
+        }
+      ]
     },
     {
       "id": 1791257846126.1968,
