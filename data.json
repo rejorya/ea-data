@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T07:43:01.152Z",
+  "exportedAt": "2026-10-06T07:43:32.513Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34809,9 +34809,30 @@
       "kpi": "",
       "note": "تم التوجيه الى التقسيم للاختصاص",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-06",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التوجيه الى التقسيم للمتابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 2
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791268894389.4368
+      "recordId": 1791268894389.4368,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     },
     {
       "id": 1791270188909.2178,
@@ -44090,6 +44111,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791272610443.4485,
+          "at": "2026-10-06T07:43:30.443Z",
+          "action": "إضافة متابعة",
+          "details": "مشروع تسجيل محمية المها العربية كحديقة جيولوجية في قائمة اليونسكو"
+        },
+        {
+          "id": 1791272610373.577,
+          "at": "2026-10-06T07:43:30.373Z",
+          "action": "تعديل موضوع",
+          "details": "مشروع تسجيل محمية المها العربية كحديقة جيولوجية في قائمة اليونسكو"
+        },
         {
           "id": 1791272579116.201,
           "at": "2026-10-06T07:42:59.116Z",
