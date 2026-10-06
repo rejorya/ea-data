@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T06:41:36.462Z",
+  "exportedAt": "2026-10-06T07:03:10.988Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34812,6 +34812,32 @@
       "followups": [],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791268894389.4368
+    },
+    {
+      "id": 1791270188909.2178,
+      "transactionType": "followup",
+      "title": "المواطن- راشد بن خميس بن راشد العمري",
+      "from": "عضو مجلس الشورى ممثل بولاية جعلان بني بو حسن",
+      "docNo": "1170/3/2022v420-46",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-30",
+      "receivedFollowDate": "2026-10-04",
+      "followStart": "2026-10-04",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791270188909.2178
     }
   ],
   "archivedTopics": [
@@ -43893,6 +43919,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791270188954.9585,
+          "at": "2026-10-06T07:03:08.954Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "المواطن- راشد بن خميس بن راشد العمري"
+        },
         {
           "id": 1791268894430.5586,
           "at": "2026-10-06T06:41:34.430Z",
