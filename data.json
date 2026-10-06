@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T09:48:41.258Z",
+  "exportedAt": "2026-10-06T09:51:35.123Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32929,14 +32929,14 @@
       "presidentDirection": "يعتذر",
       "createdAt": "2026-09-24T08:33:15.365Z",
       "followStart": "2026-09-24",
-      "type": "ext",
-      "followScope": "external",
+      "type": "int",
+      "followScope": "internal",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "other",
       "note": "",
-      "status": "awaiting",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-09-24",
@@ -32986,12 +32986,29 @@
           "taqseem": "",
           "startDate": "2026-09-24",
           "daysSince": 4
+        },
+        {
+          "date": "2026-10-06",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "esc",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 8
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790238795365.944,
-      "manualCount": 3,
-      "followEntity": "",
+      "manualCount": 4,
+      "followEntity": "naib_office",
       "responseMethod": "",
       "correspondenceDirection": ""
     },
@@ -44801,6 +44818,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791280293046.9177,
+          "at": "2026-10-06T09:51:33.046Z",
+          "action": "إضافة متابعة",
+          "details": "طلب التصريح بنقل حطب أشجار السمر عبر منفذ دبا الحدودي"
+        },
+        {
+          "id": 1791280292984.3066,
+          "at": "2026-10-06T09:51:32.984Z",
+          "action": "تعديل موضوع",
+          "details": "طلب التصريح بنقل حطب أشجار السمر عبر منفذ دبا الحدودي"
+        },
         {
           "id": 1791280119190.487,
           "at": "2026-10-06T09:48:39.190Z",
