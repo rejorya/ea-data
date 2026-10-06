@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T08:09:10.684Z",
+  "exportedAt": "2026-10-06T08:13:14.961Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35289,6 +35289,32 @@
       "followEntity": "rais_depts",
       "raisDeptName": "مكتب متابعة تنفيذ رؤية عمان 2040",
       "responseMethod": ""
+    },
+    {
+      "id": 1791274392859.453,
+      "transactionType": "followup",
+      "title": "دعوة الى  عقد اجتماع تنسيقي مشترك المشروع تطوير شارع الشاطى ومحمية القرم الطبيعية",
+      "from": "بلدية مسقط",
+      "docNo": "1170/3/2022v421-8",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-05",
+      "receivedFollowDate": "2026-10-06",
+      "followStart": "2026-10-05",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "مكتب الرئيس\nيحدد موعد مناسب",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791274392859.453
     }
   ],
   "archivedTopics": [
@@ -44438,6 +44464,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791274392921.9453,
+          "at": "2026-10-06T08:13:12.921Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "دعوة الى  عقد اجتماع تنسيقي مشترك المشروع تطوير شارع الشاطى ومحمية القرم الطبيعية"
+        },
         {
           "id": 1791274148155.1626,
           "at": "2026-10-06T08:09:08.155Z",
