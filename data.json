@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T09:43:59.453Z",
+  "exportedAt": "2026-10-06T09:44:17.252Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31648,7 +31648,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "القانونية\nلعمل اللازم",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-20",
@@ -31690,7 +31690,8 @@
       "externalEntities": [],
       "receivedFollowDate": "",
       "correspondenceDirection": "",
-      "followScope": "external"
+      "followScope": "external",
+      "closedAt": "2026-10-06"
     },
     {
       "id": 1789885506849.844,
@@ -39016,6 +39017,70 @@
       "archivedAt": "2026-10-06T09:43:57.407Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1789879161002.0417,
+      "title": "مذكرة تفاهم بين هيئة البيئة والمركز العلمي لموناكو  في مجال حماية النظم البيئية البحرية.pdf",
+      "from": "وزارة العدل والشؤون القانونية",
+      "docNo": "1170/3/2022v417-24",
+      "toEntity": "الدائرة القانونية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-08",
+      "followStart": "2026-09-10",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "القانونية\nلعمل اللازم",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-20",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 6
+        },
+        {
+          "date": "2026-09-30",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 14
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 2,
+      "followEntity": "rais_depts",
+      "raisDeptName": "الدائرة القانونية",
+      "responseMethod": "",
+      "transactionType": "followup",
+      "recordId": 1789879161002.0417,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "",
+      "followScope": "external",
+      "closedAt": "2026-10-06",
+      "archivedAt": "2026-10-06T09:44:15.207Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -44702,6 +44767,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791279855182.3762,
+          "at": "2026-10-06T09:44:15.182Z",
+          "action": "تعديل موضوع",
+          "details": "مذكرة تفاهم بين هيئة البيئة والمركز العلمي لموناكو  في مجال حماية النظم البيئية البحرية.pdf"
+        },
         {
           "id": 1791279837381.3743,
           "at": "2026-10-06T09:43:57.381Z",
