@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T05:31:27.075Z",
+  "exportedAt": "2026-10-06T05:36:19.571Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34549,6 +34549,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1791264977509.8594,
+      "transactionType": "followup",
+      "title": "نقل خدمات الفاضل فائل بن محمد بن فائل الشعشعي",
+      "from": "مكتب الرئيس",
+      "docNo": "1170/3/2022v421-9",
+      "toEntity": "وزارة الاعلام",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-05",
+      "receivedFollowDate": "2026-10-06",
+      "followStart": "2026-10-05",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791264977509.8594
     }
   ],
   "archivedTopics": [
@@ -43578,6 +43604,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791264977545.4753,
+          "at": "2026-10-06T05:36:17.545Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "نقل خدمات الفاضل فائل بن محمد بن فائل الشعشعي"
+        },
         {
           "id": 1791264684939.4988,
           "at": "2026-10-06T05:31:24.939Z",
