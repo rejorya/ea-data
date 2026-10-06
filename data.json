@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T07:55:17.470Z",
+  "exportedAt": "2026-10-06T07:56:05.680Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35122,9 +35122,31 @@
       "kpi": "other",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-06",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم توجيه للتقسيم للاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 2
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791273314288.1423
+      "recordId": 1791273314288.1423,
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "دائرة التميز المؤسسي",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -44206,6 +44228,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791273363281.399,
+          "at": "2026-10-06T07:56:03.281Z",
+          "action": "إضافة متابعة",
+          "details": "استكمال إجراءات اعتماد برنامج التعاون الدليل التشغيلي لمركز الابتكار للحاضنات والمسرعات"
+        },
+        {
+          "id": 1791273363215.3853,
+          "at": "2026-10-06T07:56:03.215Z",
+          "action": "تعديل موضوع",
+          "details": "استكمال إجراءات اعتماد برنامج التعاون الدليل التشغيلي لمركز الابتكار للحاضنات والمسرعات"
+        },
         {
           "id": 1791273314331.9146,
           "at": "2026-10-06T07:55:14.331Z",
