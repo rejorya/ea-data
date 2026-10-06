@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T07:26:14.709Z",
+  "exportedAt": "2026-10-06T07:26:49.239Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34929,9 +34929,30 @@
       "kpi": "wweek",
       "note": "نائب الرئيس\nللافادة خلال اسبوع ",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-06",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 2
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791271572401.6384
+      "recordId": 1791271572401.6384,
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -44013,6 +44034,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791271607170.4553,
+          "at": "2026-10-06T07:26:47.170Z",
+          "action": "إضافة متابعة",
+          "details": "عدم ممانعة لاستخدام أحرامات شاطئ سيح المراعي  رأس الحد"
+        },
+        {
+          "id": 1791271607104.746,
+          "at": "2026-10-06T07:26:47.104Z",
+          "action": "تعديل موضوع",
+          "details": "عدم ممانعة لاستخدام أحرامات شاطئ سيح المراعي  رأس الحد"
+        },
         {
           "id": 1791271572464.0654,
           "at": "2026-10-06T07:26:12.464Z",
