@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T05:30:50.100Z",
+  "exportedAt": "2026-10-06T05:31:27.075Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34523,11 +34523,32 @@
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "",
-      "note": "",
+      "note": "تم احالتها للمديرية للاختصاص",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-06",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم احالتها للمديرية للاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791264646851.2927
+      "recordId": 1791264646851.2927,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -43557,6 +43578,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791264684939.4988,
+          "at": "2026-10-06T05:31:24.939Z",
+          "action": "إضافة متابعة",
+          "details": "مذكرة تفاهم بين هيئة البيئة بسلطنة عُمان وصندوق النمر العربي بالمملكة العربية السعودية في مجال صون النمر العربي"
+        },
+        {
+          "id": 1791264684877.992,
+          "at": "2026-10-06T05:31:24.877Z",
+          "action": "تعديل موضوع",
+          "details": "مذكرة تفاهم بين هيئة البيئة بسلطنة عُمان وصندوق النمر العربي بالمملكة العربية السعودية في مجال صون النمر العربي"
+        },
         {
           "id": 1791264646896.4495,
           "at": "2026-10-06T05:30:46.896Z",
