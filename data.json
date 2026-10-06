@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T09:42:49.135Z",
+  "exportedAt": "2026-10-06T09:43:10.811Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -29988,7 +29988,7 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "القانونية\nلعمل اللازم",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-20",
@@ -30030,7 +30030,8 @@
       "externalEntities": [],
       "receivedFollowDate": "",
       "correspondenceDirection": "",
-      "followScope": "external"
+      "followScope": "external",
+      "closedAt": "2026-10-06"
     },
     {
       "id": 1789279134965.4658,
@@ -38833,6 +38834,70 @@
       "archivedAt": "2026-10-06T08:05:49.838Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1789277708970.8843,
+      "title": "مذكرة التفاهم بين هيئة البيئة في سلطنة عمان واللجنة العلمية للبحر الأبيض المتوسط في إمارة موناكو",
+      "from": "وزارة العدل زالشؤون القانونية",
+      "docNo": "1170/3/2022v417-23",
+      "toEntity": "الدائرة القانونية",
+      "taqseemName": "الدائرة القانونية",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-08",
+      "followStart": "2026-09-10",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "القانونية\nلعمل اللازم",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-20",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 6
+        },
+        {
+          "date": "2026-09-30",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-10",
+          "daysSince": 14
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 2,
+      "followEntity": "rais_depts",
+      "raisDeptName": "الدائرة القانونية",
+      "responseMethod": "",
+      "transactionType": "followup",
+      "recordId": 1789277708970.8843,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "",
+      "followScope": "external",
+      "closedAt": "2026-10-06",
+      "archivedAt": "2026-10-06T09:43:08.749Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -44519,6 +44584,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791279788720.0808,
+          "at": "2026-10-06T09:43:08.720Z",
+          "action": "تعديل موضوع",
+          "details": "مذكرة التفاهم بين هيئة البيئة في سلطنة عمان واللجنة العلمية للبحر الأبيض المتوسط في إمارة موناكو"
+        },
         {
           "id": 1791279767063.4485,
           "at": "2026-10-06T09:42:47.063Z",
