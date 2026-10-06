@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T08:14:28.695Z",
+  "exportedAt": "2026-10-06T09:41:27.830Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31091,7 +31091,7 @@
       "confidentiality": "secret",
       "date": "2026-09-01",
       "followStart": "2026-09-02",
-      "type": "ext",
+      "type": "int",
       "slaMode": "rais",
       "slaDays": 30,
       "kpi": "other",
@@ -31126,10 +31126,27 @@
           "taqseem": "",
           "startDate": "2026-09-02",
           "daysSince": 18
+        },
+        {
+          "date": "2026-10-06",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-02",
+          "daysSince": 24
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "naib_office",
       "responseMethod": "",
       "transactionType": "followup",
@@ -31137,7 +31154,7 @@
       "externalEntities": [],
       "receivedFollowDate": "",
       "correspondenceDirection": "",
-      "followScope": "external"
+      "followScope": "internal"
     },
     {
       "id": 1789643200619.7637,
@@ -44485,6 +44502,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791279685746.3333,
+          "at": "2026-10-06T09:41:25.746Z",
+          "action": "إضافة متابعة",
+          "details": "قائمة حصر المواد النووية والمشعة في سلطنة عمان"
+        },
+        {
+          "id": 1791279685683.344,
+          "at": "2026-10-06T09:41:25.683Z",
+          "action": "تعديل موضوع",
+          "details": "قائمة حصر المواد النووية والمشعة في سلطنة عمان"
+        },
         {
           "id": 1791274466481.977,
           "at": "2026-10-06T08:14:26.481Z",
