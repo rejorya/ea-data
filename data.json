@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T08:03:06.200Z",
+  "exportedAt": "2026-10-06T08:03:42.698Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35217,9 +35217,30 @@
       "kpi": "other",
       "note": "تم التوجيه للتقسيم للاختصاص",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-06",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم لتوجيه للتقسيم للاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 2
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791273782939.6484
+      "recordId": 1791273782939.6484,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -44301,6 +44322,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791273819818.3208,
+          "at": "2026-10-06T08:03:39.818Z",
+          "action": "إضافة متابعة",
+          "details": "طلب الموقف الرسمي النهائي بشأن المحميات الطبيعية المقترحة"
+        },
+        {
+          "id": 1791273819751.1929,
+          "at": "2026-10-06T08:03:39.751Z",
+          "action": "تعديل موضوع",
+          "details": "طلب الموقف الرسمي النهائي بشأن المحميات الطبيعية المقترحة"
+        },
         {
           "id": 1791273782980.767,
           "at": "2026-10-06T08:03:02.980Z",
