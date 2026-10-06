@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T07:03:10.988Z",
+  "exportedAt": "2026-10-06T07:03:43.598Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34835,9 +34835,30 @@
       "kpi": "naib3",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-06",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 2
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791270188909.2178
+      "recordId": 1791270188909.2178,
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -43919,6 +43940,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791270221151.7725,
+          "at": "2026-10-06T07:03:41.151Z",
+          "action": "إضافة متابعة",
+          "details": "المواطن- راشد بن خميس بن راشد العمري"
+        },
+        {
+          "id": 1791270221090.17,
+          "at": "2026-10-06T07:03:41.090Z",
+          "action": "تعديل موضوع",
+          "details": "المواطن- راشد بن خميس بن راشد العمري"
+        },
         {
           "id": 1791270188954.9585,
           "at": "2026-10-06T07:03:08.954Z",
