@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T08:05:51.880Z",
+  "exportedAt": "2026-10-06T08:08:39.841Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35259,6 +35259,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1791274117771.544,
+      "transactionType": "followup",
+      "title": "مؤشر نسبة النفايات المعاد تدويرها من إجمالي النفايات القابلة لإعادة التدوير",
+      "from": "محافظة جنوب الباطنة",
+      "docNo": "1170/3/2022v420-23",
+      "toEntity": "مكتب الرؤية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-28",
+      "receivedFollowDate": "2026-10-06",
+      "followStart": "2026-10-05",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "الرؤية\nلعمل اللازم",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791274117771.544
     }
   ],
   "archivedTopics": [
@@ -44408,6 +44434,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791274117809.2185,
+          "at": "2026-10-06T08:08:37.809Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "مؤشر نسبة النفايات المعاد تدويرها من إجمالي النفايات القابلة لإعادة التدوير"
+        },
         {
           "id": 1791273949812.836,
           "at": "2026-10-06T08:05:49.812Z",
