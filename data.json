@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T07:19:46.637Z",
+  "exportedAt": "2026-10-06T07:26:14.709Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34906,6 +34906,32 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1791271572401.6384,
+      "transactionType": "followup",
+      "title": "عدم ممانعة لاستخدام أحرامات شاطئ سيح المراعي  رأس الحد",
+      "from": "الشركة العمانية للتنمية السياحية مجموعة عمران",
+      "docNo": "1170/3/2022v420-65",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-01",
+      "receivedFollowDate": "2026-10-04",
+      "followStart": "2026-10-04",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wweek",
+      "note": "نائب الرئيس\nللافادة خلال اسبوع ",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791271572401.6384
     }
   ],
   "archivedTopics": [
@@ -43987,6 +44013,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791271572464.0654,
+          "at": "2026-10-06T07:26:12.464Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "عدم ممانعة لاستخدام أحرامات شاطئ سيح المراعي  رأس الحد"
+        },
         {
           "id": 1791271183861.0254,
           "at": "2026-10-06T07:19:43.861Z",
