@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T07:43:32.513Z",
+  "exportedAt": "2026-10-06T07:43:48.232Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35027,9 +35027,30 @@
       "kpi": "other",
       "note": "تم التوجيه الى التقسيم للمتابعة",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-06",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التوجيه الى التقسيم للمتابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 2
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791272579071.7695
+      "recordId": 1791272579071.7695,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -44111,6 +44132,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791272626161.3462,
+          "at": "2026-10-06T07:43:46.161Z",
+          "action": "إضافة متابعة",
+          "details": "نفوق الحيتان ومخاطر أنشطة الصيد في منطقة بر الحكمان"
+        },
+        {
+          "id": 1791272626095.8818,
+          "at": "2026-10-06T07:43:46.095Z",
+          "action": "تعديل موضوع",
+          "details": "نفوق الحيتان ومخاطر أنشطة الصيد في منطقة بر الحكمان"
+        },
         {
           "id": 1791272610443.4485,
           "at": "2026-10-06T07:43:30.443Z",
