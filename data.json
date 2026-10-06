@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T05:46:51.788Z",
+  "exportedAt": "2026-10-06T06:09:12.823Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31673,19 +31673,38 @@
       "slaDays": null,
       "kpi": "other",
       "note": "متابعة خارجية",
-      "status": "new",
-      "followups": [],
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-06",
+          "replied": true,
+          "responseMethod": "direct_manager",
+          "replyDocNo": "1170/3/2022v421-15",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-20",
+          "daysSince": 12
+        }
+      ],
       "sheet": "مُضاف يدوياً",
       "transactionType": "followup",
       "recordId": 1789885506849.844,
       "externalEntities": [],
       "receivedFollowDate": "",
       "correspondenceDirection": "out",
-      "manualCount": 0,
+      "manualCount": 1,
       "followScope": "external",
       "followEntity": "other",
       "otherEntityName": "الأمانة العامة لمجلس الوزراء",
-      "responseMethod": ""
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-10-06"
     },
     {
       "id": 1789885624384.0776,
@@ -37939,6 +37958,58 @@
       "archivedAt": "2026-10-01T09:37:29.410Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1789885506849.844,
+      "title": "قمة قادة العالم",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v418-81",
+      "toEntity": "الأمانة العامة لمجلس الوزراء",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-09-20",
+      "followStart": "2026-09-20",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "متابعة خارجية",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-06",
+          "replied": true,
+          "responseMethod": "direct_manager",
+          "replyDocNo": "1170/3/2022v421-15",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-20",
+          "daysSince": 12
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "transactionType": "followup",
+      "recordId": 1789885506849.844,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "out",
+      "manualCount": 1,
+      "followScope": "external",
+      "followEntity": "other",
+      "otherEntityName": "الأمانة العامة لمجلس الوزراء",
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-10-06",
+      "archivedAt": "2026-10-06T06:09:10.686Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -43625,6 +43696,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791266950667.029,
+          "at": "2026-10-06T06:09:10.667Z",
+          "action": "إضافة متابعة",
+          "details": "قمة قادة العالم"
+        },
+        {
+          "id": 1791266950616.0303,
+          "at": "2026-10-06T06:09:10.616Z",
+          "action": "تعديل موضوع",
+          "details": "قمة قادة العالم"
+        },
         {
           "id": 1791265609645.8152,
           "at": "2026-10-06T05:46:49.645Z",
