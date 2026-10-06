@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T07:03:43.598Z",
+  "exportedAt": "2026-10-06T07:19:01.899Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34859,6 +34859,32 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1791271139811.105,
+      "transactionType": "followup",
+      "title": "طلب الحصول على موافقة واكتشاف لاستخدام خامات الجوابو السماد الفسفورى الطبيعي بجزر الحلانيات",
+      "from": "الشموخ التجارية",
+      "docNo": "1170/3/2022v420-60",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-30",
+      "receivedFollowDate": "2026-10-04",
+      "followStart": "2026-10-04",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "نائب الرئيس\nللدراسة والافادة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791271139811.105
     }
   ],
   "archivedTopics": [
@@ -43940,6 +43966,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791271139872.633,
+          "at": "2026-10-06T07:18:59.872Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب الحصول على موافقة واكتشاف لاستخدام خامات الجوابو السماد الفسفورى الطبيعي بجزر الحلانيات"
+        },
         {
           "id": 1791270221151.7725,
           "at": "2026-10-06T07:03:41.151Z",
