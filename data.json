@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T07:32:59.218Z",
+  "exportedAt": "2026-10-06T07:34:16.900Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34978,7 +34978,11 @@
       "status": "new",
       "followups": [],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791271977131.1025
+      "recordId": 1791271977131.1025,
+      "manualCount": 0,
+      "followEntity": "rais_depts",
+      "raisDeptName": "مركز الاعمال البيئية",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -44060,6 +44064,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791272054827.371,
+          "at": "2026-10-06T07:34:14.827Z",
+          "action": "تعديل موضوع",
+          "details": "طلب الاعفاء من الغرامات"
+        },
         {
           "id": 1791271977180.4072,
           "at": "2026-10-06T07:32:57.180Z",
