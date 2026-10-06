@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T07:56:05.680Z",
+  "exportedAt": "2026-10-06T07:59:09.631Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35147,6 +35147,32 @@
       "followEntity": "rais_depts",
       "raisDeptName": "دائرة التميز المؤسسي",
       "responseMethod": ""
+    },
+    {
+      "id": 1791273547554.444,
+      "transactionType": "followup",
+      "title": "استكمال إجراءات اعتماد برنامج التعاون الدليل التشغيلي لمركز الابتكار للحاضنات والمسرعات",
+      "from": "مكتب الرئيس",
+      "docNo": "1170/3/2022v420-72",
+      "toEntity": "جهـــــاز الاستثمـــــــار العمانـــــــــي",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-04",
+      "receivedFollowDate": "2026-10-04",
+      "followStart": "2026-10-04",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "تم التوجيه للتقسيم للاختصاص",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791273547554.444
     }
   ],
   "archivedTopics": [
@@ -44228,6 +44254,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791273547596.6404,
+          "at": "2026-10-06T07:59:07.596Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "استكمال إجراءات اعتماد برنامج التعاون الدليل التشغيلي لمركز الابتكار للحاضنات والمسرعات"
+        },
         {
           "id": 1791273363281.399,
           "at": "2026-10-06T07:56:03.281Z",
