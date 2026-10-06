@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T06:26:14.687Z",
+  "exportedAt": "2026-10-06T06:28:49.924Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34726,15 +34726,66 @@
       "type": "ext",
       "followScope": "external",
       "correspondenceDirection": "out",
-      "externalEntities": [],
+      "externalEntities": [
+        {
+          "id": 1791268020872.3193,
+          "name": "هيئة الدفاع المدني والاسعاف",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        },
+        {
+          "id": 1791268070448.702,
+          "name": "الهيئة العامة للمناطق الاقتصادية الخاصة والمناطق الحرة",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        },
+        {
+          "id": 1791268087200.3643,
+          "name": "النيابة العامة",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        },
+        {
+          "id": 1791268098648.8235,
+          "name": "وزارة الطاقة والمعادن",
+          "replied": false,
+          "lastFollowDate": "2026-10-06",
+          "responseMethod": ""
+        }
+      ],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-06",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التوجيه للتقسيم لاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": 3,
+          "externalEntityName": "وزارة الطاقة والمعادن",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 2
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791267972601.019
+      "recordId": 1791267972601.019,
+      "manualCount": 1,
+      "followEntity": "other",
+      "otherEntityName": "هيئة الدفاع المدني والاسعاف",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -43816,6 +43867,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791268127777.792,
+          "at": "2026-10-06T06:28:47.777Z",
+          "action": "إضافة متابعة",
+          "details": "المعسكر السنوي للرقابة والتفتيش البيئي"
+        },
+        {
+          "id": 1791268127704.6326,
+          "at": "2026-10-06T06:28:47.704Z",
+          "action": "تعديل موضوع",
+          "details": "المعسكر السنوي للرقابة والتفتيش البيئي"
+        },
         {
           "id": 1791267972646.929,
           "at": "2026-10-06T06:26:12.646Z",
