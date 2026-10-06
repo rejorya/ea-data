@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T06:18:05.572Z",
+  "exportedAt": "2026-10-06T06:22:32.269Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34662,6 +34662,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1791267750186.4849,
+      "transactionType": "followup",
+      "title": "(MARS) ترشيح نقطة اتصال لنظام الإنذار والاستجابة لانبعاثات الميثان",
+      "from": "مكتب الرئيس",
+      "docNo": "1170/3/2022v421-3",
+      "toEntity": "الشركــــــــــة العمانيــــــــة القابضــــــة لخدمـــــات البيئــة (بيئـة)",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-04",
+      "receivedFollowDate": "2026-10-05",
+      "followStart": "2026-10-04",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "",
+      "note": "تم التوجية للتقسيم للاختصاص ",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791267750186.4849
     }
   ],
   "archivedTopics": [
@@ -43743,6 +43769,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791267750231.8184,
+          "at": "2026-10-06T06:22:30.231Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "(MARS) ترشيح نقطة اتصال لنظام الإنذار والاستجابة لانبعاثات الميثان"
+        },
         {
           "id": 1791267482606.7332,
           "at": "2026-10-06T06:18:02.606Z",
