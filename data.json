@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T06:28:49.924Z",
+  "exportedAt": "2026-10-06T06:41:36.462Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34786,6 +34786,32 @@
       "followEntity": "other",
       "otherEntityName": "هيئة الدفاع المدني والاسعاف",
       "responseMethod": ""
+    },
+    {
+      "id": 1791268894389.4368,
+      "transactionType": "followup",
+      "title": "مشروع تسجيل محمية المها العربية كحديقة جيولوجية في قائمة اليونسكو",
+      "from": "مكتب الرئيس",
+      "docNo": "1170/3/2022v420-91",
+      "toEntity": "وزارة التراث والسياحة",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-04",
+      "receivedFollowDate": "2026-10-05",
+      "followStart": "2026-10-04",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "",
+      "note": "تم التوجيه الى التقسيم للاختصاص",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791268894389.4368
     }
   ],
   "archivedTopics": [
@@ -43867,6 +43893,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791268894430.5586,
+          "at": "2026-10-06T06:41:34.430Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "مشروع تسجيل محمية المها العربية كحديقة جيولوجية في قائمة اليونسكو"
+        },
         {
           "id": 1791268127777.792,
           "at": "2026-10-06T06:28:47.777Z",
