@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T07:26:49.239Z",
+  "exportedAt": "2026-10-06T07:32:59.218Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34953,6 +34953,32 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1791271977131.1025,
+      "transactionType": "followup",
+      "title": "طلب الاعفاء من الغرامات",
+      "from": "شركة المزيونة للكسارات والتعدين",
+      "docNo": "1170/3/2022v420-45",
+      "toEntity": "مركز الاعمال البيئية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-30",
+      "receivedFollowDate": "2026-10-04",
+      "followStart": "2026-10-04",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wweek",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791271977131.1025
     }
   ],
   "archivedTopics": [
@@ -44034,6 +44060,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791271977180.4072,
+          "at": "2026-10-06T07:32:57.180Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب الاعفاء من الغرامات"
+        },
         {
           "id": 1791271607170.4553,
           "at": "2026-10-06T07:26:47.170Z",
