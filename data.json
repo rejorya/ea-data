@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T09:53:01.051Z",
+  "exportedAt": "2026-10-06T09:54:58.848Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34416,7 +34416,7 @@
       "slaDays": 8,
       "kpi": "",
       "note": "اخر موعد للتسليم 8 أكتوبر 2026",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-29",
@@ -34440,7 +34440,8 @@
       "recordId": 1790662015111.5461,
       "manualCount": 1,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-10-06"
     },
     {
       "id": 1790662339128.1594,
@@ -39147,6 +39148,57 @@
       "followScope": "external",
       "closedAt": "2026-10-06",
       "archivedAt": "2026-10-06T09:44:15.207Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1790662015111.5461,
+      "transactionType": "followup",
+      "title": "ابداء الراي حول مشروع مراجعة وتطوير عملية التميز  ضمن برنامج الانشان والمحيط الحيوي",
+      "from": "وزارة التعليم",
+      "docNo": "1170/3/2022v420-37",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-29",
+      "receivedFollowDate": "2026-09-29",
+      "followStart": "2026-09-29",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "letter",
+      "slaDays": 8,
+      "kpi": "",
+      "note": "اخر موعد للتسليم 8 أكتوبر 2026",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-29",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-29",
+          "daysSince": 0
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790662015111.5461,
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "closedAt": "2026-10-06",
+      "archivedAt": "2026-10-06T09:54:56.796Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -44835,6 +44887,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791280496769.145,
+          "at": "2026-10-06T09:54:56.769Z",
+          "action": "تعديل موضوع",
+          "details": "ابداء الراي حول مشروع مراجعة وتطوير عملية التميز  ضمن برنامج الانشان والمحيط الحيوي"
+        },
         {
           "id": 1791280378969.9717,
           "at": "2026-10-06T09:52:58.969Z",
