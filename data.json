@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T05:36:19.571Z",
+  "exportedAt": "2026-10-06T05:36:58.052Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34572,9 +34572,30 @@
       "kpi": "",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-06",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التوجيه للمديرية للاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791264977509.8594
+      "recordId": 1791264977509.8594,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -43604,6 +43625,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791265015895.9011,
+          "at": "2026-10-06T05:36:55.895Z",
+          "action": "إضافة متابعة",
+          "details": "نقل خدمات الفاضل فائل بن محمد بن فائل الشعشعي"
+        },
+        {
+          "id": 1791265015839.5132,
+          "at": "2026-10-06T05:36:55.839Z",
+          "action": "تعديل موضوع",
+          "details": "نقل خدمات الفاضل فائل بن محمد بن فائل الشعشعي"
+        },
         {
           "id": 1791264977545.4753,
           "at": "2026-10-06T05:36:17.545Z",
