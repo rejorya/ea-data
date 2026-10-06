@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T07:43:48.232Z",
+  "exportedAt": "2026-10-06T07:50:14.012Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35051,6 +35051,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1791273011931.2808,
+      "transactionType": "followup",
+      "title": "انتداب موظفة من هيئة البيئة للتدريب على رأس العمل",
+      "from": "مكتب الرئيس",
+      "docNo": "1170/3/2022v420-70",
+      "toEntity": "الشركة العُمانية للاتصالات",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-04",
+      "receivedFollowDate": "2026-10-04",
+      "followStart": "2026-10-04",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "تم التوجيه للمختصين ",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791273011931.2808
     }
   ],
   "archivedTopics": [
@@ -44132,6 +44158,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791273011974.4282,
+          "at": "2026-10-06T07:50:11.974Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "انتداب موظفة من هيئة البيئة للتدريب على رأس العمل"
+        },
         {
           "id": 1791272626161.3462,
           "at": "2026-10-06T07:43:46.161Z",
