@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-07T08:08:48.865Z",
+  "exportedAt": "2026-10-07T08:42:56.888Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -45361,6 +45361,162 @@
   ],
   "activityLog": [
     {
+      "id": "2cf76180-597a-480a-a5b9-6d1509459aa7",
+      "sessionId": "271822cf-b471-474f-82bf-4e14f3761f4d",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-07T08:42:50.801Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
+      "id": "3789f197-ed38-4441-82c5-8bb5d65f66ff",
+      "sessionId": "6e6eb410-c3e0-4445-b9c5-359cc749d793",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-07T08:42:50.764Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
+      "id": "221de8c8-661b-46cb-91ba-a2b790a36ce9",
+      "sessionId": "5db2b822-3fca-4391-899c-35c4b41b92e9",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-07T08:42:50.736Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
+      "id": "46750ae8-09bf-42d1-bb44-586b0d7ceadf",
+      "sessionId": "dc76cfab-c745-49fa-adf5-2a1316b86122",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-07T08:42:50.282Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
+      "id": "2b395bb9-8fba-49e0-8e92-b99072ad81b7",
+      "sessionId": "14eacb54-7783-4c61-85d5-4ca0cb2983ed",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-07T08:42:49.864Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
+      "id": "0dff4d20-ac53-45a5-a579-7148d46cd230",
+      "sessionId": "f7ba2939-bc41-4c31-bdbb-ad78d10a5849",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-07T08:42:49.665Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": 1791344846803.4019,
       "sessionId": "28830443-97f0-4af6-ac03-17826ae182d9",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -45382,9 +45538,9 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-07T03:47:26.803Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-07T08:10:01.694Z",
+      "duration": "262 دقيقة و 34 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
       "actions": [
         {
           "id": 1791355859050.13,
@@ -45506,7 +45662,8 @@
           "action": "تعديل موضوع",
           "details": "تحديد مخططات للأراضي الواقعة ضمن نطاق المحميات الطبيعية"
         }
-      ]
+      ],
+      "durationMinutes": 262
     },
     {
       "id": 1791261296075.6792,
@@ -50930,7 +51087,7 @@
       "durationMinutes": 3
     }
   ],
-  "visitorCodeHash": "",
+  "visitorCodeHash": "c4a1785a61be152ffb94dcda46cbc0da48de648dfa151bcf9ee49068078124c2",
   "users": {
     "rahab@ea2026": {
       "name": "رحاب بنت نصيب الفرج",
