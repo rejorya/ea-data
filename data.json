@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-06T09:59:07.799Z",
+  "exportedAt": "2026-10-07T03:47:31.930Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -44880,6 +44880,32 @@
   ],
   "activityLog": [
     {
+      "id": 1791344846803.4019,
+      "sessionId": "28830443-97f0-4af6-ac03-17826ae182d9",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-07T03:47:26.803Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": 1791261296075.6792,
       "sessionId": "c429658b-0ab3-4d7d-9b3f-ae3819db5f05",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -44901,9 +44927,9 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-06T04:34:56.075Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-06T09:59:44.849Z",
+      "duration": "324 دقيقة و 48 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
       "actions": [
         {
           "id": 1791280636398.2385,
@@ -45343,7 +45369,8 @@
           "action": "إضافة موضوع متابعة",
           "details": "مذكرة تفاهم بين هيئة البيئة بسلطنة عُمان وصندوق النمر العربي بالمملكة العربية السعودية في مجال صون النمر العربي"
         }
-      ]
+      ],
+      "durationMinutes": 324
     },
     {
       "id": 1791257846126.1968,
