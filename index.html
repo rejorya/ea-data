@@ -233,7 +233,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
       <button type="button" onclick="doGuestLogin()" style="background:none;border:1px solid #c8d8e8;color:#008F8F;padding:8px 24px;border-radius:8px;cursor:pointer;font-size:13px;font-family:inherit">👁️ دخول الزائر بالرمز</button>
     </div>
   </div>
-  <div class="lfoot">هيئة البيئة، سلطنة عُمان — إصدار السجل المركزي ٢</div>
+  <div class="lfoot">هيئة البيئة، سلطنة عُمان — إصدار السجل المركزي ٣</div>
 </div>
 
 <!-- MAIN APP -->
@@ -2350,11 +2350,35 @@ async function startCentralSession(credentials){
  clearInterval(window._centralHeartbeat);
  window._centralHeartbeat=setInterval(()=>{if(window._centralSession)centralRequest('/session/ping',window._centralSession).catch(()=>{});},60000);
 }
-function endCentralSession(reason){
- const session=window._centralSession;if(!session)return;
- clearInterval(window._centralHeartbeat);window._centralSession=null;
- fetch(CENTRAL_LOG_URL+'/session/end',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...session,reason}),keepalive:true}).catch(()=>{});
+const PENDING_LOGOUT_KEY='ea_pending_central_logout_v1';
+function readPendingLogouts(){try{return JSON.parse(localStorage.getItem(PENDING_LOGOUT_KEY)||'[]');}catch(e){return [];}}
+function writePendingLogouts(entries){try{localStorage.setItem(PENDING_LOGOUT_KEY,JSON.stringify(entries));}catch(e){}}
+async function sendCentralLogout(entry){
+ const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),10000);
+ try{
+  const r=await fetch(CENTRAL_LOG_URL+'/session/end',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(entry),keepalive:true,signal:controller.signal});
+  if(!r.ok)throw new Error('logout '+r.status);
+  writePendingLogouts(readPendingLogouts().filter(x=>x.id!==entry.id));
+  return true;
+ }catch(e){return false;}
+ finally{clearTimeout(timer);}
 }
+async function retryPendingLogouts(){
+ if(window._logoutRetryBusy)return;
+ window._logoutRetryBusy=true;
+ try{for(const entry of readPendingLogouts())await sendCentralLogout(entry);}
+ finally{window._logoutRetryBusy=false;}
+}
+async function endCentralSession(reason){
+ const session=window._centralSession;if(!session)return true;
+ clearInterval(window._centralHeartbeat);window._centralSession=null;
+ const entry={...session,reason};
+ writePendingLogouts([...readPendingLogouts().filter(x=>x.id!==entry.id),entry]);
+ return await sendCentralLogout(entry);
+}
+window.addEventListener('online',retryPendingLogouts);
+setInterval(retryPendingLogouts,30000);
+retryPendingLogouts();
 async function refreshCentralLogs(){
  if(!CU?.admin||!window._ghMasterPassword||window._centralLogLoading)return;
  window._centralLogLoading=true;
@@ -2409,9 +2433,9 @@ function recordLogin(user, name, role, isAdmin) {
   return entry;
 }
 
-function recordLogout(reason = 'تسجيل خروج عادي') {
-  endCentralSession(reason);
-  if (!currentSession) return;
+async function recordLogout(reason = 'تسجيل خروج عادي') {
+  const centralResult=endCentralSession(reason);
+  if (!currentSession) return await centralResult;
   const log = loadActivityLog();
   const entry = log.find(e => e.id === currentSession.id);
   if (entry) {
@@ -2427,6 +2451,7 @@ function recordLogout(reason = 'تسجيل خروج عادي') {
     saveActivityLog(log);
   }
   currentSession = null;
+  return await centralResult;
 }
 
 // تسجيل أي تعديل/حفظ يقوم به المستخدم ضمن جلسة الدخول الحالية
@@ -2502,7 +2527,7 @@ function renderActivityUsers(log=mergeActivityLogs(loadActivityLog(),window._cen
     const actions=entries.reduce((sum,e)=>sum+(Array.isArray(e.actions)?e.actions.length:0),0);
     const here=!!(last && currentSession && last.id===currentSession.id && !last.logoutAt);
     const centralActive=last?.central&&!last.logoutAt&&Date.now()-new Date(last.lastSeenAt)<120000;
-    const state=centralActive?'متصل حسب آخر تحديث':!last?'لا يوجد دخول مسجل':here?'داخل الآن على هذا الجهاز':last.logoutAt?'خرج من آخر جلسة':'لا توجد بيانات خروج لآخر جلسة';
+    const state=centralActive?'متصل حسب آخر تحديث':!last?'لا يوجد دخول مسجل':here?'داخل الآن على هذا الجهاز':last.logoutAt?'خرج من آخر جلسة':'انقطع تحديث الجلسة؛ لم يصل تأكيد الخروج';
     const deviceList=[...devices.values()].map(d=>escHtml(d)).join('، ')||'—';
     return `<tr><td><b>${escHtml(a.name)}</b><br><small>${escHtml(a.user)}</small></td><td>${escHtml(a.type)}</td><td>${entries.length}</td><td>${first?format(first.loginAt):'—'}</td><td>${last?format(last.loginAt):'—'}</td><td>${last?.logoutAt?format(last.logoutAt):'—'}</td><td>${deviceList}</td><td>${actions}</td><td>${state}</td></tr>`;
   }).join('') || noData(9,'لا توجد حسابات مسجلة');
@@ -2529,7 +2554,7 @@ function renderActivityLog() {
     let logoutTime = '—';
     let reasonBadge = (currentSession?.id===e.id || (e.central&&!e.logoutAt&&Date.now()-new Date(e.lastSeenAt)<120000))
       ? '<span class="bd bd-prog">متصل حسب آخر تحديث</span>'
-      : '<span class="bd bd-pend">الخروج غير مسجل</span>';
+      : '<span class="bd bd-pend">لم يصل تأكيد الخروج</span>';
     if (e.logoutAt) {
       const lo = new Date(e.logoutAt);
       logoutTime = lo.toLocaleTimeString('ar-SA', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
@@ -3668,15 +3693,17 @@ async function doLoginInternal(e) {
   return false;
 }
 
-function doLogout() {
+async function doLogout() {
   if(!confirm('تسجيل الخروج؟')) return;
-  forceLogout();
+  await forceLogout();
 }
 
-function forceLogout(reason) {
+async function forceLogout(reason) {
+  if(window._logoutInProgress)return;
+  window._logoutInProgress=true;
   // Token غير محفوظ محلياً؛ يُمسح من ذاكرة الجلسة عند تسجيل الخروج.
   // تسجيل عملية الخروج
-  recordLogout(reason || 'تسجيل خروج عادي');
+  const logoutConfirmed=await recordLogout(reason || 'تسجيل خروج عادي');
   
   CU = null;
   window._visitorCodeVerified=false;
@@ -3691,6 +3718,8 @@ function forceLogout(reason) {
   $('loginPass').value = '';
   if($('visitorAccessCode')) $('visitorAccessCode').value='';
   $('loginUser').focus();
+  window._logoutInProgress=false;
+  const err=$('loginErr');if(err){err.textContent=logoutConfirmed?'':'تم تسجيل خروجك محليًا؛ تأكيد الخروج المركزي قيد إعادة الإرسال عند توفر الاتصال.';err.style.display=logoutConfirmed?'none':'block';}
 }
 
 // ============================================================
@@ -3708,7 +3737,7 @@ function startSession() {
     if(sessionSecondsLeft <= 0) {
       clearInterval(sessionInterval);
       alert('⏱️ انتهت الجلسة\n\nمضت 20 دقيقة. يرجى تسجيل الدخول مرة أخرى.');
-      forceLogout();
+      forceLogout('انتهاء وقت الجلسة');
     }
   }, 1000);
 }
