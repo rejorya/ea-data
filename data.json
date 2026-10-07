@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-07T03:58:46.278Z",
+  "exportedAt": "2026-10-07T03:59:11.129Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -29824,7 +29824,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "للمتابعة بعد 5 اسابيع",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-23",
@@ -29886,7 +29886,8 @@
       "followEntity": "taqseem",
       "responseMethod": "",
       "divFollowDate": "2026-09-23",
-      "correspondenceDirection": ""
+      "correspondenceDirection": "",
+      "closedAt": "2026-10-07"
     },
     {
       "id": 1789274571645.4478,
@@ -39303,6 +39304,90 @@
       "archivedAt": "2026-10-07T03:58:44.126Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1787220319390.4294,
+      "title": "استضافة مؤتمر الأطراف في اتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ",
+      "from": "مكتب الرئيس",
+      "docNo": "",
+      "toEntity": "وزيـــــــــــــــــــــــــــــر الماليـــــــــــــــــــــــــــــة",
+      "taqseemName": "المديرية العامة للتغير المناخي",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-05-18",
+      "followStart": "2026-08-20",
+      "type": "int",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "للمتابعة بعد 5 اسابيع",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-23",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للتغير المناخي",
+          "startDate": "2026-08-20",
+          "daysSince": 24
+        },
+        {
+          "date": "2026-09-28",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للتغير المناخي",
+          "startDate": "2026-08-20",
+          "daysSince": 27
+        },
+        {
+          "date": "2026-09-29",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "esc",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للتغير المناخي",
+          "startDate": "2026-08-20",
+          "daysSince": 28
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "transactionType": "followup",
+      "recordId": 1787220319390.4294,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "manualCount": 3,
+      "followScope": "internal",
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-09-23",
+      "correspondenceDirection": "",
+      "closedAt": "2026-10-07",
+      "archivedAt": "2026-10-07T03:59:06.900Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -44989,6 +45074,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791345546878.6663,
+          "at": "2026-10-07T03:59:06.878Z",
+          "action": "تعديل موضوع",
+          "details": "استضافة مؤتمر الأطراف في اتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ"
+        },
         {
           "id": 1791345524105.1902,
           "at": "2026-10-07T03:58:44.105Z",
