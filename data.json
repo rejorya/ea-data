@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-07T08:47:35.945Z",
+  "exportedAt": "2026-10-07T09:24:21.637Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -45361,6 +45361,32 @@
   ],
   "activityLog": [
     {
+      "id": 1791365057589.7095,
+      "sessionId": "11dbb1dc-3954-4fd5-bc7b-f738bf8ff8e0",
+      "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "هاتف/جهاز لوحي • Android • Chrome",
+      "deviceType": "هاتف/جهاز لوحي",
+      "deviceOS": "Android",
+      "browser": "Chrome",
+      "platform": "Linux armv81",
+      "deviceSnapshot": {
+        "id": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+        "label": "هاتف/جهاز لوحي • Android • Chrome",
+        "type": "هاتف/جهاز لوحي",
+        "os": "Android",
+        "browser": "Chrome",
+        "platform": "Linux armv81"
+      },
+      "loginAt": "2026-10-07T09:24:17.589Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": "acd967d7-ee39-4a59-a23d-d7dec32889a4",
       "sessionId": "43ef5fb4-4753-4d7f-9466-1b95c3bbbfd7",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -45411,6 +45437,60 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null
+    },
+    {
+      "id": 1791362749681.049,
+      "sessionId": "209ac0c0-b29f-4898-b1e4-e58b66f823ec",
+      "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+      "user": "guest",
+      "name": "زائر",
+      "role": "اطّلاع عام",
+      "type": "زائر",
+      "device": "هاتف/جهاز لوحي • Android • Chrome",
+      "deviceType": "هاتف/جهاز لوحي",
+      "deviceOS": "Android",
+      "browser": "Chrome",
+      "platform": "Linux armv81",
+      "deviceSnapshot": {
+        "id": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+        "label": "هاتف/جهاز لوحي • Android • Chrome",
+        "type": "هاتف/جهاز لوحي",
+        "os": "Android",
+        "browser": "Chrome",
+        "platform": "Linux armv81"
+      },
+      "loginAt": "2026-10-07T08:45:49.681Z",
+      "logoutAt": "2026-10-07T08:45:59.695Z",
+      "duration": "0 دقيقة و 10 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
+      "durationMinutes": 0
+    },
+    {
+      "id": 1791362680732.5146,
+      "sessionId": "94545bcf-bcd4-41e7-9a30-a31f8f1d540e",
+      "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+      "user": "guest",
+      "name": "زائر",
+      "role": "اطّلاع عام",
+      "type": "زائر",
+      "device": "هاتف/جهاز لوحي • Android • Chrome",
+      "deviceType": "هاتف/جهاز لوحي",
+      "deviceOS": "Android",
+      "browser": "Chrome",
+      "platform": "Linux armv81",
+      "deviceSnapshot": {
+        "id": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+        "label": "هاتف/جهاز لوحي • Android • Chrome",
+        "type": "هاتف/جهاز لوحي",
+        "os": "Android",
+        "browser": "Chrome",
+        "platform": "Linux armv81"
+      },
+      "loginAt": "2026-10-07T08:44:40.731Z",
+      "logoutAt": "2026-10-07T08:45:10.868Z",
+      "duration": "0 دقيقة و 30 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
+      "durationMinutes": 0
     },
     {
       "id": "2cf76180-597a-480a-a5b9-6d1509459aa7",
@@ -46234,9 +46314,10 @@
         "platform": "Linux armv81"
       },
       "loginAt": "2026-10-06T00:48:35.252Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null
+      "logoutAt": "2026-10-06T00:49:19.430Z",
+      "duration": "0 دقيقة و 44 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
+      "durationMinutes": 0
     },
     {
       "id": 1791224184928.9797,
