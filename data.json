@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-07T03:57:49.059Z",
+  "exportedAt": "2026-10-07T03:58:46.278Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -30790,7 +30790,7 @@
       "slaDays": 14,
       "kpi": "other",
       "note": "نائب الرئيس\nالتنوع الاحيائي\nلحصر جميع مواقع الاستيطان في محميتي السرين وراس الشجر واسقاطها على الخرائط ودراسة امكانية نقلها او الموافقة عليها مع الاخذ في الاعتبار ايصال الخدمات والتوسعات المستقبلية ويجب ان يكون ذلك من خلال مسح ميداني وتحليل علمي وربطه بنطاقات المحميات وحسم هكذا طلبات بشكل نهائي\nكما يرجى ارسال تعميم الى المحافظات حول عدم صرف موافقات لاقامة العزب داخل المحميات الطبيعية ونسخة لوزير الاسكات و وضع المبررات العلمية المناسبة",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-15",
@@ -30851,7 +30851,8 @@
       "externalEntities": [],
       "receivedFollowDate": "",
       "correspondenceDirection": "",
-      "followScope": "internal"
+      "followScope": "internal",
+      "closedAt": "2026-10-07"
     },
     {
       "id": 1789456093991.8157,
@@ -39219,6 +39220,89 @@
       "archivedAt": "2026-10-06T09:54:56.796Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1789455326581.1074,
+      "title": "تحديد مخططات للأراضي الواقعة ضمن نطاق المحميات الطبيعية",
+      "from": "مكتب الرئيس",
+      "docNo": "",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-26",
+      "followStart": "2026-08-27",
+      "type": "int",
+      "slaMode": "rais",
+      "slaDays": 14,
+      "kpi": "other",
+      "note": "نائب الرئيس\nالتنوع الاحيائي\nلحصر جميع مواقع الاستيطان في محميتي السرين وراس الشجر واسقاطها على الخرائط ودراسة امكانية نقلها او الموافقة عليها مع الاخذ في الاعتبار ايصال الخدمات والتوسعات المستقبلية ويجب ان يكون ذلك من خلال مسح ميداني وتحليل علمي وربطه بنطاقات المحميات وحسم هكذا طلبات بشكل نهائي\nكما يرجى ارسال تعميم الى المحافظات حول عدم صرف موافقات لاقامة العزب داخل المحميات الطبيعية ونسخة لوزير الاسكات و وضع المبررات العلمية المناسبة",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-15",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-08-27",
+          "daysSince": 13
+        },
+        {
+          "date": "2026-09-16",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-08-27",
+          "daysSince": 14
+        },
+        {
+          "date": "2026-09-20",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-08-27",
+          "daysSince": 16
+        },
+        {
+          "date": "2026-09-22",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "esc",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-08-27",
+          "daysSince": 18
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 4,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-09-16",
+      "transactionType": "followup",
+      "recordId": 1789455326581.1074,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "",
+      "followScope": "internal",
+      "closedAt": "2026-10-07",
+      "archivedAt": "2026-10-07T03:58:44.126Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -44903,7 +44987,15 @@
       "loginAt": "2026-10-07T03:47:26.803Z",
       "logoutAt": null,
       "duration": null,
-      "logoutReason": null
+      "logoutReason": null,
+      "actions": [
+        {
+          "id": 1791345524105.1902,
+          "at": "2026-10-07T03:58:44.105Z",
+          "action": "تعديل موضوع",
+          "details": "تحديد مخططات للأراضي الواقعة ضمن نطاق المحميات الطبيعية"
+        }
+      ]
     },
     {
       "id": 1791261296075.6792,
