@@ -911,7 +911,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
 <!-- ============ BACKUP & RESTORE ============ -->
 <!-- ============ ACTIVITY LOG ============ -->
 <div class="sec adminOnly" id="sec-activity">
-  <div class="al al-i">📋 سجل النشاط والدخول — مراقبة المستخدمين</div>
+  <div class="al al-i">📋 سجل النشاط والدخول — مراقبة المستخدمين</div><div class="al al-w">يعرض هذا السجل أحداث هذا الجهاز والأحداث التي رُفعت إلى GitHub. دخول الزائر من جهاز آخر لا يُرفع مركزيًا في النسخة الحالية؛ يلزم ربط خدمة لتسجيل الدخول كي تظهر جميع زيارات الأجهزة.</div>
   
   <!-- بطاقات إحصائية -->
   <div class="stats">
@@ -1810,7 +1810,7 @@ function saveToStorage() {
       holidays: D.holidays || [],
       naibDivisions: D.naibDivisions || [],
       activityLog: D.activityLog || [],
-      visitorCodeHash: D.visitorCodeHash || '',
+      visitorCodeHash: D.visitorCodeHash || VISITOR_CODE_HASH,
       users: USERS,
       savedAt: new Date().toISOString()
     };
@@ -1868,6 +1868,13 @@ function loadFromStorage() {
 let _asTimer = null;
 // 🛡️ علم تأكيد تحميل السحابة بنجاح في هذه الجلسة — يمنع الحفظ التلقائي من محو بيانات السحابة الحقيقية ببيانات محلية فارغة/غير محمَّلة بعد
 window._cloudLoadConfirmed = false;
+window._cloudBaseSha = null;
+window._cloudLastPayload = null;
+window._cloudSaveBusy = false;
+function localDateKey(value=new Date()) {
+  const d=value instanceof Date ? value : new Date(value);
+  return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+}
 function autoSave() {
   if(canEditData()) {
     saveToStorage(); // احفظ محلياً فوراً كضمان
@@ -1885,7 +1892,7 @@ async function forceSyncToGithubNow() {
   if(!canEditData()) return false;
   saveToStorage();
   clearTimeout(_asTimer);
-  window._cloudLoadConfirmed = true; // البيانات المستعادة/المستوردة هي الحالة الصحيحة الآن — يُسمح برفعها
+  if(!window._cloudLoadConfirmed || !window._cloudBaseSha) return false;
   try {
     return await autoSaveToGitHub();
   } catch(e) {
@@ -1896,6 +1903,7 @@ async function forceSyncToGithubNow() {
 
 async function autoSaveToGitHub() {
   const config = getGitHubConfig();
+  if(!canEditData() || window._cloudSaveBusy) return false;
   if(!config || !config.token) return false; // بدون token ما نقدر نكتب
   // 🛡️ حماية حرجة من الكتابة الفارغة: لا نرفع فوق بيانات السحابة إلا بعد تأكيد تحميلها بنجاح في هذه الجلسة —
   // يمنع سيناريو خطير: فتح المنصة، فشل/تأخّر تحميل السحابة، ثم أي إجراء يستدعي autoSave() فيمحو بيانات السحابة الحقيقية ببيانات محلية فارغة
@@ -1904,6 +1912,7 @@ async function autoSaveToGitHub() {
     showGitHubInfo('⏸️ تم تجاهل الحفظ التلقائي — لم تُحمَّل بيانات السحابة بعد', 'warning');
     return false;
   }
+  window._cloudSaveBusy=true;
   try {
     const dataToShare = {
       version: '3.0',
@@ -1922,23 +1931,27 @@ async function autoSaveToGitHub() {
       holidays: D.holidays || [],
       naibDivisions: D.naibDivisions || [],
       activityLog: D.activityLog || [],
-      visitorCodeHash: D.visitorCodeHash || '',
+      visitorCodeHash: D.visitorCodeHash || VISITOR_CODE_HASH,
       users: USERS,
       // 🔐 لا يوجد Token خام هنا؛ فقط النسخة المشفرة القابلة للاسترجاع بعد دخول المدير.
       githubTokenEncrypted: window._ghEncryptedToken || null,
       githubUser: config.user,
       githubRepo: config.repo
     };
+    const payload=JSON.stringify({...dataToShare,exportedAt:undefined,exportedBy:undefined});
+    if(payload===window._cloudLastPayload) return true;
     const content = JSON.stringify(dataToShare, null, 2);
     const contentBase64 = btoa(unescape(encodeURIComponent(content)));
     const fileUrl = `https://api.github.com/repos/${config.user}/${config.repo}/contents/${GH_DATA_FILE}`;
-    let sha = null;
-    try {
-      const getRes = await fetch(fileUrl, {
-        headers: { 'Authorization': `token ${config.token}`, 'Accept': 'application/vnd.github.v3+json' }
-      });
-      if(getRes.ok) { const fd = await getRes.json(); sha = fd.sha; }
-    } catch(e) {}
+    const sha=window._cloudBaseSha;
+    if(!sha){showGitHubInfo('⏸️ حمّلي آخر تحديث قبل الحفظ','warning');return false;}
+    const getRes=await fetch(fileUrl,{cache:'no-store',headers:{'Authorization':`token ${config.token}`,'Accept':'application/vnd.github.v3+json'}});
+    if(!getRes.ok) throw new Error('تعذر التحقق من النسخة الحالية: '+getRes.status);
+    const currentFile=await getRes.json();
+    if(currentFile.sha!==sha){
+      showGitHubInfo('⚠️ توجد تعديلات أحدث من جهاز آخر. احتُفظ بتعديلاتك محليًا وأُوقف الرفع؛ حمّلي آخر تحديث وراجعيه قبل الحفظ.','warning');
+      return false;
+    }
     const body = { message: `تحديث تلقائي ${new Date().toLocaleTimeString('ar-SA')}`, content: contentBase64 };
     if(sha) body.sha = sha;
     const putRes = await fetch(fileUrl, {
@@ -1947,6 +1960,9 @@ async function autoSaveToGitHub() {
       body: JSON.stringify(body)
     });
     if(putRes.ok) {
+      const saved=await putRes.json();
+      window._cloudBaseSha=saved.content.sha;
+      window._cloudLastPayload=payload;
       showGitHubInfo('✅ حُفظ تلقائياً على GitHub', 'success');
       return true;
     } else if(putRes.status === 409) {
@@ -1960,8 +1976,9 @@ async function autoSaveToGitHub() {
   } catch(e) {
     // فشل الرفع التلقائي — البيانات محفوظة محلياً على الأقل
     console.warn('autoSaveToGitHub failed:', e.message);
+    showGitHubInfo('❌ لم يُحفظ على GitHub: '+e.message,'error');
     return false;
-  }
+  } finally { window._cloudSaveBusy=false; }
 }
 
 
@@ -2149,7 +2166,7 @@ function exportIdeasWord() {
   }
   const html = buildIdeasHTML();
   if (!html) return;
-  downloadWord('سجل_الأفكار_التحسينية_' + new Date().toISOString().substring(0,10), html);
+  downloadWord('سجل_الأفكار_التحسينية_' + localDateKey(new Date()), html);
 }
 
 function exportIdeasPDF() {
@@ -2524,7 +2541,7 @@ function exportActivityLog() {
   
   const today = new Date().toLocaleDateString('ar-SA');
   const uniqueUsers = new Set(log.map(e => e.user)).size;
-  const todayCount = log.filter(e => e.loginAt && e.loginAt.startsWith(new Date().toISOString().substring(0,10))).length;
+  const todayCount = log.filter(e => e.loginAt && e.loginAt.startsWith(localDateKey(new Date()))).length;
   
   const rows = log.map((e, i) => {
     const loginDate = new Date(e.loginAt);
@@ -2564,7 +2581,7 @@ function exportActivityLog() {
     </p>
   </body></html>`;
   
-  downloadWord(`سجل_النشاط_${new Date().toISOString().substring(0,10)}`, html);
+  downloadWord(`سجل_النشاط_${localDateKey(new Date())}`, html);
 }
 
 function exportActivityJson() {
@@ -2575,7 +2592,7 @@ function exportActivityJson() {
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = `سجل_النشاط_${new Date().toISOString().substring(0,10)}.json`;
+  a.download = `سجل_النشاط_${localDateKey(new Date())}.json`;
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
@@ -2655,7 +2672,7 @@ async function saveGitHubConfig() {
     window._ghEncryptedToken=encrypted;
     updateGitHubStatus('☁️ مفعّل', 'success');
     // حفظ النسخة المشفرة داخل data.json على GitHub حتى تصبح متاحة لأي جهاز بعد تسجيل الدخول.
-    await autoSaveToGitHub();
+    if(!await autoSaveToGitHub()) throw new Error('لم يتم تأكيد الحفظ السحابي؛ إعدادات الجلسة محفوظة محليًا فقط');
     alert('✅ تم حفظ Token بشكل مشفّر على السحابة. لن تحتاجي لإدخاله مرة أخرى من أي جهاز.');
   }catch(e){ alert('❌ خطأ في حفظ Token: '+e.message); }
 }
@@ -2804,106 +2821,10 @@ async function createRepository(config) {
 }
 
 async function uploadToGitHub() {
-  if(!CU?.admin) { alert('غير مصرح - للمدير فقط'); return; }
-  
-  const config = getGitHubConfig();
-  if(!config) {
-    alert('⚠️ يرجى إعداد GitHub أولاً');
-    return;
-  }
-  
-  // 🛡️ منع صارم من رفع بيانات فارغة غير مؤكَّد تحميلها — بدون خيار تجاوز عبر confirm()
-  // (تبيّن عملياً أن نافذة confirm() تُنقر بدون قراءة كافية وقت التوتر/الاستعجال، فتحوّلت لثغرة حقيقية)
-  if(!window._cloudLoadConfirmed) {
-    showGitHubInfo(
-      '⛔ تم إيقاف الرفع للحماية: لا توجد مواضيع محلياً ولم يُؤكَّد تحميل بيانات السحابة في هذه الجلسة.<br>' +
-      'اضغطي أولاً «⬇️ تحميل آخر تحديث» لتحميل بياناتك الحقيقية، أو أعيدي تحميل الصفحة كاملة، ثم حاولي الرفع مرة أخرى.',
-      'error'
-    );
-    return;
-  }
-  
-  showGitHubInfo('⬆️ جاري رفع البيانات...', 'info');
-  updateGitHubStatus('⬆️ جاري الرفع...', 'info');
-  
-  try {
-    const dataToShare = {
-      version: '3.0',
-      exportedBy: CU.name,
-      exportedAt: new Date().toISOString(),
-      topics: D.topics,
-      archivedTopics: D.archivedTopics || [],
-      directives: D.directives,
-      weekly: D.weekly,
-      monthly: D.monthly,
-      quarterly: D.quarterly,
-      dirReports: D.dirReports,
-      ideas: D.ideas,
-      memos: D.memos || [],
-      discussions: D.discussions || [],
-      holidays: D.holidays || [],
-      naibDivisions: D.naibDivisions || [],
-      activityLog: D.activityLog || [],
-      visitorCodeHash: D.visitorCodeHash || '',
-      users: USERS
-    };
-    
-    const content = JSON.stringify(dataToShare, null, 2);
-    // تحويل لـ Base64 (مع دعم الأحرف العربية)
-    const contentBase64 = btoa(unescape(encodeURIComponent(content)));
-    
-    // أولاً: نحاول قراءة الملف الحالي للحصول على SHA
-    const fileUrl = `https://api.github.com/repos/${config.user}/${config.repo}/contents/${GH_DATA_FILE}`;
-    let sha = null;
-    
-    try {
-      const getRes = await fetch(fileUrl, {
-        headers: {
-          'Authorization': `token ${config.token}`,
-          'Accept': 'application/vnd.github.v3+json'
-        }
-      });
-      if(getRes.ok) {
-        const fileData = await getRes.json();
-        sha = fileData.sha;
-      }
-    } catch(_) {}
-    
-    // الآن نرفع الملف الجديد
-    const body = {
-      message: `تحديث البيانات: ${new Date().toLocaleString('ar-SA')}`,
-      content: contentBase64
-    };
-    if(sha) body.sha = sha;
-    
-    const putRes = await fetch(fileUrl, {
-      method: 'PUT',
-      headers: {
-        'Authorization': `token ${config.token}`,
-        'Accept': 'application/vnd.github.v3+json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(body)
-    });
-    
-    if(putRes.ok) {
-      lastSyncTime = new Date();
-      window._cloudLoadConfirmed = true; // ✅ رفع ناجح يؤكد تطابق السحابة مع المحلي
-      const stats = `✅ تم الرفع بنجاح!<br>
-        📊 ${D.topics.length} موضوع | ${D.directives.length} توجيه<br>
-        📋 ${D.weekly.length} أسبوعي | ${D.monthly.length} شهري<br>
-        🕒 آخر مزامنة: ${lastSyncTime.toLocaleString('ar-SA')}`;
-      showGitHubInfo(stats, 'success');
-      updateGitHubStatus('✅ متزامن', 'success');
-    } else {
-      const error = await putRes.json();
-      showGitHubInfo('❌ فشل الرفع: ' + (error.message || 'خطأ غير معروف'), 'error');
-      updateGitHubStatus('❌ فشل', 'error');
-    }
-  } catch(e) {
-    showGitHubInfo('❌ خطأ: ' + e.message, 'error');
-    updateGitHubStatus('❌ فشل', 'error');
-  }
+  if(!requireAdmin()) return false;
+  const ok=await autoSaveToGitHub();
+  if(ok){lastSyncTime=new Date();updateGitHubStatus('✅ متزامن','success');}
+  return ok;
 }
 
 async function downloadFromGitHub() {
@@ -2945,13 +2866,14 @@ async function downloadFromGitHub() {
     // نتحقق من ذلك ونجلب المحتوى الفعلي عبر download_url بدلاً من افتراض أن الملف فارغ
     if(!fileData.content || !fileData.content.trim()) {
       if(fileData.download_url) {
-        const rawRes = await fetch(fileData.download_url);
+        const rawRes = await fetch(fileData.git_url,{headers:{'Authorization':`token ${config.token}`}});
         if(!rawRes.ok) {
           showGitHubInfo('❌ تعذّر تحميل محتوى الملف الكبير (download_url فشل: ' + rawRes.status + ')', 'error');
           updateGitHubStatus('❌ فشل', 'error');
           return;
         }
-        decoded = await rawRes.text();
+        const blob=await rawRes.json();
+        decoded=decodeURIComponent(escape(atob((blob.content||'').replace(/\n/g,''))));
       } else {
         decoded = '';
       }
@@ -3035,7 +2957,7 @@ async function downloadFromGitHub() {
     D.holidays = imported.holidays || [];
     D.naibDivisions = imported.naibDivisions || [];
     D.activityLog = mergeActivityLogs(D.activityLog, imported.activityLog || []);
-    if(typeof imported.visitorCodeHash==='string' && /^[a-f0-9]{64}$/.test(imported.visitorCodeHash)) D.visitorCodeHash=imported.visitorCodeHash;
+    D.visitorCodeHash=typeof imported.visitorCodeHash==='string' && /^[a-f0-9]{64}$/.test(imported.visitorCodeHash) ? imported.visitorCodeHash : VISITOR_CODE_HASH;
     if(imported.users && typeof imported.users === 'object' && !Array.isArray(imported.users)) { Object.keys(imported.users).forEach(k=>{ const u=imported.users[k]; if(u&&typeof u==='object'&&typeof u.hash==='string'&&typeof u.name==='string') USERS[k]={name:u.name,role:u.role||'',hash:u.hash,admin:!!u.admin,delegate:!!u.delegate}; }); D.users=USERS; }
     
     // حفظ محلي (لرحاب فقط)
@@ -3056,6 +2978,8 @@ async function downloadFromGitHub() {
     if(typeof populateNaibDivisionsList==='function') populateNaibDivisionsList();
     
     lastSyncTime = new Date();
+    window._cloudBaseSha = fileData.sha;
+    window._cloudLastPayload = null;
     window._cloudLoadConfirmed = true; // ✅ تأكيد نجاح تحميل السحابة
     // القراءة من السحابة لا تُعدّ تعديلًا؛ لا نرفع البيانات لمجرد فتح المنصة.
     saveToStorage(); // نسخة محلية احتياطية فقط
@@ -3092,7 +3016,7 @@ function saveViewerConfig() {
 async function downloadFromGitHubPublic() {
   // القراءة بدون مفتاح متاحة فقط للمستودع العام. عند وجود مفتاح، نستخدمه مع المستودع المحدد.
   const cfg = getGitHubConfig();
-  if(cfg.token) { return downloadFromGitHub(); }
+  if(cfg.token && CU?.admin) { return downloadFromGitHub(); }
   // المصدر العام الافتراضي: rejorya/ea-data/main/data.json.
   showGitHubInfo('⬇️ جاري تحميل بيانات السحابة...', 'info');
   updateGitHubStatus('⬇️ جاري التحميل...', 'info');
@@ -3100,8 +3024,10 @@ async function downloadFromGitHubPublic() {
   try {
     const _u = GH_PUBLIC_USER;
     const _r = GH_PUBLIC_REPO;
-    const url = `https://raw.githubusercontent.com/${_u}/${_r}/main/${GH_DATA_FILE}?t=${Date.now()}`;
-    const res = await fetch(url, { cache: 'no-store' });
+    const metaRes=await fetch(`https://api.github.com/repos/${_u}/${_r}/contents/${GH_DATA_FILE}`,{cache:'no-store'});
+    if(!metaRes.ok) throw new Error('تعذر قراءة نسخة البيانات: '+metaRes.status);
+    const fileData=await metaRes.json();
+    const res = await fetch(fileData.git_url, { cache: 'no-store' });
     
     if(!res.ok) {
       if(res.status === 404) {
@@ -3112,7 +3038,8 @@ async function downloadFromGitHubPublic() {
       return;
     }
     
-    const rawText = await res.text();
+    const blob=await res.json();
+    const rawText=decodeURIComponent(escape(atob((blob.content||'').replace(/\n/g,''))));
     if(!rawText || !rawText.trim()) {
       showGitHubInfo(
         '❌ ملف data.json على GitHub فارغ تماماً!<br>' +
@@ -3181,7 +3108,7 @@ async function downloadFromGitHubPublic() {
     D.holidays = imported.holidays || [];
     D.naibDivisions = imported.naibDivisions || [];
     D.activityLog = mergeActivityLogs(D.activityLog, imported.activityLog || []);
-    if(typeof imported.visitorCodeHash==='string' && /^[a-f0-9]{64}$/.test(imported.visitorCodeHash)) D.visitorCodeHash=imported.visitorCodeHash;
+    D.visitorCodeHash=typeof imported.visitorCodeHash==='string' && /^[a-f0-9]{64}$/.test(imported.visitorCodeHash) ? imported.visitorCodeHash : VISITOR_CODE_HASH;
     
     // تحديث كل الواجهات
     renderTopicsTable();
@@ -3198,6 +3125,8 @@ async function downloadFromGitHubPublic() {
     if(typeof populateNaibDivisionsList==='function') populateNaibDivisionsList();
     
     lastSyncTime = new Date();
+    window._cloudBaseSha = fileData.sha;
+    window._cloudLastPayload = null;
     window._cloudLoadConfirmed = true; // ✅ تأكيد نجاح تحميل السحابة — يسمح الآن بالحفظ التلقائي بأمان
     autoSave(); // مزامنة سجل النشاط المُدمَج فوراً (مثل تسجيل الدخول الحالي) دون انتظار أي تعديل آخر
     const stats = `✅ تم التحميل بنجاح!<br>
@@ -3330,7 +3259,7 @@ function _holidaySet() {
   return s;
 }
 function _isHolidayDate(d) {
-  const iso = d.toISOString().slice(0,10);
+  const iso = localDateKey(d);
   return _holidaySet().has(iso);
 }
 // عدد أيام العمل بين تاريخين (لا تشمل البداية، تشمل النهاية)؛ الجمعة=5 والسبت=6 عطلة، وتُستثنى الإجازات الرسمية
@@ -3344,7 +3273,7 @@ function businessDaysBetween(a, b) {
   while(cur < e) {
     cur.setDate(cur.getDate() + 1);
     const dow = cur.getDay();
-    if(dow !== 5 && dow !== 6 && !hol.has(cur.toISOString().slice(0,10))) count++;
+    if(dow !== 5 && dow !== 6 && !hol.has(localDateKey(cur))) count++;
   }
   return count;
 }
@@ -3357,7 +3286,7 @@ function addBusinessDays(a, n) {
   while(added < n) {
     d.setDate(d.getDate() + 1);
     const dow = d.getDay();
-    if(dow !== 5 && dow !== 6 && !hol.has(d.toISOString().slice(0,10))) added++;
+    if(dow !== 5 && dow !== 6 && !hol.has(localDateKey(d))) added++;
   }
   return d;
 }
@@ -3894,7 +3823,7 @@ function refreshAll() {
 function refreshDashboard() {
   // 🔁 فحص آلي: بانتظار رد التقسيم + مضى ٣ أيام عمل بلا رد → جاهز للتصعيد
   let autoEsc = 0;
-  const _tod = new Date().toISOString().slice(0,10);
+  const _tod = localDateKey(new Date());
   D.topics.forEach(t => {
     if(t.status === 'awaiting_div' && t.divFollowDate) {
       try {
@@ -3930,7 +3859,7 @@ function refreshDashboard() {
   const dirsProg = dirs.filter(d => !_done(d)).length;
   const dirsLate = dirs.filter(d => (typeof isDirLate==='function') && isDirLate(d)).length;
   const _wk = new Date(); _wk.setDate(_wk.getDate()+7);
-  const _wkStr = _wk.toISOString().slice(0,10);
+  const _wkStr = localDateKey(_wk);
   const dirsWeek = dirs.filter(d => !_done(d) && d.dueDate && d.dueDate >= _tod && d.dueDate <= _wkStr).length;
   setText('d-dirs', dirs.length);
   setText('d-dirs-done', dirsDone);
@@ -3958,7 +3887,7 @@ function refreshDashboard() {
 // 🤖 توليد ملخص تحليلي جاهز للّصق في Claude للتحليل العميق
 function genAiSummary() {
   if(!CU?.admin) return;
-  const today = new Date().toISOString().slice(0,10);
+  const today = localDateKey(new Date());
   const open = D.topics.filter(t => t.status !== 'closed');
   const closed = D.topics.filter(t => t.status === 'closed');
   const lateT = open.filter(t => { try{ return getKpiStatus(t).state==='late'; }catch(e){ return false; } });
@@ -4070,7 +3999,7 @@ function agentAsk(){
 // ============================================================
 //        🎯 مركز الإجراءات اليومية (شاشة التشغيل الأولى)
 // ============================================================
-function _dailyDoneKey(){ return 'ea_daily_done_' + new Date().toISOString().slice(0,10); }
+function _dailyDoneKey(){ return 'ea_daily_done_' + localDateKey(new Date()); }
 function _getDailyDone(){
   try{ return JSON.parse(localStorage.getItem(_dailyDoneKey()) || '[]'); }catch(e){ return []; }
 }
@@ -4244,7 +4173,7 @@ function renderDailyAssistant(open, lateT, readyEsc) {
   });
   
   // توجيهات قريبة الاستحقاق أو متأخرة (إن وُجد لها dueDate)
-  const todayStr = new Date().toISOString().slice(0,10);
+  const todayStr = localDateKey(new Date());
   const weekAhead = new Date(today); weekAhead.setDate(weekAhead.getDate()+7);
   const dirsLate = (D.directives||[]).filter(d => d.status!=='done' && d.dueDate && d.dueDate < todayStr);
   const dirsSoon = (D.directives||[]).filter(d => d.status!=='done' && d.dueDate && d.dueDate >= todayStr && new Date(d.dueDate) <= weekAhead);
@@ -4429,7 +4358,7 @@ function addTopic() {
   if(!title) { alert('⚠️ يرجى ملء عنوان المعاملة'); return; }
   if(transactionType === 'directive' && !from) { alert('⚠️ يرجى ملء الجهة المختصة لهذه المعاملة'); return; }
   const baseId = Date.now() + Math.random();
-  const date = val('tNewDate') || new Date().toISOString().substring(0,10);
+  const date = val('tNewDate') || localDateKey(new Date());
 
   if(transactionType === 'directive') {
     D.directives.push({ id:baseId, transactionType:'directive', date, month:_monthFromISO(date),
@@ -4627,7 +4556,7 @@ function renderTopicTimeInfo() {
   const tid = parseFloat($('editTopicId').value);
   const t = D.topics.find(x => x.id === tid);
   if(!t) { box.innerHTML = ''; return; }
-  const today = new Date().toISOString().slice(0,10);
+  const today = localDateKey(new Date());
   const followStart = val('editFollowStart') || t.followStart || '';
   const kpiSel = val('editKpi');
   const slaDaysInput = parseInt(val('editSlaDays'), 10);
@@ -4735,7 +4664,7 @@ function saveEditTopic() {
   
   // إذا تغيرت الحالة لمغلق، نسجّل تاريخ الإغلاق
   if(newStatus === 'closed' && t.status !== 'closed') {
-    t.closedAt = new Date().toISOString().substring(0,10);
+    t.closedAt = localDateKey(new Date());
   }
   t.status = newStatus;
   if(newStatus === 'closed' && isArchivableFollowupTopic(t)) {
@@ -4785,12 +4714,13 @@ function saveTopicAll() {
   const outgoing=val('editType')!=='int' && val('editCorrespondenceDirection')==='out';
   if(outgoing && !val('editToEntity').trim()){ alert('⚠️ يرجى ملء الجهة الصادر إليها'); return; }
   if(!outgoing && !val('editFrom').trim()){ alert('⚠️ يرجى ملء الجهة الوارد منها'); return; }
+  if(val('fuReplied')==='true' && !val('fuReplyDocNo').trim()){alert('⚠️ أدخلي رقم وثيقة الرد قبل الحفظ');return;}
   // 1) احفظي بيانات الموضوع
   saveEditTopic();
   // 2) سجّلي الإجراء الجديد فقط إذا عُبّئت تفاصيله
   const hasAction = !!(val('fuActionType') || val('fuResult').trim() || val('fuNote').trim() || val('fuReplied')==='true');
   if(hasAction) {
-    const date = val('fuDate') || new Date().toISOString().substring(0,10);
+    const date = val('fuDate') || localDateKey(new Date());
     const fe = t.followEntity || '';
     const fuScope = val('fuScope') || (t.followScope==='internal' ? 'internal' : (t.followScope==='external' ? 'external' : (t.type === 'int' ? 'internal' : (t.type === 'ext' ? 'external' : ''))));
     const extIndex = fuScope === 'external' && val('fuExternalEntity') !== '' ? parseInt(val('fuExternalEntity'),10) : null;
@@ -5013,7 +4943,7 @@ function syncDiscussionToTopic(d) {
   if(!Array.isArray(D.topics)) D.topics=[];
   const existing = D.topics.find(t => String(t.id)===String(d.id));
   if(existing) return existing.id;
-  const today = new Date().toISOString().substring(0,10);
+  const today = localDateKey(new Date());
   D.topics.push({ id:d.id, transactionType:'followup', title:d.title, from:'مناقشة سعادة الرئيس', date:d.date || today,
     receivedFollowDate:d.date || today, followStart:d.date || '', type:'int', followScope:'internal', kpi:'',
     note:d.note ? ('توجيه من مناقشة مع الرئيس: '+d.note) : 'محوّل من مناقشة مع سعادة الرئيس (توجيه للمتابعة)',
@@ -5032,7 +4962,7 @@ function addDiscussion() {
     id: Date.now() + Math.random(),
     transactionType:'discussion',
     title: title,
-    date: val('dNewDate') || new Date().toISOString().substring(0,10),
+    date: val('dNewDate') || localDateKey(new Date()),
     status: 'upcoming',
     note: val('dNewNote').trim(),
     attendees: val('dNewAttendees').trim()
@@ -5395,7 +5325,7 @@ const DIR_DONE_SET = ['done','closed'];
 function isDirLate(d){
   if(DIR_DONE_SET.includes(d.status)) return false;
   if(d.status==='late') return true;
-  const today = new Date().toISOString().slice(0,10);
+  const today = localDateKey(new Date());
   return !!(d.dueDate && d.dueDate < today);
 }
 
@@ -5473,7 +5403,7 @@ function openDirLog(id){
   if(!d) return;
   $('dirLogId').value = d.id;
   $('dirLogTitle').textContent = d.subj || '';
-  $('dirLogDate').value = new Date().toISOString().slice(0,10);
+  $('dirLogDate').value = localDateKey(new Date());
   $('dirLogAction').value=''; $('dirLogBy').value=''; $('dirLogResult').value=''; $('dirLogNote').value='';
   renderDirLogList(d);
   $('dirLogModal').classList.add('on');
@@ -5496,7 +5426,7 @@ function addDirLog(){
   if(!action){ alert('⚠️ اكتبي الإجراء'); return; }
   d.followLog = d.followLog || [];
   d.followLog.push({
-    date: val('dirLogDate') || new Date().toISOString().slice(0,10),
+    date: val('dirLogDate') || localDateKey(new Date()),
     action: action,
     by: val('dirLogBy').trim(),
     result: val('dirLogResult').trim(),
@@ -6457,7 +6387,7 @@ function buildDirReportHTML() {
   const tot = _dd.tot, done = _dd.done, late = _dd.late, rate = _dd.rate;
   const ontime = tot > 0 ? Math.round(((tot - late) / tot) * 100) : 0;
   const _isDone = d => DIR_DONE_SET.includes(d.status);
-  const todayStr2 = new Date().toISOString().slice(0,10);
+  const todayStr2 = localDateKey(new Date());
   
   const byM = {};
   D.directives.forEach(d => {
@@ -6820,7 +6750,7 @@ function addIdea() {
   Promise.all(filePromises).then(attachments => {
     const newIdea = {
       id: Date.now() + Math.random(),
-      date: val('iDate') || new Date().toISOString().substring(0,10),
+      date: val('iDate') || localDateKey(new Date()),
       title,
       desc: val('iDesc'),
       to: val('iTo'),
@@ -7123,7 +7053,7 @@ function memoToDirective(id) {
   D.directives.push({
     id: did,
     ref: m.ref || '',
-    date: m.date || new Date().toISOString().slice(0,10),
+    date: m.date || localDateKey(new Date()),
     month: '',
     dept: m.to || 'غير محدد',
     subj: m.subject || 'توجيه من مذكرة داخلية',
@@ -7550,7 +7480,7 @@ function previewMemos() {
 function exportMemosWord() {
   if(!D.memos || D.memos.length === 0) { alert('⚠️ لا توجد مذكرات'); return; }
   const html = buildMemosHTML();
-  if(html) downloadWord('سجل_المذكرات_' + new Date().toISOString().substring(0,10), html);
+  if(html) downloadWord('سجل_المذكرات_' + localDateKey(new Date()), html);
 }
 
 function exportMemosPDF() {
@@ -7634,7 +7564,7 @@ function addHolidayRange() {
   const existing = new Set(D.holidays.map(h => typeof h==='string'?h:h.date));
   let cur = new Date(from); const end = new Date(to); let added = 0;
   while(cur <= end) {
-    const iso = cur.toISOString().slice(0,10);
+    const iso = localDateKey(cur);
     if(!existing.has(iso)) { D.holidays.push({ date: iso, name: name || 'إجازة رسمية' }); existing.add(iso); added++; }
     cur.setDate(cur.getDate()+1);
   }
@@ -7883,7 +7813,7 @@ function exportBackup() {
   if(!requireAdmin()) return;
   const dataToExport = buildBackupObject();
   downloadBackupFile(dataToExport, 'نسخة_احتياطية');
-  const dateStr = new Date().toISOString().substring(0,10);
+  const dateStr = localDateKey(new Date());
   alert(`✅ تم تصدير النسخة الاحتياطية\n\nاحفظيه في مكان آمن أو أرسليه لتحديث النظام للمسؤولين.`);
 }
 
@@ -7914,7 +7844,7 @@ function importBackup() {
       D.holidays = imported.holidays || [];
       D.naibDivisions = imported.naibDivisions || [];
     D.activityLog = mergeActivityLogs(D.activityLog, imported.activityLog || []);
-    if(typeof imported.visitorCodeHash==='string' && /^[a-f0-9]{64}$/.test(imported.visitorCodeHash)) D.visitorCodeHash=imported.visitorCodeHash;
+    D.visitorCodeHash=typeof imported.visitorCodeHash==='string' && /^[a-f0-9]{64}$/.test(imported.visitorCodeHash) ? imported.visitorCodeHash : VISITOR_CODE_HASH;
     if(imported.users && typeof imported.users === 'object' && !Array.isArray(imported.users)) { Object.keys(imported.users).forEach(k=>{ const u=imported.users[k]; if(u&&typeof u==='object'&&typeof u.hash==='string'&&typeof u.name==='string') USERS[k]={name:u.name,role:u.role||'',hash:u.hash,admin:!!u.admin,delegate:!!u.delegate}; }); D.users=USERS; }
       
       refreshAll();
@@ -8017,7 +7947,7 @@ window.addEventListener('load', () => {
   };
 
   function _fmtD(s){ try{ return fmtDate(s); }catch(e){ return s||'—'; } }
-  function _todayStr(){ return new Date().toISOString().slice(0,10); }
+  function _todayStr(){ return localDateKey(new Date()); }
   // مدة رد مكتب النائب المحددة: مخصصة (slaDays) وإلا الافتراضي 3 أيام عمل
   function _naibAllowedDays(t){
     if(t.slaMode && t.slaMode!=='kpi' && t.slaDays) return { days:t.slaDays, custom:true };
@@ -8162,7 +8092,7 @@ window.addEventListener('load', () => {
     var styles=(typeof WEEKLY_STYLES!=='undefined')?WEEKLY_STYLES:'';
     var html='<style>'+styles+'</style><title>كشف متابعة التقسيمات — تجاوز مكتب النائب</title><body>'
       +'<h2 style="text-align:center;color:#00A6A6">كشف متابعة التقسيمات بعد تجاوز مكتب النائب مدة الرد</h2>'
-      +'<p style="text-align:center;color:#555;font-size:11pt">الفترة: '+periodTxt+' · عدد المواضيع: '+rows.length+' · تاريخ الإصدار: '+_fmtD(new Date().toISOString().slice(0,10))+'</p>'
+      +'<p style="text-align:center;color:#555;font-size:11pt">الفترة: '+periodTxt+' · عدد المواضيع: '+rows.length+' · تاريخ الإصدار: '+_fmtD(localDateKey(new Date()))+'</p>'
       +'<table class="data-table"><thead><tr><th>م</th><th>الموضوع</th><th>الجهة</th><th>التقسيم المُتابَع</th><th>تاريخ توجيه الرئيس</th><th>مدة رد مكتب النائب</th><th>أيام مضت (مكتب النائب)</th><th>تاريخ متابعة التقسيم</th><th>شهر المتابعة</th><th>مدة الرد (منذ متابعة التقسيم)</th><th>الحالة</th></tr></thead><tbody>'+trs+'</tbody></table></body>';
     if(typeof downloadWord==='function') downloadWord('كشف_متابعة_التقسيمات_'+(mf&&mf!=='all'?mf:'كل_الأشهر'), html);
     else alert('تعذّر التصدير');
@@ -8245,7 +8175,7 @@ window.addEventListener('load', () => {
       +(ks.state==='late'
         ? 'نفيدكم بأن الموضوع تجاوز المدة المحددة للرد بـ'+ks.days+' يوم عمل، '
         : 'نأمل التكرم بالإفادة عن مستجدات الموضوع، ')
-      +'حيث '+(due?('كان تاريخ الاستحقاق '+fmtDate(due.toISOString().slice(0,10))):'لم تردنا الإفادة حتى تاريخه')+'.\n\n'
+      +'حيث '+(due?('كان تاريخ الاستحقاق '+fmtDate(localDateKey(due))):'لم تردنا الإفادة حتى تاريخه')+'.\n\n'
       +'نأمل موافاتنا بالرد في أقرب وقت ممكن، ولكم جزيل الشكر والتقدير.\n\n'
       +'رحاب بنت نصيب الفرج\nأخصائية تنسيق ومتابعة — مكتب رئيس هيئة البيئة';
     showDraft('📄 مسودة متابعة', draft);
