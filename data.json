@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-07T06:48:48.563Z",
+  "exportedAt": "2026-10-07T06:48:58.700Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35615,9 +35615,30 @@
       "kpi": "",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-07",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم توجيه الخطاب للجهه للمتابعة  للاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 0
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791355695302.6367
+      "recordId": 1791355695302.6367,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -45347,6 +45368,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791355736572.4133,
+          "at": "2026-10-07T06:48:56.572Z",
+          "action": "إضافة متابعة",
+          "details": "موقع زراعة أشجار الزيتون بمحافظة ظفار"
+        },
+        {
+          "id": 1791355736498.3777,
+          "at": "2026-10-07T06:48:56.498Z",
+          "action": "تعديل موضوع",
+          "details": "موقع زراعة أشجار الزيتون بمحافظة ظفار"
+        },
         {
           "id": 1791355695342.6123,
           "at": "2026-10-07T06:48:15.342Z",
