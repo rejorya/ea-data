@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-07T08:42:56.888Z",
+  "exportedAt": "2026-10-07T08:47:35.945Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -45361,6 +45361,58 @@
   ],
   "activityLog": [
     {
+      "id": "acd967d7-ee39-4a59-a23d-d7dec32889a4",
+      "sessionId": "43ef5fb4-4753-4d7f-9466-1b95c3bbbfd7",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-07T08:47:31.932Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
+      "id": "d810599f-07b6-4c26-8777-c4577b449a96",
+      "sessionId": "9894ab3e-6320-4b46-bcfc-cb0aec106162",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-07T08:47:31.251Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": "2cf76180-597a-480a-a5b9-6d1509459aa7",
       "sessionId": "271822cf-b471-474f-82bf-4e14f3761f4d",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -45382,9 +45434,10 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-07T08:42:50.801Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null
+      "logoutAt": "2026-10-07T08:47:09.869Z",
+      "duration": "4 دقيقة و 19 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
+      "durationMinutes": 4
     },
     {
       "id": "3789f197-ed38-4441-82c5-8bb5d65f66ff",
