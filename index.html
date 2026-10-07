@@ -233,7 +233,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
       <button type="button" onclick="doGuestLogin()" style="background:none;border:1px solid #c8d8e8;color:#008F8F;padding:8px 24px;border-radius:8px;cursor:pointer;font-size:13px;font-family:inherit">👁️ دخول الزائر بالرمز</button>
     </div>
   </div>
-  <div class="lfoot">هيئة البيئة، سلطنة عُمان — إصدار السجل المركزي ٣</div>
+  <div class="lfoot">هيئة البيئة، سلطنة عُمان — إصدار السجل المركزي ٥</div>
 </div>
 
 <!-- MAIN APP -->
@@ -2343,12 +2343,34 @@ async function centralRequest(path,body){
  if(!r.ok)throw new Error('تعذر تسجيل الدخول مركزيًا ('+r.status+')');return await r.json();
  }finally{clearTimeout(timer);}
 }
-async function startCentralSession(credentials){
+function startCentralSession(credentials){
+ const local=currentSession;
+ const attempt={localId:local?.id,endedReason:null};
+ window._centralAttempt=attempt;
  const device=getDeviceInfo();
- const session=await centralRequest('/session/start',{...credentials,device:device.label,deviceId:getStableDeviceId()});
- window._centralSession=session;
- clearInterval(window._centralHeartbeat);
- window._centralHeartbeat=setInterval(()=>{if(window._centralSession)centralRequest('/session/ping',window._centralSession).catch(()=>{});},60000);
+ attempt.promise=(async()=>{
+  try{
+   const session=await centralRequest('/session/start',{...credentials,device:device.label,deviceId:getStableDeviceId()});
+   const log=loadActivityLog();
+   const entry=log.find(x=>x.id===attempt.localId);
+   if(entry){entry.id=session.id;entry.sessionId=session.id;entry.central=true;saveActivityLog(log);}
+   if(attempt.endedReason){
+    const closing={...session,reason:attempt.endedReason};
+    writePendingLogouts([...readPendingLogouts().filter(x=>x.id!==closing.id),closing]);
+    await sendCentralLogout(closing);
+    return;
+   }
+   if(window._centralAttempt!==attempt)return;
+   if(currentSession?.id===attempt.localId || currentSession===local)currentSession=entry||currentSession;
+   window._centralSession=session;
+   clearInterval(window._centralHeartbeat);
+   window._centralHeartbeat=setInterval(()=>{if(window._centralSession)centralRequest('/session/ping',window._centralSession).catch(()=>{});},60000);
+  }catch(e){
+   attempt.failed=true;
+   const status=$('centralLogStatus');if(status)status.textContent='⚠️ لم ينجح تسجيل هذه الجلسة مركزيًا؛ الدخول المحلي مسجل.';
+  }finally{credentials=null;attempt.finished=true;}
+ })();
+ return attempt.promise;
 }
 const PENDING_LOGOUT_KEY='ea_pending_central_logout_v1';
 function readPendingLogouts(){try{return JSON.parse(localStorage.getItem(PENDING_LOGOUT_KEY)||'[]');}catch(e){return [];}}
@@ -2370,7 +2392,9 @@ async function retryPendingLogouts(){
  finally{window._logoutRetryBusy=false;}
 }
 async function endCentralSession(reason){
- const session=window._centralSession;if(!session)return true;
+ const attempt=window._centralAttempt;
+ if(attempt)attempt.endedReason=reason;
+ const session=window._centralSession;if(!session)return !attempt || !!attempt.finished && !attempt.failed;
  clearInterval(window._centralHeartbeat);window._centralSession=null;
  const entry={...session,reason};
  writePendingLogouts([...readPendingLogouts().filter(x=>x.id!==entry.id),entry]);
@@ -3654,9 +3678,9 @@ async function doGuestLoginInternal() {
     }
     $('visitorAccessCode').value='';
     if(err){err.textContent='';err.classList.remove('on');err.style.display='none';}
-    await startCentralSession({user:'guest',code});
     window._visitorCodeVerified=true;
     loginAs({name:'زائر',role:'اطّلاع عام',admin:false,delegate:false,id:'guest'});
+    startCentralSession({user:'guest',code});
   } catch(ex) {
     if(err){err.textContent=ex.message==='لم يُضبط رمز الزائر بعد' ? '⛔ دخول الزائر مغلق حتى يضبط المدير الرمز وينشره على GitHub.' : '❌ تعذر التحقق من رمز الزائر؛ تأكدي من الاتصال وملف data.json المنشور.';err.classList.add('on');err.style.display='block';}
   }
@@ -3684,7 +3708,7 @@ async function doLoginInternal(e) {
   }
   try {
     const h = await sha256hex(pass);
-    if(h === u.hash) { try{await startCentralSession({user,password:pass});}catch(e){console.warn('Central session unavailable');} window._ghMasterPassword = pass; loginAs({...u, id:user}); return false; }
+    if(h === u.hash) { window._ghMasterPassword = pass; loginAs({...u, id:user}); startCentralSession({user,password:pass}); return false; }
     if(err) { err.textContent='❌ اسم المستخدم أو كلمة المرور غير صحيحة'; err.classList.add('on'); err.style.display='block'; }
   } catch(ex) {
     console.error('Login error:', ex);
@@ -3703,7 +3727,7 @@ async function forceLogout(reason) {
   window._logoutInProgress=true;
   // Token غير محفوظ محلياً؛ يُمسح من ذاكرة الجلسة عند تسجيل الخروج.
   // تسجيل عملية الخروج
-  const logoutConfirmed=await recordLogout(reason || 'تسجيل خروج عادي');
+  const logoutResult=recordLogout(reason || 'تسجيل خروج عادي');
   
   CU = null;
   window._visitorCodeVerified=false;
@@ -3719,7 +3743,8 @@ async function forceLogout(reason) {
   if($('visitorAccessCode')) $('visitorAccessCode').value='';
   $('loginUser').focus();
   window._logoutInProgress=false;
-  const err=$('loginErr');if(err){err.textContent=logoutConfirmed?'':'تم تسجيل خروجك محليًا؛ تأكيد الخروج المركزي قيد إعادة الإرسال عند توفر الاتصال.';err.style.display=logoutConfirmed?'none':'block';}
+  const err=$('loginErr');if(err){err.textContent='';err.style.display='none';}
+  logoutResult.then(confirmed=>{if(!confirmed && !CU && err){err.textContent='تم تسجيل خروجك؛ تأكيد السجل قيد الإرسال في الخلفية.';err.style.display='block';}}).catch(()=>{});
 }
 
 // ============================================================
