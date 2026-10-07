@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-07T06:50:48.572Z",
+  "exportedAt": "2026-10-07T06:51:01.195Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33705,10 +33705,28 @@
       "kpi": "",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-07",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التواصل مع كلا من أوتكو وأسياد وتم التأكد من إستلامهم للخطاب",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-21",
+          "daysSince": 12
+        }
+      ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790487346468.0342,
-      "manualCount": 0,
+      "manualCount": 1,
       "followEntity": "other",
       "otherEntityName": "الشركة العمانية للغاز الطبيعي المسال-مجموعة (أسياد)- الشركة العمانية للصهاريج \"أوتكو\"",
       "responseMethod": ""
@@ -45368,6 +45386,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791355859050.13,
+          "at": "2026-10-07T06:50:59.050Z",
+          "action": "إضافة متابعة",
+          "details": "طلب دعم مشروع توظيف تقنيات الأقمار الصناعية في رصد ومتابعة الأنشطة البحرية والتلوث البحري"
+        },
+        {
+          "id": 1791355858982.5535,
+          "at": "2026-10-07T06:50:58.982Z",
+          "action": "تعديل موضوع",
+          "details": "طلب دعم مشروع توظيف تقنيات الأقمار الصناعية في رصد ومتابعة الأنشطة البحرية والتلوث البحري"
+        },
         {
           "id": 1791355736572.4133,
           "at": "2026-10-07T06:48:56.572Z",
