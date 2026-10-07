@@ -233,7 +233,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
       <button type="button" onclick="doGuestLogin()" style="background:none;border:1px solid #c8d8e8;color:#008F8F;padding:8px 24px;border-radius:8px;cursor:pointer;font-size:13px;font-family:inherit">👁️ دخول الزائر بالرمز</button>
     </div>
   </div>
-  <div class="lfoot">🔒 نظام آمن موثّق — هيئة البيئة، سلطنة عُمان</div>
+  <div class="lfoot">هيئة البيئة، سلطنة عُمان — إصدار السجل المركزي ٢</div>
 </div>
 
 <!-- MAIN APP -->
@@ -2368,6 +2368,7 @@ async function refreshCentralLogs(){
  finally{window._centralLogLoading=false;}
 }
 window.addEventListener('pagehide',()=>endCentralSession('إغلاق الصفحة'));
+setInterval(()=>{if(CU?.admin && $('sec-activity')?.classList.contains('on'))refreshCentralLogs();},30000);
 
 function recordLogin(user, name, role, isAdmin) {
   const log = loadActivityLog();
@@ -2527,7 +2528,7 @@ function renderActivityLog() {
     
     let logoutTime = '—';
     let reasonBadge = (currentSession?.id===e.id || (e.central&&!e.logoutAt&&Date.now()-new Date(e.lastSeenAt)<120000))
-      ? '<span class="bd bd-prog">داخل الآن على هذا الجهاز</span>'
+      ? '<span class="bd bd-prog">متصل حسب آخر تحديث</span>'
       : '<span class="bd bd-pend">الخروج غير مسجل</span>';
     if (e.logoutAt) {
       const lo = new Date(e.logoutAt);
@@ -3607,7 +3608,16 @@ async function changeVisitorCode() {
   } finally {if(button)button.disabled=false;}
 }
 
-async function doGuestLogin() {
+let _loginInProgress=false;
+async function runSingleLogin(action,event){
+ if(event)event.preventDefault();
+ if(_loginInProgress)return false;
+ _loginInProgress=true;
+ try{return await action(event);}finally{_loginInProgress=false;}
+}
+function doGuestLogin(){return runSingleLogin(doGuestLoginInternal);}
+function doLogin(event){return runSingleLogin(doLoginInternal,event);}
+async function doGuestLoginInternal() {
   const code=val('visitorAccessCode').replace(/[\s-]/g,'').toUpperCase();
   const err=$('loginErr');
   if(!code){if(err){err.textContent='⚠️ أدخلي رمز دخول الزائر';err.classList.add('on');err.style.display='block';}return false;}
@@ -3628,7 +3638,7 @@ async function doGuestLogin() {
   return false;
 }
 
-async function doLogin(e) {
+async function doLoginInternal(e) {
   if(e) e.preventDefault();
   const err = $('loginErr');
   if(err) { err.textContent = ''; err.classList.remove('on'); err.style.display = 'none'; }
