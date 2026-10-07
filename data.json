@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-07T06:30:49.912Z",
+  "exportedAt": "2026-10-07T06:31:16.320Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35566,6 +35566,32 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1791354674242.0557,
+      "transactionType": "followup",
+      "title": "دعوة لترشيح كوادر لورشة اتمتة معالجة الصور الفضائية وتحليل البيانات الرقمية اليا",
+      "from": "شركة ابتكارات السماء",
+      "docNo": "1170/3/2022v421-27",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-06",
+      "receivedFollowDate": "2026-10-07",
+      "followStart": "2026-10-07",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791354674242.0557
     }
   ],
   "archivedTopics": [
@@ -45295,6 +45321,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791354674298.4255,
+          "at": "2026-10-07T06:31:14.298Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "دعوة لترشيح كوادر لورشة اتمتة معالجة الصور الفضائية وتحليل البيانات الرقمية اليا"
+        },
         {
           "id": 1791350272240.4727,
           "at": "2026-10-07T05:17:52.240Z",
