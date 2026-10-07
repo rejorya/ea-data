@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-07T05:17:48.767Z",
+  "exportedAt": "2026-10-07T05:17:54.388Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32262,7 +32262,7 @@
       "slaDays": null,
       "kpi": "std14",
       "note": "نائب الرئيس\nللدراسة والافادة",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-23",
@@ -32329,14 +32329,32 @@
           "taqseem": "",
           "startDate": "2026-09-21",
           "daysSince": 12
+        },
+        {
+          "date": "2026-10-01",
+          "replied": true,
+          "responseMethod": "direct_manager",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-21",
+          "daysSince": 8
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790140472850.1199,
-      "manualCount": 4,
+      "manualCount": 5,
       "followEntity": "naib_office",
-      "responseMethod": "",
-      "correspondenceDirection": ""
+      "responseMethod": "direct_manager",
+      "correspondenceDirection": "",
+      "closedAt": "2026-10-07"
     },
     {
       "id": 1790141614955.2498,
@@ -39474,6 +39492,123 @@
       "archivedAt": "2026-10-07T03:59:06.900Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1790140472850.1199,
+      "transactionType": "followup",
+      "title": "طلب الموافقة على جمع أوراق شجرة العلعلان.",
+      "from": "المواطنة/نادية بنت سالم بن راشد البوسعيدية",
+      "docNo": "1170/3/2022v419-13",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-20",
+      "receivedFollowDate": "2026-09-23",
+      "followStart": "2026-09-21",
+      "type": "ext",
+      "followScope": "external",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "std14",
+      "note": "نائب الرئيس\nللدراسة والافادة",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-23",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-21",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-09-28",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-21",
+          "daysSince": 5
+        },
+        {
+          "date": "2026-09-30",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-21",
+          "daysSince": 7
+        },
+        {
+          "date": "2026-10-07",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "esc",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-21",
+          "daysSince": 12
+        },
+        {
+          "date": "2026-10-01",
+          "replied": true,
+          "responseMethod": "direct_manager",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-21",
+          "daysSince": 8
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790140472850.1199,
+      "manualCount": 5,
+      "followEntity": "naib_office",
+      "responseMethod": "direct_manager",
+      "correspondenceDirection": "",
+      "closedAt": "2026-10-07",
+      "archivedAt": "2026-10-07T05:17:52.258Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -45160,6 +45295,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791350272240.4727,
+          "at": "2026-10-07T05:17:52.240Z",
+          "action": "إضافة متابعة",
+          "details": "طلب الموافقة على جمع أوراق شجرة العلعلان."
+        },
+        {
+          "id": 1791350272188.55,
+          "at": "2026-10-07T05:17:52.188Z",
+          "action": "تعديل موضوع",
+          "details": "طلب الموافقة على جمع أوراق شجرة العلعلان."
+        },
         {
           "id": 1791349154136.916,
           "at": "2026-10-07T04:59:14.136Z",
