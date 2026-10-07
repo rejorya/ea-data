@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-07T09:37:50.746Z",
+  "exportedAt": "2026-10-07T10:10:41.521Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -45382,9 +45382,10 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-07T09:37:45.168Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null
+      "logoutAt": "2026-10-07T10:10:39.482Z",
+      "duration": "32 دقيقة و 54 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
+      "durationMinutes": 32
     },
     {
       "id": "bb9b7c1b-867e-4525-b3d9-92613a4c22e5",
