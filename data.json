@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-07T04:51:48.729Z",
+  "exportedAt": "2026-10-07T04:51:58.634Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33902,7 +33902,7 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "",
-      "status": "ready_esc",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-09-28",
@@ -33970,11 +33970,28 @@
           "taqseem": "إدارة البيئة بمحافظة جنوب الشرقية",
           "startDate": "2026-09-27",
           "daysSince": 7
+        },
+        {
+          "date": "2026-10-07",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "esc",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "إدارة البيئة بمحافظة جنوب الشرقية",
+          "startDate": "2026-09-27",
+          "daysSince": 8
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790576869870.932,
-      "manualCount": 4,
+      "manualCount": 5,
       "followEntity": "taqseem",
       "responseMethod": "",
       "divFollowDate": "2026-10-01"
@@ -45109,6 +45126,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1791348716508.1145,
+          "at": "2026-10-07T04:51:56.508Z",
+          "action": "إضافة متابعة",
+          "details": "تداول خرائط سلطنة عمان"
+        },
+        {
+          "id": 1791348716447.6516,
+          "at": "2026-10-07T04:51:56.447Z",
+          "action": "تعديل موضوع",
+          "details": "تداول خرائط سلطنة عمان"
+        },
         {
           "id": 1791347181381.6038,
           "at": "2026-10-07T04:26:21.381Z",
