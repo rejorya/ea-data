@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-08T09:27:48.958Z",
+  "exportedAt": "2026-10-08T09:31:21.113Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36124,6 +36124,32 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1791451879056.165,
+      "transactionType": "followup",
+      "title": "اجتماع اللجنة الدائمة ال 81 لاتفاقية سايتس",
+      "from": "مكتب الرئيس",
+      "docNo": "1170/3/2022v421-52",
+      "toEntity": "وزارة الثروة الزراعية والسمكية وموارد المياه",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-07",
+      "receivedFollowDate": "2026-10-08",
+      "followStart": "2026-10-07",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "تم التوجيه للدائرة لمتابعة الجهه",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791451879056.165
     }
   ],
   "archivedTopics": [
@@ -45974,6 +46000,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791451879090.5356,
+          "at": "2026-10-08T09:31:19.090Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "اجتماع اللجنة الدائمة ال 81 لاتفاقية سايتس"
+        },
         {
           "id": 1791451666805.5178,
           "at": "2026-10-08T09:27:46.805Z",
