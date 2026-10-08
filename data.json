@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-08T09:07:27.507Z",
+  "exportedAt": "2026-10-08T09:07:53.044Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36025,11 +36025,32 @@
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "other",
-      "note": "",
+      "note": "تم التوجيه للتقسيم للاختصاص",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-08",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791450445402.8477
+      "recordId": 1791450445402.8477,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -45880,6 +45901,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791450470903.0737,
+          "at": "2026-10-08T09:07:50.903Z",
+          "action": "إضافة متابعة",
+          "details": "ندب الفاضلة / ماجدة بنت سالم بن منصور الوهيبي"
+        },
+        {
+          "id": 1791450470851.0618,
+          "at": "2026-10-08T09:07:50.851Z",
+          "action": "تعديل موضوع",
+          "details": "ندب الفاضلة / ماجدة بنت سالم بن منصور الوهيبي"
+        },
         {
           "id": 1791450445436.6743,
           "at": "2026-10-08T09:07:25.436Z",
