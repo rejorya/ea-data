@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-08T08:00:18.484Z",
+  "exportedAt": "2026-10-08T08:13:07.457Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35863,6 +35863,32 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1791447185362.1057,
+      "transactionType": "followup",
+      "title": "إعادة النظر في موضوع تسكين عزبة قائمة من سنوات عزبة منزلية  للفاضل حمدان بن راشد الزيدي",
+      "from": "المواطن/ حمدان بن راشد الضبعون الزيدي",
+      "docNo": "1170/3/2022v421-47",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-07",
+      "receivedFollowDate": "2026-10-08",
+      "followStart": "2026-10-07",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "نائب الرئيس\nللافادة اما بالنسبة لاجراءات اثبات الملك فانها تدخل في اختصاص جهة اخري.",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791447185362.1057
     }
   ],
   "archivedTopics": [
@@ -45713,6 +45739,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791447185422.3787,
+          "at": "2026-10-08T08:13:05.422Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "إعادة النظر في موضوع تسكين عزبة قائمة من سنوات عزبة منزلية  للفاضل حمدان بن راشد الزيدي"
+        },
         {
           "id": 1791446416323.7002,
           "at": "2026-10-08T08:00:16.323Z",
