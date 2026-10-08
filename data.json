@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-08T09:31:47.032Z",
+  "exportedAt": "2026-10-08T09:37:04.059Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35585,11 +35585,28 @@
           "taqseem": "",
           "startDate": "2026-10-05",
           "daysSince": 3
+        },
+        {
+          "date": "2026-10-08",
+          "replied": false,
+          "responseMethod": "via_follow",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "سوف يتم عقد اجتماع مع مديرية الالتزام البيئي بتاريخ 12 أكتوبر",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 3
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791274117771.544,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "rais_depts",
       "raisDeptName": "مكتب متابعة تنفيذ رؤية عمان 2040",
       "responseMethod": ""
@@ -46021,6 +46038,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791452221893.6797,
+          "at": "2026-10-08T09:37:01.893Z",
+          "action": "إضافة متابعة",
+          "details": "مؤشر نسبة النفايات المعاد تدويرها من إجمالي النفايات القابلة لإعادة التدوير"
+        },
+        {
+          "id": 1791452221840.6338,
+          "at": "2026-10-08T09:37:01.840Z",
+          "action": "تعديل موضوع",
+          "details": "مؤشر نسبة النفايات المعاد تدويرها من إجمالي النفايات القابلة لإعادة التدوير"
+        },
         {
           "id": 1791451904603.3093,
           "at": "2026-10-08T09:31:44.603Z",
