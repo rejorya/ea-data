@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-08T08:14:43.627Z",
+  "exportedAt": "2026-10-08T08:23:59.018Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35910,6 +35910,32 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1791447836923.915,
+      "transactionType": "followup",
+      "title": "طلب استرجاع مبلغ شراء الحطب  تنوع  بدية",
+      "from": "المواطن/سالم ناصر العمري",
+      "docNo": "1170/3/2022v421-44",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-07",
+      "receivedFollowDate": "2026-10-08",
+      "followStart": "2026-10-08",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "نائب الرئيس\nالشؤون الادارية والمالية\nللافادة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791447836923.915
     }
   ],
   "archivedTopics": [
@@ -45760,6 +45786,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791447836978.573,
+          "at": "2026-10-08T08:23:56.978Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب استرجاع مبلغ شراء الحطب  تنوع  بدية"
+        },
         {
           "id": 1791447240773.619,
           "at": "2026-10-08T08:14:00.773Z",
