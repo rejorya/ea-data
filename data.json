@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-08T04:46:28.356Z",
+  "exportedAt": "2026-10-08T07:58:32.950Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35816,6 +35816,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1791446310302.8608,
+      "transactionType": "followup",
+      "title": "مشاورات غير رسمية افتراضية تعقدها الرئاسة القادمة لمؤتمر الأطراف (COP 31) مع رؤساء الوفود ورؤساء ومنسقي المجموعات التفاوضية",
+      "from": "دائرة التعاون الدولي",
+      "docNo": "",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-07",
+      "receivedFollowDate": "2026-10-08",
+      "followStart": "2026-10-07",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791446310302.8608
     }
   ],
   "archivedTopics": [
@@ -45666,6 +45692,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791446310358.1545,
+          "at": "2026-10-08T07:58:30.358Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "مشاورات غير رسمية افتراضية تعقدها الرئاسة القادمة لمؤتمر الأطراف (COP 31) مع رؤساء الوفود ورؤساء ومنسقي المجموعات التفاوضية"
+        },
         {
           "id": 1791434786211.359,
           "at": "2026-10-08T04:46:26.211Z",
