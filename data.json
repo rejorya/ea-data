@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-08T04:40:22.573Z",
+  "exportedAt": "2026-10-08T04:46:28.356Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31863,19 +31863,38 @@
       "slaDays": null,
       "kpi": "other",
       "note": "متابعة خارجية",
-      "status": "new",
-      "followups": [],
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-08",
+          "replied": true,
+          "responseMethod": "direct_manager",
+          "replyDocNo": "1170/3/2022v420-66",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-20",
+          "daysSince": 14
+        }
+      ],
       "sheet": "مُضاف يدوياً",
       "transactionType": "followup",
       "recordId": 1789898198516.7979,
       "externalEntities": [],
       "receivedFollowDate": "2026-09-20",
       "correspondenceDirection": "out",
-      "manualCount": 0,
+      "manualCount": 1,
       "followScope": "external",
       "followEntity": "other",
       "otherEntityName": "جامعة التقنية والعلوم التطبيقية",
-      "responseMethod": ""
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-10-08"
     },
     {
       "id": 1789981534133.634,
@@ -39908,6 +39927,58 @@
       "archivedAt": "2026-10-08T04:23:06.973Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1789898198516.7979,
+      "title": "طلب انتداب الدكتورة أسماء بنت سعيد الحوسنية",
+      "from": "مكتب الرئيس",
+      "docNo": "1170/3/2022v418-80",
+      "toEntity": "جامعة التقنية والعلوم التطبيقية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-20",
+      "followStart": "2026-09-20",
+      "type": "ext",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "متابعة خارجية",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-08",
+          "replied": true,
+          "responseMethod": "direct_manager",
+          "replyDocNo": "1170/3/2022v420-66",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-20",
+          "daysSince": 14
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "transactionType": "followup",
+      "recordId": 1789898198516.7979,
+      "externalEntities": [],
+      "receivedFollowDate": "2026-09-20",
+      "correspondenceDirection": "out",
+      "manualCount": 1,
+      "followScope": "external",
+      "followEntity": "other",
+      "otherEntityName": "جامعة التقنية والعلوم التطبيقية",
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-10-08",
+      "archivedAt": "2026-10-08T04:46:26.231Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -45595,6 +45666,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791434786211.359,
+          "at": "2026-10-08T04:46:26.211Z",
+          "action": "إضافة متابعة",
+          "details": "طلب انتداب الدكتورة أسماء بنت سعيد الحوسنية"
+        },
+        {
+          "id": 1791434786159.1836,
+          "at": "2026-10-08T04:46:26.159Z",
+          "action": "تعديل موضوع",
+          "details": "طلب انتداب الدكتورة أسماء بنت سعيد الحوسنية"
+        },
         {
           "id": 1791434420428.7485,
           "at": "2026-10-08T04:40:20.428Z",
