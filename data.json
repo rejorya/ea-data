@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-08T09:31:21.113Z",
+  "exportedAt": "2026-10-08T09:31:47.032Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36147,9 +36147,30 @@
       "kpi": "other",
       "note": "تم التوجيه للدائرة لمتابعة الجهه",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-08",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التوجيه للدائرة لمتابعة الجهه",
+          "actionType": "visit",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791451879056.165
+      "recordId": 1791451879056.165,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -46000,6 +46021,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791451904603.3093,
+          "at": "2026-10-08T09:31:44.603Z",
+          "action": "إضافة متابعة",
+          "details": "اجتماع اللجنة الدائمة ال 81 لاتفاقية سايتس"
+        },
+        {
+          "id": 1791451904547.095,
+          "at": "2026-10-08T09:31:44.547Z",
+          "action": "تعديل موضوع",
+          "details": "اجتماع اللجنة الدائمة ال 81 لاتفاقية سايتس"
+        },
         {
           "id": 1791451879090.5356,
           "at": "2026-10-08T09:31:19.090Z",
