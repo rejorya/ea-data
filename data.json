@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-08T04:09:03.479Z",
+  "exportedAt": "2026-10-08T04:14:48.388Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35545,7 +35545,7 @@
       "from": "بلدية مسقط",
       "docNo": "1170/3/2022v421-8",
       "toEntity": "نائب الرئيس",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-10-05",
@@ -35559,7 +35559,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "مكتب الرئيس\nيحدد موعد مناسب",
-      "status": "new",
+      "status": "awaiting_div",
       "followups": [
         {
           "date": "2026-10-06",
@@ -35577,13 +35577,31 @@
           "taqseem": "",
           "startDate": "2026-10-05",
           "daysSince": 1
+        },
+        {
+          "date": "2026-10-08",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-10-05",
+          "daysSince": 3
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791274392859.453,
-      "manualCount": 1,
-      "followEntity": "naib_office",
-      "responseMethod": ""
+      "manualCount": 2,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-10-08"
     },
     {
       "id": 1791354674242.0557,
@@ -45472,6 +45490,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791432886234.8562,
+          "at": "2026-10-08T04:14:46.234Z",
+          "action": "إضافة متابعة",
+          "details": "دعوة الى  عقد اجتماع تنسيقي مشترك المشروع تطوير شارع الشاطى ومحمية القرم الطبيعية"
+        },
+        {
+          "id": 1791432886177.829,
+          "at": "2026-10-08T04:14:46.177Z",
+          "action": "تعديل موضوع",
+          "details": "دعوة الى  عقد اجتماع تنسيقي مشترك المشروع تطوير شارع الشاطى ومحمية القرم الطبيعية"
+        },
         {
           "id": 1791432541328.9932,
           "at": "2026-10-08T04:09:01.328Z",
