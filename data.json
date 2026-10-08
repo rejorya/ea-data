@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-08T09:03:08.769Z",
+  "exportedAt": "2026-10-08T09:03:50.003Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35978,11 +35978,32 @@
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "other",
-      "note": "",
+      "note": "تم التوجية للدائرة للمتابعة للاختصاص",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-08",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791450186690.9622
+      "recordId": 1791450186690.9622,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -45833,6 +45854,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791450227348.9714,
+          "at": "2026-10-08T09:03:47.348Z",
+          "action": "إضافة متابعة",
+          "details": "طلب تمديد مساحة القطعة رقم (4524) التابعة لهيئة البيئة بمنطقة الخوض بولاية السيب لإقامة مشروع مركز الأبحاث والدراسات البيئية"
+        },
+        {
+          "id": 1791450227293.356,
+          "at": "2026-10-08T09:03:47.293Z",
+          "action": "تعديل موضوع",
+          "details": "طلب تمديد مساحة القطعة رقم (4524) التابعة لهيئة البيئة بمنطقة الخوض بولاية السيب لإقامة مشروع مركز الأبحاث والدراسات البيئية"
+        },
         {
           "id": 1791450186726.2686,
           "at": "2026-10-08T09:03:06.726Z",
