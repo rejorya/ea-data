@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-08T08:25:06.862Z",
+  "exportedAt": "2026-10-08T09:03:08.769Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35957,6 +35957,32 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1791450186690.9622,
+      "transactionType": "followup",
+      "title": "طلب تمديد مساحة القطعة رقم (4524) التابعة لهيئة البيئة بمنطقة الخوض بولاية السيب لإقامة مشروع مركز الأبحاث والدراسات البيئية",
+      "from": "مكتب الرئيس",
+      "docNo": "1170/3/2022v421-53",
+      "toEntity": "وزارة الإسكان والتخطيط العمراني",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-07",
+      "receivedFollowDate": "2026-10-08",
+      "followStart": "2026-10-07",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791450186690.9622
     }
   ],
   "archivedTopics": [
@@ -45807,6 +45833,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791450186726.2686,
+          "at": "2026-10-08T09:03:06.726Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب تمديد مساحة القطعة رقم (4524) التابعة لهيئة البيئة بمنطقة الخوض بولاية السيب لإقامة مشروع مركز الأبحاث والدراسات البيئية"
+        },
         {
           "id": 1791447904710.253,
           "at": "2026-10-08T08:25:04.710Z",
