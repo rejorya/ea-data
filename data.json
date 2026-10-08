@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-08T09:03:50.003Z",
+  "exportedAt": "2026-10-08T09:07:27.507Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36004,6 +36004,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1791450445402.8477,
+      "transactionType": "followup",
+      "title": "ندب الفاضلة / ماجدة بنت سالم بن منصور الوهيبي",
+      "from": "مكتب الرئيس",
+      "docNo": "1170/3/2022v421-54",
+      "toEntity": "وزارة الصحة",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-07",
+      "receivedFollowDate": "2026-10-08",
+      "followStart": "2026-10-07",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791450445402.8477
     }
   ],
   "archivedTopics": [
@@ -45854,6 +45880,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791450445436.6743,
+          "at": "2026-10-08T09:07:25.436Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "ندب الفاضلة / ماجدة بنت سالم بن منصور الوهيبي"
+        },
         {
           "id": 1791450227348.9714,
           "at": "2026-10-08T09:03:47.348Z",
