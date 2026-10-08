@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-08T09:23:54.891Z",
+  "exportedAt": "2026-10-08T09:26:54.729Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36077,6 +36077,32 @@
       "followups": [],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791451432829.943
+    },
+    {
+      "id": 1791451612638.1636,
+      "transactionType": "followup",
+      "title": "تقرير عن الحملة الوطنية لمكافحة الطيور الغازية لشهر سبتمبر 2026 بمحافظة شمال الباطنة",
+      "from": "نائب الرئيس",
+      "docNo": "6111/34/2025v2-89",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-07",
+      "receivedFollowDate": "2026-10-08",
+      "followStart": "2026-10-08",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wd3",
+      "note": "نائب الرئيس\nيتلاحظ في خلال استعراض التقرير بان ولايتي شناص والخابورة لم تحقق أعداد كبقية الولايات الاخرى يرجي الافادة بالاسباب.",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791451612638.1636
     }
   ],
   "archivedTopics": [
@@ -45927,6 +45953,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791451612692.3853,
+          "at": "2026-10-08T09:26:52.692Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "تقرير عن الحملة الوطنية لمكافحة الطيور الغازية لشهر سبتمبر 2026 بمحافظة شمال الباطنة"
+        },
         {
           "id": 1791451432862.6387,
           "at": "2026-10-08T09:23:52.862Z",
