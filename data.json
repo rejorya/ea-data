@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-08T04:07:19.959Z",
+  "exportedAt": "2026-10-08T04:07:48.686Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35606,7 +35606,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
-      "status": "new",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-10-07",
@@ -35629,7 +35629,7 @@
       "sheet": "مُضاف يدوياً",
       "recordId": 1791354674242.0557,
       "manualCount": 1,
-      "followEntity": "",
+      "followEntity": "naib_office",
       "responseMethod": ""
     },
     {
@@ -45455,6 +45455,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791432466527.604,
+          "at": "2026-10-08T04:07:46.527Z",
+          "action": "تعديل موضوع",
+          "details": "دعوة لترشيح كوادر لورشة اتمتة معالجة الصور الفضائية وتحليل البيانات الرقمية اليا"
+        },
         {
           "id": 1791432437709.5684,
           "at": "2026-10-08T04:07:17.709Z",
