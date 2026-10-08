@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-08T03:50:28.151Z",
+  "exportedAt": "2026-10-08T04:03:52.118Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35657,6 +35657,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1791432230046.5227,
+      "transactionType": "followup",
+      "title": "دعوة  للمشاركة في  أعمال جناح سلطنة عُمان في مؤتمر الأطراف الحادي و الثلاثين لإتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ",
+      "from": "مكتب الرئيس",
+      "docNo": "1170/3/2022v421-49",
+      "toEntity": "وزارة المالية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-07",
+      "receivedFollowDate": "2026-10-07",
+      "followStart": "2026-10-07",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "",
+      "note": "تم التوجيه للتقسيم للاختصاص",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791432230046.5227
     }
   ],
   "archivedTopics": [
@@ -45385,7 +45411,15 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1791432230083.3403,
+          "at": "2026-10-08T04:03:50.083Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "دعوة  للمشاركة في  أعمال جناح سلطنة عُمان في مؤتمر الأطراف الحادي و الثلاثين لإتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ"
+        }
+      ]
     },
     {
       "id": "80a14664-b506-415b-ad62-8e17dcae0ee7",
