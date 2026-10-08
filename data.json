@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-08T04:23:09.115Z",
+  "exportedAt": "2026-10-08T04:40:22.573Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35548,11 +35548,29 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "الرؤية\nلعمل اللازم",
-      "status": "new",
-      "followups": [],
+      "status": "awaiting",
+      "followups": [
+        {
+          "date": "2026-10-08",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 3
+        }
+      ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791274117771.544,
-      "manualCount": 0,
+      "manualCount": 1,
       "followEntity": "rais_depts",
       "raisDeptName": "مكتب متابعة تنفيذ رؤية عمان 2040",
       "responseMethod": ""
@@ -45577,6 +45595,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791434420428.7485,
+          "at": "2026-10-08T04:40:20.428Z",
+          "action": "إضافة متابعة",
+          "details": "مؤشر نسبة النفايات المعاد تدويرها من إجمالي النفايات القابلة لإعادة التدوير"
+        },
+        {
+          "id": 1791434420370.581,
+          "at": "2026-10-08T04:40:20.370Z",
+          "action": "تعديل موضوع",
+          "details": "مؤشر نسبة النفايات المعاد تدويرها من إجمالي النفايات القابلة لإعادة التدوير"
+        },
         {
           "id": 1791433386949.7354,
           "at": "2026-10-08T04:23:06.949Z",
