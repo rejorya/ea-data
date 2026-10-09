@@ -357,6 +357,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
 <div class="sec" id="sec-topics">
   <div class="al al-i">📂 إدارة المواضيع والمتابعة <span style="font-size:10px;background:#00A6A6;color:#fff;padding:2px 9px;border-radius:10px">ISO 7.5.3</span></div>
   <div class="topic-view-tabs" aria-label="تصنيف المواضيع">
+    <button type="button" id="exportTopicsExcelButton" onclick="exportTopicsWorkbook()">📊 تصدير Excel — الواردة والصادرة</button>
     <button type="button" id="incomingTopicsTab" onclick="openTopicsView('incoming')">📥 المواضيع الواردة <span id="incomingTopicsCount">0</span></button>
     <button type="button" id="outgoingTopicsTab" onclick="openTopicsView('outgoing')">📤 المواضيع الصادرة <span id="outgoingTopicsCount">0</span></button>
   </div>
@@ -4323,6 +4324,74 @@ function getLastFollowupDate(t) {
   return dates.length > 0 ? dates[dates.length - 1] : '—';
 }
 
+// كشف شامل مستقل عن تبويب العرض والبحث؛ يتضمن المواضيع المغلقة.
+function buildTopicsExportRows(topics) {
+  const dateText=d=>d ? fmtDate(String(d).slice(0,10)) : '';
+  return topics.map((t,i)=>{
+    const follows=Array.isArray(t.followups)?t.followups:[];
+    const ordered=follows.map((f,index)=>({f,index})).sort((a,b)=>String(a.f.date||'').localeCompare(String(b.f.date||''))||a.index-b.index);
+    const last=ordered.length?ordered[ordered.length-1].f:{};
+    const allowed=getTopicAllowedDays(t);
+    const elapsed=t.followStart && (t.status!=='closed'||t.closedAt)
+      ? businessDaysBetween(t.followStart,t.status==='closed'?t.closedAt:new Date()):null;
+    const ks=getKpiStatus(t);
+    const kpiResult=t.status==='closed'
+      ? (allowed==null||elapsed==null?'لا تتوفر بيانات كافية':elapsed<=allowed?'أُنجز ضمن المدة':'أُنجز بعد المدة')
+      : ({late:'متأخر',warn:'قرب الاستحقاق',ok:'ضمن المدة',none:'غير قابل للاحتساب'}[ks.state]||'');
+    return {
+      'م':i+1,
+      'رقم الموضوع':t.id==null?'':String(t.id),
+      'الوارد أو الصادر':t.correspondenceDirection==='out'?'صادر':'وارد',
+      'نوع المتابعة':t.type==='int'?'داخلية':t.type==='both'?'داخلية وخارجية':'خارجية',
+      'رقم الوثيقة':String(t.docNo||''),
+      'الموضوع':t.title||'',
+      'الجهة الواردة منها':t.from||'',
+      'الجهة المرسل إليها':t.toEntity||t.otherEntityName||'',
+      'التقسيم المختص':t.taqseemName||'',
+      'تاريخ الموضوع':dateText(t.date),
+      'تاريخ بدء المتابعة':dateText(t.followStart),
+      'تاريخ الإغلاق':dateText(t.closedAt),
+      'الحالة':STATUS_LABELS[t.status]||t.status||'',
+      'مؤشر KPI':t.slaMode&&t.slaMode!=='kpi'? (t.slaMode==='rais'?'مدة وفق توجيه الرئيس':'مدة وفق الخطاب'):(KPI_LABELS[t.kpi]||''),
+      'المدة المستهدفة بأيام العمل':allowed==null?'':allowed,
+      'تاريخ الاستحقاق':dateText(getTopicDueDate(t)?localDateKey(getTopicDueDate(t)):''),
+      'مدة الإنجاز أو المتابعة بأيام العمل':elapsed==null?'':elapsed,
+      'نتيجة مؤشر KPI':kpiResult,
+      'عدد المتابعات':t.manualCount==null?follows.length:t.manualCount,
+      'عدد الإجراءات المسجلة':follows.length,
+      'تاريخ آخر متابعة':dateText(last.date),
+      'آخر إجراء':last.note||'',
+      'آخر نتيجة':last.result||'',
+      'أرقام وثائق الرد':ordered.filter(x=>x.f.replyDocNo).map(x=>String(x.f.replyDocNo)).join('\n'),
+      'الملاحظات':t.note||'',
+      'تفاصيل الإجراءات والمتابعات':ordered.map(x=>[dateText(x.f.date),x.f.by,x.f.externalEntityName||x.f.taqseem||x.f.entity,x.f.note,x.f.result,x.f.replied?'تم الرد':'',x.f.replyDocNo?'وثيقة الرد: '+x.f.replyDocNo:''].filter(Boolean).join(' | ')).join('\n')
+    };
+  });
+}
+function exportTopicsWorkbook(){
+  if(!CU) return;
+  if(typeof XLSX==='undefined'){alert('تعذر تحميل مكتبة Excel. أعيدي المحاولة بعد اكتمال تحميل الصفحة.');return;}
+  const topics=(D.topics||[]).filter(t=>!t.fromDiscussionId);
+  if(!topics.length){alert('لا توجد مواضيع للتصدير.');return;}
+  const oldest=val('topicSortOrder')==='oldest';
+  const sorted=topics.slice().sort((a,b)=>{
+    const cmp=String(a.date||'').localeCompare(String(b.date||''));
+    return oldest?cmp:-cmp;
+  });
+  const wb=XLSX.utils.book_new();
+  wb.Workbook={Views:[{RTL:true}],Sheets:[]};
+  [['المواضيع الواردة',false],['المواضيع الصادرة',true]].forEach(([name,out])=>{
+    const rows=buildTopicsExportRows(sorted.filter(t=>(t.correspondenceDirection==='out')===out));
+    const headers=Object.keys(buildTopicsExportRows([{}])[0]);
+    const ws=XLSX.utils.json_to_sheet(rows,{header:headers});
+    ws['!cols']=headers.map(h=>({wch:h==='الموضوع'?65:h==='تفاصيل الإجراءات والمتابعات'?90:h==='الملاحظات'||h==='آخر إجراء'||h==='آخر نتيجة'?50:22}));
+    ws['!autofilter']={ref:ws['!ref']};
+    XLSX.utils.book_append_sheet(wb,ws,name);
+  });
+  try{XLSX.writeFile(wb,'كشف_المواضيع_الواردة_والصادرة_'+localDateKey(new Date())+'.xlsx');}
+  catch(e){console.error('Excel export failed',e);alert('تعذر إنشاء ملف Excel. أعيدي المحاولة.');}
+}
+
 function renderTopicsTable() {
   const q = ($('topicSearch') ? $('topicSearch').value : '').trim().toLowerCase();
   const matchQ = t => {
@@ -6612,6 +6681,90 @@ function buildDirReportHTML() {
 let currentReportHTML = '';
 let currentReportTitle = '';
 
+
+// تقارير المتابعة: تحفظ لقطة من البيانات عند إعداد التقرير.
+function collectFollowReportSnapshot(from,to){
+  const all=(D.topics||[]).filter(t=>!t.fromDiscussionId);
+  const inRange=d=>d&&String(d).slice(0,10)>=from&&String(d).slice(0,10)<=to;
+  const received=all.filter(t=>inRange(t.followStart));
+  const completed=all.filter(t=>t.status==='closed'&&inRange(t.closedAt));
+  const acted=all.filter(t=>(t.followups||[]).some(f=>inRange(f.date)));
+  const selected=all.filter(t=>received.includes(t)||completed.includes(t)||acted.includes(t));
+  return {from,to,total:all.length,done:all.filter(t=>t.status==='closed').length,
+    late:all.filter(t=>t.status!=='closed'&&getKpiStatus(t).state==='late').length,
+    received:JSON.parse(JSON.stringify(received)),completed:JSON.parse(JSON.stringify(completed)),topics:JSON.parse(JSON.stringify(selected))};
+}
+const originalWeeklyCollector=collectWeeklyData,originalMonthlyCollector=collectMonthlyData,originalQuarterCollector=collectQuarterlyData;
+collectWeeklyData=function(){const r=originalWeeklyCollector();r.followSnapshot=collectFollowReportSnapshot(r.from,r.to);return r;};
+collectMonthlyData=function(){const r=originalMonthlyCollector(),m=MONTHS.indexOf(r.month)+1;
+ const from=r.year+'-'+String(m).padStart(2,'0')+'-01',to=localDateKey(new Date(Number(r.year),m,0));
+ r.followSnapshot=collectFollowReportSnapshot(from,to);return r;};
+collectQuarterlyData=function(){const r=originalQuarterCollector(),ms=getQuarterMonths(r.type);
+ r.followSnapshot=collectFollowReportSnapshot(r.year+'-'+ms[0]+'-01',localDateKey(new Date(Number(r.year),Number(ms[ms.length-1]),0)));return r;};
+function buildProfessionalFollowReport(r,title){
+ const snap=r.followSnapshot;
+ if(!snap)return '<html dir="rtl"><body>هذا التقرير المحفوظ سابقًا لا يحتوي لقطة التفاصيل. أعيدي إنشاء التقرير للفترة المطلوبة.</body></html>';
+ const esc=x=>String(x==null?'':x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const pct=(a,b)=>b?Math.round(a/b*100)+'%':'—';
+ const metric=(label,value)=>'<td><b>'+esc(value)+'</b><br>'+esc(label)+'</td>';
+ let html='<html lang="ar" dir="rtl"><head><meta charset="UTF-8"><style>body{font-family:Tahoma,Arial;direction:rtl;color:#17324d;padding:24px;font-size:12px}h1,h2{color:#148f77}table{width:100%;border-collapse:collapse;margin:14px 0}td,th{border:1px solid #cbd5df;padding:9px;vertical-align:top}th{background:#e8f5f1}b{font-size:16px}.topic{break-inside:avoid;margin:16px 0;padding:12px;border:1px solid #cbd5df}p{line-height:1.8}</style></head><body><h1>'+esc(title)+'</h1><p>مكتب رئيس هيئة البيئة — تقرير المتابعة<br>الفترة: '+esc(fmtDate(snap.from))+' إلى '+esc(fmtDate(snap.to))+'</p><h2>حجم الإنجاز الإجمالي عند إعداد التقرير</h2><table><tr>'+metric('إجمالي المواضيع',snap.total)+metric('المنجز',snap.done)+metric('قيد الإجراء',snap.total-snap.done)+metric('المتأخر',snap.late)+metric('نسبة الإنجاز',pct(snap.done,snap.total))+'</tr></table><p>الأرقام الإجمالية تشمل كامل سجل المتابعة عند إعداد التقرير. تفاصيل الفترة تشمل المواضيع المستلمة أو التي سُجّل عليها إجراء أو أُغلقت خلال الفترة. تُستبعد المواضيع المرتبطة بالمناقشات.</p>';
+ for(const [name,out] of [['المواضيع الواردة',false],['المواضيع الصادرة',true]]){
+  const match=t=>(t.correspondenceDirection==='out')===out,topics=snap.topics.filter(match),received=snap.received.filter(match),completed=snap.completed.filter(match);
+  const cohortDone=received.filter(t=>t.status==='closed'&&t.closedAt&&String(t.closedAt).slice(0,10)<=snap.to).length;
+  const rows=buildTopicsExportRows(topics),closedRows=buildTopicsExportRows(completed);
+  const assessed=closedRows.filter(x=>['أُنجز ضمن المدة','أُنجز بعد المدة'].includes(x['نتيجة مؤشر KPI']));
+  const within=assessed.filter(x=>x['نتيجة مؤشر KPI']==='أُنجز ضمن المدة').length;
+  html+='<h2>'+name+'</h2><table><tr>'+metric('المستلم خلال الفترة',received.length)+metric('المنجز خلال الفترة',completed.length)+metric('منجز من فترات سابقة',completed.filter(t=>t.followStart&&t.followStart<snap.from).length)+metric('نسبة إنجاز مستلم الفترة حتى نهايتها',pct(cohortDone,received.length))+metric('الالتزام بـ KPI للمنجز',pct(within,assessed.length))+'</tr></table><p>المنجز القابل لقياس KPI: '+assessed.length+'؛ ضمن المدة: '+within+'؛ بيانات غير كافية: '+(completed.length-assessed.length)+'. الإغلاق يعني انتهاء إجراء المتابعة المسند وفق الإفادة أو التوجيه المسجل. لا يُستنتج سبب إغلاق غير موثق.</p>';
+  if(!topics.length)html+='<p>لا توجد مواضيع لهذه الفئة خلال الفترة.</p>';
+  rows.forEach((row,i)=>{
+   const t=topics[i];html+='<div class="topic"><h3>'+esc(row['الموضوع'])+'</h3><table>';
+   for(const keys of [['رقم الوثيقة','الجهة الواردة منها','الجهة المرسل إليها','التقسيم المختص'],['تاريخ الموضوع','تاريخ بدء المتابعة','تاريخ الإغلاق','الحالة'],['مؤشر KPI','المدة المستهدفة بأيام العمل','مدة الإنجاز أو المتابعة بأيام العمل','نتيجة مؤشر KPI']]){
+    html+='<tr>'+keys.map(k=>'<td>'+esc(k)+'<br><strong>'+esc(row[k]||'—')+'</strong></td>').join('')+'</tr>';
+   }
+   html+='</table><p>الملاحظات: '+esc(t.note||'غير مسجلة')+'</p><p>آخر مستجد: '+esc(row['آخر إجراء']||'غير مسجل')+' — '+esc(row['آخر نتيجة'])+'</p><h4>سجل الإجراءات والمتابعات</h4><p>'+esc(row['تفاصيل الإجراءات والمتابعات']||'لا توجد إجراءات مسجلة').replace(/\n/g,'<br>')+'</p></div>';
+  });
+ }
+ return html+'</body></html>';
+}
+buildWeeklyHTML=function(r){return buildProfessionalFollowReport(r,'التقرير الأسبوعي للمتابعة');};
+buildMonthlyHTML=function(r){return buildProfessionalFollowReport(r,'التقرير الشهري للمتابعة');};
+buildQuarterlyHTML=function(r){return buildProfessionalFollowReport(r,'التقرير الدوري للمتابعة');};
+
+
+// تقارير المتابعة المفصلة؛ جميع الأعداد من المواضيع دون المناقشات.
+function buildFollowupProfessionalReport(kind, data) {
+  let start,end;
+  if(kind==='weekly'){start=data.from;end=data.to;}
+  else {
+    const months=kind==='monthly'?[String(MONTHS.indexOf(data.month)+1).padStart(2,'0')]:getQuarterMonths(data.type);
+    start=data.year+'-'+months[0]+'-01';
+    const last=Number(months[months.length-1]);
+    end=data.year+'-'+String(last).padStart(2,'0')+'-'+new Date(Number(data.year),last,0).getDate();
+  }
+  const all=(D.topics||[]).filter(t=>!t.fromDiscussionId);
+  const inRange=d=>d&&String(d).slice(0,10)>=start&&String(d).slice(0,10)<=end;
+  const received=all.filter(t=>inRange(refDate(t)));
+  const completed=all.filter(t=>t.status==='closed'&&inRange(t.closedAt));
+  const selected=all.filter(t=>received.includes(t)||completed.includes(t));
+  const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const stats=arr=>{
+    const done=arr.filter(t=>t.status==='closed').length;
+    const late=arr.filter(t=>t.status!=='closed'&&getKpiStatus(t).state==='late').length;
+    return `الإجمالي: ${arr.length} | المنجز: ${done} | قيد المتابعة: ${arr.length-done} | المتأخر: ${late} | نسبة الإنجاز: ${arr.length?Math.round(done/arr.length*100)+'%':'—'}`;
+  };
+  const measured=completed.filter(t=>getTopicAllowedDays(t)!=null&&t.followStart&&t.closedAt&&String(t.closedAt)>=String(t.followStart));
+  const onTime=measured.filter(t=>businessDaysBetween(t.followStart,t.closedAt)<=getTopicAllowedDays(t)).length;
+  const details=out=>{
+    const ts=selected.filter(t=>(t.correspondenceDirection==='out')===out);
+    const rows=buildTopicsExportRows(ts);
+    return `<h2>${out?'المواضيع الصادرة':'المواضيع الواردة'}</h2><p>${esc(stats(ts))}</p>`+rows.map((r,i)=>`<article><h3>${i+1}. ${esc(r['الموضوع'])}</h3><table><tbody>${Object.entries(r).filter(([k])=>k!=='م'&&k!=='الموضوع').map(([k,v])=>`<tr><th>${esc(k)}</th><td>${esc(v||'—').replace(/\n/g,'<br>')}</td></tr>`).join('')}</tbody></table></article>`).join('')+(ts.length?'':'<p>لا توجد مواضيع خلال الفترة.</p>');
+  };
+  return `<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><title>تقرير المتابعة</title><style>body{font-family:Arial,sans-serif;color:#16334a;padding:25px;line-height:1.7}h1,h2{color:#116d80}section{background:#eff8fa;padding:14px;margin:15px 0}table{width:100%;border-collapse:collapse;font-size:12px}th,td{border:1px solid #d8e4eb;padding:6px;text-align:right;white-space:pre-wrap;overflow-wrap:anywhere}th{width:28%;background:#f0f6f8}article{margin-bottom:25px}tr{break-inside:avoid}@media print{body{padding:0}h2,h3{break-after:avoid}}</style></head><body><h1>تقرير المتابعة ${kind==='weekly'?'الأسبوعي':kind==='monthly'?'الشهري':'الدوري'}</h1><p>الفترة: ${esc(fmtDate(start))} — ${esc(fmtDate(end))}</p><section><h2>حجم الإنجاز الإجمالي في المنصة حتى تاريخ إعداد التقرير</h2><p>${esc(stats(all))}</p><h2>إنجاز الفترة</h2><p>المواضيع المستلمة خلال الفترة: ${received.length} | أُغلقت خلال الفترة: ${completed.length} | منها من فترات سابقة: ${completed.filter(t=>!received.includes(t)).length}</p><p>مؤشر الالتزام KPI للمنجز خلال الفترة: ${measured.length?Math.round(onTime/measured.length*100)+'%':'غير قابل للاحتساب'} (${onTime} من ${measured.length} موضوعًا مكتمل البيانات). المستبعد لعدم كفاية البيانات: ${completed.length-measured.length}.</p><p>نسبة الإنجاز للمواضيع المستلمة خلال الفترة: ${received.length?Math.round(received.filter(t=>t.status==='closed').length/received.length*100)+'%':'—'}.</p></section><p>حالة الموضوع ونسبة الإنجاز تعكسان الوضع الحالي عند إعداد التقرير. الإغلاق يعني انتهاء إجراء المتابعة المسند وفق الإفادة أو التوجيه المسجل. المواضيع غير المحددة كصادرة تُعرض ضمن الواردة وفق تصنيف المنصة الحالي.</p>${details(false)}${details(true)}<h2>ملاحظات التقرير</h2><p>${esc(data.notes||data.summary||'—')}</p></body></html>`;
+}
+buildWeeklyHTML = w=>buildFollowupProfessionalReport('weekly',w);
+buildMonthlyHTML = m=>buildFollowupProfessionalReport('monthly',m);
+buildQuarterlyHTML = q=>buildFollowupProfessionalReport('quarterly',q);
+
 function generateCurrentReportHTML(type) {
   if(type === 'weekly') {
     const from = val('wFrom'), to = val('wTo');
@@ -8331,3 +8484,4 @@ window.addEventListener('load', () => {
 </script>
 </body>
 </html>
+
