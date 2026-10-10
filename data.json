@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-08T14:33:14.016Z",
+  "exportedAt": "2026-10-10T03:56:35.402Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -46012,6 +46012,32 @@
   ],
   "activityLog": [
     {
+      "id": 1791604591050.6375,
+      "sessionId": "e3b5f781-1362-4059-88e2-56e75ce88c43",
+      "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "هاتف/جهاز لوحي • Android • Chrome",
+      "deviceType": "هاتف/جهاز لوحي",
+      "deviceOS": "Android",
+      "browser": "Chrome",
+      "platform": "Linux armv81",
+      "deviceSnapshot": {
+        "id": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+        "label": "هاتف/جهاز لوحي • Android • Chrome",
+        "type": "هاتف/جهاز لوحي",
+        "os": "Android",
+        "browser": "Chrome",
+        "platform": "Linux armv81"
+      },
+      "loginAt": "2026-10-10T03:56:31.049Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": "ee1610e9-e4a3-4bea-8ee6-72d40530160b",
       "sessionId": "ee1610e9-e4a3-4bea-8ee6-72d40530160b",
       "deviceId": "ae32c6fc-1dbd-4728-8c85-e858781814d2",
@@ -46353,6 +46379,33 @@
       "durationMinutes": 5
     },
     {
+      "id": "ee8d58c3-dd2c-4d5f-8883-44ef6026c5b6",
+      "sessionId": "e7d97c3a-5f2f-4626-a7d0-665ae079a94d",
+      "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+      "user": "guest",
+      "name": "زائر",
+      "role": "اطّلاع عام",
+      "type": "زائر",
+      "device": "هاتف/جهاز لوحي • Android • Chrome",
+      "deviceType": "هاتف/جهاز لوحي",
+      "deviceOS": "Android",
+      "browser": "Chrome",
+      "platform": "Linux armv81",
+      "deviceSnapshot": {
+        "id": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+        "label": "هاتف/جهاز لوحي • Android • Chrome",
+        "type": "هاتف/جهاز لوحي",
+        "os": "Android",
+        "browser": "Chrome",
+        "platform": "Linux armv81"
+      },
+      "loginAt": "2026-10-07T09:38:19.521Z",
+      "logoutAt": "2026-10-07T09:38:31.875Z",
+      "duration": "0 دقيقة و 12 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
+      "durationMinutes": 0
+    },
+    {
       "id": "a7a22c24-d1ba-4f41-931a-ed99dc6b5097",
       "sessionId": "042d59fb-16fb-418f-8730-0faf0f641b4a",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -46407,6 +46460,33 @@
       "durationMinutes": 6
     },
     {
+      "id": "f0ea68a3-4f40-4d0c-94e8-abc0d615b087",
+      "sessionId": "c7d4592e-a647-4a15-ba99-b56c6f88d37c",
+      "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+      "user": "guest",
+      "name": "زائر",
+      "role": "اطّلاع عام",
+      "type": "زائر",
+      "device": "هاتف/جهاز لوحي • Android • Chrome",
+      "deviceType": "هاتف/جهاز لوحي",
+      "deviceOS": "Android",
+      "browser": "Chrome",
+      "platform": "Linux armv81",
+      "deviceSnapshot": {
+        "id": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+        "label": "هاتف/جهاز لوحي • Android • Chrome",
+        "type": "هاتف/جهاز لوحي",
+        "os": "Android",
+        "browser": "Chrome",
+        "platform": "Linux armv81"
+      },
+      "loginAt": "2026-10-07T09:25:44.086Z",
+      "logoutAt": "2026-10-07T09:25:55.943Z",
+      "duration": "0 دقيقة و 11 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
+      "durationMinutes": 0
+    },
+    {
       "id": 1791365057589.7095,
       "sessionId": "11dbb1dc-3954-4fd5-bc7b-f738bf8ff8e0",
       "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
@@ -46428,9 +46508,10 @@
         "platform": "Linux armv81"
       },
       "loginAt": "2026-10-07T09:24:17.589Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null
+      "logoutAt": "2026-10-07T09:24:29.208Z",
+      "duration": "0 دقيقة و 11 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
+      "durationMinutes": 0
     },
     {
       "id": "acd967d7-ee39-4a59-a23d-d7dec32889a4",
