@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-11T06:03:21.267Z",
+  "exportedAt": "2026-10-11T06:30:45.293Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35334,8 +35334,8 @@
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "wweek",
-      "note": "",
-      "status": "new",
+      "note": "رد مركز الاعمال البيئية :نود الافاده بان الشركة لم تقدم طلب تجديد التصريح عبر النظام الالكتروني  حتي نتمكن من احتساب الغرامات، وتم التواصل مع الشركة وابلاغهم بتقديم الطلب لاحتساب الغرامات ومخاطبة وزارة الماليه .",
+      "status": "open",
       "followups": [
         {
           "date": "2026-10-06",
@@ -35370,14 +35370,31 @@
           "taqseem": "",
           "startDate": "2026-10-04",
           "daysSince": 5
+        },
+        {
+          "date": "2026-10-11",
+          "replied": true,
+          "responseMethod": "via_follow",
+          "replyDocNo": "0",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "نود الافاده بان الشركة لم تقدم طلب تجديد التصريح عبر النظام الالكتروني  حتي نتمكن من احتساب الغرامات، وتم التواصل مع الشركة وابلاغهم بتقديم الطلب لاحتساب الغرامات ومخاطبة وزارة الماليه .",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 5
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791271977131.1025,
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "rais_depts",
       "raisDeptName": "مركز الاعمال البيئية",
-      "responseMethod": ""
+      "responseMethod": "via_follow"
     },
     {
       "id": 1791272579071.7695,
@@ -46741,6 +46758,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791700242163.1934,
+          "at": "2026-10-11T06:30:42.163Z",
+          "action": "إضافة متابعة",
+          "details": "طلب الاعفاء من الغرامات"
+        },
+        {
+          "id": 1791700242091.6167,
+          "at": "2026-10-11T06:30:42.091Z",
+          "action": "تعديل موضوع",
+          "details": "طلب الاعفاء من الغرامات"
+        },
         {
           "id": 1791698598913.1777,
           "at": "2026-10-11T06:03:18.913Z",
