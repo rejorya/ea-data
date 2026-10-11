@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-11T05:45:11.437Z",
+  "exportedAt": "2026-10-11T05:53:53.694Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35650,7 +35650,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "مكتب الرئيس\nيحدد موعد مناسب",
-      "status": "awaiting_div",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-10-06",
@@ -35685,11 +35685,28 @@
           "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
           "startDate": "2026-10-05",
           "daysSince": 3
+        },
+        {
+          "date": "2026-10-11",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "esc",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-10-05",
+          "daysSince": 4
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791274392859.453,
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "taqseem",
       "responseMethod": "",
       "divFollowDate": "2026-10-08"
@@ -46569,6 +46586,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791698031547.217,
+          "at": "2026-10-11T05:53:51.547Z",
+          "action": "إضافة متابعة",
+          "details": "دعوة الى  عقد اجتماع تنسيقي مشترك المشروع تطوير شارع الشاطى ومحمية القرم الطبيعية"
+        },
+        {
+          "id": 1791698031464.434,
+          "at": "2026-10-11T05:53:51.464Z",
+          "action": "تعديل موضوع",
+          "details": "دعوة الى  عقد اجتماع تنسيقي مشترك المشروع تطوير شارع الشاطى ومحمية القرم الطبيعية"
+        },
         {
           "id": 1791697509275.3423,
           "at": "2026-10-11T05:45:09.275Z",
