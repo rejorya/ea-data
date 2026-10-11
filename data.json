@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-11T04:05:53.829Z",
+  "exportedAt": "2026-10-11T04:07:11.374Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36270,7 +36270,22 @@
       "type": "ext",
       "followScope": "external",
       "correspondenceDirection": "out",
-      "externalEntities": [],
+      "externalEntities": [
+        {
+          "id": 1791691588823.4792,
+          "name": "وزارة الثروة الزراعية والسمكية وموارد المياه",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        },
+        {
+          "id": 1791691629855.9023,
+          "name": "وزارة الاسكان والتخطيط العمراني",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        }
+      ],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "",
