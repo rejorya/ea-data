@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-11T04:45:11.410Z",
+  "exportedAt": "2026-10-11T04:46:12.184Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36414,6 +36414,13 @@
         {
           "id": 1791693897646.755,
           "name": "شركة شل",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        },
+        {
+          "id": 1791693912334.9187,
+          "name": "شركة تنمية فط عمان",
           "replied": false,
           "lastFollowDate": "",
           "responseMethod": ""
