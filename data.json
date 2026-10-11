@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-11T03:55:25.790Z",
+  "exportedAt": "2026-10-11T04:01:27.556Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36206,6 +36206,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1791691285488.4448,
+      "transactionType": "followup",
+      "title": "تخصيص قطعة أرض  بحق الانتفاع بمحمية الظاهرة الطبيعية",
+      "from": "مكتب الرئيس",
+      "docNo": "تخصيص قطعة أرض  بحق الانتفاع بمحمية الظاهرة الطبيعية",
+      "toEntity": "وزارة الإسكان والتخطيط العمراني",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-08",
+      "receivedFollowDate": "2026-10-11",
+      "followStart": "2026-10-08",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "",
+      "note": "تم التوجيه للدائرة للاختصاص",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791691285488.4448
     }
   ],
   "archivedTopics": [
@@ -46192,6 +46218,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791691285527.658,
+          "at": "2026-10-11T04:01:25.527Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "تخصيص قطعة أرض  بحق الانتفاع بمحمية الظاهرة الطبيعية"
+        },
         {
           "id": 1791690923636.2957,
           "at": "2026-10-11T03:55:23.636Z",
