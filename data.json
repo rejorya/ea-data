@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-11T10:01:45.166Z",
+  "exportedAt": "2026-10-11T10:01:53.488Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -520,7 +520,7 @@
       "type": "ext",
       "kpi": "",
       "note": "1",
-      "status": "closed",
+      "status": "open",
       "followups": [
         {
           "date": "2025-06-01",
@@ -529,9 +529,10 @@
         }
       ],
       "sheet": "Sheet1",
-      "closedAt": "2025-06-01",
       "transactionType": "followup",
-      "recordId": 1780826441540.6377
+      "recordId": 1780826441540.6377,
+      "previousClosedAt": "2025-06-01",
+      "restoredAt": "2026-10-11T10:01:51.431Z"
     },
     {
       "id": 1780826441541.1277,
@@ -46759,6 +46760,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791712911433.2688,
+          "at": "2026-10-11T10:01:51.433Z",
+          "action": "استرجاع موضوع من الأرشيف",
+          "details": "اعادة النظر إلحاق خطاب لموقع خام الكروم.pdf"
+        },
         {
           "id": 1791712903098.6772,
           "at": "2026-10-11T10:01:43.098Z",
