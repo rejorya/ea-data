@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-11T04:01:54.977Z",
+  "exportedAt": "2026-10-11T04:05:53.829Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36253,6 +36253,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1791691551767.5825,
+      "transactionType": "followup",
+      "title": "المختبر الوطني ( اِزرع عُمان) غرفة  الحوكمة و التشريعات",
+      "from": "مكتب الرئيس",
+      "docNo": "1170/3/2022v421-64",
+      "toEntity": "عدة جهات",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-08",
+      "receivedFollowDate": "2026-10-11",
+      "followStart": "2026-10-08",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791691551767.5825
     }
   ],
   "archivedTopics": [
@@ -46239,6 +46265,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791691551805.37,
+          "at": "2026-10-11T04:05:51.805Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "المختبر الوطني ( اِزرع عُمان) غرفة  الحوكمة و التشريعات"
+        },
         {
           "id": 1791691312817.2842,
           "at": "2026-10-11T04:01:52.817Z",
