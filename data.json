@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-11T04:07:11.374Z",
+  "exportedAt": "2026-10-11T04:08:30.130Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36262,7 +36262,7 @@
       "docNo": "1170/3/2022v421-64",
       "toEntity": "عدة جهات",
       "taqseemName": "",
-      "priority": "normal",
+      "priority": "urgent",
       "confidentiality": "normal",
       "date": "2026-10-08",
       "receivedFollowDate": "2026-10-11",
@@ -36291,9 +36291,31 @@
       "kpi": "",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-11",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التوجي للنقسيمات المعنية للاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-08",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791691551767.5825
+      "recordId": 1791691551767.5825,
+      "manualCount": 1,
+      "followEntity": "other",
+      "otherEntityName": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -46280,6 +46302,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791691707351.6462,
+          "at": "2026-10-11T04:08:27.351Z",
+          "action": "إضافة متابعة",
+          "details": "المختبر الوطني ( اِزرع عُمان) غرفة  الحوكمة و التشريعات"
+        },
+        {
+          "id": 1791691707280.0562,
+          "at": "2026-10-11T04:08:27.280Z",
+          "action": "تعديل موضوع",
+          "details": "المختبر الوطني ( اِزرع عُمان) غرفة  الحوكمة و التشريعات"
+        },
         {
           "id": 1791691551805.37,
           "at": "2026-10-11T04:05:51.805Z",
