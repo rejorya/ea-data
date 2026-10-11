@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-11T04:15:16.323Z",
+  "exportedAt": "2026-10-11T04:15:38.130Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36339,9 +36339,30 @@
       "kpi": "naib3",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-11",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-08",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791692113915.6382
+      "recordId": 1791692113915.6382,
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -46328,6 +46349,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791692135647.815,
+          "at": "2026-10-11T04:15:35.647Z",
+          "action": "إضافة متابعة",
+          "details": "طلب فتح باب تصدير خردة النحاس"
+        },
+        {
+          "id": 1791692135579.4382,
+          "at": "2026-10-11T04:15:35.579Z",
+          "action": "تعديل موضوع",
+          "details": "طلب فتح باب تصدير خردة النحاس"
+        },
         {
           "id": 1791692113973.165,
           "at": "2026-10-11T04:15:13.973Z",
