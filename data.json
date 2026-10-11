@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-11T06:30:45.293Z",
+  "exportedAt": "2026-10-11T09:53:33.051Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -46732,6 +46732,32 @@
   ],
   "activityLog": [
     {
+      "id": 1791712408951.558,
+      "sessionId": "6dc54580-8ffb-4ecf-be2a-3abcd32a3fca",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-11T09:53:28.950Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": "923b7bed-2bfb-4677-925d-529e73c667af",
       "sessionId": "923b7bed-2bfb-4677-925d-529e73c667af",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -46753,9 +46779,9 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-11T03:52:57.120Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-11T09:49:34.215Z",
+      "duration": "356 دقيقة و 37 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
       "central": true,
       "actions": [
         {
@@ -46992,7 +47018,8 @@
           "action": "تعديل موضوع",
           "details": "تداول خرائط سلطنة عمان"
         }
-      ]
+      ],
+      "durationMinutes": 356
     },
     {
       "id": "2180f1a4-084a-4e3d-b226-a2695694bea0",
