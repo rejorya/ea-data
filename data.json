@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-10T04:01:28.068Z",
+  "exportedAt": "2026-10-11T03:51:37.835Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -46012,6 +46012,33 @@
   ],
   "activityLog": [
     {
+      "id": "2180f1a4-084a-4e3d-b226-a2695694bea0",
+      "sessionId": "2180f1a4-084a-4e3d-b226-a2695694bea0",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-11T03:51:11.976Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null,
+      "central": true
+    },
+    {
       "id": "9b6413c2-4f8e-45ac-8288-c6c901e2316a",
       "sessionId": "9b6413c2-4f8e-45ac-8288-c6c901e2316a",
       "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
@@ -46115,9 +46142,9 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-08T03:50:23.304Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-08T10:13:53.490Z",
+      "duration": "383 دقيقة و 30 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
       "central": true,
       "actions": [
         {
@@ -46378,7 +46405,8 @@
           "action": "إضافة موضوع متابعة",
           "details": "دعوة  للمشاركة في  أعمال جناح سلطنة عُمان في مؤتمر الأطراف الحادي و الثلاثين لإتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ"
         }
-      ]
+      ],
+      "durationMinutes": 383
     },
     {
       "id": "80a14664-b506-415b-ad62-8e17dcae0ee7",
