@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-11T04:01:27.556Z",
+  "exportedAt": "2026-10-11T04:01:54.977Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36229,9 +36229,30 @@
       "kpi": "",
       "note": "تم التوجيه للدائرة للاختصاص",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-11",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التوجيه للدائرة للاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-08",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791691285488.4448
+      "recordId": 1791691285488.4448,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -46218,6 +46239,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791691312817.2842,
+          "at": "2026-10-11T04:01:52.817Z",
+          "action": "إضافة متابعة",
+          "details": "تخصيص قطعة أرض  بحق الانتفاع بمحمية الظاهرة الطبيعية"
+        },
+        {
+          "id": 1791691312761.3213,
+          "at": "2026-10-11T04:01:52.761Z",
+          "action": "تعديل موضوع",
+          "details": "تخصيص قطعة أرض  بحق الانتفاع بمحمية الظاهرة الطبيعية"
+        },
         {
           "id": 1791691285527.658,
           "at": "2026-10-11T04:01:25.527Z",
