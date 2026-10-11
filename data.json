@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-11T04:44:19.367Z",
+  "exportedAt": "2026-10-11T04:45:11.410Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36410,7 +36410,15 @@
       "type": "ext",
       "followScope": "external",
       "correspondenceDirection": "out",
-      "externalEntities": [],
+      "externalEntities": [
+        {
+          "id": 1791693897646.755,
+          "name": "شركة شل",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        }
+      ],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "",
