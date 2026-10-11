@@ -5002,30 +5002,39 @@ function archiveTopic(tid) {
 function restoreArchivedTopic(tid) {
   if(!canEditData()) return;
   if(!Array.isArray(D.archivedTopics)) D.archivedTopics = [];
-  const t = D.archivedTopics.find(x => x.id === tid);
-  if(!t) return;
+  if(!Array.isArray(D.topics)) D.topics = [];
+  const matches = x => String(x.id) === String(tid);
+  const current = D.topics.find(matches);
+  const t = D.archivedTopics.find(matches) || current;
+  if(!t) { alert('⚠️ لم يتم العثور على الموضوع. حدّثي قائمة الأرشيف.'); return; }
   if(!confirm(`استرجاع الموضوع:
 "${t.title}"؟
 
-سيعود إلى قائمة المواضيع الحالية بحالته السابقة.`)) return;
-  const restored = JSON.parse(JSON.stringify(t));
+سيعود إلى الوارد أو الصادر بحالة «قيد المتابعة»، مع الاحتفاظ بسجل المتابعات والملاحظات السابقة.`)) return;
+  const restored = JSON.parse(JSON.stringify(current || t));
+  restored.previousClosedAt = restored.closedAt || t.closedAt || restored.previousClosedAt || '';
+  restored.restoredAt = new Date().toISOString();
+  restored.status = 'open';
+  delete restored.closedAt;
   delete restored.archivedAt;
   delete restored.archivedBy;
   delete restored.archiveVersion;
-  const current = D.topics.find(x => x.id === tid);
+  if(current) Object.assign(current, restored);
+  else D.topics.push(restored);
   if(current) {
-    delete current.archivedAt; delete current.archivedBy; delete current.archiveVersion;
-  } else {
-    D.topics.push(restored);
+    delete current.closedAt;
+    delete current.archivedAt;
+    delete current.archivedBy;
+    delete current.archiveVersion;
   }
-  D.archivedTopics = D.archivedTopics.filter(x => x.id !== tid);
+  D.archivedTopics = D.archivedTopics.filter(x => !matches(x));
+  recordActivityAction('استرجاع موضوع من الأرشيف', t.title || ('رقم '+tid));
+  autoSave();
   renderArchiveTable();
   renderTopicsTable();
   refreshDashboard();
   refreshAllReports();
-  autoSave();
-  recordActivityAction('استرجاع موضوع من الأرشيف', t.title || ('رقم '+tid));
-  alert('✅ تم استرجاع الموضوع إلى المواضيع الحالية.');
+  alert('✅ تم استرجاع الموضوع بحالة قيد المتابعة إلى قائمة الوارد أو الصادر.');
 }
 
 function renderArchiveTable() {
@@ -5062,7 +5071,7 @@ function renderArchiveTable() {
     <td>${t.archivedAt ? fmtDate(t.archivedAt.substring(0,10)) : '—'}</td>
     <td style="font-size:10px">${escHtml(t.archivedBy||'—')}</td>
     <td class="editAction" style="white-space:nowrap">
-      ${canEditData() ? `<button class="btn btn-o" style="padding:3px 8px;font-size:10px" onclick="restoreArchivedTopic(${t.id})">↩️ استرجاع</button>` : '—'}
+      ${canEditData() ? `<button class="btn btn-o" style="padding:3px 8px;font-size:10px" onclick="restoreArchivedTopic(${escHtml(JSON.stringify(String(t.id)))})">↩️ استرجاع</button>` : '—'}
     </td>
   </tr>`).join('') || noData(8);
 }
