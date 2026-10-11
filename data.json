@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-11T04:55:38.412Z",
+  "exportedAt": "2026-10-11T05:08:47.621Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35891,11 +35891,28 @@
           "taqseem": "",
           "startDate": "2026-10-07",
           "daysSince": 1
+        },
+        {
+          "date": "2026-10-11",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 2
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791446310302.8608,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "naib_office",
       "responseMethod": ""
     },
@@ -46484,6 +46501,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791695325457.3806,
+          "at": "2026-10-11T05:08:45.457Z",
+          "action": "إضافة متابعة",
+          "details": "مشاورات غير رسمية افتراضية تعقدها الرئاسة القادمة لمؤتمر الأطراف (COP 31) مع رؤساء الوفود ورؤساء ومنسقي المجموعات التفاوضية"
+        },
+        {
+          "id": 1791695325395.7515,
+          "at": "2026-10-11T05:08:45.395Z",
+          "action": "تعديل موضوع",
+          "details": "مشاورات غير رسمية افتراضية تعقدها الرئاسة القادمة لمؤتمر الأطراف (COP 31) مع رؤساء الوفود ورؤساء ومنسقي المجموعات التفاوضية"
+        },
         {
           "id": 1791694535482.2627,
           "at": "2026-10-11T04:55:35.482Z",
