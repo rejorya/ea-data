@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-11T06:00:25.768Z",
+  "exportedAt": "2026-10-11T06:03:21.267Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35353,11 +35353,28 @@
           "taqseem": "",
           "startDate": "2026-10-04",
           "daysSince": 2
+        },
+        {
+          "date": "2026-10-11",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 5
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791271977131.1025,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "rais_depts",
       "raisDeptName": "مركز الاعمال البيئية",
       "responseMethod": ""
@@ -46724,6 +46741,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791698598913.1777,
+          "at": "2026-10-11T06:03:18.913Z",
+          "action": "إضافة متابعة",
+          "details": "طلب الاعفاء من الغرامات"
+        },
+        {
+          "id": 1791698598847.1274,
+          "at": "2026-10-11T06:03:18.847Z",
+          "action": "تعديل موضوع",
+          "details": "طلب الاعفاء من الغرامات"
+        },
         {
           "id": 1791698423605.1846,
           "at": "2026-10-11T06:00:23.605Z",
