@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-11T10:01:53.488Z",
+  "exportedAt": "2026-10-11T10:02:35.499Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -517,10 +517,10 @@
       "from": "واحة اللبان للتجارة والمقاولات",
       "responsible": "سعاد الكاسبية",
       "date": "2025-02-03",
-      "type": "ext",
+      "type": "int",
       "kpi": "",
       "note": "1",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2025-06-01",
@@ -532,7 +532,20 @@
       "transactionType": "followup",
       "recordId": 1780826441540.6377,
       "previousClosedAt": "2025-06-01",
-      "restoredAt": "2026-10-11T10:01:51.431Z"
+      "restoredAt": "2026-10-11T10:01:51.431Z",
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "followStart": "",
+      "correspondenceDirection": "",
+      "followScope": "internal",
+      "docNo": "",
+      "toEntity": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "closedAt": "2026-10-11",
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     },
     {
       "id": 1780826441541.1277,
@@ -41073,6 +41086,45 @@
       "archivedAt": "2026-10-11T05:57:26.344Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1780826441540.6377,
+      "title": "اعادة النظر إلحاق خطاب لموقع خام الكروم.pdf",
+      "from": "واحة اللبان للتجارة والمقاولات",
+      "responsible": "سعاد الكاسبية",
+      "date": "2025-02-03",
+      "type": "int",
+      "kpi": "",
+      "note": "1",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2025-06-01",
+          "replied": false,
+          "note": "1"
+        }
+      ],
+      "sheet": "Sheet1",
+      "transactionType": "followup",
+      "recordId": 1780826441540.6377,
+      "previousClosedAt": "2025-06-01",
+      "restoredAt": "2026-10-11T10:01:51.431Z",
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "followStart": "",
+      "correspondenceDirection": "",
+      "followScope": "internal",
+      "docNo": "",
+      "toEntity": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "closedAt": "2026-10-11",
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": "",
+      "archivedAt": "2026-10-11T10:02:33.447Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -46760,6 +46812,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791712953408.3157,
+          "at": "2026-10-11T10:02:33.408Z",
+          "action": "تعديل موضوع",
+          "details": "اعادة النظر إلحاق خطاب لموقع خام الكروم.pdf"
+        },
         {
           "id": 1791712911433.2688,
           "at": "2026-10-11T10:01:51.433Z",
