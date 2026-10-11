@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-11T10:01:39.557Z",
+  "exportedAt": "2026-10-11T10:01:45.166Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23560,12 +23560,13 @@
       "type": "int",
       "kpi": "",
       "note": "1",
-      "status": "closed",
+      "status": "open",
       "followups": [],
       "sheet": "Sheet1",
-      "closedAt": "",
       "transactionType": "followup",
-      "recordId": 1780826442618.2239
+      "recordId": 1780826442618.2239,
+      "previousClosedAt": "",
+      "restoredAt": "2026-10-11T10:01:43.095Z"
     },
     {
       "id": 1780826442620.8389,
@@ -46756,7 +46757,15 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1791712903098.6772,
+          "at": "2026-10-11T10:01:43.098Z",
+          "action": "استرجاع موضوع من الأرشيف",
+          "details": "إلحاق خطاب لموقع خام الكروم بولاية ينقل.pdf"
+        }
+      ]
     },
     {
       "id": "22aaa8ac-10ff-47ca-98d8-bcce1b89e55f",
