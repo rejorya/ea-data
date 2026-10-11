@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-11T04:51:12.184Z",
+  "exportedAt": "2026-10-11T04:53:00.941Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36452,6 +36452,20 @@
           "replied": false,
           "lastFollowDate": "",
           "responseMethod": ""
+        },
+        {
+          "id": 1791694339309.221,
+          "name": "سي سي إنريرجي ديفلوبمنت",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        },
+        {
+          "id": 1791694347844.9678,
+          "name": "شركو دليل للنفط",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
         }
       ],
       "slaMode": "kpi",
@@ -36459,9 +36473,31 @@
       "kpi": "",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-11",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التوجية للتقسيم للاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-08",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791693857278.079
+      "recordId": 1791693857278.079,
+      "manualCount": 1,
+      "followEntity": "other",
+      "otherEntityName": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -46448,6 +46484,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791694378776.238,
+          "at": "2026-10-11T04:52:58.776Z",
+          "action": "إضافة متابعة",
+          "details": "المعسكر السنوي للرقابة والتفتيش البيئي"
+        },
+        {
+          "id": 1791694378705.6812,
+          "at": "2026-10-11T04:52:58.705Z",
+          "action": "تعديل موضوع",
+          "details": "المعسكر السنوي للرقابة والتفتيش البيئي"
+        },
         {
           "id": 1791693857327.9607,
           "at": "2026-10-11T04:44:17.327Z",
