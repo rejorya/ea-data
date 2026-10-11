@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-11T04:46:12.184Z",
+  "exportedAt": "2026-10-11T04:51:12.184Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36421,6 +36421,34 @@
         {
           "id": 1791693912334.9187,
           "name": "شركة تنمية فط عمان",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        },
+        {
+          "id": 1791694219915.1858,
+          "name": "مجموعة أوكيو",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        },
+        {
+          "id": 1791694232475.4211,
+          "name": "شركة آرا للبترول",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        },
+        {
+          "id": 1791694253595.7637,
+          "name": "شركة أوكسيدنتال عمان",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        },
+        {
+          "id": 1791694269627.4746,
+          "name": "شركة بي بي عمان",
           "replied": false,
           "lastFollowDate": "",
           "responseMethod": ""
