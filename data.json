@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-11T04:08:30.130Z",
+  "exportedAt": "2026-10-11T04:15:16.323Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36316,6 +36316,32 @@
       "followEntity": "other",
       "otherEntityName": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1791692113915.6382,
+      "transactionType": "followup",
+      "title": "طلب فتح باب تصدير خردة النحاس",
+      "from": "شركة البراق للصناعات الحديدة",
+      "docNo": "1170/3/2022v421-58",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-08",
+      "receivedFollowDate": "2026-10-11",
+      "followStart": "2026-10-08",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791692113915.6382
     }
   ],
   "archivedTopics": [
@@ -46302,6 +46328,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791692113973.165,
+          "at": "2026-10-11T04:15:13.973Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب فتح باب تصدير خردة النحاس"
+        },
         {
           "id": 1791691707351.6462,
           "at": "2026-10-11T04:08:27.351Z",
