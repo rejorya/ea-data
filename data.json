@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-11T04:20:38.866Z",
+  "exportedAt": "2026-10-11T04:44:19.367Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36393,6 +36393,32 @@
       "followEntity": "rais_depts",
       "raisDeptName": "مكتب متابعة تنفيذ رؤية عمان 2040",
       "responseMethod": ""
+    },
+    {
+      "id": 1791693857278.079,
+      "transactionType": "followup",
+      "title": "المعسكر السنوي للرقابة والتفتيش البيئي",
+      "from": "مكتب الرئيس",
+      "docNo": "1170/3/2022v421-69",
+      "toEntity": "عدة جهات",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-08",
+      "receivedFollowDate": "2026-10-11",
+      "followStart": "2026-10-08",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791693857278.079
     }
   ],
   "archivedTopics": [
@@ -46379,6 +46405,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791693857327.9607,
+          "at": "2026-10-11T04:44:17.327Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "المعسكر السنوي للرقابة والتفتيش البيئي"
+        },
         {
           "id": 1791692436688.8271,
           "at": "2026-10-11T04:20:36.688Z",
