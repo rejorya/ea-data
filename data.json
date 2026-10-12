@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-12T07:43:27.376Z",
+  "exportedAt": "2026-10-12T07:50:39.405Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36774,6 +36774,32 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1791791437323.0815,
+      "transactionType": "followup",
+      "title": "انضمام سلطنة عمان إلى شراكة المساهمات المحددة عالميًا",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v371-101",
+      "toEntity": "الأمانة العامة لمجلس الوزراء",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-15",
+      "receivedFollowDate": "2026-10-12",
+      "followStart": "2026-10-15",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "rais",
+      "slaDays": 15,
+      "kpi": "",
+      "note": "تم التواصل هاتفيا وسوف يتم الرد علينا لاحقا ",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791791437323.0815
     }
   ],
   "archivedTopics": [
@@ -46973,6 +46999,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791791437371.395,
+          "at": "2026-10-12T07:50:37.371Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "انضمام سلطنة عمان إلى شراكة المساهمات المحددة عالميًا"
+        },
         {
           "id": 1791791005289.775,
           "at": "2026-10-12T07:43:25.289Z",
