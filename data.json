@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-12T08:05:28.839Z",
+  "exportedAt": "2026-10-12T08:06:53.422Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36028,8 +36028,8 @@
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "naib3",
-      "note": "",
-      "status": "new",
+      "note": "تم توجيه الرد الى مدير المكتب 12/10/2026",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-08",
@@ -36064,13 +36064,31 @@
           "taqseem": "",
           "startDate": "2026-10-07",
           "daysSince": 2
+        },
+        {
+          "date": "2026-10-12",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم توجيه الرد الى مدير المكتب 12/10/2026",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 3
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791446310302.8608,
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-10-12"
     },
     {
       "id": 1791447185362.1057,
@@ -41582,6 +41600,91 @@
       "responseMethod": "via_follow",
       "closedAt": "2026-10-12",
       "archivedAt": "2026-10-12T08:00:49.400Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1791446310302.8608,
+      "transactionType": "followup",
+      "title": "مشاورات غير رسمية افتراضية تعقدها الرئاسة القادمة لمؤتمر الأطراف (COP 31) مع رؤساء الوفود ورؤساء ومنسقي المجموعات التفاوضية",
+      "from": "دائرة التعاون الدولي",
+      "docNo": "",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-07",
+      "receivedFollowDate": "2026-10-08",
+      "followStart": "2026-10-07",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "تم توجيه الرد الى مدير المكتب 12/10/2026",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-08",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-10-11",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-10-12",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم توجيه الرد الى مدير المكتب 12/10/2026",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 3
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791446310302.8608,
+      "manualCount": 3,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "closedAt": "2026-10-12",
+      "archivedAt": "2026-10-12T08:06:51.379Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -47271,6 +47374,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791792411349.9644,
+          "at": "2026-10-12T08:06:51.349Z",
+          "action": "إضافة متابعة",
+          "details": "مشاورات غير رسمية افتراضية تعقدها الرئاسة القادمة لمؤتمر الأطراف (COP 31) مع رؤساء الوفود ورؤساء ومنسقي المجموعات التفاوضية"
+        },
+        {
+          "id": 1791792411282.8381,
+          "at": "2026-10-12T08:06:51.282Z",
+          "action": "تعديل موضوع",
+          "details": "مشاورات غير رسمية افتراضية تعقدها الرئاسة القادمة لمؤتمر الأطراف (COP 31) مع رؤساء الوفود ورؤساء ومنسقي المجموعات التفاوضية"
+        },
         {
           "id": 1791792326771.2336,
           "at": "2026-10-12T08:05:26.771Z",
