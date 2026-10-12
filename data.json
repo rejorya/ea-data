@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-12T07:55:23.764Z",
+  "exportedAt": "2026-10-12T07:59:05.555Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35836,7 +35836,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
-      "status": "awaiting",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-10-07",
@@ -35888,11 +35888,28 @@
           "taqseem": "",
           "startDate": "2026-10-07",
           "daysSince": 2
+        },
+        {
+          "date": "2026-10-12",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "esc",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 3
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791354674242.0557,
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "naib_office",
       "responseMethod": ""
     },
@@ -47116,6 +47133,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791791943469.0046,
+          "at": "2026-10-12T07:59:03.469Z",
+          "action": "إضافة متابعة",
+          "details": "دعوة لترشيح كوادر لورشة اتمتة معالجة الصور الفضائية وتحليل البيانات الرقمية اليا"
+        },
+        {
+          "id": 1791791943397.819,
+          "at": "2026-10-12T07:59:03.397Z",
+          "action": "تعديل موضوع",
+          "details": "دعوة لترشيح كوادر لورشة اتمتة معالجة الصور الفضائية وتحليل البيانات الرقمية اليا"
+        },
         {
           "id": 1791791721687.8752,
           "at": "2026-10-12T07:55:21.687Z",
