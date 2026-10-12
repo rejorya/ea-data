@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-12T07:59:05.555Z",
+  "exportedAt": "2026-10-12T08:00:51.439Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35369,8 +35369,8 @@
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "wweek",
-      "note": "رد مركز الاعمال البيئية :نود الافاده بان الشركة لم تقدم طلب تجديد التصريح عبر النظام الالكتروني  حتي نتمكن من احتساب الغرامات، وتم التواصل مع الشركة وابلاغهم بتقديم الطلب لاحتساب الغرامات ومخاطبة وزارة الماليه .",
-      "status": "open",
+      "note": "تم توجيه رد مركز الاعمال البيئية الى رئيسة القسم بتاريخ 11/10/2026 :نود الافاده بان الشركة لم تقدم طلب تجديد التصريح عبر النظام الالكتروني  حتي نتمكن من احتساب الغرامات، وتم التواصل مع الشركة وابلاغهم بتقديم الطلب لاحتساب الغرامات ومخاطبة وزارة الماليه .",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-06",
@@ -35429,7 +35429,8 @@
       "manualCount": 3,
       "followEntity": "rais_depts",
       "raisDeptName": "مركز الاعمال البيئية",
-      "responseMethod": "via_follow"
+      "responseMethod": "via_follow",
+      "closedAt": "2026-10-12"
     },
     {
       "id": 1791272579071.7695,
@@ -41446,6 +41447,92 @@
       "archivedAt": "2026-10-12T07:55:21.718Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1791271977131.1025,
+      "transactionType": "followup",
+      "title": "طلب الاعفاء من الغرامات",
+      "from": "شركة المزيونة للكسارات والتعدين",
+      "docNo": "1170/3/2022v420-45",
+      "toEntity": "مركز الاعمال البيئية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-30",
+      "receivedFollowDate": "2026-10-04",
+      "followStart": "2026-10-04",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wweek",
+      "note": "تم توجيه رد مركز الاعمال البيئية الى رئيسة القسم بتاريخ 11/10/2026 :نود الافاده بان الشركة لم تقدم طلب تجديد التصريح عبر النظام الالكتروني  حتي نتمكن من احتساب الغرامات، وتم التواصل مع الشركة وابلاغهم بتقديم الطلب لاحتساب الغرامات ومخاطبة وزارة الماليه .",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-06",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-10-11",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 5
+        },
+        {
+          "date": "2026-10-11",
+          "replied": true,
+          "responseMethod": "via_follow",
+          "replyDocNo": "0",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "نود الافاده بان الشركة لم تقدم طلب تجديد التصريح عبر النظام الالكتروني  حتي نتمكن من احتساب الغرامات، وتم التواصل مع الشركة وابلاغهم بتقديم الطلب لاحتساب الغرامات ومخاطبة وزارة الماليه .",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 5
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791271977131.1025,
+      "manualCount": 3,
+      "followEntity": "rais_depts",
+      "raisDeptName": "مركز الاعمال البيئية",
+      "responseMethod": "via_follow",
+      "closedAt": "2026-10-12",
+      "archivedAt": "2026-10-12T08:00:49.400Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -47133,6 +47220,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791792049370.7612,
+          "at": "2026-10-12T08:00:49.370Z",
+          "action": "تعديل موضوع",
+          "details": "طلب الاعفاء من الغرامات"
+        },
         {
           "id": 1791791943469.0046,
           "at": "2026-10-12T07:59:03.469Z",
