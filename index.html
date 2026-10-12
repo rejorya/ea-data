@@ -4325,11 +4325,54 @@ function getLastFollowupDate(t) {
 }
 
 // كشف شامل مستقل عن تبويب العرض والبحث؛ يتضمن المواضيع المغلقة.
+function exportDateText(value) {
+  if(value == null || value === '') return '';
+  if(value instanceof Date) {
+    if(Number.isNaN(value.getTime())) return '';
+    return String(value.getDate()).padStart(2,'0')+'/'+String(value.getMonth()+1).padStart(2,'0')+'/'+value.getFullYear();
+  }
+  const text=String(value).trim();
+  const m=text.match(/^(\d{4})-(\d{2})-(\d{2})(?:T\d{2}:\d{2}.*)?$/);
+  if(m) {
+    const day=Number(m[3]),month=Number(m[2]),year=Number(m[1]);
+    const check=new Date(year,month-1,day);
+    if(check.getFullYear()===year && check.getMonth()===month-1 && check.getDate()===day)
+      return m[3]+'/'+m[2]+'/'+m[1];
+  }
+  // Keep complete date cells, including multiple dates and dates without a year.
+  return text;
+}
+function exportDateSortKey(value) {
+  const text=exportDateText(value);
+  const m=text.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+  return m ? m[3]+'-'+m[2].padStart(2,'0')+'-'+m[1].padStart(2,'0') : '\uffff'+text;
+}
+function collectTopicsForExcel() {
+  const byId=new Map();
+  for(const source of [...(D.topics||[]),...(D.archivedTopics||[])]) {
+    if(!source) continue;
+    const key=String(source.id);
+    if(!byId.has(key)) { byId.set(key,{...source,followups:[...(source.followups||[])]}); continue; }
+    const current=byId.get(key);
+    for(const [field,value] of Object.entries(source))
+      if(field!=='followups' && (current[field]==null || current[field]==='')) current[field]=value;
+    const counts=new Map();
+    for(const f of current.followups){const key=JSON.stringify(f);counts.set(key,(counts.get(key)||0)+1);}
+    const seen=new Map();
+    for(const f of source.followups||[]){const key=JSON.stringify(f);seen.set(key,(seen.get(key)||0)+1);if(seen.get(key)>(counts.get(key)||0))current.followups.push(f);}
+  }
+  return [...byId.values()];
+}
+function setExcelRtl(wb) {
+  wb.Workbook=wb.Workbook||{};
+  wb.Workbook.Views=[{...(wb.Workbook.Views?.[0]||{}),RTL:true}];
+}
+
 function buildTopicsExportRows(topics) {
-  const dateText=d=>d ? fmtDate(String(d).slice(0,10)) : '';
+  const dateText=exportDateText;
   return topics.map((t,i)=>{
     const follows=Array.isArray(t.followups)?t.followups:[];
-    const ordered=follows.map((f,index)=>({f,index})).sort((a,b)=>String(a.f.date||'').localeCompare(String(b.f.date||''))||a.index-b.index);
+    const ordered=follows.map((f,index)=>({f,index})).sort((a,b)=>exportDateSortKey(a.f.date).localeCompare(exportDateSortKey(b.f.date))||a.index-b.index);
     const last=ordered.length?ordered[ordered.length-1].f:{};
     const allowed=getTopicAllowedDays(t);
     const elapsed=t.followStart && (t.status!=='closed'||t.closedAt)
@@ -4342,14 +4385,15 @@ function buildTopicsExportRows(topics) {
       'م':i+1,
       'رقم الموضوع':t.id==null?'':String(t.id),
       'الوارد أو الصادر':t.correspondenceDirection==='out'?'صادر':'وارد',
-      'نوع المتابعة':t.type==='int'?'داخلية':t.type==='both'?'داخلية وخارجية':'خارجية',
+      'نوع المتابعة':t.correspondenceDirection==='out'?'متابعة خارجية':'متابعة داخلية',
       'رقم الوثيقة':String(t.docNo||''),
       'الموضوع':t.title||'',
       'الجهة الواردة منها':t.from||'',
       'الجهة المرسل إليها':t.toEntity||t.otherEntityName||'',
       'التقسيم المختص':t.taqseemName||'',
       'تاريخ الموضوع':dateText(t.date),
-      'تاريخ بدء المتابعة':dateText(t.followStart),
+      'تاريخ استلام الموضوع للمتابعة':dateText(t.receivedFollowDate),
+      'تاريخ توجيه الرئيس للمتابعة':dateText(t.followStart),
       'تاريخ الإغلاق':dateText(t.closedAt),
       'الحالة':STATUS_LABELS[t.status]||t.status||'',
       'مؤشر KPI':t.slaMode&&t.slaMode!=='kpi'? (t.slaMode==='rais'?'مدة وفق توجيه الرئيس':'مدة وفق الخطاب'):(KPI_LABELS[t.kpi]||''),
@@ -4360,6 +4404,7 @@ function buildTopicsExportRows(topics) {
       'عدد المتابعات':t.manualCount==null?follows.length:t.manualCount,
       'عدد الإجراءات المسجلة':follows.length,
       'تاريخ آخر متابعة':dateText(last.date),
+      'جميع تواريخ المتابعة':ordered.map(x=>dateText(x.f.date)).filter(Boolean).join('\n'),
       'آخر إجراء':last.note||'',
       'آخر نتيجة':last.result||'',
       'سبب الإغلاق':t.closeReason||t.closureReason||'',
@@ -4372,11 +4417,11 @@ function buildTopicsExportRows(topics) {
 function exportTopicsWorkbook(){
   if(!CU) return;
   if(typeof XLSX==='undefined'){alert('تعذر تحميل مكتبة Excel. أعيدي المحاولة بعد اكتمال تحميل الصفحة.');return;}
-  const topics=(D.topics||[]).filter(isFollowupReportTopic);
+  const topics=collectTopicsForExcel();
   if(!topics.length){alert('لا توجد مواضيع للتصدير.');return;}
   const oldest=val('topicSortOrder')==='oldest';
   const sorted=topics.slice().sort((a,b)=>{
-    const cmp=String(a.date||'').localeCompare(String(b.date||''));
+    const cmp=exportDateSortKey(a.date).localeCompare(exportDateSortKey(b.date));
     return oldest?cmp:-cmp;
   });
   const wb=XLSX.utils.book_new();
@@ -4389,6 +4434,7 @@ function exportTopicsWorkbook(){
     ws['!autofilter']={ref:ws['!ref']};
     XLSX.utils.book_append_sheet(wb,ws,name);
   });
+  setExcelRtl(wb);
   try{XLSX.writeFile(wb,'كشف_المواضيع_الواردة_والصادرة_'+localDateKey(new Date())+'.xlsx');}
   catch(e){console.error('Excel export failed',e);alert('تعذر إنشاء ملف Excel. أعيدي المحاولة.');}
 }
@@ -8363,6 +8409,7 @@ window.addEventListener('load', () => {
     ws['!cols']=[{wch:4},{wch:40},{wch:22},{wch:20},{wch:16},{wch:16},{wch:14},{wch:16},{wch:18},{wch:16},{wch:20},{wch:24}];
     var wb=XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb,ws,'كشف متابعة التقسيمات');
+    setExcelRtl(wb);
     XLSX.writeFile(wb,'كشف_متابعة_التقسيمات_'+(mf&&mf!=='all'?mf:'كل_الأشهر')+'_'+_todayStr()+'.xlsx');
   };
 
