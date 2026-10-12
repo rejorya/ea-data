@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-12T07:55:11.569Z",
+  "exportedAt": "2026-10-12T07:55:23.764Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33133,7 +33133,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "تم الرد من الجهه 1170/3/2022v421-81 بتاريخ 12/10/2026",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-24",
@@ -33174,7 +33174,8 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": "",
-      "correspondenceDirection": "out"
+      "correspondenceDirection": "out",
+      "closedAt": "2026-10-12"
     },
     {
       "id": 1790239762954.166,
@@ -41351,6 +41352,83 @@
       "archivedAt": "2026-10-12T07:37:26.156Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1790239443441.7979,
+      "transactionType": "followup",
+      "title": "مؤتمر التعليم البيئي",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v419-70",
+      "toEntity": "وزارة التعليم",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-23",
+      "receivedFollowDate": "2026-09-24",
+      "presidentDirection": "",
+      "createdAt": "2026-09-24T08:44:03.441Z",
+      "followStart": "2026-09-23",
+      "type": "ext",
+      "followScope": "external",
+      "externalEntities": [
+        {
+          "id": 1790484681966.512,
+          "name": "وزارة التعليم",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        }
+      ],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "تم الرد من الجهه 1170/3/2022v421-81 بتاريخ 12/10/2026",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-23",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-10-12",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "1170/3/2022v421-81",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-23",
+          "daysSince": 13
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790239443441.7979,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": "",
+      "correspondenceDirection": "out",
+      "closedAt": "2026-10-12",
+      "archivedAt": "2026-10-12T07:55:21.718Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -47038,6 +47116,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791791721687.8752,
+          "at": "2026-10-12T07:55:21.687Z",
+          "action": "تعديل موضوع",
+          "details": "مؤتمر التعليم البيئي"
+        },
         {
           "id": 1791791709498.4768,
           "at": "2026-10-12T07:55:09.498Z",
