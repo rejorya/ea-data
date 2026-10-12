@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-11T10:02:59.480Z",
+  "exportedAt": "2026-10-12T03:38:06.186Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32713,7 +32713,7 @@
       "slaDays": null,
       "kpi": "std14",
       "note": "",
-      "status": "awaiting_div",
+      "status": "ready_esc",
       "followups": [
         {
           "date": "2026-09-24",
@@ -46769,6 +46769,32 @@
   ],
   "activityLog": [
     {
+      "id": 1791776281748.62,
+      "sessionId": "057c4b63-420a-4cf6-8f69-04c0de63d38e",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-12T03:38:01.747Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": "cd138130-61f7-4ec1-94fd-023bf8c67a60",
       "sessionId": "cd138130-61f7-4ec1-94fd-023bf8c67a60",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -46790,9 +46816,9 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-11T10:01:29.756Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-11T10:04:55.097Z",
+      "duration": "3 دقيقة و 25 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
       "central": true,
       "actions": [
         {
@@ -46819,7 +46845,8 @@
           "action": "استرجاع موضوع من الأرشيف",
           "details": "إلحاق خطاب لموقع خام الكروم بولاية ينقل.pdf"
         }
-      ]
+      ],
+      "durationMinutes": 3
     },
     {
       "id": "22aaa8ac-10ff-47ca-98d8-bcce1b89e55f",
