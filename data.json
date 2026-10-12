@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-12T05:04:06.496Z",
+  "exportedAt": "2026-10-12T07:11:22.813Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32663,7 +32663,7 @@
       "slaDays": 10,
       "kpi": "",
       "note": "نائب الرئيس\nالتدقيق\nالقانونية\nللاطلاع",
-      "status": "closed",
+      "status": "open",
       "followups": [
         {
           "date": "2026-09-27",
@@ -32689,7 +32689,8 @@
       "followEntity": "naib_and_rais",
       "raisDeptName": "نائب الرئيس/دائرة التدقيق الداخلي/الدائرة القاونية",
       "responseMethod": "direct_manager",
-      "closedAt": "2026-09-29"
+      "previousClosedAt": "2026-09-29",
+      "restoredAt": "2026-10-12T07:11:20.749Z"
     },
     {
       "id": 1790237203960.906,
@@ -39553,59 +39554,6 @@
       "correspondenceDirection": "",
       "closedAt": "2026-09-29",
       "archivedAt": "2026-09-29T09:27:55.775Z",
-      "archivedBy": "رحاب بنت نصيب الفرج",
-      "archiveVersion": 1
-    },
-    {
-      "id": 1790227116726.0547,
-      "transactionType": "followup",
-      "title": "ملخص المتجمع عن التقرير السنوي للجهاز عن عام 2025م",
-      "from": "جهاز الرقابة المالية والادارية للدولة",
-      "docNo": "1170/3/2022v419-68",
-      "toEntity": "نائب الرئيس/دائرة التدقيق الداخلي/الدائرة القاونية",
-      "taqseemName": "",
-      "priority": "normal",
-      "confidentiality": "secret",
-      "date": "2026-09-24",
-      "receivedFollowDate": "2026-09-24",
-      "presidentDirection": "نائب الرئيس\nالتدقيق\nالقانونية\nللاطلاع",
-      "createdAt": "2026-09-24T05:18:36.727Z",
-      "followStart": "2026-09-24",
-      "type": "int",
-      "followScope": "internal",
-      "externalEntities": [],
-      "slaMode": "letter",
-      "slaDays": 10,
-      "kpi": "",
-      "note": "نائب الرئيس\nالتدقيق\nالقانونية\nللاطلاع",
-      "status": "closed",
-      "followups": [
-        {
-          "date": "2026-09-27",
-          "replied": false,
-          "responseMethod": "",
-          "note": "متابعة",
-          "actionType": "visit",
-          "scope": "internal",
-          "by": "",
-          "result": "",
-          "entity": "naib_and_rais",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-09-24",
-          "daysSince": 1
-        }
-      ],
-      "sheet": "مُضاف يدوياً",
-      "recordId": 1790227116726.0547,
-      "correspondenceDirection": "",
-      "manualCount": 1,
-      "followEntity": "naib_and_rais",
-      "raisDeptName": "نائب الرئيس/دائرة التدقيق الداخلي/الدائرة القاونية",
-      "responseMethod": "direct_manager",
-      "closedAt": "2026-09-29",
-      "archivedAt": "2026-09-29T10:03:25.746Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     },
@@ -46793,7 +46741,15 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1791789080753.1545,
+          "at": "2026-10-12T07:11:20.753Z",
+          "action": "استرجاع موضوع من الأرشيف",
+          "details": "ملخص المتجمع عن التقرير السنوي للجهاز عن عام 2025م"
+        }
+      ]
     },
     {
       "id": "e137c7e5-495f-43f6-babc-9a4bc920dda7",
