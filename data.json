@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-12T07:16:46.479Z",
+  "exportedAt": "2026-10-12T07:17:01.293Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32663,7 +32663,7 @@
       "slaDays": 10,
       "kpi": "",
       "note": "نائب الرئيس\nالتدقيق\nالقانونية\nللاطلاع\nتم توجية من قبل المكلف بالقيام باعمال مدير المكتب  بتاريخ 11/10/2026 لاعداد ولارفاق المسودة من  الدائرةمع العلم تم رفع الافادة من الدائرة مباشرة الى مدير المكتب تاريخ 28 سبتمبر 2026م وللتوضيح لم يتم توجيهنا للمتابعة ولم يتم ذكر اي شيء للمتابعة",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-27",
@@ -32707,7 +32707,8 @@
       "raisDeptName": "نائب الرئيس/دائرة التدقيق الداخلي/الدائرة القاونية",
       "responseMethod": "direct_manager",
       "previousClosedAt": "2026-09-29",
-      "restoredAt": "2026-10-12T07:11:20.749Z"
+      "restoredAt": "2026-10-12T07:11:20.749Z",
+      "closedAt": "2026-10-12"
     },
     {
       "id": 1790237203960.906,
@@ -41073,6 +41074,78 @@
       "archivedAt": "2026-10-11T10:02:33.447Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1790227116726.0547,
+      "transactionType": "followup",
+      "title": "ملخص المتجمع عن التقرير السنوي للجهاز عن عام 2025م",
+      "from": "جهاز الرقابة المالية والادارية للدولة",
+      "docNo": "1170/3/2022v419-68",
+      "toEntity": "نائب الرئيس/دائرة التدقيق الداخلي/الدائرة القاونية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-09-24",
+      "receivedFollowDate": "2026-09-24",
+      "presidentDirection": "نائب الرئيس\nالتدقيق\nالقانونية\nللاطلاع",
+      "createdAt": "2026-09-24T05:18:36.727Z",
+      "followStart": "2026-09-24",
+      "type": "int",
+      "followScope": "internal",
+      "externalEntities": [],
+      "slaMode": "letter",
+      "slaDays": 10,
+      "kpi": "",
+      "note": "نائب الرئيس\nالتدقيق\nالقانونية\nللاطلاع\nتم توجية من قبل المكلف بالقيام باعمال مدير المكتب  بتاريخ 11/10/2026 لاعداد ولارفاق المسودة من  الدائرةمع العلم تم رفع الافادة من الدائرة مباشرة الى مدير المكتب تاريخ 28 سبتمبر 2026م وللتوضيح لم يتم توجيهنا للمتابعة ولم يتم ذكر اي شيء للمتابعة",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-27",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_and_rais",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-10-12",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم توجية من قبل المكلف بالقيام باعمال مدير المكتب  بتاريخ 11/10/2026 لاعداد ولارفاق المسودة من  الدائرةمع العلم تم رفع الافادة من الدائرة مباشرة الى مدير المكتب تاريخ 28 سبتمبر 2026م وللتوضيح لم يتم توجيهنا للمتابعة ولم يتم ذكر اي شيء للمتابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_and_rais",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 12
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790227116726.0547,
+      "correspondenceDirection": "",
+      "manualCount": 2,
+      "followEntity": "naib_and_rais",
+      "raisDeptName": "نائب الرئيس/دائرة التدقيق الداخلي/الدائرة القاونية",
+      "responseMethod": "direct_manager",
+      "previousClosedAt": "2026-09-29",
+      "restoredAt": "2026-10-12T07:11:20.749Z",
+      "closedAt": "2026-10-12",
+      "archivedAt": "2026-10-12T07:16:59.251Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -46760,6 +46833,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791789419220.7883,
+          "at": "2026-10-12T07:16:59.220Z",
+          "action": "تعديل موضوع",
+          "details": "ملخص المتجمع عن التقرير السنوي للجهاز عن عام 2025م"
+        },
         {
           "id": 1791789404406.0164,
           "at": "2026-10-12T07:16:44.406Z",
