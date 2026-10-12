@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-12T07:50:39.405Z",
+  "exportedAt": "2026-10-12T07:51:43.557Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36792,14 +36792,36 @@
       "followScope": "external",
       "correspondenceDirection": "out",
       "externalEntities": [],
-      "slaMode": "rais",
-      "slaDays": 15,
-      "kpi": "",
-      "note": "تم التواصل هاتفيا وسوف يتم الرد علينا لاحقا ",
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "12/10/2026 تم التواصل هاتفيا وسوف يتم الرد علينا لاحقا ",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-12",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "call",
+          "scope": "external",
+          "by": "",
+          "result": "تم التواصل هاتفيا وسوف يتم الرد علينا لاحقا",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 0
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791791437323.0815
+      "recordId": 1791791437323.0815,
+      "manualCount": 1,
+      "followEntity": "other",
+      "otherEntityName": "الأمانة العامة لمجلس الوزراء",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -46999,6 +47021,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791791501458.1396,
+          "at": "2026-10-12T07:51:41.458Z",
+          "action": "إضافة متابعة",
+          "details": "انضمام سلطنة عمان إلى شراكة المساهمات المحددة عالميًا"
+        },
+        {
+          "id": 1791791501383.2717,
+          "at": "2026-10-12T07:51:41.383Z",
+          "action": "تعديل موضوع",
+          "details": "انضمام سلطنة عمان إلى شراكة المساهمات المحددة عالميًا"
+        },
         {
           "id": 1791791437371.395,
           "at": "2026-10-12T07:50:37.371Z",
