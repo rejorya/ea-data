@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-12T08:09:36.025Z",
+  "exportedAt": "2026-10-12T09:04:13.466Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31097,7 +31097,7 @@
       "slaDays": 30,
       "kpi": "other",
       "note": "نائب الرئيس\nلعمل اللازم\nالتسليم 8/10",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-17",
@@ -31161,10 +31161,27 @@
           "taqseem": "",
           "startDate": "2026-09-02",
           "daysSince": 28
+        },
+        {
+          "date": "2026-10-12",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم  الرد من مكتب النائب12/10/2026: تم الرد بمسودة خطاب مع الفاضلة بدرية العبري",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-02",
+          "daysSince": 28
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 4,
+      "manualCount": 5,
       "followEntity": "naib_office",
       "responseMethod": "",
       "transactionType": "followup",
@@ -31172,7 +31189,8 @@
       "externalEntities": [],
       "receivedFollowDate": "",
       "correspondenceDirection": "",
-      "followScope": "internal"
+      "followScope": "internal",
+      "closedAt": "2026-10-12"
     },
     {
       "id": 1789643200619.7637,
@@ -41721,6 +41739,120 @@
       "archivedAt": "2026-10-12T08:06:51.379Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1789640746547.1846,
+      "title": "قائمة حصر المواد النووية والمشعة في سلطنة عمان",
+      "from": "المكتب السلطاني",
+      "docNo": "1170/3/2022v416-27",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-09-01",
+      "followStart": "2026-09-02",
+      "type": "int",
+      "slaMode": "rais",
+      "slaDays": 30,
+      "kpi": "other",
+      "note": "نائب الرئيس\nلعمل اللازم\nالتسليم 8/10",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-17",
+          "replied": false,
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "taqseem": "",
+          "startDate": "2026-09-02",
+          "daysSince": 11
+        },
+        {
+          "date": "2026-09-28",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-02",
+          "daysSince": 18
+        },
+        {
+          "date": "2026-10-06",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-02",
+          "daysSince": 24
+        },
+        {
+          "date": "2026-10-12",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-02",
+          "daysSince": 28
+        },
+        {
+          "date": "2026-10-12",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم  الرد من مكتب النائب12/10/2026: تم الرد بمسودة خطاب مع الفاضلة بدرية العبري",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-02",
+          "daysSince": 28
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 5,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "transactionType": "followup",
+      "recordId": 1789640746547.1846,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "correspondenceDirection": "",
+      "followScope": "internal",
+      "closedAt": "2026-10-12",
+      "archivedAt": "2026-10-12T09:04:11.418Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -47408,6 +47540,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791795851385.8054,
+          "at": "2026-10-12T09:04:11.385Z",
+          "action": "إضافة متابعة",
+          "details": "قائمة حصر المواد النووية والمشعة في سلطنة عمان"
+        },
+        {
+          "id": 1791795851303.1875,
+          "at": "2026-10-12T09:04:11.303Z",
+          "action": "تعديل موضوع",
+          "details": "قائمة حصر المواد النووية والمشعة في سلطنة عمان"
+        },
         {
           "id": 1791792573813.996,
           "at": "2026-10-12T08:09:33.813Z",
