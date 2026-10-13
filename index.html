@@ -3427,6 +3427,7 @@ function addBusinessDays(a, n) {
 // حساب حالة التأخير للموضوع حسب المؤشر الزمني (بأيام العمل الأحد–الخميس)
 // النتيجة: {state: 'ok'|'warn'|'late'|'none', days: عدد أيام العمل المتبقية/المتأخرة}
 function getTopicAllowedDays(t){
+  if(t.correspondenceDirection==='out' || t.slaMode==='none') return null;
   if(t.slaMode && t.slaMode!=='kpi' && t.slaDays) return t.slaDays;
   const d = KPI_DAYS[t.kpi];
   return (d===null||d===undefined) ? null : d;
@@ -4567,7 +4568,19 @@ function renderTopicsTable() {
   // المنتهية تنتقل تلقائياً إلى الأرشيف، لذلك لا نعرضها هنا.
 }
 
+function topicEntryHasNoKpi(prefix) {
+  return prefix==='tNew' ? currentTopicsView==='outgoing'
+    : prefix==='edit' && val('editType')!=='int' && val('editCorrespondenceDirection')==='out';
+}
 function onSlaModeChange(prefix){
+  const noKpi=topicEntryHasNoKpi(prefix);
+  const modeField=$(prefix+'SlaMode');
+  if(modeField?.parentElement) modeField.parentElement.style.display=noKpi?'none':'';
+  if(noKpi){
+    for(const suffix of ['KpiWrap','SlaDaysWrap','KpiInfo']){const el=$(prefix+suffix);if(el)el.style.display='none';}
+    return;
+  }
+  const info=$(prefix+'KpiInfo');if(info)info.style.display='';
   const mode = val(prefix+'SlaMode');
   const kpiW = $(prefix+'KpiWrap'), daysW = $(prefix+'SlaDaysWrap');
   if(kpiW) kpiW.style.display = (mode==='kpi') ? '' : 'none';
@@ -4599,6 +4612,7 @@ function toggleCorrespondenceDirection(prefix){
   if(from) from.placeholder=outgoing?'الجهة الصادرة منها':'اسم الجهة الوارد منها';
   if(to) to.placeholder=outgoing?'اسم الجهة الصادر إليها':'الجهة الموجَّه إليها الخطاب';
   if(doc) doc.placeholder=outgoing?'رقم الوثيقة الصادرة':'رقم الوثيقة الواردة';
+  onSlaModeChange(prefix);
 }
 
 function topicDirectionLabel(t){
@@ -4610,6 +4624,7 @@ function topicDirectionLabel(t){
 }
 
 function renderNewTopicTimeInfo(){
+  if(currentTopicsView==='outgoing'){const box=$('tNewKpiInfo');if(box){box.textContent='';box.style.display='none';}return;}
   const start=val('tNewFollowStart');
   const kpi=val('tNewKpi');
   const days=(typeof KPI_DAYS!=='undefined' && kpi && KPI_DAYS[kpi]!=null)?KPI_DAYS[kpi]:null;
@@ -4652,9 +4667,10 @@ function addTopic() {
     if(topicType!=='int' && !['in','out'].includes(correspondenceDirection)){ alert('⚠️ حددي هل المراسلة الخارجية واردة أم صادرة'); return; }
     if(correspondenceDirection==='out' && !val('tNewToEntity').trim()){ alert('⚠️ يرجى ملء الجهة الصادر إليها'); return; }
     if(correspondenceDirection!=='out' && !from){ alert('⚠️ يرجى ملء الجهة الوارد منها'); return; }
-    const slaMode = val('tNewSlaMode') || 'kpi';
-    const slaDays = parseInt(val('tNewSlaDays'),10) || null;
-    if(slaMode!=='kpi' && !slaDays){ alert('⚠️ حدّدي عدد أيام العمل للرد (حسب التوجيه أو الخطاب)'); return; }
+    const noKpi=correspondenceDirection==='out';
+    const slaMode = noKpi ? 'none' : (val('tNewSlaMode') || 'kpi');
+    const slaDays = noKpi ? null : (parseInt(val('tNewSlaDays'),10) || null);
+    if(!noKpi && slaMode!=='kpi' && !slaDays){ alert('⚠️ حدّدي عدد أيام العمل للرد (حسب التوجيه أو الخطاب)'); return; }
     D.topics.push({ id:baseId, transactionType:'followup', title, from, docNo:val('tNewDocNo').trim(),
       toEntity:val('tNewToEntity').trim(), taqseemName:val('tNewTaqseem').trim(), priority:val('tNewPriority')||'normal',
       confidentiality:val('tNewConf')||'normal', date, receivedFollowDate:val('tNewReceivedFollowDate') || date,
@@ -4925,6 +4941,7 @@ function saveEditTopic() {
   const _sla = parseInt(val('editSlaDays'),10);
   if(_sla > 0){ t.slaMode = t.slaMode==='kpi' || !t.slaMode ? 'rais' : t.slaMode; t.slaDays = _sla; }
   else { if(t.slaMode && t.slaMode!=='kpi'){ t.slaMode='kpi'; t.slaDays=null; } }
+  if(t.correspondenceDirection==='out'){t.kpi='';t.slaMode='none';t.slaDays=null;}
   t.docNo = val('editDocNo').trim();
   t.toEntity = val('editToEntity').trim();
   t.priority = val('editPriority') || 'normal';
