@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-13T04:26:46.946Z",
+  "exportedAt": "2026-10-13T04:29:07.125Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36146,7 +36146,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nللافادة اما بالنسبة لاجراءات اثبات الملك فانها تدخل في اختصاص جهة اخري.",
-      "status": "awaiting",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-10-08",
@@ -36198,11 +36198,28 @@
           "taqseem": "",
           "startDate": "2026-10-07",
           "daysSince": 3
+        },
+        {
+          "date": "2026-10-13",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "esc",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 4
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791447185362.1057,
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "naib_office",
       "responseMethod": ""
     },
@@ -47606,6 +47623,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791865731817.1348,
+          "at": "2026-10-13T04:28:51.817Z",
+          "action": "إضافة متابعة",
+          "details": "إعادة النظر في موضوع تسكين عزبة قائمة من سنوات عزبة منزلية  للفاضل حمدان بن راشد الزيدي"
+        },
+        {
+          "id": 1791865731741.2285,
+          "at": "2026-10-13T04:28:51.741Z",
+          "action": "تعديل موضوع",
+          "details": "إعادة النظر في موضوع تسكين عزبة قائمة من سنوات عزبة منزلية  للفاضل حمدان بن راشد الزيدي"
+        },
         {
           "id": 1791865603125.9778,
           "at": "2026-10-13T04:26:43.125Z",
