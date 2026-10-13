@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-13T04:18:33.035Z",
+  "exportedAt": "2026-10-13T04:19:03.999Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37002,9 +37002,30 @@
       "kpi": "naib3",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-13",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-13",
+          "daysSince": 0
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791865110925.6453
+      "recordId": 1791865110925.6453,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -47568,6 +47589,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791865141841.6812,
+          "at": "2026-10-13T04:19:01.841Z",
+          "action": "إضافة متابعة",
+          "details": "تنفيذ ورش عمل الإجادة التنفيذية ضمن الخطة التدريبية لمنظومة إجادة لعام 2026م"
+        },
+        {
+          "id": 1791865141777.5737,
+          "at": "2026-10-13T04:19:01.777Z",
+          "action": "تعديل موضوع",
+          "details": "تنفيذ ورش عمل الإجادة التنفيذية ضمن الخطة التدريبية لمنظومة إجادة لعام 2026م"
+        },
         {
           "id": 1791865110991.4702,
           "at": "2026-10-13T04:18:30.991Z",
