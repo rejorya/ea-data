@@ -3143,6 +3143,7 @@ async function downloadFromGitHub() {
     
     // حماية من فقدان البيانات قبل الكتابة فوق المحلي
     if(!safeBeforeCloudOverwrite(imported)) {
+      if(restoreSavedTodayFollowups(imported))return;
       showGitHubInfo('⏸️ تم إلغاء التحميل للحفاظ على بياناتك المحلية', 'warning');
       updateGitHubStatus('⏸️ أُلغي التحميل', 'warning');
       return;
@@ -8180,6 +8181,35 @@ function autoBackupSnapshot(reason) {
 }
 
 // حماية قبل الكتابة فوق البيانات المحلية أثناء التحميل من السحابة
+function restoreSavedTodayFollowups(imported) {
+  const today=localDateKey(new Date());
+  if(!Array.isArray(D.topics))D.topics=[];
+  if(!Array.isArray(D.archivedTopics))D.archivedTopics=[];
+  let restored=0;
+  for(const remote of [...(imported.topics||[]),...(imported.archivedTopics||[])]){
+    const dated=(remote.followups||[]).filter(f=>String(f.date||'').slice(0,10)===today);
+    if(!dated.length)continue;
+    const local=[...D.topics,...D.archivedTopics].find(t=>String(t.id)===String(remote.id));
+    if(!local){
+      const copy=JSON.parse(JSON.stringify(remote));
+      if(remote.archivedAt)D.archivedTopics.push(copy);else D.topics.push(copy);
+      restored+=dated.length;
+      continue;
+    }
+    if(!Array.isArray(local.followups))local.followups=[];
+    const existing=new Map();
+    for(const f of local.followups){const key=JSON.stringify(f);existing.set(key,(existing.get(key)||0)+1);}
+    const seen=new Map();
+    for(const f of dated){const key=JSON.stringify(f);seen.set(key,(seen.get(key)||0)+1);if(seen.get(key)>(existing.get(key)||0)){local.followups.push(JSON.parse(JSON.stringify(f)));restored++;}}
+  }
+  if(restored){
+    saveToStorage();
+    refreshAll();
+    showGitHubInfo('✅ استُعيدت '+restored+' متابعة محفوظة اليوم من السحابة، مع الاحتفاظ بتعديلات الجهاز.','success');
+  }
+  return restored;
+}
+
 function safeBeforeCloudOverwrite(imported) {
   const localCount = (D.topics || []).length;
   const cloudCount = (imported && imported.topics ? imported.topics.length : 0);
