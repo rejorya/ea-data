@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-13T08:58:17.471Z",
+  "exportedAt": "2026-10-13T09:03:49.315Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31341,9 +31341,9 @@
       "confidentiality": "secret",
       "date": "2026-09-03",
       "followStart": "2026-09-17",
-      "type": "int",
-      "slaMode": "rais",
-      "slaDays": 30,
+      "type": "ext",
+      "slaMode": "none",
+      "slaDays": null,
       "kpi": "",
       "note": "تم التواصل من قبل المديرية العامة لتغير المناخي \nتم التواصل مع المختصين في وزارة الخارجية وتم الإفادة بأنه لم يتم توقيع الخطاب بعد.",
       "status": "ready_esc",
@@ -31404,9 +31404,9 @@
       "recordId": 1789877477034.7769,
       "externalEntities": [],
       "receivedFollowDate": "",
-      "correspondenceDirection": "",
+      "correspondenceDirection": "out",
       "manualCount": 3,
-      "followScope": "internal",
+      "followScope": "external",
       "followEntity": "taqseem",
       "responseMethod": "",
       "divFollowDate": "2026-09-27"
@@ -47856,7 +47856,15 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1791882227186.1152,
+          "at": "2026-10-13T09:03:47.186Z",
+          "action": "تعديل موضوع",
+          "details": "استضافة سلطنة عُمان اجتماع مجلس الصندوق الأخضر للمناخ 2027م"
+        }
+      ]
     },
     {
       "id": "79a49287-0864-449a-95f6-9a2dcf964731",
