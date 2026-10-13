@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-13T04:31:27.818Z",
+  "exportedAt": "2026-10-13T04:33:37.522Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36244,7 +36244,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nالشؤون الادارية والمالية\nللافادة",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-08",
@@ -36296,13 +36296,31 @@
           "taqseem": "",
           "startDate": "2026-10-08",
           "daysSince": 2
+        },
+        {
+          "date": "2026-10-13",
+          "replied": true,
+          "responseMethod": "direct_manager",
+          "replyDocNo": "0",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-08",
+          "daysSince": 3
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791447836923.915,
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-10-13"
     },
     {
       "id": 1791450186690.9622,
@@ -41966,6 +41984,108 @@
       "followScope": "internal",
       "closedAt": "2026-10-12",
       "archivedAt": "2026-10-12T09:04:11.418Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1791447836923.915,
+      "transactionType": "followup",
+      "title": "طلب استرجاع مبلغ شراء الحطب  تنوع  بدية",
+      "from": "المواطن/سالم ناصر العمري",
+      "docNo": "1170/3/2022v421-44",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-07",
+      "receivedFollowDate": "2026-10-08",
+      "followStart": "2026-10-08",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "نائب الرئيس\nالشؤون الادارية والمالية\nللافادة",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-08",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-08",
+          "daysSince": 0
+        },
+        {
+          "date": "2026-10-11",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-08",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-10-12",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-08",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-10-13",
+          "replied": true,
+          "responseMethod": "direct_manager",
+          "replyDocNo": "0",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-08",
+          "daysSince": 3
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791447836923.915,
+      "manualCount": 4,
+      "followEntity": "naib_office",
+      "responseMethod": "direct_manager",
+      "closedAt": "2026-10-13",
+      "archivedAt": "2026-10-13T04:33:35.397Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -47657,6 +47777,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791866015369.786,
+          "at": "2026-10-13T04:33:35.369Z",
+          "action": "إضافة متابعة",
+          "details": "طلب استرجاع مبلغ شراء الحطب  تنوع  بدية"
+        },
+        {
+          "id": 1791866015300.7522,
+          "at": "2026-10-13T04:33:35.300Z",
+          "action": "تعديل موضوع",
+          "details": "طلب استرجاع مبلغ شراء الحطب  تنوع  بدية"
+        },
         {
           "id": 1791865885658.0193,
           "at": "2026-10-13T04:31:25.658Z",
