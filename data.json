@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-13T01:45:08.809Z",
+  "exportedAt": "2026-10-13T01:45:16.627Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -46744,7 +46744,7 @@
       "id": 1780826521798.7502,
       "ref": "1153/1/2022v11-56",
       "date": "2026-02-28",
-      "type": "out",
+      "type": "internal",
       "status": "done",
       "subject": "ضرورة إنهاء أي تعاقدات قائمة إن وجدت مع شركة  ( MELTWATER MIDDLE EAST ) وشركة ( MEDIA OBSEEVER )",
       "to": "نائب رئيس الهيئة",
@@ -46752,7 +46752,7 @@
       "notes": "",
       "attachments": [],
       "createdAt": "2026-06-07T10:02:01.768Z",
-      "updatedAt": "2026-06-10T07:52:17.638Z",
+      "updatedAt": "2026-10-13T01:45:14.571Z",
       "transactionType": "memo",
       "recordId": 1780826521798.7502
     },
@@ -47542,6 +47542,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791855914606.6309,
+          "at": "2026-10-13T01:45:14.606Z",
+          "action": "تعديل مذكرة داخلية",
+          "details": "ضرورة إنهاء أي تعاقدات قائمة إن وجدت مع شركة  ( MELTWATER MIDDLE EAST ) وشركة ( MEDIA OBSEEVER )"
+        },
         {
           "id": 1791855906787.4712,
           "at": "2026-10-13T01:45:06.787Z",
