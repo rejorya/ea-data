@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-13T04:40:25.822Z",
+  "exportedAt": "2026-10-13T04:41:01.758Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37135,9 +37135,30 @@
       "kpi": "other",
       "note": "تم التوجيه للتقسيم للمتابعة \nللاختصاص",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-13",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التوجيه للتقسيم للمتابعة \nللاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-12",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791866423721.8164
+      "recordId": 1791866423721.8164,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -47803,6 +47824,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791866459594.8662,
+          "at": "2026-10-13T04:40:59.594Z",
+          "action": "إضافة متابعة",
+          "details": "المشاركة في مؤتمر الأطراف لاتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ (COP31)"
+        },
+        {
+          "id": 1791866459523.706,
+          "at": "2026-10-13T04:40:59.523Z",
+          "action": "تعديل موضوع",
+          "details": "المشاركة في مؤتمر الأطراف لاتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ (COP31)"
+        },
         {
           "id": 1791866423768.373,
           "at": "2026-10-13T04:40:23.768Z",
