@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-13T04:12:14.498Z",
+  "exportedAt": "2026-10-13T04:18:33.035Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36979,6 +36979,32 @@
       "followEntity": "other",
       "otherEntityName": "الأمانة العامة لمجلس الوزراء",
       "responseMethod": ""
+    },
+    {
+      "id": 1791865110925.6453,
+      "transactionType": "followup",
+      "title": "تنفيذ ورش عمل الإجادة التنفيذية ضمن الخطة التدريبية لمنظومة إجادة لعام 2026م",
+      "from": "وزارة العمل",
+      "docNo": "1170/3/2022v421-79",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "normal",
+      "date": "2026-10-12",
+      "receivedFollowDate": "2026-10-13",
+      "followStart": "2026-10-13",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791865110925.6453
     }
   ],
   "archivedTopics": [
@@ -47540,7 +47566,15 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1791865110991.4702,
+          "at": "2026-10-13T04:18:30.991Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "تنفيذ ورش عمل الإجادة التنفيذية ضمن الخطة التدريبية لمنظومة إجادة لعام 2026م"
+        }
+      ]
     },
     {
       "id": "5a0e13b0-b6ec-459d-a95f-3c68827d0b23",
