@@ -2285,7 +2285,9 @@ function loadActivityLog() {
 function saveActivityLog(log) {
   D.activityLog = log;
   try { localStorage.setItem(ACTIVITY_KEY,JSON.stringify(D.activityLog)); } catch(e) { console.warn('تعذر حفظ سجل الدخول على هذا الجهاز',e); }
-  autoSave(); // يرفع السجل المحدَّث للسحابة، فيظهر بكل الأجهزة
+  window._activityLogNeedsSync=true;
+  if(canEditData() && window._cloudLoadConfirmed){window._activityLogNeedsSync=false;autoSave();}
+  else saveToStorage(); // لا نعامل تسجيل الدخول كتعديل قبل اكتمال التحميل
   if(CU?.admin && $('sec-activity')?.classList.contains('on')) { refreshActivityStats(); renderActivityLog(); }
   return true;
 }
@@ -2453,6 +2455,29 @@ async function endCentralSession(reason){
 window.addEventListener('online',retryPendingLogouts);
 setInterval(retryPendingLogouts,30000);
 retryPendingLogouts();
+async function refreshCloudActivityLog(){
+  if(!CU?.admin) return;
+  const cfg=getGitHubConfig();
+  let data;
+  if(cfg.token){
+    const headers={Authorization:'token '+cfg.token,Accept:'application/vnd.github.v3+json'};
+    const meta=await githubSyncFetch('https://api.github.com/repos/'+cfg.user+'/'+cfg.repo+'/contents/'+GH_DATA_FILE,{headers});
+    if(!meta.ok)throw new Error('log metadata '+meta.status);
+    const file=await meta.json();
+    const blobRes=await githubSyncFetch(file.git_url,{headers});
+    if(!blobRes.ok)throw new Error('log content '+blobRes.status);
+    const blob=await blobRes.json();
+    data=JSON.parse(decodeURIComponent(escape(atob((blob.content||'').replace(/\n/g,'')))));
+  }else{
+    const res=await githubSyncFetch('https://raw.githubusercontent.com/'+cfg.user+'/'+cfg.repo+'/main/'+GH_DATA_FILE);
+    if(!res.ok)throw new Error('log content '+res.status);
+    data=await res.json();
+  }
+  if(!Array.isArray(data.activityLog))throw new Error('invalid activity log');
+  D.activityLog=mergeActivityLogs(loadActivityLog(),data.activityLog);
+  try{localStorage.setItem(ACTIVITY_KEY,JSON.stringify(D.activityLog));}catch(e){}
+}
+
 async function refreshCentralLogs(){
  if(!CU?.admin||!window._ghMasterPassword||window._centralLogLoading)return;
  window._centralLogLoading=true;
@@ -2463,7 +2488,11 @@ async function refreshCentralLogs(){
  const status=$('centralLogStatus');if(status)status.textContent='✅ السجل المركزي مُحدّث — '+entries.length+' جلسة';
  if($('sec-activity')?.classList.contains('on')){renderActivityLog();refreshActivityStats();}
  }catch(e){const status=$('centralLogStatus');if(status)status.textContent='⚠️ تعذر تحديث السجل المركزي؛ المعروض آخر سجل متاح.';}
- finally{window._centralLogLoading=false;}
+ finally{
+  try{await refreshCloudActivityLog();const status=$('centralLogStatus');if(status)status.textContent='✅ تم تحديث سجلات الدخول المتاحة من السحابة';}catch(e){}
+  window._centralLogLoading=false;
+  if($('sec-activity')?.classList.contains('on')){renderActivityLog();refreshActivityStats();}
+ }
 }
 window.addEventListener('pagehide',()=>endCentralSession('إغلاق الصفحة'));
 setInterval(()=>{if(CU?.admin && $('sec-activity')?.classList.contains('on'))refreshCentralLogs();},30000);
@@ -3165,6 +3194,7 @@ async function downloadFromGitHub() {
     window._cloudLoadConfirmed = true; // ✅ تأكيد نجاح تحميل السحابة
     // القراءة من السحابة لا تُعدّ تعديلًا؛ لا نرفع البيانات لمجرد فتح المنصة.
     saveToStorage(); // نسخة محلية احتياطية فقط
+    if(window._activityLogNeedsSync && canEditData()){window._activityLogNeedsSync=false;autoSave();}
     const stats = `✅ تم التحميل بنجاح!<br>
       📊 ${D.topics.length} موضوع | ${D.directives.length} توجيه<br>
       📋 ${D.weekly.length} أسبوعي | ${D.monthly.length} شهري<br>
@@ -3302,7 +3332,8 @@ async function downloadFromGitHubPublic() {
     markCloudDirty(false);
     window._cloudLastPayload = null;
     window._cloudLoadConfirmed = true; // ✅ تأكيد نجاح تحميل السحابة — يسمح الآن بالحفظ التلقائي بأمان
-    saveToStorage(); // حفظ النسخة المحمّلة محليًا دون رفع لمجرد فتح المنصة
+    saveToStorage(); // حفظ النسخة المحمّلة محليًا
+    if(window._activityLogNeedsSync && canEditData()){window._activityLogNeedsSync=false;autoSave();}
     const stats = `✅ تم التحميل بنجاح!<br>
       📊 ${D.topics.length} موضوع | ${D.directives.length} توجيه<br>
       📋 ${D.weekly.length} أسبوعي | ${D.monthly.length} شهري<br>
