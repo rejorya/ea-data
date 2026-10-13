@@ -1872,12 +1872,50 @@ window._cloudLoadConfirmed = false;
 window._cloudBaseSha = null;
 window._cloudLastPayload = null;
 window._cloudSaveBusy = false;
+try { window._cloudDirty=localStorage.getItem(STORAGE_KEY+'_sync_pending')==='1'; } catch(e) {window._cloudDirty=false;}
 function localDateKey(value=new Date()) {
   const d=value instanceof Date ? value : new Date(value);
   return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
 }
+function markCloudDirty(dirty=true) {
+  window._cloudDirty=dirty;
+  if(dirty) {
+    window._cloudMutationRevision=(window._cloudMutationRevision||0)+1;
+    if(window._cloudSavePromise) window._cloudSavePending=true;
+  }
+  try { if(dirty) localStorage.setItem(STORAGE_KEY+'_sync_pending','1'); else localStorage.removeItem(STORAGE_KEY+'_sync_pending'); } catch(e) {}
+}
+async function githubSyncFetch(url, options={}) {
+  const controller=new AbortController();
+  const timer=setTimeout(()=>controller.abort(),45000);
+  try { return await fetch(url,{cache:'no-store',...options,signal:controller.signal}); }
+  finally { clearTimeout(timer); }
+}
+async function gitBlobSha(bytes) {
+  const header=new TextEncoder().encode('blob '+bytes.byteLength+'\0');
+  const data=new Uint8Array(header.length+bytes.byteLength);
+  data.set(header); data.set(new Uint8Array(bytes),header.length);
+  return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-1',data))).map(x=>x.toString(16).padStart(2,'0')).join('');
+}
+function autoSaveToGitHub() {
+  if(window._cloudSavePromise) {
+    window._cloudSavePending=true;
+    return window._cloudSavePromise;
+  }
+  window._cloudSavePromise=(async()=>{
+    let result;
+    do {
+      window._cloudSavePending=false;
+      result=await performCloudSave();
+    } while(result && window._cloudSavePending);
+    return result;
+  })().finally(()=>{window._cloudSavePromise=null;});
+  return window._cloudSavePromise;
+}
+
 function autoSave() {
   if(canEditData()) {
+    markCloudDirty();
     saveToStorage(); // احفظ محلياً فوراً كضمان
     // ارفع على GitHub بعد ثانيتين من آخر تعديل
     clearTimeout(_asTimer);
@@ -1891,6 +1929,7 @@ function autoSave() {
 // حتى لا يضيع الرفع لو أغلقت رحاب المتصفح قبل انتهاء مهلة الحفظ التلقائي المؤجّل
 async function forceSyncToGithubNow() {
   if(!canEditData()) return false;
+  markCloudDirty();
   saveToStorage();
   clearTimeout(_asTimer);
   if(!window._cloudLoadConfirmed || !window._cloudBaseSha) return false;
@@ -1902,10 +1941,10 @@ async function forceSyncToGithubNow() {
   }
 }
 
-async function autoSaveToGitHub() {
+async function performCloudSave() {
   const config = getGitHubConfig();
-  if(!canEditData() || window._cloudSaveBusy) return false;
-  if(!config || !config.token) return false; // بدون token ما نقدر نكتب
+  if(!canEditData()) return false;
+  if(!config || !config.token) {showGitHubInfo('❌ لم يتم الرفع: مفتاح الحفظ غير متاح لهذه الجلسة. راجعي إعدادات الاتصال.','error');return false;}
   // 🛡️ حماية حرجة من الكتابة الفارغة: لا نرفع فوق بيانات السحابة إلا بعد تأكيد تحميلها بنجاح في هذه الجلسة —
   // يمنع سيناريو خطير: فتح المنصة، فشل/تأخّر تحميل السحابة، ثم أي إجراء يستدعي autoSave() فيمحو بيانات السحابة الحقيقية ببيانات محلية فارغة
   if(!window._cloudLoadConfirmed) {
@@ -1914,6 +1953,13 @@ async function autoSaveToGitHub() {
     return false;
   }
   window._cloudSaveBusy=true;
+  const revision=window._cloudMutationRevision||0;
+  const repository=config.user+'/'+config.repo;
+  if(window._cloudRepository && window._cloudRepository!==repository) {
+    window._cloudSaveBusy=false;
+    showGitHubInfo('⚠️ تغير مصدر البيانات في الإعدادات. حمّلي بيانات المصدر المحدد قبل الرفع. تعديلاتك محفوظة محليًا.','warning');
+    return false;
+  }
   try {
     const dataToShare = {
       version: '3.0',
@@ -1940,13 +1986,13 @@ async function autoSaveToGitHub() {
       githubRepo: config.repo
     };
     const payload=JSON.stringify({...dataToShare,exportedAt:undefined,exportedBy:undefined});
-    if(payload===window._cloudLastPayload) return true;
+    if(payload===window._cloudLastPayload) {markCloudDirty(false);return true;}
     const content = JSON.stringify(dataToShare, null, 2);
     const contentBase64 = btoa(unescape(encodeURIComponent(content)));
     const fileUrl = `https://api.github.com/repos/${config.user}/${config.repo}/contents/${GH_DATA_FILE}`;
     const sha=window._cloudBaseSha;
     if(!sha){showGitHubInfo('⏸️ حمّلي آخر تحديث قبل الحفظ','warning');return false;}
-    const getRes=await fetch(fileUrl,{cache:'no-store',headers:{'Authorization':`token ${config.token}`,'Accept':'application/vnd.github.v3+json'}});
+    const getRes=await githubSyncFetch(fileUrl,{cache:'no-store',headers:{'Authorization':`token ${config.token}`,'Accept':'application/vnd.github.v3+json'}});
     if(!getRes.ok) throw new Error('تعذر التحقق من النسخة الحالية: '+getRes.status);
     const currentFile=await getRes.json();
     if(currentFile.sha!==sha){
@@ -1955,7 +2001,7 @@ async function autoSaveToGitHub() {
     }
     const body = { message: `تحديث تلقائي ${new Date().toLocaleTimeString('ar-SA')}`, content: contentBase64 };
     if(sha) body.sha = sha;
-    const putRes = await fetch(fileUrl, {
+    const putRes = await githubSyncFetch(fileUrl, {
       method: 'PUT',
       headers: { 'Authorization': `token ${config.token}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
       body: JSON.stringify(body)
@@ -1964,6 +2010,8 @@ async function autoSaveToGitHub() {
       const saved=await putRes.json();
       window._cloudBaseSha=saved.content.sha;
       window._cloudLastPayload=payload;
+      if(revision===(window._cloudMutationRevision||0)) markCloudDirty(false);
+      else window._cloudSavePending=true;
       showGitHubInfo('✅ حُفظ تلقائياً على GitHub', 'success');
       return true;
     } else if(putRes.status === 409) {
@@ -1972,7 +2020,7 @@ async function autoSaveToGitHub() {
       console.warn('GitHub sync conflict (409): another device changed data first.');
     } else if(putRes.status === 401 || putRes.status === 403) {
       showGitHubInfo('🔐 رفض GitHub عملية الحفظ — تحققي من صلاحية الـToken.', 'error');
-    }
+    } else { showGitHubInfo('❌ تعذر الرفع (رمز '+putRes.status+'). التعديلات محفوظة محليًا.','error'); }
     return false;
   } catch(e) {
     // فشل الرفع التلقائي — البيانات محفوظة محلياً على الأقل
@@ -2918,6 +2966,7 @@ async function uploadToGitHub() {
 }
 
 async function downloadFromGitHub() {
+  if(window._cloudSavePromise) await window._cloudSavePromise;
   const config = getGitHubConfig();
   if(!config) {
     alert('⚠️ لم يتم إعداد GitHub بعد\n\nيرجى إعداد الاتصال أولاً.');
@@ -2933,7 +2982,7 @@ async function downloadFromGitHub() {
   
   try {
     const fileUrl = `https://api.github.com/repos/${config.user}/${config.repo}/contents/${GH_DATA_FILE}`;
-    const res = await fetch(fileUrl, {
+    const res = await githubSyncFetch(fileUrl, {
       headers: {
         'Authorization': `token ${config.token}`,
         'Accept': 'application/vnd.github.v3+json'
@@ -2955,8 +3004,8 @@ async function downloadFromGitHub() {
     // 🎯 السبب الجذري: GitHub Contents API لا يُرجع content لملفات أكبر من 1MB (يُرجعه فارغاً) —
     // نتحقق من ذلك ونجلب المحتوى الفعلي عبر download_url بدلاً من افتراض أن الملف فارغ
     if(!fileData.content || !fileData.content.trim()) {
-      if(fileData.download_url) {
-        const rawRes = await fetch(fileData.git_url,{headers:{'Authorization':`token ${config.token}`}});
+      if(fileData.git_url) {
+        const rawRes = await githubSyncFetch(fileData.git_url,{headers:{'Authorization':`token ${config.token}`}});
         if(!rawRes.ok) {
           showGitHubInfo('❌ تعذّر تحميل محتوى الملف الكبير (download_url فشل: ' + rawRes.status + ')', 'error');
           updateGitHubStatus('❌ فشل', 'error');
@@ -3069,6 +3118,8 @@ async function downloadFromGitHub() {
     
     lastSyncTime = new Date();
     window._cloudBaseSha = fileData.sha;
+    window._cloudRepository=config.user+'/'+config.repo;
+    markCloudDirty(false);
     window._cloudLastPayload = null;
     window._cloudLoadConfirmed = true; // ✅ تأكيد نجاح تحميل السحابة
     // القراءة من السحابة لا تُعدّ تعديلًا؛ لا نرفع البيانات لمجرد فتح المنصة.
@@ -3104,6 +3155,7 @@ function saveViewerConfig() {
 
 // تحميل البيانات من المستودع العام (بدون Token)
 async function downloadFromGitHubPublic() {
+  if(window._cloudSavePromise) await window._cloudSavePromise;
   // القراءة بدون مفتاح متاحة فقط للمستودع العام. عند وجود مفتاح، نستخدمه مع المستودع المحدد.
   const cfg = getGitHubConfig();
   if(cfg.token && CU?.admin) { return downloadFromGitHub(); }
@@ -3112,24 +3164,13 @@ async function downloadFromGitHubPublic() {
   updateGitHubStatus('⬇️ جاري التحميل...', 'info');
   
   try {
-    const _u = GH_PUBLIC_USER;
-    const _r = GH_PUBLIC_REPO;
-    const metaRes=await fetch(`https://api.github.com/repos/${_u}/${_r}/contents/${GH_DATA_FILE}`,{cache:'no-store'});
-    if(!metaRes.ok) throw new Error('تعذر قراءة نسخة البيانات: '+metaRes.status);
-    const fileData=await metaRes.json();
-    const res = await fetch(fileData.git_url, { cache: 'no-store' });
-    
-    if(!res.ok) {
-      if(res.status === 404) {
-        showGitHubInfo('⚠️ لا توجد بيانات بعد، أو المستودع غير عام (Public)<br>اطلب من رحاب التأكد من إعدادات المستودع', 'warning');
-      } else {
-        showGitHubInfo('❌ خطأ في الاتصال: ' + res.status, 'error');
-      }
-      return;
-    }
-    
-    const blob=await res.json();
-    const rawText=decodeURIComponent(escape(atob((blob.content||'').replace(/\n/g,''))));
+    const _u = cfg.user;
+    const _r = cfg.repo;
+    const res=await githubSyncFetch('https://raw.githubusercontent.com/'+encodeURIComponent(_u)+'/'+encodeURIComponent(_r)+'/main/'+GH_DATA_FILE);
+    if(!res.ok) throw new Error('تعذر تحميل البيانات: '+res.status);
+    const bytes=await res.arrayBuffer();
+    const rawText=new TextDecoder().decode(bytes);
+    const fileData={sha:await gitBlobSha(bytes)};
     if(!rawText || !rawText.trim()) {
       showGitHubInfo(
         '❌ ملف data.json على GitHub فارغ تماماً!<br>' +
@@ -3216,9 +3257,11 @@ async function downloadFromGitHubPublic() {
     
     lastSyncTime = new Date();
     window._cloudBaseSha = fileData.sha;
+    window._cloudRepository=_u+'/'+_r;
+    markCloudDirty(false);
     window._cloudLastPayload = null;
     window._cloudLoadConfirmed = true; // ✅ تأكيد نجاح تحميل السحابة — يسمح الآن بالحفظ التلقائي بأمان
-    autoSave(); // مزامنة سجل النشاط المُدمَج فوراً (مثل تسجيل الدخول الحالي) دون انتظار أي تعديل آخر
+    saveToStorage(); // حفظ النسخة المحمّلة محليًا دون رفع لمجرد فتح المنصة
     const stats = `✅ تم التحميل بنجاح!<br>
       📊 ${D.topics.length} موضوع | ${D.directives.length} توجيه<br>
       📋 ${D.weekly.length} أسبوعي | ${D.monthly.length} شهري<br>
@@ -8046,6 +8089,9 @@ function safeBeforeCloudOverwrite(imported) {
   const localCount = (D.topics || []).length;
   const cloudCount = (imported && imported.topics ? imported.topics.length : 0);
   autoBackupSnapshot('قبل التحميل من السحابة');
+  if(window._cloudDirty && canEditData()) {
+    return confirm('لديك تعديلات محلية لم يتم تأكيد رفعها. تم حفظ نسخة احتياطية. تحميل البيانات سيستبدلها؛ هل تريدين متابعة التحميل؟');
+  }
   if(localCount > cloudCount) {
     // نسخة ملف تلقائية كاحتياط إضافي قبل أي كتابة
     try { downloadBackupFile(buildBackupObject(), 'نسخة_تلقائية_قبل_المزامنة'); } catch(e) {}
