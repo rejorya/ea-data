@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-13T04:53:27.618Z",
+  "exportedAt": "2026-10-13T04:55:09.608Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -47832,6 +47832,32 @@
   ],
   "activityLog": [
     {
+      "id": 1791867302032.8418,
+      "sessionId": "dd5066ff-81d0-41a1-8f81-33ad80f10415",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-13T04:55:02.031Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": "a2acc725-ab84-47be-98ee-617af59fe17d",
       "sessionId": "a2acc725-ab84-47be-98ee-617af59fe17d",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -47853,9 +47879,9 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-13T04:12:01.782Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-13T04:54:30.439Z",
+      "duration": "42 دقيقة و 28 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
       "central": true,
       "actions": [
         {
@@ -47978,7 +48004,8 @@
           "action": "إضافة موضوع متابعة",
           "details": "تنفيذ ورش عمل الإجادة التنفيذية ضمن الخطة التدريبية لمنظومة إجادة لعام 2026م"
         }
-      ]
+      ],
+      "durationMinutes": 42
     },
     {
       "id": "5a0e13b0-b6ec-459d-a95f-3c68827d0b23",
