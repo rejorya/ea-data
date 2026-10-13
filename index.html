@@ -402,7 +402,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
         <div class="fgs"><label id="tNewDateLabel">تاريخ الوارد</label><input type="date" id="tNewDate"></div>
         <div class="fgs"><label>تاريخ استلام الموضوع للمتابعة</label><input type="date" id="tNewReceivedFollowDate"><small style="color:#666;font-size:11px;display:block;margin-top:4px">لتوثيق تاريخ استلام الموضوع لدى موظف المتابعة.</small></div>
         <div class="fgs"><label>تاريخ توجيه الرئيس للمتابعة</label><input type="date" id="tNewFollowStart" oninput="renderNewTopicTimeInfo()"><small style="color:#666;font-size:11px;display:block;margin-top:4px">هذا هو تاريخ بدء احتساب المؤشر.</small></div>
-        <div class="fgs"><label>نطاق المتابعة *</label>
+        <div class="fgs" id="tNewScopeWrap" style="display:none"><label>نطاق المتابعة *</label>
           <select id="tNewType" onchange="toggleCorrespondenceDirection('tNew')"><option value="">— اختاري نطاق المتابعة —</option><option value="int">داخلي للمتابعة</option><option value="ext">خارجي للمتابعة</option><option value="both">داخلي وخارجي للمتابعة</option></select>
         </div>
         <div class="fgs" id="tNewCorrespondenceDirectionWrap" style="display:none"><label>اتجاه المراسلة الخارجية *</label>
@@ -3827,7 +3827,7 @@ let currentTopicsView='incoming';
 function openTopicsView(view,el){
   currentTopicsView=view==='outgoing' ? 'outgoing' : 'incoming';
   if($('tNewType') && $('tNewCorrespondenceDirection')){
-    $('tNewType').value='ext';
+    $('tNewType').value=currentTopicsView==='outgoing'?'ext':'int';
     $('tNewCorrespondenceDirection').value=currentTopicsView==='outgoing' ? 'out' : 'in';
     toggleCorrespondenceDirection('tNew');
   }
@@ -4575,12 +4575,17 @@ function onSlaModeChange(prefix){
 }
 
 function toggleCorrespondenceDirection(prefix){
+  const incomingEntry=prefix==='tNew' && currentTopicsView!=='outgoing';
+  const scopeWrap=prefix==='tNew' ? $('tNewScopeWrap') : null;
+  if(scopeWrap) scopeWrap.style.display=incomingEntry?'none':'';
+  if(incomingEntry && $('tNewType')) $('tNewType').value='int';
   const scope=val(prefix+'Type');
   const wrap=$(prefix+'CorrespondenceDirectionWrap');
   const field=$(prefix+'CorrespondenceDirection');
-  const external=scope==='ext'||scope==='both';
+  const external=!incomingEntry && (scope==='ext'||scope==='both');
   if(wrap) wrap.style.display=external?'':'none';
-  if(field && !external) field.value='';
+  if(field && incomingEntry) field.value='in';
+  else if(field && !external) field.value='';
   const dateLabel=$(prefix+'DateLabel');
   const outgoing=external && field?.value==='out';
   if(dateLabel) dateLabel.textContent=outgoing ? 'تاريخ الصادر' : 'تاريخ الوارد';
@@ -4640,8 +4645,9 @@ function addTopic() {
       attachments:[], createdAt:new Date().toISOString(), sourceRecord:'topic-entry', recordId:baseId });
     renderMemosTable();
   } else {
-    const topicType=val('tNewType');
-    const correspondenceDirection=val('tNewCorrespondenceDirection');
+    const incomingEntry=currentTopicsView!=='outgoing';
+    const topicType=incomingEntry?'int':val('tNewType');
+    const correspondenceDirection=incomingEntry?'in':val('tNewCorrespondenceDirection');
     if(!['int','ext','both'].includes(topicType)){ alert('⚠️ حددي هل المتابعة داخلية أم خارجية'); return; }
     if(topicType!=='int' && !['in','out'].includes(correspondenceDirection)){ alert('⚠️ حددي هل المراسلة الخارجية واردة أم صادرة'); return; }
     if(correspondenceDirection==='out' && !val('tNewToEntity').trim()){ alert('⚠️ يرجى ملء الجهة الصادر إليها'); return; }
@@ -4654,14 +4660,14 @@ function addTopic() {
       confidentiality:val('tNewConf')||'normal', date, receivedFollowDate:val('tNewReceivedFollowDate') || date,
       followStart:val('tNewFollowStart') || '', type:topicType,
       followScope:topicType==='both' ? 'both' : (topicType==='int' ? 'internal' : 'external'),
-      correspondenceDirection:topicType==='int' ? '' : correspondenceDirection,
+      correspondenceDirection,
       externalEntities:[], slaMode, slaDays:(slaMode!=='kpi') ? slaDays : null, kpi:(slaMode==='kpi') ? val('tNewKpi') : '',
       note:val('tNewNote'), status:'new', followups:[], sheet:'مُضاف يدوياً', recordId:baseId });
     openTopicsView(correspondenceDirection==='out' ? 'outgoing' : 'incoming');
   }
   clearFields(['tNewTitle','tNewFrom','tNewDate','tNewReceivedFollowDate','tNewFollowStart','tNewNote','tNewDocNo','tNewToEntity','tNewTaqseem','tNewSlaDays']);
   if(transactionType==='followup'){
-    $('tNewType').value='ext';
+    $('tNewType').value=currentTopicsView==='outgoing'?'ext':'int';
     $('tNewCorrespondenceDirection').value=currentTopicsView==='outgoing'?'out':'in';
     toggleCorrespondenceDirection('tNew');
   }
