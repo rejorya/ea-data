@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-13T05:21:00.560Z",
+  "exportedAt": "2026-10-13T05:31:23.160Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -47832,6 +47832,32 @@
   ],
   "activityLog": [
     {
+      "id": 1791869479037.9412,
+      "sessionId": "d3b5877e-55f2-45cf-8594-da49a7d2af97",
+      "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "هاتف/جهاز لوحي • Android • Chrome",
+      "deviceType": "هاتف/جهاز لوحي",
+      "deviceOS": "Android",
+      "browser": "Chrome",
+      "platform": "Linux armv81",
+      "deviceSnapshot": {
+        "id": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+        "label": "هاتف/جهاز لوحي • Android • Chrome",
+        "type": "هاتف/جهاز لوحي",
+        "os": "Android",
+        "browser": "Chrome",
+        "platform": "Linux armv81"
+      },
+      "loginAt": "2026-10-13T05:31:19.035Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": "25c35c0f-8964-428c-a933-312fd8fb2305",
       "sessionId": "25c35c0f-8964-428c-a933-312fd8fb2305",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -48155,9 +48181,9 @@
         "platform": "Linux armv81"
       },
       "loginAt": "2026-10-13T01:42:30.355Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-13T05:30:55.808Z",
+      "duration": "228 دقيقة و 25 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
       "central": true,
       "actions": [
         {
@@ -48418,7 +48444,8 @@
           "action": "تعديل مذكرة داخلية",
           "details": "الإلتزام بتطبيق مبادرة (صفر ورق)"
         }
-      ]
+      ],
+      "durationMinutes": 228
     },
     {
       "id": 1791824919337.757,
