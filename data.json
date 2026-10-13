@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-13T05:05:26.539Z",
+  "exportedAt": "2026-10-13T05:21:00.560Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -47832,6 +47832,102 @@
   ],
   "activityLog": [
     {
+      "id": "25c35c0f-8964-428c-a933-312fd8fb2305",
+      "sessionId": "25c35c0f-8964-428c-a933-312fd8fb2305",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-13T05:20:49.669Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null,
+      "central": true
+    },
+    {
+      "id": "21effefa-fce9-4c7c-85da-ffd1bef4bc18",
+      "sessionId": "21effefa-fce9-4c7c-85da-ffd1bef4bc18",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-13T05:07:29.243Z",
+      "logoutAt": "2026-10-13T05:20:28.633Z",
+      "duration": "12 دقيقة و 59 ثانية",
+      "logoutReason": "إغلاق المتصفح أو إعادة التحميل",
+      "central": true,
+      "actions": [
+        {
+          "id": 1791868158431.2283,
+          "at": "2026-10-13T05:09:18.431Z",
+          "action": "إضافة متابعة",
+          "details": "مؤشر نسبة النفايات المعاد تدويرها من إجمالي النفايات القابلة لإعادة التدوير"
+        },
+        {
+          "id": 1791868158369.1519,
+          "at": "2026-10-13T05:09:18.369Z",
+          "action": "تعديل موضوع",
+          "details": "مؤشر نسبة النفايات المعاد تدويرها من إجمالي النفايات القابلة لإعادة التدوير"
+        }
+      ],
+      "durationMinutes": 12
+    },
+    {
+      "id": 1791867973733.1562,
+      "sessionId": "ca3ef3b1-c1b9-437a-b35d-6a0841ba4a4f",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-13T05:06:13.733Z",
+      "logoutAt": "2026-10-13T05:06:53.074Z",
+      "duration": "0 دقيقة و 39 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
+      "durationMinutes": 0
+    },
+    {
       "id": "698ae839-99dc-4c23-85f9-c56cfe02a175",
       "sessionId": "698ae839-99dc-4c23-85f9-c56cfe02a175",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -47853,10 +47949,11 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-13T05:03:46.479Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
-      "central": true
+      "logoutAt": "2026-10-13T05:05:53.142Z",
+      "duration": "2 دقيقة و 6 ثانية",
+      "logoutReason": "إغلاق المتصفح أو إعادة التحميل",
+      "central": true,
+      "durationMinutes": 2
     },
     {
       "id": "06236dad-6317-483b-99ed-8467b8ea571d",
