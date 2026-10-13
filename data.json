@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-13T04:41:01.758Z",
+  "exportedAt": "2026-10-13T04:45:10.956Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36486,7 +36486,7 @@
       "slaDays": null,
       "kpi": "wd3",
       "note": "نائب الرئيس\nيتلاحظ في خلال استعراض التقرير بان ولايتي شناص والخابورة لم تحقق أعداد كبقية الولايات الاخرى يرجي الافادة بالاسباب.",
-      "status": "awaiting",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-10-08",
@@ -36538,11 +36538,28 @@
           "taqseem": "",
           "startDate": "2026-10-08",
           "daysSince": 2
+        },
+        {
+          "date": "2026-10-13",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "esc",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-08",
+          "daysSince": 3
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791451612638.1636,
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "naib_office",
       "responseMethod": ""
     },
@@ -47824,6 +47841,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791866708814.5083,
+          "at": "2026-10-13T04:45:08.814Z",
+          "action": "إضافة متابعة",
+          "details": "تقرير عن الحملة الوطنية لمكافحة الطيور الغازية لشهر سبتمبر 2026 بمحافظة شمال الباطنة"
+        },
+        {
+          "id": 1791866708738.1592,
+          "at": "2026-10-13T04:45:08.738Z",
+          "action": "تعديل موضوع",
+          "details": "تقرير عن الحملة الوطنية لمكافحة الطيور الغازية لشهر سبتمبر 2026 بمحافظة شمال الباطنة"
+        },
         {
           "id": 1791866459594.8662,
           "at": "2026-10-13T04:40:59.594Z",
