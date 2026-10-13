@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-13T09:42:36.644Z",
+  "exportedAt": "2026-10-13T09:45:14.918Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36017,11 +36017,11 @@
       "followScope": "external",
       "correspondenceDirection": "out",
       "externalEntities": [],
-      "slaMode": "kpi",
+      "slaMode": "none",
       "slaDays": null,
       "kpi": "",
       "note": "تم التوجيه للتقسيم للاختصاص",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-07",
@@ -36039,13 +36039,31 @@
           "taqseem": "",
           "startDate": "2026-10-07",
           "daysSince": 0
+        },
+        {
+          "date": "2026-10-13",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "1170/3/2022v422-5",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 4
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791355695302.6367,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-10-13"
     },
     {
       "id": 1791432230046.5227,
@@ -42220,6 +42238,74 @@
       "archivedAt": "2026-10-13T09:42:34.594Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1791355695302.6367,
+      "transactionType": "followup",
+      "title": "موقع زراعة أشجار الزيتون بمحافظة ظفار",
+      "from": "مكتب الرئيس",
+      "docNo": "1170/3/2022v421-41",
+      "toEntity": "وزارة الاسكان والتخطيط العمراني",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-07",
+      "receivedFollowDate": "2026-10-07",
+      "followStart": "2026-10-07",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "تم التوجيه للتقسيم للاختصاص",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-07",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم توجيه الخطاب للجهه للمتابعة  للاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 0
+        },
+        {
+          "date": "2026-10-13",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "1170/3/2022v422-5",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 4
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791355695302.6367,
+      "manualCount": 2,
+      "followEntity": "",
+      "responseMethod": "",
+      "closedAt": "2026-10-13",
+      "archivedAt": "2026-10-13T09:45:12.875Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -47909,6 +47995,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791884712846.1123,
+          "at": "2026-10-13T09:45:12.846Z",
+          "action": "إضافة متابعة",
+          "details": "موقع زراعة أشجار الزيتون بمحافظة ظفار"
+        },
+        {
+          "id": 1791884712774.0908,
+          "at": "2026-10-13T09:45:12.774Z",
+          "action": "تعديل موضوع",
+          "details": "موقع زراعة أشجار الزيتون بمحافظة ظفار"
+        },
         {
           "id": 1791884554562.9365,
           "at": "2026-10-13T09:42:34.562Z",
