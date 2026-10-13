@@ -1050,7 +1050,8 @@ body.viewer-only .print-btn { display: inline-block !important; }
       <div style="background:#eaf4fd;border:2px solid var(--blue);border-radius:8px;padding:16px">
         <h3 style="color:var(--blue);margin-bottom:10px;font-size:13px">🔄 المزامنة</h3>
         <div class="btn-row">
-          <button class="btn btn-s adminOnly" onclick="uploadToGitHub()">⬆️ رفع البيانات للسحابة</button>
+          <button type="button" id="cloudUploadButton" class="btn btn-s adminOnly" onclick="uploadToGitHub()">⬆️ رفع البيانات للسحابة</button>
+          <span id="cloudUploadResult" role="status" aria-live="polite" style="display:none;align-self:center;font-size:12px"></span>
           <button class="btn btn-b" onclick="downloadFromGitHub()">⬇️ تحميل آخر تحديث</button>
           <button class="btn" style="background:#2c3e50;color:#fff" onclick="toggleAutoSync()" id="autoSyncBtn">🔄 تفعيل المزامنة التلقائية</button>
         </div>
@@ -2853,6 +2854,7 @@ function updateGitHubStatus(text, type) {
 }
 
 function showGitHubInfo(message, type) {
+  window._lastCloudMessage={message:String(message||''),type:type||'info'};
   const info = $('gh-info');
   const content = $('gh-info-content');
   if(!info || !content) return;
@@ -2960,9 +2962,48 @@ async function createRepository(config) {
 
 async function uploadToGitHub() {
   if(!requireAdmin()) return false;
-  const ok=await autoSaveToGitHub();
-  if(ok){lastSyncTime=new Date();updateGitHubStatus('✅ متزامن','success');}
-  return ok;
+  if(window._manualCloudUploadBusy) return false;
+  window._manualCloudUploadBusy=true;
+  const button=$('cloudUploadButton'),result=$('cloudUploadResult');
+  const caption=button?.textContent || '⬆️ رفع البيانات للسحابة';
+  const display=(text,error=false)=>{
+    if(result){result.style.display='inline';result.style.color=error?'#b91c1c':'#0f766e';result.textContent=text;}
+  };
+  if(button){button.disabled=true;button.textContent='⏳ جاري رفع البيانات...';}
+  window._lastCloudMessage=null;
+  display('جاري رفع البيانات إلى السحابة...');
+  showGitHubInfo('⬆️ جاري رفع البيانات إلى السحابة...','info');
+  try {
+    saveToStorage();
+    clearTimeout(_asTimer);
+    const ok=await autoSaveToGitHub();
+    if(ok){
+      lastSyncTime=new Date();
+      updateGitHubStatus('✅ متزامن','success');
+      display('✅ تم تأكيد حفظ البيانات في السحابة.');
+      showGitHubInfo('✅ تم تأكيد حفظ البيانات في السحابة.','success');
+      alert('✅ تم رفع البيانات إلى السحابة بنجاح.');
+      return true;
+    }
+    const last=window._lastCloudMessage;
+    const reason=last && ['error','warning'].includes(last.type)
+      ? last.message.replace(/<[^>]*>/g,' ')
+      : 'لم يتم تأكيد الرفع. البيانات محفوظة محليًا؛ راجعي إعدادات الاتصال أو أعيدي المحاولة.';
+    display(reason,true);
+    updateGitHubStatus('❌ لم يتم الرفع','error');
+    alert(reason);
+    return false;
+  } catch(e) {
+    const message='❌ تعذر الرفع: '+e.message+'. البيانات محفوظة محليًا.';
+    display(message,true);
+    showGitHubInfo(message,'error');
+    updateGitHubStatus('❌ لم يتم الرفع','error');
+    alert(message);
+    return false;
+  } finally {
+    window._manualCloudUploadBusy=false;
+    if(button){button.disabled=false;button.textContent=caption;}
+  }
 }
 
 async function downloadFromGitHub() {
