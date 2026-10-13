@@ -3192,7 +3192,7 @@ async function downloadFromGitHub() {
     window._cloudRepository=config.user+'/'+config.repo;
     markCloudDirty(false);
     window._cloudLastPayload = null;
-    window._cloudLoadConfirmed = true; // ✅ تأكيد نجاح تحميل السحابة
+    window._cloudLoadConfirmed = true; finishCloudDisplayRecovery(); // ✅ تأكيد نجاح تحميل السحابة
     // القراءة من السحابة لا تُعدّ تعديلًا؛ لا نرفع البيانات لمجرد فتح المنصة.
     saveToStorage(); // نسخة محلية احتياطية فقط
     if(window._activityLogNeedsSync && canEditData()){window._activityLogNeedsSync=false;autoSave();}
@@ -3332,7 +3332,7 @@ async function downloadFromGitHubPublic() {
     window._cloudRepository=_u+'/'+_r;
     markCloudDirty(false);
     window._cloudLastPayload = null;
-    window._cloudLoadConfirmed = true; // ✅ تأكيد نجاح تحميل السحابة — يسمح الآن بالحفظ التلقائي بأمان
+    window._cloudLoadConfirmed = true; finishCloudDisplayRecovery(); // ✅ تأكيد نجاح تحميل السحابة — يسمح الآن بالحفظ التلقائي بأمان
     saveToStorage(); // حفظ النسخة المحمّلة محليًا
     if(window._activityLogNeedsSync && canEditData()){window._activityLogNeedsSync=false;autoSave();}
     const stats = `✅ تم التحميل بنجاح!<br>
@@ -3389,7 +3389,16 @@ function toggleAutoSync() {
 }
 
 // تحميل الإعدادات عند الدخول
+const CLOUD_DISPLAY_RECOVERY = '2026-10-13-cloud-view-v1';
+function finishCloudDisplayRecovery() {
+  if(!window._preferCloudVersion)return;
+  try { localStorage.setItem(STORAGE_KEY+'_cloud_display_recovery',CLOUD_DISPLAY_RECOVERY); } catch(e) {}
+  window._preferCloudVersion=false;
+}
 function initGitHub() {
+  try {
+    window._preferCloudVersion=localStorage.getItem(STORAGE_KEY+'_cloud_display_recovery')!==CLOUD_DISPLAY_RECOVERY;
+  } catch(e) { window._preferCloudVersion=false; }
   // ☁️ تحميل تلقائي من المستودع العام الثابت عند كل دخول.
   window._cloudLoadConfirmed = false;
   setTimeout(async () => {
@@ -8211,6 +8220,20 @@ function restoreSavedTodayFollowups(imported) {
 }
 
 function safeBeforeCloudOverwrite(imported) {
+  if(window._preferCloudVersion) {
+    const key=STORAGE_KEY+'_before_cloud_display_'+CLOUD_DISPLAY_RECOVERY;
+    try {
+      if(!localStorage.getItem(key)) {
+        const snapshot=JSON.stringify(buildBackupObject());
+        localStorage.setItem(key,snapshot);
+        if(localStorage.getItem(key)!==snapshot)throw new Error('تعذر التحقق من النسخة الاحتياطية');
+      }
+      return true;
+    } catch(e) {
+      showGitHubInfo('تعذر حفظ نسخة بيانات الجهاز؛ لم يتم استبدالها. '+e.message,'error');
+      return false;
+    }
+  }
   const localCount = (D.topics || []).length;
   const cloudCount = (imported && imported.topics ? imported.topics.length : 0);
   autoBackupSnapshot('قبل التحميل من السحابة');
