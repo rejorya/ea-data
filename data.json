@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-14T04:33:02.702Z",
+  "exportedAt": "2026-10-14T04:35:39.670Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35374,7 +35374,7 @@
       "slaDays": null,
       "kpi": "wweek",
       "note": "نائب الرئيس\nللافادة خلال اسبوع ",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-06",
@@ -35443,16 +35443,34 @@
           "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
           "startDate": "2026-10-04",
           "daysSince": 5
+        },
+        {
+          "date": "2026-10-13",
+          "replied": true,
+          "responseMethod": "direct_manager",
+          "replyDocNo": "0",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-10-04",
+          "daysSince": 7
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791271572401.6384,
-      "manualCount": 4,
+      "manualCount": 5,
       "followEntity": "taqseem",
       "responseMethod": "direct_manager",
       "divFollowDate": "2026-10-08",
       "previousClosedAt": "2026-10-11",
-      "restoredAt": "2026-10-13T10:06:41.062Z"
+      "restoredAt": "2026-10-13T10:06:41.062Z",
+      "closedAt": "2026-10-14"
     },
     {
       "id": 1791271977131.1025,
@@ -42562,6 +42580,128 @@
       "archivedAt": "2026-10-14T04:30:10.222Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1791271572401.6384,
+      "transactionType": "followup",
+      "title": "عدم ممانعة لاستخدام أحرامات شاطئ سيح المراعي  رأس الحد",
+      "from": "الشركة العمانية للتنمية السياحية مجموعة عمران",
+      "docNo": "1170/3/2022v420-65",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-01",
+      "receivedFollowDate": "2026-10-04",
+      "followStart": "2026-10-04",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "wweek",
+      "note": "نائب الرئيس\nللافادة خلال اسبوع ",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-06",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-10-07",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 3
+        },
+        {
+          "date": "2026-10-08",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-10-04",
+          "daysSince": 4
+        },
+        {
+          "date": "2026-10-11",
+          "replied": true,
+          "responseMethod": "direct_manager",
+          "replyDocNo": "لاتوجد",
+          "note": "تم توجيه الافادة الى رئيسة القسم لم يتم ابلاغنا",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-10-04",
+          "daysSince": 5
+        },
+        {
+          "date": "2026-10-13",
+          "replied": true,
+          "responseMethod": "direct_manager",
+          "replyDocNo": "0",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-10-04",
+          "daysSince": 7
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791271572401.6384,
+      "manualCount": 5,
+      "followEntity": "taqseem",
+      "responseMethod": "direct_manager",
+      "divFollowDate": "2026-10-08",
+      "previousClosedAt": "2026-10-11",
+      "restoredAt": "2026-10-13T10:06:41.062Z",
+      "closedAt": "2026-10-14",
+      "archivedAt": "2026-10-14T04:35:37.630Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -48251,6 +48391,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791952537606.9177,
+          "at": "2026-10-14T04:35:37.606Z",
+          "action": "إضافة متابعة",
+          "details": "عدم ممانعة لاستخدام أحرامات شاطئ سيح المراعي  رأس الحد"
+        },
+        {
+          "id": 1791952537545.3828,
+          "at": "2026-10-14T04:35:37.545Z",
+          "action": "تعديل موضوع",
+          "details": "عدم ممانعة لاستخدام أحرامات شاطئ سيح المراعي  رأس الحد"
+        },
         {
           "id": 1791952363808.795,
           "at": "2026-10-14T04:32:43.808Z",
