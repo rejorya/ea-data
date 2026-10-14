@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-14T06:09:52.175Z",
+  "exportedAt": "2026-10-14T06:14:21.045Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37477,32 +37477,6 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
-    },
-    {
-      "id": 1791958036998.147,
-      "transactionType": "followup",
-      "title": "مشروع إعداد الإطار التنظيمي لقطاع التبريد المناطقي",
-      "from": "هيئة البيئة",
-      "docNo": "1170/3/2022v422-10",
-      "toEntity": "هيئة تنظيم الخدمات العامة",
-      "taqseemName": "",
-      "priority": "normal",
-      "confidentiality": "normal",
-      "date": "2026-10-13",
-      "receivedFollowDate": "2026-10-14",
-      "followStart": "2026-10-13",
-      "type": "ext",
-      "followScope": "external",
-      "correspondenceDirection": "out",
-      "externalEntities": [],
-      "slaMode": "none",
-      "slaDays": null,
-      "kpi": "",
-      "note": "",
-      "status": "new",
-      "followups": [],
-      "sheet": "مُضاف يدوياً",
-      "recordId": 1791958036998.147
     }
   ],
   "archivedTopics": [
@@ -48529,6 +48503,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791958459021.0364,
+          "at": "2026-10-14T06:14:19.021Z",
+          "action": "حذف موضوع",
+          "details": "مشروع إعداد الإطار التنظيمي لقطاع التبريد المناطقي"
+        },
         {
           "id": 1791958187644.0442,
           "at": "2026-10-14T06:09:47.644Z",
