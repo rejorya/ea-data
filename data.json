@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-13T10:06:43.142Z",
+  "exportedAt": "2026-10-14T03:38:59.343Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -47867,6 +47867,32 @@
   ],
   "activityLog": [
     {
+      "id": 1791949134952.52,
+      "sessionId": "58f07e99-ca04-4373-a449-0c4e5b4888c5",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-14T03:38:54.951Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": "44c474b8-c080-4259-96c4-d377e96f3312",
       "sessionId": "44c474b8-c080-4259-96c4-d377e96f3312",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -47888,11 +47914,23 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-13T08:58:06.294Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-13T10:12:28.581Z",
+      "duration": "74 دقيقة و 22 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
       "central": true,
       "actions": [
+        {
+          "id": 1791886330831.5684,
+          "at": "2026-10-13T10:12:10.831Z",
+          "action": "إضافة متابعة",
+          "details": "عدم ممانعة لاستخدام أحرامات شاطئ سيح المراعي  رأس الحد"
+        },
+        {
+          "id": 1791886330744.04,
+          "at": "2026-10-13T10:12:10.744Z",
+          "action": "تعديل موضوع",
+          "details": "عدم ممانعة لاستخدام أحرامات شاطئ سيح المراعي  رأس الحد"
+        },
         {
           "id": 1791886001066.165,
           "at": "2026-10-13T10:06:41.066Z",
@@ -47947,7 +47985,8 @@
           "action": "تعديل موضوع",
           "details": "استضافة سلطنة عُمان اجتماع مجلس الصندوق الأخضر للمناخ 2027م"
         }
-      ]
+      ],
+      "durationMinutes": 74
     },
     {
       "id": "79a49287-0864-449a-95f6-9a2dcf964731",
