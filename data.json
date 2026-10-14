@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-14T04:35:39.670Z",
+  "exportedAt": "2026-10-14T04:37:01.633Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32885,11 +32885,28 @@
           "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
           "startDate": "2026-09-24",
           "daysSince": 9
+        },
+        {
+          "date": "2026-10-14",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "esc",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-09-24",
+          "daysSince": 14
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790237203960.906,
-      "manualCount": 5,
+      "manualCount": 6,
       "followEntity": "taqseem",
       "responseMethod": "",
       "correspondenceDirection": "",
@@ -48391,6 +48408,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791952619563.2139,
+          "at": "2026-10-14T04:36:59.563Z",
+          "action": "إضافة متابعة",
+          "details": "طلب الموافقة على بدء في إعداد وتقديم نطاق عمل الدراسة البيئية لموقع مبادرة المتحف العسكري العُماني لسياحة الغوص جزر الديمانيات"
+        },
+        {
+          "id": 1791952619492.9885,
+          "at": "2026-10-14T04:36:59.492Z",
+          "action": "تعديل موضوع",
+          "details": "طلب الموافقة على بدء في إعداد وتقديم نطاق عمل الدراسة البيئية لموقع مبادرة المتحف العسكري العُماني لسياحة الغوص جزر الديمانيات"
+        },
         {
           "id": 1791952537606.9177,
           "at": "2026-10-14T04:35:37.606Z",
