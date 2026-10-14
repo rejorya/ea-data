@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-14T05:17:53.244Z",
+  "exportedAt": "2026-10-14T05:18:16.212Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37415,16 +37415,20 @@
       "followStart": "2026-10-14",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
-      "kpi": "gov5",
+      "kpi": "other",
       "note": "الدكتورة مديرة الاستدامة البيئية\nللقاء مع مقدم الطلب والافادة حول دور الهيئة هل هي راعية ومشرفة ام ان هناك جهات اخرى؟ وغير ذلك من التفاصيل",
       "status": "new",
       "followups": [],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791955071143.7434
+      "recordId": 1791955071143.7434,
+      "manualCount": 0,
+      "followEntity": "rais_depts",
+      "raisDeptName": "مدير مختص بالاستدامة",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -48451,6 +48455,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791955094137.2388,
+          "at": "2026-10-14T05:18:14.137Z",
+          "action": "تعديل موضوع",
+          "details": "دعوة للدعم الاستراتيجي والمشاركة  المنتدى التنفيذي للمعادن الحيوية والاقتصاد الدائري في سلطنة عمان"
+        },
         {
           "id": 1791955071200.3997,
           "at": "2026-10-14T05:17:51.200Z",
