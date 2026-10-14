@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-14T04:30:12.264Z",
+  "exportedAt": "2026-10-14T04:32:32.974Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36795,7 +36795,7 @@
           "responseMethod": ""
         }
       ],
-      "slaMode": "kpi",
+      "slaMode": "none",
       "slaDays": null,
       "kpi": "",
       "note": "تم التوجيه للتقسيم للاختصاص",
@@ -36817,11 +36817,28 @@
           "taqseem": "",
           "startDate": "2026-10-08",
           "daysSince": 1
+        },
+        {
+          "date": "2026-10-14",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "تم الرد من قبل وزارة الاسكان 1170/3/2022v422-15",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-08",
+          "daysSince": 4
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791691551767.5825,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "other",
       "otherEntityName": "",
       "responseMethod": ""
@@ -48234,6 +48251,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791952350896.546,
+          "at": "2026-10-14T04:32:30.896Z",
+          "action": "إضافة متابعة",
+          "details": "المختبر الوطني ( اِزرع عُمان) غرفة  الحوكمة و التشريعات"
+        },
+        {
+          "id": 1791952350834.9338,
+          "at": "2026-10-14T04:32:30.834Z",
+          "action": "تعديل موضوع",
+          "details": "المختبر الوطني ( اِزرع عُمان) غرفة  الحوكمة و التشريعات"
+        },
         {
           "id": 1791952210199.8513,
           "at": "2026-10-14T04:30:10.199Z",
