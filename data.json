@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-14T05:18:28.714Z",
+  "exportedAt": "2026-10-14T05:32:41.389Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37447,6 +37447,32 @@
       "followEntity": "rais_depts",
       "raisDeptName": "مدير مختص بالاستدامة",
       "responseMethod": ""
+    },
+    {
+      "id": 1791955959293.3992,
+      "transactionType": "followup",
+      "title": "محضر اجتماع اللجنة التنفيذية لمبادرة الشرق الأوسط الخضراء",
+      "from": "دائرة التعاون الدولي",
+      "docNo": "1530/1/2022v4-78",
+      "toEntity": "مستشارة الرئيس لصون الطبيعة",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-12",
+      "receivedFollowDate": "2026-10-14",
+      "followStart": "2026-10-14",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "rais",
+      "slaDays": 10,
+      "kpi": "",
+      "note": "شكرا لكم \nالدكتورة ثريا \nلوضع تصور حول مواطن الاستفادة من المبادرة بالتنسيق مع التعاون الدولي والغطاء النباتي ورفعها الينا خلال اسبوعين",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791955959293.3992
     }
   ],
   "archivedTopics": [
@@ -48473,6 +48499,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791955959345.131,
+          "at": "2026-10-14T05:32:39.345Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "محضر اجتماع اللجنة التنفيذية لمبادرة الشرق الأوسط الخضراء"
+        },
         {
           "id": 1791955105818.5955,
           "at": "2026-10-14T05:18:25.818Z",
