@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-14T06:35:33.923Z",
+  "exportedAt": "2026-10-14T06:35:53.376Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37558,16 +37558,37 @@
       "followStart": "2026-10-14",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "other",
       "note": "القانونية\nلاستكمال الاجراءات",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-14",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 0
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791959731844.1013
+      "recordId": 1791959731844.1013,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -48662,6 +48683,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791959751304.9685,
+          "at": "2026-10-14T06:35:51.304Z",
+          "action": "إضافة متابعة",
+          "details": "مشروعات القرارات الخاصة  بإدارة المحميات"
+        },
+        {
+          "id": 1791959751223.8472,
+          "at": "2026-10-14T06:35:51.223Z",
+          "action": "تعديل موضوع",
+          "details": "مشروعات القرارات الخاصة  بإدارة المحميات"
+        },
         {
           "id": 1791959731884.472,
           "at": "2026-10-14T06:35:31.884Z",
