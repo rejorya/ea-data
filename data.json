@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-14T04:37:10.720Z",
+  "exportedAt": "2026-10-14T04:50:06.872Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37281,11 +37281,28 @@
           "taqseem": "",
           "startDate": "2026-10-13",
           "daysSince": 0
+        },
+        {
+          "date": "2026-10-14",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-13",
+          "daysSince": 1
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791865110925.6453,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "",
       "responseMethod": ""
     },
@@ -48408,6 +48425,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791953404800.9026,
+          "at": "2026-10-14T04:50:04.800Z",
+          "action": "إضافة متابعة",
+          "details": "تنفيذ ورش عمل الإجادة التنفيذية ضمن الخطة التدريبية لمنظومة إجادة لعام 2026م"
+        },
+        {
+          "id": 1791953404730.3845,
+          "at": "2026-10-14T04:50:04.730Z",
+          "action": "تعديل موضوع",
+          "details": "تنفيذ ورش عمل الإجادة التنفيذية ضمن الخطة التدريبية لمنظومة إجادة لعام 2026م"
+        },
         {
           "id": 1791952628657.0745,
           "at": "2026-10-14T04:37:08.657Z",
