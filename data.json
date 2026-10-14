@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-14T04:27:37.847Z",
+  "exportedAt": "2026-10-14T04:30:12.264Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35860,7 +35860,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "مكتب الرئيس\nيحدد موعد مناسب",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-06",
@@ -35912,14 +35912,32 @@
           "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
           "startDate": "2026-10-05",
           "daysSince": 4
+        },
+        {
+          "date": "2026-10-14",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "0",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "لا يحتاج رد",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-10-05",
+          "daysSince": 7
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791274392859.453,
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "taqseem",
       "responseMethod": "",
-      "divFollowDate": "2026-10-08"
+      "divFollowDate": "2026-10-08",
+      "closedAt": "2026-10-14"
     },
     {
       "id": 1791354674242.0557,
@@ -42424,6 +42442,109 @@
       "archivedAt": "2026-10-14T04:27:35.800Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1791274392859.453,
+      "transactionType": "followup",
+      "title": "دعوة الى  عقد اجتماع تنسيقي مشترك المشروع تطوير شارع الشاطى ومحمية القرم الطبيعية",
+      "from": "بلدية مسقط",
+      "docNo": "1170/3/2022v421-8",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-05",
+      "receivedFollowDate": "2026-10-06",
+      "followStart": "2026-10-05",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "مكتب الرئيس\nيحدد موعد مناسب",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-06",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-10-08",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-10-05",
+          "daysSince": 3
+        },
+        {
+          "date": "2026-10-11",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "esc",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-10-05",
+          "daysSince": 4
+        },
+        {
+          "date": "2026-10-14",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "0",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "لا يحتاج رد",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-10-05",
+          "daysSince": 7
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791274392859.453,
+      "manualCount": 4,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-10-08",
+      "closedAt": "2026-10-14",
+      "archivedAt": "2026-10-14T04:30:10.222Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -48113,6 +48234,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791952210199.8513,
+          "at": "2026-10-14T04:30:10.199Z",
+          "action": "إضافة متابعة",
+          "details": "دعوة الى  عقد اجتماع تنسيقي مشترك المشروع تطوير شارع الشاطى ومحمية القرم الطبيعية"
+        },
+        {
+          "id": 1791952210141.1238,
+          "at": "2026-10-14T04:30:10.141Z",
+          "action": "تعديل موضوع",
+          "details": "دعوة الى  عقد اجتماع تنسيقي مشترك المشروع تطوير شارع الشاطى ومحمية القرم الطبيعية"
+        },
         {
           "id": 1791952055775.7256,
           "at": "2026-10-14T04:27:35.775Z",
