@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-14T05:33:33.979Z",
+  "exportedAt": "2026-10-14T06:01:52.514Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37477,6 +37477,32 @@
       "followEntity": "rais_depts",
       "raisDeptName": "مستشارة الرئيس لصون الطبيعة",
       "responseMethod": ""
+    },
+    {
+      "id": 1791957710437.5051,
+      "transactionType": "followup",
+      "title": "مشروع ملتقيات التشريعات البيئية",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v422-9",
+      "toEntity": "المجلس الأعلى للقضاء",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-13",
+      "receivedFollowDate": "2026-10-14",
+      "followStart": "2026-10-13",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791957710437.5051
     }
   ],
   "archivedTopics": [
@@ -48503,6 +48529,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791957710476.1626,
+          "at": "2026-10-14T06:01:50.476Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "مشروع ملتقيات التشريعات البيئية"
+        },
         {
           "id": 1791956011915.3525,
           "at": "2026-10-14T05:33:31.915Z",
