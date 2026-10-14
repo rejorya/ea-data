@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-14T06:35:53.376Z",
+  "exportedAt": "2026-10-14T08:47:17.020Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37589,6 +37589,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1791967634930.8777,
+      "transactionType": "followup",
+      "title": "طلب إعارة الفاضل/ سالم بن أحمد الشعيلي للعمل  في هيئة البيئة",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v418-93",
+      "toEntity": "هيئة تنمية المؤسسات الصغيرة والمتوسطة",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-20",
+      "receivedFollowDate": "2026-09-21",
+      "followStart": "2026-09-20",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791967634930.8777
     }
   ],
   "archivedTopics": [
@@ -48683,6 +48709,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791967634984.35,
+          "at": "2026-10-14T08:47:14.984Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب إعارة الفاضل/ سالم بن أحمد الشعيلي للعمل  في هيئة البيئة"
+        },
         {
           "id": 1791959751304.9685,
           "at": "2026-10-14T06:35:51.304Z",
