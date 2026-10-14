@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-14T05:18:16.212Z",
+  "exportedAt": "2026-10-14T05:18:28.714Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37422,10 +37422,28 @@
       "kpi": "other",
       "note": "الدكتورة مديرة الاستدامة البيئية\nللقاء مع مقدم الطلب والافادة حول دور الهيئة هل هي راعية ومشرفة ام ان هناك جهات اخرى؟ وغير ذلك من التفاصيل",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-14",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 0
+        }
+      ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791955071143.7434,
-      "manualCount": 0,
+      "manualCount": 1,
       "followEntity": "rais_depts",
       "raisDeptName": "مدير مختص بالاستدامة",
       "responseMethod": ""
@@ -48455,6 +48473,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791955105818.5955,
+          "at": "2026-10-14T05:18:25.818Z",
+          "action": "إضافة متابعة",
+          "details": "دعوة للدعم الاستراتيجي والمشاركة  المنتدى التنفيذي للمعادن الحيوية والاقتصاد الدائري في سلطنة عمان"
+        },
+        {
+          "id": 1791955105757.008,
+          "at": "2026-10-14T05:18:25.757Z",
+          "action": "تعديل موضوع",
+          "details": "دعوة للدعم الاستراتيجي والمشاركة  المنتدى التنفيذي للمعادن الحيوية والاقتصاد الدائري في سلطنة عمان"
+        },
         {
           "id": 1791955094137.2388,
           "at": "2026-10-14T05:18:14.137Z",
