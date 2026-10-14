@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-14T06:18:37.217Z",
+  "exportedAt": "2026-10-14T06:21:51.587Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37495,6 +37495,32 @@
       "followEntity": "",
       "responseMethod": "",
       "closedAt": "2026-10-14"
+    },
+    {
+      "id": 1791958909505.2278,
+      "transactionType": "followup",
+      "title": "المشاركة في مؤتمر الأطراف لاتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ (COP31)",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v421-90",
+      "toEntity": "شركة صحــار ألمنيوم",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-12",
+      "receivedFollowDate": "2026-10-13",
+      "followStart": "2026-10-12",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791958909505.2278
     }
   ],
   "archivedTopics": [
@@ -48589,6 +48615,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791958909549.637,
+          "at": "2026-10-14T06:21:49.549Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "المشاركة في مؤتمر الأطراف لاتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ (COP31)"
+        },
         {
           "id": 1791958715142.8599,
           "at": "2026-10-14T06:18:35.142Z",
