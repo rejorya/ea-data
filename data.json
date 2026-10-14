@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-14T06:07:19.067Z",
+  "exportedAt": "2026-10-14T06:09:52.175Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37307,53 +37307,6 @@
       "responseMethod": ""
     },
     {
-      "id": 1791866423721.8164,
-      "transactionType": "followup",
-      "title": "المشاركة في مؤتمر الأطراف لاتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ (COP31)",
-      "from": "هيئة البيئة",
-      "docNo": "1170/3/2022v421-90",
-      "toEntity": "شركة صحــار ألمنيوم",
-      "taqseemName": "",
-      "priority": "urgent",
-      "confidentiality": "normal",
-      "date": "2026-10-12",
-      "receivedFollowDate": "2026-10-13",
-      "followStart": "2026-10-12",
-      "type": "ext",
-      "followScope": "external",
-      "correspondenceDirection": "out",
-      "externalEntities": [],
-      "slaMode": "kpi",
-      "slaDays": null,
-      "kpi": "other",
-      "note": "تم التوجيه للتقسيم للمتابعة \nللاختصاص",
-      "status": "new",
-      "followups": [
-        {
-          "date": "2026-10-13",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تم التوجيه للتقسيم للمتابعة \nللاختصاص",
-          "actionType": "",
-          "scope": "external",
-          "by": "",
-          "result": "",
-          "entity": "",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-12",
-          "daysSince": 1
-        }
-      ],
-      "sheet": "مُضاف يدوياً",
-      "recordId": 1791866423721.8164,
-      "manualCount": 1,
-      "followEntity": "",
-      "responseMethod": ""
-    },
-    {
       "id": 1791951075109.6267,
       "transactionType": "followup",
       "title": "المشروعات الاستثمارية التابعة لهيئة البيئة",
@@ -48576,6 +48529,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791958187644.0442,
+          "at": "2026-10-14T06:09:47.644Z",
+          "action": "حذف موضوع",
+          "details": "المشاركة في مؤتمر الأطراف لاتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ (COP31)"
+        },
         {
           "id": 1791958037037.7744,
           "at": "2026-10-14T06:07:17.037Z",
