@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-14T06:01:52.514Z",
+  "exportedAt": "2026-10-14T06:02:49.070Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37500,9 +37500,30 @@
       "kpi": "",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-14",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التوجيه للدائرة للمتابعة للاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-13",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791957710437.5051
+      "recordId": 1791957710437.5051,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -48529,6 +48550,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791957766985.0605,
+          "at": "2026-10-14T06:02:46.985Z",
+          "action": "إضافة متابعة",
+          "details": "مشروع ملتقيات التشريعات البيئية"
+        },
+        {
+          "id": 1791957766922.5254,
+          "at": "2026-10-14T06:02:46.922Z",
+          "action": "تعديل موضوع",
+          "details": "مشروع ملتقيات التشريعات البيئية"
+        },
         {
           "id": 1791957710476.1626,
           "at": "2026-10-14T06:01:50.476Z",
