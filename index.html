@@ -4774,10 +4774,27 @@ function addTopic() {
   alert('✅ تم إنشاء السجل مرة واحدة وإيداعه في القسم الخاص بنوع المعاملة.');
 }
 
+
+function findEditableTopic(tid) {
+  const match=x=>String(x.id)===String(tid);
+  return (D.archivedTopics||[]).find(match)||(D.topics||[]).find(match);
+}
+function viewArchivedTopic(tid) {
+  const t=findEditableTopic(tid); if(!t)return;
+  let modal=$('archiveViewModal');
+  if(!modal){modal=document.createElement('div');modal.id='archiveViewModal';modal.className='modal';document.body.appendChild(modal);}
+  const labels={title:'الموضوع',from:'الجهة الوارد منها',toEntity:'الجهة الصادر إليها',docNo:'رقم الوثيقة',date:'تاريخ الموضوع',receivedFollowDate:'تاريخ استلام المتابعة',followStart:'تاريخ توجيه الرئيس',closedAt:'تاريخ الإغلاق',archivedAt:'تاريخ الأرشفة',note:'الملاحظات',status:'الحالة',followEntity:'جهة المتابعة',taqseemName:'اسم التقسيم',raisDeptName:'الدائرة',otherEntityName:'الجهة الأخرى'};
+  const rows=Object.entries(labels).filter(([k])=>t[k]!=null&&t[k]!=='').map(([k,l])=>'<tr><th>'+l+'</th><td style="white-space:pre-wrap">'+escHtml(String(t[k]))+'</td></tr>').join('');
+  const follows=(t.followups||[]).map((f,i)=>'<div style="border:1px solid #ddd;padding:12px;margin:8px 0;border-radius:8px"><b>'+ (i+1)+' — '+escHtml(fmtDate(f.date))+'</b>'+Object.entries(f).filter(([k,v])=>k!=='date'&&v!=null&&v!=='').map(([k,v])=>'<div style="white-space:pre-wrap">'+escHtml(({note:'الملاحظات',result:'النتيجة',actionType:'الإجراء',by:'المتابع',replied:'تم الرد',replyDocNo:'رقم وثيقة الرد',responseMethod:'وسيلة الرد',taqseem:'التقسيم',entity:'الجهة',scope:'نطاق المتابعة',externalEntityName:'الجهة الخارجية',startDate:'تاريخ البدء',daysSince:'أيام العمل'}[k]||k))+': '+escHtml(typeof v==='object'?JSON.stringify(v):String(v))+'</div>').join('')+'</div>').join('');
+  modal.innerHTML='<div class="modal-c" style="max-width:760px" dir="rtl"><div class="modal-h"><h3>الاطلاع على الموضوع المؤرشف</h3><button class="modal-x" onclick="closeModal(\'archiveViewModal\')">×</button></div><div class="modal-b"><table style="width:100%">'+rows+'</table><h3>سجل المتابعات ('+(t.followups||[]).length+')</h3>'+follows+'</div></div>';
+  modal.classList.add('on');
+}
+
 function openEditTopicModal(tid) {
   if(!canEditData()) return;
-  const t = D.topics.find(x => x.id === tid);
+  const t = findEditableTopic(tid);
   if(!t) return;
+  if(!Array.isArray(t.followups))t.followups=[];
   $('editTopicId').value = tid;
   if($('editTransactionTypeLabel')) $('editTransactionTypeLabel').value = ({followup:'موضوع للمتابعة',directive:'توجيه من الرئيس',discussion:'مناقشة مع الرئيس',memo:'مذكرة داخلية'}[t.transactionType||'followup'] || 'موضوع للمتابعة');
   $('editTitle').value = t.title || '';
@@ -4858,7 +4875,7 @@ function renderExternalFollowupOptions(t){
 }
 function addExternalTrackingEntity(){
   if(!canEditData()) return;
-  const tid=parseFloat($('editTopicId').value), t=D.topics.find(x=>x.id===tid), inp=$('editExternalEntityName');
+  const tid=parseFloat($('editTopicId').value), t=findEditableTopic(tid), inp=$('editExternalEntityName');
   const name=inp?inp.value.trim():'';
   if(!t||!name){alert('⚠️ اكتبي اسم الجهة الخارجية أولاً');return;}
   const list=getExternalTrackingEntities(t);
@@ -4876,7 +4893,7 @@ function addExternalTrackingEntity(){
 }
 function removeExternalTrackingEntity(index){
   if(!canEditData()) return;
-  const tid=parseFloat($('editTopicId').value), t=D.topics.find(x=>x.id===tid);
+  const tid=parseFloat($('editTopicId').value), t=findEditableTopic(tid);
   if(!t||!Array.isArray(t.externalEntities)) return;
   if(!t.externalEntities[index]) return;
   if((t.followups||[]).some(f=>f && f.externalEntityIndex===index) && !confirm('هذه الجهة مرتبطة بمتابعات سابقة. هل تريدين حذفها من قائمة الجهات؟ سيبقى سجل الإجراءات محفوظاً.')) return;
@@ -4884,7 +4901,7 @@ function removeExternalTrackingEntity(index){
 }
 function toggleEditTrackingScope(){
   const scope=val('editFollowScope');
-  const tid=parseFloat($('editTopicId')?.value), t=D.topics.find(x=>x.id===tid);
+  const tid=parseFloat($('editTopicId')?.value), t=findEditableTopic(tid);
   const extWrap=$('editExternalEntitiesWrap'); if(extWrap) extWrap.style.display=(scope==='external'||scope==='both'||(t?.externalEntities||[]).length>0)?'':'none';
   const fuExtWrap=$('fuExternalEntityWrap'); if(fuExtWrap) fuExtWrap.style.display=val('fuScope')==='external'?'':'none';
   if(t) renderExternalFollowupOptions(t);
@@ -4896,7 +4913,7 @@ function toggleFollowupReplyMethod(){
 }
 function toggleFollowupExternalEntity(){
   const wrap=$('fuExternalEntityWrap'); if(wrap) wrap.style.display=val('fuScope')==='external'?'':'none';
-  const tid=parseFloat($('editTopicId')?.value), t=D.topics.find(x=>x.id===tid); if(t) renderExternalFollowupOptions(t);
+  const tid=parseFloat($('editTopicId')?.value), t=findEditableTopic(tid); if(t) renderExternalFollowupOptions(t);
 }
 
 function toggleEditEntityName() {
@@ -4922,7 +4939,7 @@ function renderTopicTimeInfo() {
   const box = $('editTimeInfo');
   if(!box) return;
   const tid = parseFloat($('editTopicId').value);
-  const t = D.topics.find(x => x.id === tid);
+  const t = findEditableTopic(tid);
   if(!t) { box.innerHTML = ''; return; }
   const today = localDateKey(new Date());
   const followStart = val('editFollowStart') || t.followStart || '';
@@ -5007,7 +5024,7 @@ function isArchivableFollowupTopic(t){
 function saveEditTopic() {
   if(!canEditData()) return;
   const tid = parseFloat($('editTopicId').value);
-  const t = D.topics.find(x => x.id === tid);
+  const t = findEditableTopic(tid);
   if(!t) return;
   
   t.title = val('editTitle').trim();
@@ -5029,7 +5046,8 @@ function saveEditTopic() {
   t.priority = val('editPriority') || 'normal';
   t.confidentiality = val('editConf') || 'normal';
   t.note = val('editNote');
-  const newStatus = val('editStatus');
+  const inArchive=(D.archivedTopics||[]).some(x=>String(x.id)===String(tid));
+  const newStatus = inArchive ? 'closed' : val('editStatus');
   
   // إذا تغيرت الحالة لمغلق، نسجّل تاريخ الإغلاق
   if(newStatus === 'closed' && t.status !== 'closed') {
@@ -5077,7 +5095,7 @@ function saveEditTopic() {
 function saveTopicAll() {
   if(!canEditData()) return;
   const tid = parseFloat($('editTopicId').value);
-  const t = D.topics.find(x => x.id === tid);
+  const t = findEditableTopic(tid);
   if(!t) return;
   if(!val('editTitle').trim()){ alert('⚠️ يرجى ملء عنوان الموضوع'); return; }
   const outgoing=val('editType')!=='int' && val('editCorrespondenceDirection')==='out';
@@ -5149,8 +5167,11 @@ function saveTopicAll() {
   if(t.status === 'closed' && isArchivableFollowupTopic(t)) {
     if(!Array.isArray(D.archivedTopics)) D.archivedTopics = [];
     const archivedFinal = JSON.parse(JSON.stringify(t));
-    archivedFinal.archivedAt = new Date().toISOString();
-    archivedFinal.archivedBy = CU?.name || CU?.user || 'مستخدم';
+    archivedFinal.archivedAt = t.archivedAt || new Date().toISOString();
+    archivedFinal.archivedBy = t.archivedBy || CU?.name || CU?.user || 'مستخدم';
+    archivedFinal.archiveUpdatedAt=new Date().toISOString();
+    const currentCopy=D.topics.find(x=>String(x.id)===String(tid));
+    if(currentCopy && currentCopy!==t)Object.assign(currentCopy,JSON.parse(JSON.stringify(t)));
     archivedFinal.archiveVersion = 1;
     D.archivedTopics = D.archivedTopics.filter(x => x.id !== t.id);
     D.archivedTopics.push(archivedFinal);
@@ -5264,7 +5285,9 @@ function renderArchiveTable() {
     <td>${fmtDate(t.closedAt)}</td>
     <td>${t.archivedAt ? fmtDate(t.archivedAt.substring(0,10)) : '—'}</td>
     <td style="font-size:10px">${escHtml(t.archivedBy||'—')}</td>
-    <td class="editAction" style="white-space:nowrap">
+    <td style="white-space:nowrap">
+      <button class="btn btn-o" style="padding:3px 8px;font-size:10px" onclick="viewArchivedTopic(${escHtml(JSON.stringify(String(t.id)))})">👁️ اطلاع</button>
+      ${canEditData() ? `<button class="btn btn-o" style="padding:3px 8px;font-size:10px" onclick="openEditTopicModal(${escHtml(JSON.stringify(String(t.id)))})">✏️ تعديل</button>` : ''}
       ${canEditData() ? `<button class="btn btn-o" style="padding:3px 8px;font-size:10px" onclick="restoreArchivedTopic(${escHtml(JSON.stringify(String(t.id)))})">↩️ استرجاع</button>` : '—'}
     </td>
   </tr>`).join('') || noData(8);
