@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-14T08:49:49.049Z",
+  "exportedAt": "2026-10-14T10:01:24.022Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33113,7 +33113,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-09-24",
@@ -33180,14 +33180,32 @@
           "taqseem": "",
           "startDate": "2026-09-24",
           "daysSince": 8
+        },
+        {
+          "date": "2026-10-14",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "1153/23/2025-79",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 14
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790238795365.944,
-      "manualCount": 4,
+      "manualCount": 5,
       "followEntity": "naib_office",
       "responseMethod": "",
-      "correspondenceDirection": ""
+      "correspondenceDirection": "",
+      "closedAt": "2026-10-14"
     },
     {
       "id": 1790239443441.7979,
@@ -43093,6 +43111,125 @@
       "archivedAt": "2026-10-14T08:49:47.007Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1790238795365.944,
+      "transactionType": "followup",
+      "title": "طلب التصريح بنقل حطب أشجار السمر عبر منفذ دبا الحدودي",
+      "from": "محمد بن علي بن محمد العلي الشحي عضو مجلس الشورى ممثل ولاية دبا",
+      "docNo": "1170/3/2022v419-58",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-24",
+      "receivedFollowDate": "2026-09-24",
+      "presidentDirection": "يعتذر",
+      "createdAt": "2026-09-24T08:33:15.365Z",
+      "followStart": "2026-09-24",
+      "type": "int",
+      "followScope": "internal",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "note": "تتم متابعة مكتب النائب للحصول على نسخة من خطاب الاعتذار",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 0
+        },
+        {
+          "date": "2026-09-28",
+          "replied": false,
+          "responseMethod": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-09-30",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 4
+        },
+        {
+          "date": "2026-10-06",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "esc",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 8
+        },
+        {
+          "date": "2026-10-14",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "1153/23/2025-79",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-24",
+          "daysSince": 14
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790238795365.944,
+      "manualCount": 5,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "correspondenceDirection": "",
+      "closedAt": "2026-10-14",
+      "archivedAt": "2026-10-14T10:01:21.858Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -48782,6 +48919,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791972081827.7087,
+          "at": "2026-10-14T10:01:21.827Z",
+          "action": "إضافة متابعة",
+          "details": "طلب التصريح بنقل حطب أشجار السمر عبر منفذ دبا الحدودي"
+        },
+        {
+          "id": 1791972081738.291,
+          "at": "2026-10-14T10:01:21.738Z",
+          "action": "تعديل موضوع",
+          "details": "طلب التصريح بنقل حطب أشجار السمر عبر منفذ دبا الحدودي"
+        },
         {
           "id": 1791967786980.8743,
           "at": "2026-10-14T08:49:46.980Z",
