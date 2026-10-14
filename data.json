@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-14T04:11:17.193Z",
+  "exportedAt": "2026-10-14T04:11:42.011Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37263,16 +37263,19 @@
       "followStart": "2026-08-26",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "gov5",
       "note": "التخطيط\nلاعداد خطاب الى وزارة المالية وارفاق المتطلبات الاخرى المشار اليها",
-      "status": "new",
+      "status": "esc",
       "followups": [],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1791951075109.6267
+      "recordId": 1791951075109.6267,
+      "manualCount": 0,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -48006,6 +48009,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791951099948.147,
+          "at": "2026-10-14T04:11:39.948Z",
+          "action": "تعديل موضوع",
+          "details": "المشروعات الاستثمارية التابعة لهيئة البيئة"
+        },
         {
           "id": 1791951075162.3809,
           "at": "2026-10-14T04:11:15.162Z",
