@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-14T06:14:21.045Z",
+  "exportedAt": "2026-10-14T06:18:37.217Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37451,8 +37451,8 @@
       "slaMode": "none",
       "slaDays": null,
       "kpi": "",
-      "note": "تم التوجيه للدائرة للمتابعة للاختصاص",
-      "status": "new",
+      "note": "تم التوجيه للدائرة للمتابعة للاختصاص\n14/10 حسب افادة مدير الدائرة القانونية تم الاعتذار من قبل الجههة ",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-14",
@@ -37470,13 +37470,31 @@
           "taqseem": "",
           "startDate": "2026-10-13",
           "daysSince": 1
+        },
+        {
+          "date": "2026-10-14",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "حسب افادة مدير الدائرة القانونية تم الاعتذار من قبل الجههة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-13",
+          "daysSince": 1
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791957710437.5051,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-10-14"
     }
   ],
   "archivedTopics": [
@@ -42812,6 +42830,74 @@
       "restoredAt": "2026-10-13T10:06:41.062Z",
       "closedAt": "2026-10-14",
       "archivedAt": "2026-10-14T04:35:37.630Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
+    },
+    {
+      "id": 1791957710437.5051,
+      "transactionType": "followup",
+      "title": "مشروع ملتقيات التشريعات البيئية",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v422-9",
+      "toEntity": "المجلس الأعلى للقضاء",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-13",
+      "receivedFollowDate": "2026-10-14",
+      "followStart": "2026-10-13",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "تم التوجيه للدائرة للمتابعة للاختصاص\n14/10 حسب افادة مدير الدائرة القانونية تم الاعتذار من قبل الجههة ",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-14",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التوجيه للدائرة للمتابعة للاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-13",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-10-14",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "حسب افادة مدير الدائرة القانونية تم الاعتذار من قبل الجههة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-13",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791957710437.5051,
+      "manualCount": 2,
+      "followEntity": "",
+      "responseMethod": "",
+      "closedAt": "2026-10-14",
+      "archivedAt": "2026-10-14T06:18:35.173Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
     }
@@ -48503,6 +48589,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791958715142.8599,
+          "at": "2026-10-14T06:18:35.142Z",
+          "action": "إضافة متابعة",
+          "details": "مشروع ملتقيات التشريعات البيئية"
+        },
+        {
+          "id": 1791958715066.503,
+          "at": "2026-10-14T06:18:35.066Z",
+          "action": "تعديل موضوع",
+          "details": "مشروع ملتقيات التشريعات البيئية"
+        },
         {
           "id": 1791958459021.0364,
           "at": "2026-10-14T06:14:19.021Z",
