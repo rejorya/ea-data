@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-14T06:22:29.117Z",
+  "exportedAt": "2026-10-14T06:35:33.923Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37542,6 +37542,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1791959731844.1013,
+      "transactionType": "followup",
+      "title": "مشروعات القرارات الخاصة  بإدارة المحميات",
+      "from": "وزارة العدل والشؤون القانونية",
+      "docNo": "1170/3/2022v421-97",
+      "toEntity": "الدائرة القانونية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-13",
+      "receivedFollowDate": "2026-10-14",
+      "followStart": "2026-10-14",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "القانونية\nلاستكمال الاجراءات",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791959731844.1013
     }
   ],
   "archivedTopics": [
@@ -48636,6 +48662,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1791959731884.472,
+          "at": "2026-10-14T06:35:31.884Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "مشروعات القرارات الخاصة  بإدارة المحميات"
+        },
         {
           "id": 1791958947008.431,
           "at": "2026-10-14T06:22:27.008Z",
