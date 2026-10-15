@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-15T04:07:34.187Z",
+  "exportedAt": "2026-10-15T04:07:51.382Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37767,7 +37767,7 @@
       "followStart": "2026-10-13",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
@@ -37776,7 +37776,11 @@
       "status": "new",
       "followups": [],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792037252105.504
+      "recordId": 1792037252105.504,
+      "manualCount": 0,
+      "followEntity": "rais_depts",
+      "raisDeptName": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -49075,6 +49079,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792037269321.926,
+          "at": "2026-10-15T04:07:49.321Z",
+          "action": "تعديل موضوع",
+          "details": "إنشاء البرنامج الوطني لتعزيز بيئة الاعمال الجاذبة للاستثمار"
+        },
         {
           "id": 1792037252142.5344,
           "at": "2026-10-15T04:07:32.142Z",
