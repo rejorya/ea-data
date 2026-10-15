@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-15T04:22:46.542Z",
+  "exportedAt": "2026-10-15T04:25:57.252Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37846,6 +37846,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1792038355177.5854,
+      "transactionType": "followup",
+      "title": "طلب تخصيص قطعة أرض بنظام حق الانتفاع لإنشاء مشروع منتزه ومحمية تربية وإكثار الطيور المحلية والنادرة",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v422-12",
+      "toEntity": "وزارة الإسكان والتخطيط العمراني",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-13",
+      "receivedFollowDate": "2026-10-15",
+      "followStart": "2026-10-13",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "تم احالتها للدائرة لمتابعة الجهه للاختصاص",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792038355177.5854
     }
   ],
   "archivedTopics": [
@@ -49212,6 +49238,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792038355214.6084,
+          "at": "2026-10-15T04:25:55.214Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب تخصيص قطعة أرض بنظام حق الانتفاع لإنشاء مشروع منتزه ومحمية تربية وإكثار الطيور المحلية والنادرة"
+        },
         {
           "id": 1792038165407.4675,
           "at": "2026-10-15T04:22:45.407Z",
