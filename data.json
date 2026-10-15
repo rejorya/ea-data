@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-15T04:46:27.838Z",
+  "exportedAt": "2026-10-15T04:48:01.232Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37305,11 +37305,11 @@
       "followScope": "external",
       "correspondenceDirection": "out",
       "externalEntities": [],
-      "slaMode": "kpi",
+      "slaMode": "none",
       "slaDays": null,
-      "kpi": "other",
+      "kpi": "",
       "note": "12/10/2026تم التواصل هاتفيًا مع المعنيين، وجارٍ انتظار إفادتهم بشأن الموضوع.",
-      "status": "new",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-10-12",
@@ -49467,6 +49467,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792039679142.669,
+          "at": "2026-10-15T04:47:59.142Z",
+          "action": "تعديل موضوع",
+          "details": "انضمام سلطنة عمان إلى شراكة المساهمات المحددة عالميًا"
+        },
         {
           "id": 1792039585753.2373,
           "at": "2026-10-15T04:46:25.753Z",
