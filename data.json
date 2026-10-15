@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-15T04:35:01.194Z",
+  "exportedAt": "2026-10-15T04:39:43.697Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32037,23 +32037,42 @@
       "date": "2026-09-20",
       "followStart": "2026-09-20",
       "type": "ext",
-      "slaMode": "kpi",
+      "slaMode": "none",
       "slaDays": null,
       "kpi": "",
       "note": "متابعة خارجية استلام الرد خلال أسبوعين ",
-      "status": "new",
-      "followups": [],
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-15",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "1170/3/2022v422-14",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-20",
+          "daysSince": 19
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 0,
+      "manualCount": 1,
       "followEntity": "other",
       "responseMethod": "",
       "otherEntityName": "جامعة السلطان قابوس",
       "transactionType": "followup",
       "recordId": 1789985424100.699,
       "externalEntities": [],
-      "receivedFollowDate": "",
+      "receivedFollowDate": "2026-09-20",
       "correspondenceDirection": "out",
-      "followScope": "external"
+      "followScope": "external",
+      "closedAt": "2026-10-15"
     },
     {
       "id": 1790048686178.394,
@@ -43634,6 +43653,58 @@
       "archivedAt": "2026-10-15T04:22:45.430Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1789985424100.699,
+      "title": "الموافقة على إقامة ورشة لإطلاق مشروع تطبيق مبدأ فرز النفايات من المصدر بجامعة السلطان قابوس",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v418-86",
+      "toEntity": "جامعة السلطان قابوس",
+      "taqseemName": "متابعة خارجية",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-20",
+      "followStart": "2026-09-20",
+      "type": "ext",
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "متابعة خارجية استلام الرد خلال أسبوعين ",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-15",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "1170/3/2022v422-14",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-20",
+          "daysSince": 19
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 1,
+      "followEntity": "other",
+      "responseMethod": "",
+      "otherEntityName": "جامعة السلطان قابوس",
+      "transactionType": "followup",
+      "recordId": 1789985424100.699,
+      "externalEntities": [],
+      "receivedFollowDate": "2026-09-20",
+      "correspondenceDirection": "out",
+      "followScope": "external",
+      "closedAt": "2026-10-15",
+      "archivedAt": "2026-10-15T04:39:41.586Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -49323,6 +49394,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792039181554.334,
+          "at": "2026-10-15T04:39:41.554Z",
+          "action": "إضافة متابعة",
+          "details": "الموافقة على إقامة ورشة لإطلاق مشروع تطبيق مبدأ فرز النفايات من المصدر بجامعة السلطان قابوس"
+        },
+        {
+          "id": 1792039181468.3806,
+          "at": "2026-10-15T04:39:41.468Z",
+          "action": "تعديل موضوع",
+          "details": "الموافقة على إقامة ورشة لإطلاق مشروع تطبيق مبدأ فرز النفايات من المصدر بجامعة السلطان قابوس"
+        },
         {
           "id": 1792038899110.7004,
           "at": "2026-10-15T04:34:59.110Z",
