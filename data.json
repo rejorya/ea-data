@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-15T04:45:34.056Z",
+  "exportedAt": "2026-10-15T04:46:11.529Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32950,10 +32950,10 @@
       "type": "ext",
       "followScope": "external",
       "externalEntities": [],
-      "slaMode": "kpi",
+      "slaMode": "none",
       "slaDays": null,
-      "kpi": "other",
-      "note": "",
+      "kpi": "",
+      "note": "تم توجيه الخطاب للتقسيم للاختصاص",
       "status": "new",
       "followups": [
         {
@@ -49432,6 +49432,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792039569442.7305,
+          "at": "2026-10-15T04:46:09.442Z",
+          "action": "تعديل موضوع",
+          "details": "طلب التنسيق مع منظمة الأغذية والزراعة للأمم المتحدة (FAO) لدعم المشروع الوطني للحد من الفاقد والهدر الغذائي"
+        },
         {
           "id": 1792039531971.5298,
           "at": "2026-10-15T04:45:31.971Z",
