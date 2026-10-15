@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-15T04:48:01.232Z",
+  "exportedAt": "2026-10-15T06:25:10.595Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37304,7 +37304,15 @@
       "type": "ext",
       "followScope": "external",
       "correspondenceDirection": "out",
-      "externalEntities": [],
+      "externalEntities": [
+        {
+          "id": 1792045503360.622,
+          "name": "الأمانة العامة لمجلس الوزراء",
+          "replied": false,
+          "lastFollowDate": "2026-10-15",
+          "responseMethod": ""
+        }
+      ],
       "slaMode": "none",
       "slaDays": null,
       "kpi": "",
@@ -37327,11 +37335,28 @@
           "taqseem": "",
           "startDate": "2026-10-15",
           "daysSince": 0
+        },
+        {
+          "date": "2026-10-15",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التواصل هاتفيا لمتابعة الموضوع وفي انتظار الرد",
+          "actionType": "call",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": 0,
+          "externalEntityName": "الأمانة العامة لمجلس الوزراء",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 0
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791791437323.0815,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "other",
       "otherEntityName": "الأمانة العامة لمجلس الوزراء",
       "responseMethod": ""
@@ -49467,6 +49492,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792045508517.3342,
+          "at": "2026-10-15T06:25:08.517Z",
+          "action": "إضافة متابعة",
+          "details": "انضمام سلطنة عمان إلى شراكة المساهمات المحددة عالميًا"
+        },
+        {
+          "id": 1792045508442.4663,
+          "at": "2026-10-15T06:25:08.442Z",
+          "action": "تعديل موضوع",
+          "details": "انضمام سلطنة عمان إلى شراكة المساهمات المحددة عالميًا"
+        },
         {
           "id": 1792039679142.669,
           "at": "2026-10-15T04:47:59.142Z",
