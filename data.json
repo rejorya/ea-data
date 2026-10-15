@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-15T04:25:57.252Z",
+  "exportedAt": "2026-10-15T04:26:26.684Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37869,9 +37869,30 @@
       "kpi": "",
       "note": "تم احالتها للدائرة لمتابعة الجهه للاختصاص",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-15",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم احالتها للدائرة لمتابعة الجهه للاختصاص",
+          "actionType": "visit",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-13",
+          "daysSince": 2
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792038355177.5854
+      "recordId": 1792038355177.5854,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -49238,6 +49259,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792038384521.2644,
+          "at": "2026-10-15T04:26:24.521Z",
+          "action": "إضافة متابعة",
+          "details": "طلب تخصيص قطعة أرض بنظام حق الانتفاع لإنشاء مشروع منتزه ومحمية تربية وإكثار الطيور المحلية والنادرة"
+        },
+        {
+          "id": 1792038384451.5615,
+          "at": "2026-10-15T04:26:24.451Z",
+          "action": "تعديل موضوع",
+          "details": "طلب تخصيص قطعة أرض بنظام حق الانتفاع لإنشاء مشروع منتزه ومحمية تربية وإكثار الطيور المحلية والنادرة"
+        },
         {
           "id": 1792038355214.6084,
           "at": "2026-10-15T04:25:55.214Z",
