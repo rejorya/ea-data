@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-15T04:13:32.571Z",
+  "exportedAt": "2026-10-15T04:22:46.542Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37583,7 +37583,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "القانونية\nلاستكمال الاجراءات",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-14",
@@ -37601,13 +37601,31 @@
           "taqseem": "",
           "startDate": "2026-10-14",
           "daysSince": 0
+        },
+        {
+          "date": "2026-10-15",
+          "replied": true,
+          "responseMethod": "via_follow",
+          "replyDocNo": "0",
+          "note": "رد الدائرة:تم إحالة مشروعات اللوائح لمدير مكتب الرئيس لمخاطبة الجريدة الرسمية",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "تم إحالة مشروعات اللوائح لمدير مكتب الرئيس لمخاطبة الجريدة الرسمية",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 1
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791959731844.1013,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "",
-      "responseMethod": ""
+      "responseMethod": "via_follow",
+      "closedAt": "2026-10-15"
     },
     {
       "id": 1791967634930.8777,
@@ -43437,6 +43455,74 @@
       "archivedAt": "2026-10-15T03:55:34.973Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1791959731844.1013,
+      "transactionType": "followup",
+      "title": "مشروعات القرارات الخاصة  بإدارة المحميات",
+      "from": "وزارة العدل والشؤون القانونية",
+      "docNo": "1170/3/2022v421-97",
+      "toEntity": "الدائرة القانونية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-13",
+      "receivedFollowDate": "2026-10-14",
+      "followStart": "2026-10-14",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "القانونية\nلاستكمال الاجراءات",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-14",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 0
+        },
+        {
+          "date": "2026-10-15",
+          "replied": true,
+          "responseMethod": "via_follow",
+          "replyDocNo": "0",
+          "note": "رد الدائرة:تم إحالة مشروعات اللوائح لمدير مكتب الرئيس لمخاطبة الجريدة الرسمية",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "تم إحالة مشروعات اللوائح لمدير مكتب الرئيس لمخاطبة الجريدة الرسمية",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791959731844.1013,
+      "manualCount": 2,
+      "followEntity": "",
+      "responseMethod": "via_follow",
+      "closedAt": "2026-10-15",
+      "archivedAt": "2026-10-15T04:22:45.430Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -49126,6 +49212,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792038165407.4675,
+          "at": "2026-10-15T04:22:45.407Z",
+          "action": "إضافة متابعة",
+          "details": "مشروعات القرارات الخاصة  بإدارة المحميات"
+        },
+        {
+          "id": 1792038165350.4187,
+          "at": "2026-10-15T04:22:45.350Z",
+          "action": "تعديل موضوع",
+          "details": "مشروعات القرارات الخاصة  بإدارة المحميات"
+        },
         {
           "id": 1792037610507.2715,
           "at": "2026-10-15T04:13:30.507Z",
