@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-15T04:11:41.911Z",
+  "exportedAt": "2026-10-15T04:13:19.543Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37797,16 +37797,19 @@
       "followStart": "2026-10-14",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
-      "kpi": "gov5",
+      "kpi": "naib3",
       "note": "المدير العام بظفار لمقابلته وان اقتنعتم به فليستطلع راي المدير العام للاسكان بظفار وافاتنام بما تم",
       "status": "new",
       "followups": [],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792037499271.1155
+      "recordId": 1792037499271.1155,
+      "manualCount": 0,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -49105,6 +49108,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792037597074.7708,
+          "at": "2026-10-15T04:13:17.074Z",
+          "action": "تعديل موضوع",
+          "details": "نقل خدمات الموظف نمر بن سالم بن سهيل مسن الكثيري"
+        },
         {
           "id": 1792037499326.556,
           "at": "2026-10-15T04:11:39.326Z",
