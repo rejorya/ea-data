@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-15T04:07:51.382Z",
+  "exportedAt": "2026-10-15T04:11:41.911Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37781,6 +37781,32 @@
       "followEntity": "rais_depts",
       "raisDeptName": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1792037499271.1155,
+      "transactionType": "followup",
+      "title": "نقل خدمات الموظف نمر بن سالم بن سهيل مسن الكثيري",
+      "from": "وزارة الاسكان والتخطيط العمراني",
+      "docNo": "1170/3/2022v421-57",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-08",
+      "receivedFollowDate": "2026-10-14",
+      "followStart": "2026-10-14",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "المدير العام بظفار لمقابلته وان اقتنعتم به فليستطلع راي المدير العام للاسكان بظفار وافاتنام بما تم",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792037499271.1155
     }
   ],
   "archivedTopics": [
@@ -49079,6 +49105,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792037499326.556,
+          "at": "2026-10-15T04:11:39.326Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "نقل خدمات الموظف نمر بن سالم بن سهيل مسن الكثيري"
+        },
         {
           "id": 1792037269321.926,
           "at": "2026-10-15T04:07:49.321Z",
