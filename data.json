@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-15T03:49:27.011Z",
+  "exportedAt": "2026-10-15T03:54:35.446Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37655,6 +37655,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1792036471951.988,
+      "transactionType": "followup",
+      "title": "موقع أشجار الزيتون بمحافظة ظفار",
+      "from": "وزارة الاسكان والتخطيط العمراني",
+      "docNo": "1170/3/2022v422-5",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "secret",
+      "date": "2026-10-13",
+      "receivedFollowDate": "2026-10-14",
+      "followStart": "2026-10-14",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "rais",
+      "slaDays": 5,
+      "kpi": "",
+      "note": "نائب الرئيس\nللافادة خلال اسبوع",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792036471951.988
     }
   ],
   "archivedTopics": [
@@ -48917,7 +48943,15 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1792036472004.6067,
+          "at": "2026-10-15T03:54:32.004Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "موقع أشجار الزيتون بمحافظة ظفار"
+        }
+      ]
     },
     {
       "id": "8eac1856-479b-44c7-b13a-0257e38e8a20",
