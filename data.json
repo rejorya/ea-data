@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-15T06:25:10.595Z",
+  "exportedAt": "2026-10-15T06:25:58.818Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34932,7 +34932,15 @@
       "type": "ext",
       "followScope": "external",
       "correspondenceDirection": "out",
-      "externalEntities": [],
+      "externalEntities": [
+        {
+          "id": 1792045549522.4604,
+          "name": "الأمانة العامة لمجلس الوزراء",
+          "replied": false,
+          "lastFollowDate": "2026-10-15",
+          "responseMethod": ""
+        }
+      ],
       "slaMode": "none",
       "slaDays": null,
       "kpi": "",
@@ -34972,13 +34980,31 @@
           "taqseem": "",
           "startDate": "2026-08-24",
           "daysSince": 26
+        },
+        {
+          "date": "2026-10-15",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "التواصل هاتفيًا مع المعنيين، وجارٍ انتظار إفادتهم بشأن الموضوع.",
+          "actionType": "call",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": 0,
+          "externalEntityName": "الأمانة العامة لمجلس الوزراء",
+          "taqseem": "",
+          "startDate": "2026-08-24",
+          "daysSince": 38
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790671266089.2837,
-      "manualCount": 2,
-      "followEntity": "",
-      "responseMethod": ""
+      "manualCount": 3,
+      "followEntity": "other",
+      "responseMethod": "",
+      "otherEntityName": ""
     },
     {
       "id": 1790673827391.7822,
@@ -49492,6 +49518,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792045556670.9475,
+          "at": "2026-10-15T06:25:56.670Z",
+          "action": "إضافة متابعة",
+          "details": "الموافقة على تنفيذ مبادرة تعزيز إدارة الموارد الطبيعية والنظم البيئية بمحافظة ظفار (ARISE)"
+        },
+        {
+          "id": 1792045556588.9316,
+          "at": "2026-10-15T06:25:56.588Z",
+          "action": "تعديل موضوع",
+          "details": "الموافقة على تنفيذ مبادرة تعزيز إدارة الموارد الطبيعية والنظم البيئية بمحافظة ظفار (ARISE)"
+        },
         {
           "id": 1792045508517.3342,
           "at": "2026-10-15T06:25:08.517Z",
