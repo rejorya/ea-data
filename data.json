@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-15T04:43:43.275Z",
+  "exportedAt": "2026-10-15T04:45:05.088Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -33629,9 +33629,9 @@
       "type": "ext",
       "followScope": "external",
       "externalEntities": [],
-      "slaMode": "kpi",
+      "slaMode": "none",
       "slaDays": null,
-      "kpi": "other",
+      "kpi": "",
       "note": "",
       "status": "new",
       "followups": [
@@ -33650,11 +33650,28 @@
           "taqseem": "",
           "startDate": "2026-09-23",
           "daysSince": 1
+        },
+        {
+          "date": "2026-09-24",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التوجيه الى التقسيم للمتابعة للاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-23",
+          "daysSince": 1
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790241885374.2515,
-      "manualCount": 0,
+      "manualCount": 1,
       "followEntity": "other",
       "responseMethod": "",
       "correspondenceDirection": "out",
@@ -49415,6 +49432,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792039503010.2627,
+          "at": "2026-10-15T04:45:03.010Z",
+          "action": "إضافة متابعة",
+          "details": "تقديم عرض حول آليات التمويل المتعلقة بالاستزراع والاقتصاد الأخضر"
+        },
+        {
+          "id": 1792039502931.1528,
+          "at": "2026-10-15T04:45:02.931Z",
+          "action": "تعديل موضوع",
+          "details": "تقديم عرض حول آليات التمويل المتعلقة بالاستزراع والاقتصاد الأخضر"
+        },
         {
           "id": 1792039421185.82,
           "at": "2026-10-15T04:43:41.185Z",
