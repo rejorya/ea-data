@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-15T04:46:11.529Z",
+  "exportedAt": "2026-10-15T04:46:27.838Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34609,18 +34609,19 @@
       "followScope": "external",
       "correspondenceDirection": "out",
       "externalEntities": [],
-      "slaMode": "kpi",
+      "slaMode": "none",
       "slaDays": null,
-      "kpi": "other",
+      "kpi": "",
       "note": "",
-      "status": "new",
+      "status": "closed",
       "followups": [],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790579536686.3147,
       "manualCount": 0,
       "followEntity": "other",
       "otherEntityName": "الأمانة العامة لمجلس الوزراء",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-10-15"
     },
     {
       "id": 1790587816135.3389,
@@ -43743,6 +43744,40 @@
       "archivedAt": "2026-10-15T04:39:41.586Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1790579536686.3147,
+      "transactionType": "followup",
+      "title": "دعوة للمشاركة في الصالون الدولي لاسترجاع وتثمين النفايات بالجزائر",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v420-17",
+      "toEntity": "الأمانة العامة لمجلس الوزراء",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-09-27",
+      "receivedFollowDate": "2026-09-27",
+      "followStart": "2026-09-27",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "",
+      "status": "closed",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1790579536686.3147,
+      "manualCount": 0,
+      "followEntity": "other",
+      "otherEntityName": "الأمانة العامة لمجلس الوزراء",
+      "responseMethod": "",
+      "closedAt": "2026-10-15",
+      "archivedAt": "2026-10-15T04:46:25.785Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -49432,6 +49467,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792039585753.2373,
+          "at": "2026-10-15T04:46:25.753Z",
+          "action": "تعديل موضوع",
+          "details": "دعوة للمشاركة في الصالون الدولي لاسترجاع وتثمين النفايات بالجزائر"
+        },
         {
           "id": 1792039569442.7305,
           "at": "2026-10-15T04:46:09.442Z",
