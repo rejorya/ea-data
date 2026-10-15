@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-15T03:54:35.446Z",
+  "exportedAt": "2026-10-15T03:55:37.015Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -32006,11 +32006,11 @@
       "date": "2026-09-20",
       "followStart": "2026-09-20",
       "type": "ext",
-      "slaMode": "kpi",
+      "slaMode": "none",
       "slaDays": null,
       "kpi": "",
       "note": "متابعة خارجية",
-      "status": "new",
+      "status": "closed",
       "followups": [],
       "sheet": "مُضاف يدوياً",
       "manualCount": 0,
@@ -32022,7 +32022,8 @@
       "externalEntities": [],
       "receivedFollowDate": "2026-09-21",
       "correspondenceDirection": "out",
-      "followScope": "external"
+      "followScope": "external",
+      "closedAt": "2026-10-15"
     },
     {
       "id": 1789985424100.699,
@@ -43256,6 +43257,40 @@
       "archivedAt": "2026-10-14T10:01:21.858Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1789981819179.5964,
+      "title": "فتح صلاحية إجراء المناقلات المالية الداخلية",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v418-90",
+      "toEntity": "وزارة الماليـــــــــــــــــــــــــــــــــــــــــة",
+      "taqseemName": "متابعة خارجية",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-20",
+      "followStart": "2026-09-20",
+      "type": "ext",
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "متابعة خارجية",
+      "status": "closed",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "manualCount": 0,
+      "followEntity": "other",
+      "otherEntityName": "وزارة الماليـــــــــــــــــــــــــــــــــــــــــة",
+      "responseMethod": "",
+      "transactionType": "followup",
+      "recordId": 1789981819179.5964,
+      "externalEntities": [],
+      "receivedFollowDate": "2026-09-21",
+      "correspondenceDirection": "out",
+      "followScope": "external",
+      "closedAt": "2026-10-15",
+      "archivedAt": "2026-10-15T03:55:34.973Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -48945,6 +48980,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792036534943.6309,
+          "at": "2026-10-15T03:55:34.943Z",
+          "action": "تعديل موضوع",
+          "details": "فتح صلاحية إجراء المناقلات المالية الداخلية"
+        },
         {
           "id": 1792036472004.6067,
           "at": "2026-10-15T03:54:32.004Z",
