@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-15T04:30:55.868Z",
+  "exportedAt": "2026-10-15T04:34:43.144Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -34875,7 +34875,7 @@
       "followScope": "external",
       "correspondenceDirection": "out",
       "externalEntities": [],
-      "slaMode": "kpi",
+      "slaMode": "none",
       "slaDays": null,
       "kpi": "",
       "note": "",
@@ -34897,11 +34897,28 @@
           "taqseem": "",
           "startDate": "2026-08-24",
           "daysSince": 26
+        },
+        {
+          "date": "2026-09-29",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "تم التواصل هاتفيا",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-08-24",
+          "daysSince": 26
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1790671266089.2837,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "",
       "responseMethod": ""
     },
@@ -49306,6 +49323,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792038881067.3367,
+          "at": "2026-10-15T04:34:41.067Z",
+          "action": "إضافة متابعة",
+          "details": "الموافقة على تنفيذ مبادرة تعزيز إدارة الموارد الطبيعية والنظم البيئية بمحافظة ظفار (ARISE)"
+        },
+        {
+          "id": 1792038880992.6724,
+          "at": "2026-10-15T04:34:40.992Z",
+          "action": "تعديل موضوع",
+          "details": "الموافقة على تنفيذ مبادرة تعزيز إدارة الموارد الطبيعية والنظم البيئية بمحافظة ظفار (ARISE)"
+        },
         {
           "id": 1792038653805.8105,
           "at": "2026-10-15T04:30:53.805Z",
