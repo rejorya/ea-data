@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-15T04:01:20.599Z",
+  "exportedAt": "2026-10-15T04:01:39.301Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37719,16 +37719,38 @@
       "followStart": "2026-10-13",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "other",
       "note": "التحول الرقمي\nللتنسيق مع قسم امن المعلومات وعمل اللازم والافادة بما تم",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-14",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-13",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792036878531.1294
+      "recordId": 1792036878531.1294,
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -49027,6 +49049,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792036897233.012,
+          "at": "2026-10-15T04:01:37.233Z",
+          "action": "إضافة متابعة",
+          "details": "خطة تهجير نظام وصول من السحابة الحكومية الى الموقع الجديد"
+        },
+        {
+          "id": 1792036897179.2156,
+          "at": "2026-10-15T04:01:37.179Z",
+          "action": "تعديل موضوع",
+          "details": "خطة تهجير نظام وصول من السحابة الحكومية الى الموقع الجديد"
+        },
         {
           "id": 1792036878567.4702,
           "at": "2026-10-15T04:01:18.567Z",
