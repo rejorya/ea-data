@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-15T03:56:37.040Z",
+  "exportedAt": "2026-10-15T04:01:20.599Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37703,6 +37703,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1792036878531.1294,
+      "transactionType": "followup",
+      "title": "خطة تهجير نظام وصول من السحابة الحكومية الى الموقع الجديد",
+      "from": "هيئة الوثائق والمحفوظات الوطنية",
+      "docNo": "1170/3/2022v422-7",
+      "toEntity": "التحول الرقمي",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-13",
+      "receivedFollowDate": "2026-10-14",
+      "followStart": "2026-10-13",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "التحول الرقمي\nللتنسيق مع قسم امن المعلومات وعمل اللازم والافادة بما تم",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792036878531.1294
     }
   ],
   "archivedTopics": [
@@ -49001,6 +49027,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792036878567.4702,
+          "at": "2026-10-15T04:01:18.567Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "خطة تهجير نظام وصول من السحابة الحكومية الى الموقع الجديد"
+        },
         {
           "id": 1792036594965.8079,
           "at": "2026-10-15T03:56:34.965Z",
