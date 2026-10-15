@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-15T03:55:37.015Z",
+  "exportedAt": "2026-10-15T03:56:37.040Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37672,16 +37672,37 @@
       "followStart": "2026-10-14",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "rais",
       "slaDays": 5,
       "kpi": "",
       "note": "نائب الرئيس\nللافادة خلال اسبوع",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-15",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792036471951.988
+      "recordId": 1792036471951.988,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -48980,6 +49001,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792036594965.8079,
+          "at": "2026-10-15T03:56:34.965Z",
+          "action": "إضافة متابعة",
+          "details": "موقع أشجار الزيتون بمحافظة ظفار"
+        },
+        {
+          "id": 1792036594909.4673,
+          "at": "2026-10-15T03:56:34.909Z",
+          "action": "تعديل موضوع",
+          "details": "موقع أشجار الزيتون بمحافظة ظفار"
+        },
         {
           "id": 1792036534943.6309,
           "at": "2026-10-15T03:55:34.943Z",
