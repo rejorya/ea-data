@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T08:51:52.259Z",
+  "exportedAt": "2026-10-18T08:52:29.248Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38645,16 +38645,38 @@
       "followStart": "2026-10-14",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "other",
       "note": "ملاحظة \nتكليف هيئة البيئة باعداد تقرير عن حجم الاضرار البيئية من جراء التلوث وكلف التاهيل\n\nنائب الرئيس\nمركز الطوارئ\nلوضع نطاق عمل لحصر الاضرار ورفعه للاعتماد لتطرح كمناقصة لتقييم حجم الضرر البيئي وكلفته",
-      "status": "new",
-      "followups": [],
+      "status": "open",
+      "followups": [
+        {
+          "date": "2026-10-18",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 2
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792313510785.3855
+      "recordId": 1792313510785.3855,
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "مركز الطوارئ البيئية",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -50352,6 +50374,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792313547154.864,
+          "at": "2026-10-18T08:52:27.154Z",
+          "action": "إضافة متابعة",
+          "details": "الاجتماع الثاني للجنة الوطنية لإدارة الحالات الطارئة لعام 2026م"
+        },
+        {
+          "id": 1792313547072.4834,
+          "at": "2026-10-18T08:52:27.072Z",
+          "action": "تعديل موضوع",
+          "details": "الاجتماع الثاني للجنة الوطنية لإدارة الحالات الطارئة لعام 2026م"
+        },
         {
           "id": 1792313510830.7046,
           "at": "2026-10-18T08:51:50.830Z",
