@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T04:55:45.728Z",
+  "exportedAt": "2026-10-18T05:01:45.093Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38124,21 +38124,43 @@
       "taqseemName": "",
       "priority": "normal",
       "confidentiality": "normal",
-      "date": "2026-10-18",
+      "date": "2026-10-15",
       "receivedFollowDate": "2026-10-18",
-      "followStart": "",
+      "followStart": "2026-10-15",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "gov5",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-18",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792299343634.1763
+      "recordId": 1792299343634.1763,
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "دائرة التواصل والاعلام",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -49591,6 +49613,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792299702909.7537,
+          "at": "2026-10-18T05:01:42.909Z",
+          "action": "إضافة متابعة",
+          "details": "طلب إحاطة بالاجندة والاحداث الاتصالية لعام 2027م"
+        },
+        {
+          "id": 1792299702836.3708,
+          "at": "2026-10-18T05:01:42.836Z",
+          "action": "تعديل موضوع",
+          "details": "طلب إحاطة بالاجندة والاحداث الاتصالية لعام 2027م"
+        },
         {
           "id": 1792299343688.4927,
           "at": "2026-10-18T04:55:43.688Z",
