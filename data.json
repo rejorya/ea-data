@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T09:05:48.397Z",
+  "exportedAt": "2026-10-18T09:17:51.394Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38775,6 +38775,32 @@
       "followups": [],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792314346297.8635
+    },
+    {
+      "id": 1792315069286.0823,
+      "transactionType": "followup",
+      "title": "شكوى وطلب إعادة النظر في موقع مشروع شركة الاستزراع السمكي الواقع بين منطقني الحد والجديمة بولاية جعلان بني بو حسن",
+      "from": "أهالي منطقتي الحد والجديمة",
+      "docNo": "1170/3/2022v422-17",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-14",
+      "receivedFollowDate": "2026-10-18",
+      "followStart": "2026-10-15",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "std14",
+      "note": "نائب الرئيس\nللدراسة والافادة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792315069286.0823
     }
   ],
   "archivedTopics": [
@@ -50472,6 +50498,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792315069354.3127,
+          "at": "2026-10-18T09:17:49.354Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "شكوى وطلب إعادة النظر في موقع مشروع شركة الاستزراع السمكي الواقع بين منطقني الحد والجديمة بولاية جعلان بني بو حسن"
+        },
         {
           "id": 1792314346341.9014,
           "at": "2026-10-18T09:05:46.341Z",
