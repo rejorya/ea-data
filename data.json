@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T06:05:52.318Z",
+  "exportedAt": "2026-10-18T06:06:52.519Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38391,6 +38391,13 @@
         {
           "id": 1792303540416.6895,
           "name": "الجامعة العربية المفتوحة",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        },
+        {
+          "id": 1792303609607.4944,
+          "name": "كلية الزهراء للبنات",
           "replied": false,
           "lastFollowDate": "",
           "responseMethod": ""
