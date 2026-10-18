@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T09:02:03.469Z",
+  "exportedAt": "2026-10-18T09:05:48.397Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38749,6 +38749,32 @@
       "manualCount": 0,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1792314346297.8635,
+      "transactionType": "followup",
+      "title": "تسريع استكمال مستهدف رقمنة الخدمات الحكومية ذات الأولوية",
+      "from": "وزارة النقل والاتصالات وتقنية المعلومات",
+      "docNo": "1170/3/2022v414-65",
+      "toEntity": "",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-19",
+      "receivedFollowDate": "2026-10-18",
+      "followStart": "2026-10-05",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "يجب وضع مواعيد زمنية لتحقيق المستهدفات",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792314346297.8635
     }
   ],
   "archivedTopics": [
@@ -50446,6 +50472,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792314346341.9014,
+          "at": "2026-10-18T09:05:46.341Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "تسريع استكمال مستهدف رقمنة الخدمات الحكومية ذات الأولوية"
+        },
         {
           "id": 1792314120846.766,
           "at": "2026-10-18T09:02:00.846Z",
