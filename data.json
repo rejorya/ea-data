@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T04:48:13.065Z",
+  "exportedAt": "2026-10-18T04:48:28.442Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38089,9 +38089,30 @@
       "kpi": "",
       "note": "تم التوجية للدائرة لمتابعة الجهه للاختصاص",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-18",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التوجية للدائرة لمتابعة الجهه للاختصاص",
+          "actionType": "visit",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792298890969.3813
+      "recordId": 1792298890969.3813,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -49544,6 +49565,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792298905713.2388,
+          "at": "2026-10-18T04:48:25.713Z",
+          "action": "إضافة متابعة",
+          "details": "هيئة البيئة"
+        },
+        {
+          "id": 1792298905644.0918,
+          "at": "2026-10-18T04:48:25.644Z",
+          "action": "تعديل موضوع",
+          "details": "هيئة البيئة"
+        },
         {
           "id": 1792298891030.6956,
           "at": "2026-10-18T04:48:11.030Z",
