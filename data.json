@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T05:36:38.351Z",
+  "exportedAt": "2026-10-18T05:39:52.737Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38297,6 +38297,32 @@
       "followups": [],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792301796255.1204
+    },
+    {
+      "id": 1792301991353.1262,
+      "transactionType": "followup",
+      "title": "اللقاء الدوري بين محافظة جنوب الشرقية وهيئة البيئة",
+      "from": "مكتب محافظة جنوب الشرقية",
+      "docNo": "1170/3/2022v422-24",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-14",
+      "receivedFollowDate": "2026-10-18",
+      "followStart": "2026-10-15",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "rais",
+      "slaDays": 10,
+      "kpi": "",
+      "note": "نائب الرئيس\nللافادة عن المواضيع التي تم التوجيه بها والواردة في الكشف المرفق خلال اسبوعين من تاريخه.",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792301991353.1262
     }
   ],
   "archivedTopics": [
@@ -49716,6 +49742,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792301991419.6362,
+          "at": "2026-10-18T05:39:51.420Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "اللقاء الدوري بين محافظة جنوب الشرقية وهيئة البيئة"
+        },
         {
           "id": 1792301796309.953,
           "at": "2026-10-18T05:36:36.309Z",
