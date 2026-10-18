@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T09:01:01.347Z",
+  "exportedAt": "2026-10-18T09:02:03.469Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38731,12 +38731,12 @@
       "taqseemName": "",
       "priority": "normal",
       "confidentiality": "normal",
-      "date": "2026-10-18",
+      "date": "2026-10-15",
       "receivedFollowDate": "2026-10-18",
-      "followStart": "",
+      "followStart": "2026-10-18",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
@@ -38745,7 +38745,10 @@
       "status": "new",
       "followups": [],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792314059273.9287
+      "recordId": 1792314059273.9287,
+      "manualCount": 0,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -50443,6 +50446,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792314120846.766,
+          "at": "2026-10-18T09:02:00.846Z",
+          "action": "تعديل موضوع",
+          "details": "مشروع مذكرة تفاهم بين هيئة البيئة في سلطنة عُمان واللجنة الوطنية للبيئة وتغير المناخ في جمهورية أوزبكستان في مجال الشؤون البيئية.pdf"
+        },
         {
           "id": 1792314059314.09,
           "at": "2026-10-18T09:00:59.314Z",
