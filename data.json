@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T09:29:40.258Z",
+  "exportedAt": "2026-10-18T09:45:55.662Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38840,6 +38840,32 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1792316753558.601,
+      "transactionType": "followup",
+      "title": "استكمال إجراءات التعاقد الخاصة بمشروع الأكاديمية",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v422-50",
+      "toEntity": "مركز الاعتماد الخليجي",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-18",
+      "receivedFollowDate": "2026-10-18",
+      "followStart": "2026-10-18",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792316753558.601
     }
   ],
   "archivedTopics": [
@@ -50537,6 +50563,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792316753615.9653,
+          "at": "2026-10-18T09:45:53.615Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "استكمال إجراءات التعاقد الخاصة بمشروع الأكاديمية"
+        },
         {
           "id": 1792315778168.895,
           "at": "2026-10-18T09:29:38.168Z",
