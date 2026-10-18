@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T08:36:23.860Z",
+  "exportedAt": "2026-10-18T08:40:38.335Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -23486,12 +23486,41 @@
           "date": "2026-05-21",
           "replied": false,
           "note": "1"
+        },
+        {
+          "date": "2026-10-18",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "1170/3/2022v422-51",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "",
+          "daysSince": null
         }
       ],
       "sheet": "Sheet1",
       "closedAt": "2026-05-21",
       "transactionType": "followup",
-      "recordId": 1780826442614.7305
+      "recordId": 1780826442614.7305,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "followStart": "",
+      "correspondenceDirection": "",
+      "followScope": "external",
+      "docNo": "",
+      "toEntity": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "manualCount": 2,
+      "followEntity": "",
+      "responseMethod": ""
     },
     {
       "id": 1780826442615.6995,
@@ -44553,6 +44582,61 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1,
       "archiveUpdatedAt": "2026-10-18T08:36:21.804Z"
+    },
+    {
+      "id": 1780826442614.7305,
+      "title": "اصدار رسم مساحي لمنتزة الجبل الاخضر الوطني الطبيعي النموذجي",
+      "from": "وزارة الاسكان والتخطيط العمراني",
+      "responsible": "دائرة ضبط الجودة",
+      "date": "2026-05-18",
+      "type": "ext",
+      "kpi": "",
+      "note": "1",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-05-21",
+          "replied": false,
+          "note": "1"
+        },
+        {
+          "date": "2026-10-18",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "1170/3/2022v422-51",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "",
+          "daysSince": null
+        }
+      ],
+      "sheet": "Sheet1",
+      "closedAt": "2026-05-21",
+      "transactionType": "followup",
+      "recordId": 1780826442614.7305,
+      "externalEntities": [],
+      "receivedFollowDate": "",
+      "followStart": "",
+      "correspondenceDirection": "",
+      "followScope": "external",
+      "docNo": "",
+      "toEntity": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "manualCount": 2,
+      "followEntity": "",
+      "responseMethod": "",
+      "archivedAt": "2026-10-18T08:40:36.271Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-10-18T08:40:36.271Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -50242,6 +50326,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792312836232.4263,
+          "at": "2026-10-18T08:40:36.232Z",
+          "action": "إضافة متابعة",
+          "details": "اصدار رسم مساحي لمنتزة الجبل الاخضر الوطني الطبيعي النموذجي"
+        },
+        {
+          "id": 1792312836154.7727,
+          "at": "2026-10-18T08:40:36.154Z",
+          "action": "تعديل موضوع",
+          "details": "اصدار رسم مساحي لمنتزة الجبل الاخضر الوطني الطبيعي النموذجي"
+        },
         {
           "id": 1792312581768.5005,
           "at": "2026-10-18T08:36:21.768Z",
