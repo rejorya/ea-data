@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T05:06:59.387Z",
+  "exportedAt": "2026-10-18T05:10:33.700Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37917,14 +37917,33 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "مركز الاعمال \nلاعداد رد حول مبادرات تبسط الاجراءات التي نفذتها لتعزيز بيئة الاعمال سواء بالغاء بعض التصاريح او تخفيض الرسوم او تقليص مدد اصدار التصاريح وكذلك التصاريح التلقائية والفورية وغيرها ",
-      "status": "new",
-      "followups": [],
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-18",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم الرد لمدير المكتب",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-13",
+          "daysSince": 3
+        }
+      ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792037252105.504,
-      "manualCount": 0,
+      "manualCount": 1,
       "followEntity": "rais_depts",
       "raisDeptName": "",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-10-18"
     },
     {
       "id": 1792037499271.1155,
@@ -43950,6 +43969,59 @@
       "archivedAt": "2026-10-15T04:46:25.785Z",
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1
+    },
+    {
+      "id": 1792037252105.504,
+      "transactionType": "followup",
+      "title": "إنشاء البرنامج الوطني لتعزيز بيئة الاعمال الجاذبة للاستثمار",
+      "from": "الامانة العامة لمجلس الوزراء",
+      "docNo": "1170/3/2022v421-101",
+      "toEntity": "مركز الاعمال البيئية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "top_secret",
+      "date": "2026-10-13",
+      "receivedFollowDate": "2026-10-14",
+      "followStart": "2026-10-13",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "مركز الاعمال \nلاعداد رد حول مبادرات تبسط الاجراءات التي نفذتها لتعزيز بيئة الاعمال سواء بالغاء بعض التصاريح او تخفيض الرسوم او تقليص مدد اصدار التصاريح وكذلك التصاريح التلقائية والفورية وغيرها ",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-18",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم الرد لمدير المكتب",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-13",
+          "daysSince": 3
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792037252105.504,
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "",
+      "responseMethod": "",
+      "closedAt": "2026-10-18",
+      "archivedAt": "2026-10-18T05:10:31.562Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-10-18T05:10:31.562Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -49639,6 +49711,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792300231536.0403,
+          "at": "2026-10-18T05:10:31.536Z",
+          "action": "إضافة متابعة",
+          "details": "إنشاء البرنامج الوطني لتعزيز بيئة الاعمال الجاذبة للاستثمار"
+        },
+        {
+          "id": 1792300231462.5571,
+          "at": "2026-10-18T05:10:31.462Z",
+          "action": "تعديل موضوع",
+          "details": "إنشاء البرنامج الوطني لتعزيز بيئة الاعمال الجاذبة للاستثمار"
+        },
         {
           "id": 1792300017350.6387,
           "at": "2026-10-18T05:06:57.350Z",
