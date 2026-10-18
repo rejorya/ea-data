@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T06:07:52.590Z",
+  "exportedAt": "2026-10-18T06:13:36.529Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38422,9 +38422,31 @@
       "kpi": "",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-18",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التوجيه للدائرة بالمتابعة للاختصاص",
+          "actionType": "visit",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792303483439.5813
+      "recordId": 1792303483439.5813,
+      "manualCount": 1,
+      "followEntity": "other",
+      "otherEntityName": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -49980,6 +50002,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792304013564.5278,
+          "at": "2026-10-18T06:13:33.564Z",
+          "action": "إضافة متابعة",
+          "details": "طلب ترشيح للمشاركة في ملتقى التشريعات البيئية بمحافظة مسقط"
+        },
+        {
+          "id": 1792304013491.5977,
+          "at": "2026-10-18T06:13:33.491Z",
+          "action": "تعديل موضوع",
+          "details": "طلب ترشيح للمشاركة في ملتقى التشريعات البيئية بمحافظة مسقط"
+        },
         {
           "id": 1792303483490.3965,
           "at": "2026-10-18T06:04:43.490Z",
