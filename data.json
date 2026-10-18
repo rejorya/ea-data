@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T08:29:20.347Z",
+  "exportedAt": "2026-10-18T08:29:59.100Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38556,9 +38556,30 @@
       "kpi": "",
       "note": "تم احالتها الى التقسيم للمتابعة",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-18",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم احالتها الى التقسيم للمتابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792312158256.0767
+      "recordId": 1792312158256.0767,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -50183,6 +50204,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792312197007.3394,
+          "at": "2026-10-18T08:29:57.007Z",
+          "action": "إضافة متابعة",
+          "details": "إيجاد الحلول بشأن إدارة النفايات الصناعية والخطرة بمحافظة مسندم"
+        },
+        {
+          "id": 1792312196929.9746,
+          "at": "2026-10-18T08:29:56.929Z",
+          "action": "تعديل موضوع",
+          "details": "إيجاد الحلول بشأن إدارة النفايات الصناعية والخطرة بمحافظة مسندم"
+        },
         {
           "id": 1792312158312.828,
           "at": "2026-10-18T08:29:18.312Z",
