@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T04:48:28.442Z",
+  "exportedAt": "2026-10-18T04:55:45.728Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38113,6 +38113,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1792299343634.1763,
+      "transactionType": "followup",
+      "title": "طلب إحاطة بالاجندة والاحداث الاتصالية لعام 2027م",
+      "from": "مكتب الرئيس",
+      "docNo": "1153/1/2022v12-44",
+      "toEntity": "دائرة التواصل والاعلام",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-18",
+      "receivedFollowDate": "2026-10-18",
+      "followStart": "",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792299343634.1763
     }
   ],
   "archivedTopics": [
@@ -49565,6 +49591,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792299343688.4927,
+          "at": "2026-10-18T04:55:43.688Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب إحاطة بالاجندة والاحداث الاتصالية لعام 2027م"
+        },
         {
           "id": 1792298905713.2388,
           "at": "2026-10-18T04:48:25.713Z",
