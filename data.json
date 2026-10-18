@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T05:32:56.272Z",
+  "exportedAt": "2026-10-18T05:36:38.351Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38271,6 +38271,32 @@
       "followups": [],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792300831064.717
+    },
+    {
+      "id": 1792301796255.1204,
+      "transactionType": "followup",
+      "title": "تجديد جواز الخدمة",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v422-43",
+      "toEntity": "وزارة الــخـــــــــــــارجـــــــــــــــيـــــــــــــــــــــــة",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "secret",
+      "date": "2026-10-18",
+      "receivedFollowDate": "2026-10-18",
+      "followStart": "2026-10-18",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792301796255.1204
     }
   ],
   "archivedTopics": [
@@ -49690,6 +49716,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792301796309.953,
+          "at": "2026-10-18T05:36:36.309Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "تجديد جواز الخدمة"
+        },
         {
           "id": 1792301574187.3494,
           "at": "2026-10-18T05:32:54.187Z",
