@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T06:44:49.955Z",
+  "exportedAt": "2026-10-18T08:29:20.347Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38533,6 +38533,32 @@
       "followEntity": "other",
       "otherEntityName": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1792312158256.0767,
+      "transactionType": "followup",
+      "title": "إيجاد الحلول بشأن إدارة النفايات الصناعية والخطرة بمحافظة مسندم",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v422-27",
+      "toEntity": "الشركة العمانية القابضة لخدمات البيئة ( بيئة )",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-15",
+      "receivedFollowDate": "2026-10-18",
+      "followStart": "2026-10-15",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "تم احالتها الى التقسيم للمتابعة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792312158256.0767
     }
   ],
   "archivedTopics": [
@@ -50157,6 +50183,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792312158312.828,
+          "at": "2026-10-18T08:29:18.312Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "إيجاد الحلول بشأن إدارة النفايات الصناعية والخطرة بمحافظة مسندم"
+        },
         {
           "id": 1792305887877.8298,
           "at": "2026-10-18T06:44:47.877Z",
