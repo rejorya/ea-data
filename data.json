@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T10:02:02.586Z",
+  "exportedAt": "2026-10-18T10:03:30.539Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38891,6 +38891,32 @@
       "followEntity": "other",
       "otherEntityName": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1792317807723.2139,
+      "transactionType": "followup",
+      "title": "طلب الموافقة المبدئية لتخويل صفة الضبطية القضائية لبعض موظفي هيئة البيئة",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v422-48",
+      "toEntity": "وزارة العدل والشؤون القانونية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-10-18",
+      "receivedFollowDate": "2026-10-18",
+      "followStart": "2026-10-18",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "تم التوجية للدائرة لمتابعة الجهه للاختصاص",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792317807723.2139
     }
   ],
   "archivedTopics": [
@@ -50588,6 +50614,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792317807770.2803,
+          "at": "2026-10-18T10:03:27.770Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب الموافقة المبدئية لتخويل صفة الضبطية القضائية لبعض موظفي هيئة البيئة"
+        },
         {
           "id": 1792317720505.5261,
           "at": "2026-10-18T10:02:00.505Z",
