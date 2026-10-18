@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T05:01:45.093Z",
+  "exportedAt": "2026-10-18T05:06:59.387Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38161,6 +38161,32 @@
       "followEntity": "rais_depts",
       "raisDeptName": "دائرة التواصل والاعلام",
       "responseMethod": ""
+    },
+    {
+      "id": 1792300017302.474,
+      "transactionType": "followup",
+      "title": "التوقيع على مذكرات التفاهم مع إمارة موناكو",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v422-30",
+      "toEntity": "الأمانة العامة لمجلس الوزراء",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-10-15",
+      "receivedFollowDate": "2026-10-18",
+      "followStart": "2026-10-15",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792300017302.474
     }
   ],
   "archivedTopics": [
@@ -49613,6 +49639,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792300017350.6387,
+          "at": "2026-10-18T05:06:57.350Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "التوقيع على مذكرات التفاهم مع إمارة موناكو"
+        },
         {
           "id": 1792299702909.7537,
           "at": "2026-10-18T05:01:42.909Z",
