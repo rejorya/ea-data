@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T08:40:38.335Z",
+  "exportedAt": "2026-10-18T08:51:52.259Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38629,6 +38629,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1792313510785.3855,
+      "transactionType": "followup",
+      "title": "الاجتماع الثاني للجنة الوطنية لإدارة الحالات الطارئة لعام 2026م",
+      "from": "المركز الوطنبي لإدارة الحالات الطارئة",
+      "docNo": "1170/3/2022v421-80",
+      "toEntity": "مركز الطوارئ البيئية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-12",
+      "receivedFollowDate": "2026-10-15",
+      "followStart": "2026-10-14",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "ملاحظة \nتكليف هيئة البيئة باعداد تقرير عن حجم الاضرار البيئية من جراء التلوث وكلف التاهيل\n\nنائب الرئيس\nمركز الطوارئ\nلوضع نطاق عمل لحصر الاضرار ورفعه للاعتماد لتطرح كمناقصة لتقييم حجم الضرر البيئي وكلفته",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792313510785.3855
     }
   ],
   "archivedTopics": [
@@ -50326,6 +50352,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792313510830.7046,
+          "at": "2026-10-18T08:51:50.830Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "الاجتماع الثاني للجنة الوطنية لإدارة الحالات الطارئة لعام 2026م"
+        },
         {
           "id": 1792312836232.4263,
           "at": "2026-10-18T08:40:36.232Z",
