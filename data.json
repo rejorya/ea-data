@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T05:10:33.700Z",
+  "exportedAt": "2026-10-18T05:20:33.272Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38206,6 +38206,32 @@
       "followups": [],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792300017302.474
+    },
+    {
+      "id": 1792300831064.717,
+      "transactionType": "followup",
+      "title": "هيئة البيئة",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v422-28",
+      "toEntity": "وزارة العدل والشؤون القانونية",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "normal",
+      "date": "2026-10-15",
+      "receivedFollowDate": "2026-10-18",
+      "followStart": "2026-10-15",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "تم التوجية للدائرة لمتابعة  للاختصاص ",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792300831064.717
     }
   ],
   "archivedTopics": [
@@ -49711,6 +49737,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792300831105.363,
+          "at": "2026-10-18T05:20:31.105Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "هيئة البيئة"
+        },
         {
           "id": 1792300231536.0403,
           "at": "2026-10-18T05:10:31.536Z",
