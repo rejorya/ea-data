@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T05:20:33.272Z",
+  "exportedAt": "2026-10-18T05:21:21.460Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38203,9 +38203,30 @@
       "kpi": "",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-18",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم احالتها للدائرة لمتابعة الجهه للاختصاص",
+          "actionType": "visit",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792300017302.474
+      "recordId": 1792300017302.474,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     },
     {
       "id": 1792300831064.717,
@@ -49737,6 +49758,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792300878567.8599,
+          "at": "2026-10-18T05:21:18.567Z",
+          "action": "إضافة متابعة",
+          "details": "التوقيع على مذكرات التفاهم مع إمارة موناكو"
+        },
+        {
+          "id": 1792300878501.6306,
+          "at": "2026-10-18T05:21:18.501Z",
+          "action": "تعديل موضوع",
+          "details": "التوقيع على مذكرات التفاهم مع إمارة موناكو"
+        },
         {
           "id": 1792300831105.363,
           "at": "2026-10-18T05:20:31.105Z",
