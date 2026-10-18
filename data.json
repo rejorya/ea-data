@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T09:17:51.394Z",
+  "exportedAt": "2026-10-18T09:18:13.484Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38791,16 +38791,37 @@
       "followStart": "2026-10-15",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "std14",
       "note": "نائب الرئيس\nللدراسة والافادة",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-18",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792315069286.0823
+      "recordId": 1792315069286.0823,
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -50498,6 +50519,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792315090584.5093,
+          "at": "2026-10-18T09:18:10.584Z",
+          "action": "إضافة متابعة",
+          "details": "شكوى وطلب إعادة النظر في موقع مشروع شركة الاستزراع السمكي الواقع بين منطقني الحد والجديمة بولاية جعلان بني بو حسن"
+        },
+        {
+          "id": 1792315090501.0762,
+          "at": "2026-10-18T09:18:10.501Z",
+          "action": "تعديل موضوع",
+          "details": "شكوى وطلب إعادة النظر في موقع مشروع شركة الاستزراع السمكي الواقع بين منطقني الحد والجديمة بولاية جعلان بني بو حسن"
+        },
         {
           "id": 1792315069354.3127,
           "at": "2026-10-18T09:17:49.354Z",
