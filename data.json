@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T06:33:31.358Z",
+  "exportedAt": "2026-10-18T06:35:01.415Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37894,7 +37894,7 @@
       "slaDays": 5,
       "kpi": "",
       "note": "نائب الرئيس\nللافادة خلال اسبوع",
-      "status": "new",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-10-15",
@@ -37912,11 +37912,28 @@
           "taqseem": "",
           "startDate": "2026-10-14",
           "daysSince": 1
+        },
+        {
+          "date": "2026-10-18",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 2
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792036471951.988,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "",
       "responseMethod": ""
     },
@@ -50106,6 +50123,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792305299327.85,
+          "at": "2026-10-18T06:34:59.327Z",
+          "action": "إضافة متابعة",
+          "details": "موقع أشجار الزيتون بمحافظة ظفار"
+        },
+        {
+          "id": 1792305299254.8552,
+          "at": "2026-10-18T06:34:59.254Z",
+          "action": "تعديل موضوع",
+          "details": "موقع أشجار الزيتون بمحافظة ظفار"
+        },
         {
           "id": 1792305209275.9353,
           "at": "2026-10-18T06:33:29.275Z",
