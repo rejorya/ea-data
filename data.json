@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T05:39:52.737Z",
+  "exportedAt": "2026-10-18T05:40:17.514Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38313,16 +38313,37 @@
       "followStart": "2026-10-15",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "rais",
       "slaDays": 10,
       "kpi": "",
       "note": "نائب الرئيس\nللافادة عن المواضيع التي تم التوجيه بها والواردة في الكشف المرفق خلال اسبوعين من تاريخه.",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-18",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792301991353.1262
+      "recordId": 1792301991353.1262,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -49742,6 +49763,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792302015419.3018,
+          "at": "2026-10-18T05:40:15.419Z",
+          "action": "إضافة متابعة",
+          "details": "اللقاء الدوري بين محافظة جنوب الشرقية وهيئة البيئة"
+        },
+        {
+          "id": 1792302015342.1086,
+          "at": "2026-10-18T05:40:15.342Z",
+          "action": "تعديل موضوع",
+          "details": "اللقاء الدوري بين محافظة جنوب الشرقية وهيئة البيئة"
+        },
         {
           "id": 1792301991419.6362,
           "at": "2026-10-18T05:39:51.420Z",
