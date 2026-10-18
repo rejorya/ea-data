@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T08:52:29.248Z",
+  "exportedAt": "2026-10-18T08:53:09.582Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38669,11 +38669,28 @@
           "taqseem": "",
           "startDate": "2026-10-14",
           "daysSince": 2
+        },
+        {
+          "date": "2026-10-18",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "1170/3/2022v422-49",
+          "note": "تم الرد على الجهه",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 2
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792313510785.3855,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "rais_depts",
       "raisDeptName": "مركز الطوارئ البيئية",
       "responseMethod": ""
@@ -50374,6 +50391,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792313587487.7368,
+          "at": "2026-10-18T08:53:07.487Z",
+          "action": "إضافة متابعة",
+          "details": "الاجتماع الثاني للجنة الوطنية لإدارة الحالات الطارئة لعام 2026م"
+        },
+        {
+          "id": 1792313587400.1555,
+          "at": "2026-10-18T08:53:07.400Z",
+          "action": "تعديل موضوع",
+          "details": "الاجتماع الثاني للجنة الوطنية لإدارة الحالات الطارئة لعام 2026م"
+        },
         {
           "id": 1792313547154.864,
           "at": "2026-10-18T08:52:27.154Z",
