@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T06:04:45.542Z",
+  "exportedAt": "2026-10-18T06:05:52.318Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38380,7 +38380,22 @@
       "type": "ext",
       "followScope": "external",
       "correspondenceDirection": "out",
-      "externalEntities": [],
+      "externalEntities": [
+        {
+          "id": 1792303526720.686,
+          "name": "جامعة مسقط",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        },
+        {
+          "id": 1792303540416.6895,
+          "name": "الجامعة العربية المفتوحة",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        }
+      ],
       "slaMode": "none",
       "slaDays": null,
       "kpi": "",
