@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-15T10:05:27.047Z",
+  "exportedAt": "2026-10-18T04:33:10.604Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -49492,6 +49492,33 @@
   ],
   "activityLog": [
     {
+      "id": "6f52f147-5e18-4532-b00e-a19391c95eb5",
+      "sessionId": "6f52f147-5e18-4532-b00e-a19391c95eb5",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-18T04:32:45.242Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null,
+      "central": true
+    },
+    {
       "id": "e9613723-08c7-41e7-b031-3799176f0831",
       "sessionId": "e9613723-08c7-41e7-b031-3799176f0831",
       "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
@@ -49540,9 +49567,9 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-15T03:49:16.309Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-15T10:10:27.624Z",
+      "duration": "381 دقيقة و 11 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
       "central": true,
       "actions": [
         {
@@ -49797,7 +49824,8 @@
           "action": "إضافة موضوع متابعة",
           "details": "موقع أشجار الزيتون بمحافظة ظفار"
         }
-      ]
+      ],
+      "durationMinutes": 381
     },
     {
       "id": "8eac1856-479b-44c7-b13a-0257e38e8a20",
