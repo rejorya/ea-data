@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T06:06:52.519Z",
+  "exportedAt": "2026-10-18T06:07:52.590Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38398,6 +38398,20 @@
         {
           "id": 1792303609607.4944,
           "name": "كلية الزهراء للبنات",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        },
+        {
+          "id": 1792303640720.975,
+          "name": "جامعة السلطان قابوس",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        },
+        {
+          "id": 1792303667647.9758,
+          "name": "جامعة التقنية والعلوم التطبيقية",
           "replied": false,
           "lastFollowDate": "",
           "responseMethod": ""
