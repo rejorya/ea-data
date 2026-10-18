@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T10:03:30.539Z",
+  "exportedAt": "2026-10-18T10:09:15.633Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38917,6 +38917,32 @@
       "followups": [],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792317807723.2139
+    },
+    {
+      "id": 1792318153547.3926,
+      "transactionType": "followup",
+      "title": "فرصة تعاون إعلامي مشترك لإبراز العمل البيئي الميداني في سلطنة عمان.pdf",
+      "from": "الشركة العمانية للاتصالات المستقبل",
+      "docNo": "",
+      "toEntity": "دائرة التواصل والاعلام",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-10-05",
+      "receivedFollowDate": "2026-10-18",
+      "followStart": "2026-10-05",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792318153547.3926
     }
   ],
   "archivedTopics": [
@@ -50614,6 +50640,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792318153591.9053,
+          "at": "2026-10-18T10:09:13.591Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "فرصة تعاون إعلامي مشترك لإبراز العمل البيئي الميداني في سلطنة عمان.pdf"
+        },
         {
           "id": 1792317807770.2803,
           "at": "2026-10-18T10:03:27.770Z",
