@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T04:33:10.604Z",
+  "exportedAt": "2026-10-18T04:48:13.065Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38066,6 +38066,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1792298890969.3813,
+      "transactionType": "followup",
+      "title": "هيئة البيئة",
+      "from": "اللجنة الوطنية لإدارة الحـالات الطارئة",
+      "docNo": "1170/3/2022v422-35",
+      "toEntity": "اللجنة الوطنية لإدارة الحـالات الطارئة",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-15",
+      "receivedFollowDate": "2026-10-18",
+      "followStart": "2026-10-15",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "تم التوجية للدائرة لمتابعة الجهه للاختصاص",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792298890969.3813
     }
   ],
   "archivedTopics": [
@@ -49516,7 +49542,15 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1792298891030.6956,
+          "at": "2026-10-18T04:48:11.030Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "هيئة البيئة"
+        }
+      ]
     },
     {
       "id": "e9613723-08c7-41e7-b031-3799176f0831",
