@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T10:09:15.633Z",
+  "exportedAt": "2026-10-18T10:09:37.539Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38933,16 +38933,37 @@
       "followStart": "2026-10-05",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "other",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-18",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 9
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792318153547.3926
+      "recordId": 1792318153547.3926,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -50640,6 +50661,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792318175051.1328,
+          "at": "2026-10-18T10:09:35.051Z",
+          "action": "إضافة متابعة",
+          "details": "فرصة تعاون إعلامي مشترك لإبراز العمل البيئي الميداني في سلطنة عمان.pdf"
+        },
+        {
+          "id": 1792318174966.5989,
+          "at": "2026-10-18T10:09:34.966Z",
+          "action": "تعديل موضوع",
+          "details": "فرصة تعاون إعلامي مشترك لإبراز العمل البيئي الميداني في سلطنة عمان.pdf"
+        },
         {
           "id": 1792318153591.9053,
           "at": "2026-10-18T10:09:13.591Z",
