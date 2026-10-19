@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-18T12:35:17.411Z",
+  "exportedAt": "2026-10-19T03:40:28.072Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -50635,6 +50635,32 @@
   ],
   "activityLog": [
     {
+      "id": 1792381193868.9187,
+      "sessionId": "dd3c12c5-33a9-4e3a-9c36-93917333c3a2",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-19T03:39:53.867Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": "ddd162a3-2123-4c68-aae2-5580d892c951",
       "sessionId": "ddd162a3-2123-4c68-aae2-5580d892c951",
       "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
@@ -50711,9 +50737,9 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-18T04:32:45.242Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-18T10:12:59.407Z",
+      "duration": "340 دقيقة و 14 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
       "central": true,
       "actions": [
         {
@@ -51112,7 +51138,8 @@
           "action": "إضافة موضوع متابعة",
           "details": "هيئة البيئة"
         }
-      ]
+      ],
+      "durationMinutes": 340
     },
     {
       "id": "e9613723-08c7-41e7-b031-3799176f0831",
