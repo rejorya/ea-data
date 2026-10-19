@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-19T04:12:28.180Z",
+  "exportedAt": "2026-10-19T04:19:11.175Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39136,6 +39136,32 @@
       "manualCount": 2,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1792383547376.8281,
+      "transactionType": "followup",
+      "title": "مسودة اللائحة التنظيمية بشان إدارة الزئبق ومركباته واستخداماته في سلطنة عُمان",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v422-59",
+      "toEntity": "وزارة الماليـــــــــــــــــــــــــــــــة",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-18",
+      "receivedFollowDate": "2026-10-19",
+      "followStart": "2026-10-18",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "\tتم التوجية للدائرة لمتابعة الجهه للاختصاص",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792383547376.8281
     }
   ],
   "archivedTopics": [
@@ -50832,6 +50858,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1792383547476.9604,
+          "at": "2026-10-19T04:19:07.476Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "مسودة اللائحة التنظيمية بشان إدارة الزئبق ومركباته واستخداماته في سلطنة عُمان"
+        },
         {
           "id": 1792383145294.7551,
           "at": "2026-10-19T04:12:25.294Z",
