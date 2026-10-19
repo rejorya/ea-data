@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-19T03:47:50.222Z",
+  "exportedAt": "2026-10-19T03:57:25.683Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38981,6 +38981,32 @@
       "manualCount": 2,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1792382243599.7314,
+      "transactionType": "followup",
+      "title": "إنشاء البرنامج الوطني لتعزيز بيئة الأعمال الجاذبة للاستثمار",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v422-54",
+      "toEntity": "الامانة العامة لمجلس الوزراء",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-18",
+      "receivedFollowDate": "2026-10-19",
+      "followStart": "2026-10-18",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792382243599.7314
     }
   ],
   "archivedTopics": [
@@ -50677,6 +50703,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1792382243647.492,
+          "at": "2026-10-19T03:57:23.647Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "إنشاء البرنامج الوطني لتعزيز بيئة الأعمال الجاذبة للاستثمار"
+        },
         {
           "id": 1792381667546.4707,
           "at": "2026-10-19T03:47:47.546Z",
