@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-19T05:14:14.411Z",
+  "exportedAt": "2026-10-19T10:02:26.205Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38378,7 +38378,7 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "",
-      "status": "new",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-10-18",
@@ -38396,11 +38396,28 @@
           "taqseem": "",
           "startDate": "2026-10-15",
           "daysSince": 1
+        },
+        {
+          "date": "2026-10-19",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 2
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792299343634.1763,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "rais_depts",
       "raisDeptName": "دائرة التواصل والاعلام",
       "responseMethod": ""
@@ -50990,6 +51007,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1792404143297.8442,
+          "at": "2026-10-19T10:02:23.297Z",
+          "action": "إضافة متابعة",
+          "details": "طلب إحاطة بالاجندة والاحداث الاتصالية لعام 2027م"
+        },
+        {
+          "id": 1792404143210.7417,
+          "at": "2026-10-19T10:02:23.210Z",
+          "action": "تعديل موضوع",
+          "details": "طلب إحاطة بالاجندة والاحداث الاتصالية لعام 2027م"
+        },
         {
           "id": 1792386852216.577,
           "at": "2026-10-19T05:14:12.216Z",
