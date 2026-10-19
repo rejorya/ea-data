@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-19T04:19:44.304Z",
+  "exportedAt": "2026-10-19T04:43:34.796Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39183,6 +39183,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1792385012648.0798,
+      "transactionType": "followup",
+      "title": "استضافة مؤتمر الأطراف في اتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v422-58",
+      "toEntity": "الأمانة العامة لمجلس الوزراء",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "secret",
+      "date": "2026-10-18",
+      "receivedFollowDate": "2026-10-19",
+      "followStart": "2026-10-18",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792385012648.0798
     }
   ],
   "archivedTopics": [
@@ -50879,6 +50905,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1792385012749.8274,
+          "at": "2026-10-19T04:43:32.749Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "استضافة مؤتمر الأطراف في اتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ"
+        },
         {
           "id": 1792383582121.7434,
           "at": "2026-10-19T04:19:42.121Z",
