@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-19T05:03:49.959Z",
+  "exportedAt": "2026-10-19T05:14:14.411Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39268,11 +39268,32 @@
       "slaMode": "none",
       "slaDays": null,
       "kpi": "",
-      "note": "تم التوجية للدائرة لمتابعة الجهه للاختصاص\t",
+      "note": "تم التوجية للتقسيم لمتابعة الجهه للاختصاص\t",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-19",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التوجية للتقسيم لمتابعة الجهه للاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-18",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792386228574.0208
+      "recordId": 1792386228574.0208,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -50969,6 +50990,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1792386852216.577,
+          "at": "2026-10-19T05:14:12.216Z",
+          "action": "إضافة متابعة",
+          "details": "مذكرة تفاهم بين هيئة البيئة بسلطنة عُمان والصندوق الدولي للرفق بالحيوان الشرق الأوسط وشمال أفريقيا - (IFAW)"
+        },
+        {
+          "id": 1792386852125.7588,
+          "at": "2026-10-19T05:14:12.125Z",
+          "action": "تعديل موضوع",
+          "details": "مذكرة تفاهم بين هيئة البيئة بسلطنة عُمان والصندوق الدولي للرفق بالحيوان الشرق الأوسط وشمال أفريقيا - (IFAW)"
+        },
         {
           "id": 1792386228678.8523,
           "at": "2026-10-19T05:03:48.678Z",
