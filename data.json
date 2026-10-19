@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-19T10:02:26.205Z",
+  "exportedAt": "2026-10-19T10:04:10.876Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35255,11 +35255,11 @@
       "followScope": "external",
       "correspondenceDirection": "out",
       "externalEntities": [],
-      "slaMode": "kpi",
+      "slaMode": "none",
       "slaDays": null,
       "kpi": "",
       "note": "تم التوجية للتقسيم للاختصاص ",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-06",
@@ -35277,13 +35277,31 @@
           "taqseem": "",
           "startDate": "2026-10-04",
           "daysSince": 2
+        },
+        {
+          "date": "2026-10-19",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "1170/3/2022v422-70",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 11
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791267750186.4849,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-10-19"
     },
     {
       "id": 1791267972601.019,
@@ -45319,6 +45337,75 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-10-18T08:40:36.271Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1791267750186.4849,
+      "transactionType": "followup",
+      "title": "(MARS) ترشيح نقطة اتصال لنظام الإنذار والاستجابة لانبعاثات الميثان",
+      "from": "مكتب الرئيس",
+      "docNo": "1170/3/2022v421-3",
+      "toEntity": "الشركــــــــــة العمانيــــــــة القابضــــــة لخدمـــــات البيئــة (بيئـة)",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-04",
+      "receivedFollowDate": "2026-10-05",
+      "followStart": "2026-10-04",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "تم التوجية للتقسيم للاختصاص ",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-06",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التوجية للتقسيم للاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-10-19",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "1170/3/2022v422-70",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 11
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791267750186.4849,
+      "manualCount": 2,
+      "followEntity": "",
+      "responseMethod": "",
+      "closedAt": "2026-10-19",
+      "archivedAt": "2026-10-19T10:04:08.698Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-10-19T10:04:08.698Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -51007,6 +51094,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1792404248663.1448,
+          "at": "2026-10-19T10:04:08.663Z",
+          "action": "إضافة متابعة",
+          "details": "(MARS) ترشيح نقطة اتصال لنظام الإنذار والاستجابة لانبعاثات الميثان"
+        },
+        {
+          "id": 1792404248575.3477,
+          "at": "2026-10-19T10:04:08.575Z",
+          "action": "تعديل موضوع",
+          "details": "(MARS) ترشيح نقطة اتصال لنظام الإنذار والاستجابة لانبعاثات الميثان"
+        },
         {
           "id": 1792404143297.8442,
           "at": "2026-10-19T10:02:23.297Z",
