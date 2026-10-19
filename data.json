@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-19T04:03:20.027Z",
+  "exportedAt": "2026-10-19T04:04:12.142Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39040,16 +39040,38 @@
       "followStart": "2026-10-18",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "other",
       "note": "نائب الرئيس\nالتعاون الدولي\nمكتب الرئيس\nاولا للنظر في ملاحظات الشركة ومدى امكانية الاخذ بها وكذلك مدى امكانية اضافة اعضاء من هذه الشركة والقطاع الخاص ضمن الفريق التفاوضي\n\nثانيا لوضع حوكمة للاجتماع مع الشركات المختصة من قبل المديريات التخصصية قبل كل تفاوض لاتفاقية دولية واخذ مرئياتهم واضافة ممثلي عنهم في الفرق التفاوضية \nورفع الحوكمة الينا للاعتماد",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-19",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_and_rais",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-18",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792382597915.7302
+      "recordId": 1792382597915.7302,
+      "manualCount": 1,
+      "followEntity": "naib_and_rais",
+      "raisDeptName": "دائرة التعاون الدولي",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -50746,6 +50768,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1792382649860.4182,
+          "at": "2026-10-19T04:04:09.860Z",
+          "action": "إضافة متابعة",
+          "details": "تقديم مستندات بشأن مراجعة اتفاقية  بازل في مجال  المنسجوجات"
+        },
+        {
+          "id": 1792382649780.9766,
+          "at": "2026-10-19T04:04:09.780Z",
+          "action": "تعديل موضوع",
+          "details": "تقديم مستندات بشأن مراجعة اتفاقية  بازل في مجال  المنسجوجات"
+        },
         {
           "id": 1792382597995.738,
           "at": "2026-10-19T04:03:17.995Z",
