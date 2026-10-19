@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-19T04:59:41.230Z",
+  "exportedAt": "2026-10-19T05:03:49.959Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39247,6 +39247,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1792386228574.0208,
+      "transactionType": "followup",
+      "title": "مذكرة تفاهم بين هيئة البيئة بسلطنة عُمان والصندوق الدولي للرفق بالحيوان الشرق الأوسط وشمال أفريقيا - (IFAW)",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v422-61",
+      "toEntity": "الأمانة العامة لمجلس الوزراء",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-10-18",
+      "receivedFollowDate": "2026-10-19",
+      "followStart": "2026-10-18",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "تم التوجية للدائرة لمتابعة الجهه للاختصاص\t",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792386228574.0208
     }
   ],
   "archivedTopics": [
@@ -50943,6 +50969,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1792386228678.8523,
+          "at": "2026-10-19T05:03:48.678Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "مذكرة تفاهم بين هيئة البيئة بسلطنة عُمان والصندوق الدولي للرفق بالحيوان الشرق الأوسط وشمال أفريقيا - (IFAW)"
+        },
         {
           "id": 1792385978180.6316,
           "at": "2026-10-19T04:59:38.180Z",
