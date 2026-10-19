@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-19T04:04:12.142Z",
+  "exportedAt": "2026-10-19T04:11:13.796Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39072,6 +39072,32 @@
       "followEntity": "naib_and_rais",
       "raisDeptName": "دائرة التعاون الدولي",
       "responseMethod": ""
+    },
+    {
+      "id": 1792383068900.3394,
+      "transactionType": "followup",
+      "title": "إيفاد خبير  مختص من الوكالة الدولية للطاقة الذرية في مجال الإدارة الشاملة للنفايات المشعة والمصادر الخارجة عن الرقابة",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v422-55",
+      "toEntity": "وزارة الخارجية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-10-18",
+      "receivedFollowDate": "2026-10-19",
+      "followStart": "2026-10-18",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "تم التوجيه للتقسيم للاختصاص للمتابعة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792383068900.3394
     }
   ],
   "archivedTopics": [
@@ -50768,6 +50794,12 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1792383069011.3718,
+          "at": "2026-10-19T04:11:09.011Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "إيفاد خبير  مختص من الوكالة الدولية للطاقة الذرية في مجال الإدارة الشاملة للنفايات المشعة والمصادر الخارجة عن الرقابة"
+        },
         {
           "id": 1792382649860.4182,
           "at": "2026-10-19T04:04:09.860Z",
