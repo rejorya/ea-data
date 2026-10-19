@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-19T04:11:13.796Z",
+  "exportedAt": "2026-10-19T04:11:44.478Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39095,9 +39095,30 @@
       "kpi": "",
       "note": "تم التوجيه للتقسيم للاختصاص للمتابعة",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-19",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-18",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792383068900.3394
+      "recordId": 1792383068900.3394,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -50794,6 +50815,18 @@
       "duration": null,
       "logoutReason": null,
       "actions": [
+        {
+          "id": 1792383102294.5886,
+          "at": "2026-10-19T04:11:42.294Z",
+          "action": "إضافة متابعة",
+          "details": "إيفاد خبير  مختص من الوكالة الدولية للطاقة الذرية في مجال الإدارة الشاملة للنفايات المشعة والمصادر الخارجة عن الرقابة"
+        },
+        {
+          "id": 1792383102216.3992,
+          "at": "2026-10-19T04:11:42.216Z",
+          "action": "تعديل موضوع",
+          "details": "إيفاد خبير  مختص من الوكالة الدولية للطاقة الذرية في مجال الإدارة الشاملة للنفايات المشعة والمصادر الخارجة عن الرقابة"
+        },
         {
           "id": 1792383069011.3718,
           "at": "2026-10-19T04:11:09.011Z",
