@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-20T03:18:16.523Z",
+  "exportedAt": "2026-10-20T03:27:30.872Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38800,16 +38800,37 @@
       "followStart": "2026-10-15",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "gov5",
       "note": "",
-      "status": "new",
-      "followups": [],
+      "status": "open",
+      "followups": [
+        {
+          "date": "2026-10-20",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 3
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792313744843.7825
+      "recordId": 1792313744843.7825,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     },
     {
       "id": 1792314059273.9287,
@@ -51093,7 +51114,21 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1792466848704.9363,
+          "at": "2026-10-20T03:27:28.704Z",
+          "action": "إضافة متابعة",
+          "details": "تفعيل اللجنة الوطنية لإدارة الحالات الطارئة لإدارة حادثة جنوح ناقلة النفط"
+        },
+        {
+          "id": 1792466848633.2925,
+          "at": "2026-10-20T03:27:28.633Z",
+          "action": "تعديل موضوع",
+          "details": "تفعيل اللجنة الوطنية لإدارة الحالات الطارئة لإدارة حادثة جنوح ناقلة النفط"
+        }
+      ]
     },
     {
       "id": 1792466284439.1763,
