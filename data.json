@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-20T03:51:54.645Z",
+  "exportedAt": "2026-10-20T04:03:19.658Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37809,11 +37809,29 @@
       "slaDays": 10,
       "kpi": "",
       "note": "شكرا لكم \nالدكتورة ثريا \nلوضع تصور حول مواطن الاستفادة من المبادرة بالتنسيق مع التعاون الدولي والغطاء النباتي ورفعها الينا خلال اسبوعين",
-      "status": "new",
-      "followups": [],
+      "status": "open",
+      "followups": [
+        {
+          "date": "2026-10-20",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 4
+        }
+      ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791955959293.3992,
-      "manualCount": 0,
+      "manualCount": 1,
       "followEntity": "rais_depts",
       "raisDeptName": "مستشارة الرئيس لصون الطبيعة",
       "responseMethod": ""
@@ -51238,6 +51256,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792468997473.3582,
+          "at": "2026-10-20T04:03:17.473Z",
+          "action": "إضافة متابعة",
+          "details": "محضر اجتماع اللجنة التنفيذية لمبادرة الشرق الأوسط الخضراء"
+        },
+        {
+          "id": 1792468997405.3635,
+          "at": "2026-10-20T04:03:17.405Z",
+          "action": "تعديل موضوع",
+          "details": "محضر اجتماع اللجنة التنفيذية لمبادرة الشرق الأوسط الخضراء"
+        },
         {
           "id": 1792468312467.3472,
           "at": "2026-10-20T03:51:52.467Z",
