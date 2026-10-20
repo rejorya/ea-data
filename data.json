@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-20T04:47:05.972Z",
+  "exportedAt": "2026-10-20T04:51:39.051Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38998,16 +38998,38 @@
       "followStart": "2026-10-05",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "gov5",
       "note": "يجب وضع مواعيد زمنية لتحقيق المستهدفات",
-      "status": "new",
-      "followups": [],
+      "status": "open",
+      "followups": [
+        {
+          "date": "2026-10-20",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 11
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792314346297.8635
+      "recordId": 1792314346297.8635,
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "فريق التحول الرقمي",
+      "responseMethod": ""
     },
     {
       "id": 1792315069286.0823,
@@ -51307,6 +51329,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792471896872.0884,
+          "at": "2026-10-20T04:51:36.872Z",
+          "action": "إضافة متابعة",
+          "details": "تسريع استكمال مستهدف رقمنة الخدمات الحكومية ذات الأولوية"
+        },
+        {
+          "id": 1792471896809.9617,
+          "at": "2026-10-20T04:51:36.809Z",
+          "action": "تعديل موضوع",
+          "details": "تسريع استكمال مستهدف رقمنة الخدمات الحكومية ذات الأولوية"
+        },
         {
           "id": 1792471623785.0303,
           "at": "2026-10-20T04:47:03.785Z",
