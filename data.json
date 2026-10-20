@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-20T03:34:55.596Z",
+  "exportedAt": "2026-10-20T03:35:57.551Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38064,7 +38064,7 @@
       "slaDays": 5,
       "kpi": "",
       "note": "نائب الرئيس\nللافادة خلال اسبوع",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-15",
@@ -38105,7 +38105,8 @@
       "recordId": 1792036471951.988,
       "manualCount": 2,
       "followEntity": "",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-10-20"
     },
     {
       "id": 1792036878531.1294,
@@ -45462,6 +45463,75 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-10-19T10:04:08.698Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1792036471951.988,
+      "transactionType": "followup",
+      "title": "موقع أشجار الزيتون بمحافظة ظفار",
+      "from": "وزارة الاسكان والتخطيط العمراني",
+      "docNo": "1170/3/2022v422-5",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "secret",
+      "date": "2026-10-13",
+      "receivedFollowDate": "2026-10-14",
+      "followStart": "2026-10-14",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "rais",
+      "slaDays": 5,
+      "kpi": "",
+      "note": "نائب الرئيس\nللافادة خلال اسبوع",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-15",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-10-18",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 2
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792036471951.988,
+      "manualCount": 2,
+      "followEntity": "",
+      "responseMethod": "",
+      "closedAt": "2026-10-20",
+      "archivedAt": "2026-10-20T03:35:55.393Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-10-20T03:35:55.393Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -51151,6 +51221,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792467355363.9236,
+          "at": "2026-10-20T03:35:55.363Z",
+          "action": "تعديل موضوع",
+          "details": "موقع أشجار الزيتون بمحافظة ظفار"
+        },
         {
           "id": 1792467293439.3928,
           "at": "2026-10-20T03:34:53.439Z",
