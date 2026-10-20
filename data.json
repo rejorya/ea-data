@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-20T05:30:59.565Z",
+  "exportedAt": "2026-10-20T06:46:28.111Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38347,12 +38347,29 @@
           "taqseem": "",
           "startDate": "2026-10-14",
           "daysSince": 1
+        },
+        {
+          "date": "2026-10-20",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "0",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "سيتم موافاتكم بنسخة من الخطاب من قبل المديريه العامة بظفار",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 4
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792037499271.1155,
-      "manualCount": 1,
-      "followEntity": "",
+      "manualCount": 2,
+      "followEntity": "naib_office",
       "responseMethod": ""
     },
     {
@@ -51363,6 +51380,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792478785909.6099,
+          "at": "2026-10-20T06:46:25.909Z",
+          "action": "إضافة متابعة",
+          "details": "نقل خدمات الموظف نمر بن سالم بن سهيل مسن الكثيري"
+        },
+        {
+          "id": 1792478785825.4119,
+          "at": "2026-10-20T06:46:25.825Z",
+          "action": "تعديل موضوع",
+          "details": "نقل خدمات الموظف نمر بن سالم بن سهيل مسن الكثيري"
+        },
         {
           "id": 1792474257392.205,
           "at": "2026-10-20T05:30:57.392Z",
