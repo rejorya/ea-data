@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-19T10:12:26.523Z",
+  "exportedAt": "2026-10-20T03:18:09.267Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -51069,6 +51069,32 @@
   ],
   "activityLog": [
     {
+      "id": 1792466284439.1763,
+      "sessionId": "81594709-b46c-439c-b8c8-83dbe245b339",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-20T03:18:04.438Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": 1792381193868.9187,
       "sessionId": "dd3c12c5-33a9-4e3a-9c36-93917333c3a2",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -51090,9 +51116,9 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-19T03:39:53.867Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-19T10:19:49.313Z",
+      "duration": "399 دقيقة و 55 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
       "actions": [
         {
           "id": 1792404744319.6067,
@@ -51268,7 +51294,8 @@
           "action": "تعديل موضوع",
           "details": "فرصة تعاون إعلامي مشترك لإبراز العمل البيئي الميداني في سلطنة عمان.pdf"
         }
-      ]
+      ],
+      "durationMinutes": 399
     },
     {
       "id": "ddd162a3-2123-4c68-aae2-5580d892c951",
