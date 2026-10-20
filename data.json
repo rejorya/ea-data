@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-20T03:32:53.807Z",
+  "exportedAt": "2026-10-20T03:34:55.596Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37744,7 +37744,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "الدكتورة مديرة الاستدامة البيئية\nللقاء مع مقدم الطلب والافادة حول دور الهيئة هل هي راعية ومشرفة ام ان هناك جهات اخرى؟ وغير ذلك من التفاصيل",
-      "status": "new",
+      "status": "open",
       "followups": [
         {
           "date": "2026-10-14",
@@ -37762,11 +37762,28 @@
           "taqseem": "",
           "startDate": "2026-10-14",
           "daysSince": 0
+        },
+        {
+          "date": "2026-10-20",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 4
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791955071143.7434,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "rais_depts",
       "raisDeptName": "مدير مختص بالاستدامة",
       "responseMethod": ""
@@ -51134,6 +51151,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792467293439.3928,
+          "at": "2026-10-20T03:34:53.439Z",
+          "action": "إضافة متابعة",
+          "details": "دعوة للدعم الاستراتيجي والمشاركة  المنتدى التنفيذي للمعادن الحيوية والاقتصاد الدائري في سلطنة عمان"
+        },
+        {
+          "id": 1792467293376.4,
+          "at": "2026-10-20T03:34:53.376Z",
+          "action": "تعديل موضوع",
+          "details": "دعوة للدعم الاستراتيجي والمشاركة  المنتدى التنفيذي للمعادن الحيوية والاقتصاد الدائري في سلطنة عمان"
+        },
         {
           "id": 1792467152802.3389,
           "at": "2026-10-20T03:32:32.802Z",
