@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-20T06:46:28.111Z",
+  "exportedAt": "2026-10-20T06:55:43.467Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35388,11 +35388,28 @@
           "taqseem": "",
           "startDate": "2026-10-04",
           "daysSince": 12
+        },
+        {
+          "date": "2026-10-20",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "الهيئة العامة للمناطق الاقتصادية 1170/3/2022v422-83\nالهيئة العامة للدفاع المدني والاسعاف  1170/3/2022v422-79",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 12
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791267972601.019,
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "other",
       "otherEntityName": "",
       "responseMethod": ""
@@ -51380,6 +51397,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792479341279.01,
+          "at": "2026-10-20T06:55:41.279Z",
+          "action": "إضافة متابعة",
+          "details": "المعسكر السنوي للرقابة والتفتيش البيئي"
+        },
+        {
+          "id": 1792479341186.5647,
+          "at": "2026-10-20T06:55:41.187Z",
+          "action": "تعديل موضوع",
+          "details": "المعسكر السنوي للرقابة والتفتيش البيئي"
+        },
         {
           "id": 1792478785909.6099,
           "at": "2026-10-20T06:46:25.909Z",
