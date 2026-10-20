@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-20T04:10:02.843Z",
+  "exportedAt": "2026-10-20T04:47:05.972Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35349,11 +35349,11 @@
           "responseMethod": ""
         }
       ],
-      "slaMode": "kpi",
+      "slaMode": "none",
       "slaDays": null,
       "kpi": "",
       "note": "",
-      "status": "new",
+      "status": "open",
       "followups": [
         {
           "date": "2026-10-06",
@@ -35371,13 +35371,30 @@
           "taqseem": "",
           "startDate": "2026-10-04",
           "daysSince": 2
+        },
+        {
+          "date": "2026-10-20",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "1170/3/2022v422-79",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 12
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791267972601.019,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "other",
-      "otherEntityName": "هيئة الدفاع المدني والاسعاف",
+      "otherEntityName": "",
       "responseMethod": ""
     },
     {
@@ -51290,6 +51307,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792471623785.0303,
+          "at": "2026-10-20T04:47:03.785Z",
+          "action": "إضافة متابعة",
+          "details": "المعسكر السنوي للرقابة والتفتيش البيئي"
+        },
+        {
+          "id": 1792471623722.4148,
+          "at": "2026-10-20T04:47:03.722Z",
+          "action": "تعديل موضوع",
+          "details": "المعسكر السنوي للرقابة والتفتيش البيئي"
+        },
         {
           "id": 1792469400669.7874,
           "at": "2026-10-20T04:10:00.669Z",
