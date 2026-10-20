@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-20T03:27:30.872Z",
+  "exportedAt": "2026-10-20T03:29:49.312Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38853,11 +38853,29 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "",
-      "status": "new",
-      "followups": [],
+      "status": "awaiting",
+      "followups": [
+        {
+          "date": "2026-10-20",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-18",
+          "daysSince": 2
+        }
+      ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792314059273.9287,
-      "manualCount": 0,
+      "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
     },
@@ -51116,6 +51134,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792466987126.008,
+          "at": "2026-10-20T03:29:47.126Z",
+          "action": "إضافة متابعة",
+          "details": "مشروع مذكرة تفاهم بين هيئة البيئة في سلطنة عُمان واللجنة الوطنية للبيئة وتغير المناخ في جمهورية أوزبكستان في مجال الشؤون البيئية.pdf"
+        },
+        {
+          "id": 1792466987058.9324,
+          "at": "2026-10-20T03:29:47.058Z",
+          "action": "تعديل موضوع",
+          "details": "مشروع مذكرة تفاهم بين هيئة البيئة في سلطنة عُمان واللجنة الوطنية للبيئة وتغير المناخ في جمهورية أوزبكستان في مجال الشؤون البيئية.pdf"
+        },
         {
           "id": 1792466848704.9363,
           "at": "2026-10-20T03:27:28.704Z",
