@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-20T04:03:19.658Z",
+  "exportedAt": "2026-10-20T04:08:32.082Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37341,11 +37341,28 @@
           "taqseem": "",
           "startDate": "2026-10-11",
           "daysSince": 6
+        },
+        {
+          "date": "2026-10-20",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-11",
+          "daysSince": 7
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791692389542.4265,
-      "manualCount": 5,
+      "manualCount": 6,
       "followEntity": "rais_depts",
       "raisDeptName": "مكتب متابعة تنفيذ رؤية عمان 2040",
       "responseMethod": "",
@@ -51256,6 +51273,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792469310933.7544,
+          "at": "2026-10-20T04:08:30.933Z",
+          "action": "إضافة متابعة",
+          "details": "إعتماد مخرجات مشروع تصميم وتطوير وتنظيف وإنشاء مرافق في منتزه خور صيناق في محمية جبل سمحان"
+        },
+        {
+          "id": 1792469310870.2378,
+          "at": "2026-10-20T04:08:30.870Z",
+          "action": "تعديل موضوع",
+          "details": "إعتماد مخرجات مشروع تصميم وتطوير وتنظيف وإنشاء مرافق في منتزه خور صيناق في محمية جبل سمحان"
+        },
         {
           "id": 1792468997473.3582,
           "at": "2026-10-20T04:03:17.473Z",
