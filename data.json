@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-22T04:16:35.268Z",
+  "exportedAt": "2026-10-22T04:37:47.397Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35425,11 +35425,28 @@
           "taqseem": "",
           "startDate": "2026-10-04",
           "daysSince": 12
+        },
+        {
+          "date": "2026-10-21",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "0",
+          "note": "وزارة الطاقة والمعادن 1170/3/2022v422-92",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 13
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791267972601.019,
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "other",
       "otherEntityName": "",
       "responseMethod": ""
@@ -51819,6 +51836,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792643865303.202,
+          "at": "2026-10-22T04:37:45.303Z",
+          "action": "إضافة متابعة",
+          "details": "المعسكر السنوي للرقابة والتفتيش البيئي"
+        },
+        {
+          "id": 1792643865217.6619,
+          "at": "2026-10-22T04:37:45.217Z",
+          "action": "تعديل موضوع",
+          "details": "المعسكر السنوي للرقابة والتفتيش البيئي"
+        },
         {
           "id": 1792642593175.6719,
           "at": "2026-10-22T04:16:33.175Z",
