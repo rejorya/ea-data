@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-22T04:07:08.896Z",
+  "exportedAt": "2026-10-22T04:10:43.078Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39674,6 +39674,32 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1792642239465.2756,
+      "transactionType": "followup",
+      "title": "الموافقة على اختيار الشريك المنفذ لمشروع الجاهزية الخاص بمركز عُمان للحياد الصفري.pdf",
+      "from": "وزارة الطاقة والمعادن",
+      "docNo": "1170/3/2022v422-81",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "secret",
+      "date": "2026-10-20",
+      "receivedFollowDate": "2026-10-21",
+      "followStart": "2026-10-21",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792642239465.2756
     }
   ],
   "archivedTopics": [
@@ -51596,6 +51622,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792642239538.144,
+          "at": "2026-10-22T04:10:39.538Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "الموافقة على اختيار الشريك المنفذ لمشروع الجاهزية الخاص بمركز عُمان للحياد الصفري.pdf"
+        },
         {
           "id": 1792642026175.8958,
           "at": "2026-10-22T04:07:06.175Z",
