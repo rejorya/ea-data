@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-22T03:52:13.774Z",
+  "exportedAt": "2026-10-22T03:55:53.193Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38896,7 +38896,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "ملاحظة \nتكليف هيئة البيئة باعداد تقرير عن حجم الاضرار البيئية من جراء التلوث وكلف التاهيل\n\nنائب الرئيس\nمركز الطوارئ\nلوضع نطاق عمل لحصر الاضرار ورفعه للاعتماد لتطرح كمناقصة لتقييم حجم الضرر البيئي وكلفته",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-18",
@@ -38931,14 +38931,32 @@
           "taqseem": "",
           "startDate": "2026-10-14",
           "daysSince": 2
+        },
+        {
+          "date": "2026-10-20",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "0",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "تم توجيه الافادة الى مدير المكتب",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 4
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792313510785.3855,
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "rais_depts",
       "raisDeptName": "مركز الطوارئ البيئية",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-10-22"
     },
     {
       "id": 1792313744843.7825,
@@ -45708,6 +45726,93 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-10-20T03:35:55.393Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1792313510785.3855,
+      "transactionType": "followup",
+      "title": "الاجتماع الثاني للجنة الوطنية لإدارة الحالات الطارئة لعام 2026م",
+      "from": "المركز الوطنبي لإدارة الحالات الطارئة",
+      "docNo": "1170/3/2022v421-80",
+      "toEntity": "مركز الطوارئ البيئية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-12",
+      "receivedFollowDate": "2026-10-15",
+      "followStart": "2026-10-14",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "ملاحظة \nتكليف هيئة البيئة باعداد تقرير عن حجم الاضرار البيئية من جراء التلوث وكلف التاهيل\n\nنائب الرئيس\nمركز الطوارئ\nلوضع نطاق عمل لحصر الاضرار ورفعه للاعتماد لتطرح كمناقصة لتقييم حجم الضرر البيئي وكلفته",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-18",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-10-18",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "1170/3/2022v422-49",
+          "note": "تم الرد على الجهه",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-10-20",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "0",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "تم توجيه الافادة الى مدير المكتب",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 4
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792313510785.3855,
+      "manualCount": 3,
+      "followEntity": "rais_depts",
+      "raisDeptName": "مركز الطوارئ البيئية",
+      "responseMethod": "",
+      "closedAt": "2026-10-22",
+      "archivedAt": "2026-10-22T03:55:51.037Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-10-22T03:55:51.037Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -51395,7 +51500,21 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1792641351005.919,
+          "at": "2026-10-22T03:55:51.005Z",
+          "action": "إضافة متابعة",
+          "details": "الاجتماع الثاني للجنة الوطنية لإدارة الحالات الطارئة لعام 2026م"
+        },
+        {
+          "id": 1792641350924.3992,
+          "at": "2026-10-22T03:55:50.924Z",
+          "action": "تعديل موضوع",
+          "details": "الاجتماع الثاني للجنة الوطنية لإدارة الحالات الطارئة لعام 2026م"
+        }
+      ]
     },
     {
       "id": "ca8fb392-285b-4bb9-80d0-fa28aed22d10",
