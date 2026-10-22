@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-20T10:02:00.509Z",
+  "exportedAt": "2026-10-22T03:52:13.774Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37190,7 +37190,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
-      "status": "awaiting_div",
+      "status": "ready_esc",
       "followups": [
         {
           "date": "2026-10-11",
@@ -51371,6 +51371,33 @@
   ],
   "activityLog": [
     {
+      "id": "50b398ca-8f53-4b72-810b-248fa4484df2",
+      "sessionId": "50b398ca-8f53-4b72-810b-248fa4484df2",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-22T03:52:01.841Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null,
+      "central": true
+    },
+    {
       "id": "ca8fb392-285b-4bb9-80d0-fa28aed22d10",
       "sessionId": "ca8fb392-285b-4bb9-80d0-fa28aed22d10",
       "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
@@ -51419,9 +51446,9 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-20T03:18:04.438Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-20T10:02:10.231Z",
+      "duration": "404 دقيقة و 5 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
       "central": true,
       "actions": [
         {
@@ -51652,7 +51679,8 @@
           "action": "تعديل موضوع",
           "details": "تفعيل اللجنة الوطنية لإدارة الحالات الطارئة لإدارة حادثة جنوح ناقلة النفط"
         }
-      ]
+      ],
+      "durationMinutes": 404
     },
     {
       "id": 1792466284439.1763,
