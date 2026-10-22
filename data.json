@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-22T03:58:59.108Z",
+  "exportedAt": "2026-10-22T04:00:06.897Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39591,9 +39591,9 @@
       "taqseemName": "",
       "priority": "normal",
       "confidentiality": "secret",
-      "date": "2026-10-22",
-      "receivedFollowDate": "2026-10-22",
-      "followStart": "",
+      "date": "2026-10-20",
+      "receivedFollowDate": "2026-10-21",
+      "followStart": "2026-10-20",
       "type": "ext",
       "followScope": "external",
       "correspondenceDirection": "out",
@@ -39603,9 +39603,30 @@
       "kpi": "",
       "note": "تم التوجيه للتقسيم للاختصاص للمتابعة",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-22",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التوجيه للتقسيم للاختصاص للمتابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-20",
+          "daysSince": 2
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792641536961.8887
+      "recordId": 1792641536961.8887,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -51528,6 +51549,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792641604438.83,
+          "at": "2026-10-22T04:00:04.438Z",
+          "action": "إضافة متابعة",
+          "details": "طلب تحديد مواقع وأعداد الأشجار القابلة للاستزراع في المعسكرات والقواعد العسكرية"
+        },
+        {
+          "id": 1792641604347.8738,
+          "at": "2026-10-22T04:00:04.347Z",
+          "action": "تعديل موضوع",
+          "details": "طلب تحديد مواقع وأعداد الأشجار القابلة للاستزراع في المعسكرات والقواعد العسكرية"
+        },
         {
           "id": 1792641537061.9458,
           "at": "2026-10-22T03:58:57.061Z",
