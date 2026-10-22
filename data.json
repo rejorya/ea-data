@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-22T04:00:06.897Z",
+  "exportedAt": "2026-10-22T04:06:49.806Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39627,6 +39627,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1792642006090.6187,
+      "transactionType": "followup",
+      "title": "تعيين منسق وطني لأداة التقييم الذاتي لمؤشرات المصادر المشعة المختومة المهملةـ- DSRS",
+      "from": "وزارة الخارجية",
+      "docNo": "1170/3/2022v422-87",
+      "toEntity": "",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-20",
+      "receivedFollowDate": "2026-10-22",
+      "followStart": "2026-10-21",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792642006090.6187
     }
   ],
   "archivedTopics": [
@@ -51549,6 +51575,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792642006138.507,
+          "at": "2026-10-22T04:06:46.138Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "تعيين منسق وطني لأداة التقييم الذاتي لمؤشرات المصادر المشعة المختومة المهملةـ- DSRS"
+        },
         {
           "id": 1792641604438.83,
           "at": "2026-10-22T04:00:04.438Z",
