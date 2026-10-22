@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-22T04:10:43.078Z",
+  "exportedAt": "2026-10-22T04:11:06.316Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39690,16 +39690,37 @@
       "followStart": "2026-10-21",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-22",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-21",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792642239465.2756
+      "recordId": 1792642239465.2756,
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -51622,6 +51643,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792642264121.5881,
+          "at": "2026-10-22T04:11:04.121Z",
+          "action": "إضافة متابعة",
+          "details": "الموافقة على اختيار الشريك المنفذ لمشروع الجاهزية الخاص بمركز عُمان للحياد الصفري.pdf"
+        },
+        {
+          "id": 1792642264046.0305,
+          "at": "2026-10-22T04:11:04.046Z",
+          "action": "تعديل موضوع",
+          "details": "الموافقة على اختيار الشريك المنفذ لمشروع الجاهزية الخاص بمركز عُمان للحياد الصفري.pdf"
+        },
         {
           "id": 1792642239538.144,
           "at": "2026-10-22T04:10:39.538Z",
