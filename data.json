@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-22T03:55:53.193Z",
+  "exportedAt": "2026-10-22T03:58:59.108Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39580,6 +39580,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1792641536961.8887,
+      "transactionType": "followup",
+      "title": "طلب تحديد مواقع وأعداد الأشجار القابلة للاستزراع في المعسكرات والقواعد العسكرية",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v422-86",
+      "toEntity": "وزارة الدفاع",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-10-22",
+      "receivedFollowDate": "2026-10-22",
+      "followStart": "",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "تم التوجيه للتقسيم للاختصاص للمتابعة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792641536961.8887
     }
   ],
   "archivedTopics": [
@@ -51502,6 +51528,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792641537061.9458,
+          "at": "2026-10-22T03:58:57.061Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب تحديد مواقع وأعداد الأشجار القابلة للاستزراع في المعسكرات والقواعد العسكرية"
+        },
         {
           "id": 1792641351005.919,
           "at": "2026-10-22T03:55:51.005Z",
