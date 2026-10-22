@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-22T04:11:06.316Z",
+  "exportedAt": "2026-10-22T04:14:10.659Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36286,7 +36286,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-07",
@@ -36355,13 +36355,31 @@
           "taqseem": "",
           "startDate": "2026-10-07",
           "daysSince": 3
+        },
+        {
+          "date": "2026-10-22",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم ابلاغي بتأجيل البرنامج",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 11
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791354674242.0557,
-      "manualCount": 4,
+      "manualCount": 5,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-10-22"
     },
     {
       "id": 1791355695302.6367,
@@ -45954,6 +45972,126 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-10-22T03:55:51.037Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1791354674242.0557,
+      "transactionType": "followup",
+      "title": "دعوة لترشيح كوادر لورشة اتمتة معالجة الصور الفضائية وتحليل البيانات الرقمية اليا",
+      "from": "شركة ابتكارات السماء",
+      "docNo": "1170/3/2022v421-27",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-06",
+      "receivedFollowDate": "2026-10-07",
+      "followStart": "2026-10-07",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-07",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 0
+        },
+        {
+          "date": "2026-10-08",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-10-11",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-10-12",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "esc",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 3
+        },
+        {
+          "date": "2026-10-22",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم ابلاغي بتأجيل البرنامج",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 11
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791354674242.0557,
+      "manualCount": 5,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "closedAt": "2026-10-22",
+      "archivedAt": "2026-10-22T04:14:08.502Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-10-22T04:14:08.502Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -51643,6 +51781,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792642448469.425,
+          "at": "2026-10-22T04:14:08.469Z",
+          "action": "إضافة متابعة",
+          "details": "دعوة لترشيح كوادر لورشة اتمتة معالجة الصور الفضائية وتحليل البيانات الرقمية اليا"
+        },
+        {
+          "id": 1792642448398.1423,
+          "at": "2026-10-22T04:14:08.398Z",
+          "action": "تعديل موضوع",
+          "details": "دعوة لترشيح كوادر لورشة اتمتة معالجة الصور الفضائية وتحليل البيانات الرقمية اليا"
+        },
         {
           "id": 1792642264121.5881,
           "at": "2026-10-22T04:11:04.121Z",
