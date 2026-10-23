@@ -1582,8 +1582,8 @@ body.viewer-only .print-btn { display: inline-block !important; }
       <div class="fg2">
         <div class="fgs"><label>تاريخ المتابعة</label><input type="date" id="fuDate" oninput="updateFollowupCalc()"></div>
         <div class="fgs"><label>هل تم الرد؟</label><select id="fuReplied" onchange="toggleFollowupReplyMethod()"><option value="false">❌ لا</option><option value="true">✅ نعم</option></select></div>
-        <div class="fgs" id="fuResponseMethodWrap" style="display:none"><label>📨 طريقة ورود الرد</label><select id="fuResponseMethod"><option value="">— اختر —</option><option value="via_follow">عبر المتابعة</option><option value="direct_manager">مباشر للمدير</option></select></div>
-        <div class="fgs" id="fuReplyDocNoWrap" style="display:none"><label for="fuReplyDocNo">رقم الوثيقة الواردة للرد</label><input id="fuReplyDocNo" placeholder="رقم الوثيقة أو مرجع وصول"></div>
+        <div class="fgs" id="fuResponseMethodWrap" style="display:none"><label>📨 طريقة ورود الرد</label><select id="fuResponseMethod"><option value="">— اختر —</option><option value="via_follow">تم الرد على متابعتي</option><option value="direct_manager">تم الرد مباشرة إلى مدير المكتب</option><option value="direct_head">تم الرد مباشرة إلى رئيسة القسم</option></select></div>
+        <div class="fgs" id="fuReplyDocNoWrap" style="display:none"><label for="fuReplyDocNo">رقم وثيقة الرد (اختياري)</label><input id="fuReplyDocNo" placeholder="رقم الوثيقة أو مرجع وصول"></div>
         <div class="fgs" id="fuScopeWrap"><label>مسار المتابعة</label><select id="fuScope" onchange="toggleFollowupExternalEntity()"><option value="">— حددي المسار —</option><option value="internal">🔵 داخلية</option><option value="external">🟢 خارجية</option></select></div>
         <div class="fgs" id="fuExternalEntityWrap" style="display:none"><label>🌐 الجهة الخارجية في هذه المتابعة</label><select id="fuExternalEntity"><option value="">— اختر الجهة —</option></select></div>
         <div class="fgs"><label>نوع الإجراء</label>
@@ -4685,7 +4685,7 @@ function toggleCorrespondenceDirection(prefix){
   const outgoing=external && field?.value==='out';
   if(dateLabel) dateLabel.textContent=outgoing ? 'تاريخ الصادر' : 'تاريخ الوارد';
   const labels=outgoing
-    ? {FromLabel:'الجهة الصادرة منها',DocNoLabel:'رقم الوثيقة الصادرة',ToEntityLabel:'الجهة الصادر إليها *'}
+    ? {FromLabel:'الجهة الصادرة منها',DocNoLabel:'رقم وثيقة الخطاب الوارد المرتبط بالموضوع',ToEntityLabel:'الجهة الصادر إليها *'}
     : {FromLabel:'الجهة الوارد منها *',DocNoLabel:'رقم الوثيقة الواردة',ToEntityLabel:'الجهة الموجَّه إليها'};
   for(const [suffix,caption] of Object.entries(labels)){
     const label=$(prefix+suffix); if(label) label.textContent=caption;
@@ -4693,7 +4693,7 @@ function toggleCorrespondenceDirection(prefix){
   const from=$(prefix+'From'),to=$(prefix+'ToEntity'),doc=$(prefix+'DocNo');
   if(from) from.placeholder=outgoing?'الجهة الصادرة منها':'اسم الجهة الوارد منها';
   if(to) to.placeholder=outgoing?'اسم الجهة الصادر إليها':'الجهة الموجَّه إليها الخطاب';
-  if(doc) doc.placeholder=outgoing?'رقم الوثيقة الصادرة':'رقم الوثيقة الواردة';
+  if(doc) doc.placeholder=outgoing?'رقم وثيقة الخطاب الوارد':'رقم الوثيقة الواردة';
   onSlaModeChange(prefix);
 }
 
@@ -5101,7 +5101,7 @@ function saveTopicAll() {
   const outgoing=val('editType')!=='int' && val('editCorrespondenceDirection')==='out';
   if(outgoing && !val('editToEntity').trim()){ alert('⚠️ يرجى ملء الجهة الصادر إليها'); return; }
   if(!outgoing && !val('editFrom').trim()){ alert('⚠️ يرجى ملء الجهة الوارد منها'); return; }
-  if(val('fuReplied')==='true' && !val('fuReplyDocNo').trim()){alert('⚠️ أدخلي رقم وثيقة الرد قبل الحفظ');return;}
+  
   // 1) احفظي بيانات الموضوع
   saveEditTopic();
   // 2) سجّلي الإجراء الجديد فقط إذا عُبّئت تفاصيله
