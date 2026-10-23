@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-22T04:55:15.885Z",
+  "exportedAt": "2026-10-23T08:35:47.780Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -51826,6 +51826,89 @@
     "مركز محمية حديقة السليل الطبيعية"
   ],
   "activityLog": [
+    {
+      "id": "ab7f9db3-55c8-43be-a05a-dab63707d962",
+      "sessionId": "ab7f9db3-55c8-43be-a05a-dab63707d962",
+      "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "هاتف/جهاز لوحي • Android • Chrome",
+      "deviceType": "هاتف/جهاز لوحي",
+      "deviceOS": "Android",
+      "browser": "Chrome",
+      "platform": "Linux armv81",
+      "deviceSnapshot": {
+        "id": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+        "label": "هاتف/جهاز لوحي • Android • Chrome",
+        "type": "هاتف/جهاز لوحي",
+        "os": "Android",
+        "browser": "Chrome",
+        "platform": "Linux armv81"
+      },
+      "loginAt": "2026-10-23T08:35:38.922Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null,
+      "central": true
+    },
+    {
+      "id": "da664d68-552c-4659-8181-fb128043fbd0",
+      "sessionId": "da664d68-552c-4659-8181-fb128043fbd0",
+      "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Linux • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Linux",
+      "browser": "Edge",
+      "platform": "Linux armv81",
+      "deviceSnapshot": {
+        "id": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+        "label": "كمبيوتر • Linux • Edge",
+        "type": "كمبيوتر",
+        "os": "Linux",
+        "browser": "Edge",
+        "platform": "Linux armv81"
+      },
+      "loginAt": "2026-10-22T09:00:18.957Z",
+      "logoutAt": "2026-10-22T09:02:53.859Z",
+      "duration": "2 دقيقة و 34 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
+      "central": true,
+      "durationMinutes": 2
+    },
+    {
+      "id": "bdb8bd1e-09fd-4b5c-a5d8-c661b1136669",
+      "sessionId": "bdb8bd1e-09fd-4b5c-a5d8-c661b1136669",
+      "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "هاتف/جهاز لوحي • Android • Chrome",
+      "deviceType": "هاتف/جهاز لوحي",
+      "deviceOS": "Android",
+      "browser": "Chrome",
+      "platform": "Linux armv81",
+      "deviceSnapshot": {
+        "id": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+        "label": "هاتف/جهاز لوحي • Android • Chrome",
+        "type": "هاتف/جهاز لوحي",
+        "os": "Android",
+        "browser": "Chrome",
+        "platform": "Linux armv81"
+      },
+      "loginAt": "2026-10-22T09:00:03.712Z",
+      "logoutAt": "2026-10-22T09:00:16.842Z",
+      "duration": "0 دقيقة و 13 ثانية",
+      "logoutReason": "إغلاق المتصفح أو إعادة التحميل",
+      "central": true,
+      "durationMinutes": 0
+    },
     {
       "id": "50b398ca-8f53-4b72-810b-248fa4484df2",
       "sessionId": "50b398ca-8f53-4b72-810b-248fa4484df2",
