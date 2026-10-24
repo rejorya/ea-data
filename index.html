@@ -1997,9 +1997,26 @@ async function performCloudSave() {
     if(!getRes.ok) throw new Error('تعذر التحقق من النسخة الحالية: '+getRes.status);
     const currentFile=await getRes.json();
     if(currentFile.sha!==sha){
-      window._cloudConflict=true;
-      showGitHubInfo('⚠️ توجد تعديلات أحدث من جهاز آخر. أُوقف الرفع لحماية بيانات الجهازين.','warning');
-      return false;
+      try{
+        const remote=await readRemote(currentFile,config.token);
+        const base=await readBase(repository);
+        const combined=merge(base?.data,localSnap(),snap(remote));
+        applySnap(combined);
+        await writeBase(repository,currentFile.sha,remote);
+        window._cloudBaseSha=currentFile.sha;
+        window._cloudLastPayload=null;
+        window._cloudConflict=false;
+        markCloudDirty(true);
+        saveToStorage();
+        refreshAll();
+        window._cloudSavePending=true;
+        showGitHubInfo('🔄 تم دمج تحديثات الهاتف والكمبيوتر، جاري رفع النتيجة.','info');
+        return true;
+      }catch(e){
+        window._cloudConflict=true;
+        showGitHubInfo('⚠️ تعارض في البيانات نفسها. احتُفظ بنسختي الجهاز والسحابة دون استبدال: '+e.message,'warning');
+        return false;
+      }
     }
     const body = { message: `تحديث تلقائي ${new Date().toLocaleTimeString('ar-SA')}`, content: contentBase64 };
     if(sha) body.sha = sha;
@@ -2011,6 +2028,7 @@ async function performCloudSave() {
     if(putRes.ok) {
       const saved=await putRes.json();
       window._cloudBaseSha=saved.content.sha;
+      await writeBase(repository,saved.content.sha,dataToShare);
       window._cloudConflict=false;
       window._cloudLastPayload=payload;
       if(revision===(window._cloudMutationRevision||0)) markCloudDirty(false);
@@ -3145,8 +3163,7 @@ async function downloadFromGitHub() {
     }
     
     // حماية من فقدان البيانات قبل الكتابة فوق المحلي
-    if(!safeBeforeCloudOverwrite(imported)) {
-      if(restoreSavedTodayFollowups(imported))return;
+    if(!await safeBeforeCloudOverwrite(imported)) {
       showGitHubInfo('⏸️ تم إلغاء التحميل للحفاظ على بياناتك المحلية', 'warning');
       updateGitHubStatus('⏸️ أُلغي التحميل', 'warning');
       return;
@@ -3193,11 +3210,14 @@ async function downloadFromGitHub() {
     lastSyncTime = new Date();
     window._cloudBaseSha = fileData.sha;
     window._cloudRepository=config.user+'/'+config.repo;
+    await writeBase(window._cloudRepository,fileData.sha,window._syncRemoteSnapshot);
     markCloudDirty(false);
+    window._cloudConflict=false;
     window._cloudLastPayload = null;
     window._cloudLoadConfirmed = true; finishCloudDisplayRecovery(); // ✅ تأكيد نجاح تحميل السحابة
     // القراءة من السحابة لا تُعدّ تعديلًا؛ لا نرفع البيانات لمجرد فتح المنصة.
     saveToStorage(); // نسخة محلية احتياطية فقط
+    if(window._syncPendingMerge && canEditData()){window._syncPendingMerge=false;autoSave();}
     if(window._activityLogNeedsSync && canEditData()){window._activityLogNeedsSync=false;autoSave();}
     const stats = `✅ تم التحميل بنجاح!<br>
       📊 ${D.topics.length} موضوع | ${D.directives.length} توجيه<br>
@@ -3290,7 +3310,7 @@ async function downloadFromGitHubPublic() {
     }
 
     // حماية من فقدان البيانات قبل الكتابة فوق المحلي
-    if(!safeBeforeCloudOverwrite(imported)) {
+    if(!await safeBeforeCloudOverwrite(imported)) {
       showGitHubInfo('⏸️ تم إلغاء التحميل للحفاظ على بياناتك المحلية', 'warning');
       updateGitHubStatus('⏸️ أُلغي التحميل', 'warning');
       return;
@@ -3333,10 +3353,13 @@ async function downloadFromGitHubPublic() {
     lastSyncTime = new Date();
     window._cloudBaseSha = fileData.sha;
     window._cloudRepository=_u+'/'+_r;
+    await writeBase(window._cloudRepository,fileData.sha,window._syncRemoteSnapshot);
     markCloudDirty(false);
+    window._cloudConflict=false;
     window._cloudLastPayload = null;
     window._cloudLoadConfirmed = true; finishCloudDisplayRecovery(); // ✅ تأكيد نجاح تحميل السحابة — يسمح الآن بالحفظ التلقائي بأمان
     saveToStorage(); // حفظ النسخة المحمّلة محليًا
+    if(window._syncPendingMerge && canEditData()){window._syncPendingMerge=false;autoSave();}
     if(window._activityLogNeedsSync && canEditData()){window._activityLogNeedsSync=false;autoSave();}
     const stats = `✅ تم التحميل بنجاح!<br>
       📊 ${D.topics.length} موضوع | ${D.directives.length} توجيه<br>
@@ -3378,8 +3401,8 @@ function toggleAutoSync() {
     // بحالة فارغة كان يمسح بيانات السحابة الحقيقية كل دقيقة بصمت — هذا ما تسبب بحادثة فقد البيانات)
     autoSyncInterval = setInterval(() => {
       if(CU?.admin) {
-        // المدير: رفع صامت مع الحماية الصارمة من الكتابة الفارغة (لا confirm تفاعلي بالخلفية)
-        autoSaveToGitHub();
+        if(window._cloudDirty)autoSaveToGitHub();
+        else downloadFromGitHub();
       } else {
         // المسؤولون والزوار يحمّلون كل دقيقة
         downloadFromGitHub();
@@ -3400,7 +3423,7 @@ function finishCloudDisplayRecovery() {
 }
 function initGitHub() {
   try {
-    window._preferCloudVersion=localStorage.getItem(STORAGE_KEY+'_cloud_display_recovery')!==CLOUD_DISPLAY_RECOVERY;
+    window._preferCloudVersion=false; // لا نتجاوز حماية مزامنة الأجهزة
   } catch(e) { window._preferCloudVersion=false; }
   // ☁️ تحميل تلقائي من المستودع العام الثابت عند كل دخول.
   window._cloudLoadConfirmed = false;
@@ -8250,33 +8273,86 @@ function restoreSavedTodayFollowups(imported) {
   return restored;
 }
 
-function safeBeforeCloudOverwrite(imported) {
-  if(window._preferCloudVersion) {
-    const key=STORAGE_KEY+'_before_cloud_display_'+CLOUD_DISPLAY_RECOVERY;
-    try {
-      if(!localStorage.getItem(key)) {
-        const snapshot=JSON.stringify(buildBackupObject());
-        localStorage.setItem(key,snapshot);
-        if(localStorage.getItem(key)!==snapshot)throw new Error('تعذر التحقق من النسخة الاحتياطية');
-      }
-      return true;
-    } catch(e) {
-      showGitHubInfo('تعذر حفظ نسخة بيانات الجهاز؛ لم يتم استبدالها. '+e.message,'error');
-      return false;
-    }
-  }
-  const localCount = (D.topics || []).length;
-  const cloudCount = (imported && imported.topics ? imported.topics.length : 0);
-  autoBackupSnapshot('قبل التحميل من السحابة');
-  if(window._cloudDirty && canEditData()) {
-    showGitHubInfo('⚠️ توجد تغييرات لم تُرفع من هذا الجهاز. أُلغي الاستبدال لحماية البيانات.','warning');
-    return false;
-  }
-  if(localCount > cloudCount && !window._cloudLoadConfirmed) {
-    showGitHubInfo('⚠️ يوجد عدد أكبر من المواضيع على الجهاز. أُوقف الاستبدال لحين التأكد من مزامنتها.','warning');
-    return false;
-  }
-  return true;
+function equal(a,b){return JSON.stringify(a)===JSON.stringify(b)}
+
+function key(v){return v&&typeof v==="object"&&!Array.isArray(v)&&v.id!=null?"id:"+v.id:"value:"+JSON.stringify(v)}
+
+function merge(base,local,remote,path="data"){
+ if(equal(local,remote))return local;
+ if(equal(local,base))return remote;
+ if(equal(remote,base))return local;
+ if(local===undefined||remote===undefined)throw Error(path+" (تعديل وحذف)");
+ if(Array.isArray(local)&&Array.isArray(remote)){
+  if(/(?:followups|followLog|actions|activityLog)$/.test(path)){const map=new Map();for(const it of [...remote,...local])map.set(key(it),it);return [...map.values()]}
+  const build=arr=>{const m=new Map();for(const x of arr||[]){const k=key(x);if(m.has(k))throw Error(path+" (معرف مكرر)");m.set(k,x)}return m};
+  const b=build(base),l=build(local),r=build(remote),all=new Set([...r.keys(),...l.keys(),...b.keys()]),out=[];
+  for(const k of all){const v=merge(b.get(k),l.get(k),r.get(k),path+"."+k);if(v!==undefined)out.push(v)}return out;
+ }
+ const object=x=>x!==null&&typeof x==="object"&&!Array.isArray(x);
+ if(object(local)&&object(remote)&&(base===undefined||object(base))){
+  const out={};for(const k of new Set([...Object.keys(base||{}),...Object.keys(local),...Object.keys(remote)])){
+   const v=merge(base&&base[k],local[k],remote[k],path+"."+k);if(v!==undefined)out[k]=v
+  }return out;
+ }
+ throw Error(path+" (تعديلان مختلفان)")
+}
+
+function snap(obj){
+ const fields=["topics","archivedTopics","directives","weekly","monthly","quarterly","dirReports","ideas","memos","discussions","holidays","naibDivisions","activityLog","users","visitorCodeHash"];const out={};
+ for(const k of fields)out[k]=obj&&Object.prototype.hasOwnProperty.call(obj,k)?obj[k]:(k==="visitorCodeHash"?"":k==="users"?{}:[]);
+ return out
+}
+
+function localSnap(){return snap({...D,users:USERS,visitorCodeHash:D.visitorCodeHash||VISITOR_CODE_HASH})}
+
+function applySnap(v){
+ for(const k of ["topics","archivedTopics","directives","weekly","monthly","quarterly","dirReports","ideas","memos","discussions","holidays","naibDivisions","activityLog"])D[k]=v[k]||[];
+ if(v.visitorCodeHash)D.visitorCodeHash=v.visitorCodeHash;
+ if(v.users&&typeof v.users==="object"){for(const k of Object.keys(USERS))if(!(k in v.users))delete USERS[k];Object.assign(USERS,v.users);D.users=USERS}
+}
+
+function syncDb(){
+ if(window._syncDbPromise)return window._syncDbPromise;
+ return window._syncDbPromise=new Promise((ok,bad)=>{const req=indexedDB.open("ea-followup-sync-v2",1);req.onupgradeneeded=()=>req.result.createObjectStore("base");req.onsuccess=()=>ok(req.result);req.onerror=()=>bad(req.error)})
+}
+
+async function readBase(repo){
+ if(window._syncMemoryBase?.repo===repo)return window._syncMemoryBase;
+ try{const db=await syncDb();return await new Promise((ok,bad)=>{const q=db.transaction("base","readonly").objectStore("base").get(repo);q.onsuccess=()=>ok(q.result||null);q.onerror=()=>bad(q.error)})}catch(e){console.warn(e);return null}
+}
+
+async function writeBase(repo,sha,data){
+ const row={repo,sha,data:snap(data)};window._syncMemoryBase=row;
+ try{const db=await syncDb();await new Promise((ok,bad)=>{const q=db.transaction("base","readwrite").objectStore("base").put(row,repo);q.onsuccess=()=>ok();q.onerror=()=>bad(q.error)})}catch(e){console.warn("Sync baseline not persisted",e)}
+}
+
+async function readRemote(meta,token){
+ let b64=meta.content;
+ if(!b64||!b64.trim()){
+  if(!meta.git_url)throw Error("محتوى السحابة غير متاح");
+  const res=await githubSyncFetch(meta.git_url,{headers:{Authorization:"token "+token}});if(!res.ok)throw Error("قراءة السحابة "+res.status);
+  b64=(await res.json()).content
+ }
+ if(!b64)throw Error("بيانات السحابة فارغة");
+ return JSON.parse(decodeURIComponent(escape(atob(b64.replace(/\s/g,"")))))
+}
+
+async function safeBeforeCloudOverwrite(imported){
+ autoBackupSnapshot("قبل مزامنة الأجهزة");
+ const config=getGitHubConfig(),repo=config.user+"/"+config.repo;
+ window._syncRemoteSnapshot=snap(imported);
+ window._syncPendingMerge=false;
+ if(!window._cloudDirty||!canEditData())return true;
+ try{
+  const base=await readBase(repo),remote=snap(imported),merged=merge(base?.data,localSnap(),remote);
+  Object.assign(imported,merged);
+  window._syncPendingMerge=!equal(merged,remote);
+  return true
+ }catch(e){
+  window._cloudConflict=true;
+  showGitHubInfo("⚠️ تعارض حقيقي في الحقل نفسه؛ تم حفظ التعديلات المحلية دون استبدال: "+e.message,"warning");
+  return false
+ }
 }
 
 // استرجاع آخر نسخة محلية تلقائية
