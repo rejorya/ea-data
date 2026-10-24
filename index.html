@@ -1987,7 +1987,7 @@ async function performCloudSave() {
       githubRepo: config.repo
     };
     const payload=JSON.stringify({...dataToShare,exportedAt:undefined,exportedBy:undefined});
-    if(payload===window._cloudLastPayload) {markCloudDirty(false);return true;}
+    if(payload===window._cloudLastPayload && !window._cloudDirty) return true;
     const content = JSON.stringify(dataToShare, null, 2);
     const contentBase64 = btoa(unescape(encodeURIComponent(content)));
     const fileUrl = `https://api.github.com/repos/${config.user}/${config.repo}/contents/${GH_DATA_FILE}`;
@@ -1997,7 +1997,8 @@ async function performCloudSave() {
     if(!getRes.ok) throw new Error('تعذر التحقق من النسخة الحالية: '+getRes.status);
     const currentFile=await getRes.json();
     if(currentFile.sha!==sha){
-      showGitHubInfo('⚠️ توجد تعديلات أحدث من جهاز آخر. احتُفظ بتعديلاتك محليًا وأُوقف الرفع؛ حمّلي آخر تحديث وراجعيه قبل الحفظ.','warning');
+      window._cloudConflict=true;
+      showGitHubInfo('⚠️ توجد تعديلات أحدث من جهاز آخر. أُوقف الرفع لحماية بيانات الجهازين.','warning');
       return false;
     }
     const body = { message: `تحديث تلقائي ${new Date().toLocaleTimeString('ar-SA')}`, content: contentBase64 };
@@ -2010,12 +2011,14 @@ async function performCloudSave() {
     if(putRes.ok) {
       const saved=await putRes.json();
       window._cloudBaseSha=saved.content.sha;
+      window._cloudConflict=false;
       window._cloudLastPayload=payload;
       if(revision===(window._cloudMutationRevision||0)) markCloudDirty(false);
       else window._cloudSavePending=true;
       showGitHubInfo('✅ حُفظ تلقائياً على GitHub', 'success');
       return true;
     } else if(putRes.status === 409) {
+      window._cloudConflict=true;
       // 🛡️ منع الكتابة فوق تعديل جهاز آخر عند تعارض SHA.
       showGitHubInfo('⚠️ تعارض مزامنة: تم إيقاف الحفظ التلقائي حتى لا نكتب فوق تعديل جهاز آخر. حدّثي البيانات ثم أعيدي الحفظ.', 'warning');
       console.warn('GitHub sync conflict (409): another device changed data first.');
@@ -8266,19 +8269,12 @@ function safeBeforeCloudOverwrite(imported) {
   const cloudCount = (imported && imported.topics ? imported.topics.length : 0);
   autoBackupSnapshot('قبل التحميل من السحابة');
   if(window._cloudDirty && canEditData()) {
-    return confirm('لديك تعديلات محلية لم يتم تأكيد رفعها. تم حفظ نسخة احتياطية. تحميل البيانات سيستبدلها؛ هل تريدين متابعة التحميل؟');
+    showGitHubInfo('⚠️ توجد تغييرات لم تُرفع من هذا الجهاز. أُلغي الاستبدال لحماية البيانات.','warning');
+    return false;
   }
-  if(localCount > cloudCount) {
-    // نسخة ملف تلقائية كاحتياط إضافي قبل أي كتابة
-    try { downloadBackupFile(buildBackupObject(), 'نسخة_تلقائية_قبل_المزامنة'); } catch(e) {}
-    return confirm(
-      '⚠️ تنبيه مهم — احتمال فقدان بيانات:\n\n' +
-      'البيانات المحلية: ' + localCount + ' موضوع\n' +
-      'البيانات في السحابة: ' + cloudCount + ' موضوع\n\n' +
-      'التحميل سيكتب فوق المحلي وقد يحذف ' + (localCount - cloudCount) + ' موضوع.\n' +
-      'تم حفظ نسخة احتياطية تلقائية (محلية + ملف نُزّل للجهاز).\n\n' +
-      'هل تريدين المتابعة فعلاً؟'
-    );
+  if(localCount > cloudCount && !window._cloudLoadConfirmed) {
+    showGitHubInfo('⚠️ يوجد عدد أكبر من المواضيع على الجهاز. أُوقف الاستبدال لحين التأكد من مزامنتها.','warning');
+    return false;
   }
   return true;
 }
