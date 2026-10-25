@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-25T06:14:13.433Z",
+  "exportedAt": "2026-10-25T06:17:26.203Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39396,9 +39396,30 @@
       "kpi": "",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-25",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التوجية للمركز لمتابعة الجهه للاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-18",
+          "daysSince": 5
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792382243599.7314
+      "recordId": 1792382243599.7314,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     },
     {
       "id": 1792382597915.7302,
@@ -51853,6 +51874,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792909044022.055,
+          "at": "2026-10-25T06:17:24.022Z",
+          "action": "إضافة متابعة",
+          "details": "إنشاء البرنامج الوطني لتعزيز بيئة الأعمال الجاذبة للاستثمار"
+        },
+        {
+          "id": 1792909043943.9915,
+          "at": "2026-10-25T06:17:23.943Z",
+          "action": "تعديل موضوع",
+          "details": "إنشاء البرنامج الوطني لتعزيز بيئة الأعمال الجاذبة للاستثمار"
+        },
         {
           "id": 1792908851232.4043,
           "at": "2026-10-25T06:14:11.232Z",
