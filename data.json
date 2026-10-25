@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-25T08:03:35.823Z",
+  "exportedAt": "2026-10-25T08:06:11.868Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39963,6 +39963,32 @@
       "followups": [],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792915413742.0156
+    },
+    {
+      "id": 1792915569782.1736,
+      "transactionType": "followup",
+      "title": "التنسيق بشأن المنتدى الإقليمي العربي السابع للحد من مخاطر الكوارث",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v423-19",
+      "toEntity": "غرفة تجارة وصناعة عُمان",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-24",
+      "receivedFollowDate": "2026-10-25",
+      "followStart": "2026-10-24",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "تم التوجية للدائرة للمتابعة للاختصاص",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792915569782.1736
     }
   ],
   "archivedTopics": [
@@ -52143,6 +52169,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792915569833.946,
+          "at": "2026-10-25T08:06:09.833Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "التنسيق بشأن المنتدى الإقليمي العربي السابع للحد من مخاطر الكوارث"
+        },
         {
           "id": 1792915413788.1423,
           "at": "2026-10-25T08:03:33.788Z",
