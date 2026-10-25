@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-25T06:17:26.203Z",
+  "exportedAt": "2026-10-25T07:10:25.900Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39814,6 +39814,32 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1792912223305.046,
+      "transactionType": "followup",
+      "title": "مسودة عقد مشروع التقييم البيئي والاقتصادي للنباتات الدخيلة في سلطنة عُمان",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v423-13",
+      "toEntity": "جامعة نزوى",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-23",
+      "receivedFollowDate": "2026-10-25",
+      "followStart": "2026-10-23",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "تم التوجيه للتقسيم للاختصاص",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792912223305.046
     }
   ],
   "archivedTopics": [
@@ -51874,6 +51900,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792912223356.127,
+          "at": "2026-10-25T07:10:23.356Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "مسودة عقد مشروع التقييم البيئي والاقتصادي للنباتات الدخيلة في سلطنة عُمان"
+        },
         {
           "id": 1792909044022.055,
           "at": "2026-10-25T06:17:24.022Z",
