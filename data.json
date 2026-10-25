@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-25T07:47:54.280Z",
+  "exportedAt": "2026-10-25T07:53:08.483Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39890,6 +39890,32 @@
       "manualCount": 1,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1792914786387.4587,
+      "transactionType": "followup",
+      "title": "مذكرة تفاهم بين هيئة البيئة في سلطنة عُمان مع الإدارة الوطنية للغابات والمراعي في جمهورية الصين الشعبية",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v423-10",
+      "toEntity": "وزارة العدل والشؤون القانونية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-10-23",
+      "receivedFollowDate": "2026-10-25",
+      "followStart": "2026-10-23",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792914786387.4587
     }
   ],
   "archivedTopics": [
@@ -51950,6 +51976,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792914786436.495,
+          "at": "2026-10-25T07:53:06.436Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "مذكرة تفاهم بين هيئة البيئة في سلطنة عُمان مع الإدارة الوطنية للغابات والمراعي في جمهورية الصين الشعبية"
+        },
         {
           "id": 1792914472105.4424,
           "at": "2026-10-25T07:47:52.105Z",
