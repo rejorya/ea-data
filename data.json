@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-25T07:47:29.742Z",
+  "exportedAt": "2026-10-25T07:47:44.085Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39866,9 +39866,30 @@
       "kpi": "",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-25",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التوجيه للتقسيم للاختصاص",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-25",
+          "daysSince": 0
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792914412743.5552
+      "recordId": 1792914412743.5552,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -51929,6 +51950,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792914461925.714,
+          "at": "2026-10-25T07:47:41.925Z",
+          "action": "إضافة متابعة",
+          "details": "طلب رعاية المختبر الوطني لمشروع «ازرع عُمان ٢٠٥٠»"
+        },
+        {
+          "id": 1792914461858.45,
+          "at": "2026-10-25T07:47:41.858Z",
+          "action": "تعديل موضوع",
+          "details": "طلب رعاية المختبر الوطني لمشروع «ازرع عُمان ٢٠٥٠»"
+        },
         {
           "id": 1792914443613.3596,
           "at": "2026-10-25T07:47:23.613Z",
