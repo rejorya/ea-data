@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-25T07:57:50.962Z",
+  "exportedAt": "2026-10-25T08:03:35.823Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39937,6 +39937,32 @@
       "manualCount": 0,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1792915413742.0156,
+      "transactionType": "followup",
+      "title": "انتداب الفاضلة / وفاء بنت حمود بن حامد الغساني",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v423-18",
+      "toEntity": "هيئة تنظيم الخدمات العامة",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-24",
+      "receivedFollowDate": "2026-10-25",
+      "followStart": "2026-10-24",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "تم التوجيه للتقسيم لمتابعه للاختصاص",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792915413742.0156
     }
   ],
   "archivedTopics": [
@@ -52117,6 +52143,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792915413788.1423,
+          "at": "2026-10-25T08:03:33.788Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "انتداب الفاضلة / وفاء بنت حمود بن حامد الغساني"
+        },
         {
           "id": 1792915067928.1553,
           "at": "2026-10-25T07:57:47.928Z",
