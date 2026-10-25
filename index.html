@@ -4369,6 +4369,14 @@ function buildDailyTasks(){
   return tasks;
 }
 
+function paintDailyCenter(mount, html){
+  // Keep the same form and unsaved values when daily tasks refresh.
+  const form=$('topicEntryForm');
+  mount.innerHTML=html;
+  const slot=$('dailyTopicEntrySlot');
+  if(form && slot) slot.appendChild(form);
+}
+
 function renderDailyCenter(){
   const mount = $('dailyCenterMount');
   if(!mount) return;
@@ -4386,18 +4394,19 @@ function renderDailyCenter(){
     + '<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">'
     + '<div><h2 style="font-size:18px;margin:0;color:#fff">🎯 مركز الإجراءات اليومية</h2>'
     + '<div style="font-size:12px;opacity:.85;margin-top:4px">'+todayLabel+'</div></div>'
-    + '<button type="button" class="btn btn-s adminOnly" id="dailyAddTopic" onclick="openDailyTopicEntry()">➕ إضافة موضوع</button>'
     + '<div style="text-align:center;min-width:120px"><div style="font-size:30px;font-weight:800;line-height:1">'+pending.length+'</div><div style="font-size:11px;opacity:.85">مهمة متبقية اليوم</div></div></div>'
     + '<div style="margin-top:14px;height:10px;background:rgba(255,255,255,.2);border-radius:8px;overflow:hidden"><div style="width:'+pct+'%;height:100%;background:#4ade80;border-radius:8px;transition:width .4s"></div></div>'
     + '<div style="font-size:11.5px;opacity:.9;margin-top:6px">أنجزتِ '+doneCount+' من '+total+' مهمة ('+pct+'%)</div></div>';
 
+  h += '<div class="adminOnly" style="margin-bottom:18px"><button type="button" class="btn btn-s" id="dailyAddTopic" onclick="openDailyTopicEntry()">➕ إضافة موضوع</button></div><div id="dailyTopicEntrySlot"></div>';
+
   if(!total){
     h += '<div class="card" style="text-align:center;padding:30px"><div style="font-size:42px">☀️</div><h3 style="margin:10px 0 4px;color:#1d8349">يومكِ صافٍ!</h3><div style="color:#90a0b3;font-size:13px">لا توجد إجراءات تتطلب تدخلاً اليوم — كل المواضيع والتوجيهات ضمن المدد.</div></div>';
-    mount.innerHTML = h; return;
+    paintDailyCenter(mount, h); return;
   }
   if(!pending.length){
     h += '<div class="card" style="text-align:center;padding:30px"><div style="font-size:42px">✅</div><h3 style="margin:10px 0 4px;color:#1d8349">أنجزتِ كل مهام اليوم!</h3><div style="color:#90a0b3;font-size:13px">'+doneCount+' مهمة مكتملة. أحسنتِ 🌟</div></div>';
-    mount.innerHTML = h; return;
+    paintDailyCenter(mount, h); return;
   }
 
   window._dailyTaskGo = {};
@@ -4436,7 +4445,7 @@ function renderDailyCenter(){
     });
     h += '<div class="card" style="padding:0;overflow:hidden;margin-top:14px"><div style="padding:11px 16px;font-weight:800;font-size:13.5px">📋 بقية مهام اليوم</div>'+listHtml+'</div>';
   }
-  mount.innerHTML = h;
+  paintDailyCenter(mount, h);
 }
 
 // 🤖 المساعد اليومي: ماذا يستحق اهتمامك اليوم؟
@@ -4604,7 +4613,7 @@ function exportTopicsWorkbook(){
   wb.Workbook={Views:[{RTL:true}],Sheets:[]};
   [['المواضيع الواردة',false],['المواضيع الصادرة',true]].forEach(([name,out])=>{
     const rows=buildTopicsExportRows(sorted.filter(t=>(t.correspondenceDirection==='out')===out));
-    const kpiColumns=['مؤشر KPI','المدة المستهدفة بأيام العمل','تاريخ الاستحقاق','مدة الإنجاز أو المتابعة بأيام العمل','نتيجة مؤشر KPI'];
+    const kpiColumns=['تاريخ توجيه الرئيس للمتابعة','مؤشر KPI','المدة المستهدفة بأيام العمل','تاريخ الاستحقاق','مدة الإنجاز أو المتابعة بأيام العمل','نتيجة مؤشر KPI'];
     if(out) rows.forEach(row=>kpiColumns.forEach(key=>delete row[key]));
     const headers=Object.keys(buildTopicsExportRows([{}])[0]).filter(key=>!out||!kpiColumns.includes(key));
     const ws=XLSX.utils.json_to_sheet(rows,{header:headers});
@@ -4710,7 +4719,7 @@ function topicEntryHasNoKpi(prefix) {
 }
 function onSlaModeChange(prefix){
   const noKpi=topicEntryHasNoKpi(prefix);
-  for(const suffix of ['Kpi','SlaDays']){
+  for(const suffix of ['Kpi','SlaDays','FollowStart']){
     const field=$(prefix+suffix);
     if(field?.parentElement) field.parentElement.style.display=noKpi?'none':'';
   }
@@ -4842,7 +4851,7 @@ function addTopic() {
     const record = { id:baseId, transactionType:'followup', title, from, docNo:val('tNewDocNo').trim(),
       toEntity:val('tNewToEntity').trim(), taqseemName:val('tNewTaqseem').trim(), priority:val('tNewPriority')||'normal',
       confidentiality:val('tNewConf')||'normal', date, receivedFollowDate:val('tNewReceivedFollowDate') || date,
-      followStart:val('tNewFollowStart') || '', type:topicType,
+      followStart:noKpi ? '' : (val('tNewFollowStart') || ''), type:topicType,
       followScope:topicType==='both' ? 'both' : (topicType==='int' ? 'internal' : 'external'),
       correspondenceDirection,
       externalEntities:[], slaMode, slaDays:(slaMode!=='kpi') ? slaDays : null, kpi:(slaMode==='kpi') ? val('tNewKpi') : '',
@@ -5118,7 +5127,7 @@ function saveEditTopic() {
   t.from = val('editFrom').trim();
   t.date = val('editDate');
   if($('editReceivedFollowDate')) t.receivedFollowDate = val('editReceivedFollowDate');
-  if($('editFollowStart')) t.followStart = val('editFollowStart');
+  if($('editFollowStart') && !topicEntryHasNoKpi('edit')) t.followStart = val('editFollowStart');
   t.type = val('editType');
   t.correspondenceDirection = t.type==='int' ? '' : val('editCorrespondenceDirection');
   // مسار المتابعة يتبع نطاق الموضوع؛ الجهات الإضافية تجعل المسار مشتركاً.
