@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-25T09:09:54.127Z",
+  "exportedAt": "2026-10-25T09:11:24.023Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35670,11 +35670,28 @@
           "taqseem": "",
           "startDate": "2026-10-04",
           "daysSince": 11
+        },
+        {
+          "date": "2026-10-25",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 15
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791271139811.105,
-      "manualCount": 5,
+      "manualCount": 6,
       "followEntity": "naib_office",
       "responseMethod": ""
     },
@@ -52509,6 +52526,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792919481932.0935,
+          "at": "2026-10-25T09:11:21.932Z",
+          "action": "إضافة متابعة",
+          "details": "طلب الحصول على موافقة واكتشاف لاستخدام خامات الجوابو السماد الفسفورى الطبيعي بجزر الحلانيات"
+        },
+        {
+          "id": 1792919481843.0615,
+          "at": "2026-10-25T09:11:21.843Z",
+          "action": "تعديل موضوع",
+          "details": "طلب الحصول على موافقة واكتشاف لاستخدام خامات الجوابو السماد الفسفورى الطبيعي بجزر الحلانيات"
+        },
         {
           "id": 1792919392033.919,
           "at": "2026-10-25T09:09:52.033Z",
