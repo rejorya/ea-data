@@ -301,6 +301,77 @@ body.viewer-only .print-btn { display: inline-block !important; }
 <!-- ============ مركز الإجراءات اليومية ============ -->
 <div class="sec on" id="sec-daily">
   <div id="dailyCenterMount" style="padding:2px"></div>
+  <!-- إضافة موضوع -->
+  <div class="card adminOnly" id="topicEntryForm" hidden style="display:none">
+    <div class="ch"><h2>➕ إضافة موضوع جديد</h2></div>
+    <div class="fs">
+      <div class="fg2">
+        <div class="fgs"><label>نوع المعاملة *</label>
+          <select id="tNewTransactionType" onchange="syncNewTransactionType()">
+            <option value="incoming">📥 وارد</option>
+            <option value="outgoing">📤 صادر</option>
+            <option value="directive">📌 توجيه من الرئيس</option>
+            <option value="discussion">💬 مناقشة مع الرئيس</option>
+            <option value="memo">📝 مذكرة داخلية</option>
+          </select>
+          <small style="color:#666;font-size:11px;display:block;margin-top:4px">السجل يُنشأ مرة واحدة ويظهر في القسم الخاص بنوع المعاملة.</small>
+        </div>
+        <div class="fgs fw"><label>عنوان الموضوع *</label><input id="tNewTitle" placeholder="عنوان الموضوع"></div>
+        <div class="fgs"><label id="tNewFromLabel">الجهة الوارد منها *</label><input id="tNewFrom" placeholder="اسم الجهة الوارد منها"></div>
+        <div class="fgs"><label id="tNewDateLabel">تاريخ الوارد</label><input type="date" id="tNewDate"></div>
+        <div class="fgs"><label>تاريخ استلام الموضوع للمتابعة</label><input type="date" id="tNewReceivedFollowDate"><small style="color:#666;font-size:11px;display:block;margin-top:4px">لتوثيق تاريخ استلام الموضوع لدى موظف المتابعة.</small></div>
+        <div class="fgs"><label>تاريخ توجيه الرئيس للمتابعة</label><input type="date" id="tNewFollowStart" oninput="renderNewTopicTimeInfo()"><small style="color:#666;font-size:11px;display:block;margin-top:4px">هذا هو تاريخ بدء احتساب المؤشر.</small></div>
+        <div class="fgs" id="tNewScopeWrap" style="display:none"><label>نطاق المتابعة *</label>
+          <select id="tNewType" onchange="toggleCorrespondenceDirection('tNew')"><option value="">— اختاري نطاق المتابعة —</option><option value="int">داخلي للمتابعة</option><option value="ext">خارجي للمتابعة</option><option value="both">داخلي وخارجي للمتابعة</option></select>
+        </div>
+        <div class="fgs" id="tNewCorrespondenceDirectionWrap" style="display:none"><label>اتجاه المراسلة الخارجية *</label>
+          <select id="tNewCorrespondenceDirection" onchange="toggleCorrespondenceDirection('tNew')"><option value="">— اختاري وارد أو صادر —</option><option value="in">📥 واردة</option><option value="out">📤 صادرة</option></select>
+        </div>
+        <div class="fgs"><label id="tNewDocNoLabel">رقم الوثيقة الواردة</label><input id="tNewDocNo" placeholder="رقم الوثيقة الواردة"></div>
+        <div class="fgs"><label id="tNewToEntityLabel">الجهة الموجَّه إليها</label><input id="tNewToEntity" placeholder="الجهة الموجَّه إليها الخطاب"></div>
+        <details class="fgs fw" style="border:1px solid #e1e8ee;border-radius:9px;padding:10px;margin:6px 0"><summary style="cursor:pointer;font-weight:700;color:#007f86">تفاصيل إضافية ومؤشر المدة (اختياري)</summary><div class="fg2" style="margin-top:10px">
+        <div class="fgs"><label>📂 التقسيم المختص</label><input id="tNewTaqseem" placeholder="القسم/الدائرة المختصة بالموضوع"></div>
+        <div class="fgs"><label>الأولوية</label>
+          <select id="tNewPriority"><option value="normal">عادية</option><option value="important">مهمة</option><option value="urgent">🔴 عاجلة</option></select>
+        </div>
+        <div class="fgs"><label>السرية</label>
+          <select id="tNewConf"><option value="normal">عادي</option><option value="secret">سري</option><option value="top_secret">سري للغاية</option></select>
+        </div>
+        <div class="fgs"><label>تحديد مدة الرد</label>
+          <select id="tNewSlaMode" onchange="onSlaModeChange('tNew')">
+            <option value="kpi">حسب المؤشرات المعتمدة</option>
+            <option value="rais">حسب توجيه الرئيس</option>
+            <option value="letter">حسب المدة المحددة في الخطاب</option>
+          </select>
+        </div>
+        <div class="fgs" id="tNewKpiWrap"><label>فئة المؤشر الزمني</label>
+          <select id="tNewKpi" onchange="renderNewTopicTimeInfo()">
+            <option value="">— اختر —</option>
+            <option value="doc2">ترشيح دائرة الوثائق (2 يوم)</option>
+            <option value="rpt14">تقرير (14 يوم)</option>
+            <option value="rev3">مراجعات مشارك (3 أيام)</option>
+            <option value="std14">دراسة مشارك (14 يوم)</option>
+            <option value="shura10">مجلس الشورى (10 أيام)</option>
+            <option value="gov5">أجهزة الدولة (5 أيام)</option>
+            <option value="naib3">مكتب النائب (3 أيام)</option>
+            <option value="wd2">يومان عمل</option>
+            <option value="wd3">٣ أيام عمل</option>
+            <option value="wweek">أسبوع عمل (5 أيام)</option>
+            <option value="w2week">أسبوعان عمل (10 أيام)</option>
+            <option value="other">داخلي — حسب المتطلب</option>
+          </select>
+          <div id="tNewKpiInfo" style="margin-top:5px;color:#008F8F;font-size:11px;font-weight:700">حددي فئة المؤشر وتاريخ توجيه الرئيس لعرض مدة الرد.</div>
+        </div>
+        <div class="fgs" id="tNewSlaDaysWrap" style="display:none"><label>عدد أيام العمل للرد</label><input type="number" id="tNewSlaDays" min="1" placeholder="مثال: 7"></div>
+        </div></details>
+        <div class="fgs fw"><label>ملاحظة أولية</label><textarea id="tNewNote" placeholder="ملاحظة عند الاستلام..."></textarea></div>
+      </div>
+      <button type="button" class="btn btn-s" onclick="addTopic()">💾 حفظ الموضوع</button>
+      <button type="button" class="btn btn-w" onclick="closeDailyTopicEntry()">إغلاق النموذج</button>
+    </div>
+  </div>
+
+
 </div>
 
 <!-- ============ AI AGENT ============ -->
@@ -380,75 +451,6 @@ body.viewer-only .print-btn { display: inline-block !important; }
           <button class="btn btn-t" style="background:var(--teal);color:#fff" onclick="importTopicsExcel()">📥 استيراد</button>
         </div>
       </div>
-    </div>
-  </div>
-
-  <!-- إضافة موضوع -->
-  <div class="card adminOnly" id="topicEntryForm">
-    <div class="ch"><h2>➕ إضافة موضوع جديد</h2></div>
-    <div class="fs">
-      <div class="fg2">
-        <div class="fgs"><label>نوع المعاملة *</label>
-          <select id="tNewTransactionType" onchange="syncNewTransactionType()">
-            <option value="incoming">📥 وارد</option>
-            <option value="outgoing">📤 صادر</option>
-            <option value="directive">📌 توجيه من الرئيس</option>
-            <option value="discussion">💬 مناقشة مع الرئيس</option>
-            <option value="memo">📝 مذكرة داخلية</option>
-          </select>
-          <small style="color:#666;font-size:11px;display:block;margin-top:4px">السجل يُنشأ مرة واحدة ويظهر في القسم الخاص بنوع المعاملة.</small>
-        </div>
-        <div class="fgs fw"><label>عنوان الموضوع *</label><input id="tNewTitle" placeholder="عنوان الموضوع"></div>
-        <div class="fgs"><label id="tNewFromLabel">الجهة الوارد منها *</label><input id="tNewFrom" placeholder="اسم الجهة الوارد منها"></div>
-        <div class="fgs"><label id="tNewDateLabel">تاريخ الوارد</label><input type="date" id="tNewDate"></div>
-        <div class="fgs"><label>تاريخ استلام الموضوع للمتابعة</label><input type="date" id="tNewReceivedFollowDate"><small style="color:#666;font-size:11px;display:block;margin-top:4px">لتوثيق تاريخ استلام الموضوع لدى موظف المتابعة.</small></div>
-        <div class="fgs"><label>تاريخ توجيه الرئيس للمتابعة</label><input type="date" id="tNewFollowStart" oninput="renderNewTopicTimeInfo()"><small style="color:#666;font-size:11px;display:block;margin-top:4px">هذا هو تاريخ بدء احتساب المؤشر.</small></div>
-        <div class="fgs" id="tNewScopeWrap" style="display:none"><label>نطاق المتابعة *</label>
-          <select id="tNewType" onchange="toggleCorrespondenceDirection('tNew')"><option value="">— اختاري نطاق المتابعة —</option><option value="int">داخلي للمتابعة</option><option value="ext">خارجي للمتابعة</option><option value="both">داخلي وخارجي للمتابعة</option></select>
-        </div>
-        <div class="fgs" id="tNewCorrespondenceDirectionWrap" style="display:none"><label>اتجاه المراسلة الخارجية *</label>
-          <select id="tNewCorrespondenceDirection" onchange="toggleCorrespondenceDirection('tNew')"><option value="">— اختاري وارد أو صادر —</option><option value="in">📥 واردة</option><option value="out">📤 صادرة</option></select>
-        </div>
-        <div class="fgs"><label id="tNewDocNoLabel">رقم الوثيقة الواردة</label><input id="tNewDocNo" placeholder="رقم الوثيقة الواردة"></div>
-        <div class="fgs"><label id="tNewToEntityLabel">الجهة الموجَّه إليها</label><input id="tNewToEntity" placeholder="الجهة الموجَّه إليها الخطاب"></div>
-        <details class="fgs fw" style="border:1px solid #e1e8ee;border-radius:9px;padding:10px;margin:6px 0"><summary style="cursor:pointer;font-weight:700;color:#007f86">تفاصيل إضافية ومؤشر المدة (اختياري)</summary><div class="fg2" style="margin-top:10px">
-        <div class="fgs"><label>📂 التقسيم المختص</label><input id="tNewTaqseem" placeholder="القسم/الدائرة المختصة بالموضوع"></div>
-        <div class="fgs"><label>الأولوية</label>
-          <select id="tNewPriority"><option value="normal">عادية</option><option value="important">مهمة</option><option value="urgent">🔴 عاجلة</option></select>
-        </div>
-        <div class="fgs"><label>السرية</label>
-          <select id="tNewConf"><option value="normal">عادي</option><option value="secret">سري</option><option value="top_secret">سري للغاية</option></select>
-        </div>
-        <div class="fgs"><label>تحديد مدة الرد</label>
-          <select id="tNewSlaMode" onchange="onSlaModeChange('tNew')">
-            <option value="kpi">حسب المؤشرات المعتمدة</option>
-            <option value="rais">حسب توجيه الرئيس</option>
-            <option value="letter">حسب المدة المحددة في الخطاب</option>
-          </select>
-        </div>
-        <div class="fgs" id="tNewKpiWrap"><label>فئة المؤشر الزمني</label>
-          <select id="tNewKpi" onchange="renderNewTopicTimeInfo()">
-            <option value="">— اختر —</option>
-            <option value="doc2">ترشيح دائرة الوثائق (2 يوم)</option>
-            <option value="rpt14">تقرير (14 يوم)</option>
-            <option value="rev3">مراجعات مشارك (3 أيام)</option>
-            <option value="std14">دراسة مشارك (14 يوم)</option>
-            <option value="shura10">مجلس الشورى (10 أيام)</option>
-            <option value="gov5">أجهزة الدولة (5 أيام)</option>
-            <option value="naib3">مكتب النائب (3 أيام)</option>
-            <option value="wd2">يومان عمل</option>
-            <option value="wd3">٣ أيام عمل</option>
-            <option value="wweek">أسبوع عمل (5 أيام)</option>
-            <option value="w2week">أسبوعان عمل (10 أيام)</option>
-            <option value="other">داخلي — حسب المتطلب</option>
-          </select>
-          <div id="tNewKpiInfo" style="margin-top:5px;color:#008F8F;font-size:11px;font-weight:700">حددي فئة المؤشر وتاريخ توجيه الرئيس لعرض مدة الرد.</div>
-        </div>
-        <div class="fgs" id="tNewSlaDaysWrap" style="display:none"><label>عدد أيام العمل للرد</label><input type="number" id="tNewSlaDays" min="1" placeholder="مثال: 7"></div>
-        </div></details>
-        <div class="fgs fw"><label>ملاحظة أولية</label><textarea id="tNewNote" placeholder="ملاحظة عند الاستلام..."></textarea></div>
-      </div>
-      <button class="btn btn-s" onclick="addTopic()">✓ إضافة الموضوع</button>
     </div>
   </div>
 
@@ -3936,25 +3938,27 @@ function resetSession() {
 let currentTopicsView='incoming';
 function openTopicsView(view,el){
   currentTopicsView=view==='outgoing' ? 'outgoing' : 'incoming';
-  if($('tNewTransactionType')) $('tNewTransactionType').value=currentTopicsView;
-  if($('tNewType') && $('tNewCorrespondenceDirection')){
-    $('tNewType').value=currentTopicsView==='outgoing'?'ext':'int';
-    $('tNewCorrespondenceDirection').value=currentTopicsView==='outgoing' ? 'out' : 'in';
-    toggleCorrespondenceDirection('tNew');
-  }
   showSec('topics',$(currentTopicsView==='outgoing' ? 'menuOutgoingTopics' : 'menuIncomingTopics') || el);
 }
 
 function openDailyTopicEntry(){
   if(!requireAdmin()) return;
-  openTopicsView('incoming');
+  showSec('daily', $('menuDaily'));
+  $('topicEntryForm').hidden=false;
+  $('topicEntryForm').style.display='';
+  syncNewTransactionType();
   $('topicEntryForm').scrollIntoView({behavior:'smooth',block:'start'});
   $('tNewTransactionType').focus({preventScroll:true});
 }
 
+function closeDailyTopicEntry(){
+  $('topicEntryForm').hidden=true;
+  $('topicEntryForm').style.display='none';
+  $('dailyAddTopic')?.focus();
+}
+
 function syncNewTransactionType(){
   const kind=val('tNewTransactionType');
-  currentTopicsView=kind==='outgoing'?'outgoing':'incoming';
   $('tNewType').value=kind==='outgoing'?'ext':'int';
   $('tNewCorrespondenceDirection').value=kind==='outgoing'?'out':'in';
   toggleCorrespondenceDirection('tNew');
@@ -4697,7 +4701,7 @@ function renderTopicsTable() {
 }
 
 function topicEntryHasNoKpi(prefix) {
-  return prefix==='tNew' ? currentTopicsView==='outgoing'
+  return prefix==='tNew' ? val('tNewTransactionType')==='outgoing'
     : prefix==='edit' && val('editType')!=='int' && val('editCorrespondenceDirection')==='out';
 }
 function onSlaModeChange(prefix){
@@ -4754,7 +4758,7 @@ function topicDirectionLabel(t){
 }
 
 function renderNewTopicTimeInfo(){
-  if(currentTopicsView==='outgoing'){const box=$('tNewKpiInfo');if(box){box.textContent='';box.style.display='none';}return;}
+  if(val('tNewTransactionType')==='outgoing'){const box=$('tNewKpiInfo');if(box){box.textContent='';box.style.display='none';}return;}
   const start=val('tNewFollowStart');
   const kpi=val('tNewKpi');
   const days=(typeof KPI_DAYS!=='undefined' && kpi && KPI_DAYS[kpi]!=null)?KPI_DAYS[kpi]:null;
@@ -4833,14 +4837,11 @@ function addTopic() {
       externalEntities:[], slaMode, slaDays:(slaMode!=='kpi') ? slaDays : null, kpi:(slaMode==='kpi') ? val('tNewKpi') : '',
       note:val('tNewNote'), status:'new', followups:[], sheet:'مُضاف يدوياً', recordId:baseId };
     if(!insertUniqueTopicEntry('topics', record, 'title,from,date,docNo,toEntity,correspondenceDirection,note,receivedFollowDate,followStart,taqseemName,priority,confidentiality,slaMode,slaDays,kpi')) return;
-    openTopicsView(correspondenceDirection==='out' ? 'outgoing' : 'incoming');
+    renderTopicsTable();
   }
   clearFields(['tNewTitle','tNewFrom','tNewDate','tNewReceivedFollowDate','tNewFollowStart','tNewNote','tNewDocNo','tNewToEntity','tNewTaqseem','tNewSlaDays']);
-  if(transactionType==='followup'){
-    $('tNewType').value=currentTopicsView==='outgoing'?'ext':'int';
-    $('tNewCorrespondenceDirection').value=currentTopicsView==='outgoing'?'out':'in';
-    toggleCorrespondenceDirection('tNew');
-  }
+  syncNewTransactionType();
+  closeDailyTopicEntry();
   refreshDashboard(); refreshAllReports(); autoSave();
   recordActivityAction('إضافة '+({followup:'موضوع متابعة',directive:'توجيه رئيس',discussion:'مناقشة رئيس',memo:'مذكرة داخلية'}[transactionType]), title);
   alert('✅ تم إنشاء السجل مرة واحدة وإيداعه في القسم الخاص بنوع المعاملة.');
@@ -8854,4 +8855,3 @@ window.addEventListener('load', () => {
 </script>
 </body>
 </html>
-
