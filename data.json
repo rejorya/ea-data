@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-25T09:06:58.098Z",
+  "exportedAt": "2026-10-25T09:07:49.121Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39100,7 +39100,7 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-20",
@@ -39141,7 +39141,8 @@
       "recordId": 1792314059273.9287,
       "manualCount": 2,
       "followEntity": "",
-      "responseMethod": "via_follow"
+      "responseMethod": "via_follow",
+      "closedAt": "2026-10-25"
     },
     {
       "id": 1792314346297.8635,
@@ -46602,6 +46603,75 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-10-25T09:06:55.538Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1792314059273.9287,
+      "transactionType": "followup",
+      "title": "مشروع مذكرة تفاهم بين هيئة البيئة في سلطنة عُمان واللجنة الوطنية للبيئة وتغير المناخ في جمهورية أوزبكستان في مجال الشؤون البيئية.pdf",
+      "from": "وزارة العدل والشؤون القانونية",
+      "docNo": "1170/3/2022v422-39",
+      "toEntity": "دائرة التعاون الدولي",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-15",
+      "receivedFollowDate": "2026-10-18",
+      "followStart": "2026-10-18",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-20",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-18",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-10-20",
+          "replied": true,
+          "responseMethod": "via_follow",
+          "replyDocNo": "0",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "الأخت رحاب ،  بالإشارة إلى الخطاب الوارد من وزارة العدل والشؤون القانونية بشأن الموضوع ، نفيدكم أنه يتطلب تأكيد الجانب الأوزبكي على عدم وجود ملاحظات على الصيغة المعدلة من وزارة العدل، ولكون الدكتور مريم البوسعيدية نقطة التواصل مع الجانب الأوزباكستاني يرجى المتابعة معها للتأكيد، ليتم بعد ذلك رفع الخطاب لوزارة العدل بالصيغة النهائية لتقوم بمخاطبة مجلس الوزراء للاعتماد النهائي.",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-18",
+          "daysSince": 2
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792314059273.9287,
+      "manualCount": 2,
+      "followEntity": "",
+      "responseMethod": "via_follow",
+      "closedAt": "2026-10-25",
+      "archivedAt": "2026-10-25T09:07:47.059Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-10-25T09:07:47.059Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -52318,6 +52388,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792919267024.3423,
+          "at": "2026-10-25T09:07:47.024Z",
+          "action": "تعديل موضوع",
+          "details": "مشروع مذكرة تفاهم بين هيئة البيئة في سلطنة عُمان واللجنة الوطنية للبيئة وتغير المناخ في جمهورية أوزبكستان في مجال الشؤون البيئية.pdf"
+        },
         {
           "id": 1792919215498.499,
           "at": "2026-10-25T09:06:55.498Z",
