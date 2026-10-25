@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-25T07:10:41.433Z",
+  "exportedAt": "2026-10-25T07:46:58.882Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39843,6 +39843,32 @@
       "manualCount": 0,
       "followEntity": "",
       "responseMethod": ""
+    },
+    {
+      "id": 1792914412743.5552,
+      "transactionType": "followup",
+      "title": "طلب رعاية المختبر الوطني لمشروع «ازرع عُمان ٢٠٥٠»",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v423-14",
+      "toEntity": "شركة تنمية معادن عُمان",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-25",
+      "receivedFollowDate": "2026-10-25",
+      "followStart": "2026-10-25",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792914412743.5552
     }
   ],
   "archivedTopics": [
@@ -51903,6 +51929,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792914412801.034,
+          "at": "2026-10-25T07:46:52.801Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب رعاية المختبر الوطني لمشروع «ازرع عُمان ٢٠٥٠»"
+        },
         {
           "id": 1792912239248.8875,
           "at": "2026-10-25T07:10:39.248Z",
