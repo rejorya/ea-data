@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-25T07:53:37.957Z",
+  "exportedAt": "2026-10-25T07:57:50.962Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36633,7 +36633,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "نائب الرئيس\nللافادة اما بالنسبة لاجراءات اثبات الملك فانها تدخل في اختصاص جهة اخري.",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-08",
@@ -36702,13 +36702,31 @@
           "taqseem": "",
           "startDate": "2026-10-07",
           "daysSince": 4
+        },
+        {
+          "date": "2026-10-25",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم عمل نسخة من رئيسة القسم وتوجيه لاعداد المسودات لعدنان العجمي",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 12
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791447185362.1057,
-      "manualCount": 4,
+      "manualCount": 5,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-10-25"
     },
     {
       "id": 1791447836923.915,
@@ -46290,6 +46308,126 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1,
       "archiveUpdatedAt": "2026-10-22T04:16:33.206Z"
+    },
+    {
+      "id": 1791447185362.1057,
+      "transactionType": "followup",
+      "title": "إعادة النظر في موضوع تسكين عزبة قائمة من سنوات عزبة منزلية  للفاضل حمدان بن راشد الزيدي",
+      "from": "المواطن/ حمدان بن راشد الضبعون الزيدي",
+      "docNo": "1170/3/2022v421-47",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-07",
+      "receivedFollowDate": "2026-10-08",
+      "followStart": "2026-10-07",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "نائب الرئيس\nللافادة اما بالنسبة لاجراءات اثبات الملك فانها تدخل في اختصاص جهة اخري.",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-08",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-10-11",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-10-12",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 3
+        },
+        {
+          "date": "2026-10-13",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "esc",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 4
+        },
+        {
+          "date": "2026-10-25",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم عمل نسخة من رئيسة القسم وتوجيه لاعداد المسودات لعدنان العجمي",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-07",
+          "daysSince": 12
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791447185362.1057,
+      "manualCount": 5,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "closedAt": "2026-10-25",
+      "archivedAt": "2026-10-25T07:57:47.959Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-10-25T07:57:47.959Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -51979,6 +52117,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792915067928.1553,
+          "at": "2026-10-25T07:57:47.928Z",
+          "action": "إضافة متابعة",
+          "details": "إعادة النظر في موضوع تسكين عزبة قائمة من سنوات عزبة منزلية  للفاضل حمدان بن راشد الزيدي"
+        },
+        {
+          "id": 1792915067858.966,
+          "at": "2026-10-25T07:57:47.858Z",
+          "action": "تعديل موضوع",
+          "details": "إعادة النظر في موضوع تسكين عزبة قائمة من سنوات عزبة منزلية  للفاضل حمدان بن راشد الزيدي"
+        },
         {
           "id": 1792914814871.886,
           "at": "2026-10-25T07:53:34.871Z",
