@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-25T09:09:17.803Z",
+  "exportedAt": "2026-10-25T09:09:54.127Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38436,7 +38436,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "المدير العام بظفار لمقابلته وان اقتنعتم به فليستطلع راي المدير العام للاسكان بظفار وافاتنام بما تم",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-15",
@@ -38471,13 +38471,31 @@
           "taqseem": "",
           "startDate": "2026-10-14",
           "daysSince": 4
+        },
+        {
+          "date": "2026-10-25",
+          "replied": true,
+          "responseMethod": "via_follow",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 7
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792037499271.1155,
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "via_follow",
+      "closedAt": "2026-10-25"
     },
     {
       "id": 1792038355177.5854,
@@ -46689,6 +46707,92 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-10-25T09:07:47.059Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1792037499271.1155,
+      "transactionType": "followup",
+      "title": "نقل خدمات الموظف نمر بن سالم بن سهيل مسن الكثيري",
+      "from": "وزارة الاسكان والتخطيط العمراني",
+      "docNo": "1170/3/2022v421-57",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-08",
+      "receivedFollowDate": "2026-10-14",
+      "followStart": "2026-10-14",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "المدير العام بظفار لمقابلته وان اقتنعتم به فليستطلع راي المدير العام للاسكان بظفار وافاتنام بما تم",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-15",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-10-20",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "0",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "سيتم موافاتكم بنسخة من الخطاب من قبل المديريه العامة بظفار",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 4
+        },
+        {
+          "date": "2026-10-25",
+          "replied": true,
+          "responseMethod": "via_follow",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 7
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792037499271.1155,
+      "manualCount": 3,
+      "followEntity": "naib_office",
+      "responseMethod": "via_follow",
+      "closedAt": "2026-10-25",
+      "archivedAt": "2026-10-25T09:09:52.067Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-10-25T09:09:52.068Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -52405,6 +52509,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792919392033.919,
+          "at": "2026-10-25T09:09:52.033Z",
+          "action": "إضافة متابعة",
+          "details": "نقل خدمات الموظف نمر بن سالم بن سهيل مسن الكثيري"
+        },
+        {
+          "id": 1792919391951.9011,
+          "at": "2026-10-25T09:09:51.951Z",
+          "action": "تعديل موضوع",
+          "details": "نقل خدمات الموظف نمر بن سالم بن سهيل مسن الكثيري"
+        },
         {
           "id": 1792919355706.2517,
           "at": "2026-10-25T09:09:15.706Z",
