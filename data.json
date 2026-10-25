@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-25T08:12:13.497Z",
+  "exportedAt": "2026-10-25T08:23:01.979Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -40015,6 +40015,32 @@
       "followups": [],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792915931406.5247
+    },
+    {
+      "id": 1792916579469.9937,
+      "transactionType": "followup",
+      "title": "مقترح استضافة سلطنة عُمان مؤتمر الأطراف COP33 في محافظة مسقط",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v423-6",
+      "toEntity": "مكتب محافظ مسقط",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "normal",
+      "date": "2026-10-22",
+      "receivedFollowDate": "2026-10-25",
+      "followStart": "2026-10-22",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "تم التوجيه للتقسيم المعني للمتابعة للاختصاص",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792916579469.9937
     }
   ],
   "archivedTopics": [
@@ -52195,6 +52221,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792916579518.6914,
+          "at": "2026-10-25T08:22:59.518Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "مقترح استضافة سلطنة عُمان مؤتمر الأطراف COP33 في محافظة مسقط"
+        },
         {
           "id": 1792915931459.3071,
           "at": "2026-10-25T08:12:11.459Z",
