@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-25T08:45:55.261Z",
+  "exportedAt": "2026-10-25T08:58:00.086Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39760,7 +39760,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
-      "status": "new",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-10-22",
@@ -39778,11 +39778,28 @@
           "taqseem": "",
           "startDate": "2026-10-21",
           "daysSince": 1
+        },
+        {
+          "date": "2026-10-25",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "esc",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-21",
+          "daysSince": 2
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792642006090.6187,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "naib_office",
       "responseMethod": ""
     },
@@ -52248,6 +52265,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792918677999.4355,
+          "at": "2026-10-25T08:57:57.999Z",
+          "action": "إضافة متابعة",
+          "details": "تعيين منسق وطني لأداة التقييم الذاتي لمؤشرات المصادر المشعة المختومة المهملةـ- DSRS"
+        },
+        {
+          "id": 1792918677912.7493,
+          "at": "2026-10-25T08:57:57.912Z",
+          "action": "تعديل موضوع",
+          "details": "تعيين منسق وطني لأداة التقييم الذاتي لمؤشرات المصادر المشعة المختومة المهملةـ- DSRS"
+        },
         {
           "id": 1792917953224.9246,
           "at": "2026-10-25T08:45:53.224Z",
