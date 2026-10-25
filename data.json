@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-24T16:29:09.560Z",
+  "exportedAt": "2026-10-25T04:09:49.110Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -51827,6 +51827,59 @@
   ],
   "activityLog": [
     {
+      "id": 1792901384740.966,
+      "sessionId": "9f4ca295-ce6e-4cf4-8014-1850e0b49838",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-25T04:09:44.737Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
+      "id": "2f2e4841-1dd0-4482-b5b9-9caf5c0c20c6",
+      "sessionId": "2f2e4841-1dd0-4482-b5b9-9caf5c0c20c6",
+      "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "هاتف/جهاز لوحي • Android • Chrome",
+      "deviceType": "هاتف/جهاز لوحي",
+      "deviceOS": "Android",
+      "browser": "Chrome",
+      "platform": "Linux armv81",
+      "deviceSnapshot": {
+        "id": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+        "label": "هاتف/جهاز لوحي • Android • Chrome",
+        "type": "هاتف/جهاز لوحي",
+        "os": "Android",
+        "browser": "Chrome",
+        "platform": "Linux armv81"
+      },
+      "loginAt": "2026-10-24T16:29:03.367Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null,
+      "central": true
+    },
+    {
       "id": "d426f27b-56c3-4be1-8cca-34e24760527d",
       "sessionId": "d426f27b-56c3-4be1-8cca-34e24760527d",
       "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
@@ -51959,9 +52012,9 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-22T03:52:01.841Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-22T04:55:47.552Z",
+      "duration": "63 دقيقة و 45 ثانية",
+      "logoutReason": "إغلاق المتصفح أو إعادة التحميل",
       "central": true,
       "actions": [
         {
@@ -52078,7 +52131,8 @@
           "action": "تعديل موضوع",
           "details": "الاجتماع الثاني للجنة الوطنية لإدارة الحالات الطارئة لعام 2026م"
         }
-      ]
+      ],
+      "durationMinutes": 63
     },
     {
       "id": "ca8fb392-285b-4bb9-80d0-fa28aed22d10",
@@ -61530,33 +61584,6 @@
       "duration": "3 دقيقة و 7 ثانية",
       "logoutReason": "تسجيل خروج عادي",
       "durationMinutes": 3
-    },
-    {
-      "id": "2f2e4841-1dd0-4482-b5b9-9caf5c0c20c6",
-      "sessionId": "2f2e4841-1dd0-4482-b5b9-9caf5c0c20c6",
-      "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
-      "user": "rahab@ea2026",
-      "name": "رحاب بنت نصيب الفرج",
-      "role": "أخصائية تنسيق ومتابعة",
-      "type": "مدير",
-      "device": "هاتف/جهاز لوحي • Android • Chrome",
-      "deviceType": "هاتف/جهاز لوحي",
-      "deviceOS": "Android",
-      "browser": "Chrome",
-      "platform": "Linux armv81",
-      "deviceSnapshot": {
-        "id": "1d5749f1-fd77-452a-ab70-11a6215fce78",
-        "label": "هاتف/جهاز لوحي • Android • Chrome",
-        "type": "هاتف/جهاز لوحي",
-        "os": "Android",
-        "browser": "Chrome",
-        "platform": "Linux armv81"
-      },
-      "loginAt": "2026-10-24T16:29:03.367Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
-      "central": true
     }
   ],
   "visitorCodeHash": "c4a1785a61be152ffb94dcda46cbc0da48de648dfa151bcf9ee49068078124c2",
