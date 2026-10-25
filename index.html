@@ -384,13 +384,14 @@ body.viewer-only .print-btn { display: inline-block !important; }
   </div>
 
   <!-- إضافة موضوع -->
-  <div class="card adminOnly">
+  <div class="card adminOnly" id="topicEntryForm">
     <div class="ch"><h2>➕ إضافة موضوع جديد</h2></div>
     <div class="fs">
       <div class="fg2">
         <div class="fgs"><label>نوع المعاملة *</label>
-          <select id="tNewTransactionType">
-            <option value="followup">📂 موضوع للمتابعة</option>
+          <select id="tNewTransactionType" onchange="syncNewTransactionType()">
+            <option value="incoming">📥 وارد</option>
+            <option value="outgoing">📤 صادر</option>
             <option value="directive">📌 توجيه من الرئيس</option>
             <option value="discussion">💬 مناقشة مع الرئيس</option>
             <option value="memo">📝 مذكرة داخلية</option>
@@ -3935,12 +3936,30 @@ function resetSession() {
 let currentTopicsView='incoming';
 function openTopicsView(view,el){
   currentTopicsView=view==='outgoing' ? 'outgoing' : 'incoming';
+  if($('tNewTransactionType')) $('tNewTransactionType').value=currentTopicsView;
   if($('tNewType') && $('tNewCorrespondenceDirection')){
     $('tNewType').value=currentTopicsView==='outgoing'?'ext':'int';
     $('tNewCorrespondenceDirection').value=currentTopicsView==='outgoing' ? 'out' : 'in';
     toggleCorrespondenceDirection('tNew');
   }
   showSec('topics',$(currentTopicsView==='outgoing' ? 'menuOutgoingTopics' : 'menuIncomingTopics') || el);
+}
+
+function openDailyTopicEntry(){
+  if(!requireAdmin()) return;
+  openTopicsView('incoming');
+  $('topicEntryForm').scrollIntoView({behavior:'smooth',block:'start'});
+  $('tNewTransactionType').focus({preventScroll:true});
+}
+
+function syncNewTransactionType(){
+  const kind=val('tNewTransactionType');
+  currentTopicsView=kind==='outgoing'?'outgoing':'incoming';
+  $('tNewType').value=kind==='outgoing'?'ext':'int';
+  $('tNewCorrespondenceDirection').value=kind==='outgoing'?'out':'in';
+  toggleCorrespondenceDirection('tNew');
+  renderNewTopicTimeInfo();
+  if(kind==='directive') $('tNewFromLabel').textContent='الجهة المختصة *';
 }
 
 function closeMobileMenu() {
@@ -4363,6 +4382,7 @@ function renderDailyCenter(){
     + '<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">'
     + '<div><h2 style="font-size:18px;margin:0;color:#fff">🎯 مركز الإجراءات اليومية</h2>'
     + '<div style="font-size:12px;opacity:.85;margin-top:4px">'+todayLabel+'</div></div>'
+    + '<button type="button" class="btn btn-s adminOnly" id="dailyAddTopic" onclick="openDailyTopicEntry()">➕ إضافة موضوع</button>'
     + '<div style="text-align:center;min-width:120px"><div style="font-size:30px;font-weight:800;line-height:1">'+pending.length+'</div><div style="font-size:11px;opacity:.85">مهمة متبقية اليوم</div></div></div>'
     + '<div style="margin-top:14px;height:10px;background:rgba(255,255,255,.2);border-radius:8px;overflow:hidden"><div style="width:'+pct+'%;height:100%;background:#4ade80;border-radius:8px;transition:width .4s"></div></div>'
     + '<div style="font-size:11.5px;opacity:.9;margin-top:6px">أنجزتِ '+doneCount+' من '+total+' مهمة ('+pct+'%)</div></div>';
@@ -4696,15 +4716,17 @@ function onSlaModeChange(prefix){
 }
 
 function toggleCorrespondenceDirection(prefix){
-  const incomingEntry=prefix==='tNew' && currentTopicsView!=='outgoing';
+  const newEntry=prefix==='tNew';
+  const incomingEntry=newEntry && val('tNewTransactionType')!=='outgoing';
   const scopeWrap=prefix==='tNew' ? $('tNewScopeWrap') : null;
-  if(scopeWrap) scopeWrap.style.display=incomingEntry?'none':'';
+  if(scopeWrap) scopeWrap.style.display=newEntry?'none':'';
   if(incomingEntry && $('tNewType')) $('tNewType').value='int';
   const scope=val(prefix+'Type');
   const wrap=$(prefix+'CorrespondenceDirectionWrap');
   const field=$(prefix+'CorrespondenceDirection');
   const external=!incomingEntry && (scope==='ext'||scope==='both');
-  if(wrap) wrap.style.display=external?'':'none';
+  if(wrap) wrap.style.display=external&&!newEntry?'':'none';
+  if(newEntry && !incomingEntry){ $('tNewType').value='ext'; field.value='out'; }
   if(field && incomingEntry) field.value='in';
   else if(field && !external) field.value='';
   const dateLabel=$(prefix+'DateLabel');
@@ -4742,35 +4764,58 @@ function renderNewTopicTimeInfo(){
   box.textContent = 'مدة الرد المرتبطة بالمؤشر: '+days+' يوم عمل — يبدأ الاحتساب من '+fmtDate(start);
 }
 
+function insertUniqueTopicEntry(collection, record, fields){
+  const normalize=value=>String(value==null?'':value).trim();
+  const records=collection==='topics' ? [...D.topics,...(D.archivedTopics||[])] : D[collection];
+  const duplicate=records.some(existing=>fields.split(',').every(key=>{
+    let value=existing[key];
+    if(collection==='topics'){
+      if(key==='correspondenceDirection') value=value||'in';
+      if(key==='receivedFollowDate') value=value||existing.date;
+      if(key==='priority'||key==='confidentiality') value=value||'normal';
+      if(key==='slaMode') value=value||(existing.correspondenceDirection==='out'?'none':'kpi');
+    }
+    return normalize(value)===normalize(record[key]);
+  }));
+  if(duplicate){ alert('⚠️ يوجد سجل مطابق بالفعل؛ لم تتم إضافة نسخة مكررة.'); return false; }
+  D[collection].push(record);
+  return true;
+}
+
 function addTopic() {
   if(!requireAdmin()) return;
   const title = val('tNewTitle').trim();
   const from = val('tNewFrom').trim();
-  const transactionType = val('tNewTransactionType') || 'followup';
+  const selectedType = val('tNewTransactionType') || 'incoming';
+  const transactionType = ['incoming','outgoing'].includes(selectedType) ? 'followup' : selectedType;
+  if(!['followup','directive','discussion','memo'].includes(transactionType)) return;
   if(!title) { alert('⚠️ يرجى ملء عنوان المعاملة'); return; }
   if(transactionType === 'directive' && !from) { alert('⚠️ يرجى ملء الجهة المختصة لهذه المعاملة'); return; }
   const baseId = Date.now() + Math.random();
   const date = val('tNewDate') || localDateKey(new Date());
 
   if(transactionType === 'directive') {
-    D.directives.push({ id:baseId, transactionType:'directive', date, month:_monthFromISO(date),
+    const record = { id:baseId, transactionType:'directive', date, month:_monthFromISO(date),
       ref:val('tNewDocNo').trim(), dept:from || val('tNewToEntity').trim(), due:'', dueDate:'', subj:title,
       action:val('tNewNote').trim(), status:'new', note:val('tNewNote').trim(), followLog:[],
-      sourceRecord:'topic-entry', recordId:baseId, receivedDate:date, presidentDirectionDate:val('tNewFollowStart')||'' });
+      sourceRecord:'topic-entry', recordId:baseId, receivedDate:date, presidentDirectionDate:val('tNewFollowStart')||'' };
+    if(!insertUniqueTopicEntry('directives', record, 'subj,date,ref,dept,note,presidentDirectionDate')) return;
     renderDirectivesTable(); refreshDirReport();
   } else if(transactionType === 'discussion') {
-    D.discussions.push({ id:baseId, transactionType:'discussion', title, date, status:'upcoming',
-      note:val('tNewNote').trim(), attendees:'', sourceRecord:'topic-entry', recordId:baseId, presidentDirectionDate:val('tNewFollowStart')||'' });
+    const record = { id:baseId, transactionType:'discussion', title, date, status:'upcoming',
+      note:val('tNewNote').trim(), attendees:'', sourceRecord:'topic-entry', recordId:baseId, presidentDirectionDate:val('tNewFollowStart')||'' };
+    if(!insertUniqueTopicEntry('discussions', record, 'title,date,note,presidentDirectionDate')) return;
     renderDiscussions();
   } else if(transactionType === 'memo') {
-    D.memos.push({ id:baseId, transactionType:'memo', ref:val('tNewDocNo').trim(), date, type:'out', status:'new',
+    const record = { id:baseId, transactionType:'memo', ref:val('tNewDocNo').trim(), date, type:'out', status:'new',
       subject:title, to:val('tNewToEntity').trim(), priority:val('tNewPriority')||'normal', notes:val('tNewNote').trim(),
-      attachments:[], createdAt:new Date().toISOString(), sourceRecord:'topic-entry', recordId:baseId });
+      attachments:[], createdAt:new Date().toISOString(), sourceRecord:'topic-entry', recordId:baseId };
+    if(!insertUniqueTopicEntry('memos', record, 'subject,date,ref,to,notes,priority')) return;
     renderMemosTable();
   } else {
-    const incomingEntry=currentTopicsView!=='outgoing';
-    const topicType=incomingEntry?'int':val('tNewType');
-    const correspondenceDirection=incomingEntry?'in':val('tNewCorrespondenceDirection');
+    const incomingEntry=selectedType!=='outgoing';
+    const topicType=incomingEntry?'int':'ext';
+    const correspondenceDirection=incomingEntry?'in':'out';
     if(!['int','ext','both'].includes(topicType)){ alert('⚠️ حددي هل المتابعة داخلية أم خارجية'); return; }
     if(topicType!=='int' && !['in','out'].includes(correspondenceDirection)){ alert('⚠️ حددي هل المراسلة الخارجية واردة أم صادرة'); return; }
     if(correspondenceDirection==='out' && !val('tNewToEntity').trim()){ alert('⚠️ يرجى ملء الجهة الصادر إليها'); return; }
@@ -4779,14 +4824,15 @@ function addTopic() {
     const slaMode = noKpi ? 'none' : (val('tNewSlaMode') || 'kpi');
     const slaDays = noKpi ? null : (parseInt(val('tNewSlaDays'),10) || null);
     if(!noKpi && slaMode!=='kpi' && !slaDays){ alert('⚠️ حدّدي عدد أيام العمل للرد (حسب التوجيه أو الخطاب)'); return; }
-    D.topics.push({ id:baseId, transactionType:'followup', title, from, docNo:val('tNewDocNo').trim(),
+    const record = { id:baseId, transactionType:'followup', title, from, docNo:val('tNewDocNo').trim(),
       toEntity:val('tNewToEntity').trim(), taqseemName:val('tNewTaqseem').trim(), priority:val('tNewPriority')||'normal',
       confidentiality:val('tNewConf')||'normal', date, receivedFollowDate:val('tNewReceivedFollowDate') || date,
       followStart:val('tNewFollowStart') || '', type:topicType,
       followScope:topicType==='both' ? 'both' : (topicType==='int' ? 'internal' : 'external'),
       correspondenceDirection,
       externalEntities:[], slaMode, slaDays:(slaMode!=='kpi') ? slaDays : null, kpi:(slaMode==='kpi') ? val('tNewKpi') : '',
-      note:val('tNewNote'), status:'new', followups:[], sheet:'مُضاف يدوياً', recordId:baseId });
+      note:val('tNewNote'), status:'new', followups:[], sheet:'مُضاف يدوياً', recordId:baseId };
+    if(!insertUniqueTopicEntry('topics', record, 'title,from,date,docNo,toEntity,correspondenceDirection,note,receivedFollowDate,followStart,taqseemName,priority,confidentiality,slaMode,slaDays,kpi')) return;
     openTopicsView(correspondenceDirection==='out' ? 'outgoing' : 'incoming');
   }
   clearFields(['tNewTitle','tNewFrom','tNewDate','tNewReceivedFollowDate','tNewFollowStart','tNewNote','tNewDocNo','tNewToEntity','tNewTaqseem','tNewSlaDays']);
