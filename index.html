@@ -473,7 +473,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
     <div class="tb"><table>
       <thead><tr>
         <th>#</th><th>الموضوع</th><th>الجهة</th><th id="topicsDateHeading">تاريخ الوارد</th>
-        <th>المؤشر</th><th>الجهة المُتابَعة</th><th>طريقة ورود الرد</th><th>متابعات</th><th>آخر متابعة</th>
+        <th id="topicsKpiHeading">المؤشر</th><th>الجهة المُتابَعة</th><th>طريقة ورود الرد</th><th>متابعات</th><th>آخر متابعة</th>
         <th>الملاحظات</th><th>الحالة</th><th class="editAction">إجراء</th>
       </tr></thead>
       <tbody id="openTopicsTable"></tbody>
@@ -4604,7 +4604,9 @@ function exportTopicsWorkbook(){
   wb.Workbook={Views:[{RTL:true}],Sheets:[]};
   [['المواضيع الواردة',false],['المواضيع الصادرة',true]].forEach(([name,out])=>{
     const rows=buildTopicsExportRows(sorted.filter(t=>(t.correspondenceDirection==='out')===out));
-    const headers=Object.keys(buildTopicsExportRows([{}])[0]);
+    const kpiColumns=['مؤشر KPI','المدة المستهدفة بأيام العمل','تاريخ الاستحقاق','مدة الإنجاز أو المتابعة بأيام العمل','نتيجة مؤشر KPI'];
+    if(out) rows.forEach(row=>kpiColumns.forEach(key=>delete row[key]));
+    const headers=Object.keys(buildTopicsExportRows([{}])[0]).filter(key=>!out||!kpiColumns.includes(key));
     const ws=XLSX.utils.json_to_sheet(rows,{header:headers});
     ws['!cols']=headers.map(h=>({wch:h==='الموضوع'?65:h==='تفاصيل الإجراءات والمتابعات'?90:h==='الملاحظات'||h==='آخر إجراء'||h==='آخر نتيجة'?50:22}));
     ws['!autofilter']={ref:ws['!ref']};
@@ -4616,6 +4618,8 @@ function exportTopicsWorkbook(){
 }
 
 function renderTopicsTable() {
+  const showKpi=currentTopicsView!=='outgoing';
+  if($('topicsKpiHeading')) $('topicsKpiHeading').style.display=showKpi?'':'none';
   const q = ($('topicSearch') ? $('topicSearch').value : '').trim().toLowerCase();
   const matchQ = t => {
     if(!q) return true;
@@ -4655,12 +4659,12 @@ function renderTopicsTable() {
   // المفتوحة
   $('openTopicsTable').innerHTML = open.map((t, i) => {
     const lastFu = getLastFollowupDate(t);
-    const kpiStatus = getKpiStatus(t);
+    const kpiStatus = showKpi ? getKpiStatus(t) : {state:'none'};
     
     // تحديد لون الصف وشارة الحالة حسب التأخير
     let rowStyle = '';
     let kpiBadge = KPI_LABELS[t.kpi] || ((t.slaMode&&t.slaMode!=='kpi'&&t.slaDays)?('⏱ '+t.slaDays+' يوم عمل ('+(t.slaMode==='rais'?'توجيه':'الخطاب')+')'):'—');
-    if(t.status === 'split') {
+    if(showKpi && t.status === 'split') {
       // تجاوز لعدم استجابة المكتب → السطر رمادي (يتقدّم على تحذير المؤشر)
       rowStyle = 'background:#e5e7eb;color:#4b5563';
       kpiBadge = `${KPI_LABELS[t.kpi]||''} <span style="color:#6b7280;font-weight:700">↪ تجاوز لعدم استجابة المكتب</span>`;
@@ -4686,7 +4690,7 @@ function renderTopicsTable() {
       <td style="max-width:240px;font-weight:500">${t.priority==='urgent'?'<span style="background:#fee2e2;color:#b91c1c;font-size:9px;font-weight:800;border-radius:6px;padding:1px 6px;margin-left:4px">عاجل</span>':t.priority==='important'?'<span style="background:#fef3c7;color:#92400e;font-size:9px;font-weight:800;border-radius:6px;padding:1px 6px;margin-left:4px">مهم</span>':''}${t.confidentiality==='top_secret'?'<span style="background:#1f2937;color:#fff;font-size:9px;font-weight:800;border-radius:6px;padding:1px 6px;margin-left:4px">سري للغاية</span>':t.confidentiality==='secret'?'<span style="background:#4b5563;color:#fff;font-size:9px;font-weight:800;border-radius:6px;padding:1px 6px;margin-left:4px">سري</span>':''}${escHtml(t.title||'')}<br><span style="font-size:9.5px;color:#008F8F">${topicDirectionLabel(t)}</span>${t.docNo?'<br><span style="font-size:9.5px;color:#90a0b3">📄 '+escHtml(t.docNo)+'</span>':''}</td>
       <td style="font-size:11px">${escHtml((t.correspondenceDirection==='out' ? t.toEntity||t.from : t.from)||'—')}</td>
       <td>${fmtDate(t.date)}</td>
-      <td style="font-size:10px;color:var(--text2)">${kpiBadge}</td>
+      ${showKpi ? `<td style="font-size:10px;color:var(--text2)">${kpiBadge}</td>` : ''}
       <td style="font-size:10px;text-align:center">${t.followEntity ? FOLLOW_ENTITY_LABELS[t.followEntity] : '—'}${t.followEntity==='taqseem'&&t.taqseemName ? '<br><span style="color:#7d3c98">📂 '+t.taqseemName+'</span>' : (t.followEntity==='rais_depts'||t.followEntity==='naib_and_rais')&&t.raisDeptName ? '<br><span style="color:#00A6A6">🏛️ '+t.raisDeptName+'</span>' : t.followEntity==='other'&&t.otherEntityName ? '<br><span style="color:#6b7c8d">🏢 '+t.otherEntityName+'</span>' : t.taqseemName ? '<br><span style="color:#7d3c98">📂 '+t.taqseemName+'</span>' : ''}${t.toEntity && !(t.externalEntities||[]).some(e=>e.name===t.toEntity) ? '<br><span style="color:#0f766e">📤 إلى: '+escHtml(t.toEntity)+'</span>' : ''}${(t.externalEntities||[]).map(e=>'<br><span style="color:#0f766e">🌐 '+escHtml(e.name||'')+'</span>').join('')}</td>
       <td style="font-size:10px;text-align:center">${t.responseMethod ? RESPONSE_METHOD_LABELS[t.responseMethod] : '—'}</td>
       <td style="text-align:center;font-weight:700;color:var(--blue)">${t.manualCount ?? t.followups.length}${entityCountsBadge(t)}</td>
@@ -4695,7 +4699,7 @@ function renderTopicsTable() {
       <td>${STATUS_BADGES[t.status]||t.status}</td>
       ${actions}
     </tr>`;
-  }).join('') || noData(12);
+  }).join('') || noData(showKpi ? 12 : 11);
   
   // المنتهية تنتقل تلقائياً إلى الأرشيف، لذلك لا نعرضها هنا.
 }
@@ -4706,6 +4710,13 @@ function topicEntryHasNoKpi(prefix) {
 }
 function onSlaModeChange(prefix){
   const noKpi=topicEntryHasNoKpi(prefix);
+  for(const suffix of ['Kpi','SlaDays']){
+    const field=$(prefix+suffix);
+    if(field?.parentElement) field.parentElement.style.display=noKpi?'none':'';
+  }
+  const summary=$(prefix+'Kpi')?.closest('details')?.querySelector('summary');
+  if(summary) summary.textContent=noKpi?'تفاصيل إضافية':'تفاصيل إضافية ومؤشر المدة';
+  if(prefix==='edit' && $('editTimeInfo')) $('editTimeInfo').style.display=noKpi?'none':'';
   const modeField=$(prefix+'SlaMode');
   if(modeField?.parentElement) modeField.parentElement.style.display=noKpi?'none':'';
   if(noKpi){
@@ -5011,6 +5022,9 @@ function openFollowupModal(tid) {
 function renderTopicTimeInfo() {
   const box = $('editTimeInfo');
   if(!box) return;
+  const noKpi=topicEntryHasNoKpi('edit');
+  box.style.display=noKpi?'none':'';
+  if(noKpi){box.innerHTML='';return;}
   const tid = parseFloat($('editTopicId').value);
   const t = findEditableTopic(tid);
   if(!t) { box.innerHTML = ''; return; }
