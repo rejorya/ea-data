@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-25T08:23:01.979Z",
+  "exportedAt": "2026-10-25T08:43:20.094Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -46920,6 +46920,25 @@
       ],
       "transactionType": "directive",
       "recordId": 1789284165566.1848
+    },
+    {
+      "id": 1792917798588.3516,
+      "transactionType": "directive",
+      "date": "2026-10-22",
+      "month": "أكتوبر",
+      "ref": "1170/3/2022v423-2",
+      "dept": "مكتب الرئيس",
+      "due": "",
+      "dueDate": "",
+      "subj": "نفوق كبير للسلاحف بسبب استخدام شباك الصيد في موسم صيد الشارخة",
+      "action": "",
+      "status": "new",
+      "note": "",
+      "followLog": [],
+      "sourceRecord": "topic-entry",
+      "recordId": 1792917798588.3516,
+      "receivedDate": "2026-10-22",
+      "presidentDirectionDate": "2026-10-22"
     }
   ],
   "weekly": [
@@ -52221,6 +52240,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792917798636.6238,
+          "at": "2026-10-25T08:43:18.636Z",
+          "action": "إضافة توجيه رئيس",
+          "details": "نفوق كبير للسلاحف بسبب استخدام شباك الصيد في موسم صيد الشارخة"
+        },
         {
           "id": 1792916579518.6914,
           "at": "2026-10-25T08:22:59.518Z",
