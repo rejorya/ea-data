@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-26T05:50:54.429Z",
+  "exportedAt": "2026-10-26T05:53:33.833Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37990,7 +37990,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "الدكتورة مديرة الاستدامة البيئية\nللقاء مع مقدم الطلب والافادة حول دور الهيئة هل هي راعية ومشرفة ام ان هناك جهات اخرى؟ وغير ذلك من التفاصيل",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-14",
@@ -38025,14 +38025,32 @@
           "taqseem": "",
           "startDate": "2026-10-14",
           "daysSince": 4
+        },
+        {
+          "date": "2026-10-26",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "لم يتم الرد على متابعتنا او ابلاغنا بالمستجدات وتم رفع الرد لمدير المكتب",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 8
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791955071143.7434,
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "rais_depts",
       "raisDeptName": "مدير مختص بالاستدامة",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-10-26"
     },
     {
       "id": 1791955959293.3992,
@@ -47021,6 +47039,93 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-10-26T05:27:35.933Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1791955071143.7434,
+      "transactionType": "followup",
+      "title": "دعوة للدعم الاستراتيجي والمشاركة  المنتدى التنفيذي للمعادن الحيوية والاقتصاد الدائري في سلطنة عمان",
+      "from": "مجلس مجان للشوؤن الاستراتيجية والطاقة والاستشراف",
+      "docNo": "1170/3/2022v421-95",
+      "toEntity": "مدير مختص بالاستدامة",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-13",
+      "receivedFollowDate": "2026-10-14",
+      "followStart": "2026-10-14",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "الدكتورة مديرة الاستدامة البيئية\nللقاء مع مقدم الطلب والافادة حول دور الهيئة هل هي راعية ومشرفة ام ان هناك جهات اخرى؟ وغير ذلك من التفاصيل",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-14",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 0
+        },
+        {
+          "date": "2026-10-20",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 4
+        },
+        {
+          "date": "2026-10-26",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "لم يتم الرد على متابعتنا او ابلاغنا بالمستجدات وتم رفع الرد لمدير المكتب",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-14",
+          "daysSince": 8
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791955071143.7434,
+      "manualCount": 3,
+      "followEntity": "rais_depts",
+      "raisDeptName": "مدير مختص بالاستدامة",
+      "responseMethod": "",
+      "closedAt": "2026-10-26",
+      "archivedAt": "2026-10-26T05:53:31.732Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-10-26T05:53:31.733Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -52737,6 +52842,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792994011705.7407,
+          "at": "2026-10-26T05:53:31.705Z",
+          "action": "إضافة متابعة",
+          "details": "دعوة للدعم الاستراتيجي والمشاركة  المنتدى التنفيذي للمعادن الحيوية والاقتصاد الدائري في سلطنة عمان"
+        },
+        {
+          "id": 1792994011639.5754,
+          "at": "2026-10-26T05:53:31.639Z",
+          "action": "تعديل موضوع",
+          "details": "دعوة للدعم الاستراتيجي والمشاركة  المنتدى التنفيذي للمعادن الحيوية والاقتصاد الدائري في سلطنة عمان"
+        },
         {
           "id": 1792993852347.4932,
           "at": "2026-10-26T05:50:52.347Z",
