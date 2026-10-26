@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-26T03:45:17.711Z",
+  "exportedAt": "2026-10-26T03:50:26.403Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37601,7 +37601,7 @@
           "responseMethod": ""
         }
       ],
-      "slaMode": "kpi",
+      "slaMode": "none",
       "slaDays": null,
       "kpi": "",
       "note": "تم التوجيه للتقسيم للاختصاص",
@@ -37623,11 +37623,28 @@
           "taqseem": "",
           "startDate": "2026-10-08",
           "daysSince": 1
+        },
+        {
+          "date": "2026-10-25",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "شركة آرا للبترول\n1170/3/2022v423-26",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-08",
+          "daysSince": 11
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791693857278.079,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "other",
       "otherEntityName": "",
       "responseMethod": ""
@@ -52524,7 +52541,21 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1792986624227.9612,
+          "at": "2026-10-26T03:50:24.227Z",
+          "action": "إضافة متابعة",
+          "details": "المعسكر السنوي للرقابة والتفتيش البيئي"
+        },
+        {
+          "id": 1792986624144.0583,
+          "at": "2026-10-26T03:50:24.144Z",
+          "action": "تعديل موضوع",
+          "details": "المعسكر السنوي للرقابة والتفتيش البيئي"
+        }
+      ]
     },
     {
       "id": "ddd41ee0-510a-49f9-b1de-8e7e781ccf4f",
