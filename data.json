@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-26T04:50:16.897Z",
+  "exportedAt": "2026-10-26T05:27:39.940Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39949,7 +39949,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-22",
@@ -39973,7 +39973,8 @@
       "recordId": 1792642239465.2756,
       "manualCount": 1,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-10-26"
     },
     {
       "id": 1792912223305.046,
@@ -46899,6 +46900,58 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveVersion": 1,
       "archiveUpdatedAt": "2026-10-26T04:18:45.370Z"
+    },
+    {
+      "id": 1792642239465.2756,
+      "transactionType": "followup",
+      "title": "الموافقة على اختيار الشريك المنفذ لمشروع الجاهزية الخاص بمركز عُمان للحياد الصفري.pdf",
+      "from": "وزارة الطاقة والمعادن",
+      "docNo": "1170/3/2022v422-81",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "secret",
+      "date": "2026-10-20",
+      "receivedFollowDate": "2026-10-21",
+      "followStart": "2026-10-21",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-22",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-21",
+          "daysSince": 1
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792642239465.2756,
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "closedAt": "2026-10-26",
+      "archivedAt": "2026-10-26T05:27:35.932Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-10-26T05:27:35.933Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -52615,6 +52668,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792992455899.37,
+          "at": "2026-10-26T05:27:35.899Z",
+          "action": "تعديل موضوع",
+          "details": "الموافقة على اختيار الشريك المنفذ لمشروع الجاهزية الخاص بمركز عُمان للحياد الصفري.pdf"
+        },
         {
           "id": 1792990185004.096,
           "at": "2026-10-26T04:49:45.004Z",
