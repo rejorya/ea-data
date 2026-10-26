@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-25T09:11:24.023Z",
+  "exportedAt": "2026-10-26T03:44:03.535Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -52500,6 +52500,32 @@
   ],
   "activityLog": [
     {
+      "id": 1792986238507.2507,
+      "sessionId": "5fbf9824-3e5d-48b9-b894-fa48499066f8",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-26T03:43:58.506Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": "ddd41ee0-510a-49f9-b1de-8e7e781ccf4f",
       "sessionId": "ddd41ee0-510a-49f9-b1de-8e7e781ccf4f",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -52521,9 +52547,9 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-25T05:50:57.571Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-25T10:13:11.894Z",
+      "duration": "262 دقيقة و 14 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
       "central": true,
       "actions": [
         {
@@ -52724,7 +52750,8 @@
           "action": "تعديل موضوع",
           "details": "المشاركة في مؤتمر الأطراف الحادي والثلاثين لاتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ (COP٣١)"
         }
-      ]
+      ],
+      "durationMinutes": 262
     },
     {
       "id": "9a447b6d-298f-4ee6-a2e6-15eabbe3632f",
