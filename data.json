@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-26T05:33:55.705Z",
+  "exportedAt": "2026-10-26T05:37:18.504Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39620,11 +39620,28 @@
           "taqseem": "",
           "startDate": "2026-10-18",
           "daysSince": 1
+        },
+        {
+          "date": "2026-10-26",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_and_rais",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-18",
+          "daysSince": 6
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792382597915.7302,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "naib_and_rais",
       "raisDeptName": "دائرة التعاون الدولي",
       "responseMethod": ""
@@ -52685,6 +52702,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792993036430.0066,
+          "at": "2026-10-26T05:37:16.430Z",
+          "action": "إضافة متابعة",
+          "details": "تقديم مستندات بشأن مراجعة اتفاقية  بازل في مجال  المنسجوجات"
+        },
+        {
+          "id": 1792993036360.2732,
+          "at": "2026-10-26T05:37:16.360Z",
+          "action": "تعديل موضوع",
+          "details": "تقديم مستندات بشأن مراجعة اتفاقية  بازل في مجال  المنسجوجات"
+        },
         {
           "id": 1792992833631.9998,
           "at": "2026-10-26T05:33:53.631Z",
