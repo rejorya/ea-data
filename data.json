@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-26T05:42:11.299Z",
+  "exportedAt": "2026-10-26T05:50:54.429Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39406,11 +39406,28 @@
           "taqseem": "",
           "startDate": "2026-10-15",
           "daysSince": 1
+        },
+        {
+          "date": "2026-10-26",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 7
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792315069286.0823,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "naib_office",
       "responseMethod": ""
     },
@@ -52720,6 +52737,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792993852347.4932,
+          "at": "2026-10-26T05:50:52.347Z",
+          "action": "إضافة متابعة",
+          "details": "شكوى وطلب إعادة النظر في موقع مشروع شركة الاستزراع السمكي الواقع بين منطقني الحد والجديمة بولاية جعلان بني بو حسن"
+        },
+        {
+          "id": 1792993852282.8088,
+          "at": "2026-10-26T05:50:52.282Z",
+          "action": "تعديل موضوع",
+          "details": "شكوى وطلب إعادة النظر في موقع مشروع شركة الاستزراع السمكي الواقع بين منطقني الحد والجديمة بولاية جعلان بني بو حسن"
+        },
         {
           "id": 1792993329221.4287,
           "at": "2026-10-26T05:42:09.221Z",
