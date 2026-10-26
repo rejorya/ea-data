@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-26T04:47:11.775Z",
+  "exportedAt": "2026-10-26T04:50:16.897Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38428,11 +38428,28 @@
           "taqseem": "",
           "startDate": "2026-10-13",
           "daysSince": 5
+        },
+        {
+          "date": "2026-10-26",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-13",
+          "daysSince": 9
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792036878531.1294,
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "rais_depts",
       "raisDeptName": "",
       "responseMethod": ""
@@ -52598,6 +52615,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1792990185004.096,
+          "at": "2026-10-26T04:49:45.004Z",
+          "action": "إضافة متابعة",
+          "details": "خطة تهجير نظام وصول من السحابة الحكومية الى الموقع الجديد"
+        },
+        {
+          "id": 1792990184935.5515,
+          "at": "2026-10-26T04:49:44.935Z",
+          "action": "تعديل موضوع",
+          "details": "خطة تهجير نظام وصول من السحابة الحكومية الى الموقع الجديد"
+        },
         {
           "id": 1792990029697.6572,
           "at": "2026-10-26T04:47:09.697Z",
