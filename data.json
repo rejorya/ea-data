@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-26T05:53:33.833Z",
+  "exportedAt": "2026-10-26T05:53:37.059Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38025,23 +38025,6 @@
           "taqseem": "",
           "startDate": "2026-10-14",
           "daysSince": 4
-        },
-        {
-          "date": "2026-10-26",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "لم يتم الرد على متابعتنا او ابلاغنا بالمستجدات وتم رفع الرد لمدير المكتب",
-          "actionType": "",
-          "scope": "internal",
-          "by": "",
-          "result": "",
-          "entity": "rais_depts",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-14",
-          "daysSince": 8
         }
       ],
       "sheet": "مُضاف يدوياً",
