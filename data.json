@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-26T05:56:07.574Z",
+  "exportedAt": "2026-10-26T08:51:43.141Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -52816,6 +52816,32 @@
   ],
   "activityLog": [
     {
+      "id": 1793004699084.9683,
+      "sessionId": "2623d558-0d92-4c6b-8661-34dcd292c44c",
+      "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "هاتف/جهاز لوحي • Android • Chrome",
+      "deviceType": "هاتف/جهاز لوحي",
+      "deviceOS": "Android",
+      "browser": "Chrome",
+      "platform": "Linux armv81",
+      "deviceSnapshot": {
+        "id": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+        "label": "هاتف/جهاز لوحي • Android • Chrome",
+        "type": "هاتف/جهاز لوحي",
+        "os": "Android",
+        "browser": "Chrome",
+        "platform": "Linux armv81"
+      },
+      "loginAt": "2026-10-26T08:51:39.083Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": "30e5e436-c957-4bcd-9bcb-e3d5c4bb75e0",
       "sessionId": "30e5e436-c957-4bcd-9bcb-e3d5c4bb75e0",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -53294,10 +53320,11 @@
         "platform": "Linux armv81"
       },
       "loginAt": "2026-10-24T16:29:03.367Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
-      "central": true
+      "logoutAt": "2026-10-24T16:30:08.769Z",
+      "duration": "1 دقيقة و 5 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
+      "central": true,
+      "durationMinutes": 1
     },
     {
       "id": "d426f27b-56c3-4be1-8cca-34e24760527d",
@@ -53432,9 +53459,9 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-22T03:52:01.841Z",
-      "logoutAt": "2026-10-22T04:55:47.552Z",
-      "duration": "63 دقيقة و 45 ثانية",
-      "logoutReason": "إغلاق المتصفح أو إعادة التحميل",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null,
       "central": true,
       "actions": [
         {
@@ -53551,8 +53578,7 @@
           "action": "تعديل موضوع",
           "details": "الاجتماع الثاني للجنة الوطنية لإدارة الحالات الطارئة لعام 2026م"
         }
-      ],
-      "durationMinutes": 63
+      ]
     },
     {
       "id": "ca8fb392-285b-4bb9-80d0-fa28aed22d10",
