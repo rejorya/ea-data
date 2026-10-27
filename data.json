@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-27T05:15:19.319Z",
+  "exportedAt": "2026-10-27T05:31:34.938Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -40371,6 +40371,32 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1793079092833.2273,
+      "transactionType": "followup",
+      "title": "طلب مراجعة مشروع إصدار لائحة إدارة التغير  المناخي",
+      "from": "وزارة العدل والشؤون القانونية",
+      "docNo": "1170/3/2022v423-65",
+      "toEntity": "الدائرة القانونية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-27",
+      "receivedFollowDate": "2026-10-27",
+      "followStart": "2026-10-27",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1793079092833.2273
     }
   ],
   "archivedTopics": [
@@ -53130,7 +53156,15 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1793079092886.2156,
+          "at": "2026-10-27T05:31:32.886Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب مراجعة مشروع إصدار لائحة إدارة التغير  المناخي"
+        }
+      ]
     },
     {
       "id": "fbb7225d-5ebf-48bb-9e19-868a0a868983",
