@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-26T09:54:09.865Z",
+  "exportedAt": "2026-10-27T04:04:07.725Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -52880,6 +52880,32 @@
   ],
   "activityLog": [
     {
+      "id": 1793073843362.0852,
+      "sessionId": "6f1a21f1-0f38-47d3-b23d-e77f5318486c",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-27T04:04:03.361Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": "1288a107-f50a-4da3-b423-45f57265ff72",
       "sessionId": "1288a107-f50a-4da3-b423-45f57265ff72",
       "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
@@ -52928,9 +52954,9 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-26T03:43:58.506Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-26T10:06:49.159Z",
+      "duration": "382 دقيقة و 50 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
       "central": true,
       "actions": [
         {
@@ -53107,7 +53133,8 @@
           "action": "تعديل موضوع",
           "details": "المعسكر السنوي للرقابة والتفتيش البيئي"
         }
-      ]
+      ],
+      "durationMinutes": 382
     },
     {
       "id": "ddd41ee0-510a-49f9-b1de-8e7e781ccf4f",
