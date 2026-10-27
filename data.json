@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-27T04:04:11.476Z",
+  "exportedAt": "2026-10-27T04:10:34.240Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -36195,7 +36195,7 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "الرؤية\nلعمل اللازم\n سوف يتم عقد اجتماع مع مديرية الالتزام البيئي بتاريخ 12 أكتوبر",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-08",
@@ -36264,14 +36264,32 @@
           "taqseem": "",
           "startDate": "2026-10-05",
           "daysSince": 15
+        },
+        {
+          "date": "2026-10-27",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "لايحتاج متابعة حسب توجيه مدير لمكتب",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 16
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791274117771.544,
-      "manualCount": 4,
+      "manualCount": 5,
       "followEntity": "rais_depts",
       "raisDeptName": "مكتب متابعة تنفيذ رؤية عمان 2040",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-10-27"
     },
     {
       "id": 1791274392859.453,
@@ -47190,6 +47208,127 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-10-26T05:53:31.733Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1791274117771.544,
+      "transactionType": "followup",
+      "title": "مؤشر نسبة النفايات المعاد تدويرها من إجمالي النفايات القابلة لإعادة التدوير",
+      "from": "محافظة جنوب الباطنة",
+      "docNo": "1170/3/2022v420-23",
+      "toEntity": "مكتب الرؤية",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-28",
+      "receivedFollowDate": "2026-10-06",
+      "followStart": "2026-10-05",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "الرؤية\nلعمل اللازم\n سوف يتم عقد اجتماع مع مديرية الالتزام البيئي بتاريخ 12 أكتوبر",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-08",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 3
+        },
+        {
+          "date": "2026-10-08",
+          "replied": false,
+          "responseMethod": "via_follow",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "سوف يتم عقد اجتماع مع مديرية الالتزام البيئي بتاريخ 12 أكتوبر",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 3
+        },
+        {
+          "date": "2026-10-26",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 15
+        },
+        {
+          "date": "2026-10-26",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "اجراءات هذا الموضوع هي نفس الاجراءات التي تم عملها من قبل المديرية العامة للالتزام البيئي من خلال ورشة اجتمع فيها مكاتب المحافظين ومكاتب الرؤية وسوف تقوم المديرية بارسال مخرجات الورشة لمكاتب المحافظين.",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 15
+        },
+        {
+          "date": "2026-10-27",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "لايحتاج متابعة حسب توجيه مدير لمكتب",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 16
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791274117771.544,
+      "manualCount": 5,
+      "followEntity": "rais_depts",
+      "raisDeptName": "مكتب متابعة تنفيذ رؤية عمان 2040",
+      "responseMethod": "",
+      "closedAt": "2026-10-27",
+      "archivedAt": "2026-10-27T04:10:32.096Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-10-27T04:10:32.096Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -52904,7 +53043,21 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1793074232069.1672,
+          "at": "2026-10-27T04:10:32.069Z",
+          "action": "إضافة متابعة",
+          "details": "مؤشر نسبة النفايات المعاد تدويرها من إجمالي النفايات القابلة لإعادة التدوير"
+        },
+        {
+          "id": 1793074232004.6423,
+          "at": "2026-10-27T04:10:32.004Z",
+          "action": "تعديل موضوع",
+          "details": "مؤشر نسبة النفايات المعاد تدويرها من إجمالي النفايات القابلة لإعادة التدوير"
+        }
+      ]
     },
     {
       "id": "1288a107-f50a-4da3-b423-45f57265ff72",
