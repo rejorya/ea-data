@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-27T06:22:42.609Z",
+  "exportedAt": "2026-10-27T06:23:13.663Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -40413,16 +40413,37 @@
       "followStart": "2026-10-27",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "std14",
       "note": "نائب الرئيس\nللدراسة والافادة",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-27",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-27",
+          "daysSince": 0
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1793081734389.3574
+      "recordId": 1793081734389.3574,
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     },
     {
       "id": 1793082160518.7405,
@@ -53210,6 +53231,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793082191460.9038,
+          "at": "2026-10-27T06:23:11.460Z",
+          "action": "إضافة متابعة",
+          "details": "مقترح استثماري بقيمة 2.5 مليون لتصنيع تغليف نباتي قابل للتسميد في سلطنة عمان"
+        },
+        {
+          "id": 1793082191375.3582,
+          "at": "2026-10-27T06:23:11.375Z",
+          "action": "تعديل موضوع",
+          "details": "مقترح استثماري بقيمة 2.5 مليون لتصنيع تغليف نباتي قابل للتسميد في سلطنة عمان"
+        },
         {
           "id": 1793082160574.694,
           "at": "2026-10-27T06:22:40.574Z",
