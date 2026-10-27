@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-27T07:31:23.983Z",
+  "exportedAt": "2026-10-27T07:33:28.690Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39614,7 +39614,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-18",
@@ -39649,13 +39649,31 @@
           "taqseem": "",
           "startDate": "2026-10-05",
           "daysSince": 10
+        },
+        {
+          "date": "2026-10-19",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم رفع افادة الدائرة الى رئيسة القسم",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 10
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792318153547.3926,
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-10-27"
     },
     {
       "id": 1792382243599.7314,
@@ -47557,6 +47575,92 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-10-27T04:43:43.591Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1792318153547.3926,
+      "transactionType": "followup",
+      "title": "فرصة تعاون إعلامي مشترك لإبراز العمل البيئي الميداني في سلطنة عمان.pdf",
+      "from": "الشركة العمانية للاتصالات المستقبل",
+      "docNo": "",
+      "toEntity": "دائرة التواصل والاعلام",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-10-05",
+      "receivedFollowDate": "2026-10-18",
+      "followStart": "2026-10-05",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-18",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 9
+        },
+        {
+          "date": "2026-10-19",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم استلام افادة من الدلئرة وتوجيهها الى رئيسة القسم",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 10
+        },
+        {
+          "date": "2026-10-19",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم رفع افادة الدائرة الى رئيسة القسم",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 10
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792318153547.3926,
+      "manualCount": 3,
+      "followEntity": "",
+      "responseMethod": "",
+      "closedAt": "2026-10-27",
+      "archivedAt": "2026-10-27T07:33:26.548Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-10-27T07:33:26.548Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -53273,6 +53377,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793086406510.2473,
+          "at": "2026-10-27T07:33:26.510Z",
+          "action": "إضافة متابعة",
+          "details": "فرصة تعاون إعلامي مشترك لإبراز العمل البيئي الميداني في سلطنة عمان.pdf"
+        },
+        {
+          "id": 1793086406420.614,
+          "at": "2026-10-27T07:33:26.420Z",
+          "action": "تعديل موضوع",
+          "details": "فرصة تعاون إعلامي مشترك لإبراز العمل البيئي الميداني في سلطنة عمان.pdf"
+        },
         {
           "id": 1793086281789.445,
           "at": "2026-10-27T07:31:21.789Z",
