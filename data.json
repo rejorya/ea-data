@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-27T05:31:34.938Z",
+  "exportedAt": "2026-10-27T06:15:36.501Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -40397,6 +40397,32 @@
       "followups": [],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793079092833.2273
+    },
+    {
+      "id": 1793081734389.3574,
+      "transactionType": "followup",
+      "title": "مقترح استثماري بقيمة 2.5 مليون لتصنيع تغليف نباتي قابل للتسميد في سلطنة عمان",
+      "from": "24 Degree Circle",
+      "docNo": "1170/3/2022v423-47",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-26",
+      "receivedFollowDate": "2026-10-27",
+      "followStart": "2026-10-27",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "std14",
+      "note": "نائب الرئيس\nللدراسة والافادة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1793081734389.3574
     }
   ],
   "archivedTopics": [
@@ -53158,6 +53184,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793081734452.8977,
+          "at": "2026-10-27T06:15:34.452Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "مقترح استثماري بقيمة 2.5 مليون لتصنيع تغليف نباتي قابل للتسميد في سلطنة عمان"
+        },
         {
           "id": 1793079092886.2156,
           "at": "2026-10-27T05:31:32.886Z",
