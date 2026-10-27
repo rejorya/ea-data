@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-27T06:15:36.501Z",
+  "exportedAt": "2026-10-27T06:22:42.609Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -40423,6 +40423,32 @@
       "followups": [],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793081734389.3574
+    },
+    {
+      "id": 1793082160518.7405,
+      "transactionType": "followup",
+      "title": "مشروع قواعد تنظيم الشؤون البيئية في المناطق الخاضعة لإشراف الهيئة",
+      "from": "الهيئة العامة للمناطق الاقتصادية الخاصة والمناطق الحرة",
+      "docNo": "1170/3/2022v423-42",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-26",
+      "receivedFollowDate": "2026-10-27",
+      "followStart": "2026-10-27",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "rais",
+      "slaDays": 5,
+      "kpi": "",
+      "note": "نائب الرئيس\nلعمل اللازم خلال اسبوع ",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1793082160518.7405
     }
   ],
   "archivedTopics": [
@@ -53184,6 +53210,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793082160574.694,
+          "at": "2026-10-27T06:22:40.574Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "مشروع قواعد تنظيم الشؤون البيئية في المناطق الخاضعة لإشراف الهيئة"
+        },
         {
           "id": 1793081734452.8977,
           "at": "2026-10-27T06:15:34.452Z",
