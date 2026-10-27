@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-27T06:23:57.482Z",
+  "exportedAt": "2026-10-27T06:24:46.079Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -40464,16 +40464,37 @@
       "followStart": "2026-10-27",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "rais",
       "slaDays": 5,
-      "kpi": "",
+      "kpi": "wweek",
       "note": "نائب الرئيس\nلعمل اللازم خلال اسبوع ",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "date": "2026-10-27",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-27",
+          "daysSince": 0
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1793082160518.7405
+      "recordId": 1793082160518.7405,
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": ""
     }
   ],
   "archivedTopics": [
@@ -53235,6 +53256,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793082283883.344,
+          "at": "2026-10-27T06:24:43.883Z",
+          "action": "إضافة متابعة",
+          "details": "مشروع قواعد تنظيم الشؤون البيئية في المناطق الخاضعة لإشراف الهيئة"
+        },
+        {
+          "id": 1793082283788.8435,
+          "at": "2026-10-27T06:24:43.788Z",
+          "action": "تعديل موضوع",
+          "details": "مشروع قواعد تنظيم الشؤون البيئية في المناطق الخاضعة لإشراف الهيئة"
+        },
         {
           "id": 1793082235293.0398,
           "at": "2026-10-27T06:23:55.293Z",
