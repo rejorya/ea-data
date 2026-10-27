@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-27T05:10:37.284Z",
+  "exportedAt": "2026-10-27T05:15:15.769Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -53106,6 +53106,32 @@
   ],
   "activityLog": [
     {
+      "id": 1793078112461.9873,
+      "sessionId": "202bd40e-b330-473d-89bc-c0a96fa7bf3c",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-27T05:15:12.461Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": "fbb7225d-5ebf-48bb-9e19-868a0a868983",
       "sessionId": "fbb7225d-5ebf-48bb-9e19-868a0a868983",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -53127,9 +53153,9 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-27T05:02:00.965Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-27T05:14:14.088Z",
+      "duration": "12 دقيقة و 13 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
       "central": true,
       "actions": [
         {
@@ -53144,7 +53170,8 @@
           "action": "تعديل توجيه الرئيس",
           "details": "نفوق كبير للسلاحف بسبب استخدام شباك الصيد في موسم صيد الشارخة"
         }
-      ]
+      ],
+      "durationMinutes": 12
     },
     {
       "id": "0f4cbe90-ecb4-4201-9e8e-cff5a056d362",
