@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-27T04:10:34.240Z",
+  "exportedAt": "2026-10-27T04:43:45.762Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35954,11 +35954,11 @@
       "followScope": "external",
       "correspondenceDirection": "out",
       "externalEntities": [],
-      "slaMode": "kpi",
+      "slaMode": "none",
       "slaDays": null,
-      "kpi": "other",
+      "kpi": "",
       "note": "تم التوجيه الى التقسيم للمتابعة",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-06",
@@ -35976,13 +35976,31 @@
           "taqseem": "",
           "startDate": "2026-10-04",
           "daysSince": 2
+        },
+        {
+          "date": "2026-10-27",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "1170/3/2022v423-58",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 17
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791272579071.7695,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-10-27"
     },
     {
       "id": 1791273011931.2808,
@@ -47329,6 +47347,75 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-10-27T04:10:32.096Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1791272579071.7695,
+      "transactionType": "followup",
+      "title": "نفوق الحيتان ومخاطر أنشطة الصيد في منطقة بر الحكمان",
+      "from": "مكتب الرئيس",
+      "docNo": "1170/3/2022v420-79",
+      "toEntity": "وزارة الثروة الزراعية و السمكية و موارد المياه",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-04",
+      "receivedFollowDate": "2026-10-04",
+      "followStart": "2026-10-04",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "تم التوجيه الى التقسيم للمتابعة",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-06",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التوجيه الى التقسيم للمتابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-10-27",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "1170/3/2022v423-58",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 17
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791272579071.7695,
+      "manualCount": 2,
+      "followEntity": "",
+      "responseMethod": "",
+      "closedAt": "2026-10-27",
+      "archivedAt": "2026-10-27T04:43:43.591Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-10-27T04:43:43.591Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -53045,6 +53132,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793076223567.4924,
+          "at": "2026-10-27T04:43:43.567Z",
+          "action": "إضافة متابعة",
+          "details": "نفوق الحيتان ومخاطر أنشطة الصيد في منطقة بر الحكمان"
+        },
+        {
+          "id": 1793076223497.1287,
+          "at": "2026-10-27T04:43:43.497Z",
+          "action": "تعديل موضوع",
+          "details": "نفوق الحيتان ومخاطر أنشطة الصيد في منطقة بر الحكمان"
+        },
         {
           "id": 1793074232069.1672,
           "at": "2026-10-27T04:10:32.069Z",
