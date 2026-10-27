@@ -510,7 +510,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
     <div class="sc g"><div class="sl">منجزة ✔</div><div class="sn" id="dr-done">0</div></div>
     <div class="sc o"><div class="sl">قيد التنفيذ</div><div class="sn" id="dr-prog">0</div></div>
     <div class="sc r"><div class="sl">ذات ملاحظات</div><div class="sn" id="dr-late">0</div></div>
-    <div class="sc p"><div class="sl">نسبة الإنجاز</div><div class="sn" id="dr-pct">0%</div></div>
+    <div class="sc p"><div class="sl">الالتزام بمواعيد التوجيهات المستحقة للتقييم</div><div class="sn" style="font-size:16px" id="dr-pct">0%</div></div>
   </div>
   
   <!-- استيراد Excel للتوجيهات -->
@@ -724,10 +724,10 @@ body.viewer-only .print-btn { display: inline-block !important; }
         </div>
         <div>
           <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">
-            <div style="font-size:32px;font-weight:700;color:var(--purple)" id="m-dirpct">100%</div>
-            <div style="font-size:13px;color:#666">تنفيذ توجيهات الرئيس</div>
+            <div style="font-size:16px;font-weight:700;color:var(--purple)" id="m-dirpct">—</div>
+            <div style="font-size:13px;color:#666">الالتزام بمواعيد التوجيهات المستحقة للتقييم</div>
           </div>
-          <div class="pw" style="height:14px"><div class="pb p" id="m-dirpct-bar" style="width:100%"></div></div>
+          <div class="pw" style="height:14px"><div class="pb p" id="m-dirpct-bar" style="width:0%"></div></div><div id="m-directive-assessment" style="margin-top:12px;font-size:12px;overflow-x:auto"></div>
         </div>
       </div>
     </div>
@@ -848,15 +848,15 @@ body.viewer-only .print-btn { display: inline-block !important; }
   <div class="al al-s">📑 تقرير تنفيذ توجيهات الرئيس <span style="font-size:10px;background:#155724;color:#fff;padding:2px 9px;border-radius:10px">الهدف 100%</span></div>
   
   <div class="stats">
-    <div class="sc p"><div class="sl">معدل الإنجاز</div><div class="sn" id="dr-rate">0%</div></div>
-    <div class="sc"><div class="sl">الالتزام بالمواعيد</div><div class="sn" id="dr-ontime">0%</div></div>
+    <div class="sc p"><div class="sl">تقييم التوجيهات المستحقة</div><div class="sn" style="font-size:16px" id="dr-rate">0%</div></div>
+    <div class="sc"><div class="sl">الالتزام بالمواعيد</div><div class="sn" style="font-size:16px" id="dr-ontime">0%</div></div>
     <div class="sc g"><div class="sl">بدون ملاحظات</div><div class="sn" id="dr-clean">0%</div></div>
     <div class="sc o"><div class="sl">ذات ملاحظات</div><div class="sn" id="dr-warn">0%</div></div>
   </div>
 
   <div class="card">
     <div class="ch p"><h2>توزيع الإنجاز حسب الشهر</h2></div>
-    <div class="tb"><table><thead><tr><th>الشهر</th><th>الإجمالي</th><th>المنجزة</th><th>شريط التقدم</th><th>النسبة</th></tr></thead><tbody id="drByMonth"></tbody></table></div>
+    <div class="tb"><table><thead><tr><th>الشهر</th><th>الإجمالي</th><th>المنجزة</th><th>غير مقيّم</th><th>الالتزام بالمواعيد</th></tr></thead><tbody id="drByMonth"></tbody></table></div>
   </div>
 
   <div class="card">
@@ -1668,6 +1668,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
             <option value="closed">مغلق</option>
           </select>
           </div>
+        <div class="fgs"><label>تاريخ الإنجاز الفعلي (للمنفذ أو المغلق)</label><input type="date" id="edCompletedAt"></div>
         <div class="fgs"><label>تاريخ الاستحقاق</label><input type="date" id="edDueDate">
         </div>
         <div class="fgs fw"><label>ملاحظات</label><textarea id="edNote"></textarea></div>
@@ -5819,9 +5820,49 @@ const DIR_STATUS_BADGES = {
 const DIR_DONE_SET = ['done','closed'];
 
 // متأخر تلقائياً: تجاوز تاريخ الاستحقاق وغير منفذ
+function directiveAssessment(d, cutoff){
+  const date=v=>/^\d{4}-\d{2}-\d{2}/.test(String(v||''))?String(v).slice(0,10):'';
+  const issued=date(d.date), due=date(d.dueDate);
+  const completed=date(d.completedAt||d.doneDate||d.closedAt);
+  const done=DIR_DONE_SET.includes(d.status);
+  if(issued && issued>cutoff) return {included:false};
+  if(done && !completed) return {included:true,eligible:false,label:'منفذ — تاريخ الإنجاز غير موثق',done:false};
+  if(done && completed<=cutoff){
+    return {included:true,done:true,eligible:!!due,ontime:!!due&&completed<=due,
+      label:due?(completed<=due?'منفذ ضمن المهلة':'منفذ بعد المهلة'):'منفذ — الاستحقاق غير محدد'};
+  }
+  const late=!!due && due<cutoff;
+  return {included:true,done:false,eligible:late,ontime:false,late,
+    label:late?'متأخر — تجاوز الاستحقاق':due?'قيد التنفيذ — ضمن المهلة':'قيد التنفيذ — الاستحقاق غير محدد'};
+}
+
+function collectDirectiveAssessment(from,to,source=D.directives){
+  const today=localDateKey(new Date());
+  const cutoff=to<today?to:today;
+  const rows=source.map(d=>({record:JSON.parse(JSON.stringify(d)),...directiveAssessment(d,cutoff)}))
+    .filter(r=>r.included && !(DIR_DONE_SET.includes(r.record.status) && String(r.record.completedAt||r.record.doneDate||r.record.closedAt||'').slice(0,10) && String(r.record.completedAt||r.record.doneDate||r.record.closedAt).slice(0,10)<from));
+  const eligible=rows.filter(r=>r.eligible), ontime=eligible.filter(r=>r.ontime).length;
+  return {from,to,cutoff,rows,total:rows.length,done:rows.filter(r=>r.done).length,
+    pending:rows.filter(r=>!r.done&&!r.late).length,late:rows.filter(r=>r.late).length,
+    eligible:eligible.length,ontime,rate:eligible.length?Math.round(ontime/eligible.length*100):null};
+}
+
+function directiveRateText(rate){return rate==null?'لا توجد توجيهات مستحقة للتقييم':rate+'%';}
+function monthlyDirectiveAssessment(month,year){
+  const n=MONTHS.indexOf(month)+1;
+  return collectDirectiveAssessment(year+'-'+String(n).padStart(2,'0')+'-01',localDateKey(new Date(Number(year),n,0)));
+}
+function buildDirectiveAssessmentHTML(a){
+  const e=escHtml;
+  return '<section><h2>متابعة توجيهات الرئيس خلال الفترة</h2><p>الحالة حتى '+e(fmtDate(a.cutoff))+' — الالتزام بالمواعيد: <b>'+directiveRateText(a.rate)+'</b></p>'
+    +'<p>الإجمالي: '+a.total+'؛ المنفذ: '+a.done+'؛ قيد التنفيذ أو بانتظار بيانات التقييم: '+a.pending+'؛ المتأخر: '+a.late+'. تُستبعد التوجيهات التي لم تنتهِ مهلتها والتوجيهات ناقصة تواريخ القياس من النسبة. الاستحقاق شامل لآخر يوم؛ يبدأ التأخير في اليوم التالي.</p>'
+    +'<table class="data-table"><thead><tr><th>الموضوع</th><th>تاريخ التوجيه</th><th>الاستحقاق</th><th>الحالة عند التقرير</th></tr></thead><tbody>'
+    +a.rows.map(r=>'<tr><td>'+e(r.record.subj||'—')+'</td><td>'+e(fmtDate(r.record.date))+'</td><td>'+e(r.record.dueDate?fmtDate(r.record.dueDate):r.record.due||'غير محدد')+'</td><td>'+e(r.label)+'</td></tr>').join('')+'</tbody></table></section>';
+}
+
 function isDirLate(d){
   if(DIR_DONE_SET.includes(d.status)) return false;
-  if(d.status==='late') return true;
+  if(!d.dueDate) return d.status==='late';
   const today = localDateKey(new Date());
   return !!(d.dueDate && d.dueDate < today);
 }
@@ -5837,7 +5878,7 @@ function renderDirectivesTable() {
   setText('dr-done', done);
   setText('dr-prog', prog);
   setText('dr-late', late);
-  setText('dr-pct', pct + '%');
+  setText('dr-pct', directiveRateText(collectDirectiveAssessment('',localDateKey(new Date())).rate));
   
   $('drTable').innerHTML = D.directives.map((d, i) => {
     const actions = canEditData() ? `
@@ -5848,7 +5889,7 @@ function renderDirectivesTable() {
       </td>` : '<td class="adminOnly">—</td>';
     
     const autoLate = isDirLate(d) && !DIR_DONE_SET.includes(d.status) && d.status!=='late';
-    const statusBadge = (DIR_STATUS_BADGES[d.status]||DIR_STATUS_BADGES.prog) + (autoLate?'<br><span style="font-size:10px;color:#b91c1c;font-weight:700">⏰ تجاوز الاستحقاق</span>':'');
+    const statusBadge = escHtml(directiveAssessment(d,localDateKey(new Date())).label||'غير مستحق بعد');
     const dueCell = d.dueDate ? fmtDate(d.dueDate) : (d.due||'—');
     return `<tr${isDirLate(d)?' style="background:#fff5f5"':''}>
       <td>${i+1}</td>
@@ -5877,20 +5918,20 @@ function renderDirByDept(){
     const e = map[k] || (map[k]={tot:0,done:0,late:0});
     e.tot++; if(DIR_DONE_SET.includes(d.status)) e.done++; if(isDirLate(d)) e.late++;
   });
-  const rows = Object.keys(map).map(k=>({n:k,...map[k],pct:Math.round(map[k].done/map[k].tot*100)})).sort((a,b)=>a.pct-b.pct);
+  const rows = Object.keys(map).map(k=>({n:k,...map[k],pct:collectDirectiveAssessment('',localDateKey(new Date()),D.directives.filter(d=>(d.dept||'غير محدد').trim()===k)).rate})).sort((a,b)=>a.pct-b.pct);
   if(!rows.length){ mount.innerHTML=''; return; }
   const trs = rows.map(r=>{
-    const col = r.pct>=80?'#1d8349':r.pct>=50?'#b6950a':'#c0392b';
+    const col = r.pct==null?'#566573':r.pct>=80?'#1d8349':r.pct>=50?'#b6950a':'#c0392b';
     return `<tr style="border-bottom:1px solid #eef2f6">
       <td style="padding:8px 10px;font-weight:600;font-size:12px">${r.n}</td>
       <td style="padding:8px 10px;text-align:center">${r.tot}</td>
       <td style="padding:8px 10px;text-align:center;color:#1d8349;font-weight:700">${r.done}</td>
       <td style="padding:8px 10px;text-align:center;color:${r.late?'#c0392b':'#888'};font-weight:${r.late?'700':'400'}">${r.late}</td>
-      <td style="padding:8px 10px;min-width:140px"><div style="display:flex;align-items:center;gap:8px"><div style="flex:1;height:9px;background:#eef2f6;border-radius:8px;overflow:hidden"><div style="width:${r.pct}%;height:100%;background:${col};border-radius:8px"></div></div><b style="color:${col};font-size:12px">${r.pct}%</b></div></td>
+      <td style="padding:8px 10px;min-width:140px"><div style="display:flex;align-items:center;gap:8px"><div style="flex:1;height:9px;background:#eef2f6;border-radius:8px;overflow:hidden"><div style="width:${r.pct??0}%;height:100%;background:${col};border-radius:8px"></div></div><b style="color:${col};font-size:12px">${directiveRateText(r.pct)}</b></div></td>
     </tr>`;
   }).join('');
-  mount.innerHTML = `<div class="card"><div class="ch p"><h2>🏛️ نسبة التنفيذ حسب الجهة المنفذة</h2></div>
-    <div class="tb"><table style="width:100%"><thead><tr><th>الجهة</th><th>إجمالي</th><th>منفذ</th><th>متأخر</th><th>نسبة التنفيذ</th></tr></thead><tbody>${trs}</tbody></table></div></div>`;
+  mount.innerHTML = `<div class="card"><div class="ch p"><h2>🏛️ الالتزام بالمواعيد حسب الجهة المنفذة</h2></div>
+    <div class="tb"><table style="width:100%"><thead><tr><th>الجهة</th><th>إجمالي</th><th>منفذ</th><th>متأخر</th><th>الالتزام بالمواعيد</th></tr></thead><tbody>${trs}</tbody></table></div></div>`;
 }
 
 // 📋 سجل متابعة التوجيه
@@ -5949,6 +5990,7 @@ function openEditDirModal(id) {
   $('edAction').value = d.action || '';
   $('edStatus').value = d.status || 'prog';
   if($('edDueDate')) $('edDueDate').value = d.dueDate || '';
+  $('edCompletedAt').value=String(d.completedAt||d.doneDate||d.closedAt||'').slice(0,10);
   $('edNote').value = d.note || '';
   $('editDirModal').classList.add('on');
 }
@@ -5958,6 +6000,10 @@ function saveEditDirective() {
   const id = $('edDirId').value;
   const d = D.directives.find(x => String(x.id) === id);
   if(!d) return;
+  const nextStatus=val('edStatus'), completed=val('edCompletedAt');
+  if(DIR_DONE_SET.includes(nextStatus) && !completed){alert('يرجى تحديد تاريخ الإنجاز الفعلي لتقييم التوجيه بدقة');return;}
+  if(DIR_DONE_SET.includes(nextStatus) && (completed>localDateKey(new Date()) || (val('edM')&&completed<val('edM')))){alert('تاريخ الإنجاز يجب أن يكون بين تاريخ التوجيه واليوم');return;}
+  if(DIR_DONE_SET.includes(nextStatus)) d.completedAt=completed;
   d.date = val('edM');
   d.month = _monthFromISO(d.date) || d.month;
   d.ref = val('edRef');
@@ -6069,43 +6115,32 @@ function importDirectivesExcel() {
 }
 
 // تقرير التوجيهات
+function directiveMonthAssessmentRows(){
+ const groups=new Map();
+ D.directives.forEach(d=>{const key=/^\d{4}-\d{2}-\d{2}/.test(d.date||'')?d.date.slice(0,7):'غير محدد';if(!groups.has(key))groups.set(key,[]);groups.get(key).push(d);});
+ return [...groups].sort(([a],[b])=>a.localeCompare(b)).map(([key,records])=>{
+   const to=key==='غير محدد'?localDateKey(new Date()):localDateKey(new Date(Number(key.slice(0,4)),Number(key.slice(5)),0));
+   const a=collectDirectiveAssessment('',to,records);
+   return '<tr><td>'+escHtml(key)+'</td><td>'+a.total+'</td><td>'+a.done+'</td><td>'+a.pending+' قيد التنفيذ / غير مقيّم</td><td>'+directiveRateText(a.rate)+'</td></tr>';
+ }).join('');
+}
 function refreshDirReport() {
   const tot = D.directives.length;
   const done = D.directives.filter(d => d.status === 'done').length;
   const late = D.directives.filter(d => d.note && d.note.trim()).length;
-  const rate = tot > 0 ? Math.round((done / tot) * 100) : 0;
+  const rate = collectDirectiveAssessment('',localDateKey(new Date())).rate;
   const measured=D.directives.filter(d=>DIR_DONE_SET.includes(d.status)&&d.dueDate&&(d.completedAt||d.doneDate||d.closedAt));
   const ontime=measured.length?Math.round(measured.filter(d=>String(d.completedAt||d.doneDate||d.closedAt).slice(0,10)<=String(d.dueDate).slice(0,10)).length/measured.length*100)+'%':'غير متاح لعدم اكتمال تواريخ القياس';
   const clean = tot > 0 ? Math.round(((tot - late) / tot) * 100) : 0;
   const warnPct = tot > 0 ? Math.round((late / tot) * 100) : 0;
   
-  setText('dr-rate', rate + '%');
-  setText('dr-ontime', ontime + '%');
+  setText('dr-rate', directiveRateText(rate));
+  setText('dr-ontime', directiveRateText(rate));
   setText('dr-clean', clean + '%');
   setText('dr-warn', warnPct + '%');
   
   // توزيع حسب الشهر - مرتب
-  const byM = {};
-  D.directives.forEach(d => {
-    const month = d.month && MONTHS.includes(d.month) ? d.month : 'غير محدد';
-    if(!byM[month]) byM[month] = {tot:0, done:0};
-    byM[month].tot++;
-    if(d.status === 'done') byM[month].done++;
-  });
-  
-  // ترتيب حسب MONTHS
-  const sortedMonths = MONTHS.filter(m => byM[m]);
-  const monthRows = sortedMonths.map(m => {
-    const v = byM[m];
-    const p = v.tot > 0 ? Math.round((v.done / v.tot) * 100) : 0;
-    return `<tr>
-      <td><b>${m}</b></td>
-      <td style="text-align:center">${v.tot}</td>
-      <td style="text-align:center;color:var(--green)">${v.done}</td>
-      <td><div class="pw" style="min-width:120px"><div class="pb" style="width:${p}%"></div></div></td>
-      <td style="text-align:center;font-weight:700">${p}%</td>
-    </tr>`;
-  }).join('');
+  const monthRows=directiveMonthAssessmentRows();
   
   $('drByMonth').innerHTML = monthRows + (tot > 0 ? `
     <tr style="background:var(--navy);color:#fff">
@@ -6113,7 +6148,7 @@ function refreshDirReport() {
       <td style="text-align:center"><b>${tot}</b></td>
       <td style="text-align:center"><b>${done}</b></td>
       <td></td>
-      <td style="text-align:center"><b>${rate}%</b></td>
+      <td style="text-align:center"><b>${directiveRateText(rate)}</b></td>
     </tr>
   ` : '') || noData(5);
   
@@ -6215,9 +6250,8 @@ function refreshMonthly() {
   // النسبة الصحيحة: من المستلمة في الشهر، كم منها أُغلق (مضمونة ≤ 100%)
   const pct = inM.length > 0 ? Math.round((closedFromMonth.length / inM.length) * 100) : 0;
   
-  const dirsTot = D.directives.length;
-  const dirsDone = D.directives.filter(d => d.status === 'done').length;
-  const dirsPct = dirsTot > 0 ? Math.round((dirsDone / dirsTot) * 100) : 100;
+  const directiveSnapshot=monthlyDirectiveAssessment(month,year);
+  const dirsPct=directiveSnapshot.rate;
   
   setText('m-tot', inM.length);
   setText('m-int', intM.length);
@@ -6226,9 +6260,11 @@ function refreshMonthly() {
   setText('m-op', inM.filter(t => t.status !== 'closed').length);
   setText('m-disc', discM.length);
   setText('m-pct', pct + '%');
-  setText('m-dirpct', dirsPct + '%');
+  setText('m-dirpct', directiveRateText(dirsPct));
+  $('m-directive-assessment').innerHTML=buildDirectiveAssessmentHTML(directiveSnapshot);
   $('m-pct-bar').style.width = pct + '%';
-  $('m-dirpct-bar').style.width = dirsPct + '%';
+  $('m-dirpct-bar').style.width = (dirsPct??0) + '%';
+  $('m-dirpct-bar').parentElement.style.display=dirsPct==null?'none':'';
   
   $('m-don-list').innerHTML = clM.map((t,i) => `<tr><td>${i+1}</td><td>${t.title}</td><td>${t.from}</td><td>${fmtDate(t.closedAt)}</td></tr>`).join('') || noData(4);
   $('m-op-list').innerHTML = opM.slice(0,50).map((t,i) => `<tr><td>${i+1}</td><td>${t.title}</td><td>${t.from}</td><td>${fmtDate(t.date)}</td><td style="text-align:center">${t.manualCount ?? t.followups.length}</td></tr>`).join('') || noData(5);
@@ -6241,7 +6277,7 @@ function renderMonthlyHistory() {
     <td>${m.month} ${m.year}</td>
     <td>${m.tot}</td><td>${m.don}</td><td>${m.op}</td>
     <td style="font-weight:700;color:var(--green)">${m.pct}%</td>
-    <td style="font-weight:700;color:var(--purple)">${m.dirpct}%</td>
+    <td style="font-weight:700;color:var(--purple)">${directiveRateText(m.dirpct)}</td>
     <td><button class="btn btn-b" style="padding:3px 8px;font-size:10px" onclick="exportSavedReport('monthly',${i})">📄 Word</button></td>
   </tr>`).join('') || noData(7);
 }
@@ -6399,9 +6435,8 @@ function collectMonthlyData() {
   const discM = D.topics.filter(t => t.status === 'disc');
   const pct = inM.length > 0 ? Math.round((closedFromMonth.length / inM.length) * 100) : 0;
   
-  const dirsTot = D.directives.length;
-  const dirsDone = D.directives.filter(d => d.status === 'done').length;
-  const dirsPct = dirsTot > 0 ? Math.round((dirsDone / dirsTot) * 100) : 100;
+  const directiveSnapshot=monthlyDirectiveAssessment(month,year);
+  const dirsPct=directiveSnapshot.rate;
   
   // مناقشات الرئيس خلال الشهر (من الوحدة المستقلة)، مع رجوع للنص اليدوي
   // متوسط مدة الإنجاز للمواضيع المغلقة هذا الشهر (أيام عمل)
@@ -6420,7 +6455,7 @@ function collectMonthlyData() {
     don: closedFromMonth.length, op: opM.length, disc: monthDisc.length || discM.length, avgComplete,
     lateNow: inM.filter(t => { try{ return t.status!=='closed' && getKpiStatus(t).state==='late'; }catch(e){ return false; } }).length,
     escNow: inM.filter(t => t.status==='esc' || t.status==='ready_esc').length,
-    pct, dirpct: dirsPct,
+    pct, dirpct: dirsPct, directiveSnapshot,
     inMonth: inM, closedMonth: closedFromMonth, openTopics: opM,
     summary: val('mSummary'), notes: val('mNotes'), discList: finalDiscList,
     savedAt: new Date().toLocaleDateString('ar-SA')
@@ -6475,7 +6510,7 @@ function collectDirReportData() {
   const late = lateList.length;
   // التوجيهات التي لم ترد بشأنها إفادة: غير منفذة وبلا أي إجراء أو سجل متابعة
   const noReply = D.directives.filter(d => !isDone(d) && !(d.action&&d.action.trim()) && !(d.followLog&&d.followLog.length));
-  const rate = tot > 0 ? Math.round((done / tot) * 100) : 0;
+  const rate = collectDirectiveAssessment('',localDateKey(new Date())).rate;
   // نسبة التنفيذ حسب الجهة المنفذة
   const deptMap = {};
   D.directives.forEach(d => {
@@ -6484,7 +6519,7 @@ function collectDirReportData() {
     e.tot++; if(isDone(d)) e.done++;
     if((typeof isDirLate==='function') ? isDirLate(d) : false) e.late++;
   });
-  const byDept = Object.keys(deptMap).map(k=>({name:k,...deptMap[k],pct:Math.round(deptMap[k].done/deptMap[k].tot*100)})).sort((a,b)=>b.pct-a.pct);
+  const byDept = Object.keys(deptMap).map(k=>({name:k,...deptMap[k],pct:collectDirectiveAssessment('',localDateKey(new Date()),D.directives.filter(d=>(d.dept||'غير محدد').trim()===k)).rate})).sort((a,b)=>b.pct-a.pct);
   
   return {
     tot, done, prog, late, rate,
@@ -6883,29 +6918,11 @@ function buildQuarterlyHTML(q) {
 function buildDirReportHTML() {
   const _dd = collectDirReportData();
   const tot = _dd.tot, done = _dd.done, late = _dd.late, rate = _dd.rate;
-  const ontime = tot > 0 ? Math.round(((tot - late) / tot) * 100) : 0;
+  const ontime = directiveRateText(rate);
   const _isDone = d => DIR_DONE_SET.includes(d.status);
   const todayStr2 = localDateKey(new Date());
   
-  const byM = {};
-  D.directives.forEach(d => {
-    const month = d.month && MONTHS.includes(d.month) ? d.month : 'غير محدد';
-    if(!byM[month]) byM[month] = {tot:0, done:0};
-    byM[month].tot++;
-    if(_isDone(d)) byM[month].done++;
-  });
-  
-  const sortedM = MONTHS.filter(m => byM[m]);
-  const monthRows = sortedM.map(m => {
-    const v = byM[m];
-    const p = v.tot > 0 ? Math.round((v.done / v.tot) * 100) : 0;
-    return `<tr>
-      <td><b>${m}</b></td>
-      <td style="text-align:center">${v.tot}</td>
-      <td style="text-align:center;color:#1e8449"><b>${v.done}</b></td>
-      <td style="text-align:center;font-weight:700;color:${p>=80?'#1e8449':p>=50?'#b6950a':'#c0392b'}">${p}%</td>
-    </tr>`;
-  }).join('');
+  const monthRows=directiveMonthAssessmentRows();
   
   const _stTxt = {new:'جديد',prog:'قيد التنفيذ',awaiting:'بانتظار الإفادة',done:'✔ منفذ',partial:'منفذ جزئياً',late:'⏰ متأخر',closed:'مغلق'};
   const dirRows = D.directives.map((d,i) => `<tr${isDirLate(d)?' style="background:#fdf0ef"':''}>
@@ -6934,7 +6951,7 @@ function buildDirReportHTML() {
     <table class="summary-box" cellspacing="6" style="width:100%;border-collapse:separate;border-spacing:8pt;margin:18pt 0"><tr>
       ${[[tot,'إجمالي التوجيهات','#008F8F'],[done,'منفذة','#1d8349'],[_dd.prog,'قيد التنفيذ','#b6950a'],[late,'متأخرة / تجاوزت المدة','#c0392b']].map(c=>`<td bgcolor="#eef4fa" valign="top" style="background:#eef4fa;border:1pt solid #d6e2ee;border-top:4pt solid ${c[2]};border-radius:5pt;padding:12pt 8pt;text-align:center;font-size:11pt;color:#33414f"><b style="font-size:22pt;color:${c[2]};display:block;margin-bottom:4pt;font-weight:700">${c[0]}</b>${c[1]}</td>`).join('')}
     </tr></table>
-    <p style="text-align:center;font-size:11.5pt;color:#555;margin:0 0 10pt">📊 نسبة الإنجاز الكلية: <b style="color:#00A6A6">${rate}%</b> &nbsp;|&nbsp; ⏱ الالتزام بالمواعيد: <b style="color:#008F8F">${ontime}</b></p>
+    <p style="text-align:center;font-size:11.5pt;color:#555;margin:0 0 10pt">📊 الالتزام بمواعيد التوجيهات المستحقة: <b style="color:#00A6A6">${directiveRateText(rate)}</b> &nbsp;|&nbsp; ⏱ الالتزام بالمواعيد: <b style="color:#008F8F">${ontime}</b></p>
 
     <div class="intro">
       أرفع لكم هذا التقرير الذي يرصد حالة تنفيذ جميع التوجيهات الصادرة عن سعادة رئيس الهيئة، استناداً إلى المتابعة المستمرة والتنسيق المباشر مع الجهات المختصة، وقياس مستوى الإنجاز الفعلي لكل توجيه، مع إبراز الملاحظات والتأخيرات.
@@ -6942,13 +6959,13 @@ function buildDirReportHTML() {
 
     <h2>أولاً: توزيع التوجيهات حسب الشهر</h2>
     ${monthRows ? `<table class="data-table">
-      <tr><th>الشهر</th><th>الإجمالي</th><th>المنجزة</th><th>النسبة</th></tr>
+      <tr><th>الشهر</th><th>الإجمالي</th><th>المنجزة</th><th>غير مقيّم</th><th>الالتزام بالمواعيد</th></tr>
       ${monthRows}
       <tr style="background:#00A6A6;color:#fff;font-weight:700">
         <td style="color:#fff">الإجمالي</td>
         <td style="text-align:center;color:#fff">${tot}</td>
         <td style="text-align:center;color:#fff">${done}</td>
-        <td style="text-align:center;color:#fff">${rate}%</td>
+        <td></td><td style="text-align:center;color:#fff">${directiveRateText(rate)}</td>
       </tr>
     </table>` : '<p class="em">لا توجد بيانات شهرية</p>'}
 
@@ -6959,15 +6976,15 @@ function buildDirReportHTML() {
       ${dirRows}
     </table>` : '<p class="em">لا توجد توجيهات</p>'}
 
-    <h2>ثالثاً: نسبة التنفيذ حسب الجهة المنفذة</h2>
+    <h2>ثالثاً: الالتزام بالمواعيد حسب الجهة المنفذة</h2>
     ${_dd.byDept.length ? `<table class="data-table">
-      <tr><th>الجهة المنفذة</th><th>الإجمالي</th><th>المنفذ</th><th>المتأخر</th><th>نسبة التنفيذ</th></tr>
+      <tr><th>الجهة المنفذة</th><th>الإجمالي</th><th>المنفذ</th><th>المتأخر</th><th>الالتزام بالمواعيد</th></tr>
       ${_dd.byDept.map(r=>`<tr>
         <td><b>${r.name}</b></td>
         <td style="text-align:center">${r.tot}</td>
         <td style="text-align:center;color:#1e8449"><b>${r.done}</b></td>
         <td style="text-align:center;color:${r.late?'#c0392b':'#888'}">${r.late}</td>
-        <td style="text-align:center;font-weight:700;color:${r.pct>=80?'#1e8449':r.pct>=50?'#b6950a':'#c0392b'}">${r.pct}%</td>
+        <td style="text-align:center;font-weight:700;color:${r.pct>=80?'#1e8449':r.pct>=50?'#b6950a':'#c0392b'}">${directiveRateText(r.pct)}</td>
       </tr>`).join('')}
     </table>` : '<p class="em">لا توجد بيانات</p>'}
 
@@ -7063,7 +7080,7 @@ function buildSavedFollowReport(r,title){
  return buildProfessionalReport(snap.from,snap.to,title,[r.summary,r.notes].filter(Boolean).join('\n'),snap);
 }
 buildWeeklyHTML=r=>buildSavedFollowReport(r,'التقرير الأسبوعي للمتابعة');
-buildMonthlyHTML=r=>buildSavedFollowReport(r,'التقرير الشهري للمتابعة');
+buildMonthlyHTML=r=>{const html=buildSavedFollowReport(r,'التقرير الشهري للمتابعة');return r.directiveSnapshot?html.replace('</body>',buildDirectiveAssessmentHTML(r.directiveSnapshot)+'</body>'):html;};
 buildQuarterlyHTML=r=>buildSavedFollowReport(r,(r.type||'التقرير الدوري')+' للمتابعة');
 
 function generateCurrentReportHTML(type) {
