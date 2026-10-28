@@ -7206,7 +7206,7 @@ function prepareArabicWordBody(html){
     table.style.width='100%';
     table.style.tableLayout='fixed';
     const labels=Array.from(table.rows[0]?.cells||[]).map(c=>c.textContent.trim());
-    const widths=labels.length===6 && labels.includes('الموضوع') ? [4,36,22,11,15,12] : labels.length===5 && labels[0]==='الجهة المنفذة' ? [44,12,12,12,20] : null;
+    const widths=labels.length===6 && labels.includes('الموضوع') ? [4,34,20,14,16,12] : labels.length===5 && labels[0]==='الجهة المنفذة' ? [44,12,12,12,20] : null;
     Array.from(table.rows).forEach(row => {
       row.style.setProperty('page-break-inside','avoid');
       Array.from(row.cells).forEach((cell,i) => {
@@ -7342,7 +7342,7 @@ function preparePrintHTML(htmlContent) {
     if(table.rows.length <= 14 && !Array.from(table.rows[0]?.cells || []).some(c=>c.textContent.trim()==='الموضوع')) table.classList.add('pdf-keep-table');
     const labels = Array.from(table.rows[0]?.cells || []).map(c => c.textContent.trim());
     let widths;
-    if(labels.length === 6 && labels.includes('الموضوع')) { widths=[4,36,22,11,15,12]; wide=true; }
+    if(labels.length === 6 && labels.includes('الموضوع')) { widths=[4,34,20,14,16,12]; wide=true; }
     else if(labels.length === 5 && labels[0] === 'الجهة المنفذة') widths=[44,12,12,12,20];
     if(widths) {
       table.querySelectorAll('colgroup').forEach(c => c.remove());
