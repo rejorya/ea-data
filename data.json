@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-28T05:00:22.682Z",
+  "exportedAt": "2026-10-28T08:24:06.869Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -53508,6 +53508,33 @@
   ],
   "activityLog": [
     {
+      "id": "3a3ff86d-ee42-45e2-b3f2-da1c4f1618be",
+      "sessionId": "3a3ff86d-ee42-45e2-b3f2-da1c4f1618be",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-28T08:24:00.031Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null,
+      "central": true
+    },
+    {
       "id": "46da010a-23d0-4682-9a4f-3a183dabe80d",
       "sessionId": "46da010a-23d0-4682-9a4f-3a183dabe80d",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -53529,9 +53556,9 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-28T04:39:10.894Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-28T05:00:41.098Z",
+      "duration": "21 دقيقة و 30 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
       "central": true,
       "actions": [
         {
@@ -53564,7 +53591,8 @@
           "action": "تعديل توجيه الرئيس",
           "details": "تشديد الرقابة على جميع المحلات والمراكز والمؤسسات التجارية لتنفيذ بنود وأحكام قرار حظر استخدام أكياس التسوق البلاستيكية الصادر بموجب القرار الإداري (8/2024)"
         }
-      ]
+      ],
+      "durationMinutes": 21
     },
     {
       "id": "bde04c76-e982-4b4f-9e25-209b3c6fa008",
