@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-28T04:37:49.466Z",
+  "exportedAt": "2026-10-28T04:39:14.664Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -53504,6 +53504,33 @@
   ],
   "activityLog": [
     {
+      "id": "46da010a-23d0-4682-9a4f-3a183dabe80d",
+      "sessionId": "46da010a-23d0-4682-9a4f-3a183dabe80d",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-28T04:39:10.894Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null,
+      "central": true
+    },
+    {
       "id": "bde04c76-e982-4b4f-9e25-209b3c6fa008",
       "sessionId": "bde04c76-e982-4b4f-9e25-209b3c6fa008",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -53525,9 +53552,9 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-28T03:47:46.378Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-28T04:38:37.665Z",
+      "duration": "50 دقيقة و 51 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
       "central": true,
       "actions": [
         {
@@ -53656,7 +53683,8 @@
           "action": "تعديل موضوع",
           "details": "ملخص ورشة عمل مشروع المسح الوطني للتنوع الأحيائي"
         }
-      ]
+      ],
+      "durationMinutes": 50
     },
     {
       "id": "bbdc9282-e84b-4042-943d-e0efa3f97117",
