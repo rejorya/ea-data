@@ -5101,6 +5101,7 @@ function renderTopicActionLog(t) {
       + (f.replied?' · <span style="color:#1d8349">✅ تم الرد</span>':' · <span style="color:#b91c1c">❌ لم يُرد</span>')
       + (f.responseMethod ? ' · <span style="color:#7c3aed">'+escHtml(RESPONSE_METHOD_LABELS[f.responseMethod]||f.responseMethod)+'</span>' : '')
       + (f.replyDocNo ? ' · <span style="color:#0f766e">📄 رقم الوثيقة الواردة: '+escHtml(f.replyDocNo)+'</span>' : '')
+      + (f.statusChange==='esc'?'<br><strong style="color:#c0392b">تم التصعيد</strong>':'')
       + (f.by?'<br><span style="color:#6b7c8d">المنفذ: '+escHtml(f.by)+'</span>':'')
       + (f.result?'<br><span style="color:#1d8349">النتيجة: '+escHtml(f.result)+'</span>':'')
       + (f.note?'<br><span style="color:#888">'+escHtml(f.note)+'</span>':'')
@@ -5198,11 +5199,14 @@ function saveTopicAll() {
   if(outgoing && !val('editToEntity').trim()){ alert('⚠️ يرجى ملء الجهة الصادر إليها'); return; }
   if(!outgoing && !val('editFrom').trim()){ alert('⚠️ يرجى ملء الجهة الوارد منها'); return; }
   
+  const escalationChanged=t.status!=='esc' && val('editStatus')==='esc'
+    && !(D.archivedTopics||[]).some(x=>String(x.id)===String(tid));
   // 1) احفظي بيانات الموضوع
   saveEditTopic();
   // 2) سجّلي الإجراء الجديد فقط إذا عُبّئت تفاصيله
-  const hasAction = !!(val('fuActionType') || val('fuResult').trim() || val('fuNote').trim() || val('fuReplied')==='true');
+  const hasAction = escalationChanged || !!(val('fuActionType') || val('fuResult').trim() || val('fuNote').trim() || val('fuReplied')==='true');
   if(hasAction) {
+    if(!Array.isArray(t.followups)) t.followups=[];
     const date = val('fuDate') || localDateKey(new Date());
     const fe = t.followEntity || '';
     const fuScope = val('fuScope') || (t.followScope==='internal' ? 'internal' : (t.followScope==='external' ? 'external' : (t.type === 'int' ? 'internal' : (t.type === 'ext' ? 'external' : ''))));
@@ -5218,11 +5222,12 @@ function saveTopicAll() {
       replied: val('fuReplied') === 'true',
       responseMethod: val('fuResponseMethod') || '',
       replyDocNo: val('fuReplied')==='true' ? val('fuReplyDocNo').trim() : '',
-      note: val('fuNote').trim() || 'متابعة',
-      actionType: val('fuActionType') || '',
+      note: val('fuNote').trim() || (escalationChanged ? 'تم التصعيد' : 'متابعة'),
+      actionType: val('fuActionType') || (escalationChanged ? 'تصعيد' : ''),
+      statusChange: escalationChanged ? 'esc' : '',
       scope: fuScope,
-      by: val('fuBy').trim(),
-      result: val('fuResult').trim(),
+      by: val('fuBy').trim() || (escalationChanged ? (CU?.name || CU?.user || 'مستخدم') : ''),
+      result: val('fuResult').trim() || (escalationChanged ? 'تم التصعيد' : ''),
       entity: fe,
       externalEntityIndex: extIndex,
       externalEntityName: extEntity ? extEntity.name : '',
@@ -5258,6 +5263,8 @@ function saveTopicAll() {
     refreshAllReports();
     autoSave();
     recordActivityAction('إضافة متابعة', t.title || ('رقم '+tid));
+    clearFields(['fuActionType','fuResult','fuNote','fuDate','fuBy','fuReplyDocNo','fuResponseMethod']);
+    if($('fuReplied')) $('fuReplied').value='false';
   }
   // عند إغلاق الموضوع: الأرشيف يحتفظ بالنسخة النهائية بعد آخر متابعة، ثم يختفي الموضوع من القائمة النشطة.
   if(t.status === 'closed' && isArchivableFollowupTopic(t)) {
