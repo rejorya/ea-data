@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-28T08:31:04.405Z",
+  "exportedAt": "2026-10-28T08:33:44.909Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -53557,6 +53557,33 @@
   ],
   "activityLog": [
     {
+      "id": "96e2e8be-a87d-4832-ab49-a0d368259c03",
+      "sessionId": "96e2e8be-a87d-4832-ab49-a0d368259c03",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-28T08:33:40.450Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null,
+      "central": true
+    },
+    {
       "id": "3a3ff86d-ee42-45e2-b3f2-da1c4f1618be",
       "sessionId": "3a3ff86d-ee42-45e2-b3f2-da1c4f1618be",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -53578,9 +53605,9 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-28T08:24:00.031Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-28T08:33:16.865Z",
+      "duration": "9 دقيقة و 16 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
       "central": true,
       "actions": [
         {
@@ -53607,7 +53634,8 @@
           "action": "تعديل توجيه الرئيس",
           "details": "معسكر القبلية"
         }
-      ]
+      ],
+      "durationMinutes": 9
     },
     {
       "id": "46da010a-23d0-4682-9a4f-3a183dabe80d",
