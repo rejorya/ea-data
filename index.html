@@ -7014,10 +7014,10 @@ function buildDirReportHTML() {
       <tr><th>الشهر</th><th>الإجمالي</th><th>المنجزة</th><th>النسبة</th></tr>
       ${monthRows}
       <tr style="background:#00A6A6;color:#fff;font-weight:700">
-        <td style="color:#fff">الإجمالي</td>
-        <td style="text-align:center;color:#fff">${tot}</td>
-        <td style="text-align:center;color:#fff">${done}</td>
-        <td style="text-align:center;color:#fff">${directivePercentageText(rate)}</td>
+        <td bgcolor="#007F7F" style="background:#007F7F!important;color:#fff">الإجمالي</td>
+        <td bgcolor="#007F7F" style="background:#007F7F!important;text-align:center;color:#fff">${tot}</td>
+        <td bgcolor="#007F7F" style="background:#007F7F!important;text-align:center;color:#fff">${done}</td>
+        <td bgcolor="#007F7F" style="background:#007F7F!important;text-align:center;color:#fff">${directivePercentageText(rate)}</td>
       </tr>
     </table>` : '<p class="em">لا توجد بيانات شهرية</p>'}
 
@@ -7060,10 +7060,7 @@ function buildDirReportHTML() {
 
     <div class="closing-note">هذا تقرير متابعة تنفيذ التوجيهات بتاريخ ${fmtDate(todayStr2)}، وأنا بانتظار توجيهاتكم بشأن أي من التوجيهات المذكورة، لا سيما المتأخرة منها.</div>
 
-    <div class="signature">
-      <div class="name">رحاب بنت نصيب الفرج</div>
-      <div class="role">أخصائية تنسيق ومتابعة — مكتب رئيس هيئة البيئة</div>
-    </div>
+    
   </body></html>`;
 }
 
