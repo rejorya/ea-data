@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-27T09:59:52.152Z",
+  "exportedAt": "2026-10-28T03:47:52.151Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -53351,6 +53351,33 @@
   ],
   "activityLog": [
     {
+      "id": "bde04c76-e982-4b4f-9e25-209b3c6fa008",
+      "sessionId": "bde04c76-e982-4b4f-9e25-209b3c6fa008",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-28T03:47:46.378Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null,
+      "central": true
+    },
+    {
       "id": "bbdc9282-e84b-4042-943d-e0efa3f97117",
       "sessionId": "bbdc9282-e84b-4042-943d-e0efa3f97117",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -53372,9 +53399,9 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-27T05:15:12.461Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-27T10:02:54.196Z",
+      "duration": "287 دقيقة و 41 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
       "central": true,
       "actions": [
         {
@@ -53455,7 +53482,8 @@
           "action": "إضافة موضوع متابعة",
           "details": "طلب مراجعة مشروع إصدار لائحة إدارة التغير  المناخي"
         }
-      ]
+      ],
+      "durationMinutes": 287
     },
     {
       "id": "fbb7225d-5ebf-48bb-9e19-868a0a868983",
