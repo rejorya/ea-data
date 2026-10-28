@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-28T04:09:05.479Z",
+  "exportedAt": "2026-10-28T04:14:23.826Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38048,11 +38048,28 @@
           "taqseem": "",
           "startDate": "2026-08-26",
           "daysSince": 35
+        },
+        {
+          "date": "2026-10-28",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-08-26",
+          "daysSince": 45
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791951075109.6267,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "",
       "responseMethod": ""
     },
@@ -53411,6 +53428,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793160861579.5662,
+          "at": "2026-10-28T04:14:21.579Z",
+          "action": "إضافة متابعة",
+          "details": "المشروعات الاستثمارية التابعة لهيئة البيئة"
+        },
+        {
+          "id": 1793160861515.6138,
+          "at": "2026-10-28T04:14:21.515Z",
+          "action": "تعديل موضوع",
+          "details": "المشروعات الاستثمارية التابعة لهيئة البيئة"
+        },
         {
           "id": 1793160543313.137,
           "at": "2026-10-28T04:09:03.313Z",
