@@ -7201,6 +7201,24 @@ function prepareArabicWordBody(html){
     if(el.tagName==='TABLE') el.style.setProperty('mso-table-dir','rtl');
     if(el.tagName==='TH' && !el.hasAttribute('bgcolor')) el.setAttribute('bgcolor','#00A6A6');
   });
+  doc.querySelectorAll('table').forEach(table => {
+    table.setAttribute('width','100%');
+    table.style.width='100%';
+    table.style.tableLayout='fixed';
+    const labels=Array.from(table.rows[0]?.cells||[]).map(c=>c.textContent.trim());
+    const widths=labels.length===6 && labels.includes('الموضوع') ? [4,36,22,11,15,12] : labels.length===5 && labels[0]==='الجهة المنفذة' ? [44,12,12,12,20] : null;
+    Array.from(table.rows).forEach(row => {
+      row.style.setProperty('page-break-inside','avoid');
+      Array.from(row.cells).forEach((cell,i) => {
+        cell.style.whiteSpace='normal';
+        cell.style.verticalAlign='top';
+        if(widths) { cell.style.width=widths[i]+'%'; cell.setAttribute('width',widths[i]+'%'); }
+      });
+    });
+    if(!table.tHead && table.rows[0]?.querySelector('th')) table.createTHead().appendChild(table.rows[0]);
+    if(table.tHead) table.tHead.style.setProperty('display','table-header-group');
+  });
+  doc.querySelectorAll('h2').forEach((h,i)=>{ if(i>0) h.style.pageBreakBefore='always'; h.style.pageBreakAfter='avoid'; });
   return doc.body.innerHTML;
 }
 
@@ -7215,6 +7233,8 @@ function downloadWord(filename, htmlContent) {
   // وورد أحياناً يُسقط خلفية رؤوس الجداول من الـ CSS — نعزّزها بخاصية bgcolor
   const body = prepareArabicWordBody(bodyRaw);
   const title = titleMatch ? titleMatch[1] : filename;
+  const landscape = /<th[^>]*>الاستحقاق<\/th>/.test(bodyRaw);
+  const pageSize = landscape ? '29.7cm 21cm' : '21cm 29.7cm';
   
   // بناء مستند Word كامل مع إعدادات Word الخاصة (XML namespaces)
   // هذه الإعدادات تضمن أن Word يطبّق الـ CSS بشكل صحيح مطابق للمعاينة
@@ -7240,13 +7260,13 @@ function downloadWord(filename, htmlContent) {
   <![endif]-->
   <style>
     @page {
-      size: 21cm 29.7cm;
-      margin: 2cm 2cm 2cm 2cm;
-      mso-page-orientation: portrait;
+      size: ${pageSize};
+      margin: 1.4cm 1.2cm 1.8cm 1.2cm;
+      mso-page-orientation: ${landscape ? "landscape" : "portrait"};
     }
     @page Section1 {
-      size: 21cm 29.7cm;
-      margin: 2cm 2cm 2cm 2cm;
+      size: ${pageSize};
+      margin: 1.4cm 1.2cm 1.8cm 1.2cm;
     }
     div.Section1 { page: Section1; direction:rtl; }
     /* ضمان الخط العربي في Word */
@@ -7271,6 +7291,11 @@ function downloadWord(filename, htmlContent) {
     ${styles}
     /* Word needs paragraph and table direction, not only body alignment. */
     body, .Section1 { direction:rtl; mso-bidi-language:AR-OM; }
+    body, p, td, th { font-family:Arial,sans-serif; font-size:11pt; line-height:1.5; }
+    td, th { padding:6pt; }
+    tr { page-break-inside:avoid; }
+    thead { display:table-header-group; }
+    h1,h2,h3 { page-break-after:avoid; }
     p, li, h1, h2, h3, h4, h5, h6, td, th {
       mso-bidi-language:AR-OM;
       mso-fareast-language:AR-OM;
@@ -7305,6 +7330,12 @@ function preparePrintHTML(htmlContent) {
   doc.documentElement.lang = 'ar';
   doc.documentElement.dir = 'rtl';
   doc.querySelectorAll('script,button').forEach(el => el.remove());
+  // Keep each report section on its own printed page; its table may continue.
+  doc.querySelectorAll('h2').forEach((heading, index) => {
+    if(index > 0) heading.classList.add('pdf-section-start');
+    const next = heading.nextElementSibling;
+    if(next && next.tagName === 'P') next.classList.add('pdf-section-intro');
+  });
   let wide = false;
   doc.querySelectorAll('table').forEach(table => {
     table.dir = 'rtl';
@@ -7326,13 +7357,16 @@ function preparePrintHTML(htmlContent) {
   });
   const style = doc.createElement('style');
   style.textContent = `
-    @page { size:A4 ${wide ? "landscape" : "portrait"}; margin:12mm; }
+    @page {
+      size:A4 ${wide ? "landscape" : "portrait"}; margin:14mm 12mm 18mm;
+      @bottom-center { content:counter(page); font:10pt Tahoma; color:#566573; }
+    }
     * { box-sizing:border-box; }
     html,body { direction:rtl; height:auto!important; overflow:visible!important; }
     body { max-width:${wide ? "273mm" : "186mm"}; margin:0 auto!important; padding:0!important; background:white; font-family:Tahoma,Arial,sans-serif; }
     table { width:100%!important; max-width:100%!important; table-layout:fixed; border-collapse:collapse; direction:rtl; }
     th,td { min-width:0!important; overflow-wrap:break-word; white-space:normal!important; font-size:10.5pt; line-height:1.65; padding:6pt!important; }
-    thead { display:table-header-group; }
+    thead { display:table-header-group; break-inside:avoid; break-after:avoid; }
     tfoot { display:table-footer-group; }
     tr,.signature,.stat-grid { break-inside:avoid; page-break-inside:avoid; }
     h1,h2,h3 { break-after:avoid; page-break-after:avoid; }
@@ -7343,7 +7377,14 @@ function preparePrintHTML(htmlContent) {
     .pdf-toolbar { padding:14px; margin:0 0 20px; background:#eaf4fd; font:14px Tahoma; text-align:center; }
     .pdf-toolbar button { padding:10px 20px; margin:8px; cursor:pointer; }
     @media screen { body { padding:20px!important; } }
-    @media print { .pdf-toolbar { display:none!important; } }
+    @media print {
+      .pdf-toolbar { display:none!important; }
+      .pdf-section-start { break-before:page; page-break-before:always; margin-top:0!important; }
+      .pdf-section-intro { break-after:avoid; page-break-after:avoid; }
+      table { break-inside:auto; page-break-inside:auto; margin-top:5mm!important; }
+      th,td { vertical-align:top; }
+      .header,.intro,.summary-box { break-inside:avoid; }
+    }
   `;
   doc.head.appendChild(style);
   return '<!DOCTYPE html>'+doc.documentElement.outerHTML;
