@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-28T08:48:23.257Z",
+  "exportedAt": "2026-10-28T08:48:26.671Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -53557,6 +53557,33 @@
   ],
   "activityLog": [
     {
+      "id": "127a1624-415d-41c9-8477-542784f302f4",
+      "sessionId": "127a1624-415d-41c9-8477-542784f302f4",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-28T08:48:17.981Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null,
+      "central": true
+    },
+    {
       "id": "f1d7b3e6-823e-41ba-9e9b-8d355a01cff1",
       "sessionId": "f1d7b3e6-823e-41ba-9e9b-8d355a01cff1",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -64368,32 +64395,6 @@
       "duration": "3 دقيقة و 7 ثانية",
       "logoutReason": "تسجيل خروج عادي",
       "durationMinutes": 3
-    },
-    {
-      "id": 1793177297982.6118,
-      "sessionId": "f8f31870-f0cd-4ff2-8e71-45e18eda93e3",
-      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
-      "user": "rahab@ea2026",
-      "name": "رحاب بنت نصيب الفرج",
-      "role": "أخصائية تنسيق ومتابعة",
-      "type": "مدير",
-      "device": "كمبيوتر • Windows • Edge",
-      "deviceType": "كمبيوتر",
-      "deviceOS": "Windows",
-      "browser": "Edge",
-      "platform": "Win32",
-      "deviceSnapshot": {
-        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
-        "label": "كمبيوتر • Windows • Edge",
-        "type": "كمبيوتر",
-        "os": "Windows",
-        "browser": "Edge",
-        "platform": "Win32"
-      },
-      "loginAt": "2026-10-28T08:48:17.981Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null
     }
   ],
   "visitorCodeHash": "c4a1785a61be152ffb94dcda46cbc0da48de648dfa151bcf9ee49068078124c2",
