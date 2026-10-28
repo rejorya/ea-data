@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-28T04:01:05.459Z",
+  "exportedAt": "2026-10-28T04:07:59.139Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -30726,10 +30726,27 @@
           "taqseem": "",
           "startDate": "2026-09-15",
           "daysSince": 11
+        },
+        {
+          "date": "2026-10-12",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-15",
+          "daysSince": 19
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "rais_depts",
       "raisDeptName": "دائرة التميز المؤسسي",
       "responseMethod": "",
@@ -53377,6 +53394,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793160476978.2146,
+          "at": "2026-10-28T04:07:56.978Z",
+          "action": "إضافة متابعة",
+          "details": "خطة تقييم قبو ل الجهات الحكومية المستفيدة من نظام وصول."
+        },
+        {
+          "id": 1793160476910.318,
+          "at": "2026-10-28T04:07:56.910Z",
+          "action": "تعديل موضوع",
+          "details": "خطة تقييم قبو ل الجهات الحكومية المستفيدة من نظام وصول."
+        },
         {
           "id": 1793160056933.3235,
           "at": "2026-10-28T04:00:56.933Z",
