@@ -1697,6 +1697,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
       <h3 id="previewTitle">👁️ معاينة التقرير</h3>
       <div style="display:flex;gap:8px">
         <button class="btn btn-g" style="padding:6px 14px;font-size:12px" onclick="downloadCurrentPreview()">📄 تنزيل Word</button>
+        <button class="btn btn-g" id="savePreviewPdf" onclick="printCurrentPreview()">حفظ PDF / طباعة</button>
         <button class="modal-x" onclick="closeModal('previewModal')">×</button>
       </div>
     </div>
@@ -7162,7 +7163,7 @@ function previewReport(type) {
   currentReportHTML = r.html;
   currentReportTitle = r.title;
   $('previewTitle').textContent = '👁️ معاينة: ' + r.title.replace(/_/g,' ');
-  $('previewFrame').srcdoc = r.html;
+  $('previewFrame').srcdoc = preparePrintHTML(r.html);
   $('previewModal').classList.add('on');
 }
 
@@ -7304,8 +7305,20 @@ function preparePrintHTML(htmlContent) {
   doc.documentElement.lang = 'ar';
   doc.documentElement.dir = 'rtl';
   doc.querySelectorAll('script,button').forEach(el => el.remove());
+  let wide = false;
   doc.querySelectorAll('table').forEach(table => {
     table.dir = 'rtl';
+    const labels = Array.from(table.rows[0]?.cells || []).map(c => c.textContent.trim());
+    let widths;
+    if(labels.length === 6 && labels.includes('الموضوع')) { widths=[4,36,22,11,15,12]; wide=true; }
+    else if(labels.length === 5 && labels[0] === 'الجهة المنفذة') widths=[44,12,12,12,20];
+    if(widths) {
+      table.querySelectorAll('colgroup').forEach(c => c.remove());
+      const group=doc.createElement('colgroup');
+      widths.forEach(w => { const col=doc.createElement('col'); col.style.width=w+'%'; group.appendChild(col); });
+      table.prepend(group);
+      Array.from(table.rows[0].cells).forEach(c => c.style.removeProperty('width'));
+    }
     if(!table.tHead && table.rows[0] && table.rows[0].querySelector('th')) {
       const head = table.createTHead();
       head.appendChild(table.rows[0]);
@@ -7313,12 +7326,12 @@ function preparePrintHTML(htmlContent) {
   });
   const style = doc.createElement('style');
   style.textContent = `
-    @page { size:A4 portrait; margin:14mm 12mm; }
+    @page { size:A4 ${wide ? "landscape" : "portrait"}; margin:12mm; }
     * { box-sizing:border-box; }
     html,body { direction:rtl; height:auto!important; overflow:visible!important; }
-    body { max-width:186mm; margin:0 auto!important; padding:0!important; background:white; font-family:Tahoma,Arial,sans-serif; }
+    body { max-width:${wide ? "273mm" : "186mm"}; margin:0 auto!important; padding:0!important; background:white; font-family:Tahoma,Arial,sans-serif; }
     table { width:100%!important; max-width:100%!important; table-layout:fixed; border-collapse:collapse; direction:rtl; }
-    th,td { min-width:0!important; overflow-wrap:anywhere; white-space:normal!important; font-size:10pt; padding:5pt!important; }
+    th,td { min-width:0!important; overflow-wrap:break-word; white-space:normal!important; font-size:10.5pt; line-height:1.65; padding:6pt!important; }
     thead { display:table-header-group; }
     tfoot { display:table-footer-group; }
     tr,.signature,.stat-grid { break-inside:avoid; page-break-inside:avoid; }
@@ -7347,33 +7360,28 @@ function printReport(type) {
 }
 
 function printHTMLContent(htmlContent, title) {
-  const html = preparePrintHTML(htmlContent);
-  const preview = window.open('', '_blank');
-  if(!preview) {
-    alert('اسمحي بفتح نافذة التقرير المنبثقة، ثم اضغطي PDF مرة أخرى.');
-    return;
-  }
-  preview.document.open();
-  preview.document.write(html);
-  preview.document.close();
-  if(title) preview.document.title = title.replace(/_/g, ' ');
-  const toolbar = preview.document.createElement('div');
-  toolbar.className = 'pdf-toolbar';
-  toolbar.textContent = 'لحفظ الملف: اضغطي الزر ثم اختاري «حفظ بتنسيق PDF» من قائمة الطابعة.';
-  const button = preview.document.createElement('button');
-  button.type = 'button';
-  button.textContent = 'حفظ PDF / طباعة';
-  button.onclick = async function() {
-    button.disabled = true;
-    try {
-      if(preview.document.fonts) await preview.document.fonts.ready;
-      await Promise.all(Array.from(preview.document.images).map(img => img.complete ? Promise.resolve() : new Promise(resolve => { img.onload=resolve; img.onerror=resolve; })));
-      preview.focus();
-      preview.print();
-    } finally { button.disabled = false; }
-  };
-  toolbar.appendChild(button);
-  preview.document.body.prepend(toolbar);
+  currentReportHTML = htmlContent;
+  currentReportTitle = title || 'التقرير';
+  $('previewTitle').textContent = 'معاينة PDF — ' + currentReportTitle.replace(/_/g, ' ');
+  const frame = $('previewFrame');
+  const button = $('savePreviewPdf');
+  button.disabled = true;
+  frame.onload = () => { button.disabled = false; };
+  frame.srcdoc = preparePrintHTML(htmlContent);
+  $('previewModal').classList.add('on');
+}
+
+async function printCurrentPreview() {
+  const frame = $('previewFrame');
+  const button = $('savePreviewPdf');
+  button.disabled = true;
+  try {
+    if(frame.contentDocument.fonts) await frame.contentDocument.fonts.ready;
+    frame.contentWindow.focus();
+    frame.contentWindow.print();
+  } catch(error) {
+    alert('تعذّر فتح الطباعة. حاولي مرة أخرى من زر حفظ PDF.');
+  } finally { button.disabled = false; }
 }
 
 // ============================================================
