@@ -8782,14 +8782,7 @@ window.addEventListener('load', () => {
       // ١) كل موضوع بدأت فيه متابعة التقسيم (لعدم رد مكتب النائب) — يظهر دائماً حتى بعد إغلاقه، لأغراض الكشف الشهري
       // بشرط أن يكون التقسيم المُتابَع من ضمن المديريات العامة والإدارات التابعة فعلياً لمكتب النائب
       if(t.divFollowDate) return _divOk(t.taqseemName);
-      // ٢) المفتوح المتجاوز حالياً لدى مكتب النائب (لم تبدأ متابعة التقسيم بعد)
-      if(t.status==='closed') return false;
-      var isNaib=(t.followEntity==='naib_office')||(t.followEntity==='naib_and_rais')||(t.kpi==='naib3');
-      if(!isNaib) return false;
-      var start=t.followStart||'';
-      var allowed=_naibAllowedDays(t).days;
-      var days=null; try{ days=businessDaysBetween(start,today); }catch(e){ days=null; }
-      return (days!=null && days>allowed) || t.status==='split' || t.responseMethod==='split';
+      return false;
     }).map(function(t){
       var start=t.followStart||'';
       var allowedInfo=_naibAllowedDays(t);
@@ -8804,16 +8797,12 @@ window.addEventListener('load', () => {
         t:t, start:start,
         allowedDays:allowedInfo.days, allowedCustom:allowedInfo.custom,
         naibDays:naibDays,
-        divDate:divDate, divDays:divDays, divMonth:(divDate?divDate.slice(0,7):''),
+        divDate:divDate, divDays:divDays, divMonth:((t.date||divDate||'').slice(0,7)), registeredDate:t.date||divDate||'',
         closed:closed,
         silent:(t.status==='split'||t.responseMethod==='split')
       };
     }).sort(function(a,b){
-      // ترتيب: المفتوح أولاً، ثم الأكثر تجاوزاً — يُحسب من تاريخ متابعة التقسيم إن بدأت، وإلا من تاريخ التوجيه
-      if(a.closed !== b.closed) return a.closed ? 1 : -1;
-      var da = a.divDate ? (a.divDays||0) : (a.naibDays||0);
-      var db = b.divDate ? (b.divDays||0) : (b.naibDays||0);
-      return db - da;
+      return a.registeredDate.localeCompare(b.registeredDate) || String(a.t.id).localeCompare(String(b.t.id));
     });
   }
   // فلتر الشهر الحالي للقسم ('all' = الكل)
@@ -8835,7 +8824,7 @@ window.addEventListener('load', () => {
     var closedCnt=rows.filter(function(r){return r.closed;}).length;
     var noDivListNotice = (!D.naibDivisions || !D.naibDivisions.length)
       ? '<div style="margin-bottom:12px;padding:10px 14px;background:#f4f0fb;border-right:4px solid #7d3c98;border-radius:6px;font-size:12px;color:#5b2c76">💡 لم تُضبط بعد قائمة «التقسيمات التابعة لمكتب النائب» من إدارة المستخدمين — القسم حالياً يعرض كل الجهات دون تمييز. أضيفي المديريات العامة والإدارات الفعلية ليقتصر الكشف عليها حصراً.</div>' : '';
-    // خيارات الأشهر من البيانات الفعلية (أشهر بدء متابعة التقسيم)
+    // خيارات الأشهر من البيانات الفعلية (أشهر تسجيل الموضوع)
     var monthsSet={}; allRows.forEach(function(r){ if(r.divMonth) monthsSet[r.divMonth]=1; });
     var monthOpts=Object.keys(monthsSet).sort().reverse();
     var mf=window._naibMonthFilter;
@@ -8843,7 +8832,7 @@ window.addEventListener('load', () => {
       +'<option value="all"'+(mf==='all'?' selected':'')+'>📅 كل الأشهر</option>'
       +monthOpts.map(function(m){return '<option value="'+m+'"'+(mf===m?' selected':'')+'>'+_naibMonthLabel(m)+'</option>';}).join('')
       +'</select>';
-    var heads=['م','الموضوع','الجهة','📂 التقسيم المُتابَع','تاريخ توجيه الرئيس','مدة رد مكتب النائب','تاريخ متابعة التقسيم','شهر المتابعة','مدة الرد (منذ متابعة التقسيم)','الحالة'];
+    var heads=['م','الموضوع','الجهة','📂 التقسيم المُتابَع','تاريخ توجيه الرئيس','مدة رد مكتب النائب','تاريخ متابعة التقسيم','شهر تسجيل الموضوع','أيام تجاوز مكتب النائب منذ متابعة التقسيم','الحالة'];
     var head=heads.map(function(x){return '<th style="padding:11px 12px;text-align:right;border-bottom:2px solid var(--border);font-size:12px;white-space:nowrap;background:var(--light)">'+x+'</th>';}).join('');
     var body=rows.length?rows.map(function(r,i){
       var late3=(r.naibDays!=null&&r.naibDays>r.allowedDays);
@@ -8858,8 +8847,8 @@ window.addEventListener('load', () => {
         stBadge='<span style="background:#1d8349;color:#fff;padding:3px 9px;border-radius:7px;font-size:11px;font-weight:700">✅ أُغلق بعد متابعة التقسيم</span>';
       } else if(r.divDate){
         stBadge = divLate
-          ? '<span style="background:var(--red);color:#fff;padding:3px 9px;border-radius:7px;font-size:11px;font-weight:700">🔴 تجاوز رد التقسيم</span>'
-          : '<span style="background:#d68910;color:#fff;padding:3px 9px;border-radius:7px;font-size:11px;font-weight:700">🟡 قيد متابعة التقسيم</span>';
+          ? '<span style="background:var(--red);color:#fff;padding:3px 9px;border-radius:7px;font-size:11px;font-weight:700">🔴 تجاوز مكتب النائب — تأخر رد التقسيم</span>'
+          : '<span style="background:#d68910;color:#fff;padding:3px 9px;border-radius:7px;font-size:11px;font-weight:700">🔴 تجاوز مكتب النائب — قيد متابعة التقسيم</span>';
       } else if(r.silent){
         stBadge='<span style="background:var(--gray);color:#fff;padding:3px 9px;border-radius:7px;font-size:11px;font-weight:700">⚫ تجاوز لعدم الاستجابة</span>';
       } else {
@@ -8898,7 +8887,7 @@ window.addEventListener('load', () => {
       var divDateTxt=r.divDate?_fmtD(r.divDate):'لم تبدأ المتابعة مع التقسيم';
       var divDaysTxt=r.divDate?(r.divDays==null?'—':r.divDays+' يوم'):'—';
       var divLate2 = r.divDate && r.divDays!=null && r.divDays>r.allowedDays;
-      var stTxt = r.closed ? 'أُغلق بعد متابعة التقسيم' : (r.divDate ? (divLate2?'تجاوز رد التقسيم':'قيد متابعة التقسيم') : (r.silent?'تجاوز لعدم الاستجابة':'تجاوز مدة الرد'));
+      var stTxt = r.closed ? 'أُغلق بعد متابعة التقسيم' : (r.divDate ? (divLate2?'تجاوز مكتب النائب — تأخر رد التقسيم':'تجاوز مكتب النائب — قيد متابعة التقسيم') : (r.silent?'تجاوز لعدم الاستجابة':'تجاوز مدة الرد'));
       return '<tr><td style="text-align:center">'+(i+1)+'</td><td>'+esc(r.t.title||'—')+'</td><td>'+esc(r.t.from||'—')+'</td><td>'+esc(r.t.taqseemName||'—')+'</td>'
         +'<td style="text-align:center">'+_fmtD(r.start)+'</td>'
         +'<td style="text-align:center">'+r.allowedDays+' يوم'+(r.allowedCustom?' (مخصص)':' (افتراضي)')+'</td>'
@@ -8912,7 +8901,7 @@ window.addEventListener('load', () => {
     var html='<style>'+styles+'</style><title>كشف متابعة التقسيمات — تجاوز مكتب النائب</title><body>'
       +'<h2 style="text-align:center;color:#00A6A6">كشف متابعة التقسيمات بعد تجاوز مكتب النائب مدة الرد</h2>'
       +'<p style="text-align:center;color:#555;font-size:11pt">الفترة: '+periodTxt+' · عدد المواضيع: '+rows.length+' · تاريخ الإصدار: '+_fmtD(localDateKey(new Date()))+'</p>'
-      +'<table class="data-table"><thead><tr><th>م</th><th>الموضوع</th><th>الجهة</th><th>التقسيم المُتابَع</th><th>تاريخ توجيه الرئيس</th><th>مدة رد مكتب النائب</th><th>أيام مضت (مكتب النائب)</th><th>تاريخ متابعة التقسيم</th><th>شهر المتابعة</th><th>مدة الرد (منذ متابعة التقسيم)</th><th>الحالة</th></tr></thead><tbody>'+trs+'</tbody></table></body>';
+      +'<table class="data-table"><thead><tr><th>م</th><th>الموضوع</th><th>الجهة</th><th>التقسيم المُتابَع</th><th>تاريخ توجيه الرئيس</th><th>مدة رد مكتب النائب</th><th>أيام مضت (مكتب النائب)</th><th>تاريخ متابعة التقسيم</th><th>شهر تسجيل الموضوع</th><th>أيام تجاوز مكتب النائب منذ متابعة التقسيم</th><th>الحالة</th></tr></thead><tbody>'+trs+'</tbody></table></body>';
     if(typeof downloadWord==='function') downloadWord('كشف_متابعة_التقسيمات_'+(mf&&mf!=='all'?mf:'كل_الأشهر'), html);
     else alert('تعذّر التصدير');
   };
@@ -8931,9 +8920,9 @@ window.addEventListener('load', () => {
         'مصدر المدة': r.allowedCustom?'مخصصة':'افتراضية',
         'أيام مضت منذ توجيه الرئيس': r.naibDays==null?'—':r.naibDays,
         'تاريخ متابعة التقسيم': r.divDate?_fmtD(r.divDate):'لم تبدأ',
-        'شهر متابعة التقسيم': r.divMonth?_naibMonthLabel(r.divMonth):'—',
-        'مدة الرد منذ متابعة التقسيم (أيام عمل)': r.divDate?(r.divDays==null?'—':r.divDays):'—',
-        'الحالة': r.closed?'أُغلق بعد متابعة التقسيم':(r.divDate?((r.divDays!=null&&r.divDays>r.allowedDays)?'تجاوز رد التقسيم':'قيد متابعة التقسيم'):(r.silent?'تجاوز لعدم الاستجابة':'تجاوز مدة الرد'))
+        'شهر تسجيل الموضوع': r.divMonth?_naibMonthLabel(r.divMonth):'—',
+        'أيام تجاوز مكتب النائب منذ متابعة التقسيم (أيام عمل)': r.divDate?(r.divDays==null?'—':r.divDays):'—',
+        'الحالة': r.closed?'أُغلق بعد متابعة التقسيم':(r.divDate?((r.divDays!=null&&r.divDays>r.allowedDays)?'تجاوز مكتب النائب — تأخر رد التقسيم':'تجاوز مكتب النائب — قيد متابعة التقسيم'):(r.silent?'تجاوز لعدم الاستجابة':'تجاوز مدة الرد'))
       };
     });
     if(!data.length){ alert('لا توجد بيانات للتصدير'); return; }
