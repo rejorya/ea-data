@@ -1479,7 +1479,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
 
       <!-- ===== بيانات الموضوع ===== -->
       <div class="fg2">
-        <div class="fgs"><label>نوع المعاملة</label><input id="editTransactionTypeLabel" readonly style="background:#f4f6f7"></div>
+        <div class="fgs"><label>تصنيف المعاملة</label><span id="editTransactionTypeLabel" style="color:#566573"></span></div>
         <div class="fgs fw"><label>عنوان الموضوع</label><input id="editTitle"></div>
         <div class="fgs"><label id="editFromLabel">الجهة الوارد منها *</label><input id="editFrom"></div>
         <div class="fgs"><label id="editDateLabel">تاريخ الوارد</label><input type="date" id="editDate"></div>
@@ -1581,7 +1581,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
 
       <!-- ===== إضافة إجراء جديد (اختياري) ===== -->
       <h4 style="margin:0 0 4px;font-size:14px;color:#00A6A6">➕ إضافة إجراء جديد (اختياري)</h4>
-      <p style="font-size:11.5px;color:#90a0b3;margin:0 0 10px">الجهة المُتابَعة وطريقة الرد والحالة تُؤخذ من بيانات الموضوع أعلاه — لا حاجة لإعادتها. يُسجَّل الإجراء فقط إذا عبّأتِ نوع الإجراء أو النتيجة أو الملاحظة.</p>
+      <p style="font-size:11.5px;color:#90a0b3;margin:0 0 10px">كل تغيير محفوظ في الحالة أو بيانات الموضوع يُسجَّل تلقائيًا. يمكنك إضافة تفاصيل الإجراء هنا؛ الحفظ دون تغيير لا يكرر السجل.</p>
       <div class="fg2">
         <div class="fgs"><label>تاريخ المتابعة</label><input type="date" id="fuDate" oninput="updateFollowupCalc()"></div>
         <div class="fgs"><label>هل تم الرد؟</label><select id="fuReplied" onchange="toggleFollowupReplyMethod()"><option value="false">❌ لا</option><option value="true">✅ نعم</option></select></div>
@@ -1589,7 +1589,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
         <div class="fgs" id="fuReplyDocNoWrap" style="display:none"><label for="fuReplyDocNo">رقم وثيقة الرد (اختياري)</label><input id="fuReplyDocNo" placeholder="رقم الوثيقة أو مرجع وصول"></div>
         <div class="fgs" id="fuScopeWrap"><label>مسار المتابعة</label><select id="fuScope" onchange="toggleFollowupExternalEntity()"><option value="">— حددي المسار —</option><option value="internal">🔵 داخلية</option><option value="external">🟢 خارجية</option></select></div>
         <div class="fgs" id="fuExternalEntityWrap" style="display:none"><label>🌐 الجهة الخارجية في هذه المتابعة</label><select id="fuExternalEntity"><option value="">— اختر الجهة —</option></select></div>
-        <div class="fgs"><label>نوع الإجراء</label>
+        <div class="fgs"><label>الإجراء المنفّذ</label>
           <select id="fuActionType">
             <option value="">— اختر —</option>
             <option value="call">📞 تواصل هاتفي</option>
@@ -4889,7 +4889,7 @@ function openEditTopicModal(tid) {
   if(!t) return;
   if(!Array.isArray(t.followups))t.followups=[];
   $('editTopicId').value = tid;
-  if($('editTransactionTypeLabel')) $('editTransactionTypeLabel').value = ({followup:'موضوع للمتابعة',directive:'توجيه من الرئيس',discussion:'مناقشة مع الرئيس',memo:'مذكرة داخلية'}[t.transactionType||'followup'] || 'موضوع للمتابعة');
+  if($('editTransactionTypeLabel')) $('editTransactionTypeLabel').textContent = ({followup:'موضوع للمتابعة',directive:'توجيه من الرئيس',discussion:'مناقشة مع الرئيس',memo:'مذكرة داخلية'}[t.transactionType||'followup'] || 'موضوع للمتابعة');
   $('editTitle').value = t.title || '';
   $('editFrom').value = t.from || '';
   $('editDate').value = t.date || '';
@@ -5085,7 +5085,7 @@ function renderTopicTimeInfo() {
 function renderTopicActionLog(t) {
   const box = $('editActionLog');
   if(!box) return;
-  const list = (t.followups||[]).slice().sort((a,b)=>(a.date||'').localeCompare(b.date||''));
+  const list = [...(t.followups||[]),...(t.actionHistory||[])].sort((a,b)=>(a.date||'').localeCompare(b.date||''));
   if(!list.length) { box.innerHTML = '<div style="color:#90a0b3;font-size:12px;padding:10px;text-align:center;background:#f7fafc;border-radius:8px">لا توجد إجراءات مسجّلة بعد على هذا الموضوع</div>'; return; }
   const entLabels = (typeof FOLLOW_ENTITY_LABELS!=='undefined') ? FOLLOW_ENTITY_LABELS : {};
   box.innerHTML = list.map(f => {
@@ -5098,7 +5098,8 @@ function renderTopicActionLog(t) {
       + (ent?' · <span style="color:#008F8F">'+escHtml(ent)+'</span>':'')
       + (extEnt?' · <span style="color:#0f766e">🌐 '+escHtml(extEnt)+'</span>':'')
       + (f.taqseem?' · <span style="color:#7d3c98">📂 '+escHtml(f.taqseem)+'</span>':'')
-      + (f.replied?' · <span style="color:#1d8349">✅ تم الرد</span>':' · <span style="color:#b91c1c">❌ لم يُرد</span>')
+      + (f.auditOnly?'':(f.replied?' · <span style="color:#1d8349">✅ تم الرد</span>':' · <span style="color:#b91c1c">❌ لم يُرد</span>'))
+      + (f.actionType?'<br><b>الإجراء: '+escHtml(({call:'تواصل هاتفي',email:'بريد إلكتروني',memo:'مذكرة / خطاب',meeting:'اجتماع',visit:'متابعة مباشرة',esc:'تصعيد',other:'أخرى',edit:'تعديل بيانات',status:'تغيير الحالة'}[f.actionType]||f.actionType))+'</b>':'')
       + (f.responseMethod ? ' · <span style="color:#7c3aed">'+escHtml(RESPONSE_METHOD_LABELS[f.responseMethod]||f.responseMethod)+'</span>' : '')
       + (f.replyDocNo ? ' · <span style="color:#0f766e">📄 رقم الوثيقة الواردة: '+escHtml(f.replyDocNo)+'</span>' : '')
       + (f.statusChange==='esc'?'<br><strong style="color:#c0392b">تم التصعيد</strong>':'')
@@ -5199,14 +5200,26 @@ function saveTopicAll() {
   if(outgoing && !val('editToEntity').trim()){ alert('⚠️ يرجى ملء الجهة الصادر إليها'); return; }
   if(!outgoing && !val('editFrom').trim()){ alert('⚠️ يرجى ملء الجهة الوارد منها'); return; }
   
-  const escalationChanged=t.status!=='esc' && val('editStatus')==='esc'
-    && !(D.archivedTopics||[]).some(x=>String(x.id)===String(tid));
+  const inArchive=(D.archivedTopics||[]).some(x=>String(x.id)===String(tid));
+  if(val('fuActionType')==='esc' && !inArchive) $('editStatus').value='esc';
+  const previousStatus=t.status;
+  const tracked={title:'عنوان الموضوع',from:'الجهة',date:'التاريخ',receivedFollowDate:'استلام المتابعة',followStart:'تاريخ التوجيه',type:'نطاق المتابعة',correspondenceDirection:'اتجاه المراسلة',kpi:'المؤشر',slaDays:'مدة الرد',docNo:'رقم الوثيقة',toEntity:'الجهة المرسل إليها',priority:'الأولوية',confidentiality:'السرية',note:'الملاحظات',followEntity:'الجهة المتابعة',taqseemName:'التقسيم',raisDeptName:'الدائرة',otherEntityName:'الجهة الأخرى'};
+  const normalized=(record,key)=>String(record[key]??(['priority','confidentiality'].includes(key)?'normal':'')).trim();
+  const before=Object.fromEntries(Object.keys(tracked).map(key=>[key,normalized(t,key)]));
   // 1) احفظي بيانات الموضوع
   saveEditTopic();
+  const statusChanged=previousStatus!==t.status;
+  const escalationChanged=statusChanged && t.status==='esc';
+  const changed=Object.keys(tracked).filter(key=>before[key]!==normalized(t,key));
+  const statusText=value=>STATUS_LABELS[value]||value||'غير محدد';
+  const changeSummary=[statusChanged?'تغيير الحالة من '+statusText(previousStatus)+' إلى '+statusText(t.status):'',changed.length?'تعديل: '+changed.map(key=>tracked[key]).join('، '):''].filter(Boolean).join(' — ');
   // 2) سجّلي الإجراء الجديد فقط إذا عُبّئت تفاصيله
-  const hasAction = escalationChanged || !!(val('fuActionType') || val('fuResult').trim() || val('fuNote').trim() || val('fuReplied')==='true');
+  const manualAction=!!(val('fuActionType') || val('fuResult').trim() || val('fuNote').trim() || val('fuReplied')==='true');
+  const hasAction = statusChanged || changed.length>0 || manualAction;
+  const auditOnly=!manualAction && !statusChanged;
   if(hasAction) {
     if(!Array.isArray(t.followups)) t.followups=[];
+    if(!Array.isArray(t.actionHistory)) t.actionHistory=[];
     const date = val('fuDate') || localDateKey(new Date());
     const fe = t.followEntity || '';
     const fuScope = val('fuScope') || (t.followScope==='internal' ? 'internal' : (t.followScope==='external' ? 'external' : (t.type === 'int' ? 'internal' : (t.type === 'ext' ? 'external' : ''))));
@@ -5217,17 +5230,20 @@ function saveTopicAll() {
     const baseStr = t.followStart;
     let daysSince = null;
     if(baseStr) daysSince = businessDaysBetween(baseStr, date);
-    t.followups.push({
+    (auditOnly?t.actionHistory:t.followups).push({
+      auditOnly,
+      changes:changed.map(key=>({field:key,before:before[key],after:normalized(t,key)})),
+      previousStatus:statusChanged?previousStatus:'',
       date: date,
       replied: val('fuReplied') === 'true',
       responseMethod: val('fuResponseMethod') || '',
       replyDocNo: val('fuReplied')==='true' ? val('fuReplyDocNo').trim() : '',
-      note: val('fuNote').trim() || (escalationChanged ? 'تم التصعيد' : 'متابعة'),
-      actionType: val('fuActionType') || (escalationChanged ? 'تصعيد' : ''),
-      statusChange: escalationChanged ? 'esc' : '',
+      note: [val('fuNote').trim(),changeSummary].filter(Boolean).join('\n') || 'متابعة',
+      actionType: val('fuActionType') || (escalationChanged ? 'esc' : statusChanged?'status':manualAction?'other':'edit'),
+      statusChange: statusChanged ? t.status : '',
       scope: fuScope,
-      by: val('fuBy').trim() || (escalationChanged ? (CU?.name || CU?.user || 'مستخدم') : ''),
-      result: val('fuResult').trim() || (escalationChanged ? 'تم التصعيد' : ''),
+      by: val('fuBy').trim() || CU?.name || CU?.user || 'مستخدم',
+      result: val('fuResult').trim() || (statusChanged ? statusText(t.status) : auditOnly?'تم حفظ التعديل':''),
       entity: fe,
       externalEntityIndex: extIndex,
       externalEntityName: extEntity ? extEntity.name : '',
@@ -5235,7 +5251,7 @@ function saveTopicAll() {
       startDate: t.followStart || '',
       daysSince: daysSince
     });
-    if(extEntity){
+    if(extEntity && !auditOnly){
       extEntity.lastFollowDate=date;
       extEntity.replied=val('fuReplied')==='true';
       if(extEntity.replied){extEntity.responseMethod=val('fuResponseMethod')||'';extEntity.replyDocNo=val('fuReplyDocNo').trim();}
@@ -5243,21 +5259,21 @@ function saveTopicAll() {
     if(val('fuReplied')==='true' && val('fuResponseMethod')) t.responseMethod=val('fuResponseMethod');
     // 🔁 تدفق مكتب النائب: متابعة التقسيم تبدأ مهلة ٣ أيام عمل
     // عدّاد النائب يبقى محفوظاً في سجل الإجراءات، وعدّاد التقسيم يبدأ من الآن
-    if((fe === 'taqseem' || taq) && t.status !== 'closed') {
+    if(!auditOnly && (fe === 'taqseem' || taq) && t.status !== 'closed') {
       if(!t.divFollowDate) t.divFollowDate = date;  // أول متابعة تقسيم فقط تحدد تاريخ البدء
       if(t.status === 'open' || t.status === 'div_followed') t.status = 'awaiting_div';
     }
     if($('editFollowupCount') && $('editFollowupCount').value === '') {
       // لا شيء — العدّاد اليدوي غير مستخدم
-    } else if(t.manualCount != null) {
+    } else if(!auditOnly && t.manualCount != null) {
       t.manualCount = t.manualCount + 1;
     }
     // 🔗 ربط مركز الإجراءات: تسجيل الإجراء يعلّم مهام هذا الموضوع «تم» تلقائياً
-    try{
+    try{ if(!auditOnly){
       _markDailyDone('fu-today-'+tid);
       _markDailyDone('late-'+tid);
       _markDailyDone('div-'+tid);
-    }catch(e){}
+    }}catch(e){}
     renderTopicsTable();
     refreshDashboard();
     refreshAllReports();
