@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-28T04:24:29.069Z",
+  "exportedAt": "2026-10-28T04:28:29.980Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37252,11 +37252,28 @@
           "taqseem": "",
           "startDate": "2026-10-08",
           "daysSince": 3
+        },
+        {
+          "date": "2026-10-27",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التصعيد لمدير المكتب",
+          "actionType": "esc",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-08",
+          "daysSince": 13
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791451612638.1636,
-      "manualCount": 4,
+      "manualCount": 5,
       "followEntity": "naib_office",
       "responseMethod": ""
     },
@@ -53479,6 +53496,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793161685298.2026,
+          "at": "2026-10-28T04:28:05.298Z",
+          "action": "إضافة متابعة",
+          "details": "تقرير عن الحملة الوطنية لمكافحة الطيور الغازية لشهر سبتمبر 2026 بمحافظة شمال الباطنة"
+        },
+        {
+          "id": 1793161685230.2832,
+          "at": "2026-10-28T04:28:05.230Z",
+          "action": "تعديل موضوع",
+          "details": "تقرير عن الحملة الوطنية لمكافحة الطيور الغازية لشهر سبتمبر 2026 بمحافظة شمال الباطنة"
+        },
         {
           "id": 1793161466913.2551,
           "at": "2026-10-28T04:24:26.913Z",
