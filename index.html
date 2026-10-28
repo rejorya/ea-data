@@ -7233,7 +7233,7 @@ function downloadWord(filename, htmlContent) {
   // وورد أحياناً يُسقط خلفية رؤوس الجداول من الـ CSS — نعزّزها بخاصية bgcolor
   const body = prepareArabicWordBody(bodyRaw);
   const title = titleMatch ? titleMatch[1] : filename;
-  const landscape = /<th[^>]*>الاستحقاق<\/th>/.test(bodyRaw);
+  const landscape = false;
   const pageSize = landscape ? '29.7cm 21cm' : '21cm 29.7cm';
   
   // بناء مستند Word كامل مع إعدادات Word الخاصة (XML namespaces)
@@ -7339,6 +7339,7 @@ function preparePrintHTML(htmlContent) {
   let wide = false;
   doc.querySelectorAll('table').forEach(table => {
     table.dir = 'rtl';
+    if(table.rows.length <= 14 && !Array.from(table.rows[0]?.cells || []).some(c=>c.textContent.trim()==='الموضوع')) table.classList.add('pdf-keep-table');
     const labels = Array.from(table.rows[0]?.cells || []).map(c => c.textContent.trim());
     let widths;
     if(labels.length === 6 && labels.includes('الموضوع')) { widths=[4,36,22,11,15,12]; wide=true; }
@@ -7358,12 +7359,12 @@ function preparePrintHTML(htmlContent) {
   const style = doc.createElement('style');
   style.textContent = `
     @page {
-      size:A4 ${wide ? "landscape" : "portrait"}; margin:14mm 12mm 18mm;
+      size:A4 portrait; margin:14mm 12mm 18mm;
       @bottom-center { content:counter(page); font:10pt Tahoma; color:#566573; }
     }
     * { box-sizing:border-box; }
     html,body { direction:rtl; height:auto!important; overflow:visible!important; }
-    body { max-width:${wide ? "273mm" : "186mm"}; margin:0 auto!important; padding:0!important; background:white; font-family:Tahoma,Arial,sans-serif; }
+    body { max-width:186mm; margin:0 auto!important; padding:0!important; background:white; font-family:Tahoma,Arial,sans-serif; }
     table { width:100%!important; max-width:100%!important; table-layout:fixed; border-collapse:collapse; direction:rtl; }
     th,td { min-width:0!important; overflow-wrap:break-word; white-space:normal!important; font-size:10.5pt; line-height:1.65; padding:6pt!important; }
     thead { display:table-header-group; break-inside:avoid; break-after:avoid; }
@@ -7383,7 +7384,7 @@ function preparePrintHTML(htmlContent) {
       .pdf-section-intro { break-after:avoid; page-break-after:avoid; }
       table { break-inside:auto; page-break-inside:auto; margin-top:5mm!important; }
       th,td { vertical-align:top; }
-      .header,.intro,.summary-box { break-inside:avoid; }
+      .header,.intro,.summary-box,.pdf-keep-table { break-inside:avoid!important; page-break-inside:avoid!important; }
     }
   `;
   doc.head.appendChild(style);
@@ -8774,15 +8775,21 @@ window.addEventListener('load', () => {
   }
   function _naibRows(){
     var today=_todayStr();
-    // القائمة المعتمدة للتقسيمات التابعة فعلياً لمكتب النائب (مديريات عامة وإدارات)؛ إن كانت فارغة (لم تُضبط بعد) لا نطبّق تقييداً حتى لا تختفي البيانات فجأة
-    var divList = D.naibDivisions || [];
-    var hasDivList = divList.length > 0;
-    function _divOk(name){ if(!hasDivList) return true; if(!name) return false; return divList.some(function(x){ return x.trim()===String(name).trim(); }); }
-    return D.topics.filter(function(t){
-      // ١) كل موضوع بدأت فيه متابعة التقسيم (لعدم رد مكتب النائب) — يظهر دائماً حتى بعد إغلاقه، لأغراض الكشف الشهري
-      // بشرط أن يكون التقسيم المُتابَع من ضمن المديريات العامة والإدارات التابعة فعلياً لمكتب النائب
-      if(t.divFollowDate) return _divOk(t.taqseemName);
-      return false;
+    function divisionFollows(t){
+      return (t.followups||[]).filter(function(f){ return !f.auditOnly && (f.entity==='taqseem' || f.followEntity==='taqseem' || !!f.taqseem); });
+    }
+    function divisionDate(t){
+      return [t.divFollowDate].concat(divisionFollows(t).map(function(f){return f.date;})).filter(Boolean).sort()[0] || '';
+    }
+    var unique=new Map();
+    (D.archivedTopics||[]).concat(D.topics||[]).forEach(function(t){
+      var key=t.id!=null?String(t.id):JSON.stringify([t.title,t.date,t.from]);
+      var previous=unique.get(key);
+      if(previous) t=Object.assign({},previous,t,{followups:(previous.followups||[]).concat(t.followups||[]),divFollowDate:[previous.divFollowDate,t.divFollowDate].filter(Boolean).sort()[0]||''});
+      unique.set(key,t);
+    });
+    return Array.from(unique.values()).filter(function(t){
+      return !!t.divFollowDate || divisionFollows(t).length>0;
     }).map(function(t){
       var start=t.followStart||'';
       var allowedInfo=_naibAllowedDays(t);
@@ -8790,7 +8797,7 @@ window.addEventListener('load', () => {
       // للمغلق: نجمّد الحسابات عند تاريخ الإغلاق لا اليوم
       var refEnd = closed ? (t.closedAt||today) : today;
       var naibDays=null; try{ naibDays=businessDaysBetween(start,refEnd); }catch(e){ naibDays=null; }
-      var divDate=t.divFollowDate||'';
+      var divDate=divisionDate(t);
       var divDays=null;
       if(divDate){ try{ divDays=businessDaysBetween(divDate,refEnd); }catch(e){ divDays=null; } }
       return {
