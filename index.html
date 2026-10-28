@@ -7302,6 +7302,9 @@ function downloadWord(filename, htmlContent) {
 
 function preparePrintHTML(htmlContent) {
   const doc = new DOMParser().parseFromString(htmlContent, 'text/html');
+  doc.querySelectorAll('.closing-note').forEach(note => {
+    if(note.textContent.trim().startsWith('هذا تقرير متابعة تنفيذ التوجيهات بتاريخ')) note.remove();
+  });
   doc.documentElement.lang = 'ar';
   doc.documentElement.dir = 'rtl';
   doc.querySelectorAll('script,button').forEach(el => el.remove());
