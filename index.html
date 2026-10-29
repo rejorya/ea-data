@@ -334,8 +334,8 @@ body.viewer-only .print-btn { display: inline-block !important; }
         <div class="fgs"><label>الأولوية</label>
           <select id="tNewPriority"><option value="normal">عادية</option><option value="limited">محدود</option><option value="urgent">عاجل</option><option value="vurgent">عاجل جدًا</option></select>
         </div>
-        <div class="fgs"><label>السرية</label>
-          <select id="tNewConf"><option value="secret">سري</option><option value="top_secret">سري للغاية</option></select>
+        <div class="fgs"><label>السرية (اختياري)</label>
+          <select id="tNewConf"><option value="normal">غير سري</option><option value="secret">سري</option><option value="top_secret">سري للغاية</option></select>
         </div>
         <div class="fgs"><label>تحديد مدة الرد</label>
           <select id="tNewSlaMode" onchange="onSlaModeChange('tNew')">
@@ -1511,8 +1511,8 @@ body.viewer-only .print-btn { display: inline-block !important; }
         <div class="fgs"><label>الأولوية</label>
           <select id="editPriority"><option value="normal">عادية</option><option value="limited">محدود</option><option value="urgent">عاجل</option><option value="vurgent">عاجل جدًا</option><option value="important" hidden>مهمة (سجل سابق)</option></select>
         </div>
-        <div class="fgs"><label>السرية</label>
-          <select id="editConf"><option value="secret">سري</option><option value="top_secret">سري للغاية</option><option value="normal" hidden>عادي (سجل سابق)</option></select>
+        <div class="fgs"><label>السرية (اختياري)</label>
+          <select id="editConf"><option value="normal">غير سري</option><option value="secret">سري</option><option value="top_secret">سري للغاية</option></select>
         </div>
         <div class="fgs"><label>الحالة</label>
           <select id="editStatus">
