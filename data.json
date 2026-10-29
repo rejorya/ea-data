@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-29T07:21:50.632Z",
+  "exportedAt": "2026-10-29T07:26:31.024Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -7805,10 +7805,31 @@
           "taqseem": "",
           "startDate": "2026-02-16",
           "daysSince": 174
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "",
+          "date": "2026-10-28",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-02-16",
+          "daysSince": 182
         }
       ],
       "sheet": "Sheet1",
-      "manualCount": 13,
+      "manualCount": 14,
       "followEntity": "naib_office",
       "responseMethod": "direct_manager",
       "followStart": "2026-02-16",
@@ -7829,7 +7850,8 @@
           "by": "رحاب بنت نصيب الفرج"
         }
       ],
-      "correspondenceDirection": ""
+      "correspondenceDirection": "",
+      "actionHistory": []
     },
     {
       "id": 1780826441881.4622,
@@ -54039,6 +54061,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793258788835.801,
+          "at": "2026-10-29T07:26:28.835Z",
+          "action": "إضافة متابعة",
+          "details": "ملخص ورشة عمل مشروع المسح الوطني للتنوع الأحيائي"
+        },
+        {
+          "id": 1793258788774.3784,
+          "at": "2026-10-29T07:26:28.774Z",
+          "action": "تعديل موضوع",
+          "details": "ملخص ورشة عمل مشروع المسح الوطني للتنوع الأحيائي"
+        },
         {
           "id": 1793258508252.1306,
           "at": "2026-10-29T07:21:48.252Z",
