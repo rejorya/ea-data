@@ -7129,7 +7129,7 @@ function buildProfessionalReport(from,to,title,notes,snapshot) {
   body+='<h2>حالة مواضيع التقرير عند إعداد اللقطة</h2>';
   body+=table(['إجمالي المواضيع','منجز / مغلق','قيد الإجراء','متأخر حاليًا','نسبة الإنجاز'],[[r.all.length,completed.length,pending.length,r.all.filter(t=>t.status!=='closed'&&getKpiStatus(t).state==='late').length,pct(completed.length,r.all.length)]]);
   body+='<h2>إنجاز الفترة</h2>'+table(['مستلمة خلال الفترة','أُغلقت خلال الفترة','منها مواضيع سابقة','إجراءات متابعة خلال الفترة'],[[r.received.length,r.completed.length,r.completed.filter(t=>refDate(t)&&refDate(t)<from).length,r.all.reduce((n,t)=>n+(t.followups||[]).filter(f=>String(f.date||'').slice(0,10)>=from&&String(f.date||'').slice(0,10)<=to).length,0)]]);
-  body+='<p>نسبة الإنجاز الإجمالية = المغلق ÷ إجمالي المواضيع. إغلاق الموضوع يعني انتهاء إجراء المتابعة المسند وفق الإفادة أو التوجيه المسجل. المؤشر الزمني يبدأ من تاريخ بدء المتابعة؛ لا يُحتسب عند غياب التاريخ أو المدة المستهدفة.</p>';
+  body+='<p>نسبة الإنجاز = المواضيع المغلقة ÷ إجمالي المواضيع × 100. يُحتسب كل موضوع مغلق منجزًا في أعمال المتابعة، دون اشتراط ورود رد أو اكتمال بيانات المدة. أي إجراء لاحق يُسجّل كتعديل أو متابعة إضافية على الموضوع نفسه، ولا يغيّر احتسابه منجزًا ما لم يُعَد فتحه.</p>';
   [['الواردة',false],['الصادرة',true]].forEach(([name,out])=>{
     const group=r.all.filter(t=>(t.correspondenceDirection==='out')===out);
     const closedByEnd=t=>t.status==='closed';
@@ -7138,7 +7138,7 @@ function buildProfessionalReport(from,to,title,notes,snapshot) {
     const rows=buildTopicsExportRows(done),eligible=rows.filter(x=>['أُنجز ضمن المدة','أُنجز بعد المدة'].includes(x['نتيجة مؤشر KPI']));
     const onTime=eligible.filter(x=>x['نتيجة مؤشر KPI']==='أُنجز ضمن المدة').length;
     body+='<h2>المواضيع '+name+'</h2>'+table(['إجمالي القسم','المغلق','قيد الإجراء','نسبة الإنجاز','مستلمة خلال الفترة','أُغلقت خلال الفترة','قابلة لقياس KPI','أُنجزت ضمن المدة','نسبة الالتزام'],[[group.length,group.filter(closedByEnd).length,group.filter(t=>t.status!=='closed').length,pct(group.filter(closedByEnd).length,group.length),received.length,done.length,eligible.length,onTime,pct(onTime,eligible.length)]]);
-    body+='<p>نسبة الالتزام = المواضيع المغلقة خلال الفترة ضمن المدة ÷ المغلقة خلال الفترة التي تتوفر لها بيانات قياس كاملة. غير القابلة للقياس: '+(done.length-eligible.length)+'.</p>';
+    body+='<p>الالتزام الزمني مؤشر مستقل لا يؤثر في احتساب الموضوع المغلق منجزًا. مواضيع مغلقة لا تتوفر لها بيانات كافية لقياس المدة: '+(done.length-eligible.length)+'.</p>';
     const rowsCompact=r.active.filter(t=>(t.correspondenceDirection==='out')===out).map((t,i)=>{
       const fs=(t.followups||[]).filter(f=>String(f.date||'').slice(0,10)>=from&&String(f.date||'').slice(0,10)<=to).sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
       const last=fs[fs.length-1],closed=t.status==='closed'&&t.closedAt>=from&&t.closedAt<=to;
@@ -7147,7 +7147,7 @@ function buildProfessionalReport(from,to,title,notes,snapshot) {
     });
     body+=rowsCompact.length?table(['م','الموضوع','الجهة','متابعات الفترة','آخر إجراء بالفترة','ملخص الإجراء','حالة المتابعة'],rowsCompact):'<p>لا توجد أعمال مسجلة خلال الفترة.</p>';
   });
-  body+='<p>يعرض التقرير أعمال الفترة فقط دون سرد المتابعات التاريخية. التفاصيل الكاملة محفوظة في سجل الموضوع وكشف Excel. استكمال المتابعة لا يثبت اكتمال التنفيذ النهائي.</p>';
+  body+='<p>يعرض التقرير أعمال الفترة فقط دون سرد المتابعات التاريخية. التفاصيل الكاملة محفوظة في سجل الموضوع وكشف Excel. الموضوع المغلق منتهٍ ومنجز في أعمال المتابعة.</p>';
   if(notes)body+='<h2>ملاحظات التقرير</h2><p style="white-space:pre-wrap">'+esc(notes)+'</p>';
   return '<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><title>'+esc(title)+'</title><style>'+REPORT_STYLES+' h1{color:#148f77} .data-table{font-size:9pt}.data-table th,.data-table td{padding:5px} @media print{@page{size:A4;margin:12mm}body{padding:0}.data-table{font-size:9pt}thead{display:table-header-group}tr{break-inside:avoid;page-break-inside:avoid}}</style></head><body>'+body+'</body></html>';
 }
