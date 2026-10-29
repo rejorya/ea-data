@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-29T07:16:41.468Z",
+  "exportedAt": "2026-10-29T07:17:14.118Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -53880,6 +53880,33 @@
   ],
   "activityLog": [
     {
+      "id": "6da609a5-f5a9-4c34-b115-c120552a80e7",
+      "sessionId": "6da609a5-f5a9-4c34-b115-c120552a80e7",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-29T07:17:09.404Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null,
+      "central": true
+    },
+    {
       "id": "63373302-760d-470c-a5a1-aa4c7c2baff7",
       "sessionId": "63373302-760d-470c-a5a1-aa4c7c2baff7",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -53901,9 +53928,9 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-29T06:52:56.863Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-29T07:16:44.018Z",
+      "duration": "23 دقيقة و 47 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
       "central": true,
       "actions": [
         {
@@ -53954,7 +53981,8 @@
           "action": "تعديل موضوع",
           "details": "طلب فتح باب تصدير خردة النحاس"
         }
-      ]
+      ],
+      "durationMinutes": 23
     },
     {
       "id": "e2f49b1c-1ce7-4e6d-af18-29a9433662ad",
