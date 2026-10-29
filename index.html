@@ -6435,9 +6435,8 @@ function saveReport(type) {
   }
 }
 
-// 📅 أساس التاريخ في تقارير المتابعة: تاريخ توجيه الرئيس للمتابعة (followStart).
-// لا يُستبدل بتاريخ الوارد أو تاريخ استلام موظف المتابعة.
-function refDate(t) { return t.followStart || ''; }
+// Report receipt/issue period follows the transaction date; KPI timing remains separate.
+function refDate(t) { return t.date || t.receivedFollowDate || t.followStart || ''; }
 
 function collectWeeklyData() {
   const from = val('wFrom'), to = val('wTo');
@@ -7100,6 +7099,7 @@ function collectCurrentWorkload() {
   const directivesOpen=directives.filter(d=>!DIR_DONE_SET.includes(d.status)).length;
   return {incoming,outgoing,directivesOpen,total:incoming+outgoing+directivesOpen,
     directivesTotal:directives.length,directivesDone:directives.length-directivesOpen,
+    directivesRate:directivePercentage(directives),
     capturedAt:localDateKey(new Date())};
 }
 function collectProfessionalReport(from,to) {
@@ -7116,42 +7116,48 @@ function collectProfessionalReport(from,to) {
 function buildProfessionalReport(from,to,title,notes,snapshot) {
   const r=snapshot||collectProfessionalReport(from,to);
   const esc=v=>String(v==null?'':v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const table=(headers,rows)=>'<table class="data-table"><thead><tr>'+headers.map(h=>'<th>'+esc(h)+'</th>').join('')+'</tr></thead><tbody>'+rows.map(row=>'<tr>'+row.map(v=>'<td style="white-space:pre-wrap;overflow-wrap:anywhere">'+esc(v)+'</td>').join('')+'</tr>').join('')+'</tbody></table>';
-  const pct=(a,b)=>b?Math.round(a/b*100)+'%':'—';
-  const completed=r.all.filter(t=>t.status==='closed');
-  const pending=r.all.filter(t=>t.status!=='closed');
-  let body='<h1>'+esc(title)+'</h1><p>الفترة: '+esc(fmtDate(from))+' إلى '+esc(fmtDate(to))+'</p>';
-  if(r.workload){
-    const w=r.workload;
-    body+='<h2>الأعمال قيد المتابعة بتاريخ '+esc(fmtDate(w.capturedAt))+'</h2>'+table(['الوارد','الصادر','توجيهات الرئيس قيد التنفيذ','إجمالي الأعمال الجارية'],[[w.incoming,w.outgoing,w.directivesOpen,w.total]]);
-    body+='<h2>توجيهات الرئيس</h2>'+table(['إجمالي التوجيهات','منفذة / مغلقة','قيد التنفيذ'],[[w.directivesTotal,w.directivesDone,w.directivesOpen]]);
-  } else body+='<p>هذه لقطة محفوظة قديمة؛ أعيدي إنشاء التقرير لعرض أعداد الوارد والصادر وتوجيهات الرئيس الحالية.</p>';
-  body+='<h2>حالة مواضيع التقرير عند إعداد اللقطة</h2>';
-  body+=table(['إجمالي المواضيع','منجز / مغلق','قيد الإجراء','متأخر حاليًا','نسبة الإنجاز'],[[r.all.length,completed.length,pending.length,r.all.filter(t=>t.status!=='closed'&&getKpiStatus(t).state==='late').length,pct(completed.length,r.all.length)]]);
-  body+='<h2>إنجاز الفترة</h2>'+table(['مستلمة خلال الفترة','أُغلقت خلال الفترة','منها مواضيع سابقة','إجراءات متابعة خلال الفترة'],[[r.received.length,r.completed.length,r.completed.filter(t=>refDate(t)&&refDate(t)<from).length,r.all.reduce((n,t)=>n+(t.followups||[]).filter(f=>String(f.date||'').slice(0,10)>=from&&String(f.date||'').slice(0,10)<=to).length,0)]]);
-  body+='<p>نسبة الإنجاز = المواضيع المغلقة ÷ إجمالي المواضيع × 100. يُحتسب كل موضوع مغلق منجزًا في أعمال المتابعة، دون اشتراط ورود رد أو اكتمال بيانات المدة. أي إجراء لاحق يُسجّل كتعديل أو متابعة إضافية على الموضوع نفسه، ولا يغيّر احتسابه منجزًا ما لم يُعَد فتحه.</p>';
-  [['الواردة',false],['الصادرة',true]].forEach(([name,out])=>{
-    const group=r.all.filter(t=>(t.correspondenceDirection==='out')===out);
-    const closedByEnd=t=>t.status==='closed';
-    const received=r.received.filter(t=>(t.correspondenceDirection==='out')===out);
-    const done=r.completed.filter(t=>(t.correspondenceDirection==='out')===out);
-    const rows=buildTopicsExportRows(done),eligible=rows.filter(x=>['أُنجز ضمن المدة','أُنجز بعد المدة'].includes(x['نتيجة مؤشر KPI']));
-    const onTime=eligible.filter(x=>x['نتيجة مؤشر KPI']==='أُنجز ضمن المدة').length;
-    body+='<h2>المواضيع '+name+'</h2>'+table(['إجمالي القسم','المغلق','قيد الإجراء','نسبة الإنجاز','مستلمة خلال الفترة','أُغلقت خلال الفترة','قابلة لقياس KPI','أُنجزت ضمن المدة','نسبة الالتزام'],[[group.length,group.filter(closedByEnd).length,group.filter(t=>t.status!=='closed').length,pct(group.filter(closedByEnd).length,group.length),received.length,done.length,eligible.length,onTime,pct(onTime,eligible.length)]]);
-    body+='<p>الالتزام الزمني مؤشر مستقل لا يؤثر في احتساب الموضوع المغلق منجزًا. مواضيع مغلقة لا تتوفر لها بيانات كافية لقياس المدة: '+(done.length-eligible.length)+'.</p>';
-    const rowsCompact=r.active.filter(t=>(t.correspondenceDirection==='out')===out).map((t,i)=>{
-      const fs=(t.followups||[]).filter(f=>String(f.date||'').slice(0,10)>=from&&String(f.date||'').slice(0,10)<=to).sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
-      const last=fs[fs.length-1],closed=t.status==='closed'&&t.closedAt>=from&&t.closedAt<=to;
-      const text=last?[last.actionType,last.result,last.note].filter(Boolean).join(' — '):(closed?'استكمال المتابعة خلال الفترة':'استلام الموضوع خلال الفترة');
-      return [i+1,t.title||'—',out?(t.toEntity||t.from||'—'):(t.from||'—'),fs.length,last?fmtDate(last.date):fmtDate(closed?t.closedAt:refDate(t)),text.length>220?text.slice(0,217)+'…':text,t.status==='closed'?'استُكملت المتابعة':t.status==='esc'?'مصعّد':'قيد المتابعة'];
-    });
-    body+=rowsCompact.length?table(['م','الموضوع','الجهة','متابعات الفترة','آخر إجراء بالفترة','ملخص الإجراء','حالة المتابعة'],rowsCompact):'<p>لا توجد أعمال مسجلة خلال الفترة.</p>';
+  const table=(headers,rows,detail=false)=>'<table class="data-table'+(detail?' report-detail':'')+'"><thead><tr>'+headers.map(h=>'<th>'+esc(h)+'</th>').join('')+'</tr></thead><tbody>'+rows.map(row=>'<tr>'+row.map(v=>'<td>'+esc(v)+'</td>').join('')+'</tr>').join('')+'</tbody></table>';
+  const within=d=>String(d||'').slice(0,10)>=from&&String(d||'').slice(0,10)<=to;
+  const actions=t=>(t.followups||[]).concat(t.actionHistory||[]).filter(f=>within(f.date)).sort((a,b)=>String(a.date).localeCompare(String(b.date)));
+  const groups=[['الوارد',false],['الصادر',true]];
+  let body='<div class="header"><h1>'+esc(title)+'</h1><p>الفترة: '+esc(fmtDate(from))+' إلى '+esc(fmtDate(to))+'</p></div>';
+  const doneTotal=r.all.filter(t=>t.status==='closed').length;
+  const completion=r.all.length?Math.round(doneTotal/r.all.length*100):null;
+  const actionsCount=r.all.reduce((n,t)=>n+actions(t).length,0);
+  const followed=r.all.filter(t=>actions(t).length>0).length;
+  const cards=[['منجز خلال الفترة',r.completed.length,'موضوع أُغلق'],['مواضيع تمت متابعتها',followed,'بإجراء مسجّل خلال الفترة'],['إجراءات الفترة',actionsCount,'متابعات وتعديلات'],['نسبة الإنجاز الحالية',completion==null?'—':completion+'%','المغلق من مواضيع التقرير']];
+  body+='<table class="report-kpis"><tbody><tr>'+cards.map(([label,value,hint])=>'<td><div class="kpi-label">'+esc(label)+'</div><strong>'+esc(value)+'</strong><div class="kpi-hint">'+esc(hint)+'</div></td>').join('')+'</tr></tbody></table>';
+  body+='<p class="report-note">ملخص الفترة: أُنجزت متابعة '+r.completed.length+' موضوعًا بالإغلاق، وسُجّل '+actionsCount+' إجراء على '+followed+' موضوعًا. إغلاق الموضوع يُحتسب إنجازًا دون اشتراط وصول رد.</p>';
+  if(r.workload){const w=r.workload;body+='<h2>ملخص الأعمال الجارية بتاريخ '+esc(fmtDate(w.capturedAt))+'</h2>'+table(['الوارد','الصادر','توجيهات الرئيس','الإجمالي'],[[w.incoming,w.outgoing,w.directivesOpen,w.total]]);}
+  body+='<h2>مؤشرات الإنجاز الحالية</h2><table class="report-progress"><thead><tr><th>القسم</th><th>المنجز / الإجمالي</th><th>نسبة الإنجاز</th></tr></thead><tbody>';
+  const progressRows=groups.map(([label,out])=>{const g=r.all.filter(t=>(t.correspondenceDirection==='out')===out),n=g.filter(t=>t.status==='closed').length;return [label,n,g.length,g.length?Math.round(n/g.length*100):null];});
+  if(r.workload)progressRows.push(['توجيهات الرئيس',r.workload.directivesDone,r.workload.directivesTotal,r.workload.directivesRate??null]);
+  body+=progressRows.map(([label,n,total,p])=>'<tr><td>'+esc(label)+'</td><td><span dir="ltr">'+n+' / '+total+'</span></td><td><b>'+(p==null?'—':p+'%')+'</b><div class="report-track"><div style="width:'+(p==null?0:p)+'%;height:7px;background:#008b80"></div></div></td></tr>').join('')+'</tbody></table><p class="report-note">الوارد والصادر: المغلق ÷ إجمالي مواضيع القسم في التقرير. التوجيهات: نسبة التنفيذ المعتمدة في قسم توجيهات الرئيس؛ لا يُعد التوجيه الجاري ضمن مهلته إخفاقًا.</p>';
+  body+='<h2>إنجاز الفترة</h2>';
+  const periodRows=groups.map(([label,out])=>{
+    const match=t=>(t.correspondenceDirection==='out')===out;
+    const done=r.completed.filter(match);
+    return [label,r.received.filter(match).length,done.length,done.filter(t=>refDate(t)&&refDate(t)<from).length,r.all.filter(match).reduce((n,t)=>n+actions(t).length,0)];
   });
-  body+='<p>يعرض التقرير أعمال الفترة فقط دون سرد المتابعات التاريخية. التفاصيل الكاملة محفوظة في سجل الموضوع وكشف Excel. الموضوع المغلق منتهٍ ومنجز في أعمال المتابعة.</p>';
-  if(notes)body+='<h2>ملاحظات التقرير</h2><p style="white-space:pre-wrap">'+esc(notes)+'</p>';
-  return '<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><title>'+esc(title)+'</title><style>'+REPORT_STYLES+' h1{color:#148f77} .data-table{font-size:9pt}.data-table th,.data-table td{padding:5px} @media print{@page{size:A4;margin:12mm}body{padding:0}.data-table{font-size:9pt}thead{display:table-header-group}tr{break-inside:avoid;page-break-inside:avoid}}</style></head><body>'+body+'</body></html>';
+  periodRows.push(['الإجمالي',...Array.from({length:4},(_,i)=>periodRows.reduce((n,row)=>n+row[i+1],0))]);
+  body+=table(['القسم','مسجّل خلال الفترة','منجز بالإغلاق','من المنجز: مواضيع سابقة','إجراءات مسجّلة'],periodRows);
+  body+='<p class="report-note">التسجيل حسب تاريخ الوارد أو الصادر، والإنجاز حسب تاريخ الإغلاق. كل موضوع مغلق يُعد منجزًا في المتابعة، دون اشتراط الرد. الإجراء اللاحق يُسجّل على الموضوع نفسه دون تكرار احتساب إنجازه.</p>';
+  groups.forEach(([label,out])=>{
+    const match=t=>(t.correspondenceDirection==='out')===out;
+    const group=r.all.filter(match),done=group.filter(t=>t.status==='closed').length;
+    body+='<h2>تفاصيل '+label+'</h2>'+table(['مواضيع القسم حتى نهاية الفترة','منها مغلقة حاليًا','منها قيد الإجراء حاليًا','نسبة الإنجاز'],[[group.length,done,group.length-done,group.length?Math.round(done/group.length*100)+'%':'—']]);
+    const active=r.all.filter(t=>match(t)&&(within(refDate(t))||(t.status==='closed'&&within(t.closedAt))||actions(t).length)).sort((a,b)=>String(refDate(a)).localeCompare(String(refDate(b))));
+    const rows=active.map((t,i)=>{
+      const log=actions(t),last=log[log.length-1],closed=t.status==='closed'&&within(t.closedAt);
+      const detail=log.length?log.map(f=>fmtDate(f.date)+' — '+[f.result,f.note].filter(Boolean).join(' — ')).join('\n'):(closed?'إغلاق الموضوع وإنهاء المتابعة':out?'تسجيل الموضوع الصادر':'تسجيل الموضوع الوارد');
+      return [i+1,(t.title||'—')+'\n'+detail,out?(t.toEntity||t.from||'—'):(t.from||'—'),last?fmtDate(last.date):fmtDate(closed?t.closedAt:refDate(t)),t.status==='closed'?'منجز / مغلق':t.status==='esc'?'مصعّد':'قيد المتابعة'];
+    });
+    body+=rows.length?table(['م','الموضوع والإجراءات خلال الفترة','الجهة','آخر إجراء','الحالة'],rows,true):'<p>لا توجد أعمال مسجلة لهذا القسم خلال الفترة.</p>';
+  });
+  if(r.workload){const w=r.workload;body+='<h2>توجيهات الرئيس</h2><p>الحالة المسجلة بتاريخ '+esc(fmtDate(w.capturedAt))+'</p>'+table(['إجمالي التوجيهات','منفذة / مغلقة','قيد التنفيذ'],[[w.directivesTotal,w.directivesDone,w.directivesOpen]]);}
+  if(notes)body+='<h2>ملاحظات</h2><p>'+esc(notes)+'</p>';
+  return '<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><title>'+esc(title)+'</title><style>'+REPORT_STYLES+' .report-kpis{table-layout:fixed;border-collapse:separate;border-spacing:5px;margin:14px 0}.report-kpis td{background:#edf7f5!important;border:1px solid #c8e4dd;border-top:4px solid #008b80;text-align:center;padding:10px!important}.report-kpis strong{display:block;font-size:24pt;color:#006e65;line-height:1.4}.kpi-label{font-weight:bold;font-size:10pt}.kpi-hint{font-size:8.5pt;color:#52666b}.report-track{height:7px;background:#e4eeec;margin-top:5px}.report-progress{table-layout:fixed}.report-progress td:nth-child(2){text-align:center}.report-progress th:first-child{width:30%}.report-progress th:nth-child(2){width:25%}.report-note{background:#f7faf9;border-right:3px solid #a5cfc6;padding:8px 12px}.report-kpis,.report-progress{break-inside:avoid} body{font-family:Tahoma,Arial,sans-serif;font-size:10.5pt}h1{font-size:17pt}h2{font-size:13pt}.data-table{table-layout:fixed;width:100%;font-size:10pt}.data-table td{white-space:pre-wrap;overflow-wrap:break-word;vertical-align:top}.report-detail th:nth-child(1){width:5%}.report-detail th:nth-child(2){width:44%}.report-detail th:nth-child(3){width:23%}.report-detail th:nth-child(4){width:15%}.report-detail th:nth-child(5){width:13%}.report-note{font-size:10pt;color:#555;line-height:1.7}@page{size:A4 portrait;margin:14mm 12mm 18mm}thead{display:table-header-group}tr{break-inside:avoid}h2{break-after:avoid}</style></head><body><div class="professional-report">'+body+'</div></body></html>';
 }
-
 
 const originalWeeklyCollector=collectWeeklyData,originalMonthlyCollector=collectMonthlyData,originalQuarterCollector=collectQuarterlyData;
 collectWeeklyData=function(){const r=originalWeeklyCollector();r.followSnapshot=collectProfessionalReport(r.from,r.to);return r;};
@@ -7254,7 +7260,7 @@ function prepareArabicWordBody(html){
     if(!table.tHead && table.rows[0]?.querySelector('th')) table.createTHead().appendChild(table.rows[0]);
     if(table.tHead) table.tHead.style.setProperty('display','table-header-group');
   });
-  doc.querySelectorAll('h2').forEach((h,i)=>{ if(i>0) h.style.pageBreakBefore='always'; h.style.pageBreakAfter='avoid'; });
+  doc.querySelectorAll('h2').forEach((h,i)=>{ if(i>0 && (!doc.querySelector('.professional-report') || h.textContent.trim()==='تفاصيل الوارد')) h.style.pageBreakBefore='always'; h.style.pageBreakAfter='avoid'; });
   return doc.body.innerHTML;
 }
 
@@ -7368,14 +7374,14 @@ function preparePrintHTML(htmlContent) {
   doc.querySelectorAll('script,button').forEach(el => el.remove());
   // Keep each report section on its own printed page; its table may continue.
   doc.querySelectorAll('h2').forEach((heading, index) => {
-    if(index > 0) heading.classList.add('pdf-section-start');
+    if(index > 0 && (!doc.querySelector('.professional-report') || heading.textContent.trim()==='تفاصيل الوارد')) heading.classList.add('pdf-section-start');
     const next = heading.nextElementSibling;
     if(next && next.tagName === 'P') next.classList.add('pdf-section-intro');
   });
   let wide = false;
   doc.querySelectorAll('table').forEach(table => {
     table.dir = 'rtl';
-    if(table.rows.length <= 14 && !Array.from(table.rows[0]?.cells || []).some(c=>c.textContent.trim()==='الموضوع')) table.classList.add('pdf-keep-table');
+    if(table.rows.length <= 14 && !Array.from(table.rows[0]?.cells || []).some(c=>c.textContent.trim().includes('الموضوع'))) table.classList.add('pdf-keep-table');
     const labels = Array.from(table.rows[0]?.cells || []).map(c => c.textContent.trim());
     let widths;
     if(labels.length === 6 && labels.includes('الموضوع')) { widths=[4,34,20,14,16,12]; wide=true; }
@@ -7410,6 +7416,13 @@ function preparePrintHTML(htmlContent) {
     p,li { orphans:3; widows:3; }
     img,svg,canvas { max-width:100%; }
     .progress-cell { min-width:0!important; }
+    .professional-report th,.professional-report td { font-size:9.5pt;line-height:1.4;padding:4pt!important; }
+    .professional-report h2 { font-size:12pt;margin:10pt 0 5pt;padding:5pt 8pt; }
+    .professional-report .header { margin-bottom:8pt;padding-bottom:6pt; }
+    .professional-report .report-note { font-size:9pt;line-height:1.4;margin:5pt 0;padding:5pt 8pt; }
+    .professional-report table { margin:6pt 0!important; }
+    .professional-report .report-kpis strong { font-size:21pt; }
+
     * { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
     .pdf-toolbar { padding:14px; margin:0 0 20px; background:#eaf4fd; font:14px Tahoma; text-align:center; }
     .pdf-toolbar button { padding:10px 20px; margin:8px; cursor:pointer; }
