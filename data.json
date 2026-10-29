@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-29T07:33:50.568Z",
+  "exportedAt": "2026-10-29T09:48:57.329Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -40534,10 +40534,37 @@
       "slaDays": null,
       "kpi": "",
       "note": "تم التوجيه للتقسيم لمتابعه للاختصاص",
-      "status": "new",
-      "followups": [],
+      "status": "closed",
+      "followups": [
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "new",
+          "date": "2026-10-29",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "1170/3/2022v423-100",
+          "note": "تغيير الحالة من جديد إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "external",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-24",
+          "daysSince": 5
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1792915413742.0156
+      "recordId": 1792915413742.0156,
+      "closedAt": "2026-10-29",
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": "",
+      "actionHistory": []
     },
     {
       "id": 1792915569782.1736,
@@ -48405,6 +48432,63 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-10-29T07:01:14.588Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1792915413742.0156,
+      "transactionType": "followup",
+      "title": "انتداب الفاضلة / وفاء بنت حمود بن حامد الغساني",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v423-18",
+      "toEntity": "هيئة تنظيم الخدمات العامة",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-24",
+      "receivedFollowDate": "2026-10-25",
+      "followStart": "2026-10-24",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "تم التوجيه للتقسيم لمتابعه للاختصاص",
+      "status": "closed",
+      "followups": [
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "new",
+          "date": "2026-10-29",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "1170/3/2022v423-100",
+          "note": "تغيير الحالة من جديد إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "external",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-24",
+          "daysSince": 5
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792915413742.0156,
+      "closedAt": "2026-10-29",
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": "",
+      "actionHistory": [],
+      "archivedAt": "2026-10-29T09:48:55.555Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-10-29T09:48:55.555Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -54126,6 +54210,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793267335517.0552,
+          "at": "2026-10-29T09:48:55.517Z",
+          "action": "إضافة متابعة",
+          "details": "انتداب الفاضلة / وفاء بنت حمود بن حامد الغساني"
+        },
+        {
+          "id": 1793267335429.0864,
+          "at": "2026-10-29T09:48:55.429Z",
+          "action": "تعديل موضوع",
+          "details": "انتداب الفاضلة / وفاء بنت حمود بن حامد الغساني"
+        },
         {
           "id": 1793259228387.3308,
           "at": "2026-10-29T07:33:48.387Z",
