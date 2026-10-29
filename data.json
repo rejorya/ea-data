@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-29T10:27:45.453Z",
+  "exportedAt": "2026-10-29T10:35:23.138Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -54184,6 +54184,61 @@
   ],
   "activityLog": [
     {
+      "id": "673e9f85-ca14-44a1-9a22-7949610ec05a",
+      "sessionId": "673e9f85-ca14-44a1-9a22-7949610ec05a",
+      "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "هاتف/جهاز لوحي • Android • Chrome",
+      "deviceType": "هاتف/جهاز لوحي",
+      "deviceOS": "Android",
+      "browser": "Chrome",
+      "platform": "Linux armv81",
+      "deviceSnapshot": {
+        "id": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+        "label": "هاتف/جهاز لوحي • Android • Chrome",
+        "type": "هاتف/جهاز لوحي",
+        "os": "Android",
+        "browser": "Chrome",
+        "platform": "Linux armv81"
+      },
+      "loginAt": "2026-10-29T10:35:18.494Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null,
+      "central": true
+    },
+    {
+      "id": "79d338cd-78f9-4cfb-bf1c-7d07b908b8f9",
+      "sessionId": "79d338cd-78f9-4cfb-bf1c-7d07b908b8f9",
+      "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "هاتف/جهاز لوحي • Android • Chrome",
+      "deviceType": "هاتف/جهاز لوحي",
+      "deviceOS": "Android",
+      "browser": "Chrome",
+      "platform": "Linux armv81",
+      "deviceSnapshot": {
+        "id": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+        "label": "هاتف/جهاز لوحي • Android • Chrome",
+        "type": "هاتف/جهاز لوحي",
+        "os": "Android",
+        "browser": "Chrome",
+        "platform": "Linux armv81"
+      },
+      "loginAt": "2026-10-29T10:27:39.491Z",
+      "logoutAt": "2026-10-29T10:35:16.544Z",
+      "duration": "7 دقيقة و 37 ثانية",
+      "logoutReason": "إغلاق المتصفح أو إعادة التحميل",
+      "central": true,
+      "durationMinutes": 7
+    },
+    {
       "id": "5bd10e4a-84fa-4099-83a5-3a121bb4ad11",
       "sessionId": "5bd10e4a-84fa-4099-83a5-3a121bb4ad11",
       "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
@@ -65467,33 +65522,6 @@
       "duration": "3 دقيقة و 7 ثانية",
       "logoutReason": "تسجيل خروج عادي",
       "durationMinutes": 3
-    },
-    {
-      "id": "79d338cd-78f9-4cfb-bf1c-7d07b908b8f9",
-      "sessionId": "79d338cd-78f9-4cfb-bf1c-7d07b908b8f9",
-      "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
-      "user": "rahab@ea2026",
-      "name": "رحاب بنت نصيب الفرج",
-      "role": "أخصائية تنسيق ومتابعة",
-      "type": "مدير",
-      "device": "هاتف/جهاز لوحي • Android • Chrome",
-      "deviceType": "هاتف/جهاز لوحي",
-      "deviceOS": "Android",
-      "browser": "Chrome",
-      "platform": "Linux armv81",
-      "deviceSnapshot": {
-        "id": "1d5749f1-fd77-452a-ab70-11a6215fce78",
-        "label": "هاتف/جهاز لوحي • Android • Chrome",
-        "type": "هاتف/جهاز لوحي",
-        "os": "Android",
-        "browser": "Chrome",
-        "platform": "Linux armv81"
-      },
-      "loginAt": "2026-10-29T10:27:39.491Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
-      "central": true
     }
   ],
   "visitorCodeHash": "c4a1785a61be152ffb94dcda46cbc0da48de648dfa151bcf9ee49068078124c2",
