@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-29T07:17:14.118Z",
+  "exportedAt": "2026-10-29T07:17:36.731Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -40776,7 +40776,7 @@
       "toEntity": "نائب الرئيس",
       "taqseemName": "",
       "priority": "urgent",
-      "confidentiality": "secret",
+      "confidentiality": "normal",
       "date": "2026-10-29",
       "receivedFollowDate": "2026-10-29",
       "followStart": "2026-10-29",
@@ -40828,7 +40828,35 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": "",
-      "actionHistory": []
+      "actionHistory": [
+        {
+          "auditOnly": true,
+          "changes": [
+            {
+              "field": "confidentiality",
+              "before": "secret",
+              "after": "normal"
+            }
+          ],
+          "previousStatus": "",
+          "date": "2026-10-29",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تعديل: السرية",
+          "actionType": "edit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "تم حفظ التعديل",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-29",
+          "daysSince": 0
+        }
+      ]
     },
     {
       "id": 1793258199380.0686,
@@ -53904,7 +53932,21 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1793258254545.8228,
+          "at": "2026-10-29T07:17:34.545Z",
+          "action": "إضافة متابعة",
+          "details": "ايفاد خبير من الوكالة الدولية للطاقة الذرية في مجال الادارة الشاملة للنفايات المشعة والمصادر الخارجة عن الرقابة"
+        },
+        {
+          "id": 1793258254468.0667,
+          "at": "2026-10-29T07:17:34.468Z",
+          "action": "تعديل موضوع",
+          "details": "ايفاد خبير من الوكالة الدولية للطاقة الذرية في مجال الادارة الشاملة للنفايات المشعة والمصادر الخارجة عن الرقابة"
+        }
+      ]
     },
     {
       "id": "63373302-760d-470c-a5a1-aa4c7c2baff7",
