@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-29T07:26:31.024Z",
+  "exportedAt": "2026-10-29T07:29:58.897Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37670,7 +37670,7 @@
       "slaDays": null,
       "kpi": "rev3",
       "note": "تم الرد من مكتب الرؤية :هذا الموضوع تم ارساله مسبقا مع عدة مشاريع وليس هذا الموضوع فقط حيث تم الاجتماع مع المختصين بدائرة المالية ومديرية الغطاء النباتي، وتم الاتفاق على ان تقوم المديرية العامة للشؤون الادارية والمالية باستكمال المتطلبات لكافة المشاريع المتعلقة بالمناقصات.",
-      "status": "open",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-10-12",
@@ -37824,16 +37824,38 @@
           "taqseem": "",
           "startDate": "2026-10-11",
           "daysSince": 12
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "open",
+          "date": "2026-10-28",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من قيد المتابعة إلى تم التصعيد",
+          "actionType": "esc",
+          "statusChange": "esc",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "تم التصعيد",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-11",
+          "daysSince": 13
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791692389542.4265,
-      "manualCount": 9,
+      "manualCount": 10,
       "followEntity": "naib_office",
       "raisDeptName": "مكتب متابعة تنفيذ رؤية عمان 2040",
       "responseMethod": "",
       "previousClosedAt": "2026-10-14",
-      "restoredAt": "2026-10-18T05:32:25.408Z"
+      "restoredAt": "2026-10-18T05:32:25.408Z",
+      "actionHistory": []
     },
     {
       "id": 1791693857278.079,
@@ -54061,6 +54083,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793258996700.9033,
+          "at": "2026-10-29T07:29:56.700Z",
+          "action": "إضافة متابعة",
+          "details": "إعتماد مخرجات مشروع تصميم وتطوير وتنظيف وإنشاء مرافق في منتزه خور صيناق في محمية جبل سمحان"
+        },
+        {
+          "id": 1793258996616.986,
+          "at": "2026-10-29T07:29:56.616Z",
+          "action": "تعديل موضوع",
+          "details": "إعتماد مخرجات مشروع تصميم وتطوير وتنظيف وإنشاء مرافق في منتزه خور صيناق في محمية جبل سمحان"
+        },
         {
           "id": 1793258788835.801,
           "at": "2026-10-29T07:26:28.835Z",
