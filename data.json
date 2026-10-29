@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-29T07:01:21.369Z",
+  "exportedAt": "2026-10-29T07:08:09.840Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -40743,6 +40743,32 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": ""
+    },
+    {
+      "id": 1793257687652.1992,
+      "transactionType": "followup",
+      "title": "ايفاد خبير من الوكالة الدولية للطاقة الذرية في مجال الادارة الشاملة للنفايات المشعة والمصادر الخارجة عن الرقابة",
+      "from": "وزارة الخارجية",
+      "docNo": "1170/3/2022v423-87",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "secret",
+      "date": "2026-10-29",
+      "receivedFollowDate": "2026-10-29",
+      "followStart": "2026-10-29",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1793257687652.1992
     }
   ],
   "archivedTopics": [
@@ -53794,6 +53820,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793257687702.5244,
+          "at": "2026-10-29T07:08:07.702Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "ايفاد خبير من الوكالة الدولية للطاقة الذرية في مجال الادارة الشاملة للنفايات المشعة والمصادر الخارجة عن الرقابة"
+        },
         {
           "id": 1793257274559.8127,
           "at": "2026-10-29T07:01:14.559Z",
