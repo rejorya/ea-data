@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-29T07:14:02.103Z",
+  "exportedAt": "2026-10-29T07:16:41.468Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -40829,6 +40829,32 @@
       "followEntity": "naib_office",
       "responseMethod": "",
       "actionHistory": []
+    },
+    {
+      "id": 1793258199380.0686,
+      "transactionType": "followup",
+      "title": "نفوق الحيتان ومخاطر أنشطة الصيد في منطقة بر الحكمان",
+      "from": "وزارة الثروة الزراعية و السمكية و موارد المياه",
+      "docNo": "1170/3/2022v423-58",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "secret",
+      "date": "2026-10-27",
+      "receivedFollowDate": "2026-10-28",
+      "followStart": "2026-10-27",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1793258199380.0686
     }
   ],
   "archivedTopics": [
@@ -53880,6 +53906,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793258199434.573,
+          "at": "2026-10-29T07:16:39.434Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "نفوق الحيتان ومخاطر أنشطة الصيد في منطقة بر الحكمان"
+        },
         {
           "id": 1793258039917.0854,
           "at": "2026-10-29T07:13:59.917Z",
