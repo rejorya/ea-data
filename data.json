@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-29T07:33:16.106Z",
+  "exportedAt": "2026-10-29T07:33:50.568Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -40685,7 +40685,7 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "",
-      "status": "new",
+      "status": "awaiting",
       "followups": [
         {
           "auditOnly": false,
@@ -40707,11 +40707,32 @@
           "taqseem": "",
           "startDate": "2026-10-27",
           "daysSince": 2
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "new",
+          "date": "2026-10-29",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من جديد إلى بانتظار الإفادة",
+          "actionType": "status",
+          "statusChange": "awaiting",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "بانتظار الإفادة",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-27",
+          "daysSince": 2
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793079092833.2273,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "rais_depts",
       "raisDeptName": "الدائرة القانونية",
       "responseMethod": "",
@@ -54105,6 +54126,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793259228387.3308,
+          "at": "2026-10-29T07:33:48.387Z",
+          "action": "إضافة متابعة",
+          "details": "طلب مراجعة مشروع إصدار لائحة إدارة التغير  المناخي"
+        },
+        {
+          "id": 1793259228303.0352,
+          "at": "2026-10-29T07:33:48.303Z",
+          "action": "تعديل موضوع",
+          "details": "طلب مراجعة مشروع إصدار لائحة إدارة التغير  المناخي"
+        },
         {
           "id": 1793259193908.7805,
           "at": "2026-10-29T07:33:13.908Z",
