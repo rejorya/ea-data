@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-29T03:33:39.832Z",
+  "exportedAt": "2026-10-29T06:36:06.723Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37483,7 +37483,7 @@
       "from": "شركة البراق للصناعات الحديدة",
       "docNo": "1170/3/2022v421-58",
       "toEntity": "نائب الرئيس",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-10-08",
@@ -37588,9 +37588,43 @@
       "sheet": "مُضاف يدوياً",
       "recordId": 1791692113915.6382,
       "manualCount": 5,
-      "followEntity": "naib_office",
+      "followEntity": "taqseem",
       "responseMethod": "",
-      "divFollowDate": "2026-10-18"
+      "divFollowDate": "2026-10-18",
+      "actionHistory": [
+        {
+          "auditOnly": true,
+          "changes": [
+            {
+              "field": "followEntity",
+              "before": "naib_office",
+              "after": "taqseem"
+            },
+            {
+              "field": "taqseemName",
+              "before": "",
+              "after": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية"
+            }
+          ],
+          "previousStatus": "",
+          "date": "2026-10-29",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تعديل: الجهة المتابعة، التقسيم",
+          "actionType": "edit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "تم حفظ التعديل",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-10-08",
+          "daysSince": 15
+        }
+      ]
     },
     {
       "id": 1791692389542.4265,
@@ -53581,7 +53615,21 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1793255764539.659,
+          "at": "2026-10-29T06:36:04.539Z",
+          "action": "إضافة متابعة",
+          "details": "طلب فتح باب تصدير خردة النحاس"
+        },
+        {
+          "id": 1793255764463.8152,
+          "at": "2026-10-29T06:36:04.463Z",
+          "action": "تعديل موضوع",
+          "details": "طلب فتح باب تصدير خردة النحاس"
+        }
+      ]
     },
     {
       "id": "09156662-149f-4512-b324-b6c14efff487",
