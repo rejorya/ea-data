@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-29T06:53:02.760Z",
+  "exportedAt": "2026-10-29T07:01:16.738Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37497,7 +37497,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
-      "status": "ready_esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-11",
@@ -37583,13 +37583,34 @@
           "taqseem": "",
           "startDate": "2026-10-08",
           "daysSince": 14
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "ready_esc",
+          "date": "2026-10-29",
+          "replied": true,
+          "responseMethod": "via_follow",
+          "replyDocNo": "5421/5/2022v3-66",
+          "note": "تغيير الحالة من جاهز للتصعيد إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-10-08",
+          "daysSince": 15
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791692113915.6382,
-      "manualCount": 5,
+      "manualCount": 6,
       "followEntity": "taqseem",
-      "responseMethod": "",
+      "responseMethod": "via_follow",
       "divFollowDate": "2026-10-18",
       "actionHistory": [
         {
@@ -37624,7 +37645,8 @@
           "startDate": "2026-10-08",
           "daysSince": 15
         }
-      ]
+      ],
+      "closedAt": "2026-10-29"
     },
     {
       "id": 1791692389542.4265,
@@ -47896,6 +47918,182 @@
       "archiveVersion": 1,
       "actionHistory": [],
       "archiveUpdatedAt": "2026-10-28T08:31:02.355Z"
+    },
+    {
+      "id": 1791692113915.6382,
+      "transactionType": "followup",
+      "title": "طلب فتح باب تصدير خردة النحاس",
+      "from": "شركة البراق للصناعات الحديدة",
+      "docNo": "1170/3/2022v421-58",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-08",
+      "receivedFollowDate": "2026-10-11",
+      "followStart": "2026-10-08",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-11",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-08",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-10-12",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-08",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-10-13",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "esc",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-08",
+          "daysSince": 3
+        },
+        {
+          "date": "2026-10-18",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-08",
+          "daysSince": 6
+        },
+        {
+          "date": "2026-10-28",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-08",
+          "daysSince": 14
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "ready_esc",
+          "date": "2026-10-29",
+          "replied": true,
+          "responseMethod": "via_follow",
+          "replyDocNo": "5421/5/2022v3-66",
+          "note": "تغيير الحالة من جاهز للتصعيد إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-10-08",
+          "daysSince": 15
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791692113915.6382,
+      "manualCount": 6,
+      "followEntity": "taqseem",
+      "responseMethod": "via_follow",
+      "divFollowDate": "2026-10-18",
+      "actionHistory": [
+        {
+          "auditOnly": true,
+          "changes": [
+            {
+              "field": "followEntity",
+              "before": "naib_office",
+              "after": "taqseem"
+            },
+            {
+              "field": "taqseemName",
+              "before": "",
+              "after": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية"
+            }
+          ],
+          "previousStatus": "",
+          "date": "2026-10-29",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تعديل: الجهة المتابعة، التقسيم",
+          "actionType": "edit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "تم حفظ التعديل",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
+          "startDate": "2026-10-08",
+          "daysSince": 15
+        }
+      ],
+      "closedAt": "2026-10-29",
+      "archivedAt": "2026-10-29T07:01:14.588Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-10-29T07:01:14.588Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -53615,7 +53813,21 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1793257274559.8127,
+          "at": "2026-10-29T07:01:14.559Z",
+          "action": "إضافة متابعة",
+          "details": "طلب فتح باب تصدير خردة النحاس"
+        },
+        {
+          "id": 1793257274477.9846,
+          "at": "2026-10-29T07:01:14.477Z",
+          "action": "تعديل موضوع",
+          "details": "طلب فتح باب تصدير خردة النحاس"
+        }
+      ]
     },
     {
       "id": "e2f49b1c-1ce7-4e6d-af18-29a9433662ad",
