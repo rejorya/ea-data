@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-29T07:08:32.912Z",
+  "exportedAt": "2026-10-29T07:14:02.103Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -40642,13 +40642,36 @@
       "kpi": "gov5",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "",
+          "date": "2026-10-29",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-27",
+          "daysSince": 2
+        }
+      ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793079092833.2273,
-      "manualCount": 0,
+      "manualCount": 1,
       "followEntity": "rais_depts",
       "raisDeptName": "الدائرة القانونية",
-      "responseMethod": ""
+      "responseMethod": "",
+      "actionHistory": []
     },
     {
       "id": 1793081734389.3574,
@@ -53857,6 +53880,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793258039917.0854,
+          "at": "2026-10-29T07:13:59.917Z",
+          "action": "إضافة متابعة",
+          "details": "طلب مراجعة مشروع إصدار لائحة إدارة التغير  المناخي"
+        },
+        {
+          "id": 1793258039849.0085,
+          "at": "2026-10-29T07:13:59.849Z",
+          "action": "تعديل موضوع",
+          "details": "طلب مراجعة مشروع إصدار لائحة إدارة التغير  المناخي"
+        },
         {
           "id": 1793257710730.0466,
           "at": "2026-10-29T07:08:30.730Z",
