@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-29T07:18:21.764Z",
+  "exportedAt": "2026-10-29T07:21:01.281Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -40925,6 +40925,32 @@
       "followEntity": "naib_office",
       "responseMethod": "",
       "actionHistory": []
+    },
+    {
+      "id": 1793258459190.3628,
+      "transactionType": "followup",
+      "title": "طلب انتداب الفاضلة رحمة بنت منصور اليزيدي",
+      "from": "وزارة النقل والاتصالات وتقنية المعلومات",
+      "docNo": "1170/3/2022v423-59",
+      "toEntity": "",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-27",
+      "receivedFollowDate": "2026-10-28",
+      "followStart": "2026-10-28",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1793258459190.3628
     }
   ],
   "archivedTopics": [
@@ -53976,6 +54002,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793258459232.7751,
+          "at": "2026-10-29T07:20:59.232Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب انتداب الفاضلة رحمة بنت منصور اليزيدي"
+        },
         {
           "id": 1793258299603.6667,
           "at": "2026-10-29T07:18:19.603Z",
