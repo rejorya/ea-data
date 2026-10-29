@@ -7092,6 +7092,16 @@ let currentReportTitle = '';
 
 
 function isFollowupReportTopic(t){return !t.fromDiscussionId && t.status!=='disc' && !/مناقش/.test(t.sheet||'');}
+function collectCurrentWorkload() {
+  const topics=(D.topics||[]).filter(t=>t.status!=='closed');
+  const directives=D.directives||[];
+  const incoming=topics.filter(t=>t.correspondenceDirection!=='out').length;
+  const outgoing=topics.filter(t=>t.correspondenceDirection==='out').length;
+  const directivesOpen=directives.filter(d=>!DIR_DONE_SET.includes(d.status)).length;
+  return {incoming,outgoing,directivesOpen,total:incoming+outgoing+directivesOpen,
+    directivesTotal:directives.length,directivesDone:directives.length-directivesOpen,
+    capturedAt:localDateKey(new Date())};
+}
 function collectProfessionalReport(from,to) {
   const unique=new Map();
   [...(D.topics||[]),...(D.archivedTopics||[])].filter(isFollowupReportTopic).forEach(t=>unique.set(String(t.id),t));
@@ -7101,26 +7111,33 @@ function collectProfessionalReport(from,to) {
   const received=all.filter(t=>within(refDate(t)));
   const completed=all.filter(t=>t.status==='closed'&&within(t.closedAt));
   const active=all.filter(t=>within(refDate(t))||within(t.closedAt)||(t.followups||[]).some(f=>within(f.date)));
-  return {all,received,completed,active,from,to};
+  return {all,received,completed,active,from,to,workload:collectCurrentWorkload()};
 }
 function buildProfessionalReport(from,to,title,notes,snapshot) {
   const r=snapshot||collectProfessionalReport(from,to);
   const esc=v=>String(v==null?'':v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const table=(headers,rows)=>'<table class="data-table"><thead><tr>'+headers.map(h=>'<th>'+esc(h)+'</th>').join('')+'</tr></thead><tbody>'+rows.map(row=>'<tr>'+row.map(v=>'<td style="white-space:pre-wrap;overflow-wrap:anywhere">'+esc(v)+'</td>').join('')+'</tr>').join('')+'</tbody></table>';
   const pct=(a,b)=>b?Math.round(a/b*100)+'%':'—';
-  const completed=r.all.filter(t=>t.status==='closed'&&t.closedAt&&String(t.closedAt).slice(0,10)<=to);
-  let body='<h1>'+esc(title)+'</h1><p>الفترة: '+esc(fmtDate(from))+' إلى '+esc(fmtDate(to))+'</p><h2>حجم المتابعة حتى نهاية الفترة</h2>';
-  body+=table(['إجمالي المواضيع','منجز / مغلق','قيد الإجراء','متأخر حاليًا','نسبة الإنجاز'],[[r.all.length,completed.length,r.all.length-completed.length,r.all.filter(t=>t.status!=='closed'&&getKpiStatus(t).state==='late').length,pct(completed.length,r.all.length)]]);
+  const completed=r.all.filter(t=>t.status==='closed');
+  const pending=r.all.filter(t=>t.status!=='closed');
+  let body='<h1>'+esc(title)+'</h1><p>الفترة: '+esc(fmtDate(from))+' إلى '+esc(fmtDate(to))+'</p>';
+  if(r.workload){
+    const w=r.workload;
+    body+='<h2>الأعمال قيد المتابعة بتاريخ '+esc(fmtDate(w.capturedAt))+'</h2>'+table(['الوارد','الصادر','توجيهات الرئيس قيد التنفيذ','إجمالي الأعمال الجارية'],[[w.incoming,w.outgoing,w.directivesOpen,w.total]]);
+    body+='<h2>توجيهات الرئيس</h2>'+table(['إجمالي التوجيهات','منفذة / مغلقة','قيد التنفيذ'],[[w.directivesTotal,w.directivesDone,w.directivesOpen]]);
+  } else body+='<p>هذه لقطة محفوظة قديمة؛ أعيدي إنشاء التقرير لعرض أعداد الوارد والصادر وتوجيهات الرئيس الحالية.</p>';
+  body+='<h2>حالة مواضيع التقرير عند إعداد اللقطة</h2>';
+  body+=table(['إجمالي المواضيع','منجز / مغلق','قيد الإجراء','متأخر حاليًا','نسبة الإنجاز'],[[r.all.length,completed.length,pending.length,r.all.filter(t=>t.status!=='closed'&&getKpiStatus(t).state==='late').length,pct(completed.length,r.all.length)]]);
   body+='<h2>إنجاز الفترة</h2>'+table(['مستلمة خلال الفترة','أُغلقت خلال الفترة','منها مواضيع سابقة','إجراءات متابعة خلال الفترة'],[[r.received.length,r.completed.length,r.completed.filter(t=>refDate(t)&&refDate(t)<from).length,r.all.reduce((n,t)=>n+(t.followups||[]).filter(f=>String(f.date||'').slice(0,10)>=from&&String(f.date||'').slice(0,10)<=to).length,0)]]);
   body+='<p>نسبة الإنجاز الإجمالية = المغلق ÷ إجمالي المواضيع. إغلاق الموضوع يعني انتهاء إجراء المتابعة المسند وفق الإفادة أو التوجيه المسجل. المؤشر الزمني يبدأ من تاريخ بدء المتابعة؛ لا يُحتسب عند غياب التاريخ أو المدة المستهدفة.</p>';
   [['الواردة',false],['الصادرة',true]].forEach(([name,out])=>{
     const group=r.all.filter(t=>(t.correspondenceDirection==='out')===out);
-    const closedByEnd=t=>t.status==='closed'&&t.closedAt&&String(t.closedAt).slice(0,10)<=to;
+    const closedByEnd=t=>t.status==='closed';
     const received=r.received.filter(t=>(t.correspondenceDirection==='out')===out);
     const done=r.completed.filter(t=>(t.correspondenceDirection==='out')===out);
     const rows=buildTopicsExportRows(done),eligible=rows.filter(x=>['أُنجز ضمن المدة','أُنجز بعد المدة'].includes(x['نتيجة مؤشر KPI']));
     const onTime=eligible.filter(x=>x['نتيجة مؤشر KPI']==='أُنجز ضمن المدة').length;
-    body+='<h2>المواضيع '+name+'</h2>'+table(['إجمالي القسم','المغلق','نسبة الإنجاز','مستلمة خلال الفترة','أُغلقت خلال الفترة','قابلة لقياس KPI','أُنجزت ضمن المدة','نسبة الالتزام'],[[group.length,group.filter(closedByEnd).length,pct(group.filter(closedByEnd).length,group.length),received.length,done.length,eligible.length,onTime,pct(onTime,eligible.length)]]);
+    body+='<h2>المواضيع '+name+'</h2>'+table(['إجمالي القسم','المغلق','قيد الإجراء','نسبة الإنجاز','مستلمة خلال الفترة','أُغلقت خلال الفترة','قابلة لقياس KPI','أُنجزت ضمن المدة','نسبة الالتزام'],[[group.length,group.filter(closedByEnd).length,group.filter(t=>t.status!=='closed').length,pct(group.filter(closedByEnd).length,group.length),received.length,done.length,eligible.length,onTime,pct(onTime,eligible.length)]]);
     body+='<p>نسبة الالتزام = المواضيع المغلقة خلال الفترة ضمن المدة ÷ المغلقة خلال الفترة التي تتوفر لها بيانات قياس كاملة. غير القابلة للقياس: '+(done.length-eligible.length)+'.</p>';
     const rowsCompact=r.active.filter(t=>(t.correspondenceDirection==='out')===out).map((t,i)=>{
       const fs=(t.followups||[]).filter(f=>String(f.date||'').slice(0,10)>=from&&String(f.date||'').slice(0,10)<=to).sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
@@ -8749,7 +8766,7 @@ window.addEventListener('load', () => {
     var escCount=D.topics.filter(function(t){return t.status==='esc'||t.status==='ready_esc'||(t.followups||[]).some(function(f){return f.actionType==='esc';});}).length;
     var h='<div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:6px">'+kpi('🟢 ملتزم',ok,'var(--green)','ضمن المدة')+kpi('🟡 قريب من التأخير',warn,'var(--amber)','باقٍ يوم أو أقل')+kpi('🔴 متأخر',late,'var(--red)','تجاوز مدة المؤشر')+kpi('⚫ صمت إداري',silent,'var(--gray)','تجاوز لعدم الاستجابة')+'</div>';
     h+='<div style="display:flex;gap:16px;flex-wrap:wrap"><div style="flex:1;min-width:300px">'+card('<h3 style="font-size:15px;margin:0 0 4px">🏛️ أكثر 5 جهات تأخيراً</h3><div style="font-size:11.5px;color:#90a0b3;margin-bottom:14px">المواضيع المتأخرة أو الصامتة حسب الجهة</div>'+(ent.length?ent.map(function(e){return bar(e[0],e[1],maxE,'linear-gradient(90deg,var(--red),#e67e22)');}).join(''):'<div style="color:#90a0b3;font-size:13px">لا توجد جهات متأخرة 🎉</div>'))+'</div><div style="flex:1;min-width:300px">'+card('<h3 style="font-size:15px;margin:0 0 4px">🗃️ أنواع المؤشرات المسبّبة للتأخير</h3><div style="font-size:11.5px;color:#90a0b3;margin-bottom:14px">تصنيف KPI للمواضيع المتعثرة</div>'+(cat.length?cat.map(function(e){return bar(e[0],e[1],maxC,'linear-gradient(90deg,var(--amber),#e67e22)');}).join(''):'<div style="color:#90a0b3;font-size:13px">—</div>'))+'</div></div>';
-    h+=card('<h3 style="font-size:15px;margin:0 0 14px">📌 ملخص تنفيذي</h3><div style="display:flex;flex-wrap:wrap;gap:12px">'+kpi('المواضيع المفتوحة',open.length,'var(--blue2)')+kpi('المغلقة (منجزة)',closed,'var(--teal)')+kpi('⏱ متوسط مدة الإنجاز',avgComp+(compN?' يوم عمل':''),'#7d3c98','من الورود حتى الإغلاق')+kpi('⚠️ عدد التصعيدات',escCount,'var(--red)')+kpi('نسبة الصمت الإداري',silentPct+'%','var(--gray)')+kpi('متوسط المتابعات/موضوع',avg,'var(--navy)')+'</div>');
+    h+=card('<h3 style="font-size:15px;margin:0 0 14px">📌 ملخص تنفيذي</h3><div style="display:flex;flex-wrap:wrap;gap:12px">'+kpi('الوارد قيد المتابعة',collectCurrentWorkload().incoming,'var(--blue2)')+kpi('الصادر قيد المتابعة',collectCurrentWorkload().outgoing,'var(--blue2)')+kpi('توجيهات الرئيس قيد التنفيذ',collectCurrentWorkload().directivesOpen,'var(--amber)')+kpi('إجمالي الأعمال الجارية',collectCurrentWorkload().total,'var(--navy)')+kpi('المغلقة (منجزة)',closed,'var(--teal)')+kpi('⏱ متوسط مدة الإنجاز',avgComp+(compN?' يوم عمل':''),'#7d3c98','من الورود حتى الإغلاق')+kpi('⚠️ عدد التصعيدات',escCount,'var(--red)')+kpi('نسبة الصمت الإداري',silentPct+'%','var(--gray)')+kpi('متوسط المتابعات/موضوع',avg,'var(--navy)')+'</div>');
     document.getElementById('cmdMount').innerHTML=h;
   };
 
