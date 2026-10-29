@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-29T07:17:36.731Z",
+  "exportedAt": "2026-10-29T07:18:21.764Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -40867,22 +40867,64 @@
       "toEntity": "نائب الرئيس",
       "taqseemName": "",
       "priority": "normal",
-      "confidentiality": "secret",
+      "confidentiality": "normal",
       "date": "2026-10-27",
       "receivedFollowDate": "2026-10-28",
       "followStart": "2026-10-27",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "auditOnly": false,
+          "changes": [
+            {
+              "field": "correspondenceDirection",
+              "before": "in",
+              "after": ""
+            },
+            {
+              "field": "confidentiality",
+              "before": "secret",
+              "after": "normal"
+            },
+            {
+              "field": "followEntity",
+              "before": "",
+              "after": "naib_office"
+            }
+          ],
+          "previousStatus": "",
+          "date": "2026-10-29",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تعديل: اتجاه المراسلة، السرية، الجهة المتابعة",
+          "actionType": "visit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-27",
+          "daysSince": 2
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1793258199380.0686
+      "recordId": 1793258199380.0686,
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "actionHistory": []
     }
   ],
   "archivedTopics": [
@@ -53934,6 +53976,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793258299603.6667,
+          "at": "2026-10-29T07:18:19.603Z",
+          "action": "إضافة متابعة",
+          "details": "نفوق الحيتان ومخاطر أنشطة الصيد في منطقة بر الحكمان"
+        },
+        {
+          "id": 1793258299530.9468,
+          "at": "2026-10-29T07:18:19.530Z",
+          "action": "تعديل موضوع",
+          "details": "نفوق الحيتان ومخاطر أنشطة الصيد في منطقة بر الحكمان"
+        },
         {
           "id": 1793258254545.8228,
           "at": "2026-10-29T07:17:34.545Z",
