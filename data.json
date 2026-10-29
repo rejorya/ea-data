@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-29T10:06:21.889Z",
+  "exportedAt": "2026-10-29T10:25:15.937Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -54184,6 +54184,32 @@
   ],
   "activityLog": [
     {
+      "id": 1793269511221.228,
+      "sessionId": "2900843e-06ad-4713-9623-5fc643c82c49",
+      "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "هاتف/جهاز لوحي • Android • Chrome",
+      "deviceType": "هاتف/جهاز لوحي",
+      "deviceOS": "Android",
+      "browser": "Chrome",
+      "platform": "Linux armv81",
+      "deviceSnapshot": {
+        "id": "1d5749f1-fd77-452a-ab70-11a6215fce78",
+        "label": "هاتف/جهاز لوحي • Android • Chrome",
+        "type": "هاتف/جهاز لوحي",
+        "os": "Android",
+        "browser": "Chrome",
+        "platform": "Linux armv81"
+      },
+      "loginAt": "2026-10-29T10:25:11.220Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": "f5d888a4-b99c-42f7-9fef-ef5628887d4b",
       "sessionId": "f5d888a4-b99c-42f7-9fef-ef5628887d4b",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -55244,10 +55270,11 @@
         "platform": "Linux armv81"
       },
       "loginAt": "2026-10-26T08:51:39.083Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
-      "central": true
+      "logoutAt": "2026-10-26T09:31:31.109Z",
+      "duration": "39 دقيقة و 52 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
+      "central": true,
+      "durationMinutes": 39
     },
     {
       "id": "30e5e436-c957-4bcd-9bcb-e3d5c4bb75e0",
@@ -55271,41 +55298,11 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-26T03:43:58.506Z",
-      "logoutAt": "2026-10-26T10:06:49.159Z",
-      "duration": "382 دقيقة و 50 ثانية",
-      "logoutReason": "تسجيل خروج عادي",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null,
       "central": true,
       "actions": [
-        {
-          "id": 1793008447686.872,
-          "at": "2026-10-26T09:54:07.686Z",
-          "action": "إضافة متابعة",
-          "details": "المستجدات البحرية في محافظة مسندم"
-        },
-        {
-          "id": 1793008447598.648,
-          "at": "2026-10-26T09:54:07.598Z",
-          "action": "تعديل موضوع",
-          "details": "المستجدات البحرية في محافظة مسندم"
-        },
-        {
-          "id": 1793008357020.7844,
-          "at": "2026-10-26T09:52:37.020Z",
-          "action": "إضافة موضوع متابعة",
-          "details": "المستجدات البحرية في محافظة مسندم"
-        },
-        {
-          "id": 1793007688655.723,
-          "at": "2026-10-26T09:41:28.655Z",
-          "action": "إضافة متابعة",
-          "details": "خطة تهجير نظام وصول من السحابة الحكومية الى الموقع الجديد"
-        },
-        {
-          "id": 1793007688580.508,
-          "at": "2026-10-26T09:41:28.580Z",
-          "action": "تعديل موضوع",
-          "details": "خطة تهجير نظام وصول من السحابة الحكومية الى الموقع الجديد"
-        },
         {
           "id": 1792994165162.2092,
           "at": "2026-10-26T05:56:05.162Z",
@@ -55450,8 +55447,7 @@
           "action": "تعديل موضوع",
           "details": "المعسكر السنوي للرقابة والتفتيش البيئي"
         }
-      ],
-      "durationMinutes": 382
+      ]
     },
     {
       "id": "ddd41ee0-510a-49f9-b1de-8e7e781ccf4f",
@@ -55898,9 +55894,9 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-22T03:52:01.841Z",
-      "logoutAt": "2026-10-22T04:55:47.552Z",
-      "duration": "63 دقيقة و 45 ثانية",
-      "logoutReason": "إغلاق المتصفح أو إعادة التحميل",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null,
       "central": true,
       "actions": [
         {
@@ -56017,8 +56013,7 @@
           "action": "تعديل موضوع",
           "details": "الاجتماع الثاني للجنة الوطنية لإدارة الحالات الطارئة لعام 2026م"
         }
-      ],
-      "durationMinutes": 63
+      ]
     },
     {
       "id": "ca8fb392-285b-4bb9-80d0-fa28aed22d10",
