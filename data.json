@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-29T09:48:57.329Z",
+  "exportedAt": "2026-10-29T09:49:52.102Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -54184,6 +54184,33 @@
   ],
   "activityLog": [
     {
+      "id": "587367b5-de39-4816-ac0a-b1ca0ec10de7",
+      "sessionId": "587367b5-de39-4816-ac0a-b1ca0ec10de7",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-29T09:49:45.300Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null,
+      "central": true
+    },
+    {
       "id": "6da609a5-f5a9-4c34-b115-c120552a80e7",
       "sessionId": "6da609a5-f5a9-4c34-b115-c120552a80e7",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -54205,9 +54232,9 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-29T07:17:09.404Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-29T09:49:15.018Z",
+      "duration": "152 دقيقة و 5 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
       "central": true,
       "actions": [
         {
@@ -54312,7 +54339,8 @@
           "action": "تعديل موضوع",
           "details": "ايفاد خبير من الوكالة الدولية للطاقة الذرية في مجال الادارة الشاملة للنفايات المشعة والمصادر الخارجة عن الرقابة"
         }
-      ]
+      ],
+      "durationMinutes": 152
     },
     {
       "id": "63373302-760d-470c-a5a1-aa4c7c2baff7",
