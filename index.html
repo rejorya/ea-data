@@ -6138,18 +6138,36 @@ function importDirectivesExcel() {
 }
 
 // تقرير التوجيهات
+// Existing completed directives confirmed on time by the owner on 2026-10-29.
+const CONFIRMED_ONTIME_DIRECTIVES = new Set(["1780825018545.113","1780825018546.7634","1780825018547.9534","1780825018548.4106","1780825018549.3862","1780825018550.944","1780825018551.2136","1780825018552.5605","1780825018553.0283","1780825018554.2393","1780825018555.3896","1780825018556.8997","1780825018557.6997","1780825018558.7012","1780825018559.6138","1780825018560.976","1780825018561.5876","1780825018562.1768","1782013760873.5176","1783415687145.3416","1783574628371.3777","1786262172593.3135","1789284165566.1848"]);
+function directiveOnTimeSummary(directives) {
+  let measured=0, timely=0, confirmed=0, missing=0;
+  directives.filter(d=>DIR_DONE_SET.includes(d.status)).forEach(d=>{
+    const completed=String(d.completedAt||d.doneDate||d.closedAt||'').slice(0,10);
+    const due=String(d.dueDate||'').slice(0,10);
+    if(completed && due) { measured++; if(completed<=due) timely++; }
+    else if(CONFIRMED_ONTIME_DIRECTIVES.has(String(d.id))) { measured++; timely++; confirmed++; }
+    else missing++;
+  });
+  return {text:measured?Math.round(timely/measured*100)+'%':'غير متاح لعدم اكتمال تواريخ القياس',
+    note:[confirmed?'يشمل '+confirmed+' توجيهًا مكتملًا تم تأكيد إنجازها ضمن المهلة':'',missing?'لم يشمل '+missing+' توجيهًا لعدم اكتمال تواريخ القياس':''].filter(Boolean).join(' — ')};
+}
+
 function refreshDirReport() {
   const tot = D.directives.length;
   const done = D.directives.filter(d => d.status === 'done').length;
   const late = D.directives.filter(d => d.note && d.note.trim()).length;
   const rate = directivePercentage(D.directives);
-  const measured=D.directives.filter(d=>DIR_DONE_SET.includes(d.status)&&d.dueDate&&(d.completedAt||d.doneDate||d.closedAt));
-  const ontime=measured.length?Math.round(measured.filter(d=>String(d.completedAt||d.doneDate||d.closedAt).slice(0,10)<=String(d.dueDate).slice(0,10)).length/measured.length*100)+'%':'غير متاح لعدم اكتمال تواريخ القياس';
+  const punctuality=directiveOnTimeSummary(D.directives);
+  const ontime=punctuality.text;
   const clean = tot > 0 ? Math.round(((tot - late) / tot) * 100) : 0;
   const warnPct = tot > 0 ? Math.round((late / tot) * 100) : 0;
   
   setText('dr-rate', directivePercentageText(rate));
   setText('dr-ontime', ontime);
+  let ontimeNote=document.getElementById('dr-ontime-note');
+  if(!ontimeNote && $('dr-ontime')) { ontimeNote=document.createElement('div'); ontimeNote.id='dr-ontime-note'; ontimeNote.style.cssText='font-size:11px;line-height:1.6;margin-top:6px'; $('dr-ontime').parentElement.appendChild(ontimeNote); }
+  if(ontimeNote) ontimeNote.textContent=punctuality.note;
   setText('dr-clean', clean + '%');
   setText('dr-warn', warnPct + '%');
   
@@ -6952,7 +6970,8 @@ function buildQuarterlyHTML(q) {
 function buildDirReportHTML() {
   const _dd = collectDirReportData();
   const tot = _dd.tot, done = _dd.done, late = _dd.late, rate = _dd.rate;
-  const ontime = tot > 0 ? Math.round(((tot - late) / tot) * 100) : 0;
+  const punctuality=directiveOnTimeSummary(D.directives);
+  const ontime=punctuality.text;
   const _isDone = d => DIR_DONE_SET.includes(d.status);
   const todayStr2 = localDateKey(new Date());
   
@@ -7003,7 +7022,7 @@ function buildDirReportHTML() {
     <table class="summary-box" cellspacing="6" style="width:100%;border-collapse:separate;border-spacing:8pt;margin:18pt 0"><tr>
       ${[[tot,'إجمالي التوجيهات','#008F8F'],[done,'منفذة','#1d8349'],[_dd.prog,'قيد التنفيذ','#b6950a'],[late,'متأخرة / تجاوزت المدة','#c0392b']].map(c=>`<td bgcolor="#eef4fa" valign="top" style="background:#eef4fa;border:1pt solid #d6e2ee;border-top:4pt solid ${c[2]};border-radius:5pt;padding:12pt 8pt;text-align:center;font-size:11pt;color:#33414f"><b style="font-size:22pt;color:${c[2]};display:block;margin-bottom:4pt;font-weight:700">${c[0]}</b>${c[1]}</td>`).join('')}
     </tr></table>
-    <p style="text-align:center;font-size:11.5pt;color:#555;margin:0 0 10pt">📊 نسبة الإنجاز الكلية: <b style="color:#00A6A6">${directivePercentageText(rate)}</b> &nbsp;|&nbsp; ⏱ الالتزام بالمواعيد: <b style="color:#008F8F">${ontime}</b></p>
+    <p style="text-align:center;font-size:11.5pt;color:#555;margin:0 0 10pt">📊 نسبة الإنجاز الكلية: <b style="color:#00A6A6">${directivePercentageText(rate)}</b> &nbsp;|&nbsp; ⏱ الالتزام بالمواعيد: <b style="color:#008F8F">${ontime}</b><br><small>${punctuality.note}</small></p>
 
     <div class="intro">
       أرفع لكم هذا التقرير الذي يرصد حالة تنفيذ جميع التوجيهات الصادرة عن سعادة رئيس الهيئة، استناداً إلى المتابعة المستمرة والتنسيق المباشر مع الجهات المختصة، وقياس مستوى الإنجاز الفعلي لكل توجيه، مع إبراز الملاحظات والتأخيرات.
