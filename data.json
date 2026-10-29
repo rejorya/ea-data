@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-29T10:06:18.393Z",
+  "exportedAt": "2026-10-29T10:06:21.889Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -54184,8 +54184,8 @@
   ],
   "activityLog": [
     {
-      "id": 1793268374207.6033,
-      "sessionId": "642bcf79-7756-4e76-9b0b-f076578d79f6",
+      "id": "f5d888a4-b99c-42f7-9fef-ef5628887d4b",
+      "sessionId": "f5d888a4-b99c-42f7-9fef-ef5628887d4b",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
       "user": "rahab@ea2026",
       "name": "رحاب بنت نصيب الفرج",
@@ -54207,7 +54207,8 @@
       "loginAt": "2026-10-29T10:06:14.206Z",
       "logoutAt": null,
       "duration": null,
-      "logoutReason": null
+      "logoutReason": null,
+      "central": true
     },
     {
       "id": "81668de5-2b02-42d8-9f58-5a586ca204b4",
