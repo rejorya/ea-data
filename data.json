@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-29T09:49:52.102Z",
+  "exportedAt": "2026-10-29T09:55:53.224Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -54184,6 +54184,32 @@
   ],
   "activityLog": [
     {
+      "id": 1793267749590.673,
+      "sessionId": "f38bf004-9d81-42f3-be81-ee89be083e41",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-10-29T09:55:49.589Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": "587367b5-de39-4816-ac0a-b1ca0ec10de7",
       "sessionId": "587367b5-de39-4816-ac0a-b1ca0ec10de7",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
@@ -54205,10 +54231,11 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-29T09:49:45.300Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
-      "central": true
+      "logoutAt": "2026-10-29T09:55:19.628Z",
+      "duration": "5 دقيقة و 34 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
+      "central": true,
+      "durationMinutes": 5
     },
     {
       "id": "6da609a5-f5a9-4c34-b115-c120552a80e7",
