@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-29T07:29:58.897Z",
+  "exportedAt": "2026-10-29T07:33:16.106Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -40785,7 +40785,7 @@
       "slaDays": 5,
       "kpi": "wweek",
       "note": "نائب الرئيس\nلعمل اللازم خلال اسبوع ",
-      "status": "new",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-10-27",
@@ -40803,13 +40803,35 @@
           "taqseem": "",
           "startDate": "2026-10-27",
           "daysSince": 0
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "new",
+          "date": "2026-10-29",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من جديد إلى بانتظار الإفادة",
+          "actionType": "visit",
+          "statusChange": "awaiting",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "بانتظار الإفادة",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-27",
+          "daysSince": 2
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793082160518.7405,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "",
+      "actionHistory": []
     },
     {
       "id": 1793257687652.1992,
@@ -54083,6 +54105,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793259193908.7805,
+          "at": "2026-10-29T07:33:13.908Z",
+          "action": "إضافة متابعة",
+          "details": "مشروع قواعد تنظيم الشؤون البيئية في المناطق الخاضعة لإشراف الهيئة"
+        },
+        {
+          "id": 1793259193832.0706,
+          "at": "2026-10-29T07:33:13.832Z",
+          "action": "تعديل موضوع",
+          "details": "مشروع قواعد تنظيم الشؤون البيئية في المناطق الخاضعة لإشراف الهيئة"
+        },
         {
           "id": 1793258996700.9033,
           "at": "2026-10-29T07:29:56.700Z",
