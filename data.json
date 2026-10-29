@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-29T07:01:16.738Z",
+  "exportedAt": "2026-10-29T07:01:21.369Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -37583,27 +37583,6 @@
           "taqseem": "",
           "startDate": "2026-10-08",
           "daysSince": 14
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "ready_esc",
-          "date": "2026-10-29",
-          "replied": true,
-          "responseMethod": "via_follow",
-          "replyDocNo": "5421/5/2022v3-66",
-          "note": "تغيير الحالة من جاهز للتصعيد إلى مُغلق",
-          "actionType": "status",
-          "statusChange": "closed",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "مُغلق",
-          "entity": "taqseem",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
-          "startDate": "2026-10-08",
-          "daysSince": 15
         }
       ],
       "sheet": "مُضاف يدوياً",
