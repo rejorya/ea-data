@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-01T04:48:49.896Z",
+  "exportedAt": "2026-11-01T04:53:33.905Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39092,7 +39092,7 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-18",
@@ -39127,14 +39127,37 @@
           "taqseem": "",
           "startDate": "2026-10-15",
           "daysSince": 2
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "esc",
+          "date": "2026-10-26",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من تم التصعيد إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "تم توجيه الرد الى مدير المكتب",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 7
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792299343634.1763,
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "rais_depts",
       "raisDeptName": "دائرة التواصل والاعلام",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-11-01",
+      "actionHistory": []
     },
     {
       "id": 1792300017302.474,
@@ -48854,6 +48877,98 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-11-01T04:28:29.710Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1792299343634.1763,
+      "transactionType": "followup",
+      "title": "طلب إحاطة بالاجندة والاحداث الاتصالية لعام 2027م",
+      "from": "مكتب الرئيس",
+      "docNo": "1153/1/2022v12-44",
+      "toEntity": "دائرة التواصل والاعلام",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-15",
+      "receivedFollowDate": "2026-10-18",
+      "followStart": "2026-10-15",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-18",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-10-19",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 2
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "esc",
+          "date": "2026-10-26",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من تم التصعيد إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "تم توجيه الرد الى مدير المكتب",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 7
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792299343634.1763,
+      "manualCount": 4,
+      "followEntity": "rais_depts",
+      "raisDeptName": "دائرة التواصل والاعلام",
+      "responseMethod": "",
+      "closedAt": "2026-11-01",
+      "actionHistory": [],
+      "archivedAt": "2026-11-01T04:53:31.755Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-11-01T04:53:31.755Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -54575,6 +54690,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793508811723.5283,
+          "at": "2026-11-01T04:53:31.723Z",
+          "action": "إضافة متابعة",
+          "details": "طلب إحاطة بالاجندة والاحداث الاتصالية لعام 2027م"
+        },
+        {
+          "id": 1793508811645.0977,
+          "at": "2026-11-01T04:53:31.645Z",
+          "action": "تعديل موضوع",
+          "details": "طلب إحاطة بالاجندة والاحداث الاتصالية لعام 2027م"
+        },
         {
           "id": 1793508527710.7341,
           "at": "2026-11-01T04:48:47.710Z",
