@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-01T04:28:31.857Z",
+  "exportedAt": "2026-11-01T04:48:49.896Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -40000,7 +40000,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "نائب الرئيس\nالتعاون الدولي\nمكتب الرئيس\nاولا للنظر في ملاحظات الشركة ومدى امكانية الاخذ بها وكذلك مدى امكانية اضافة اعضاء من هذه الشركة والقطاع الخاص ضمن الفريق التفاوضي\n\nثانيا لوضع حوكمة للاجتماع مع الشركات المختصة من قبل المديريات التخصصية قبل كل تفاوض لاتفاقية دولية واخذ مرئياتهم واضافة ممثلي عنهم في الفرق التفاوضية \nورفع الحوكمة الينا للاعتماد",
-      "status": "new",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-10-19",
@@ -40035,14 +40035,36 @@
           "taqseem": "",
           "startDate": "2026-10-18",
           "daysSince": 6
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "new",
+          "date": "2026-11-01",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من جديد إلى بانتظار الإفادة",
+          "actionType": "visit",
+          "statusChange": "awaiting",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "بانتظار الإفادة",
+          "entity": "naib_and_rais",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-18",
+          "daysSince": 10
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792382597915.7302,
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "naib_and_rais",
       "raisDeptName": "دائرة التعاون الدولي",
-      "responseMethod": ""
+      "responseMethod": "",
+      "actionHistory": []
     },
     {
       "id": 1792383068900.3394,
@@ -54553,6 +54575,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793508527710.7341,
+          "at": "2026-11-01T04:48:47.710Z",
+          "action": "إضافة متابعة",
+          "details": "تقديم مستندات بشأن مراجعة اتفاقية  بازل في مجال  المنسجوجات"
+        },
+        {
+          "id": 1793508527637.4053,
+          "at": "2026-11-01T04:48:47.637Z",
+          "action": "تعديل موضوع",
+          "details": "تقديم مستندات بشأن مراجعة اتفاقية  بازل في مجال  المنسجوجات"
+        },
         {
           "id": 1793507309675.4104,
           "at": "2026-11-01T04:28:29.675Z",
