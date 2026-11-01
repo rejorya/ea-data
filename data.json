@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-10-29T10:35:23.138Z",
+  "exportedAt": "2026-11-01T03:30:49.672Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -54184,6 +54184,32 @@
   ],
   "activityLog": [
     {
+      "id": 1793503845343.4172,
+      "sessionId": "7678bf4e-33ff-4fb5-aa24-2f59e3efee77",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-11-01T03:30:45.342Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null
+    },
+    {
       "id": "673e9f85-ca14-44a1-9a22-7949610ec05a",
       "sessionId": "673e9f85-ca14-44a1-9a22-7949610ec05a",
       "deviceId": "1d5749f1-fd77-452a-ab70-11a6215fce78",
@@ -54288,10 +54314,11 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-29T10:06:14.206Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
-      "central": true
+      "logoutAt": "2026-10-29T10:07:40.157Z",
+      "duration": "1 دقيقة و 25 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
+      "central": true,
+      "durationMinutes": 1
     },
     {
       "id": "81668de5-2b02-42d8-9f58-5a586ca204b4",
@@ -55327,11 +55354,10 @@
         "platform": "Linux armv81"
       },
       "loginAt": "2026-10-26T08:51:39.083Z",
-      "logoutAt": "2026-10-26T09:31:31.109Z",
-      "duration": "39 دقيقة و 52 ثانية",
-      "logoutReason": "تسجيل خروج عادي",
-      "central": true,
-      "durationMinutes": 39
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null,
+      "central": true
     },
     {
       "id": "30e5e436-c957-4bcd-9bcb-e3d5c4bb75e0",
@@ -55355,11 +55381,41 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-26T03:43:58.506Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-26T10:06:49.159Z",
+      "duration": "382 دقيقة و 50 ثانية",
+      "logoutReason": "تسجيل خروج عادي",
       "central": true,
       "actions": [
+        {
+          "id": 1793008447686.872,
+          "at": "2026-10-26T09:54:07.686Z",
+          "action": "إضافة متابعة",
+          "details": "المستجدات البحرية في محافظة مسندم"
+        },
+        {
+          "id": 1793008447598.648,
+          "at": "2026-10-26T09:54:07.598Z",
+          "action": "تعديل موضوع",
+          "details": "المستجدات البحرية في محافظة مسندم"
+        },
+        {
+          "id": 1793008357020.7844,
+          "at": "2026-10-26T09:52:37.020Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "المستجدات البحرية في محافظة مسندم"
+        },
+        {
+          "id": 1793007688655.723,
+          "at": "2026-10-26T09:41:28.655Z",
+          "action": "إضافة متابعة",
+          "details": "خطة تهجير نظام وصول من السحابة الحكومية الى الموقع الجديد"
+        },
+        {
+          "id": 1793007688580.508,
+          "at": "2026-10-26T09:41:28.580Z",
+          "action": "تعديل موضوع",
+          "details": "خطة تهجير نظام وصول من السحابة الحكومية الى الموقع الجديد"
+        },
         {
           "id": 1792994165162.2092,
           "at": "2026-10-26T05:56:05.162Z",
@@ -55504,7 +55560,8 @@
           "action": "تعديل موضوع",
           "details": "المعسكر السنوي للرقابة والتفتيش البيئي"
         }
-      ]
+      ],
+      "durationMinutes": 382
     },
     {
       "id": "ddd41ee0-510a-49f9-b1de-8e7e781ccf4f",
@@ -55951,9 +56008,9 @@
         "platform": "Win32"
       },
       "loginAt": "2026-10-22T03:52:01.841Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null,
+      "logoutAt": "2026-10-22T04:55:47.552Z",
+      "duration": "63 دقيقة و 45 ثانية",
+      "logoutReason": "إغلاق المتصفح أو إعادة التحميل",
       "central": true,
       "actions": [
         {
@@ -56070,7 +56127,8 @@
           "action": "تعديل موضوع",
           "details": "الاجتماع الثاني للجنة الوطنية لإدارة الحالات الطارئة لعام 2026م"
         }
-      ]
+      ],
+      "durationMinutes": 63
     },
     {
       "id": "ca8fb392-285b-4bb9-80d0-fa28aed22d10",
