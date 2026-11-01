@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-01T09:43:05.624Z",
+  "exportedAt": "2026-11-01T09:45:05.536Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35719,7 +35719,7 @@
       "slaDays": null,
       "kpi": "std14",
       "note": "نائب الرئيس\nللدراسة والافادة",
-      "status": "esc",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-10-06",
@@ -35839,13 +35839,35 @@
           "taqseem": "",
           "startDate": "2026-10-04",
           "daysSince": 17
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "esc",
+          "date": "2026-11-01",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من تم التصعيد إلى بانتظار الإفادة",
+          "actionType": "status",
+          "statusChange": "awaiting",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "بانتظار الإفادة",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 20
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791271139811.105,
-      "manualCount": 7,
+      "manualCount": 8,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "",
+      "actionHistory": []
     },
     {
       "id": 1791271572401.6384,
@@ -55609,6 +55631,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793526303393.748,
+          "at": "2026-11-01T09:45:03.393Z",
+          "action": "إضافة متابعة",
+          "details": "طلب الحصول على موافقة واكتشاف لاستخدام خامات الجوابو السماد الفسفورى الطبيعي بجزر الحلانيات"
+        },
+        {
+          "id": 1793526303360.7864,
+          "at": "2026-11-01T09:45:03.360Z",
+          "action": "تعديل موضوع",
+          "details": "طلب الحصول على موافقة واكتشاف لاستخدام خامات الجوابو السماد الفسفورى الطبيعي بجزر الحلانيات"
+        },
         {
           "id": 1793526183483.136,
           "at": "2026-11-01T09:43:03.483Z",
