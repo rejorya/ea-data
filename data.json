@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-01T09:49:01.724Z",
+  "exportedAt": "2026-11-01T09:53:58.116Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39951,14 +39951,36 @@
           "taqseem": "",
           "startDate": "2026-10-05",
           "daysSince": 12
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "",
+          "date": "2026-11-01",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 19
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792314346297.8635,
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "rais_depts",
       "raisDeptName": "فريق التحول الرقمي",
-      "responseMethod": ""
+      "responseMethod": "",
+      "actionHistory": []
     },
     {
       "id": 1792315069286.0823,
@@ -55962,6 +55984,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793526835988.064,
+          "at": "2026-11-01T09:53:55.988Z",
+          "action": "إضافة متابعة",
+          "details": "تسريع استكمال مستهدف رقمنة الخدمات الحكومية ذات الأولوية"
+        },
+        {
+          "id": 1793526835960.9104,
+          "at": "2026-11-01T09:53:55.960Z",
+          "action": "تعديل موضوع",
+          "details": "تسريع استكمال مستهدف رقمنة الخدمات الحكومية ذات الأولوية"
+        },
         {
           "id": 1793526539576.225,
           "at": "2026-11-01T09:48:59.576Z",
