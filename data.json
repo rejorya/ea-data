@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-01T04:01:28.761Z",
+  "exportedAt": "2026-11-01T04:04:08.268Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -41115,7 +41115,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "auditOnly": false,
@@ -41148,14 +41148,36 @@
           "taqseem": "",
           "startDate": "2026-10-28",
           "daysSince": 1
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "new",
+          "date": "2026-11-01",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من جديد إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "تم توجيه الرد الى مدير المكتب",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-28",
+          "daysSince": 2
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793258459190.3628,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "naib_office",
       "responseMethod": "",
-      "actionHistory": []
+      "actionHistory": [],
+      "closedAt": "2026-11-01"
     }
   ],
   "archivedTopics": [
@@ -48543,6 +48565,95 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-10-29T09:48:55.555Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1793258459190.3628,
+      "transactionType": "followup",
+      "title": "طلب انتداب الفاضلة رحمة بنت منصور اليزيدي",
+      "from": "وزارة النقل والاتصالات وتقنية المعلومات",
+      "docNo": "1170/3/2022v423-59",
+      "toEntity": "",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-27",
+      "receivedFollowDate": "2026-10-28",
+      "followStart": "2026-10-28",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "closed",
+      "followups": [
+        {
+          "auditOnly": false,
+          "changes": [
+            {
+              "field": "correspondenceDirection",
+              "before": "in",
+              "after": ""
+            },
+            {
+              "field": "followEntity",
+              "before": "",
+              "after": "naib_office"
+            }
+          ],
+          "previousStatus": "",
+          "date": "2026-10-29",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تعديل: اتجاه المراسلة، الجهة المتابعة",
+          "actionType": "visit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-28",
+          "daysSince": 1
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "new",
+          "date": "2026-11-01",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من جديد إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "تم توجيه الرد الى مدير المكتب",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-28",
+          "daysSince": 2
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1793258459190.3628,
+      "manualCount": 2,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "actionHistory": [],
+      "closedAt": "2026-11-01",
+      "archivedAt": "2026-11-01T04:04:06.126Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-11-01T04:04:06.126Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -54264,6 +54375,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793505846096.0557,
+          "at": "2026-11-01T04:04:06.096Z",
+          "action": "إضافة متابعة",
+          "details": "طلب انتداب الفاضلة رحمة بنت منصور اليزيدي"
+        },
+        {
+          "id": 1793505846016.0032,
+          "at": "2026-11-01T04:04:06.016Z",
+          "action": "تعديل موضوع",
+          "details": "طلب انتداب الفاضلة رحمة بنت منصور اليزيدي"
+        },
         {
           "id": 1793505686590.0916,
           "at": "2026-11-01T04:01:26.590Z",
