@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-01T04:53:33.905Z",
+  "exportedAt": "2026-11-01T04:55:40.131Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39282,7 +39282,7 @@
       "slaDays": 10,
       "kpi": "",
       "note": "نائب الرئيس\nللافادة عن المواضيع التي تم التوجيه بها والواردة في الكشف المرفق خلال اسبوعين من تاريخه.",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-18",
@@ -39334,14 +39334,37 @@
           "taqseem": "إدارة البيئة بمحافظة جنوب الشرقية",
           "startDate": "2026-10-15",
           "daysSince": 9
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "esc",
+          "date": "2026-11-01",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من تم التصعيد إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "إدارة البيئة بمحافظة جنوب الشرقية",
+          "startDate": "2026-10-15",
+          "daysSince": 11
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792301991353.1262,
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "taqseem",
       "responseMethod": "",
-      "divFollowDate": "2026-10-26"
+      "divFollowDate": "2026-10-26",
+      "closedAt": "2026-11-01",
+      "actionHistory": []
     },
     {
       "id": 1792303483439.5813,
@@ -48969,6 +48992,115 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-11-01T04:53:31.755Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1792301991353.1262,
+      "transactionType": "followup",
+      "title": "اللقاء الدوري بين محافظة جنوب الشرقية وهيئة البيئة",
+      "from": "مكتب محافظة جنوب الشرقية",
+      "docNo": "1170/3/2022v422-24",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "إدارة البيئة بمحافظة جنوب الشرقية",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-14",
+      "receivedFollowDate": "2026-10-18",
+      "followStart": "2026-10-15",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "rais",
+      "slaDays": 10,
+      "kpi": "",
+      "note": "نائب الرئيس\nللافادة عن المواضيع التي تم التوجيه بها والواردة في الكشف المرفق خلال اسبوعين من تاريخه.",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-18",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-10-26",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "إدارة البيئة بمحافظة جنوب الشرقية",
+          "startDate": "2026-10-15",
+          "daysSince": 7
+        },
+        {
+          "date": "2026-10-28",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التصعيد لمدير المكتب",
+          "actionType": "esc",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "إدارة البيئة بمحافظة جنوب الشرقية",
+          "startDate": "2026-10-15",
+          "daysSince": 9
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "esc",
+          "date": "2026-11-01",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من تم التصعيد إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "إدارة البيئة بمحافظة جنوب الشرقية",
+          "startDate": "2026-10-15",
+          "daysSince": 11
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792301991353.1262,
+      "manualCount": 4,
+      "followEntity": "taqseem",
+      "responseMethod": "",
+      "divFollowDate": "2026-10-26",
+      "closedAt": "2026-11-01",
+      "actionHistory": [],
+      "archivedAt": "2026-11-01T04:55:37.985Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-11-01T04:55:37.985Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -54690,6 +54822,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793508937959.466,
+          "at": "2026-11-01T04:55:37.959Z",
+          "action": "إضافة متابعة",
+          "details": "اللقاء الدوري بين محافظة جنوب الشرقية وهيئة البيئة"
+        },
+        {
+          "id": 1793508937887.3606,
+          "at": "2026-11-01T04:55:37.887Z",
+          "action": "تعديل موضوع",
+          "details": "اللقاء الدوري بين محافظة جنوب الشرقية وهيئة البيئة"
+        },
         {
           "id": 1793508811723.5283,
           "at": "2026-11-01T04:53:31.723Z",
