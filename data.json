@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-02T08:44:29.127Z",
+  "exportedAt": "2026-11-02T08:45:14.529Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -41698,16 +41698,53 @@
       "followStart": "2026-11-01",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "other",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "auditOnly": false,
+          "changes": [
+            {
+              "field": "correspondenceDirection",
+              "before": "in",
+              "after": ""
+            },
+            {
+              "field": "followEntity",
+              "before": "",
+              "after": "naib_office"
+            }
+          ],
+          "previousStatus": "",
+          "date": "2026-11-02",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تعديل: اتجاه المراسلة، الجهة المتابعة",
+          "actionType": "visit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-11-01",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1793609001223.2488
+      "recordId": 1793609001223.2488,
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "actionHistory": []
     }
   ],
   "archivedTopics": [
@@ -56208,6 +56245,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793609112274.6807,
+          "at": "2026-11-02T08:45:12.274Z",
+          "action": "إضافة متابعة",
+          "details": "طلب لقاء لعرض حلول مستدامة لمعالجة مياه الصرف الصحي"
+        },
+        {
+          "id": 1793609112239.5144,
+          "at": "2026-11-02T08:45:12.239Z",
+          "action": "تعديل موضوع",
+          "details": "طلب لقاء لعرض حلول مستدامة لمعالجة مياه الصرف الصحي"
+        },
         {
           "id": 1793609001261.955,
           "at": "2026-11-02T08:43:21.261Z",
