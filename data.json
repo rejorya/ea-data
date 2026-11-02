@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-02T08:38:42.493Z",
+  "exportedAt": "2026-11-02T08:44:29.127Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -41682,6 +41682,32 @@
       "followups": [],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793608720427.1292
+    },
+    {
+      "id": 1793609001223.2488,
+      "transactionType": "followup",
+      "title": "طلب لقاء لعرض حلول مستدامة لمعالجة مياه الصرف الصحي",
+      "from": "شركة العناصر الأربعة",
+      "docNo": "1170/3/2022v423-99",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-29",
+      "receivedFollowDate": "2026-11-02",
+      "followStart": "2026-11-01",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1793609001223.2488
     }
   ],
   "archivedTopics": [
@@ -56182,6 +56208,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793609001261.955,
+          "at": "2026-11-02T08:43:21.261Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب لقاء لعرض حلول مستدامة لمعالجة مياه الصرف الصحي"
+        },
         {
           "id": 1793608720465.8867,
           "at": "2026-11-02T08:38:40.465Z",
