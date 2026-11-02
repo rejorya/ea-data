@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-02T03:33:11.504Z",
+  "exportedAt": "2026-11-02T04:01:43.028Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -41311,7 +41311,7 @@
       "from": "وزارة الخارجية",
       "docNo": "1170/3/2022v423-87",
       "toEntity": "نائب الرئيس",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة للالتزام البيئي",
       "priority": "urgent",
       "confidentiality": "normal",
       "date": "2026-10-29",
@@ -41325,7 +41325,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
-      "status": "new",
+      "status": "awaiting_div",
       "followups": [
         {
           "auditOnly": false,
@@ -41379,12 +41379,44 @@
           "taqseem": "",
           "startDate": "2026-10-29",
           "daysSince": 1
+        },
+        {
+          "auditOnly": false,
+          "changes": [
+            {
+              "field": "followEntity",
+              "before": "naib_office",
+              "after": "taqseem"
+            },
+            {
+              "field": "taqseemName",
+              "before": "",
+              "after": "المديرية العامة للالتزام البيئي"
+            }
+          ],
+          "previousStatus": "new",
+          "date": "2026-11-02",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من جديد إلى تمت متابعة التقسيم المختص — تعديل: الجهة المتابعة، التقسيم",
+          "actionType": "visit",
+          "statusChange": "div_followed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "تمت متابعة التقسيم المختص",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للالتزام البيئي",
+          "startDate": "2026-10-29",
+          "daysSince": 2
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793257687652.1992,
-      "manualCount": 2,
-      "followEntity": "naib_office",
+      "manualCount": 3,
+      "followEntity": "taqseem",
       "responseMethod": "",
       "actionHistory": [
         {
@@ -41414,7 +41446,8 @@
           "startDate": "2026-10-29",
           "daysSince": 0
         }
-      ]
+      ],
+      "divFollowDate": "2026-11-02"
     },
     {
       "id": 1793258199380.0686,
@@ -56004,7 +56037,21 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1793592100883.426,
+          "at": "2026-11-02T04:01:40.883Z",
+          "action": "إضافة متابعة",
+          "details": "ايفاد خبير من الوكالة الدولية للطاقة الذرية في مجال الادارة الشاملة للنفايات المشعة والمصادر الخارجة عن الرقابة"
+        },
+        {
+          "id": 1793592100854.4067,
+          "at": "2026-11-02T04:01:40.855Z",
+          "action": "تعديل موضوع",
+          "details": "ايفاد خبير من الوكالة الدولية للطاقة الذرية في مجال الادارة الشاملة للنفايات المشعة والمصادر الخارجة عن الرقابة"
+        }
+      ]
     },
     {
       "id": "d68d32b8-7b9c-4ddb-a0e4-2cb2c0504ec2",
