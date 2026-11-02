@@ -718,7 +718,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
         <div>
           <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">
             <div style="font-size:32px;font-weight:700;color:var(--green)" id="m-pct">0%</div>
-            <div style="font-size:13px;color:#666">نسبة الإنجاز الشهرية</div>
+            <div style="font-size:13px;color:#666">نسبة إغلاق المواضيع المسجّلة في الشهر</div>
           </div>
           <div class="pw" style="height:14px"><div class="pb" id="m-pct-bar" style="width:0%"></div></div>
         </div>
@@ -799,7 +799,7 @@ body.viewer-only .print-btn { display: inline-block !important; }
     <div class="sc g"><div class="sl">منتهية</div><div class="sn" id="q-don">0</div></div>
     <div class="sc o"><div class="sl">قيد الإجراء</div><div class="sn" id="q-op">0</div></div>
     <div class="sc r"><div class="sl">متأخرات مرحّلة</div><div class="sn" id="q-car">0</div></div>
-    <div class="sc p"><div class="sl">نسبة الإنجاز</div><div class="sn" id="q-pct">0%</div></div>
+    <div class="sc p"><div class="sl">نسبة إغلاق المواضيع المسجّلة في الفترة</div><div class="sn" id="q-pct">0%</div></div>
   </div>
 
   <div class="card">
@@ -2245,33 +2245,9 @@ function exportIdeasWord() {
 }
 
 function exportIdeasPDF() {
-  if (D.ideas.length === 0) {
-    alert('⚠️ لا توجد أفكار للتصدير');
-    return;
-  }
-  const html = buildIdeasHTML();
-  if (!html) return;
-  
-  // فتح نافذة جديدة بالـ HTML وتشغيل الطباعة → PDF
-  const printWindow = window.open('', '_blank');
-  if (!printWindow) {
-    alert('⚠️ يرجى السماح بفتح النوافذ المنبثقة للمتصفح');
-    return;
-  }
-  printWindow.document.open();
-  printWindow.document.write(html);
-  printWindow.document.close();
-  printWindow.onload = () => {
-    setTimeout(() => {
-      printWindow.focus();
-      printWindow.print();
-      // المتصفح يفتح حوار طباعة → اختاري "حفظ كـ PDF"
-    }, 500);
-  };
-  
-  setTimeout(() => {
-    alert('📑 سيفتح حوار الطباعة\n\nاختاري "حفظ كـ PDF" من قائمة الطابعة\nثم احفظي الملف على جهازك');
-  }, 800);
+  if(!(D.ideas||[]).length){alert('⚠️ لا توجد سجلات للتصدير');return;}
+  const html=buildIdeasHTML();
+  if(html) printHTMLContent(html,'تقرير الأفكار');
 }
 
 function printIdeas() {
@@ -4107,13 +4083,19 @@ function refreshDashboard() {
   let autoEsc = 0;
   const _tod = localDateKey(new Date());
   D.topics.forEach(t => {
-    if(t.status === 'awaiting_div' && t.divFollowDate) {
+    if(canEditData() && t.status === 'awaiting_div' && t.divFollowDate) {
       try {
-        if(businessDaysBetween(t.divFollowDate, _tod) >= 3) { t.status = 'ready_esc'; autoEsc++; }
+        const allowed=t.slaMode==='none'||t.correspondenceDirection==='out'?null:(t.slaMode&&t.slaMode!=='kpi'&&Number(t.slaDays)>0?Number(t.slaDays):3);
+        if(allowed!==null && businessDaysBetween(t.divFollowDate, _tod) > allowed) {
+          t.status = 'ready_esc';
+          t.actionHistory=t.actionHistory||[];
+          t.actionHistory.push({date:_tod,actionType:'status',note:'جاهز للتصعيد تلقائيًا بعد انتهاء مهلة رد التقسيم',by:'النظام'});
+          autoEsc++;
+        }
       } catch(e) {}
     }
   });
-  if(autoEsc > 0) saveToStorage();
+  if(autoEsc > 0) { saveToStorage(); if(typeof markCloudDirty==='function') markCloudDirty(); }
   
   const open = D.topics.filter(t => t.status !== 'closed');
   const closed = D.topics.filter(t => t.status === 'closed');
@@ -5819,6 +5801,7 @@ function addDirective() {
     subj: subj,
     action: val('drAction'),
     status: val('drStatus') || 'new',
+    completedAt: DIR_DONE_SET.includes(val('drStatus')) ? localDateKey(new Date()) : '',
     note: val('drNote'),
     followLog: []
   });
@@ -5985,6 +5968,7 @@ function renderDirLogList(d){
     </div>`).join('') : '<div style="color:#90a0b3;font-size:12px;padding:8px">لا توجد متابعات مسجلة بعد</div>';
 }
 function addDirLog(){
+  if(!canEditData()) return;
   const id = $('dirLogId').value;
   const d = D.directives.find(x => String(x.id) === id);
   if(!d) return;
@@ -6034,7 +6018,14 @@ function saveEditDirective() {
   d.due = val('edDue');
   d.subj = val('edSubj');
   d.action = val('edAction');
+  const previousStatus=d.status;
   d.status = val('edStatus');
+  if(DIR_DONE_SET.includes(d.status) && !DIR_DONE_SET.includes(previousStatus)) d.completedAt=localDateKey(new Date());
+  if(!DIR_DONE_SET.includes(d.status) && DIR_DONE_SET.includes(previousStatus)) { delete d.completedAt; delete d.doneDate; delete d.closedAt; }
+  if(previousStatus!==d.status){
+    d.followLog=d.followLog||[];
+    d.followLog.push({date:localDateKey(new Date()),action:'تغيير حالة التوجيه',result:previousStatus+' → '+d.status,by:CU?.name||''});
+  }
   d.dueDate = val('edDueDate') || d.dueDate || '';
   d.note = val('edNote');
   closeModal('editDirModal');
@@ -6235,13 +6226,14 @@ function refreshWeekly() {
     return;
   }
   
-  const newT = D.topics.filter(t => { const rd = refDate(t); return rd >= from && rd <= to && !t.fromDiscussionId; });
-  const clT = D.topics.filter(t => t.status === 'closed' && t.closedAt >= from && t.closedAt <= to);
-  const escT = D.topics.filter(t => t.status === 'esc');
-  const opT = D.topics.filter(t => t.status !== 'closed');
+  const period=collectProfessionalReport(from,to);
+  const newT = period.received;
+  const clT = period.completed;
+  const escT = period.all.filter(t => t.status === 'esc');
+  const opT = period.all.filter(t => t.status !== 'closed');
   const discT = D.topics.filter(t => t.status === 'disc');
-  const total = D.topics.length;
-  const totalDone = D.topics.filter(t => t.status === 'closed').length;
+  const total = period.all.length;
+  const totalDone = period.all.filter(t => t.status === 'closed').length;
   const pct = total > 0 ? Math.round((totalDone / total) * 100) : 0;
   
   setText('w-new', newT.length);
@@ -6258,7 +6250,7 @@ function refreshWeekly() {
   $('w-new-list').innerHTML = newT.map((t,i) => `<tr><td>${i+1}</td><td>${t.title}</td><td>${t.from}</td><td>${fmtDate(t.date)}</td><td style="text-align:center">${t.manualCount ?? t.followups.length}</td></tr>`).join('') || noData(5);
   $('w-cl-list').innerHTML = clT.map((t,i) => `<tr><td>${i+1}</td><td>${t.title}</td><td>${t.from}</td><td>${fmtDate(t.closedAt)}</td></tr>`).join('') || noData(4);
   $('w-esc-list').innerHTML = escT.map((t,i) => `<tr><td>${i+1}</td><td>${t.title}</td><td>${t.from}</td><td>${fmtDate(t.date)}</td></tr>`).join('') || noData(4);
-  $('w-op-list').innerHTML = opT.slice(0,50).map((t,i) => `<tr><td>${i+1}</td><td>${t.title}</td><td>${t.from}</td><td>${fmtDate(t.date)}</td><td style="text-align:center">${t.manualCount ?? t.followups.length}</td></tr>`).join('') || noData(5);
+  $('w-op-list').innerHTML = opT.map((t,i) => `<tr><td>${i+1}</td><td>${t.title}</td><td>${t.from}</td><td>${fmtDate(t.date)}</td><td style="text-align:center">${t.manualCount ?? t.followups.length}</td></tr>`).join('') || noData(5);
   
   // تحديث جدول التاريخ
   renderWeeklyHistory();
@@ -6290,14 +6282,15 @@ function refreshMonthly() {
   const prefix = `${year}-${String(monthNum).padStart(2,'0')}`;
   
   // المستلمة في الشهر
-  const inM = D.topics.filter(t => { const rd = refDate(t); return rd && rd.startsWith(prefix) && !t.fromDiscussionId; });
+  const period=collectProfessionalReport(prefix+'-01',directivePeriodEnd(year,monthNum));
+  const inM = period.received;
   // المغلقة في الشهر (مهما كان تاريخ استلامها)
-  const clM = D.topics.filter(t => t.closedAt && t.closedAt.startsWith(prefix));
+  const clM = period.completed;
   // من المستلمة في الشهر — كم منها أُغلق فعلياً (هذا هو المعيار الصحيح للنسبة)
   const closedFromMonth = inM.filter(t => t.status === 'closed');
   const intM = inM.filter(t => t.type === 'int');
   const extM = inM.filter(t => t.type === 'ext');
-  const opM = D.topics.filter(t => t.status !== 'closed');
+  const opM = inM.filter(t => t.status !== 'closed');
   const discM = D.topics.filter(t => t.status === 'disc');
   // النسبة الصحيحة: من المستلمة في الشهر، كم منها أُغلق (مضمونة ≤ 100%)
   const pct = inM.length > 0 ? Math.round((closedFromMonth.length / inM.length) * 100) : 0;
@@ -6309,7 +6302,7 @@ function refreshMonthly() {
   setText('m-tot', inM.length);
   setText('m-int', intM.length);
   setText('m-ext', extM.length);
-  setText('m-don', closedFromMonth.length);
+  setText('m-don', period.completed.length);
   setText('m-op', inM.filter(t => t.status !== 'closed').length);
   setText('m-disc', discM.length);
   setText('m-pct', pct + '%');
@@ -6318,7 +6311,7 @@ function refreshMonthly() {
   $('m-dirpct-bar').style.width = (dirsPct??0) + '%';
   
   $('m-don-list').innerHTML = clM.map((t,i) => `<tr><td>${i+1}</td><td>${t.title}</td><td>${t.from}</td><td>${fmtDate(t.closedAt)}</td></tr>`).join('') || noData(4);
-  $('m-op-list').innerHTML = opM.slice(0,50).map((t,i) => `<tr><td>${i+1}</td><td>${t.title}</td><td>${t.from}</td><td>${fmtDate(t.date)}</td><td style="text-align:center">${t.manualCount ?? t.followups.length}</td></tr>`).join('') || noData(5);
+  $('m-op-list').innerHTML = opM.map((t,i) => `<tr><td>${i+1}</td><td>${t.title}</td><td>${t.from}</td><td>${fmtDate(t.date)}</td><td style="text-align:center">${t.manualCount ?? t.followups.length}</td></tr>`).join('') || noData(5);
   
   renderMonthlyHistory();
 }
@@ -6359,13 +6352,14 @@ function refreshQuarterly() {
   const yearStr = String(year);
   
   // أساس التاريخ: تاريخ الاستلام للمتابعة (refDate) — منطق تقرير المتابعة
-  const inP = D.topics.filter(t => { const rd = refDate(t); return rd && months.some(m => rd.startsWith(`${yearStr}-${m}`)) && !t.fromDiscussionId; });
-  const closedFromPeriod = inP.filter(t => t.status === 'closed');
+  const period=collectProfessionalReport(`${yearStr}-${months[0]}-01`,directivePeriodEnd(year,months[months.length-1]));
+  const inP = period.received;
+  const closedFromPeriod = period.completed;
   const opP = inP.filter(t => t.status !== 'closed');
   // المرحّل: كل مفتوح استُلم للمتابعة قبل بداية أول شهر في الفترة
   const periodStart = `${yearStr}-${months[0]}-01`;
-  const carP = D.topics.filter(t => { const rd = refDate(t); return t.status !== 'closed' && rd && rd < periodStart; });
-  const pct = inP.length > 0 ? Math.round((closedFromPeriod.length / inP.length) * 100) : 0;
+  const carP = period.all.filter(t => { const rd = refDate(t); return t.status !== 'closed' && rd && rd < periodStart; });
+  const pct = inP.length > 0 ? Math.round((inP.filter(t=>t.status==='closed').length / inP.length) * 100) : 0;
   
   setText('q-tot', inP.length);
   setText('q-don', closedFromPeriod.length);
@@ -6375,7 +6369,7 @@ function refreshQuarterly() {
   
   $('q-don-list').innerHTML = closedFromPeriod.map((t,i) => `<tr><td>${i+1}</td><td>${t.title}</td><td>${t.from}</td><td>${fmtDate(t.closedAt)}</td></tr>`).join('') || noData(4);
   $('q-car-list').innerHTML = carP.map((t,i) => `<tr><td>${i+1}</td><td>${t.title}</td><td>${t.from}</td><td>${fmtDate(t.date)}</td></tr>`).join('') || noData(4);
-  $('q-op-list').innerHTML = opP.slice(0,50).map((t,i) => `<tr><td>${i+1}</td><td>${t.title}</td><td>${t.from}</td><td>${fmtDate(t.date)}</td></tr>`).join('') || noData(4);
+  $('q-op-list').innerHTML = opP.map((t,i) => `<tr><td>${i+1}</td><td>${t.title}</td><td>${t.from}</td><td>${fmtDate(t.date)}</td></tr>`).join('') || noData(4);
   
   renderQuarterlyHistory();
 }
@@ -6440,13 +6434,14 @@ function refDate(t) { return t.date || t.receivedFollowDate || t.followStart || 
 
 function collectWeeklyData() {
   const from = val('wFrom'), to = val('wTo');
-  const newT = D.topics.filter(t => { const rd = refDate(t); return rd >= from && rd <= to && !t.fromDiscussionId; });
-  const clT = D.topics.filter(t => t.status === 'closed' && t.closedAt >= from && t.closedAt <= to);
-  const escT = D.topics.filter(t => t.status === 'esc');
-  const opT = D.topics.filter(t => t.status !== 'closed');
+  const period=collectProfessionalReport(from,to);
+  const newT = period.received;
+  const clT = period.completed;
+  const escT = period.all.filter(t => t.status === 'esc');
+  const opT = period.all.filter(t => t.status !== 'closed');
   const discT = D.topics.filter(t => t.status === 'disc');
-  const total = D.topics.length;
-  const totalDone = D.topics.filter(t => t.status === 'closed').length;
+  const total = period.all.length;
+  const totalDone = period.all.filter(t => t.status === 'closed').length;
   const pct = total > 0 ? Math.round((totalDone / total) * 100) : 0;
   
   // مناقشات الرئيس خلال الأسبوع (من الوحدة المستقلة)، مع رجوع للنص اليدوي
@@ -6478,7 +6473,8 @@ function collectMonthlyData() {
   const monthNum = MONTHS.indexOf(month) + 1;
   const prefix = `${year}-${String(monthNum).padStart(2,'0')}`;
   
-  const inM = D.topics.filter(t => { const rd = refDate(t); return rd && rd.startsWith(prefix) && !t.fromDiscussionId; });
+  const period=collectProfessionalReport(prefix+'-01',directivePeriodEnd(year,monthNum));
+  const inM = period.received;
   // منطق تقرير المتابعة: المنتهي = من وارد الشهر وأُغلق، والمفتوح = من وارد الشهر ولم يُغلق
   const closedFromMonth = inM.filter(t => t.status === 'closed');
   const opM = inM.filter(t => t.status !== 'closed');
@@ -6492,7 +6488,7 @@ function collectMonthlyData() {
   // مناقشات الرئيس خلال الشهر (من الوحدة المستقلة)، مع رجوع للنص اليدوي
   // متوسط مدة الإنجاز للمواضيع المغلقة هذا الشهر (أيام عمل)
   let _cd=0,_cn=0;
-  closedFromMonth.forEach(t=>{ const rd=refDate(t); if(rd&&t.closedAt){ try{ const d=businessDaysBetween(rd,t.closedAt); if(d>=0&&d<400){_cd+=d;_cn++;} }catch(e){} } });
+  period.completed.forEach(t=>{ const rd=refDate(t); if(rd&&t.closedAt){ try{ const d=businessDaysBetween(rd,t.closedAt); if(d>=0&&d<400){_cd+=d;_cn++;} }catch(e){} } });
   const avgComplete = _cn ? Math.round((_cd/_cn)*10)/10 : null;
   const monthDisc = (D.discussions||[]).filter(d => (d.date||'').startsWith(prefix) && d.status !== 'upcoming')
                       .sort((a,b)=>(a.date||'').localeCompare(b.date||''));
@@ -6503,11 +6499,11 @@ function collectMonthlyData() {
     month, year,
     tot: inM.length, int: inM.filter(t => t.type === 'int').length,
     ext: inM.filter(t => t.type === 'ext').length,
-    don: closedFromMonth.length, op: opM.length, disc: monthDisc.length || discM.length, avgComplete,
+    don: period.completed.length, op: opM.length, disc: monthDisc.length || discM.length, avgComplete,
     lateNow: inM.filter(t => { try{ return t.status!=='closed' && getKpiStatus(t).state==='late'; }catch(e){ return false; } }).length,
     escNow: inM.filter(t => t.status==='esc' || t.status==='ready_esc').length,
     pct, dirpct: dirsPct,
-    inMonth: inM, closedMonth: closedFromMonth, openTopics: opM,
+    inMonth: inM, closedMonth: period.completed, openTopics: opM,
     summary: val('mSummary'), notes: val('mNotes'), discList: finalDiscList,
     savedAt: new Date().toLocaleDateString('ar-SA')
   };
@@ -6518,12 +6514,13 @@ function collectQuarterlyData() {
   const months = getQuarterMonths(type);
   const yearStr = String(year);
   
-  const inP = D.topics.filter(t => { const rd = refDate(t); return rd && months.some(m => rd.startsWith(`${yearStr}-${m}`)) && !t.fromDiscussionId; });
-  const closedFromPeriod = inP.filter(t => t.status === 'closed');
+  const period=collectProfessionalReport(`${yearStr}-${months[0]}-01`,directivePeriodEnd(year,months[months.length-1]));
+  const inP = period.received;
+  const closedFromPeriod = period.completed;
   const opP = inP.filter(t => t.status !== 'closed');
   const periodStart = `${yearStr}-${months[0]}-01`;
-  const carP = D.topics.filter(t => { const rd = refDate(t); return t.status !== 'closed' && rd && rd < periodStart; });
-  const pct = inP.length > 0 ? Math.round((closedFromPeriod.length / inP.length) * 100) : 0;
+  const carP = period.all.filter(t => { const rd = refDate(t); return t.status !== 'closed' && rd && rd < periodStart; });
+  const pct = inP.length > 0 ? Math.round((inP.filter(t=>t.status==='closed').length / inP.length) * 100) : 0;
   // مناقشات سعادة الرئيس خلال الفترة (المنعقدة)
   const discP = (D.discussions||[]).filter(d => d.date && months.some(m => String(d.date).startsWith(`${yearStr}-${m}`)) && d.status !== 'upcoming')
                   .sort((a,b)=>(a.date||'').localeCompare(b.date||''));
@@ -8261,16 +8258,9 @@ function exportMemosWord() {
 }
 
 function exportMemosPDF() {
-  if(!D.memos || D.memos.length === 0) { alert('⚠️ لا توجد مذكرات'); return; }
-  const html = buildMemosHTML();
-  if(!html) return;
-  const printWindow = window.open('', '_blank');
-  if(!printWindow) { alert('⚠️ يرجى السماح بالنوافذ المنبثقة'); return; }
-  printWindow.document.open();
-  printWindow.document.write(html);
-  printWindow.document.close();
-  printWindow.onload = () => { setTimeout(() => { printWindow.focus(); printWindow.print(); }, 500); };
-  setTimeout(() => alert('📑 سيفتح حوار الطباعة\nاختاري "حفظ كـ PDF"'), 800);
+  if(!(D.memos||[]).length){alert('⚠️ لا توجد سجلات للتصدير');return;}
+  const html=buildMemosHTML();
+  if(html) printHTMLContent(html,'تقرير المذكرات الداخلية');
 }
 
 function printMemos() {
