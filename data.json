@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-02T04:01:43.028Z",
+  "exportedAt": "2026-11-02T08:32:26.260Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -41002,7 +41002,7 @@
       "slaDays": 10,
       "kpi": "w2week",
       "note": "١ يحال الى مركز الطوارئ للارتكاز عليه في طلب تمويل لتكليف شركة او مجموعة شركات متخصصة لمكافحة التلوث الزيتي في مسندم فور حدوثه (تم الرد من قبل المركز)\n\n٢ يكلف الالتزام البيئي باجراء فحوصات اوسع لعشرة مواقع مختلفة في محافظة مسندم بواقع عدة عينات في كل موقع ورفع التقرير خلال ١٠ ايام",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-26",
@@ -41041,14 +41041,36 @@
           "taqseem": "",
           "startDate": "2026-10-26",
           "daysSince": 4
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "awaiting",
+          "date": "2026-11-02",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم الرد في مسار اخر بعنوان (جمع وتحليل عينات مياه البحر والرسوبيات في محافظة مسندم)\nتغيير الحالة من بانتظار الإفادة إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-26",
+          "daysSince": 5
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793008356975.9512,
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "naib_office",
       "responseMethod": "",
-      "actionHistory": []
+      "actionHistory": [],
+      "closedAt": "2026-11-02"
     },
     {
       "id": 1793079092833.2273,
@@ -50318,6 +50340,101 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-11-01T09:48:59.584Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1793008356975.9512,
+      "transactionType": "followup",
+      "title": "المستجدات البحرية في محافظة مسندم",
+      "from": "محافظة مسندم",
+      "docNo": "1170/3/2022v394-98",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-03-31",
+      "receivedFollowDate": "2026-10-26",
+      "followStart": "2026-10-26",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "rais",
+      "slaDays": 10,
+      "kpi": "w2week",
+      "note": "١ يحال الى مركز الطوارئ للارتكاز عليه في طلب تمويل لتكليف شركة او مجموعة شركات متخصصة لمكافحة التلوث الزيتي في مسندم فور حدوثه (تم الرد من قبل المركز)\n\n٢ يكلف الالتزام البيئي باجراء فحوصات اوسع لعشرة مواقع مختلفة في محافظة مسندم بواقع عدة عينات في كل موقع ورفع التقرير خلال ١٠ ايام",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-26",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-26",
+          "daysSince": 0
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "new",
+          "date": "2026-11-01",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من جديد إلى بانتظار الإفادة",
+          "actionType": "visit",
+          "statusChange": "awaiting",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "بانتظار الإفادة",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-26",
+          "daysSince": 4
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "awaiting",
+          "date": "2026-11-02",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم الرد في مسار اخر بعنوان (جمع وتحليل عينات مياه البحر والرسوبيات في محافظة مسندم)\nتغيير الحالة من بانتظار الإفادة إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-26",
+          "daysSince": 5
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1793008356975.9512,
+      "manualCount": 3,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "actionHistory": [],
+      "closedAt": "2026-11-02",
+      "archivedAt": "2026-11-02T08:32:24.126Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-11-02T08:32:24.126Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -56039,6 +56156,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793608344116.6423,
+          "at": "2026-11-02T08:32:24.116Z",
+          "action": "إضافة متابعة",
+          "details": "المستجدات البحرية في محافظة مسندم"
+        },
+        {
+          "id": 1793608344086.3848,
+          "at": "2026-11-02T08:32:24.087Z",
+          "action": "تعديل موضوع",
+          "details": "المستجدات البحرية في محافظة مسندم"
+        },
         {
           "id": 1793592100883.426,
           "at": "2026-11-02T04:01:40.883Z",
