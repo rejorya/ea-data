@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-02T08:49:53.179Z",
+  "exportedAt": "2026-11-02T08:52:51.788Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -41771,6 +41771,32 @@
       "followups": [],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793609391116.599
+    },
+    {
+      "id": 1793609569717.5488,
+      "transactionType": "followup",
+      "title": "متابعة تطبيق متطلبات المحتوى المحلي في تعاقدات الجهات الحكومية الخاضعة لقانون المناقصات",
+      "from": "هيئة المشاريع والمناقصات والمحتوى المحلى",
+      "docNo": "1170/3/2022v424-23",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-11-01",
+      "receivedFollowDate": "2026-11-02",
+      "followStart": "2026-11-02",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "letter",
+      "slaDays": 11,
+      "kpi": "",
+      "note": "اخر موعد للافادة بتاريخ 16 نوفمبر 2026",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1793609569717.5488
     }
   ],
   "archivedTopics": [
@@ -56271,6 +56297,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793609569758.4272,
+          "at": "2026-11-02T08:52:49.758Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "متابعة تطبيق متطلبات المحتوى المحلي في تعاقدات الجهات الحكومية الخاضعة لقانون المناقصات"
+        },
         {
           "id": 1793609391153.3105,
           "at": "2026-11-02T08:49:51.153Z",
