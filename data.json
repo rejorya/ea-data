@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-03T03:16:59.114Z",
+  "exportedAt": "2026-11-03T07:27:27.923Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -41823,16 +41823,54 @@
       "followStart": "2026-11-01",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "other",
       "note": "",
-      "status": "new",
-      "followups": [],
+      "status": "awaiting",
+      "followups": [
+        {
+          "auditOnly": false,
+          "changes": [
+            {
+              "field": "correspondenceDirection",
+              "before": "in",
+              "after": ""
+            },
+            {
+              "field": "followEntity",
+              "before": "",
+              "after": "rais_depts"
+            }
+          ],
+          "previousStatus": "new",
+          "date": "2026-11-03",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من جديد إلى بانتظار الإفادة — تعديل: اتجاه المراسلة، الجهة المتابعة",
+          "actionType": "visit",
+          "statusChange": "awaiting",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "بانتظار الإفادة",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-11-01",
+          "daysSince": 2
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1793609391116.599
+      "recordId": 1793609391116.599,
+      "manualCount": 1,
+      "followEntity": "rais_depts",
+      "raisDeptName": "",
+      "responseMethod": "",
+      "actionHistory": []
     },
     {
       "id": 1793609569717.5488,
@@ -56357,7 +56395,21 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1793690845768.397,
+          "at": "2026-11-03T07:27:25.768Z",
+          "action": "إضافة متابعة",
+          "details": "الدليل الاسترشادي لإدارة نفايات الزئبق ومركباته والمنتجات المحتوية عليه"
+        },
+        {
+          "id": 1793690845728.7058,
+          "at": "2026-11-03T07:27:25.728Z",
+          "action": "تعديل موضوع",
+          "details": "الدليل الاسترشادي لإدارة نفايات الزئبق ومركباته والمنتجات المحتوية عليه"
+        }
+      ]
     },
     {
       "id": "8337d8f6-484c-4f67-a757-cfa2234edef6",
