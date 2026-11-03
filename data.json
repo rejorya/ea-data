@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-03T03:16:51.840Z",
+  "exportedAt": "2026-11-03T03:16:55.405Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35890,7 +35890,14 @@
       "manualCount": 8,
       "followEntity": "naib_office",
       "responseMethod": "",
-      "actionHistory": []
+      "actionHistory": [
+        {
+          "date": "2026-11-03",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        }
+      ]
     },
     {
       "id": 1791271572401.6384,
@@ -38566,7 +38573,14 @@
       "followEntity": "rais_depts",
       "raisDeptName": "مستشارة الرئيس لصون الطبيعة",
       "responseMethod": "",
-      "actionHistory": []
+      "actionHistory": [
+        {
+          "date": "2026-11-03",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        }
+      ]
     },
     {
       "id": 1791957710437.5051,
@@ -39980,7 +39994,14 @@
       "followEntity": "rais_depts",
       "raisDeptName": "فريق التحول الرقمي",
       "responseMethod": "",
-      "actionHistory": []
+      "actionHistory": [
+        {
+          "date": "2026-11-03",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        }
+      ]
     },
     {
       "id": 1792315069286.0823,
@@ -41589,7 +41610,14 @@
       "manualCount": 2,
       "followEntity": "taqseem",
       "responseMethod": "",
-      "actionHistory": [],
+      "actionHistory": [
+        {
+          "date": "2026-11-03",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        }
+      ],
       "divFollowDate": "2026-11-01"
     },
     {
