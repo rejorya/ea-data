@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-03T03:16:48.270Z",
+  "exportedAt": "2026-11-03T03:16:51.840Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -41165,7 +41165,14 @@
       "followEntity": "rais_depts",
       "raisDeptName": "الدائرة القانونية",
       "responseMethod": "",
-      "actionHistory": []
+      "actionHistory": [
+        {
+          "date": "2026-11-03",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: افتحي الموضوع وسجّلي متابعة اليوم"
+        }
+      ]
     },
     {
       "id": 1793081734389.3574,
@@ -41324,7 +41331,14 @@
       "manualCount": 3,
       "followEntity": "naib_office",
       "responseMethod": "",
-      "actionHistory": []
+      "actionHistory": [
+        {
+          "date": "2026-11-03",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: افتحي الموضوع وسجّلي متابعة اليوم"
+        }
+      ]
     },
     {
       "id": 1793257687652.1992,
@@ -41467,6 +41481,12 @@
           "taqseem": "",
           "startDate": "2026-10-29",
           "daysSince": 0
+        },
+        {
+          "date": "2026-11-03",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: افتحي الموضوع وسجّلي متابعة اليوم"
         }
       ],
       "divFollowDate": "2026-11-02"
@@ -56271,8 +56291,8 @@
   ],
   "activityLog": [
     {
-      "id": 1793675802059.3699,
-      "sessionId": "9443d472-3f1a-43ad-99e3-669c3be31625",
+      "id": "ea4617f1-8e26-473f-9027-d009ff54023e",
+      "sessionId": "ea4617f1-8e26-473f-9027-d009ff54023e",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
       "user": "rahab@ea2026",
       "name": "رحاب بنت نصيب الفرج",
@@ -56294,7 +56314,8 @@
       "loginAt": "2026-11-03T03:16:42.059Z",
       "logoutAt": null,
       "duration": null,
-      "logoutReason": null
+      "logoutReason": null,
+      "central": true
     },
     {
       "id": "8337d8f6-484c-4f67-a757-cfa2234edef6",
