@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-03T08:06:35.499Z",
+  "exportedAt": "2026-11-03T08:08:10.414Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -40038,7 +40038,7 @@
       "slaDays": null,
       "kpi": "std14",
       "note": "نائب الرئيس\nللدراسة والافادة",
-      "status": "open",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-10-18",
@@ -40094,11 +40094,32 @@
           "taqseem": "",
           "startDate": "2026-10-15",
           "daysSince": 11
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "open",
+          "date": "2026-11-03",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من قيد المتابعة إلى تم التصعيد",
+          "actionType": "esc",
+          "statusChange": "esc",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "تم التصعيد",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 13
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792315069286.0823,
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "naib_office",
       "responseMethod": "",
       "actionHistory": []
@@ -56740,6 +56761,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793693288291.7249,
+          "at": "2026-11-03T08:08:08.291Z",
+          "action": "إضافة متابعة",
+          "details": "شكوى وطلب إعادة النظر في موقع مشروع شركة الاستزراع السمكي الواقع بين منطقني الحد والجديمة بولاية جعلان بني بو حسن"
+        },
+        {
+          "id": 1793693288253.323,
+          "at": "2026-11-03T08:08:08.253Z",
+          "action": "تعديل موضوع",
+          "details": "شكوى وطلب إعادة النظر في موقع مشروع شركة الاستزراع السمكي الواقع بين منطقني الحد والجديمة بولاية جعلان بني بو حسن"
+        },
         {
           "id": 1793693193371.4854,
           "at": "2026-11-03T08:06:33.371Z",
