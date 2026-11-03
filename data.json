@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-03T07:55:55.272Z",
+  "exportedAt": "2026-11-03T08:00:09.676Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -41299,7 +41299,7 @@
       "slaDays": 5,
       "kpi": "wweek",
       "note": "نائب الرئيس\nلعمل اللازم خلال اسبوع ",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-27",
@@ -41359,11 +41359,32 @@
           "taqseem": "",
           "startDate": "2026-10-27",
           "daysSince": 3
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "awaiting",
+          "date": "2026-11-03",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التوجيه لتنسيق المسودة\nتغيير الحالة من بانتظار الإفادة إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-27",
+          "daysSince": 5
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793082160518.7405,
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "naib_office",
       "responseMethod": "",
       "actionHistory": [
@@ -41373,7 +41394,8 @@
           "actionType": "other",
           "note": "إتمام المهمة اليومية: افتحي الموضوع وسجّلي متابعة اليوم"
         }
-      ]
+      ],
+      "closedAt": "2026-11-03"
     },
     {
       "id": 1793257687652.1992,
@@ -50853,6 +50875,129 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-11-03T07:43:19.130Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1793082160518.7405,
+      "transactionType": "followup",
+      "title": "مشروع قواعد تنظيم الشؤون البيئية في المناطق الخاضعة لإشراف الهيئة",
+      "from": "الهيئة العامة للمناطق الاقتصادية الخاصة والمناطق الحرة",
+      "docNo": "1170/3/2022v423-42",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-26",
+      "receivedFollowDate": "2026-10-27",
+      "followStart": "2026-10-27",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "rais",
+      "slaDays": 5,
+      "kpi": "wweek",
+      "note": "نائب الرئيس\nلعمل اللازم خلال اسبوع ",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-27",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-27",
+          "daysSince": 0
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "new",
+          "date": "2026-10-29",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من جديد إلى بانتظار الإفادة",
+          "actionType": "visit",
+          "statusChange": "awaiting",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "بانتظار الإفادة",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-27",
+          "daysSince": 2
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "",
+          "date": "2026-11-01",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-27",
+          "daysSince": 3
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "awaiting",
+          "date": "2026-11-03",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التوجيه لتنسيق المسودة\nتغيير الحالة من بانتظار الإفادة إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-27",
+          "daysSince": 5
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1793082160518.7405,
+      "manualCount": 4,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "actionHistory": [
+        {
+          "date": "2026-11-03",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: افتحي الموضوع وسجّلي متابعة اليوم"
+        }
+      ],
+      "closedAt": "2026-11-03",
+      "archivedAt": "2026-11-03T08:00:07.538Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-11-03T08:00:07.538Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -56574,6 +56719,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793692807531.4026,
+          "at": "2026-11-03T08:00:07.531Z",
+          "action": "إضافة متابعة",
+          "details": "مشروع قواعد تنظيم الشؤون البيئية في المناطق الخاضعة لإشراف الهيئة"
+        },
+        {
+          "id": 1793692807499.5066,
+          "at": "2026-11-03T08:00:07.499Z",
+          "action": "تعديل موضوع",
+          "details": "مشروع قواعد تنظيم الشؤون البيئية في المناطق الخاضعة لإشراف الهيئة"
+        },
         {
           "id": 1793692553131.1304,
           "at": "2026-11-03T07:55:53.131Z",
