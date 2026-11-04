@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-04T04:09:55.618Z",
+  "exportedAt": "2026-11-04T04:13:02.493Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -30807,10 +30807,31 @@
           "taqseem": "",
           "startDate": "2026-09-15",
           "daysSince": 22
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "",
+          "date": "2026-11-04",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-09-15",
+          "daysSince": 36
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 4,
+      "manualCount": 5,
       "followEntity": "rais_depts",
       "raisDeptName": "دائرة التميز المؤسسي",
       "responseMethod": "",
@@ -30819,7 +30840,8 @@
       "externalEntities": [],
       "receivedFollowDate": "",
       "correspondenceDirection": "",
-      "followScope": "internal"
+      "followScope": "internal",
+      "actionHistory": []
     },
     {
       "id": 1789453689725.6372,
@@ -55711,6 +55733,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793765576815.842,
+          "at": "2026-11-04T04:12:56.815Z",
+          "action": "إضافة متابعة",
+          "details": "خطة تقييم قبو ل الجهات الحكومية المستفيدة من نظام وصول."
+        },
+        {
+          "id": 1793765576780.3362,
+          "at": "2026-11-04T04:12:56.780Z",
+          "action": "تعديل موضوع",
+          "details": "خطة تقييم قبو ل الجهات الحكومية المستفيدة من نظام وصول."
+        },
         {
           "id": 1793765393475.5898,
           "at": "2026-11-04T04:09:53.475Z",
