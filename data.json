@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-04T03:34:47.711Z",
+  "exportedAt": "2026-11-04T03:34:58.421Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -41268,7 +41268,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "auditOnly": false,
@@ -41343,11 +41343,32 @@
           "taqseem": "",
           "startDate": "2026-10-29",
           "daysSince": 3
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "esc",
+          "date": "2026-11-04",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من تم التصعيد إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-29",
+          "daysSince": 4
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793257687652.1992,
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "naib_office",
       "responseMethod": "",
       "actionHistory": [
@@ -41390,7 +41411,8 @@
           "actionType": "other",
           "note": "إتمام المهمة اليومية: تابعي التقسيم المختص مباشرة"
         }
-      ]
+      ],
+      "closedAt": "2026-11-04"
     },
     {
       "id": 1793258199380.0686,
@@ -49610,6 +49632,177 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-11-04T03:17:43.537Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1793257687652.1992,
+      "transactionType": "followup",
+      "title": "ايفاد خبير من الوكالة الدولية للطاقة الذرية في مجال الادارة الشاملة للنفايات المشعة والمصادر الخارجة عن الرقابة",
+      "from": "وزارة الخارجية",
+      "docNo": "1170/3/2022v423-87",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "normal",
+      "date": "2026-10-29",
+      "receivedFollowDate": "2026-10-29",
+      "followStart": "2026-10-29",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "closed",
+      "followups": [
+        {
+          "auditOnly": false,
+          "changes": [
+            {
+              "field": "correspondenceDirection",
+              "before": "in",
+              "after": ""
+            },
+            {
+              "field": "followEntity",
+              "before": "",
+              "after": "naib_office"
+            }
+          ],
+          "previousStatus": "",
+          "date": "2026-10-29",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تعديل: اتجاه المراسلة، الجهة المتابعة",
+          "actionType": "visit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-29",
+          "daysSince": 0
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "",
+          "date": "2026-11-01",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-29",
+          "daysSince": 1
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "new",
+          "date": "2026-11-03",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من جديد إلى تم التصعيد",
+          "actionType": "esc",
+          "statusChange": "esc",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "تم التصعيد",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-29",
+          "daysSince": 3
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "esc",
+          "date": "2026-11-04",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من تم التصعيد إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-29",
+          "daysSince": 4
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1793257687652.1992,
+      "manualCount": 4,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "actionHistory": [
+        {
+          "auditOnly": true,
+          "changes": [
+            {
+              "field": "confidentiality",
+              "before": "secret",
+              "after": "normal"
+            }
+          ],
+          "previousStatus": "",
+          "date": "2026-10-29",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تعديل: السرية",
+          "actionType": "edit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "تم حفظ التعديل",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-29",
+          "daysSince": 0
+        },
+        {
+          "date": "2026-11-04",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        },
+        {
+          "date": "2026-11-04",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تابعي التقسيم المختص مباشرة"
+        }
+      ],
+      "closedAt": "2026-11-04",
+      "archivedAt": "2026-11-04T03:34:56.012Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-11-04T03:34:56.012Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -55331,6 +55524,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793763295996.7559,
+          "at": "2026-11-04T03:34:55.996Z",
+          "action": "إضافة متابعة",
+          "details": "ايفاد خبير من الوكالة الدولية للطاقة الذرية في مجال الادارة الشاملة للنفايات المشعة والمصادر الخارجة عن الرقابة"
+        },
+        {
+          "id": 1793763295949.1748,
+          "at": "2026-11-04T03:34:55.949Z",
+          "action": "تعديل موضوع",
+          "details": "ايفاد خبير من الوكالة الدولية للطاقة الذرية في مجال الادارة الشاملة للنفايات المشعة والمصادر الخارجة عن الرقابة"
+        },
         {
           "id": 1793763285575.7356,
           "at": "2026-11-04T03:34:45.575Z",
