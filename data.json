@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-04T05:08:32.789Z",
+  "exportedAt": "2026-11-04T05:13:02.736Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -41181,7 +41181,7 @@
       "from": "وزارة العدل والشؤون القانونية",
       "docNo": "1170/3/2022v423-65",
       "toEntity": "الدائرة القانونية",
-      "taqseemName": "",
+      "taqseemName": "المديرية العامة للتغير المناخي",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-10-27",
@@ -41285,7 +41285,7 @@
       "sheet": "مُضاف يدوياً",
       "recordId": 1793079092833.2273,
       "manualCount": 4,
-      "followEntity": "rais_depts",
+      "followEntity": "taqseem",
       "raisDeptName": "الدائرة القانونية",
       "responseMethod": "",
       "actionHistory": [
@@ -41294,6 +41294,38 @@
           "by": "رحاب بنت نصيب الفرج",
           "actionType": "other",
           "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        },
+        {
+          "auditOnly": true,
+          "changes": [
+            {
+              "field": "followEntity",
+              "before": "rais_depts",
+              "after": "taqseem"
+            },
+            {
+              "field": "taqseemName",
+              "before": "",
+              "after": "المديرية العامة للتغير المناخي"
+            }
+          ],
+          "previousStatus": "",
+          "date": "2026-11-04",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تعديل: الجهة المتابعة، التقسيم",
+          "actionType": "edit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "تم حفظ التعديل",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للتغير المناخي",
+          "startDate": "2026-10-27",
+          "daysSince": 6
         }
       ]
     },
@@ -56424,6 +56456,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793769180673.4136,
+          "at": "2026-11-04T05:13:00.673Z",
+          "action": "إضافة متابعة",
+          "details": "طلب مراجعة مشروع إصدار لائحة إدارة التغير  المناخي"
+        },
+        {
+          "id": 1793769180623.8562,
+          "at": "2026-11-04T05:13:00.623Z",
+          "action": "تعديل موضوع",
+          "details": "طلب مراجعة مشروع إصدار لائحة إدارة التغير  المناخي"
+        },
         {
           "id": 1793768910731.555,
           "at": "2026-11-04T05:08:30.731Z",
