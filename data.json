@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-04T03:14:02.216Z",
+  "exportedAt": "2026-11-04T03:17:45.699Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -39554,7 +39554,7 @@
       "slaDays": null,
       "kpi": "",
       "note": "",
-      "status": "new",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-18",
@@ -39572,14 +39572,37 @@
           "taqseem": "",
           "startDate": "2026-10-15",
           "daysSince": 1
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "new",
+          "date": "2026-11-04",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من جديد إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "external",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 14
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792303483439.5813,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "other",
       "otherEntityName": "",
-      "responseMethod": ""
+      "responseMethod": "",
+      "closedAt": "2026-11-04",
+      "actionHistory": []
     },
     {
       "id": 1792312158256.0767,
@@ -49455,6 +49478,117 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-11-01T05:01:10.272Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1792303483439.5813,
+      "transactionType": "followup",
+      "title": "طلب ترشيح للمشاركة في ملتقى التشريعات البيئية بمحافظة مسقط",
+      "from": "هيئة البيئة",
+      "docNo": "1170/3/2022v422-33",
+      "toEntity": "عدة جهات",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "normal",
+      "date": "2026-10-15",
+      "receivedFollowDate": "2026-10-18",
+      "followStart": "2026-10-15",
+      "type": "ext",
+      "followScope": "external",
+      "correspondenceDirection": "out",
+      "externalEntities": [
+        {
+          "id": 1792303526720.686,
+          "name": "جامعة مسقط",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        },
+        {
+          "id": 1792303540416.6895,
+          "name": "الجامعة العربية المفتوحة",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        },
+        {
+          "id": 1792303609607.4944,
+          "name": "كلية الزهراء للبنات",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        },
+        {
+          "id": 1792303640720.975,
+          "name": "جامعة السلطان قابوس",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        },
+        {
+          "id": 1792303667647.9758,
+          "name": "جامعة التقنية والعلوم التطبيقية",
+          "replied": false,
+          "lastFollowDate": "",
+          "responseMethod": ""
+        }
+      ],
+      "slaMode": "none",
+      "slaDays": null,
+      "kpi": "",
+      "note": "",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-18",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التوجيه للدائرة بالمتابعة للاختصاص",
+          "actionType": "visit",
+          "scope": "external",
+          "by": "",
+          "result": "",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 1
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "new",
+          "date": "2026-11-04",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من جديد إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "external",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "other",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 14
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792303483439.5813,
+      "manualCount": 2,
+      "followEntity": "other",
+      "otherEntityName": "",
+      "responseMethod": "",
+      "closedAt": "2026-11-04",
+      "actionHistory": [],
+      "archivedAt": "2026-11-04T03:17:43.537Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-11-04T03:17:43.537Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -55174,7 +55308,21 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1793762263529.5708,
+          "at": "2026-11-04T03:17:43.529Z",
+          "action": "إضافة متابعة",
+          "details": "طلب ترشيح للمشاركة في ملتقى التشريعات البيئية بمحافظة مسقط"
+        },
+        {
+          "id": 1793762263480.291,
+          "at": "2026-11-04T03:17:43.480Z",
+          "action": "تعديل موضوع",
+          "details": "طلب ترشيح للمشاركة في ملتقى التشريعات البيئية بمحافظة مسقط"
+        }
+      ]
     },
     {
       "id": "d68d32b8-7b9c-4ddb-a0e4-2cb2c0504ec2",
