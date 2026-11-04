@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-04T04:13:46.488Z",
+  "exportedAt": "2026-11-04T04:58:15.000Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -41061,7 +41061,7 @@
       "slaDays": 10,
       "kpi": "w2week",
       "note": "١ يحال الى مركز الطوارئ للارتكاز عليه في طلب تمويل لتكليف شركة او مجموعة شركات متخصصة لمكافحة التلوث الزيتي في مسندم فور حدوثه (تم الرد من قبل المركز)\n\n٢ يكلف الالتزام البيئي باجراء فحوصات اوسع لعشرة مواقع مختلفة في محافظة مسندم بواقع عدة عينات في كل موقع ورفع التقرير خلال ١٠ ايام",
-      "status": "new",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-10-26",
@@ -41079,13 +41079,35 @@
           "taqseem": "",
           "startDate": "2026-10-26",
           "daysSince": 0
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "new",
+          "date": "2026-11-03",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم رفع مخاطبه وليس التقرير المطلوب\nتغيير الحالة من جديد إلى تم التصعيد",
+          "actionType": "esc",
+          "statusChange": "esc",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "تم التصعيد",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-26",
+          "daysSince": 6
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793008356975.9512,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "naib_office",
-      "responseMethod": ""
+      "responseMethod": "",
+      "actionHistory": []
     },
     {
       "id": 1793079092833.2273,
@@ -55754,6 +55776,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793768292872.025,
+          "at": "2026-11-04T04:58:12.872Z",
+          "action": "إضافة متابعة",
+          "details": "المستجدات البحرية في محافظة مسندم"
+        },
+        {
+          "id": 1793768292828.09,
+          "at": "2026-11-04T04:58:12.828Z",
+          "action": "تعديل موضوع",
+          "details": "المستجدات البحرية في محافظة مسندم"
+        },
         {
           "id": 1793765624348.8318,
           "at": "2026-11-04T04:13:44.348Z",
