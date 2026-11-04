@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-04T06:38:21.769Z",
+  "exportedAt": "2026-11-04T09:03:04.229Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -38334,7 +38334,7 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "التخطيط\nلاعداد خطاب الى وزارة المالية وارفاق المتطلبات الاخرى المشار اليها\nتم الرد من مدير الدائرة بتاريخ 29/9الاخت الفاضلة رحاب الفرج المحترمة\nللتكرم بالاطلاع والعلم بما جاء في تعليق الفاضل أحمد الجرادي ونفيدكم بأننا في انتظار الموافقة من وزارة المالية حسب ما هو مطلوب من وزارة الإسكان والتخطيط العمراني وتجدون مرفقا طيه نسخة من الخطاب المتضمن تعليق الفاضل أحمد الجرادي (رقم 17) مع إفادتكم بأنه قد تم استيفاء جميع البيانات المطلوبة وفقا لما ورد في خطاب وزارة الإسكان والتخطيط العمراني.",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-14",
@@ -38396,11 +38396,32 @@
           "taqseem": "",
           "startDate": "2026-08-26",
           "daysSince": 47
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "awaiting",
+          "date": "2026-11-04",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من بانتظار الإفادة إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-08-26",
+          "daysSince": 50
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791951075109.6267,
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "rais_depts",
       "responseMethod": "",
       "actionHistory": [
@@ -38411,7 +38432,8 @@
           "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
         }
       ],
-      "raisDeptName": ""
+      "raisDeptName": "",
+      "closedAt": "2026-11-04"
     },
     {
       "id": 1791955071143.7434,
@@ -50938,6 +50960,132 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-11-04T06:38:19.724Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1791951075109.6267,
+      "transactionType": "followup",
+      "title": "المشروعات الاستثمارية التابعة لهيئة البيئة",
+      "from": "وزارة الإسكان والتخطيط العمراني",
+      "docNo": "1170/3/2022v415-75",
+      "toEntity": "دائرة التخطيط الاستراتيجي",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "secret",
+      "date": "2026-08-26",
+      "receivedFollowDate": "2026-08-30",
+      "followStart": "2026-08-26",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "التخطيط\nلاعداد خطاب الى وزارة المالية وارفاق المتطلبات الاخرى المشار اليها\nتم الرد من مدير الدائرة بتاريخ 29/9الاخت الفاضلة رحاب الفرج المحترمة\nللتكرم بالاطلاع والعلم بما جاء في تعليق الفاضل أحمد الجرادي ونفيدكم بأننا في انتظار الموافقة من وزارة المالية حسب ما هو مطلوب من وزارة الإسكان والتخطيط العمراني وتجدون مرفقا طيه نسخة من الخطاب المتضمن تعليق الفاضل أحمد الجرادي (رقم 17) مع إفادتكم بأنه قد تم استيفاء جميع البيانات المطلوبة وفقا لما ورد في خطاب وزارة الإسكان والتخطيط العمراني.",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-14",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم الرد من مدير الدائرة بتاريخ 29/9الاخت الفاضلة رحاب الفرج المحترمة\nللتكرم بالاطلاع والعلم بما جاء في تعليق الفاضل أحمد الجرادي ونفيدكم بأننا في انتظار الموافقة من وزارة المالية حسب ما هو مطلوب من وزارة الإسكان والتخطيط العمراني وتجدون مرفقا طيه نسخة من الخطاب المتضمن تعليق الفاضل أحمد الجرادي (رقم 17) مع إفادتكم بأنه قد تم استيفاء جميع البيانات المطلوبة وفقا لما ورد في خطاب وزارة الإسكان والتخطيط العمراني.",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "تم الرد  عى رئيسة القسم بخصوص استفسارها",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-08-26",
+          "daysSince": 35
+        },
+        {
+          "date": "2026-10-28",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-08-26",
+          "daysSince": 45
+        },
+        {
+          "auditOnly": false,
+          "changes": [
+            {
+              "field": "followEntity",
+              "before": "",
+              "after": "rais_depts"
+            }
+          ],
+          "previousStatus": "open",
+          "date": "2026-11-01",
+          "replied": true,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم عمل الحاق الى وزارة المالية\nتغيير الحالة من قيد المتابعة إلى بانتظار الإفادة — تعديل: الجهة المتابعة",
+          "actionType": "status",
+          "statusChange": "awaiting",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "بانتظار الإفادة",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-08-26",
+          "daysSince": 47
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "awaiting",
+          "date": "2026-11-04",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من بانتظار الإفادة إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-08-26",
+          "daysSince": 50
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791951075109.6267,
+      "manualCount": 4,
+      "followEntity": "rais_depts",
+      "responseMethod": "",
+      "actionHistory": [
+        {
+          "date": "2026-11-04",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        }
+      ],
+      "raisDeptName": "",
+      "closedAt": "2026-11-04",
+      "archivedAt": "2026-11-04T09:03:02.191Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-11-04T09:03:02.191Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -56659,6 +56807,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793782982176.2832,
+          "at": "2026-11-04T09:03:02.176Z",
+          "action": "إضافة متابعة",
+          "details": "المشروعات الاستثمارية التابعة لهيئة البيئة"
+        },
+        {
+          "id": 1793782982122.333,
+          "at": "2026-11-04T09:03:02.122Z",
+          "action": "تعديل موضوع",
+          "details": "المشروعات الاستثمارية التابعة لهيئة البيئة"
+        },
         {
           "id": 1793774299710.739,
           "at": "2026-11-04T06:38:19.710Z",
