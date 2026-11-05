@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-05T09:55:27.941Z",
+  "exportedAt": "2026-11-05T09:56:48.981Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -42833,7 +42833,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "",
-      "status": "new",
+      "status": "open",
       "followups": [
         {
           "auditOnly": false,
@@ -42866,11 +42866,32 @@
           "taqseem": "",
           "startDate": "2026-11-01",
           "daysSince": 1
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "new",
+          "date": "2026-11-05",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من جديد إلى قيد المتابعة",
+          "actionType": "visit",
+          "statusChange": "open",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "قيد المتابعة",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-11-01",
+          "daysSince": 4
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793609001223.2488,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "naib_office",
       "responseMethod": "",
       "actionHistory": []
@@ -59055,6 +59076,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793872606484.051,
+          "at": "2026-11-05T09:56:46.484Z",
+          "action": "إضافة متابعة",
+          "details": "طلب لقاء لعرض حلول مستدامة لمعالجة مياه الصرف الصحي"
+        },
+        {
+          "id": 1793872606437.4333,
+          "at": "2026-11-05T09:56:46.437Z",
+          "action": "تعديل موضوع",
+          "details": "طلب لقاء لعرض حلول مستدامة لمعالجة مياه الصرف الصحي"
+        },
         {
           "id": 1793872525777.3142,
           "at": "2026-11-05T09:55:25.777Z",
