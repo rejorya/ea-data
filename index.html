@@ -7212,16 +7212,35 @@ function buildProfessionalReport(from,to,title,notes,snapshot) {
     const group=r.all.filter(match),done=group.filter(t=>t.status==='closed').length;
     body+='<h2>تفاصيل '+label+'</h2>'+table(['مواضيع القسم حتى نهاية الفترة','منها مغلقة حاليًا','منها قيد الإجراء حاليًا','نسبة الإنجاز'],[[group.length,done,group.length-done,group.length?Math.round(done/group.length*100)+'%':'—']]);
     const active=r.all.filter(t=>match(t)&&(within(refDate(t))||(t.status==='closed'&&within(t.closedAt))||actions(t).length)).sort((a,b)=>String(refDate(a)).localeCompare(String(refDate(b))));
-    const rows=active.map((t,i)=>{
-      const log=actions(t),last=log[log.length-1],closed=t.status==='closed'&&within(t.closedAt);
-      const detail=log.length?log.map(f=>fmtDate(f.date)+' — '+[f.result,f.note].filter(Boolean).join(' — ')).join('\n'):(closed?'إغلاق الموضوع وإنهاء المتابعة':out?'تسجيل الموضوع الصادر':'تسجيل الموضوع الوارد');
-      return [i+1,(t.title||'—')+'\n'+detail,out?(t.toEntity||t.from||'—'):(t.from||'—'),last?fmtDate(last.date):fmtDate(closed?t.closedAt:refDate(t)),t.status==='closed'?'منجز / مغلق':t.status==='esc'?'مصعّد':'قيد المتابعة'];
+    if (!active.length) body+='<p>لا توجد أعمال مسجلة لهذا القسم خلال الفترة.</p>';
+    const types={call:'اتصال هاتفي',email:'بريد إلكتروني',memo:'مذكرة أو خطاب',meeting:'اجتماع',visit:'متابعة مباشرة',esc:'تصعيد',edit:'تعديل بيانات',status:'تغيير الحالة',other:'إجراء مسجّل'};
+    active.forEach((topic,index)=>{
+      const log=actions(topic);
+      const rows=log.map(entry=>{
+        const kind=types[entry.actionType]||'متابعة';
+        const note=String(entry.note||entry.action||'').trim();
+        const result=String(entry.result||'').trim();
+        const label=note && note!==kind ? kind+' — '+note : kind;
+        return [fmtDate(entry.date),label,result===note?'':result];
+      });
+      if (!rows.length) {
+        if (within(refDate(topic))) rows.push([fmtDate(refDate(topic)),'تسجيل الموضوع الوارد','']);
+        if (topic.status==='closed' && within(topic.closedAt)) rows.push([fmtDate(topic.closedAt),'إغلاق الموضوع','انتهت المتابعة']);
+      }
+      const hasResult=rows.some(row=>row[2]);
+      const widths=hasResult?[17,57,26]:[17,83];
+      const headers=hasResult?['التاريخ','الإجراء','النتيجة']:['التاريخ','الإجراء'];
+      const state=topic.status==='closed'?'مغلق':topic.status==='esc'?'تم التصعيد':'قيد المتابعة';
+      body+='<table class="data-table topic-actions" dir="rtl"><colgroup>'+widths.map(w=>'<col style="width:'+w+'%">').join('')+
+        '</colgroup><thead><tr><th class="topic-name" colspan="'+headers.length+'">الموضوع '+(index+1)+' · '+esc(topic.title||'—')+'</th></tr>'+
+        '<tr><td class="topic-meta" colspan="'+headers.length+'">'+esc(topic.from||'—')+' &nbsp; | &nbsp; '+esc(state)+'</td></tr><tr>'+
+        headers.map((h,i)=>'<th width="'+widths[i]+'%">'+h+'</th>').join('')+'</tr></thead><tbody>'+
+        rows.map(row=>'<tr>'+row.slice(0,headers.length).map((v,i)=>'<td width="'+widths[i]+'%">'+esc(v||'—')+'</td>').join('')+'</tr>').join('')+'</tbody></table>';
     });
-    body+=rows.length?table(['م','الموضوع والإجراءات خلال الفترة','الجهة','آخر إجراء','الحالة'],rows,true):'<p>لا توجد أعمال مسجلة لهذا القسم خلال الفترة.</p>';
   });
   if(r.workload){const w=r.workload;body+='<h2>توجيهات الرئيس</h2><p>الحالة المسجلة بتاريخ '+esc(fmtDate(w.capturedAt))+'</p>'+table(['إجمالي التوجيهات','منفذة / مغلقة','قيد التنفيذ'],[[w.directivesTotal,w.directivesDone,w.directivesOpen]]);}
   if(notes)body+='<h2>ملاحظات</h2><p>'+esc(notes)+'</p>';
-  return '<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><title>'+esc(title)+'</title><style>'+REPORT_STYLES+' .report-kpis{table-layout:fixed;border-collapse:separate;border-spacing:5px;margin:14px 0}.report-kpis td{background:#edf7f5!important;border:1px solid #c8e4dd;border-top:4px solid #008b80;text-align:center;padding:10px!important}.report-kpis strong{display:block;font-size:24pt;color:#006e65;line-height:1.4}.kpi-label{font-weight:bold;font-size:10pt}.kpi-hint{font-size:8.5pt;color:#52666b}.report-track{height:7px;background:#e4eeec;margin-top:5px}.report-progress{table-layout:fixed}.report-progress td:nth-child(2){text-align:center}.report-progress th:first-child{width:30%}.report-progress th:nth-child(2){width:25%}.report-note{background:#f7faf9;border-right:3px solid #a5cfc6;padding:8px 12px}.report-kpis,.report-progress{break-inside:avoid} body{font-family:Tahoma,Arial,sans-serif;font-size:10.5pt}h1{font-size:17pt}h2{font-size:13pt}.data-table{table-layout:fixed;width:100%;font-size:10pt}.data-table td{white-space:pre-wrap;overflow-wrap:break-word;vertical-align:top}.report-detail th:nth-child(1){width:5%}.report-detail th:nth-child(2){width:44%}.report-detail th:nth-child(3){width:23%}.report-detail th:nth-child(4){width:15%}.report-detail th:nth-child(5){width:13%}.report-note{font-size:10pt;color:#555;line-height:1.7}@page{size:A4 portrait;margin:14mm 12mm 18mm}thead{display:table-header-group}tr{break-inside:avoid}h2{break-after:avoid}</style></head><body><div class="professional-report">'+body+'</div></body></html>';
+  return '<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><title>'+esc(title)+'</title><style>'+REPORT_STYLES+' .report-kpis{table-layout:fixed;border-collapse:separate;border-spacing:5px;margin:14px 0}.report-kpis td{background:#edf7f5!important;border:1px solid #c8e4dd;border-top:4px solid #008b80;text-align:center;padding:10px!important}.report-kpis strong{display:block;font-size:24pt;color:#006e65;line-height:1.4}.kpi-label{font-weight:bold;font-size:10pt}.kpi-hint{font-size:8.5pt;color:#52666b}.report-track{height:7px;background:#e4eeec;margin-top:5px}.report-progress{table-layout:fixed}.report-progress td:nth-child(2){text-align:center}.report-progress th:first-child{width:30%}.report-progress th:nth-child(2){width:25%}.report-note{background:#f7faf9;border-right:3px solid #a5cfc6;padding:8px 12px}.report-kpis,.report-progress{break-inside:avoid} body{font-family:Tahoma,Arial,sans-serif;font-size:10.5pt}h1{font-size:17pt}h2{font-size:13pt}.data-table{table-layout:fixed;width:100%;font-size:10pt}.data-table td{white-space:pre-wrap;overflow-wrap:break-word;vertical-align:top}.topic-actions{margin:14pt 0;width:100%}.topic-actions .topic-name{text-align:right;background:#12675f;color:white;font-size:11pt;padding:6pt}.topic-actions .topic-meta{text-align:right;background:#edf6f4;color:#234640;font-weight:normal}.topic-actions thead{break-inside:avoid;break-after:avoid}.topic-actions td:first-child{font-variant-numeric:tabular-nums}.report-note{font-size:10pt;color:#555;line-height:1.7}@page{size:A4 portrait;margin:14mm 12mm 18mm}thead{display:table-header-group}tr{break-inside:avoid}h2{break-after:avoid}</style></head><body><div class="professional-report">'+body+'</div></body></html>';
 }
 
 const originalWeeklyCollector=collectWeeklyData,originalMonthlyCollector=collectMonthlyData,originalQuarterCollector=collectQuarterlyData;
