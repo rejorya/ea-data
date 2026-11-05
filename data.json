@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-05T03:26:38.224Z",
+  "exportedAt": "2026-11-05T03:26:49.995Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31574,7 +31574,15 @@
       "followScope": "external",
       "followEntity": "taqseem",
       "responseMethod": "",
-      "divFollowDate": "2026-09-27"
+      "divFollowDate": "2026-09-27",
+      "actionHistory": [
+        {
+          "date": "2026-11-05",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: جاهز للتصعيد — تواصلي أو صعّدي"
+        }
+      ]
     },
     {
       "id": 1789877650603.5947,
@@ -37879,7 +37887,14 @@
       "responseMethod": "",
       "previousClosedAt": "2026-10-14",
       "restoredAt": "2026-10-18T05:32:25.408Z",
-      "actionHistory": []
+      "actionHistory": [
+        {
+          "date": "2026-11-05",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        }
+      ]
     },
     {
       "id": 1791693857278.079,
@@ -38220,7 +38235,15 @@
       "recordId": 1791865110925.6453,
       "manualCount": 3,
       "followEntity": "",
-      "responseMethod": ""
+      "responseMethod": "",
+      "actionHistory": [
+        {
+          "date": "2026-11-05",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        }
+      ]
     },
     {
       "id": 1791951075109.6267,
@@ -38284,7 +38307,15 @@
       "recordId": 1791951075109.6267,
       "manualCount": 2,
       "followEntity": "",
-      "responseMethod": ""
+      "responseMethod": "",
+      "actionHistory": [
+        {
+          "date": "2026-11-05",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        }
+      ]
     },
     {
       "id": 1791955071143.7434,
@@ -38432,7 +38463,15 @@
       "manualCount": 3,
       "followEntity": "rais_depts",
       "raisDeptName": "مستشارة الرئيس لصون الطبيعة",
-      "responseMethod": ""
+      "responseMethod": "",
+      "actionHistory": [
+        {
+          "date": "2026-11-05",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        }
+      ]
     },
     {
       "id": 1791957710437.5051,
@@ -39824,7 +39863,15 @@
       "manualCount": 2,
       "followEntity": "rais_depts",
       "raisDeptName": "فريق التحول الرقمي",
-      "responseMethod": ""
+      "responseMethod": "",
+      "actionHistory": [
+        {
+          "date": "2026-11-05",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        }
+      ]
     },
     {
       "id": 1792315069286.0823,
@@ -39910,7 +39957,14 @@
       "manualCount": 3,
       "followEntity": "naib_office",
       "responseMethod": "",
-      "actionHistory": []
+      "actionHistory": [
+        {
+          "date": "2026-11-05",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        }
+      ]
     },
     {
       "id": 1792316753558.601,
@@ -40965,7 +41019,14 @@
       "followEntity": "rais_depts",
       "raisDeptName": "الدائرة القانونية",
       "responseMethod": "",
-      "actionHistory": []
+      "actionHistory": [
+        {
+          "date": "2026-11-05",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        }
+      ]
     },
     {
       "id": 1793081734389.3574,
@@ -41124,7 +41185,14 @@
       "manualCount": 3,
       "followEntity": "naib_office",
       "responseMethod": "",
-      "actionHistory": []
+      "actionHistory": [
+        {
+          "date": "2026-11-05",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        }
+      ]
     },
     {
       "id": 1793257687652.1992,
@@ -41235,6 +41303,12 @@
           "taqseem": "",
           "startDate": "2026-10-29",
           "daysSince": 0
+        },
+        {
+          "date": "2026-11-05",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
         }
       ]
     },
@@ -41342,6 +41416,12 @@
           "actionType": "status",
           "note": "جاهز للتصعيد تلقائيًا بعد انتهاء مهلة رد التقسيم",
           "by": "النظام"
+        },
+        {
+          "date": "2026-11-05",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
         }
       ],
       "divFollowDate": "2026-11-01"
