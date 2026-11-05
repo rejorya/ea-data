@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-05T09:49:13.008Z",
+  "exportedAt": "2026-11-05T09:52:48.676Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -42736,16 +42736,48 @@
       "followStart": "2026-11-02",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "other",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "auditOnly": false,
+          "changes": [
+            {
+              "field": "correspondenceDirection",
+              "before": "in",
+              "after": ""
+            }
+          ],
+          "previousStatus": "",
+          "date": "2026-11-03",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تعديل: اتجاه المراسلة",
+          "actionType": "visit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-11-02",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1793608720427.1292
+      "recordId": 1793608720427.1292,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": "",
+      "actionHistory": []
     },
     {
       "id": 1793609001223.2488,
@@ -58930,7 +58962,21 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1793872366534.3218,
+          "at": "2026-11-05T09:52:46.535Z",
+          "action": "إضافة متابعة",
+          "details": "طلب الموافقة  على زراعة  الأشجار  البرية في محمية وادي خوس والتعهد  بالعناية بها وحمايتها"
+        },
+        {
+          "id": 1793872366495.9565,
+          "at": "2026-11-05T09:52:46.495Z",
+          "action": "تعديل موضوع",
+          "details": "طلب الموافقة  على زراعة  الأشجار  البرية في محمية وادي خوس والتعهد  بالعناية بها وحمايتها"
+        }
+      ]
     },
     {
       "id": "1465a6ba-5919-420a-9ca2-1fd40c7e73c4",
