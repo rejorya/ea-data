@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-05T09:53:28.706Z",
+  "exportedAt": "2026-11-05T09:55:14.133Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -42954,16 +42954,53 @@
       "followStart": "2026-11-02",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "letter",
       "slaDays": 11,
       "kpi": "",
       "note": "اخر موعد للافادة بتاريخ 16 نوفمبر 2026",
-      "status": "new",
-      "followups": [],
+      "status": "awaiting",
+      "followups": [
+        {
+          "auditOnly": false,
+          "changes": [
+            {
+              "field": "correspondenceDirection",
+              "before": "in",
+              "after": ""
+            },
+            {
+              "field": "followEntity",
+              "before": "",
+              "after": "naib_office"
+            }
+          ],
+          "previousStatus": "new",
+          "date": "2026-11-02",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من جديد إلى بانتظار الإفادة — تعديل: اتجاه المراسلة، الجهة المتابعة",
+          "actionType": "visit",
+          "statusChange": "awaiting",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "بانتظار الإفادة",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-11-02",
+          "daysSince": 0
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1793609569717.5488
+      "recordId": 1793609569717.5488,
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "actionHistory": []
     }
   ],
   "archivedTopics": [
@@ -58997,6 +59034,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793872511993.9404,
+          "at": "2026-11-05T09:55:11.993Z",
+          "action": "إضافة متابعة",
+          "details": "متابعة تطبيق متطلبات المحتوى المحلي في تعاقدات الجهات الحكومية الخاضعة لقانون المناقصات"
+        },
+        {
+          "id": 1793872511947.8562,
+          "at": "2026-11-05T09:55:11.947Z",
+          "action": "تعديل موضوع",
+          "details": "متابعة تطبيق متطلبات المحتوى المحلي في تعاقدات الجهات الحكومية الخاضعة لقانون المناقصات"
+        },
         {
           "id": 1793872406547.4072,
           "at": "2026-11-05T09:53:26.547Z",
