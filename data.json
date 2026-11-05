@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-05T05:30:02.048Z",
+  "exportedAt": "2026-11-05T05:33:07.284Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -55712,6 +55712,33 @@
     "مركز محمية حديقة السليل الطبيعية"
   ],
   "activityLog": [
+    {
+      "id": "899d86f7-b818-4779-b16a-9920bdc94555",
+      "sessionId": "899d86f7-b818-4779-b16a-9920bdc94555",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-11-05T05:33:03.475Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null,
+      "central": true
+    },
     {
       "id": "5f37caa6-70d0-4f59-9ff0-57da79e7fdc1",
       "sessionId": "5f37caa6-70d0-4f59-9ff0-57da79e7fdc1",
