@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-04T09:58:54.452Z",
+  "exportedAt": "2026-11-05T03:26:34.180Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -30807,31 +30807,10 @@
           "taqseem": "",
           "startDate": "2026-09-15",
           "daysSince": 22
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "",
-          "date": "2026-11-04",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "متابعة",
-          "actionType": "visit",
-          "statusChange": "",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "",
-          "entity": "rais_depts",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-09-15",
-          "daysSince": 36
         }
       ],
       "sheet": "مُضاف يدوياً",
-      "manualCount": 5,
+      "manualCount": 4,
       "followEntity": "rais_depts",
       "raisDeptName": "دائرة التميز المؤسسي",
       "responseMethod": "",
@@ -30840,8 +30819,7 @@
       "externalEntities": [],
       "receivedFollowDate": "",
       "correspondenceDirection": "",
-      "followScope": "internal",
-      "actionHistory": []
+      "followScope": "internal"
     },
     {
       "id": 1789453689725.6372,
@@ -31596,15 +31574,7 @@
       "followScope": "external",
       "followEntity": "taqseem",
       "responseMethod": "",
-      "divFollowDate": "2026-09-27",
-      "actionHistory": [
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: جاهز للتصعيد — تواصلي أو صعّدي"
-        }
-      ]
+      "divFollowDate": "2026-09-27"
     },
     {
       "id": 1789877650603.5947,
@@ -33183,7 +33153,7 @@
       "divFollowDate": "2026-10-07",
       "actionHistory": [
         {
-          "date": "2026-11-04",
+          "date": "2026-11-05",
           "by": "رحاب بنت نصيب الفرج",
           "actionType": "other",
           "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
@@ -35886,16 +35856,10 @@
       "responseMethod": "",
       "actionHistory": [
         {
-          "date": "2026-11-04",
+          "date": "2026-11-05",
           "by": "رحاب بنت نصيب الفرج",
           "actionType": "other",
           "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
-        },
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تابعي التقسيم المختص مباشرة"
         }
       ]
     },
@@ -37377,16 +37341,10 @@
       "responseMethod": "",
       "actionHistory": [
         {
-          "date": "2026-11-04",
+          "date": "2026-11-05",
           "by": "رحاب بنت نصيب الفرج",
           "actionType": "other",
           "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
-        },
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تابعي التقسيم المختص مباشرة"
         }
       ]
     },
@@ -37921,20 +37879,7 @@
       "responseMethod": "",
       "previousClosedAt": "2026-10-14",
       "restoredAt": "2026-10-18T05:32:25.408Z",
-      "actionHistory": [
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
-        },
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تابعي التقسيم المختص مباشرة"
-        }
-      ]
+      "actionHistory": []
     },
     {
       "id": 1791693857278.079,
@@ -38217,7 +38162,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
-      "status": "closed",
+      "status": "esc",
       "followups": [
         {
           "date": "2026-10-13",
@@ -38269,49 +38214,13 @@
           "taqseem": "",
           "startDate": "2026-10-13",
           "daysSince": 3
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "esc",
-          "date": "2026-11-04",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من تم التصعيد إلى مُغلق",
-          "actionType": "status",
-          "statusChange": "closed",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "مُغلق",
-          "entity": "",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-13",
-          "daysSince": 16
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791865110925.6453,
-      "manualCount": 4,
+      "manualCount": 3,
       "followEntity": "",
-      "responseMethod": "",
-      "actionHistory": [
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
-        },
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تابعي التقسيم المختص مباشرة"
-        }
-      ],
-      "closedAt": "2026-11-04"
+      "responseMethod": ""
     },
     {
       "id": 1791951075109.6267,
@@ -38334,7 +38243,7 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "التخطيط\nلاعداد خطاب الى وزارة المالية وارفاق المتطلبات الاخرى المشار اليها\nتم الرد من مدير الدائرة بتاريخ 29/9الاخت الفاضلة رحاب الفرج المحترمة\nللتكرم بالاطلاع والعلم بما جاء في تعليق الفاضل أحمد الجرادي ونفيدكم بأننا في انتظار الموافقة من وزارة المالية حسب ما هو مطلوب من وزارة الإسكان والتخطيط العمراني وتجدون مرفقا طيه نسخة من الخطاب المتضمن تعليق الفاضل أحمد الجرادي (رقم 17) مع إفادتكم بأنه قد تم استيفاء جميع البيانات المطلوبة وفقا لما ورد في خطاب وزارة الإسكان والتخطيط العمراني.",
-      "status": "closed",
+      "status": "open",
       "followups": [
         {
           "date": "2026-10-14",
@@ -38369,71 +38278,13 @@
           "taqseem": "",
           "startDate": "2026-08-26",
           "daysSince": 45
-        },
-        {
-          "auditOnly": false,
-          "changes": [
-            {
-              "field": "followEntity",
-              "before": "",
-              "after": "rais_depts"
-            }
-          ],
-          "previousStatus": "open",
-          "date": "2026-11-01",
-          "replied": true,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تم عمل الحاق الى وزارة المالية\nتغيير الحالة من قيد المتابعة إلى بانتظار الإفادة — تعديل: الجهة المتابعة",
-          "actionType": "status",
-          "statusChange": "awaiting",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "بانتظار الإفادة",
-          "entity": "rais_depts",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-08-26",
-          "daysSince": 47
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "awaiting",
-          "date": "2026-11-04",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من بانتظار الإفادة إلى مُغلق",
-          "actionType": "status",
-          "statusChange": "closed",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "مُغلق",
-          "entity": "rais_depts",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-08-26",
-          "daysSince": 50
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791951075109.6267,
-      "manualCount": 4,
-      "followEntity": "rais_depts",
-      "responseMethod": "",
-      "actionHistory": [
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
-        }
-      ],
-      "raisDeptName": "",
-      "closedAt": "2026-11-04"
+      "manualCount": 2,
+      "followEntity": "",
+      "responseMethod": ""
     },
     {
       "id": 1791955071143.7434,
@@ -38522,7 +38373,7 @@
       "slaDays": 10,
       "kpi": "",
       "note": "شكرا لكم \nالدكتورة ثريا \nلوضع تصور حول مواطن الاستفادة من المبادرة بالتنسيق مع التعاون الدولي والغطاء النباتي ورفعها الينا خلال اسبوعين",
-      "status": "closed",
+      "status": "open",
       "followups": [
         {
           "date": "2026-10-20",
@@ -38574,44 +38425,14 @@
           "taqseem": "",
           "startDate": "2026-10-14",
           "daysSince": 8
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "open",
-          "date": "2026-11-04",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من قيد المتابعة إلى مُغلق",
-          "actionType": "status",
-          "statusChange": "closed",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "مُغلق",
-          "entity": "rais_depts",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-14",
-          "daysSince": 15
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791955959293.3992,
-      "manualCount": 4,
+      "manualCount": 3,
       "followEntity": "rais_depts",
       "raisDeptName": "مستشارة الرئيس لصون الطبيعة",
-      "responseMethod": "",
-      "actionHistory": [
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
-        }
-      ],
-      "closedAt": "2026-11-04"
+      "responseMethod": ""
     },
     {
       "id": 1791957710437.5051,
@@ -39670,7 +39491,7 @@
       "slaDays": null,
       "kpi": "",
       "note": "",
-      "status": "closed",
+      "status": "new",
       "followups": [
         {
           "date": "2026-10-18",
@@ -39688,37 +39509,14 @@
           "taqseem": "",
           "startDate": "2026-10-15",
           "daysSince": 1
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "new",
-          "date": "2026-11-04",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من جديد إلى مُغلق",
-          "actionType": "status",
-          "statusChange": "closed",
-          "scope": "external",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "مُغلق",
-          "entity": "other",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-15",
-          "daysSince": 14
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792303483439.5813,
-      "manualCount": 2,
+      "manualCount": 1,
       "followEntity": "other",
       "otherEntityName": "",
-      "responseMethod": "",
-      "closedAt": "2026-11-04",
-      "actionHistory": []
+      "responseMethod": ""
     },
     {
       "id": 1792312158256.0767,
@@ -39984,7 +39782,7 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "يجب وضع مواعيد زمنية لتحقيق المستهدفات",
-      "status": "esc",
+      "status": "open",
       "followups": [
         {
           "date": "2026-10-20",
@@ -40019,43 +39817,14 @@
           "taqseem": "",
           "startDate": "2026-10-05",
           "daysSince": 12
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "open",
-          "date": "2026-11-03",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من قيد المتابعة إلى تم التصعيد",
-          "actionType": "esc",
-          "statusChange": "esc",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "تم التصعيد",
-          "entity": "rais_depts",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-05",
-          "daysSince": 21
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792314346297.8635,
-      "manualCount": 3,
+      "manualCount": 2,
       "followEntity": "rais_depts",
       "raisDeptName": "فريق التحول الرقمي",
-      "responseMethod": "",
-      "actionHistory": [
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
-        }
-      ]
+      "responseMethod": ""
     },
     {
       "id": 1792315069286.0823,
@@ -40078,7 +39847,7 @@
       "slaDays": null,
       "kpi": "std14",
       "note": "نائب الرئيس\nللدراسة والافادة",
-      "status": "esc",
+      "status": "open",
       "followups": [
         {
           "date": "2026-10-18",
@@ -40134,42 +39903,14 @@
           "taqseem": "",
           "startDate": "2026-10-15",
           "daysSince": 11
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "open",
-          "date": "2026-11-04",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من قيد المتابعة إلى تم التصعيد",
-          "actionType": "esc",
-          "statusChange": "esc",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "تم التصعيد",
-          "entity": "naib_office",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-15",
-          "daysSince": 14
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792315069286.0823,
-      "manualCount": 4,
+      "manualCount": 3,
       "followEntity": "naib_office",
       "responseMethod": "",
-      "actionHistory": [
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: افتحي الموضوع وسجّلي متابعة اليوم"
-        }
-      ]
+      "actionHistory": []
     },
     {
       "id": 1792316753558.601,
@@ -40395,7 +40136,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "نائب الرئيس\nالتعاون الدولي\nمكتب الرئيس\nاولا للنظر في ملاحظات الشركة ومدى امكانية الاخذ بها وكذلك مدى امكانية اضافة اعضاء من هذه الشركة والقطاع الخاص ضمن الفريق التفاوضي\n\nثانيا لوضع حوكمة للاجتماع مع الشركات المختصة من قبل المديريات التخصصية قبل كل تفاوض لاتفاقية دولية واخذ مرئياتهم واضافة ممثلي عنهم في الفرق التفاوضية \nورفع الحوكمة الينا للاعتماد",
-      "status": "closed",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-10-19",
@@ -40451,58 +40192,15 @@
           "taqseem": "",
           "startDate": "2026-10-18",
           "daysSince": 10
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "awaiting",
-          "date": "2026-11-03",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من بانتظار الإفادة إلى تم التصعيد",
-          "actionType": "esc",
-          "statusChange": "esc",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "تم التصعيد",
-          "entity": "naib_and_rais",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-18",
-          "daysSince": 12
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "esc",
-          "date": "2026-11-04",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من تم التصعيد إلى مُغلق",
-          "actionType": "status",
-          "statusChange": "closed",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "مُغلق",
-          "entity": "naib_and_rais",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-18",
-          "daysSince": 13
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792382597915.7302,
-      "manualCount": 5,
+      "manualCount": 3,
       "followEntity": "naib_and_rais",
       "raisDeptName": "دائرة التعاون الدولي",
       "responseMethod": "",
-      "actionHistory": [],
-      "closedAt": "2026-11-04"
+      "actionHistory": []
     },
     {
       "id": 1792383068900.3394,
@@ -41148,7 +40846,7 @@
       "slaDays": 10,
       "kpi": "w2week",
       "note": "١ يحال الى مركز الطوارئ للارتكاز عليه في طلب تمويل لتكليف شركة او مجموعة شركات متخصصة لمكافحة التلوث الزيتي في مسندم فور حدوثه (تم الرد من قبل المركز)\n\n٢ يكلف الالتزام البيئي باجراء فحوصات اوسع لعشرة مواقع مختلفة في محافظة مسندم بواقع عدة عينات في كل موقع ورفع التقرير خلال ١٠ ايام",
-      "status": "esc",
+      "status": "new",
       "followups": [
         {
           "date": "2026-10-26",
@@ -41166,35 +40864,13 @@
           "taqseem": "",
           "startDate": "2026-10-26",
           "daysSince": 0
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "new",
-          "date": "2026-11-03",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تم رفع مخاطبه وليس التقرير المطلوب\nتغيير الحالة من جديد إلى تم التصعيد",
-          "actionType": "esc",
-          "statusChange": "esc",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "تم التصعيد",
-          "entity": "naib_office",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-26",
-          "daysSince": 6
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793008356975.9512,
-      "manualCount": 2,
+      "manualCount": 1,
       "followEntity": "naib_office",
-      "responseMethod": "",
-      "actionHistory": []
+      "responseMethod": ""
     },
     {
       "id": 1793079092833.2273,
@@ -41203,7 +40879,7 @@
       "from": "وزارة العدل والشؤون القانونية",
       "docNo": "1170/3/2022v423-65",
       "toEntity": "الدائرة القانونية",
-      "taqseemName": "المديرية العامة للتغير المناخي",
+      "taqseemName": "",
       "priority": "normal",
       "confidentiality": "normal",
       "date": "2026-10-27",
@@ -41217,7 +40893,7 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "",
-      "status": "closed",
+      "status": "awaiting",
       "followups": [
         {
           "auditOnly": false,
@@ -41281,97 +40957,15 @@
           "taqseem": "",
           "startDate": "2026-10-27",
           "daysSince": 3
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "",
-          "date": "2026-11-04",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "متابعة",
-          "actionType": "call",
-          "statusChange": "",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "",
-          "entity": "rais_depts",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-27",
-          "daysSince": 6
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "awaiting",
-          "date": "2026-11-04",
-          "replied": true,
-          "responseMethod": "via_follow",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من بانتظار الإفادة إلى مُغلق",
-          "actionType": "status",
-          "statusChange": "closed",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "مُغلق",
-          "entity": "taqseem",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "المديرية العامة للتغير المناخي",
-          "startDate": "2026-10-27",
-          "daysSince": 6
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793079092833.2273,
-      "manualCount": 5,
-      "followEntity": "taqseem",
+      "manualCount": 3,
+      "followEntity": "rais_depts",
       "raisDeptName": "الدائرة القانونية",
-      "responseMethod": "via_follow",
-      "actionHistory": [
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
-        },
-        {
-          "auditOnly": true,
-          "changes": [
-            {
-              "field": "followEntity",
-              "before": "rais_depts",
-              "after": "taqseem"
-            },
-            {
-              "field": "taqseemName",
-              "before": "",
-              "after": "المديرية العامة للتغير المناخي"
-            }
-          ],
-          "previousStatus": "",
-          "date": "2026-11-04",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تعديل: الجهة المتابعة، التقسيم",
-          "actionType": "edit",
-          "statusChange": "",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "تم حفظ التعديل",
-          "entity": "taqseem",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "المديرية العامة للتغير المناخي",
-          "startDate": "2026-10-27",
-          "daysSince": 6
-        }
-      ],
-      "closedAt": "2026-11-04"
+      "responseMethod": "",
+      "actionHistory": []
     },
     {
       "id": 1793081734389.3574,
@@ -41463,7 +41057,7 @@
       "slaDays": 5,
       "kpi": "wweek",
       "note": "نائب الرئيس\nلعمل اللازم خلال اسبوع ",
-      "status": "closed",
+      "status": "awaiting",
       "followups": [
         {
           "date": "2026-10-27",
@@ -41523,49 +41117,14 @@
           "taqseem": "",
           "startDate": "2026-10-27",
           "daysSince": 3
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "awaiting",
-          "date": "2026-11-04",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من بانتظار الإفادة إلى مُغلق",
-          "actionType": "status",
-          "statusChange": "closed",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "مُغلق",
-          "entity": "naib_office",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-27",
-          "daysSince": 6
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793082160518.7405,
-      "manualCount": 4,
+      "manualCount": 3,
       "followEntity": "naib_office",
       "responseMethod": "",
-      "actionHistory": [
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
-        },
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تابعي التقسيم المختص مباشرة"
-        }
-      ],
-      "closedAt": "2026-11-04"
+      "actionHistory": []
     },
     {
       "id": 1793257687652.1992,
@@ -41588,7 +41147,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
-      "status": "closed",
+      "status": "new",
       "followups": [
         {
           "auditOnly": false,
@@ -41642,53 +41201,11 @@
           "taqseem": "",
           "startDate": "2026-10-29",
           "daysSince": 1
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "new",
-          "date": "2026-11-03",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من جديد إلى تم التصعيد",
-          "actionType": "esc",
-          "statusChange": "esc",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "تم التصعيد",
-          "entity": "naib_office",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-29",
-          "daysSince": 3
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "esc",
-          "date": "2026-11-04",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من تم التصعيد إلى مُغلق",
-          "actionType": "status",
-          "statusChange": "closed",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "مُغلق",
-          "entity": "naib_office",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-29",
-          "daysSince": 4
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793257687652.1992,
-      "manualCount": 4,
+      "manualCount": 2,
       "followEntity": "naib_office",
       "responseMethod": "",
       "actionHistory": [
@@ -41718,21 +41235,8 @@
           "taqseem": "",
           "startDate": "2026-10-29",
           "daysSince": 0
-        },
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
-        },
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تابعي التقسيم المختص مباشرة"
         }
-      ],
-      "closedAt": "2026-11-04"
+      ]
     },
     {
       "id": 1793258199380.0686,
@@ -41755,7 +41259,7 @@
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
-      "status": "closed",
+      "status": "ready_esc",
       "followups": [
         {
           "auditOnly": false,
@@ -41825,44 +41329,22 @@
           "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
           "startDate": "2026-10-27",
           "daysSince": 3
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "awaiting_div",
-          "date": "2026-11-04",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تم التوجيه لتنسيق المنصه\nتغيير الحالة من بانتظار رد التقسيم إلى مُغلق",
-          "actionType": "status",
-          "statusChange": "closed",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "مُغلق",
-          "entity": "taqseem",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
-          "startDate": "2026-10-27",
-          "daysSince": 6
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793258199380.0686,
-      "manualCount": 3,
+      "manualCount": 2,
       "followEntity": "taqseem",
       "responseMethod": "",
       "actionHistory": [
         {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+          "date": "2026-11-05",
+          "actionType": "status",
+          "note": "جاهز للتصعيد تلقائيًا بعد انتهاء مهلة رد التقسيم",
+          "by": "النظام"
         }
       ],
-      "divFollowDate": "2026-11-01",
-      "closedAt": "2026-11-04"
+      "divFollowDate": "2026-11-01"
     },
     {
       "id": 1793258459190.3628,
@@ -49863,1229 +49345,6 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-11-01T05:01:10.272Z",
       "archiveVersion": 1
-    },
-    {
-      "id": 1792303483439.5813,
-      "transactionType": "followup",
-      "title": "طلب ترشيح للمشاركة في ملتقى التشريعات البيئية بمحافظة مسقط",
-      "from": "هيئة البيئة",
-      "docNo": "1170/3/2022v422-33",
-      "toEntity": "عدة جهات",
-      "taqseemName": "",
-      "priority": "urgent",
-      "confidentiality": "normal",
-      "date": "2026-10-15",
-      "receivedFollowDate": "2026-10-18",
-      "followStart": "2026-10-15",
-      "type": "ext",
-      "followScope": "external",
-      "correspondenceDirection": "out",
-      "externalEntities": [
-        {
-          "id": 1792303526720.686,
-          "name": "جامعة مسقط",
-          "replied": false,
-          "lastFollowDate": "",
-          "responseMethod": ""
-        },
-        {
-          "id": 1792303540416.6895,
-          "name": "الجامعة العربية المفتوحة",
-          "replied": false,
-          "lastFollowDate": "",
-          "responseMethod": ""
-        },
-        {
-          "id": 1792303609607.4944,
-          "name": "كلية الزهراء للبنات",
-          "replied": false,
-          "lastFollowDate": "",
-          "responseMethod": ""
-        },
-        {
-          "id": 1792303640720.975,
-          "name": "جامعة السلطان قابوس",
-          "replied": false,
-          "lastFollowDate": "",
-          "responseMethod": ""
-        },
-        {
-          "id": 1792303667647.9758,
-          "name": "جامعة التقنية والعلوم التطبيقية",
-          "replied": false,
-          "lastFollowDate": "",
-          "responseMethod": ""
-        }
-      ],
-      "slaMode": "none",
-      "slaDays": null,
-      "kpi": "",
-      "note": "",
-      "status": "closed",
-      "followups": [
-        {
-          "date": "2026-10-18",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تم التوجيه للدائرة بالمتابعة للاختصاص",
-          "actionType": "visit",
-          "scope": "external",
-          "by": "",
-          "result": "",
-          "entity": "other",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-15",
-          "daysSince": 1
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "new",
-          "date": "2026-11-04",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من جديد إلى مُغلق",
-          "actionType": "status",
-          "statusChange": "closed",
-          "scope": "external",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "مُغلق",
-          "entity": "other",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-15",
-          "daysSince": 14
-        }
-      ],
-      "sheet": "مُضاف يدوياً",
-      "recordId": 1792303483439.5813,
-      "manualCount": 2,
-      "followEntity": "other",
-      "otherEntityName": "",
-      "responseMethod": "",
-      "closedAt": "2026-11-04",
-      "actionHistory": [],
-      "archivedAt": "2026-11-04T03:17:43.537Z",
-      "archivedBy": "رحاب بنت نصيب الفرج",
-      "archiveUpdatedAt": "2026-11-04T03:17:43.537Z",
-      "archiveVersion": 1
-    },
-    {
-      "id": 1793257687652.1992,
-      "transactionType": "followup",
-      "title": "ايفاد خبير من الوكالة الدولية للطاقة الذرية في مجال الادارة الشاملة للنفايات المشعة والمصادر الخارجة عن الرقابة",
-      "from": "وزارة الخارجية",
-      "docNo": "1170/3/2022v423-87",
-      "toEntity": "نائب الرئيس",
-      "taqseemName": "",
-      "priority": "urgent",
-      "confidentiality": "normal",
-      "date": "2026-10-29",
-      "receivedFollowDate": "2026-10-29",
-      "followStart": "2026-10-29",
-      "type": "int",
-      "followScope": "internal",
-      "correspondenceDirection": "",
-      "externalEntities": [],
-      "slaMode": "kpi",
-      "slaDays": null,
-      "kpi": "naib3",
-      "note": "",
-      "status": "closed",
-      "followups": [
-        {
-          "auditOnly": false,
-          "changes": [
-            {
-              "field": "correspondenceDirection",
-              "before": "in",
-              "after": ""
-            },
-            {
-              "field": "followEntity",
-              "before": "",
-              "after": "naib_office"
-            }
-          ],
-          "previousStatus": "",
-          "date": "2026-10-29",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تعديل: اتجاه المراسلة، الجهة المتابعة",
-          "actionType": "visit",
-          "statusChange": "",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "",
-          "entity": "naib_office",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-29",
-          "daysSince": 0
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "",
-          "date": "2026-11-01",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "متابعة",
-          "actionType": "visit",
-          "statusChange": "",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "",
-          "entity": "naib_office",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-29",
-          "daysSince": 1
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "new",
-          "date": "2026-11-03",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من جديد إلى تم التصعيد",
-          "actionType": "esc",
-          "statusChange": "esc",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "تم التصعيد",
-          "entity": "naib_office",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-29",
-          "daysSince": 3
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "esc",
-          "date": "2026-11-04",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من تم التصعيد إلى مُغلق",
-          "actionType": "status",
-          "statusChange": "closed",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "مُغلق",
-          "entity": "naib_office",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-29",
-          "daysSince": 4
-        }
-      ],
-      "sheet": "مُضاف يدوياً",
-      "recordId": 1793257687652.1992,
-      "manualCount": 4,
-      "followEntity": "naib_office",
-      "responseMethod": "",
-      "actionHistory": [
-        {
-          "auditOnly": true,
-          "changes": [
-            {
-              "field": "confidentiality",
-              "before": "secret",
-              "after": "normal"
-            }
-          ],
-          "previousStatus": "",
-          "date": "2026-10-29",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تعديل: السرية",
-          "actionType": "edit",
-          "statusChange": "",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "تم حفظ التعديل",
-          "entity": "naib_office",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-29",
-          "daysSince": 0
-        },
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
-        },
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تابعي التقسيم المختص مباشرة"
-        }
-      ],
-      "closedAt": "2026-11-04",
-      "archivedAt": "2026-11-04T03:34:56.012Z",
-      "archivedBy": "رحاب بنت نصيب الفرج",
-      "archiveUpdatedAt": "2026-11-04T03:34:56.012Z",
-      "archiveVersion": 1
-    },
-    {
-      "id": 1791955959293.3992,
-      "transactionType": "followup",
-      "title": "محضر اجتماع اللجنة التنفيذية لمبادرة الشرق الأوسط الخضراء",
-      "from": "دائرة التعاون الدولي",
-      "docNo": "1530/1/2022v4-78",
-      "toEntity": "مستشارة الرئيس لصون الطبيعة",
-      "taqseemName": "",
-      "priority": "normal",
-      "confidentiality": "normal",
-      "date": "2026-10-12",
-      "receivedFollowDate": "2026-10-14",
-      "followStart": "2026-10-14",
-      "type": "int",
-      "followScope": "internal",
-      "correspondenceDirection": "",
-      "externalEntities": [],
-      "slaMode": "rais",
-      "slaDays": 10,
-      "kpi": "",
-      "note": "شكرا لكم \nالدكتورة ثريا \nلوضع تصور حول مواطن الاستفادة من المبادرة بالتنسيق مع التعاون الدولي والغطاء النباتي ورفعها الينا خلال اسبوعين",
-      "status": "closed",
-      "followups": [
-        {
-          "date": "2026-10-20",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "متابعة",
-          "actionType": "visit",
-          "scope": "internal",
-          "by": "",
-          "result": "",
-          "entity": "rais_depts",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-14",
-          "daysSince": 4
-        },
-        {
-          "date": "2026-10-20",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "متابعة",
-          "actionType": "",
-          "scope": "internal",
-          "by": "",
-          "result": "جاري العمل",
-          "entity": "rais_depts",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-14",
-          "daysSince": 4
-        },
-        {
-          "date": "2026-10-26",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "متابعة",
-          "actionType": "visit",
-          "scope": "internal",
-          "by": "",
-          "result": "",
-          "entity": "rais_depts",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-14",
-          "daysSince": 8
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "open",
-          "date": "2026-11-04",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من قيد المتابعة إلى مُغلق",
-          "actionType": "status",
-          "statusChange": "closed",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "مُغلق",
-          "entity": "rais_depts",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-14",
-          "daysSince": 15
-        }
-      ],
-      "sheet": "مُضاف يدوياً",
-      "recordId": 1791955959293.3992,
-      "manualCount": 4,
-      "followEntity": "rais_depts",
-      "raisDeptName": "مستشارة الرئيس لصون الطبيعة",
-      "responseMethod": "",
-      "actionHistory": [
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
-        }
-      ],
-      "closedAt": "2026-11-04",
-      "archivedAt": "2026-11-04T03:52:04.503Z",
-      "archivedBy": "رحاب بنت نصيب الفرج",
-      "archiveUpdatedAt": "2026-11-04T03:52:04.503Z",
-      "archiveVersion": 1
-    },
-    {
-      "id": 1792382597915.7302,
-      "transactionType": "followup",
-      "title": "تقديم مستندات بشأن مراجعة اتفاقية  بازل في مجال  المنسجوجات",
-      "from": "بلتك تكستايل تريدينج المنطقة الحرة بصلالة",
-      "docNo": "1170/3/2022v422-47",
-      "toEntity": "نائب الرئيس",
-      "taqseemName": "",
-      "priority": "normal",
-      "confidentiality": "normal",
-      "date": "2026-10-19",
-      "receivedFollowDate": "2026-10-19",
-      "followStart": "2026-10-18",
-      "type": "int",
-      "followScope": "internal",
-      "correspondenceDirection": "",
-      "externalEntities": [],
-      "slaMode": "kpi",
-      "slaDays": null,
-      "kpi": "other",
-      "note": "نائب الرئيس\nالتعاون الدولي\nمكتب الرئيس\nاولا للنظر في ملاحظات الشركة ومدى امكانية الاخذ بها وكذلك مدى امكانية اضافة اعضاء من هذه الشركة والقطاع الخاص ضمن الفريق التفاوضي\n\nثانيا لوضع حوكمة للاجتماع مع الشركات المختصة من قبل المديريات التخصصية قبل كل تفاوض لاتفاقية دولية واخذ مرئياتهم واضافة ممثلي عنهم في الفرق التفاوضية \nورفع الحوكمة الينا للاعتماد",
-      "status": "closed",
-      "followups": [
-        {
-          "date": "2026-10-19",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "متابعة",
-          "actionType": "visit",
-          "scope": "internal",
-          "by": "",
-          "result": "",
-          "entity": "naib_and_rais",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-18",
-          "daysSince": 1
-        },
-        {
-          "date": "2026-10-26",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "متابعة",
-          "actionType": "visit",
-          "scope": "internal",
-          "by": "",
-          "result": "",
-          "entity": "naib_and_rais",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-18",
-          "daysSince": 6
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "new",
-          "date": "2026-11-01",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من جديد إلى بانتظار الإفادة",
-          "actionType": "visit",
-          "statusChange": "awaiting",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "بانتظار الإفادة",
-          "entity": "naib_and_rais",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-18",
-          "daysSince": 10
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "awaiting",
-          "date": "2026-11-03",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من بانتظار الإفادة إلى تم التصعيد",
-          "actionType": "esc",
-          "statusChange": "esc",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "تم التصعيد",
-          "entity": "naib_and_rais",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-18",
-          "daysSince": 12
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "esc",
-          "date": "2026-11-04",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من تم التصعيد إلى مُغلق",
-          "actionType": "status",
-          "statusChange": "closed",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "مُغلق",
-          "entity": "naib_and_rais",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-18",
-          "daysSince": 13
-        }
-      ],
-      "sheet": "مُضاف يدوياً",
-      "recordId": 1792382597915.7302,
-      "manualCount": 5,
-      "followEntity": "naib_and_rais",
-      "raisDeptName": "دائرة التعاون الدولي",
-      "responseMethod": "",
-      "actionHistory": [],
-      "closedAt": "2026-11-04",
-      "archivedAt": "2026-11-04T05:00:55.958Z",
-      "archivedBy": "رحاب بنت نصيب الفرج",
-      "archiveUpdatedAt": "2026-11-04T05:00:55.958Z",
-      "archiveVersion": 1
-    },
-    {
-      "id": 1793082160518.7405,
-      "transactionType": "followup",
-      "title": "مشروع قواعد تنظيم الشؤون البيئية في المناطق الخاضعة لإشراف الهيئة",
-      "from": "الهيئة العامة للمناطق الاقتصادية الخاصة والمناطق الحرة",
-      "docNo": "1170/3/2022v423-42",
-      "toEntity": "نائب الرئيس",
-      "taqseemName": "",
-      "priority": "normal",
-      "confidentiality": "normal",
-      "date": "2026-10-26",
-      "receivedFollowDate": "2026-10-27",
-      "followStart": "2026-10-27",
-      "type": "int",
-      "followScope": "internal",
-      "correspondenceDirection": "",
-      "externalEntities": [],
-      "slaMode": "rais",
-      "slaDays": 5,
-      "kpi": "wweek",
-      "note": "نائب الرئيس\nلعمل اللازم خلال اسبوع ",
-      "status": "closed",
-      "followups": [
-        {
-          "date": "2026-10-27",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "متابعة",
-          "actionType": "visit",
-          "scope": "internal",
-          "by": "",
-          "result": "",
-          "entity": "naib_office",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-27",
-          "daysSince": 0
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "new",
-          "date": "2026-10-29",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من جديد إلى بانتظار الإفادة",
-          "actionType": "visit",
-          "statusChange": "awaiting",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "بانتظار الإفادة",
-          "entity": "naib_office",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-27",
-          "daysSince": 2
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "",
-          "date": "2026-11-01",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "متابعة",
-          "actionType": "visit",
-          "statusChange": "",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "",
-          "entity": "naib_office",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-27",
-          "daysSince": 3
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "awaiting",
-          "date": "2026-11-04",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من بانتظار الإفادة إلى مُغلق",
-          "actionType": "status",
-          "statusChange": "closed",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "مُغلق",
-          "entity": "naib_office",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-27",
-          "daysSince": 6
-        }
-      ],
-      "sheet": "مُضاف يدوياً",
-      "recordId": 1793082160518.7405,
-      "manualCount": 4,
-      "followEntity": "naib_office",
-      "responseMethod": "",
-      "actionHistory": [
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
-        },
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تابعي التقسيم المختص مباشرة"
-        }
-      ],
-      "closedAt": "2026-11-04",
-      "archivedAt": "2026-11-04T05:02:51.008Z",
-      "archivedBy": "رحاب بنت نصيب الفرج",
-      "archiveUpdatedAt": "2026-11-04T05:02:51.008Z",
-      "archiveVersion": 1
-    },
-    {
-      "id": 1793258199380.0686,
-      "transactionType": "followup",
-      "title": "نفوق الحيتان ومخاطر أنشطة الصيد في منطقة بر الحكمان",
-      "from": "وزارة الثروة الزراعية و السمكية و موارد المياه",
-      "docNo": "1170/3/2022v423-58",
-      "toEntity": "نائب الرئيس",
-      "taqseemName": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
-      "priority": "normal",
-      "confidentiality": "normal",
-      "date": "2026-10-27",
-      "receivedFollowDate": "2026-10-28",
-      "followStart": "2026-10-27",
-      "type": "int",
-      "followScope": "internal",
-      "correspondenceDirection": "",
-      "externalEntities": [],
-      "slaMode": "kpi",
-      "slaDays": null,
-      "kpi": "naib3",
-      "note": "",
-      "status": "closed",
-      "followups": [
-        {
-          "auditOnly": false,
-          "changes": [
-            {
-              "field": "correspondenceDirection",
-              "before": "in",
-              "after": ""
-            },
-            {
-              "field": "confidentiality",
-              "before": "secret",
-              "after": "normal"
-            },
-            {
-              "field": "followEntity",
-              "before": "",
-              "after": "naib_office"
-            }
-          ],
-          "previousStatus": "",
-          "date": "2026-10-29",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تعديل: اتجاه المراسلة، السرية، الجهة المتابعة",
-          "actionType": "visit",
-          "statusChange": "",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "",
-          "entity": "naib_office",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-27",
-          "daysSince": 2
-        },
-        {
-          "auditOnly": false,
-          "changes": [
-            {
-              "field": "followEntity",
-              "before": "naib_office",
-              "after": "taqseem"
-            },
-            {
-              "field": "taqseemName",
-              "before": "",
-              "after": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية"
-            }
-          ],
-          "previousStatus": "new",
-          "date": "2026-11-01",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من جديد إلى تمت متابعة التقسيم المختص — تعديل: الجهة المتابعة، التقسيم",
-          "actionType": "visit",
-          "statusChange": "div_followed",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "تمت متابعة التقسيم المختص",
-          "entity": "taqseem",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
-          "startDate": "2026-10-27",
-          "daysSince": 3
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "awaiting_div",
-          "date": "2026-11-04",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تم التوجيه لتنسيق المنصه\nتغيير الحالة من بانتظار رد التقسيم إلى مُغلق",
-          "actionType": "status",
-          "statusChange": "closed",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "مُغلق",
-          "entity": "taqseem",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "المديرية العامة للتنوع الاحيائي والمحميات الطبيعية",
-          "startDate": "2026-10-27",
-          "daysSince": 6
-        }
-      ],
-      "sheet": "مُضاف يدوياً",
-      "recordId": 1793258199380.0686,
-      "manualCount": 3,
-      "followEntity": "taqseem",
-      "responseMethod": "",
-      "actionHistory": [
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
-        }
-      ],
-      "divFollowDate": "2026-11-01",
-      "closedAt": "2026-11-04",
-      "archivedAt": "2026-11-04T05:06:32.589Z",
-      "archivedBy": "رحاب بنت نصيب الفرج",
-      "archiveUpdatedAt": "2026-11-04T05:06:32.590Z",
-      "archiveVersion": 1
-    },
-    {
-      "id": 1791865110925.6453,
-      "transactionType": "followup",
-      "title": "تنفيذ ورش عمل الإجادة التنفيذية ضمن الخطة التدريبية لمنظومة إجادة لعام 2026م",
-      "from": "وزارة العمل",
-      "docNo": "1170/3/2022v421-79",
-      "toEntity": "نائب الرئيس",
-      "taqseemName": "",
-      "priority": "urgent",
-      "confidentiality": "normal",
-      "date": "2026-10-12",
-      "receivedFollowDate": "2026-10-13",
-      "followStart": "2026-10-13",
-      "type": "int",
-      "followScope": "internal",
-      "correspondenceDirection": "",
-      "externalEntities": [],
-      "slaMode": "kpi",
-      "slaDays": null,
-      "kpi": "naib3",
-      "note": "",
-      "status": "closed",
-      "followups": [
-        {
-          "date": "2026-10-13",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "متابعة",
-          "actionType": "visit",
-          "scope": "internal",
-          "by": "",
-          "result": "",
-          "entity": "",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-13",
-          "daysSince": 0
-        },
-        {
-          "date": "2026-10-14",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "متابعة",
-          "actionType": "visit",
-          "scope": "internal",
-          "by": "",
-          "result": "",
-          "entity": "",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-13",
-          "daysSince": 1
-        },
-        {
-          "date": "2026-10-18",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "متابعة",
-          "actionType": "visit",
-          "scope": "internal",
-          "by": "",
-          "result": "",
-          "entity": "",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-13",
-          "daysSince": 3
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "esc",
-          "date": "2026-11-04",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من تم التصعيد إلى مُغلق",
-          "actionType": "status",
-          "statusChange": "closed",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "مُغلق",
-          "entity": "",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-13",
-          "daysSince": 16
-        }
-      ],
-      "sheet": "مُضاف يدوياً",
-      "recordId": 1791865110925.6453,
-      "manualCount": 4,
-      "followEntity": "",
-      "responseMethod": "",
-      "actionHistory": [
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
-        },
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تابعي التقسيم المختص مباشرة"
-        }
-      ],
-      "closedAt": "2026-11-04",
-      "archivedAt": "2026-11-04T05:08:30.744Z",
-      "archivedBy": "رحاب بنت نصيب الفرج",
-      "archiveUpdatedAt": "2026-11-04T05:08:30.744Z",
-      "archiveVersion": 1
-    },
-    {
-      "id": 1793079092833.2273,
-      "transactionType": "followup",
-      "title": "طلب مراجعة مشروع إصدار لائحة إدارة التغير  المناخي",
-      "from": "وزارة العدل والشؤون القانونية",
-      "docNo": "1170/3/2022v423-65",
-      "toEntity": "الدائرة القانونية",
-      "taqseemName": "المديرية العامة للتغير المناخي",
-      "priority": "normal",
-      "confidentiality": "normal",
-      "date": "2026-10-27",
-      "receivedFollowDate": "2026-10-27",
-      "followStart": "2026-10-27",
-      "type": "int",
-      "followScope": "internal",
-      "correspondenceDirection": "",
-      "externalEntities": [],
-      "slaMode": "kpi",
-      "slaDays": null,
-      "kpi": "gov5",
-      "note": "",
-      "status": "closed",
-      "followups": [
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "",
-          "date": "2026-10-29",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "متابعة",
-          "actionType": "visit",
-          "statusChange": "",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "",
-          "entity": "rais_depts",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-27",
-          "daysSince": 2
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "new",
-          "date": "2026-10-29",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من جديد إلى بانتظار الإفادة",
-          "actionType": "status",
-          "statusChange": "awaiting",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "بانتظار الإفادة",
-          "entity": "rais_depts",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-27",
-          "daysSince": 2
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "",
-          "date": "2026-11-01",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "متابعة",
-          "actionType": "visit",
-          "statusChange": "",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "",
-          "entity": "rais_depts",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-27",
-          "daysSince": 3
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "",
-          "date": "2026-11-04",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "متابعة",
-          "actionType": "call",
-          "statusChange": "",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "",
-          "entity": "rais_depts",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-10-27",
-          "daysSince": 6
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "awaiting",
-          "date": "2026-11-04",
-          "replied": true,
-          "responseMethod": "via_follow",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من بانتظار الإفادة إلى مُغلق",
-          "actionType": "status",
-          "statusChange": "closed",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "مُغلق",
-          "entity": "taqseem",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "المديرية العامة للتغير المناخي",
-          "startDate": "2026-10-27",
-          "daysSince": 6
-        }
-      ],
-      "sheet": "مُضاف يدوياً",
-      "recordId": 1793079092833.2273,
-      "manualCount": 5,
-      "followEntity": "taqseem",
-      "raisDeptName": "الدائرة القانونية",
-      "responseMethod": "via_follow",
-      "actionHistory": [
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
-        },
-        {
-          "auditOnly": true,
-          "changes": [
-            {
-              "field": "followEntity",
-              "before": "rais_depts",
-              "after": "taqseem"
-            },
-            {
-              "field": "taqseemName",
-              "before": "",
-              "after": "المديرية العامة للتغير المناخي"
-            }
-          ],
-          "previousStatus": "",
-          "date": "2026-11-04",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تعديل: الجهة المتابعة، التقسيم",
-          "actionType": "edit",
-          "statusChange": "",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "تم حفظ التعديل",
-          "entity": "taqseem",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "المديرية العامة للتغير المناخي",
-          "startDate": "2026-10-27",
-          "daysSince": 6
-        }
-      ],
-      "closedAt": "2026-11-04",
-      "archivedAt": "2026-11-04T06:38:19.723Z",
-      "archivedBy": "رحاب بنت نصيب الفرج",
-      "archiveUpdatedAt": "2026-11-04T06:38:19.724Z",
-      "archiveVersion": 1
-    },
-    {
-      "id": 1791951075109.6267,
-      "transactionType": "followup",
-      "title": "المشروعات الاستثمارية التابعة لهيئة البيئة",
-      "from": "وزارة الإسكان والتخطيط العمراني",
-      "docNo": "1170/3/2022v415-75",
-      "toEntity": "دائرة التخطيط الاستراتيجي",
-      "taqseemName": "",
-      "priority": "urgent",
-      "confidentiality": "secret",
-      "date": "2026-08-26",
-      "receivedFollowDate": "2026-08-30",
-      "followStart": "2026-08-26",
-      "type": "int",
-      "followScope": "internal",
-      "correspondenceDirection": "",
-      "externalEntities": [],
-      "slaMode": "kpi",
-      "slaDays": null,
-      "kpi": "gov5",
-      "note": "التخطيط\nلاعداد خطاب الى وزارة المالية وارفاق المتطلبات الاخرى المشار اليها\nتم الرد من مدير الدائرة بتاريخ 29/9الاخت الفاضلة رحاب الفرج المحترمة\nللتكرم بالاطلاع والعلم بما جاء في تعليق الفاضل أحمد الجرادي ونفيدكم بأننا في انتظار الموافقة من وزارة المالية حسب ما هو مطلوب من وزارة الإسكان والتخطيط العمراني وتجدون مرفقا طيه نسخة من الخطاب المتضمن تعليق الفاضل أحمد الجرادي (رقم 17) مع إفادتكم بأنه قد تم استيفاء جميع البيانات المطلوبة وفقا لما ورد في خطاب وزارة الإسكان والتخطيط العمراني.",
-      "status": "closed",
-      "followups": [
-        {
-          "date": "2026-10-14",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تم الرد من مدير الدائرة بتاريخ 29/9الاخت الفاضلة رحاب الفرج المحترمة\nللتكرم بالاطلاع والعلم بما جاء في تعليق الفاضل أحمد الجرادي ونفيدكم بأننا في انتظار الموافقة من وزارة المالية حسب ما هو مطلوب من وزارة الإسكان والتخطيط العمراني وتجدون مرفقا طيه نسخة من الخطاب المتضمن تعليق الفاضل أحمد الجرادي (رقم 17) مع إفادتكم بأنه قد تم استيفاء جميع البيانات المطلوبة وفقا لما ورد في خطاب وزارة الإسكان والتخطيط العمراني.",
-          "actionType": "",
-          "scope": "internal",
-          "by": "",
-          "result": "تم الرد  عى رئيسة القسم بخصوص استفسارها",
-          "entity": "",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-08-26",
-          "daysSince": 35
-        },
-        {
-          "date": "2026-10-28",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "متابعة",
-          "actionType": "visit",
-          "scope": "internal",
-          "by": "",
-          "result": "",
-          "entity": "",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-08-26",
-          "daysSince": 45
-        },
-        {
-          "auditOnly": false,
-          "changes": [
-            {
-              "field": "followEntity",
-              "before": "",
-              "after": "rais_depts"
-            }
-          ],
-          "previousStatus": "open",
-          "date": "2026-11-01",
-          "replied": true,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تم عمل الحاق الى وزارة المالية\nتغيير الحالة من قيد المتابعة إلى بانتظار الإفادة — تعديل: الجهة المتابعة",
-          "actionType": "status",
-          "statusChange": "awaiting",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "بانتظار الإفادة",
-          "entity": "rais_depts",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-08-26",
-          "daysSince": 47
-        },
-        {
-          "auditOnly": false,
-          "changes": [],
-          "previousStatus": "awaiting",
-          "date": "2026-11-04",
-          "replied": false,
-          "responseMethod": "",
-          "replyDocNo": "",
-          "note": "تغيير الحالة من بانتظار الإفادة إلى مُغلق",
-          "actionType": "status",
-          "statusChange": "closed",
-          "scope": "internal",
-          "by": "رحاب بنت نصيب الفرج",
-          "result": "مُغلق",
-          "entity": "rais_depts",
-          "externalEntityIndex": null,
-          "externalEntityName": "",
-          "taqseem": "",
-          "startDate": "2026-08-26",
-          "daysSince": 50
-        }
-      ],
-      "sheet": "مُضاف يدوياً",
-      "recordId": 1791951075109.6267,
-      "manualCount": 4,
-      "followEntity": "rais_depts",
-      "responseMethod": "",
-      "actionHistory": [
-        {
-          "date": "2026-11-04",
-          "by": "رحاب بنت نصيب الفرج",
-          "actionType": "other",
-          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
-        }
-      ],
-      "raisDeptName": "",
-      "closedAt": "2026-11-04",
-      "archivedAt": "2026-11-04T09:03:02.191Z",
-      "archivedBy": "رحاب بنت نصيب الفرج",
-      "archiveUpdatedAt": "2026-11-04T09:03:02.191Z",
-      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -56781,8 +55040,8 @@
   ],
   "activityLog": [
     {
-      "id": "af3eb17d-44b4-4a7e-8597-40961741efbf",
-      "sessionId": "af3eb17d-44b4-4a7e-8597-40961741efbf",
+      "id": 1793849187703.3457,
+      "sessionId": "3f5d0f75-8a94-4ba6-8dd4-1dfec7b922f2",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
       "user": "rahab@ea2026",
       "name": "رحاب بنت نصيب الفرج",
@@ -56801,229 +55060,10 @@
         "browser": "Edge",
         "platform": "Win32"
       },
-      "loginAt": "2026-11-04T03:13:18.870Z",
+      "loginAt": "2026-11-05T03:26:27.703Z",
       "logoutAt": null,
       "duration": null,
-      "logoutReason": null,
-      "central": true,
-      "actions": [
-        {
-          "id": 1793782982176.2832,
-          "at": "2026-11-04T09:03:02.176Z",
-          "action": "إضافة متابعة",
-          "details": "المشروعات الاستثمارية التابعة لهيئة البيئة"
-        },
-        {
-          "id": 1793782982122.333,
-          "at": "2026-11-04T09:03:02.122Z",
-          "action": "تعديل موضوع",
-          "details": "المشروعات الاستثمارية التابعة لهيئة البيئة"
-        },
-        {
-          "id": 1793774299710.739,
-          "at": "2026-11-04T06:38:19.710Z",
-          "action": "إضافة متابعة",
-          "details": "طلب مراجعة مشروع إصدار لائحة إدارة التغير  المناخي"
-        },
-        {
-          "id": 1793774299659.6704,
-          "at": "2026-11-04T06:38:19.659Z",
-          "action": "تعديل موضوع",
-          "details": "طلب مراجعة مشروع إصدار لائحة إدارة التغير  المناخي"
-        },
-        {
-          "id": 1793769180673.4136,
-          "at": "2026-11-04T05:13:00.673Z",
-          "action": "إضافة متابعة",
-          "details": "طلب مراجعة مشروع إصدار لائحة إدارة التغير  المناخي"
-        },
-        {
-          "id": 1793769180623.8562,
-          "at": "2026-11-04T05:13:00.623Z",
-          "action": "تعديل موضوع",
-          "details": "طلب مراجعة مشروع إصدار لائحة إدارة التغير  المناخي"
-        },
-        {
-          "id": 1793768910731.555,
-          "at": "2026-11-04T05:08:30.731Z",
-          "action": "إضافة متابعة",
-          "details": "تنفيذ ورش عمل الإجادة التنفيذية ضمن الخطة التدريبية لمنظومة إجادة لعام 2026م"
-        },
-        {
-          "id": 1793768910682.5586,
-          "at": "2026-11-04T05:08:30.682Z",
-          "action": "تعديل موضوع",
-          "details": "تنفيذ ورش عمل الإجادة التنفيذية ضمن الخطة التدريبية لمنظومة إجادة لعام 2026م"
-        },
-        {
-          "id": 1793768864695.8633,
-          "at": "2026-11-04T05:07:44.695Z",
-          "action": "إضافة متابعة",
-          "details": "طلب مراجعة مشروع إصدار لائحة إدارة التغير  المناخي"
-        },
-        {
-          "id": 1793768864653.3066,
-          "at": "2026-11-04T05:07:44.653Z",
-          "action": "تعديل موضوع",
-          "details": "طلب مراجعة مشروع إصدار لائحة إدارة التغير  المناخي"
-        },
-        {
-          "id": 1793768792582.8577,
-          "at": "2026-11-04T05:06:32.582Z",
-          "action": "إضافة متابعة",
-          "details": "نفوق الحيتان ومخاطر أنشطة الصيد في منطقة بر الحكمان"
-        },
-        {
-          "id": 1793768792550.1199,
-          "at": "2026-11-04T05:06:32.550Z",
-          "action": "تعديل موضوع",
-          "details": "نفوق الحيتان ومخاطر أنشطة الصيد في منطقة بر الحكمان"
-        },
-        {
-          "id": 1793768570993.4207,
-          "at": "2026-11-04T05:02:50.993Z",
-          "action": "إضافة متابعة",
-          "details": "مشروع قواعد تنظيم الشؤون البيئية في المناطق الخاضعة لإشراف الهيئة"
-        },
-        {
-          "id": 1793768570955.8232,
-          "at": "2026-11-04T05:02:50.955Z",
-          "action": "تعديل موضوع",
-          "details": "مشروع قواعد تنظيم الشؤون البيئية في المناطق الخاضعة لإشراف الهيئة"
-        },
-        {
-          "id": 1793768455941.4224,
-          "at": "2026-11-04T05:00:55.941Z",
-          "action": "إضافة متابعة",
-          "details": "تقديم مستندات بشأن مراجعة اتفاقية  بازل في مجال  المنسجوجات"
-        },
-        {
-          "id": 1793768455895.7405,
-          "at": "2026-11-04T05:00:55.895Z",
-          "action": "تعديل موضوع",
-          "details": "تقديم مستندات بشأن مراجعة اتفاقية  بازل في مجال  المنسجوجات"
-        },
-        {
-          "id": 1793768445942.5825,
-          "at": "2026-11-04T05:00:45.942Z",
-          "action": "إضافة متابعة",
-          "details": "تقديم مستندات بشأن مراجعة اتفاقية  بازل في مجال  المنسجوجات"
-        },
-        {
-          "id": 1793768445901.8586,
-          "at": "2026-11-04T05:00:45.901Z",
-          "action": "تعديل موضوع",
-          "details": "تقديم مستندات بشأن مراجعة اتفاقية  بازل في مجال  المنسجوجات"
-        },
-        {
-          "id": 1793768292872.025,
-          "at": "2026-11-04T04:58:12.872Z",
-          "action": "إضافة متابعة",
-          "details": "المستجدات البحرية في محافظة مسندم"
-        },
-        {
-          "id": 1793768292828.09,
-          "at": "2026-11-04T04:58:12.828Z",
-          "action": "تعديل موضوع",
-          "details": "المستجدات البحرية في محافظة مسندم"
-        },
-        {
-          "id": 1793765624348.8318,
-          "at": "2026-11-04T04:13:44.348Z",
-          "action": "إضافة متابعة",
-          "details": "تسريع استكمال مستهدف رقمنة الخدمات الحكومية ذات الأولوية"
-        },
-        {
-          "id": 1793765624304.36,
-          "at": "2026-11-04T04:13:44.304Z",
-          "action": "تعديل موضوع",
-          "details": "تسريع استكمال مستهدف رقمنة الخدمات الحكومية ذات الأولوية"
-        },
-        {
-          "id": 1793765576815.842,
-          "at": "2026-11-04T04:12:56.815Z",
-          "action": "إضافة متابعة",
-          "details": "خطة تقييم قبو ل الجهات الحكومية المستفيدة من نظام وصول."
-        },
-        {
-          "id": 1793765576780.3362,
-          "at": "2026-11-04T04:12:56.780Z",
-          "action": "تعديل موضوع",
-          "details": "خطة تقييم قبو ل الجهات الحكومية المستفيدة من نظام وصول."
-        },
-        {
-          "id": 1793765393475.5898,
-          "at": "2026-11-04T04:09:53.475Z",
-          "action": "إضافة متابعة",
-          "details": "المشروعات الاستثمارية التابعة لهيئة البيئة"
-        },
-        {
-          "id": 1793765393440.7,
-          "at": "2026-11-04T04:09:53.440Z",
-          "action": "تعديل موضوع",
-          "details": "المشروعات الاستثمارية التابعة لهيئة البيئة"
-        },
-        {
-          "id": 1793765252473.4038,
-          "at": "2026-11-04T04:07:32.473Z",
-          "action": "إضافة متابعة",
-          "details": "شكوى وطلب إعادة النظر في موقع مشروع شركة الاستزراع السمكي الواقع بين منطقني الحد والجديمة بولاية جعلان بني بو حسن"
-        },
-        {
-          "id": 1793765252433.3499,
-          "at": "2026-11-04T04:07:32.433Z",
-          "action": "تعديل موضوع",
-          "details": "شكوى وطلب إعادة النظر في موقع مشروع شركة الاستزراع السمكي الواقع بين منطقني الحد والجديمة بولاية جعلان بني بو حسن"
-        },
-        {
-          "id": 1793764324495.7546,
-          "at": "2026-11-04T03:52:04.495Z",
-          "action": "إضافة متابعة",
-          "details": "محضر اجتماع اللجنة التنفيذية لمبادرة الشرق الأوسط الخضراء"
-        },
-        {
-          "id": 1793764324452.4775,
-          "at": "2026-11-04T03:52:04.453Z",
-          "action": "تعديل موضوع",
-          "details": "محضر اجتماع اللجنة التنفيذية لمبادرة الشرق الأوسط الخضراء"
-        },
-        {
-          "id": 1793763295996.7559,
-          "at": "2026-11-04T03:34:55.996Z",
-          "action": "إضافة متابعة",
-          "details": "ايفاد خبير من الوكالة الدولية للطاقة الذرية في مجال الادارة الشاملة للنفايات المشعة والمصادر الخارجة عن الرقابة"
-        },
-        {
-          "id": 1793763295949.1748,
-          "at": "2026-11-04T03:34:55.949Z",
-          "action": "تعديل موضوع",
-          "details": "ايفاد خبير من الوكالة الدولية للطاقة الذرية في مجال الادارة الشاملة للنفايات المشعة والمصادر الخارجة عن الرقابة"
-        },
-        {
-          "id": 1793763285575.7356,
-          "at": "2026-11-04T03:34:45.575Z",
-          "action": "إضافة متابعة",
-          "details": "ايفاد خبير من الوكالة الدولية للطاقة الذرية في مجال الادارة الشاملة للنفايات المشعة والمصادر الخارجة عن الرقابة"
-        },
-        {
-          "id": 1793763285536.219,
-          "at": "2026-11-04T03:34:45.536Z",
-          "action": "تعديل موضوع",
-          "details": "ايفاد خبير من الوكالة الدولية للطاقة الذرية في مجال الادارة الشاملة للنفايات المشعة والمصادر الخارجة عن الرقابة"
-        },
-        {
-          "id": 1793762263529.5708,
-          "at": "2026-11-04T03:17:43.529Z",
-          "action": "إضافة متابعة",
-          "details": "طلب ترشيح للمشاركة في ملتقى التشريعات البيئية بمحافظة مسقط"
-        },
-        {
-          "id": 1793762263480.291,
-          "at": "2026-11-04T03:17:43.480Z",
-          "action": "تعديل موضوع",
-          "details": "طلب ترشيح للمشاركة في ملتقى التشريعات البيئية بمحافظة مسقط"
-        }
-      ]
+      "logoutReason": null
     },
     {
       "id": "d68d32b8-7b9c-4ddb-a0e4-2cb2c0504ec2",
