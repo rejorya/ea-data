@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-05T09:58:19.784Z",
+  "exportedAt": "2026-11-05T09:59:28.232Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -40357,7 +40357,7 @@
       "slaDays": null,
       "kpi": "gov5",
       "note": "يجب وضع مواعيد زمنية لتحقيق المستهدفات",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-20",
@@ -40434,11 +40434,32 @@
           "taqseem": "",
           "startDate": "2026-10-05",
           "daysSince": 21
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "esc",
+          "date": "2026-11-05",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم توجيه الافادة الى مدير المكتب\nتغيير الحالة من تم التصعيد إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 23
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792314346297.8635,
-      "manualCount": 4,
+      "manualCount": 5,
       "followEntity": "rais_depts",
       "raisDeptName": "فريق التحول الرقمي",
       "responseMethod": "",
@@ -40467,7 +40488,8 @@
           "actionType": "other",
           "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
         }
-      ]
+      ],
+      "closedAt": "2026-11-05"
     },
     {
       "id": 1792315069286.0823,
@@ -53609,6 +53631,165 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-11-05T09:58:17.642Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1792314346297.8635,
+      "transactionType": "followup",
+      "title": "تسريع استكمال مستهدف رقمنة الخدمات الحكومية ذات الأولوية",
+      "from": "وزارة النقل والاتصالات وتقنية المعلومات",
+      "docNo": "1170/3/2022v414-65",
+      "toEntity": "",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-08-19",
+      "receivedFollowDate": "2026-10-18",
+      "followStart": "2026-10-05",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "gov5",
+      "note": "يجب وضع مواعيد زمنية لتحقيق المستهدفات",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-20",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 11
+        },
+        {
+          "date": "2026-10-21",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "رد الفاضل صلاح المحذوري :سنوافيكم بالمطلوب يوم الخميس بتاريخ 29 أكتوبر وذلك لإرتباط فريق التحول الرقمي المعني بتحديث وتطوير وترقية ورقمنة كافة خدمات الهيئة الخارجية للمستفيدين منها؛ مع فريق التحول الرقمي الحكومي لدى وزارة النقل والاتصالات وتقنية المعلومات بجدول زمني ضيق لتطوير وتسليم استمارات كافة مشاريع التحول الرقمي الخاصة بالهيئة ضمن محفظة المشاريع المعتمدة للفترة 2027 - 2030. حيث نصنف ذلك ضمن الأولوية القصوى حالياً لضمان حصول الهيئة على المخصصات المالية المطلوبة لتمويل مشاريع التحول الرقمي المستمرة وعددها (6) ست مشاريع إلى جانب (21) إحدى وعشرون مشروع جديد يمثل المديريات التخصصية - للإحاطة.",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 12
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "",
+          "date": "2026-11-01",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 19
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "open",
+          "date": "2026-11-03",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من قيد المتابعة إلى تم التصعيد",
+          "actionType": "esc",
+          "statusChange": "esc",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "تم التصعيد",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 21
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "esc",
+          "date": "2026-11-05",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم توجيه الافادة الى مدير المكتب\nتغيير الحالة من تم التصعيد إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-05",
+          "daysSince": 23
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792314346297.8635,
+      "manualCount": 5,
+      "followEntity": "rais_depts",
+      "raisDeptName": "فريق التحول الرقمي",
+      "responseMethod": "",
+      "actionHistory": [
+        {
+          "date": "2026-11-03",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        },
+        {
+          "date": "2026-11-04",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        },
+        {
+          "date": "2026-11-05",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        },
+        {
+          "date": "2026-11-05",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        }
+      ],
+      "closedAt": "2026-11-05",
+      "archivedAt": "2026-11-05T09:59:26.087Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-11-05T09:59:26.087Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -59344,6 +59525,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793872766073.2625,
+          "at": "2026-11-05T09:59:26.073Z",
+          "action": "إضافة متابعة",
+          "details": "تسريع استكمال مستهدف رقمنة الخدمات الحكومية ذات الأولوية"
+        },
+        {
+          "id": 1793872766025.5286,
+          "at": "2026-11-05T09:59:26.025Z",
+          "action": "تعديل موضوع",
+          "details": "تسريع استكمال مستهدف رقمنة الخدمات الحكومية ذات الأولوية"
+        },
         {
           "id": 1793872697628.3435,
           "at": "2026-11-05T09:58:17.628Z",
