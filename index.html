@@ -2022,6 +2022,16 @@ async function performCloudSave() {
         return false;
       }
     }
+    // Compare the outgoing snapshot with the exact cloud revision that the PUT will replace.
+    const previous = await readBase(repository);
+    const baseline = previous?.sha === sha ? previous.data : await readRemote(currentFile,config.token);
+    const submitted = JSON.parse(content);
+    if (wouldDiscardTopicHistory(baseline, submitted)) {
+      window._cloudConflict = true;
+      showGitHubInfo('⏸️ أوقف الرفع لأن نسخة الجهاز تُسقط إجراءات محفوظة. حمّلي آخر تحديث لدمج النسختين.','warning');
+      updateGitHubStatus('⏸️ يلزم دمج سجل المتابعة قبل الرفع','warning');
+      return false;
+    }
     const body = { message: `تحديث تلقائي ${new Date().toLocaleTimeString('ar-SA')}`, content: contentBase64 };
     if(sha) body.sha = sha;
     const putRes = await githubSyncFetch(fileUrl, {
@@ -2032,7 +2042,7 @@ async function performCloudSave() {
     if(putRes.ok) {
       const saved=await putRes.json();
       window._cloudBaseSha=saved.content.sha;
-      await writeBase(repository,saved.content.sha,dataToShare);
+      await writeBase(repository,saved.content.sha,submitted);
       window._cloudConflict=false;
       window._cloudLastPayload=payload;
       if(revision===(window._cloudMutationRevision||0)) markCloudDirty(false);
@@ -8573,6 +8583,27 @@ function restoreSavedTodayFollowups(imported) {
   return restored;
 }
 
+function wouldDiscardTopicHistory(previous, submitted) {
+  const current = new Map((submitted.topics || []).map(topic => [String(topic.id), topic]));
+  for (const topic of previous.topics || []) {
+    const next = current.get(String(topic.id));
+    if (!next) continue; // Individual topic deletion has its own explicit confirmation.
+    for (const field of ['followups', 'actionHistory']) {
+      const counts = new Map();
+      for (const entry of next[field] || []) {
+        const key = JSON.stringify(entry);
+        counts.set(key, (counts.get(key) || 0) + 1);
+      }
+      for (const entry of topic[field] || []) {
+        const key = JSON.stringify(entry);
+        if (!counts.get(key)) return true;
+        counts.set(key, counts.get(key) - 1);
+      }
+    }
+  }
+  return false;
+}
+
 function equal(a,b){return JSON.stringify(a)===JSON.stringify(b)}
 
 function key(v){return v&&typeof v==="object"&&!Array.isArray(v)&&v.id!=null?"id:"+v.id:"value:"+JSON.stringify(v)}
@@ -8622,7 +8653,7 @@ async function readBase(repo){
 }
 
 async function writeBase(repo,sha,data){
- const row={repo,sha,data:snap(data)};window._syncMemoryBase=row;
+ const row={repo,sha,data:JSON.parse(JSON.stringify(snap(data)))};window._syncMemoryBase=row;
  try{const db=await syncDb();await new Promise((ok,bad)=>{const q=db.transaction("base","readwrite").objectStore("base").put(row,repo);q.onsuccess=()=>ok();q.onerror=()=>bad(q.error)})}catch(e){console.warn("Sync baseline not persisted",e)}
 }
 
