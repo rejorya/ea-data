@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-05T09:56:48.981Z",
+  "exportedAt": "2026-11-05T09:58:19.784Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -35845,7 +35845,7 @@
       "slaDays": null,
       "kpi": "std14",
       "note": "نائب الرئيس\nللدراسة والافادة",
-      "status": "awaiting",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-06",
@@ -35986,11 +35986,32 @@
           "taqseem": "",
           "startDate": "2026-10-04",
           "daysSince": 20
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "awaiting",
+          "date": "2026-11-05",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من بانتظار الإفادة إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 24
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1791271139811.105,
-      "manualCount": 8,
+      "manualCount": 9,
       "followEntity": "naib_office",
       "responseMethod": "",
       "actionHistory": [
@@ -36042,7 +36063,8 @@
           "actionType": "other",
           "note": "إتمام المهمة اليومية: تابعي التقسيم المختص مباشرة"
         }
-      ]
+      ],
+      "closedAt": "2026-11-05"
     },
     {
       "id": 1791271572401.6384,
@@ -53341,6 +53363,252 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-11-01T09:34:28.412Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1791271139811.105,
+      "transactionType": "followup",
+      "title": "طلب الحصول على موافقة واكتشاف لاستخدام خامات الجوابو السماد الفسفورى الطبيعي بجزر الحلانيات",
+      "from": "الشموخ التجارية",
+      "docNo": "1170/3/2022v420-60",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-09-30",
+      "receivedFollowDate": "2026-10-04",
+      "followStart": "2026-10-04",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "std14",
+      "note": "نائب الرئيس\nللدراسة والافادة",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-06",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 2
+        },
+        {
+          "date": "2026-10-11",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 5
+        },
+        {
+          "date": "2026-10-13",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 7
+        },
+        {
+          "date": "2026-10-18",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 10
+        },
+        {
+          "date": "2026-10-19",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "",
+          "scope": "internal",
+          "by": "",
+          "result": "تم التواصل مع الشركة للاستيضاح بشكل أكثر عن تفاصيل المشروع ،مواقع الاستخراج والكميات والمعدات المستخدمة والمدة الزمنية والتأثير السلبي والايجابي على مكونات المحمية والاجراءات التخفيفية لها. بالإضافة الى العوائد الاقتصادية من المشروع.\" وفي انتظار رد الشركة بالمطلوب .",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 11
+        },
+        {
+          "date": "2026-10-25",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 15
+        },
+        {
+          "date": "2026-10-27",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم التصعيد لمدير المكتب",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 17
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "esc",
+          "date": "2026-11-01",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من تم التصعيد إلى بانتظار الإفادة",
+          "actionType": "status",
+          "statusChange": "awaiting",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "بانتظار الإفادة",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 20
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "awaiting",
+          "date": "2026-11-05",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من بانتظار الإفادة إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-04",
+          "daysSince": 24
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1791271139811.105,
+      "manualCount": 9,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "actionHistory": [
+        {
+          "date": "2026-11-03",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        },
+        {
+          "date": "2026-11-03",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تابعي التقسيم المختص مباشرة"
+        },
+        {
+          "date": "2026-11-04",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        },
+        {
+          "date": "2026-11-04",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تابعي التقسيم المختص مباشرة"
+        },
+        {
+          "date": "2026-11-05",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        },
+        {
+          "date": "2026-11-05",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تابعي التقسيم المختص مباشرة"
+        },
+        {
+          "date": "2026-11-05",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        },
+        {
+          "date": "2026-11-05",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تابعي التقسيم المختص مباشرة"
+        }
+      ],
+      "closedAt": "2026-11-05",
+      "archivedAt": "2026-11-05T09:58:17.642Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-11-05T09:58:17.642Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -59076,6 +59344,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1793872697628.3435,
+          "at": "2026-11-05T09:58:17.628Z",
+          "action": "إضافة متابعة",
+          "details": "طلب الحصول على موافقة واكتشاف لاستخدام خامات الجوابو السماد الفسفورى الطبيعي بجزر الحلانيات"
+        },
+        {
+          "id": 1793872697583.1033,
+          "at": "2026-11-05T09:58:17.583Z",
+          "action": "تعديل موضوع",
+          "details": "طلب الحصول على موافقة واكتشاف لاستخدام خامات الجوابو السماد الفسفورى الطبيعي بجزر الحلانيات"
+        },
         {
           "id": 1793872606484.051,
           "at": "2026-11-05T09:56:46.484Z",
