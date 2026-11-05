@@ -7119,7 +7119,7 @@ let currentReportHTML = '';
 let currentReportTitle = '';
 
 
-function isFollowupReportTopic(t){return !t.fromDiscussionId && t.status!=='disc' && !/مناقش/.test(t.sheet||'');}
+function isFollowupReportTopic(t){return t.correspondenceDirection!=='out' && !t.fromDiscussionId && t.status!=='disc' && !/مناقش/.test(t.sheet||'');}
 function collectCurrentWorkload() {
   const topics=(D.topics||[]).filter(t=>t.status!=='closed');
   const directives=D.directives||[];
@@ -7143,12 +7143,14 @@ function collectProfessionalReport(from,to) {
   return {all,received,completed,active,from,to,workload:collectCurrentWorkload()};
 }
 function buildProfessionalReport(from,to,title,notes,snapshot) {
-  const r=snapshot||collectProfessionalReport(from,to);
+  const source=snapshot||collectProfessionalReport(from,to);
+  const r={...source};
+  for(const field of ['all','received','completed','active']) r[field]=(source[field]||[]).filter(isFollowupReportTopic);
   const esc=v=>String(v==null?'':v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const table=(headers,rows,detail=false)=>'<table class="data-table'+(detail?' report-detail':'')+'"><thead><tr>'+headers.map(h=>'<th>'+esc(h)+'</th>').join('')+'</tr></thead><tbody>'+rows.map(row=>'<tr>'+row.map(v=>'<td>'+esc(v)+'</td>').join('')+'</tr>').join('')+'</tbody></table>';
   const within=d=>String(d||'').slice(0,10)>=from&&String(d||'').slice(0,10)<=to;
   const actions=t=>(t.followups||[]).concat(t.actionHistory||[]).filter(f=>within(f.date)).sort((a,b)=>String(a.date).localeCompare(String(b.date)));
-  const groups=[['الوارد',false],['الصادر',true]];
+  const groups=[['الوارد',false]];
   let body='<div class="header"><h1>'+esc(title)+'</h1><p>الفترة: '+esc(fmtDate(from))+' إلى '+esc(fmtDate(to))+'</p></div>';
   const doneTotal=r.all.filter(t=>t.status==='closed').length;
   const completion=r.all.length?Math.round(doneTotal/r.all.length*100):null;
@@ -7157,11 +7159,11 @@ function buildProfessionalReport(from,to,title,notes,snapshot) {
   const cards=[['منجز خلال الفترة',r.completed.length,'موضوع أُغلق'],['مواضيع تمت متابعتها',followed,'بإجراء مسجّل خلال الفترة'],['إجراءات الفترة',actionsCount,'متابعات وتعديلات'],['نسبة الإنجاز الحالية',completion==null?'—':completion+'%','المغلق من مواضيع التقرير']];
   body+='<table class="report-kpis"><tbody><tr>'+cards.map(([label,value,hint])=>'<td><div class="kpi-label">'+esc(label)+'</div><strong>'+esc(value)+'</strong><div class="kpi-hint">'+esc(hint)+'</div></td>').join('')+'</tr></tbody></table>';
   body+='<p class="report-note">ملخص الفترة: أُنجزت متابعة '+r.completed.length+' موضوعًا بالإغلاق، وسُجّل '+actionsCount+' إجراء على '+followed+' موضوعًا. إغلاق الموضوع يُحتسب إنجازًا دون اشتراط وصول رد.</p>';
-  if(r.workload){const w=r.workload;body+='<h2>ملخص الأعمال الجارية بتاريخ '+esc(fmtDate(w.capturedAt))+'</h2>'+table(['الوارد','الصادر','توجيهات الرئيس','الإجمالي'],[[w.incoming,w.outgoing,w.directivesOpen,w.total]]);}
+  if(r.workload){const w=r.workload;body+='<h2>ملخص الأعمال الجارية بتاريخ '+esc(fmtDate(w.capturedAt))+'</h2>'+table(['الوارد','توجيهات الرئيس','الإجمالي'],[[w.incoming,w.directivesOpen,w.incoming+w.directivesOpen]]);}
   body+='<h2>مؤشرات الإنجاز الحالية</h2><table class="report-progress"><thead><tr><th>القسم</th><th>المنجز / الإجمالي</th><th>نسبة الإنجاز</th></tr></thead><tbody>';
   const progressRows=groups.map(([label,out])=>{const g=r.all.filter(t=>(t.correspondenceDirection==='out')===out),n=g.filter(t=>t.status==='closed').length;return [label,n,g.length,g.length?Math.round(n/g.length*100):null];});
   if(r.workload)progressRows.push(['توجيهات الرئيس',r.workload.directivesDone,r.workload.directivesTotal,r.workload.directivesRate??null]);
-  body+=progressRows.map(([label,n,total,p])=>'<tr><td>'+esc(label)+'</td><td><span dir="ltr">'+n+' / '+total+'</span></td><td><b>'+(p==null?'—':p+'%')+'</b><div class="report-track"><div style="width:'+(p==null?0:p)+'%;height:7px;background:#008b80"></div></div></td></tr>').join('')+'</tbody></table><p class="report-note">الوارد والصادر: المغلق ÷ إجمالي مواضيع القسم في التقرير. التوجيهات: نسبة التنفيذ المعتمدة في قسم توجيهات الرئيس؛ لا يُعد التوجيه الجاري ضمن مهلته إخفاقًا.</p>';
+  body+=progressRows.map(([label,n,total,p])=>'<tr><td>'+esc(label)+'</td><td><span dir="ltr">'+n+' / '+total+'</span></td><td><b>'+(p==null?'—':p+'%')+'</b><div class="report-track"><div style="width:'+(p==null?0:p)+'%;height:7px;background:#008b80"></div></div></td></tr>').join('')+'</tbody></table><p class="report-note">الوارد: المغلق ÷ إجمالي مواضيع الوارد في التقرير. التوجيهات: نسبة التنفيذ المعتمدة في قسم توجيهات الرئيس؛ لا يُعد التوجيه الجاري ضمن مهلته إخفاقًا.</p>';
   body+='<h2>إنجاز الفترة</h2>';
   const periodRows=groups.map(([label,out])=>{
     const match=t=>(t.correspondenceDirection==='out')===out;
@@ -7170,7 +7172,7 @@ function buildProfessionalReport(from,to,title,notes,snapshot) {
   });
   periodRows.push(['الإجمالي',...Array.from({length:4},(_,i)=>periodRows.reduce((n,row)=>n+row[i+1],0))]);
   body+=table(['القسم','مسجّل خلال الفترة','منجز بالإغلاق','من المنجز: مواضيع سابقة','إجراءات مسجّلة'],periodRows);
-  body+='<p class="report-note">التسجيل حسب تاريخ الوارد أو الصادر، والإنجاز حسب تاريخ الإغلاق. كل موضوع مغلق يُعد منجزًا في المتابعة، دون اشتراط الرد. الإجراء اللاحق يُسجّل على الموضوع نفسه دون تكرار احتساب إنجازه.</p>';
+  body+='<p class="report-note">التسجيل حسب تاريخ الوارد، والإنجاز حسب تاريخ الإغلاق. كل موضوع مغلق يُعد منجزًا في المتابعة، دون اشتراط الرد. الإجراء اللاحق يُسجّل على الموضوع نفسه دون تكرار احتساب إنجازه.</p>';
   groups.forEach(([label,out])=>{
     const match=t=>(t.correspondenceDirection==='out')===out;
     const group=r.all.filter(match),done=group.filter(t=>t.status==='closed').length;
