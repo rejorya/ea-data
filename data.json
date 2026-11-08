@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-08T05:18:06.179Z",
+  "exportedAt": "2026-11-08T05:18:09.427Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -54239,6 +54239,14 @@
           "note": "إتمام المهمة اليومية: حدّثي حالة التنفيذ وسجّلي متابعة",
           "dailyTaskKey": "dir-1792917798588.3516",
           "action": "إتمام المهمة اليومية: حدّثي حالة التنفيذ وسجّلي متابعة"
+        },
+        {
+          "date": "2026-11-08",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: حدّثي حالة التنفيذ وسجّلي متابعة",
+          "dailyTaskKey": "dir-1792917798588.3516",
+          "action": "إتمام المهمة اليومية: حدّثي حالة التنفيذ وسجّلي متابعة"
         }
       ],
       "sourceRecord": "topic-entry",
@@ -59519,6 +59527,33 @@
     "مركز محمية حديقة السليل الطبيعية"
   ],
   "activityLog": [
+    {
+      "id": "142bfe3b-0f91-4d09-9978-3132888e6b64",
+      "sessionId": "142bfe3b-0f91-4d09-9978-3132888e6b64",
+      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+      "user": "rahab@ea2026",
+      "name": "رحاب بنت نصيب الفرج",
+      "role": "أخصائية تنسيق ومتابعة",
+      "type": "مدير",
+      "device": "كمبيوتر • Windows • Edge",
+      "deviceType": "كمبيوتر",
+      "deviceOS": "Windows",
+      "browser": "Edge",
+      "platform": "Win32",
+      "deviceSnapshot": {
+        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
+        "label": "كمبيوتر • Windows • Edge",
+        "type": "كمبيوتر",
+        "os": "Windows",
+        "browser": "Edge",
+        "platform": "Win32"
+      },
+      "loginAt": "2026-11-08T05:18:00.615Z",
+      "logoutAt": null,
+      "duration": null,
+      "logoutReason": null,
+      "central": true
+    },
     {
       "id": "2e58a349-1745-4393-856c-949756720a46",
       "sessionId": "2e58a349-1745-4393-856c-949756720a46",
@@ -71819,32 +71854,6 @@
       "duration": "3 دقيقة و 7 ثانية",
       "logoutReason": "تسجيل خروج عادي",
       "durationMinutes": 3
-    },
-    {
-      "id": 1794115080616.7793,
-      "sessionId": "10a8d6bc-9df4-4bb2-bf73-b2d561e2db01",
-      "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
-      "user": "rahab@ea2026",
-      "name": "رحاب بنت نصيب الفرج",
-      "role": "أخصائية تنسيق ومتابعة",
-      "type": "مدير",
-      "device": "كمبيوتر • Windows • Edge",
-      "deviceType": "كمبيوتر",
-      "deviceOS": "Windows",
-      "browser": "Edge",
-      "platform": "Win32",
-      "deviceSnapshot": {
-        "id": "09c27871-ce68-470a-aaed-2ec5c91fc017",
-        "label": "كمبيوتر • Windows • Edge",
-        "type": "كمبيوتر",
-        "os": "Windows",
-        "browser": "Edge",
-        "platform": "Win32"
-      },
-      "loginAt": "2026-11-08T05:18:00.615Z",
-      "logoutAt": null,
-      "duration": null,
-      "logoutReason": null
     }
   ],
   "visitorCodeHash": "c4a1785a61be152ffb94dcda46cbc0da48de648dfa151bcf9ee49068078124c2",
