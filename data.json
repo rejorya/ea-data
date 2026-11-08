@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-08T05:32:36.981Z",
+  "exportedAt": "2026-11-08T05:42:37.915Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -42941,7 +42941,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "",
-      "status": "open",
+      "status": "closed",
       "followups": [
         {
           "auditOnly": false,
@@ -42995,14 +42995,36 @@
           "taqseem": "",
           "startDate": "2026-11-01",
           "daysSince": 4
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "open",
+          "date": "2026-11-08",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم رد على مدير المكتب لرفع التوصيه على سعادته باء على توجيهاته\nتغيير الحالة من قيد المتابعة إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-11-01",
+          "daysSince": 5
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793609001223.2488,
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "naib_office",
       "responseMethod": "",
-      "actionHistory": []
+      "actionHistory": [],
+      "closedAt": "2026-11-08"
     },
     {
       "id": 1793609391116.599,
@@ -54074,6 +54096,116 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-11-08T05:28:39.631Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1793609001223.2488,
+      "transactionType": "followup",
+      "title": "طلب لقاء لعرض حلول مستدامة لمعالجة مياه الصرف الصحي",
+      "from": "شركة العناصر الأربعة",
+      "docNo": "1170/3/2022v423-99",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-29",
+      "receivedFollowDate": "2026-11-02",
+      "followStart": "2026-11-01",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
+      "status": "closed",
+      "followups": [
+        {
+          "auditOnly": false,
+          "changes": [
+            {
+              "field": "correspondenceDirection",
+              "before": "in",
+              "after": ""
+            },
+            {
+              "field": "followEntity",
+              "before": "",
+              "after": "naib_office"
+            }
+          ],
+          "previousStatus": "",
+          "date": "2026-11-02",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تعديل: اتجاه المراسلة، الجهة المتابعة",
+          "actionType": "visit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-11-01",
+          "daysSince": 1
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "new",
+          "date": "2026-11-05",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من جديد إلى قيد المتابعة",
+          "actionType": "visit",
+          "statusChange": "open",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "قيد المتابعة",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-11-01",
+          "daysSince": 4
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "open",
+          "date": "2026-11-08",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تم رد على مدير المكتب لرفع التوصيه على سعادته باء على توجيهاته\nتغيير الحالة من قيد المتابعة إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-11-01",
+          "daysSince": 5
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1793609001223.2488,
+      "manualCount": 3,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "actionHistory": [],
+      "closedAt": "2026-11-08",
+      "archivedAt": "2026-11-08T05:42:35.725Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-11-08T05:42:35.725Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -59817,6 +59949,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1794116555716.514,
+          "at": "2026-11-08T05:42:35.716Z",
+          "action": "إضافة متابعة",
+          "details": "طلب لقاء لعرض حلول مستدامة لمعالجة مياه الصرف الصحي"
+        },
+        {
+          "id": 1794116555678.575,
+          "at": "2026-11-08T05:42:35.678Z",
+          "action": "تعديل موضوع",
+          "details": "طلب لقاء لعرض حلول مستدامة لمعالجة مياه الصرف الصحي"
+        },
         {
           "id": 1794115954769.35,
           "at": "2026-11-08T05:32:34.769Z",
