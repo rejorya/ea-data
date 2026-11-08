@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-08T05:28:41.881Z",
+  "exportedAt": "2026-11-08T05:31:32.969Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -42889,11 +42889,32 @@
           "taqseem": "",
           "startDate": "2026-11-02",
           "daysSince": 3
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "",
+          "date": "2026-11-08",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-11-02",
+          "daysSince": 4
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793608720427.1292,
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "rais_depts",
       "responseMethod": "",
       "actionHistory": [],
@@ -59775,6 +59796,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1794115890740.7441,
+          "at": "2026-11-08T05:31:30.740Z",
+          "action": "إضافة متابعة",
+          "details": "طلب الموافقة  على زراعة  الأشجار  البرية في محمية وادي خوس والتعهد  بالعناية بها وحمايتها"
+        },
+        {
+          "id": 1794115890705.869,
+          "at": "2026-11-08T05:31:30.705Z",
+          "action": "تعديل موضوع",
+          "details": "طلب الموافقة  على زراعة  الأشجار  البرية في محمية وادي خوس والتعهد  بالعناية بها وحمايتها"
+        },
         {
           "id": 1794115719615.5764,
           "at": "2026-11-08T05:28:39.615Z",
