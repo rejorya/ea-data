@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-08T05:42:37.915Z",
+  "exportedAt": "2026-11-08T05:47:41.823Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -41751,11 +41751,32 @@
           "taqseem": "",
           "startDate": "2026-10-26",
           "daysSince": 6
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "",
+          "date": "2026-11-08",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "esc",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-26",
+          "daysSince": 9
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793008356975.9512,
-      "manualCount": 4,
+      "manualCount": 5,
       "followEntity": "naib_office",
       "responseMethod": "",
       "actionHistory": []
@@ -59949,6 +59970,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1794116859642.163,
+          "at": "2026-11-08T05:47:39.642Z",
+          "action": "إضافة متابعة",
+          "details": "المستجدات البحرية في محافظة مسندم"
+        },
+        {
+          "id": 1794116859596.2808,
+          "at": "2026-11-08T05:47:39.596Z",
+          "action": "تعديل موضوع",
+          "details": "المستجدات البحرية في محافظة مسندم"
+        },
         {
           "id": 1794116555716.514,
           "at": "2026-11-08T05:42:35.716Z",
