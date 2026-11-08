@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-08T05:47:51.692Z",
+  "exportedAt": "2026-11-08T05:53:37.426Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -43090,7 +43090,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "",
-      "status": "awaiting",
+      "status": "esc",
       "followups": [
         {
           "auditOnly": false,
@@ -43123,11 +43123,32 @@
           "taqseem": "",
           "startDate": "2026-11-01",
           "daysSince": 2
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "awaiting",
+          "date": "2026-11-08",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من بانتظار الإفادة إلى تم التصعيد",
+          "actionType": "esc",
+          "statusChange": "esc",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "تم التصعيد",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-11-01",
+          "daysSince": 5
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793609391116.599,
-      "manualCount": 1,
+      "manualCount": 2,
       "followEntity": "rais_depts",
       "raisDeptName": "",
       "responseMethod": "",
@@ -60150,6 +60171,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1794117215210.8337,
+          "at": "2026-11-08T05:53:35.210Z",
+          "action": "إضافة متابعة",
+          "details": "الدليل الاسترشادي لإدارة نفايات الزئبق ومركباته والمنتجات المحتوية عليه"
+        },
+        {
+          "id": 1794117215169.7957,
+          "at": "2026-11-08T05:53:35.169Z",
+          "action": "تعديل موضوع",
+          "details": "الدليل الاسترشادي لإدارة نفايات الزئبق ومركباته والمنتجات المحتوية عليه"
+        },
         {
           "id": 1794116869503.9282,
           "at": "2026-11-08T05:47:49.503Z",
