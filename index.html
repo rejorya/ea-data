@@ -4251,33 +4251,46 @@ function _markDailyDone(taskKey){
   try{localStorage.setItem(_dailyDoneKey(),JSON.stringify(done));return true;}catch(e){return false;}
 }
 function pendingDailyTasks(all,done){
-  const completed = new Set(done);
+  // A daily completion is valid only for the current local calendar day.
+  // Old history entries must never hide a fresh task after cloud synchronization.
+  const today = localDateKey(new Date());
+  const completed = new Set(Array.isArray(done) ? done : []);
   const logged = new Map();
-  function register(record, field, prefix) {
-    for (const entry of record[field] || []) {
-      if (entry.dailyTaskKey) completed.add(entry.dailyTaskKey);
-      else if (entry.note?.startsWith('إتمام المهمة اليومية: ')) {
+  function isToday(entry){
+    if(!entry || !entry.date) return false;
+    const date = String(entry.date);
+    return date.slice(0,10) === today;
+  }
+  function register(record, field, prefix){
+    for(const entry of record[field] || []){
+      if(!isToday(entry)) continue;
+      if(entry.dailyTaskKey){
+        completed.add(String(entry.dailyTaskKey));
+      } else if(typeof entry.note === 'string' && entry.note.startsWith('إتمام المهمة اليومية: ')){
         const key = prefix + record.id;
-        if (!logged.has(key)) logged.set(key, new Set());
+        if(!logged.has(key)) logged.set(key,new Set());
         logged.get(key).add(entry.note);
       }
     }
   }
-  for (const topic of D.topics || []) register(topic, 'actionHistory', 'topic:');
-  for (const directive of D.directives || []) register(directive, 'followLog', 'directive:');
-  for (const session of D.activityLog || []) {
-    for (const event of session.actions || []) {
-      if (event.action === "إنجاز مهمة مركز الإجراءات") completed.add(event.details);
+  for(const topic of D.topics || []) register(topic,'actionHistory','topic:');
+  for(const directive of D.directives || []) register(directive,'followLog','directive:');
+  // Activity entries without a reliable date cannot prove completion today.
+  for(const session of D.activityLog || []){
+    for(const event of session.actions || []){
+      if(event.action === 'إنجاز مهمة مركز الإجراءات' && isToday(event) && typeof event.details === 'string'){
+        completed.add(event.details);
+      }
     }
   }
-  return all.filter(task => {
-    if (completed.has(task.key)) return false;
-    const match = /^(fu-today|late|div|dir)-(.+)$/.exec(task.key);
-    if (!match) return true;
-    const recordKey = (match[1] === 'dir' ? 'directive:' : 'topic:') + match[2];
-    const history = logged.get(recordKey);
-    if (match[1] === 'div' && (history?.has('إتمام المهمة اليومية: تابعي التقسيم المختص مباشرة') || history?.has('إتمام المهمة اليومية: جاهز للتصعيد — تواصلي أو صعّدي'))) return false;
-    return !history?.has('إتمام المهمة اليومية: ' + task.action);
+  return all.filter(task=>{
+    if(completed.has(task.key)) return false;
+    const match=/^(fu-today|late|div|dir)-(.+)$/.exec(task.key);
+    if(!match) return true;
+    const recordKey=(match[1]==='dir'?'directive:':'topic:')+match[2];
+    const history=logged.get(recordKey);
+    if(match[1]==='div' && (history?.has('إتمام المهمة اليومية: تابعي التقسيم المختص مباشرة') || history?.has('إتمام المهمة اليومية: جاهز للتصعيد — تواصلي أو صعّدي'))) return false;
+    return !history?.has('إتمام المهمة اليومية: '+task.action);
   });
 }
 function dailyTaskDone(taskKey){
