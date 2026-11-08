@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-08T05:18:09.427Z",
+  "exportedAt": "2026-11-08T05:28:41.881Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -40519,7 +40519,7 @@
       "slaDays": null,
       "kpi": "std14",
       "note": "نائب الرئيس\nللدراسة والافادة",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "date": "2026-10-18",
@@ -40617,11 +40617,32 @@
           "taqseem": "",
           "startDate": "2026-10-15",
           "daysSince": 14
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "esc",
+          "date": "2026-11-08",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من تم التصعيد إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 16
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1792315069286.0823,
-      "manualCount": 5,
+      "manualCount": 6,
       "followEntity": "naib_office",
       "responseMethod": "",
       "actionHistory": [
@@ -40669,7 +40690,8 @@
           "note": "إتمام المهمة اليومية: تابعي التقسيم المختص مباشرة",
           "dailyTaskKey": "div-1792315069286.0823"
         }
-      ]
+      ],
+      "closedAt": "2026-11-08"
     },
     {
       "id": 1792316753558.601,
@@ -53811,6 +53833,205 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-11-05T09:59:26.087Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1792315069286.0823,
+      "transactionType": "followup",
+      "title": "شكوى وطلب إعادة النظر في موقع مشروع شركة الاستزراع السمكي الواقع بين منطقني الحد والجديمة بولاية جعلان بني بو حسن",
+      "from": "أهالي منطقتي الحد والجديمة",
+      "docNo": "1170/3/2022v422-17",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-14",
+      "receivedFollowDate": "2026-10-18",
+      "followStart": "2026-10-15",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "std14",
+      "note": "نائب الرئيس\nللدراسة والافادة",
+      "status": "closed",
+      "followups": [
+        {
+          "date": "2026-10-18",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 1
+        },
+        {
+          "date": "2026-10-26",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "scope": "internal",
+          "by": "",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 7
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "",
+          "date": "2026-11-01",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 11
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "open",
+          "date": "2026-11-03",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من قيد المتابعة إلى تم التصعيد",
+          "actionType": "esc",
+          "statusChange": "esc",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "تم التصعيد",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 13
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "open",
+          "date": "2026-11-04",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من قيد المتابعة إلى تم التصعيد",
+          "actionType": "esc",
+          "statusChange": "esc",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "تم التصعيد",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 14
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "esc",
+          "date": "2026-11-08",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من تم التصعيد إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-10-15",
+          "daysSince": 16
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1792315069286.0823,
+      "manualCount": 6,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "actionHistory": [
+        {
+          "date": "2026-11-04",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: افتحي الموضوع وسجّلي متابعة اليوم"
+        },
+        {
+          "date": "2026-11-05",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        },
+        {
+          "date": "2026-11-05",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تابعي التقسيم المختص مباشرة"
+        },
+        {
+          "date": "2026-11-05",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد"
+        },
+        {
+          "date": "2026-11-05",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تابعي التقسيم المختص مباشرة"
+        },
+        {
+          "date": "2026-11-08",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تحتاج متابعة عاجلة أو تصعيد",
+          "dailyTaskKey": "late-1792315069286.0823"
+        },
+        {
+          "date": "2026-11-08",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: تابعي التقسيم المختص مباشرة",
+          "dailyTaskKey": "div-1792315069286.0823"
+        }
+      ],
+      "closedAt": "2026-11-08",
+      "archivedAt": "2026-11-08T05:28:39.631Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-11-08T05:28:39.631Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -59552,7 +59773,21 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1794115719615.5764,
+          "at": "2026-11-08T05:28:39.615Z",
+          "action": "إضافة متابعة",
+          "details": "شكوى وطلب إعادة النظر في موقع مشروع شركة الاستزراع السمكي الواقع بين منطقني الحد والجديمة بولاية جعلان بني بو حسن"
+        },
+        {
+          "id": 1794115719568.992,
+          "at": "2026-11-08T05:28:39.568Z",
+          "action": "تعديل موضوع",
+          "details": "شكوى وطلب إعادة النظر في موقع مشروع شركة الاستزراع السمكي الواقع بين منطقني الحد والجديمة بولاية جعلان بني بو حسن"
+        }
+      ]
     },
     {
       "id": "2e58a349-1745-4393-856c-949756720a46",
