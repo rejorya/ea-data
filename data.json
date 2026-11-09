@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-09T04:18:49.332Z",
+  "exportedAt": "2026-11-09T04:19:18.790Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -43388,16 +43388,58 @@
       "followStart": "2026-11-08",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "rais",
       "slaDays": 3,
-      "kpi": "",
+      "kpi": "wd3",
       "note": "نائب الرئيس\nمدير ادارة جنوب الشرقية\nللافادة خلال 3 ايام عمل",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "auditOnly": false,
+          "changes": [
+            {
+              "field": "correspondenceDirection",
+              "before": "in",
+              "after": ""
+            },
+            {
+              "field": "kpi",
+              "before": "",
+              "after": "wd3"
+            },
+            {
+              "field": "followEntity",
+              "before": "",
+              "after": "naib_office"
+            }
+          ],
+          "previousStatus": "",
+          "date": "2026-11-09",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تعديل: اتجاه المراسلة، المؤشر، الجهة المتابعة",
+          "actionType": "visit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-11-08",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1794197927270.4092
+      "recordId": 1794197927270.4092,
+      "manualCount": 1,
+      "followEntity": "naib_office",
+      "responseMethod": "",
+      "actionHistory": []
     }
   ],
   "archivedTopics": [
@@ -60437,6 +60479,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1794197956632.4236,
+          "at": "2026-11-09T04:19:16.632Z",
+          "action": "إضافة متابعة",
+          "details": "كرفانة بمنطقة نائية بجعلان بني بو علي"
+        },
+        {
+          "id": 1794197956586.602,
+          "at": "2026-11-09T04:19:16.586Z",
+          "action": "تعديل موضوع",
+          "details": "كرفانة بمنطقة نائية بجعلان بني بو علي"
+        },
         {
           "id": 1794197927308.7388,
           "at": "2026-11-09T04:18:47.308Z",
