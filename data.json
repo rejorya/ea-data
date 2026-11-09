@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-09T04:03:44.115Z",
+  "exportedAt": "2026-11-09T04:18:49.332Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -43372,6 +43372,32 @@
       "followEntity": "naib_office",
       "responseMethod": "",
       "actionHistory": []
+    },
+    {
+      "id": 1794197927270.4092,
+      "transactionType": "followup",
+      "title": "كرفانة بمنطقة نائية بجعلان بني بو علي",
+      "from": "الشيخ محمد بن عبدالله آل حموده",
+      "docNo": "1170/3/2022v424-81",
+      "toEntity": "",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-11-05",
+      "receivedFollowDate": "2026-11-09",
+      "followStart": "2026-11-08",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "rais",
+      "slaDays": 3,
+      "kpi": "",
+      "note": "نائب الرئيس\nمدير ادارة جنوب الشرقية\nللافادة خلال 3 ايام عمل",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1794197927270.4092
     }
   ],
   "archivedTopics": [
@@ -60411,6 +60437,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1794197927308.7388,
+          "at": "2026-11-09T04:18:47.308Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "كرفانة بمنطقة نائية بجعلان بني بو علي"
+        },
         {
           "id": 1794197022095.214,
           "at": "2026-11-09T04:03:42.095Z",
