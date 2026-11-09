@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-09T04:00:57.782Z",
+  "exportedAt": "2026-11-09T04:01:36.541Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31553,7 +31553,7 @@
       "confidentiality": "secret",
       "date": "2026-09-03",
       "followStart": "2026-09-17",
-      "type": "ext",
+      "type": "int",
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "",
@@ -31665,9 +31665,9 @@
       "recordId": 1789877477034.7769,
       "externalEntities": [],
       "receivedFollowDate": "2026-09-19",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "manualCount": 5,
-      "followScope": "external",
+      "followScope": "internal",
       "followEntity": "taqseem",
       "responseMethod": "",
       "divFollowDate": "2026-09-27",
@@ -31702,6 +31702,38 @@
           "actionType": "other",
           "note": "إتمام المهمة اليومية: جاهز للتصعيد — تواصلي أو صعّدي",
           "dailyTaskKey": "div-1789877477034.7769"
+        },
+        {
+          "auditOnly": true,
+          "changes": [
+            {
+              "field": "type",
+              "before": "ext",
+              "after": "int"
+            },
+            {
+              "field": "correspondenceDirection",
+              "before": "in",
+              "after": ""
+            }
+          ],
+          "previousStatus": "",
+          "date": "2026-11-09",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تعديل: نطاق المتابعة، اتجاه المراسلة",
+          "actionType": "edit",
+          "statusChange": "",
+          "scope": "external",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "تم حفظ التعديل",
+          "entity": "taqseem",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "المديرية العامة للتغير المناخي",
+          "startDate": "2026-09-17",
+          "daysSince": 37
         }
       ]
     },
@@ -60355,7 +60387,21 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1794196894380.6113,
+          "at": "2026-11-09T04:01:34.380Z",
+          "action": "إضافة متابعة",
+          "details": "استضافة سلطنة عُمان اجتماع مجلس الصندوق الأخضر للمناخ 2027م"
+        },
+        {
+          "id": 1794196894343.1833,
+          "at": "2026-11-09T04:01:34.343Z",
+          "action": "تعديل موضوع",
+          "details": "استضافة سلطنة عُمان اجتماع مجلس الصندوق الأخضر للمناخ 2027م"
+        }
+      ]
     },
     {
       "id": "d4a6dc55-3aee-4766-b737-99e4b7468e1a",
