@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-09T03:45:58.945Z",
+  "exportedAt": "2026-11-09T03:47:54.097Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -43111,7 +43111,7 @@
       "slaDays": null,
       "kpi": "other",
       "note": "",
-      "status": "esc",
+      "status": "closed",
       "followups": [
         {
           "auditOnly": false,
@@ -43165,15 +43165,37 @@
           "taqseem": "",
           "startDate": "2026-11-01",
           "daysSince": 5
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "esc",
+          "date": "2026-11-09",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من تم التصعيد إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-11-01",
+          "daysSince": 6
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793609391116.599,
-      "manualCount": 2,
+      "manualCount": 3,
       "followEntity": "rais_depts",
       "raisDeptName": "",
       "responseMethod": "",
-      "actionHistory": []
+      "actionHistory": [],
+      "closedAt": "2026-11-09"
     },
     {
       "id": 1793609569717.5488,
@@ -54449,6 +54471,117 @@
       "archivedBy": "رحاب بنت نصيب الفرج",
       "archiveUpdatedAt": "2026-11-08T05:47:49.519Z",
       "archiveVersion": 1
+    },
+    {
+      "id": 1793609391116.599,
+      "transactionType": "followup",
+      "title": "الدليل الاسترشادي لإدارة نفايات الزئبق ومركباته والمنتجات المحتوية عليه",
+      "from": "نائب الرئيس",
+      "docNo": "5423/1/2022v3-50",
+      "toEntity": "دائرة التميز المؤسسي",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-10-29",
+      "receivedFollowDate": "2026-11-02",
+      "followStart": "2026-11-01",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "other",
+      "note": "",
+      "status": "closed",
+      "followups": [
+        {
+          "auditOnly": false,
+          "changes": [
+            {
+              "field": "correspondenceDirection",
+              "before": "in",
+              "after": ""
+            },
+            {
+              "field": "followEntity",
+              "before": "",
+              "after": "rais_depts"
+            }
+          ],
+          "previousStatus": "new",
+          "date": "2026-11-03",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من جديد إلى بانتظار الإفادة — تعديل: اتجاه المراسلة، الجهة المتابعة",
+          "actionType": "visit",
+          "statusChange": "awaiting",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "بانتظار الإفادة",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-11-01",
+          "daysSince": 2
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "awaiting",
+          "date": "2026-11-08",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من بانتظار الإفادة إلى تم التصعيد",
+          "actionType": "esc",
+          "statusChange": "esc",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "تم التصعيد",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-11-01",
+          "daysSince": 5
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "esc",
+          "date": "2026-11-09",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تغيير الحالة من تم التصعيد إلى مُغلق",
+          "actionType": "status",
+          "statusChange": "closed",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "مُغلق",
+          "entity": "rais_depts",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-11-01",
+          "daysSince": 6
+        }
+      ],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1793609391116.599,
+      "manualCount": 3,
+      "followEntity": "rais_depts",
+      "raisDeptName": "",
+      "responseMethod": "",
+      "actionHistory": [],
+      "closedAt": "2026-11-09",
+      "archivedAt": "2026-11-09T03:47:51.924Z",
+      "archivedBy": "رحاب بنت نصيب الفرج",
+      "archiveUpdatedAt": "2026-11-09T03:47:51.924Z",
+      "archiveVersion": 1
     }
   ],
   "directives": [
@@ -60190,7 +60323,21 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1794196071907.0234,
+          "at": "2026-11-09T03:47:51.907Z",
+          "action": "إضافة متابعة",
+          "details": "الدليل الاسترشادي لإدارة نفايات الزئبق ومركباته والمنتجات المحتوية عليه"
+        },
+        {
+          "id": 1794196071865.9148,
+          "at": "2026-11-09T03:47:51.865Z",
+          "action": "تعديل موضوع",
+          "details": "الدليل الاسترشادي لإدارة نفايات الزئبق ومركباته والمنتجات المحتوية عليه"
+        }
+      ]
     },
     {
       "id": "142bfe3b-0f91-4d09-9978-3132888e6b64",
