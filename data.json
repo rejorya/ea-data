@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-09T04:19:18.790Z",
+  "exportedAt": "2026-11-09T04:27:20.002Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -55178,6 +55178,22 @@
       "receivedDate": "2026-10-22",
       "presidentDirectionDate": "2026-10-22",
       "completedAt": "2026-11-09"
+    },
+    {
+      "id": 1794198437971.5283,
+      "transactionType": "directive",
+      "date": "2026-11-04",
+      "month": "نوفمبر",
+      "ref": "1170/1/2022v16-84",
+      "dept": "دائرة التخطيط الأستراتيجي",
+      "due": "5",
+      "dueDate": "2026-11-11",
+      "subj": "مؤشر إدارة الأزمات",
+      "action": "",
+      "status": "new",
+      "completedAt": "",
+      "note": "",
+      "followLog": []
     }
   ],
   "weekly": [
