@@ -4360,7 +4360,7 @@ function buildDailyTasks(){
     if(!isDone && late){
       tasks.push({ key:'dir-'+d.id, cat:'directive', icon:'🟠', color:'#d68910',
         title:d.subj||'توجيه', sub:(d.dept||'—')+(d.dueDate?(' · استحقاق '+fmtDate(d.dueDate)):''), action:'حدّثي حالة التنفيذ وسجّلي متابعة',
-        go:()=>openDirLog(d.id), btn:'📋 متابعة التوجيه' });
+        go:()=>{ showSec('directives', null); openDirLog(d.id); }, btn:'📋 متابعة التوجيه' });
     }
   });
   // 5) تنبيه مناقشات اليوم والغد
@@ -5048,7 +5048,11 @@ function toggleEditEntityName() {
 
 // نفس نافذة التعديل الآن تفتح مباشرة على قسم «إضافة إجراء جديد» — أُبقيت الدالة القديمة للتوافق مع كل نقاط الاستدعاء
 function openFollowupModal(tid) {
-  openEditTopicModal(tid);
+  if (!canEditData()) return;
+  const topic = findEditableTopic(tid);
+  if (!topic) { alert('تعذّر العثور على الموضوع في القائمة الحالية.'); return; }
+  openTopicsView(topic.correspondenceDirection === 'out' ? 'outgoing' : 'incoming');
+  openEditTopicModal(topic.id);
 }
 
 // ⏱️ لوحة معلومات المتابعة الزمنية: تاريخ توجيه الرئيس، مدة الرد المحددة (افتراضية/مخصصة)،
@@ -5990,7 +5994,7 @@ function renderDirByDept(){
 // 📋 سجل متابعة التوجيه
 function openDirLog(id){
   if(!canEditData()) return;
-  const d = D.directives.find(x => String(x.id) === id);
+  const d = D.directives.find(x => String(x.id) === String(id));
   if(!d) return;
   $('dirLogId').value = d.id;
   $('dirLogTitle').textContent = d.subj || '';
