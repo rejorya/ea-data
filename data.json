@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-11T03:25:39.939Z",
+  "exportedAt": "2026-11-11T03:26:02.390Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -43471,16 +43471,48 @@
       "followStart": "2026-11-09",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "std14",
       "note": "نائب الرئيس\nللدراسة والافادة",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "auditOnly": false,
+          "changes": [
+            {
+              "field": "correspondenceDirection",
+              "before": "in",
+              "after": ""
+            }
+          ],
+          "previousStatus": "",
+          "date": "2026-11-11",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تعديل: اتجاه المراسلة",
+          "actionType": "visit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-11-09",
+          "daysSince": 2
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1794367537874.2107
+      "recordId": 1794367537874.2107,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": "",
+      "actionHistory": []
     }
   ],
   "archivedTopics": [
@@ -60545,6 +60577,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1794367560220.7295,
+          "at": "2026-11-11T03:26:00.220Z",
+          "action": "إضافة متابعة",
+          "details": "طلب موقع ردميات لمشروع توسعة طريق مسقط السريع بمنطقة الجفنين بولاية السيب"
+        },
+        {
+          "id": 1794367560167.497,
+          "at": "2026-11-11T03:26:00.167Z",
+          "action": "تعديل موضوع",
+          "details": "طلب موقع ردميات لمشروع توسعة طريق مسقط السريع بمنطقة الجفنين بولاية السيب"
+        },
         {
           "id": 1794367537916.1482,
           "at": "2026-11-11T03:25:37.916Z",
