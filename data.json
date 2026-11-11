@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-11T03:26:02.390Z",
+  "exportedAt": "2026-11-11T03:29:46.719Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -43513,6 +43513,32 @@
       "followEntity": "",
       "responseMethod": "",
       "actionHistory": []
+    },
+    {
+      "id": 1794367784643.5405,
+      "transactionType": "followup",
+      "title": "طلب إقامة مواقع عامة للتعدين لدعم مشاريع التنمية في محافظة البريمي بولاية محضة",
+      "from": "وزارة الطاقة والمعادن",
+      "docNo": "1170/3/2022v425-30",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-11-09",
+      "receivedFollowDate": "2026-11-10",
+      "followStart": "2026-11-09",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "std14",
+      "note": "نائب الرئيس\nللدراسة والافادة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1794367784643.5405
     }
   ],
   "archivedTopics": [
@@ -60577,6 +60603,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1794367784692.5867,
+          "at": "2026-11-11T03:29:44.692Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب إقامة مواقع عامة للتعدين لدعم مشاريع التنمية في محافظة البريمي بولاية محضة"
+        },
         {
           "id": 1794367560220.7295,
           "at": "2026-11-11T03:26:00.220Z",
