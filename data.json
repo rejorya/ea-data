@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-11T03:47:49.491Z",
+  "exportedAt": "2026-11-11T03:49:49.292Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -43417,11 +43417,32 @@
           "taqseem": "",
           "startDate": "2026-11-02",
           "daysSince": 4
+        },
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "",
+          "date": "2026-11-11",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "",
+          "entity": "naib_office",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-11-02",
+          "daysSince": 7
         }
       ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1793609569717.5488,
-      "manualCount": 3,
+      "manualCount": 4,
       "followEntity": "naib_office",
       "responseMethod": "",
       "actionHistory": []
@@ -60826,6 +60847,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1794368986989.909,
+          "at": "2026-11-11T03:49:46.989Z",
+          "action": "إضافة متابعة",
+          "details": "متابعة تطبيق متطلبات المحتوى المحلي في تعاقدات الجهات الحكومية الخاضعة لقانون المناقصات"
+        },
+        {
+          "id": 1794368986939.805,
+          "at": "2026-11-11T03:49:46.939Z",
+          "action": "تعديل موضوع",
+          "details": "متابعة تطبيق متطلبات المحتوى المحلي في تعاقدات الجهات الحكومية الخاضعة لقانون المناقصات"
+        },
         {
           "id": 1794368867421.71,
           "at": "2026-11-11T03:47:47.421Z",
