@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-11T03:23:28.257Z",
+  "exportedAt": "2026-11-11T03:25:39.939Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -43455,6 +43455,32 @@
           "dailyTaskKey": "fu-today-1794197927270.4092"
         }
       ]
+    },
+    {
+      "id": 1794367537874.2107,
+      "transactionType": "followup",
+      "title": "طلب موقع ردميات لمشروع توسعة طريق مسقط السريع بمنطقة الجفنين بولاية السيب",
+      "from": "وزارة الطاقة والمعادن",
+      "docNo": "1170/3/2022v425-37",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-11-09",
+      "receivedFollowDate": "2026-11-10",
+      "followStart": "2026-11-09",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "std14",
+      "note": "نائب الرئيس\nللدراسة والافادة",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1794367537874.2107
     }
   ],
   "archivedTopics": [
@@ -60517,7 +60543,15 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1794367537916.1482,
+          "at": "2026-11-11T03:25:37.916Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب موقع ردميات لمشروع توسعة طريق مسقط السريع بمنطقة الجفنين بولاية السيب"
+        }
+      ]
     },
     {
       "id": "f5b1ec85-d7ab-48be-a5ec-4ae826594a7c",
