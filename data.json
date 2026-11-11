@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-11T03:16:53.276Z",
+  "exportedAt": "2026-11-11T03:23:24.799Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -43439,7 +43439,15 @@
       "manualCount": 1,
       "followEntity": "naib_office",
       "responseMethod": "",
-      "actionHistory": []
+      "actionHistory": [
+        {
+          "date": "2026-11-11",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: افتحي الموضوع وسجّلي متابعة اليوم",
+          "dailyTaskKey": "fu-today-1794197927270.4092"
+        }
+      ]
     }
   ],
   "archivedTopics": [
