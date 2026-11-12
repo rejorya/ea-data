@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-12T04:13:27.965Z",
+  "exportedAt": "2026-11-12T04:24:05.134Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -43746,6 +43746,32 @@
       "followEntity": "",
       "responseMethod": "",
       "actionHistory": []
+    },
+    {
+      "id": 1794457443079.1025,
+      "transactionType": "followup",
+      "title": "دراسة إعادة فتح وتاهيل خور الحفري بولاية بركاء",
+      "from": "محافظة جنوب الباطنة",
+      "docNo": "1170/3/2022v425-60",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "normal",
+      "confidentiality": "normal",
+      "date": "2026-11-11",
+      "receivedFollowDate": "2026-11-12",
+      "followStart": "2026-11-11",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "نائب الرئيس\nللافادة، شريطة ان لايكون هناك اي تاثير على البيئة ومفردات التنوع الاحيائي في منطقة الخور.",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1794457443079.1025
     }
   ],
   "archivedTopics": [
@@ -60941,6 +60967,12 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1794457443121.1223,
+          "at": "2026-11-12T04:24:03.121Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "دراسة إعادة فتح وتاهيل خور الحفري بولاية بركاء"
+        },
         {
           "id": 1794456805786.1624,
           "at": "2026-11-12T04:13:25.786Z",
