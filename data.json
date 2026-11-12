@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-12T04:24:05.134Z",
+  "exportedAt": "2026-11-12T04:26:30.974Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -43762,7 +43762,7 @@
       "followStart": "2026-11-11",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
@@ -43771,7 +43771,39 @@
       "status": "new",
       "followups": [],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1794457443079.1025
+      "recordId": 1794457443079.1025,
+      "manualCount": 0,
+      "followEntity": "",
+      "responseMethod": "",
+      "actionHistory": [
+        {
+          "auditOnly": true,
+          "changes": [
+            {
+              "field": "correspondenceDirection",
+              "before": "in",
+              "after": ""
+            }
+          ],
+          "previousStatus": "",
+          "date": "2026-11-12",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تعديل: اتجاه المراسلة",
+          "actionType": "edit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "تم حفظ التعديل",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-11-11",
+          "daysSince": 1
+        }
+      ]
     }
   ],
   "archivedTopics": [
@@ -60967,6 +60999,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1794457588821.2747,
+          "at": "2026-11-12T04:26:28.821Z",
+          "action": "إضافة متابعة",
+          "details": "دراسة إعادة فتح وتاهيل خور الحفري بولاية بركاء"
+        },
+        {
+          "id": 1794457588764.103,
+          "at": "2026-11-12T04:26:28.764Z",
+          "action": "تعديل موضوع",
+          "details": "دراسة إعادة فتح وتاهيل خور الحفري بولاية بركاء"
+        },
         {
           "id": 1794457443121.1223,
           "at": "2026-11-12T04:24:03.121Z",
