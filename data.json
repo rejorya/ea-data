@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-12T04:26:30.974Z",
+  "exportedAt": "2026-11-12T04:26:48.111Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -43769,10 +43769,32 @@
       "kpi": "naib3",
       "note": "نائب الرئيس\nللافادة، شريطة ان لايكون هناك اي تاثير على البيئة ومفردات التنوع الاحيائي في منطقة الخور.",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "auditOnly": false,
+          "changes": [],
+          "previousStatus": "",
+          "date": "2026-11-12",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "متابعة",
+          "actionType": "visit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-11-11",
+          "daysSince": 1
+        }
+      ],
       "sheet": "مُضاف يدوياً",
       "recordId": 1794457443079.1025,
-      "manualCount": 0,
+      "manualCount": 1,
       "followEntity": "",
       "responseMethod": "",
       "actionHistory": [
@@ -60999,6 +61021,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1794457605979.6313,
+          "at": "2026-11-12T04:26:45.979Z",
+          "action": "إضافة متابعة",
+          "details": "دراسة إعادة فتح وتاهيل خور الحفري بولاية بركاء"
+        },
+        {
+          "id": 1794457605921.262,
+          "at": "2026-11-12T04:26:45.921Z",
+          "action": "تعديل موضوع",
+          "details": "دراسة إعادة فتح وتاهيل خور الحفري بولاية بركاء"
+        },
         {
           "id": 1794457588821.2747,
           "at": "2026-11-12T04:26:28.821Z",
