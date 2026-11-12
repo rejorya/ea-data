@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-12T04:02:15.529Z",
+  "exportedAt": "2026-11-12T04:13:05.726Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -43688,6 +43688,32 @@
       "followEntity": "",
       "responseMethod": "",
       "actionHistory": []
+    },
+    {
+      "id": 1794456783673.1167,
+      "transactionType": "followup",
+      "title": "طلب الموافقة على الموقع المقترح لكسارات الجبل الاخضر بمحافظة الداخلية",
+      "from": "وزارة الاسكان والتخطيط العمراني",
+      "docNo": "1170/3/2022v425-49",
+      "toEntity": "نائب الرئيس",
+      "taqseemName": "",
+      "priority": "urgent",
+      "confidentiality": "normal",
+      "date": "2026-11-10",
+      "receivedFollowDate": "2026-11-12",
+      "followStart": "2026-11-12",
+      "type": "int",
+      "followScope": "internal",
+      "correspondenceDirection": "in",
+      "externalEntities": [],
+      "slaMode": "kpi",
+      "slaDays": null,
+      "kpi": "naib3",
+      "note": "",
+      "status": "new",
+      "followups": [],
+      "sheet": "مُضاف يدوياً",
+      "recordId": 1794456783673.1167
     }
   ],
   "archivedTopics": [
@@ -60881,7 +60907,15 @@
       "logoutAt": null,
       "duration": null,
       "logoutReason": null,
-      "central": true
+      "central": true,
+      "actions": [
+        {
+          "id": 1794456783715.9075,
+          "at": "2026-11-12T04:13:03.715Z",
+          "action": "إضافة موضوع متابعة",
+          "details": "طلب الموافقة على الموقع المقترح لكسارات الجبل الاخضر بمحافظة الداخلية"
+        }
+      ]
     },
     {
       "id": "d2482b23-349e-4bb8-afae-d46fb9ed1d14",
