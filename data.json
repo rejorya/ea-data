@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-12T04:02:08.153Z",
+  "exportedAt": "2026-11-12T04:02:12.017Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -31769,6 +31769,13 @@
           "actionType": "other",
           "note": "إتمام المهمة اليومية: جاهز للتصعيد — تواصلي أو صعّدي",
           "dailyTaskKey": "div-1789877477034.7769"
+        },
+        {
+          "date": "2026-11-12",
+          "by": "رحاب بنت نصيب الفرج",
+          "actionType": "other",
+          "note": "إتمام المهمة اليومية: جاهز للتصعيد — تواصلي أو صعّدي",
+          "dailyTaskKey": "div-1789877477034.7769"
         }
       ]
     },
@@ -60842,8 +60849,8 @@
   ],
   "activityLog": [
     {
-      "id": 1794456123306.0132,
-      "sessionId": "e56f159d-44f1-4a58-bfb2-48ba7992cde9",
+      "id": "72ebe403-d0cb-478d-96eb-a248a5423d86",
+      "sessionId": "72ebe403-d0cb-478d-96eb-a248a5423d86",
       "deviceId": "09c27871-ce68-470a-aaed-2ec5c91fc017",
       "user": "rahab@ea2026",
       "name": "رحاب بنت نصيب الفرج",
@@ -60865,7 +60872,8 @@
       "loginAt": "2026-11-12T04:02:03.305Z",
       "logoutAt": null,
       "duration": null,
-      "logoutReason": null
+      "logoutReason": null,
+      "central": true
     },
     {
       "id": "d2482b23-349e-4bb8-afae-d46fb9ed1d14",
