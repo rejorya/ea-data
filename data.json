@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-12T04:47:09.410Z",
+  "exportedAt": "2026-11-12T04:47:18.946Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -61022,6 +61022,12 @@
       "central": true,
       "actions": [
         {
+          "id": 1794458836913.803,
+          "at": "2026-11-12T04:47:16.913Z",
+          "action": "حذف مستخدم",
+          "details": "mufawwad@ea"
+        },
+        {
           "id": 1794458827275.7004,
           "at": "2026-11-12T04:47:07.275Z",
           "action": "إضافة مستخدم",
@@ -73808,13 +73814,6 @@
       "hash": "899ddbc03a2069b74d76dde15f1f2d3b1941a515cac27c52c6f76f5e77ad9ef1",
       "admin": true,
       "delegate": false
-    },
-    "mufawwad@ea": {
-      "name": "المفوّض",
-      "role": "صلاحية اطّلاع ومتابعة",
-      "hash": "8e1816618ac24e0ce8bb62d1a7d07a47503fedba2f7029150e9964789d85c8ed",
-      "admin": false,
-      "delegate": true
     },
     "view@ea": {
       "name": "سالم القصابي",
