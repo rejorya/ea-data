@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "exportedBy": "رحاب بنت نصيب الفرج",
-  "exportedAt": "2026-11-12T04:13:05.726Z",
+  "exportedAt": "2026-11-12T04:13:27.965Z",
   "topics": [
     {
       "id": 1780826441515.6658,
@@ -43704,16 +43704,48 @@
       "followStart": "2026-11-12",
       "type": "int",
       "followScope": "internal",
-      "correspondenceDirection": "in",
+      "correspondenceDirection": "",
       "externalEntities": [],
       "slaMode": "kpi",
       "slaDays": null,
       "kpi": "naib3",
       "note": "",
       "status": "new",
-      "followups": [],
+      "followups": [
+        {
+          "auditOnly": false,
+          "changes": [
+            {
+              "field": "correspondenceDirection",
+              "before": "in",
+              "after": ""
+            }
+          ],
+          "previousStatus": "",
+          "date": "2026-11-12",
+          "replied": false,
+          "responseMethod": "",
+          "replyDocNo": "",
+          "note": "تعديل: اتجاه المراسلة",
+          "actionType": "visit",
+          "statusChange": "",
+          "scope": "internal",
+          "by": "رحاب بنت نصيب الفرج",
+          "result": "",
+          "entity": "",
+          "externalEntityIndex": null,
+          "externalEntityName": "",
+          "taqseem": "",
+          "startDate": "2026-11-12",
+          "daysSince": 0
+        }
+      ],
       "sheet": "مُضاف يدوياً",
-      "recordId": 1794456783673.1167
+      "recordId": 1794456783673.1167,
+      "manualCount": 1,
+      "followEntity": "",
+      "responseMethod": "",
+      "actionHistory": []
     }
   ],
   "archivedTopics": [
@@ -60909,6 +60941,18 @@
       "logoutReason": null,
       "central": true,
       "actions": [
+        {
+          "id": 1794456805786.1624,
+          "at": "2026-11-12T04:13:25.786Z",
+          "action": "إضافة متابعة",
+          "details": "طلب الموافقة على الموقع المقترح لكسارات الجبل الاخضر بمحافظة الداخلية"
+        },
+        {
+          "id": 1794456805744.3652,
+          "at": "2026-11-12T04:13:25.744Z",
+          "action": "تعديل موضوع",
+          "details": "طلب الموافقة على الموقع المقترح لكسارات الجبل الاخضر بمحافظة الداخلية"
+        },
         {
           "id": 1794456783715.9075,
           "at": "2026-11-12T04:13:03.715Z",
